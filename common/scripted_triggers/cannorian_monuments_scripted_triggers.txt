@@ -1,0 +1,61 @@
+#the sole purpose of this file is to reduce code clutter in the main great project files and make it easier to update periodically
+cannorian_monuments_can_use_escann = { 
+	OR = {
+		culture_group = escanni
+		culture_group = dostanorian_g
+		culture = marrodic
+		culture_group = dwarven
+		culture = newfoot_halfling
+		culture = green_orc
+		culture = redtusk_orc
+		tag = B02
+		tag = B03
+		tag = B04
+		tag = B05
+		tag = B06
+		tag = B07
+		tag = B08
+		tag = B09
+		tag = B10
+		tag = B11
+		tag = B12
+		tag = B13
+		tag = B14
+		tag = B15
+		tag = B16
+		tag = B17
+		tag = B18
+		tag = B19
+		tag = B20		
+	}
+}
+cannorian_monuments_can_use_bladeskeep = {
+	OR = {
+		culture_group = escanni
+		culture_group = dostanorian_g
+		culture = marrodic
+		culture_group = dwarven
+		culture = newfoot_halfling
+		culture = redtusk_orc
+		tag = B02
+		tag = B03
+		tag = B04
+		tag = B05
+		tag = B06
+		tag = B07
+		tag = B08
+		tag = B09
+		tag = B10
+		tag = B11
+		tag = B12
+		tag = B13
+		tag = B14
+		tag = B15
+		tag = B16
+		tag = B17
+		tag = B18
+		tag = B19
+		tag = B20
+		tag = B33
+	}
+}
