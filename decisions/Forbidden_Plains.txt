@@ -1,0 +1,39 @@
+country_decisions = {
+
+plains_delete = {
+	potential = {
+	NOT = { has_global_flag = fp_deleted}
+	ai = no
+	NOT = {
+		is_year = 1450
+		}
+		exists = J35
+		}
+	allow={
+ 		ai = no
+		exists = J35
+	}
+	
+	effect = {
+		ogre_mountains_region = {
+			cede_province = XXX
+		}
+		west_forbidden_plains_region = {
+			cede_province = XXX
+		}
+		east_forbidden_plains_region = {
+			cede_province = XXX
+		}
+		serpent_gift_region = {
+			cede_province = XXX
+		}
+		serpent_gift_region = {
+			cede_province = XXX	
+		}
+		nuzurbokh_region = {
+			cede_province = XXX
+		}
+		set_global_flag = fp_deleted
+		}
+		}
+		}

@@ -1,0 +1,26 @@
+country_decisions = {
+
+lake_fed_delete = {
+	potential = {
+	NOT = { has_global_flag = lakefed_deleted}
+	ai = no
+	NOT = {
+		is_year = 1445
+		}
+		exists = j31
+		}
+	allow={
+ 		ai = no
+		exists = j31
+	}
+	effect = {
+		southern_isles_region = {
+			cede_province = XXX
+		}
+		northern_isles_region = {
+			cede_province = XXX
+		}
+		set_global_flag = lakefed_deleted
+		}
+		}
+		}

@@ -1,0 +1,30 @@
+
+
+namespace = new_events
+
+
+country_event = {
+
+	id = new_events.4
+	title = "new_events_4.t"
+	desc = "new_events_4.d"
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+
+	major_trigger = {date= 1444.11.11}
+	hidden = yes
+
+	trigger = {
+		owns = 1
+	}
+
+	immediate = {
+		every_country = {
+			add_stability = 1
+		}
+}
+	option = {
+		name = free_stab_event
+	}
+}
