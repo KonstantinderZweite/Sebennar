@@ -2,6 +2,8 @@ version="0.1"
 tags={
 	"Alternative History"
 }
+name="Sebennar"
+
 replace_path="common/bookmarks"
 replace_path="common/province_names"
 replace_path="common/government_names"
@@ -19,5 +21,4 @@ replace_path="history/wars"
 replace_path="history/provinces"
 replace_path="history/advisors"
 replace_path="gfx/loadingscreens"
-name="Sebennar"
 supported_version="1.34.5"
