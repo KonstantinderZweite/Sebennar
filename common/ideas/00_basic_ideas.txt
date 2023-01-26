@@ -12,7 +12,7 @@ aristocracy_ideas = {
 
 	bonus = {
 		leader_siege = 1
-		nobles_loyalty_modifier = 0.1
+		nobles_loyalty_modifier = 0.2
 		rajput_loyalty_modifier = 0.1
 	}
 
