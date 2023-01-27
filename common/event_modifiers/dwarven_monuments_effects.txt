@@ -12,7 +12,7 @@ er_natvir_railyard_rail_ride {
 }
 
 gor_vazumbrog_the_vaulthold_secrets {
-	all_power_cost = -0.05
+	all_power_cost = -0.075
 	country_military_power = 1
 	country_diplomatic_power = 1
 	country_admin_power = 1
