@@ -7019,3 +7019,25 @@ truedagger_intrigue_court = {
 #		}
 #	}
 #}
+#Starlingisle
+extreme_decentralization_reform = {
+	icon = "castle"
+	allow_normal_conversion = no
+	legacy_equivalent = feudal_monarchy
+	valid_for_nation_designer = no
+	lock_level_when_selected = yes
+	modifiers = {
+		diplomatic_upkeep = 6
+		diplomats = 1
+		reduced_liberty_desire = 200
+		governing_capacity_modifier = -0.5
+		global_tax_modifier = -0.2
+		nobles_influence_modifier = 0.1
+
+		# ANBENNAR
+		uppercastes_influence_modifier = 0.05
+	}
+	ai = {
+		factor = 0.5 #generic
+	}
+}
