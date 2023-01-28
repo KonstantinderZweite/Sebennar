@@ -1,5 +1,5 @@
 
-#62 - Leipzig | 
+#8006 - Ruby Depths | 
 
 owner = A20
 controller = A20
@@ -9,20 +9,16 @@ religion = ancestor_worship
 
 hre = no
 
-base_tax = 11
-base_production = 11
-base_manpower = 9
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 trade_goods = gems
 capital = ""
 
 is_city = yes
 
-center_of_trade = 1
-
-
-
 add_permanent_province_modifier = {
-	name = dig_2
+	name = depleted_ruby_mine_modifier
 	duration = -1
 }

@@ -1,5 +1,5 @@
 
-#64 - Landshut | 
+#65 - Munchen | 
 
 owner = A20
 controller = A20
@@ -9,15 +9,17 @@ religion = ancestor_worship
 
 hre = no
 
-base_tax = 6
-base_production = 3
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 2
 
-trade_goods = iron
+trade_goods = wool
 capital = ""
 
 is_city = yes
-fort_15th = yes 
+fort_15th = yes
+
+
 
 
 
