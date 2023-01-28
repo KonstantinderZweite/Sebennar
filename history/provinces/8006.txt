@@ -1,0 +1,12 @@
+owner = E01
+controller = E01
+add_core = E01
+culture = south_aethyl
+religion = regent_court
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 3
+trade_goods = grain
+capital = "Eoforhild"
+is_city = yes

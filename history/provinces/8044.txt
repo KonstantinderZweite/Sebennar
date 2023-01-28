@@ -1,0 +1,12 @@
+owner = E08
+controller = E08
+add_core = E08
+culture = north_aethyl
+religion = regent_court
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 4
+trade_goods = wool
+capital = "Eardwulfslund"
+is_city = yes

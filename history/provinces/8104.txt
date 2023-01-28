@@ -1,0 +1,12 @@
+owner = E22
+controller = E22
+add_core = E22
+culture = wood_elf
+religion = fey_court
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = cloth
+capital = ""
+is_city = yes

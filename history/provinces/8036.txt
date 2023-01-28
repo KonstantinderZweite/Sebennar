@@ -1,0 +1,12 @@
+owner = E11
+controller = E11
+add_core = E11
+culture = middle_aethyl
+religion = regent_court
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = salt
+capital = "Leofstan"
+is_city = yes

@@ -1,0 +1,12 @@
+owner = E03
+controller = E03
+add_core = E03
+culture = south_aethyl
+religion = regent_court
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = grain
+capital = "Wealdmaerburg"
+is_city = yes

@@ -1,0 +1,273 @@
+##BranchStart 0
+1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = E19
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = E19
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	E19_establish_colonies = {
+		icon = mission_city_prosperity
+		required_missions {
+			E19_new_capital
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = E19
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	E19_into_woods = {
+		icon = mission_alone_in_the_wood
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E19_send_scouts = {
+		icon = mission_forest_pilgrim
+		required_missions {
+			E19_into_woods
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E19_scouts_return = {
+		icon = mission_crusade_for_varna
+		required_missions {
+			E19_send_scouts
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E19_new_capital = {
+		icon = mission_early_game_buildings
+		required_missions {
+			E19_scouts_return
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E19_expand_capital = {
+		icon = mission_hanseatic_city
+		required_missions {
+			E19_new_capital
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = E19
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	E19_more_scouts = {
+		icon = mission_forest_pilgrim
+		required_missions {
+			E19_new_capital
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E19_explore_north = {
+		icon = mission_galleys_in_port
+		required_missions {
+			E19_more_scouts
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E19_monsters = {
+		icon = mission_head_on_spike
+		required_missions {
+			E19_explore_north
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E19_berlin_moscow_axis = {
+		icon = mission_monarch_diplomacy
+		required_missions {
+			E19_monsters
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = E19
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	E19_explore_south = {
+		icon = mission_galleys_in_port
+		required_missions {
+			E19_more_scouts
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

@@ -1,0 +1,19 @@
+old_expeditionary_outpost = {
+local_defensiveness = 0.1
+fort_level = 1
+local_garrison_size = 0.25
+tax_income = 12
+local_manpower = 0.6
+}
+civil_war_headquarters = {
+local_defensiveness = 0.15
+tax_income = 6
+local_manpower = 1.25
+}
+full_mobilization = {
+war_exhaustion = -0.05
+global_manpower = 30
+land_forcelimit = 16
+global_tax_income = 36
+global_unrest = 8
+}

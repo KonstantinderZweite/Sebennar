@@ -1,0 +1,12 @@
+owner = E02
+controller = E02
+add_core = E02
+culture = south_aethyl
+religion = regent_court
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = grain
+capital = "Ceadda"
+is_city = yes

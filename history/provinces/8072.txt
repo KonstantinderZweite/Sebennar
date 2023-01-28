@@ -1,0 +1,12 @@
+owner = E27
+controller = E27
+add_core = E27
+culture = ruby_dwarf
+religion = ancestor_worship
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = naval_supplies
+capital = ""
+is_city = yes
