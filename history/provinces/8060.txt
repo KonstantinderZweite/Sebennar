@@ -1,0 +1,12 @@
+owner = E16
+controller = E16
+add_core = E16
+culture = remnant_gnome
+religion = the_thought
+hre = no
+base_tax = 2
+base_production = 1
+base_manpower = 3
+trade_goods = fish
+capital = "The Docks"
+is_city = yes

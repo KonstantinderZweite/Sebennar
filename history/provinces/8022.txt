@@ -1,0 +1,12 @@
+owner = E06
+controller = E06
+add_core = E06
+culture = west_aethyl
+religion = regent_court
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 3
+trade_goods = grain
+capital = "Aelfwig"
+is_city = yes

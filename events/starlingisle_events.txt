@@ -1,0 +1,626 @@
+namespace = starling_isle
+
+#Aethylwex War
+country_event = {
+	id = aethylwar.1
+	title = aethylwar.1.t
+	desc = aethylwar.1.d
+	picture = ENLIGHTENMENT_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_month = 11
+		tag = E01
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		hidden_effect = {
+			set_global_flag = aethylwex_war_start
+		}
+	}
+	option = {
+	name = aethylwar.1.a
+	add_prestige = 1
+	}
+}
+country_event = {
+	id = aethylwar.2
+	title = aethylwar.2.t
+	desc = aethylwar.2.d
+	picture = ENLIGHTENMENT_eventPicture
+	fire_only_once = yes
+	trigger = {
+			has_global_flag = aethylwex_war_start
+			tag = E01
+		}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		add_country_modifier = {
+			name = aethylwex_civil_war
+			duration = -1
+			desc = test_tooltip2
+		set_variable = {
+			which = aethylweard_occupations
+			value = 0
+		}
+		}
+	}
+	option = {
+		name = aethylwar.2.a
+		add_country_modifier = {
+			name = full_mobilization
+			duration = -1
+			desc = test_tooltip3
+		}
+	}
+}
+country_event = {
+	id = aethylwar.3
+	title = aethylwar.3.t
+	desc = aethylwar.3.d
+	picture = ENLIGHTENMENT_eventPicture
+	fire_only_once = yes
+	trigger = {
+			has_global_flag = aethylwex_war_start
+			tag = E08
+		}
+	mean_time_to_happen = {
+		days = 1
+	}
+	immediate = {
+		add_country_modifier = {
+			name = aethylwex_civil_war
+			duration = -1
+			desc = test_tooltip2
+		}
+		set_variable = {
+			which = aethylweald_occupations
+			value = 0
+		}
+	}
+	option  = {
+		name = aethylwar.3.a
+		add_country_modifier = {
+			name = full_mobilization
+			duration = -1
+			desc = test_tooltip3
+		}
+	}
+}
+#Occupation Start
+country_event = {
+	id = aethylwar.4
+	title = aethylwar.4.t
+	desc = aethylwar.4.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = aethylwex_war_start
+		NOT = {
+			has_global_flag = 8019_occupied
+		}
+		8019 = {
+			OR = {
+				controller = {
+					tag = E01
+				}
+				controller = {
+					tag = E02
+				}
+				controller = {
+					tag = E06
+				}
+				controller = {
+					tag = E09
+				}
+				controller = {
+					tag = E10
+				}
+				controller = {
+					tag = E11
+				}
+				controller = {
+					tag = E13
+				}
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = 8019_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = 1
+		}
+	}
+	option = {
+		name = aethylwar.4.a
+		add_splendor = 1
+	}
+}
+country_event = {
+	id = aethylwar.5
+	title = aethylwar.5.t
+	desc = aethylwar.5.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = aethylwex_war_start
+		NOT = {
+			has_global_flag = 8013_occupied
+		}
+		8013 = {
+			OR = {
+				controller = {
+					tag = E01
+				}
+				controller = {
+					tag = E02
+				}
+				controller = {
+					tag = E06
+				}
+				controller = {
+					tag = E09
+				}
+				controller = {
+					tag = E10
+				}
+				controller = {
+					tag = E11
+				}
+				controller = {
+					tag = E13
+				}
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = 8013_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = 1
+		}
+	}
+	option = {
+		name = aethylwar.5.a
+		add_splendor = 1
+	}
+}
+country_event = {
+	id = aethylwar.6
+	title = aethylwar.6.t
+	desc = aethylwar.6.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = aethylwex_war_start
+		NOT = {
+			has_global_flag = 8020_occupied
+		}
+		8020 = {
+			OR = {
+				controller = {
+					tag = E01
+				}
+				controller = {
+					tag = E02
+				}
+				controller = {
+					tag = E06
+				}
+				controller = {
+					tag = E09
+				}
+				controller = {
+					tag = E10
+				}
+				controller = {
+					tag = E11
+				}
+				controller = {
+					tag = E13
+				}
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = 8020_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = 1
+		}
+	}
+	option = {
+		name = aethylwar.6.a
+		add_splendor = 1
+	}
+}
+country_event = {
+	id = aethylwar.7
+	title = aethylwar.7.t
+	desc = aethylwar.7.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = aethylwex_war_start
+		NOT = {
+			has_global_flag = 8023_occupied
+		}
+		8023 = {
+			OR = {
+				controller = {
+					tag = E01
+				}
+				controller = {
+					tag = E02
+				}
+				controller = {
+					tag = E06
+				}
+				controller = {
+					tag = E09
+				}
+				controller = {
+					tag = E10
+				}
+				controller = {
+					tag = E11
+				}
+				controller = {
+					tag = E13
+				}
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = 8023_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = 1
+		}
+	}
+	option = {
+		name = aethylwar.7.a
+		add_splendor = 1
+	}
+}
+country_event = {
+	id = aethylwar.8
+	title = aethylwar.8.t
+	desc = aethylwar.8.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = aethylwex_war_start
+		NOT = {
+			has_global_flag = 8039_occupied
+		}
+		8039 = {
+			OR = {
+				controller = {
+					tag = E01
+				}
+				controller = {
+					tag = E02
+				}
+				controller = {
+					tag = E06
+				}
+				controller = {
+					tag = E09
+				}
+				controller = {
+					tag = E10
+				}
+				controller = {
+					tag = E11
+				}
+				controller = {
+					tag = E13
+				}
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = 8039_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = 1
+		}
+	}
+	option = {
+		name = aethylwar.8.a
+		add_splendor = 1
+	}
+}
+country_event = {
+	id = aethylwar.9
+	title = aethylwar.9.t
+	desc = aethylwar.9.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = aethylwex_war_start
+		NOT = {
+			has_global_flag = 8053_occupied
+		}
+		8053 = {
+			OR = {
+				controller = {
+					tag = E01
+				}
+				controller = {
+					tag = E02
+				}
+				controller = {
+					tag = E06
+				}
+				controller = {
+					tag = E09
+				}
+				controller = {
+					tag = E10
+				}
+				controller = {
+					tag = E11
+				}
+				controller = {
+					tag = E13
+				}
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = 8053_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = 1
+		}
+	}
+	option = {
+		name = aethylwar.9.a
+		add_splendor = 1
+	}
+}
+country_event = {
+	id = aethylwar.10
+	title = aethylwar.10.t
+	desc = aethylwar.10.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = aethylwex_war_start
+		NOT = {
+			has_global_flag = 8047_occupied
+		}
+		8047 = {
+			OR = {
+				controller = {
+					tag = E01
+				}
+				controller = {
+					tag = E02
+				}
+				controller = {
+					tag = E06
+				}
+				controller = {
+					tag = E09
+				}
+				controller = {
+					tag = E10
+				}
+				controller = {
+					tag = E11
+				}
+				controller = {
+					tag = E13
+				}
+			}
+		}
+	}
+	immediate = {
+		set_global_flag = 8047_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = 1
+		}
+	}
+	option = {
+		name = aethylwar.10.a
+		add_splendor = 1
+	}
+}
+#Occupation Clear
+country_event = {
+	id = aethylwar.11
+	title = aethylwar.11.t
+	desc = aethylwar.11.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = 8019_occupied
+		8019 = {
+			controller = {
+				tag = E03
+			}
+		}
+		has_global_flag = aethylwex_war_start
+	}
+	immediate = {
+		clr_global_flag = 8019_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = -1
+		}
+	}
+	option = {
+		name = aethylwar.11.a
+		add_splendor = -1
+	}
+}
+country_event = {
+	id = aethylwar.12
+	title = aethylwar.12.t
+	desc = aethylwar.12.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = 8013_occupied
+		8013 = {
+			controller = {
+				tag = E04
+			}
+		}
+		has_global_flag = aethylwex_war_start
+	}
+	immediate = {
+		clr_global_flag = 8013_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = -1
+		}
+	}
+	option = {
+		name = aethylwar.12.a
+		add_splendor = -1
+	}
+} 
+country_event = {
+	id = aethylwar.13
+	title = aethylwar.13.t
+	desc = aethylwar.13.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = 8020_occupied
+		8020 = {
+			controller = {
+				tag = E05
+			}
+		}
+		has_global_flag = aethylwex_war_start
+	}
+	immediate = {
+		clr_global_flag = 8020_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = -1
+		}
+	}
+	option = {
+		name = aethylwar.13.a
+		add_splendor = -1
+	}
+} 
+country_event = {
+	id = aethylwar.14
+	title = aethylwar.14.t
+	desc = aethylwar.14.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = 8023_occupied
+		8023 = {
+			controller = {
+				tag = E07
+			}
+		}
+		has_global_flag = aethylwex_war_start
+	}
+	immediate = {
+		clr_global_flag = 8023_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = -1
+		}
+	}
+	option = {
+		name = aethylwar.14.a
+		add_splendor = -1
+	}
+} 
+country_event = {
+	id = aethylwar.15
+	title = aethylwar.15.t
+	desc = aethylwar.15.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = 8039_occupied
+		8039 = {
+			controller = {
+				tag = E12
+			}
+		}
+		has_global_flag = aethylwex_war_start
+	}
+	immediate = {
+		clr_global_flag = 8039_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = -1
+		}
+	}
+	option = {
+		name = aethylwar.15.a
+		add_splendor = -1
+	}
+} 
+country_event = {
+	id = aethylwar.16
+	title = aethylwar.16.t
+	desc = aethylwar.16.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = 8053_occupied
+		8053 = {
+			controller = {
+				tag = E14
+			}
+		}
+		has_global_flag = aethylwex_war_start
+	}
+	immediate = {
+		clr_global_flag = 8053_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = -1
+		}
+	}
+	option = {
+		name = aethylwar.16.a
+		add_splendor = -1
+	}
+} 
+country_event = {
+	id = aethylwar.17
+	title = aethylwar.17.t
+	desc = aethylwar.17.d
+	picture = ENLIGHTENMENT_eventPicture
+	hidden = yes
+	trigger = {
+		has_global_flag = 8047_occupied
+		8047 = {
+			controller = {
+				tag = E08
+			}
+		}
+		has_global_flag = aethylwex_war_start
+	}
+	immediate = {
+		clr_global_flag = 8047_occupied
+		change_variable = {
+			which = aethylweard_occupations
+			value = -1
+		}
+	}
+	option = {
+		name = aethylwar.17.a
+		add_splendor = -1
+	}
+} 

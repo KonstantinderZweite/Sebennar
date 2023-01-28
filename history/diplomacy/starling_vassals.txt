@@ -1,0 +1,108 @@
+#Aethelweald
+vassal = {
+	first = E08
+	second = E07
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E08
+	second = E07
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E08
+	second = E14
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E08
+	second = E12
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E08
+	second = E05
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E08
+	second = E03
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E08
+	second = E04
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+
+
+#Aethelweard
+vassal = {
+	first = E01
+	second = E
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E01
+	second = E
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E01
+	second = E10
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E01
+	second = E02
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E01
+	second = E09
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E01
+	second = E13
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E01
+	second = E11
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E01
+	second = E13
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = E01
+	second = E06
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+#Greyscale
+dependency = {
+	subject_type = "tributary_state"
+	first = E17
+	second = E15
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}

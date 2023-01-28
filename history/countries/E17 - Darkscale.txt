@@ -1,0 +1,21 @@
+
+setup_vision = yes
+government = tribal
+add_government_reform = settled_horde
+government_rank = 1
+primary_culture = greyscale_kobold
+religion = kobold_dragon_cult
+technology_group = tech_kobold
+
+capital = 8073
+
+1433.2.3 = {
+	monarch = {
+		name = "Zoss"
+		dynasty = ""
+		birth_date = 1420.4.3
+		adm = 3
+		dip = 1
+		mil = 5
+	}
+}

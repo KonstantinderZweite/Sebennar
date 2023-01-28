@@ -1,0 +1,633 @@
+##BranchStart 0
+aethylwex_mission_tree_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = E30
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	E30_sow_fields = {
+		icon = mission_dalmation_conquest
+		required_missions {
+			E30_aftermath_of_war
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_fortify_border = {
+		icon = mission_fixed_garrison_system
+		required_missions {
+			E30_rebuild_army E30_sow_fields
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_basic_manufactories = {
+		icon = mission_fixed_garrison_system
+		required_missions {
+			E30_bad_cottage
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_how_bad_can_i_be = {
+		icon = mission_fixed_garrison_system
+		required_missions {
+			E30_basic_manufactories
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+aethylwex_mission_tree_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = E30
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	E30_rebuild_army = {
+		icon = mission_glory_to_the_black_army
+		required_missions {
+			E30_aftermath_of_war
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_consolidate_north = {
+		icon = mission_electorate_of_brandenburg
+		required_missions {
+			E30_begin_consolidation
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_strike_north = {
+		icon = mission_rb_into_england
+		required_missions {
+			E30_fortify_border E30_consolidate_north
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_sending_relief = {
+		icon = mission_hands_praying
+		required_missions {
+			E30_aethylwex_unified E30_strike_north
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_end_dragonwake = {
+		icon = mission_rb_into_ireland
+		required_missions {
+			E30_sending_relief
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_bad_cottage = {
+		icon = mission_rb_colonise_canada
+		required_missions {
+			E30_home_secured
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_invest_in_countryside = {
+		icon = mission_rb_conquer_wales
+		required_missions {
+			E30_bad_cottage
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_develop_rural_industries = {
+		icon = mission_rb_import_potatoes
+		required_missions {
+			E30_invest_in_countryside
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+aethylwex_mission_tree_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = E30
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	E30_aftermath_of_war = {
+		icon = mission_centralize_france
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_begin_consolidation = {
+		icon = mission_centralize_france
+		required_missions {
+			E30_aftermath_of_war
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_consolidate_center = {
+		icon = mission_centralize_france
+		required_missions {
+			E30_begin_consolidation
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_aethylwex_unified = {
+		icon = mission_rb_ascendant
+		required_missions {
+			E30_consolidate_south E30_consolidate_north E30_consolidate_center
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_head_west = {
+		icon = mission_all_roads_lead_to_milan
+		required_missions {
+			E30_aethylwex_unified
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_home_secured = {
+		icon = mission_rb_rule_britannia_scottish_version
+		required_missions {
+			E30_end_gnomish_question E30_end_question E30_end_dragonwake
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_contemplate_colonialism = {
+		icon = mission_rb_scottish_the_darien_scheme
+		required_missions {
+			E30_bad_cottage
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_sail = {
+		icon = mission_rb_scottish_north_sea_trade
+		required_missions {
+			E30_contemplate_colonialism
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+aethylwex_mission_tree_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = E30
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	E30_consolidate_south = {
+		icon = mission_electorate_of_saxony
+		required_missions {
+			E30_begin_consolidation
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_city_of_commerce = {
+		icon = mission_rb_scottish_conquer_london
+		required_missions {
+			E30_consolidate_south
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_seat_of_power = {
+		icon = mission_rb_the_bank_of_scotland
+		required_missions {
+			E30_aethylwex_unified E30_city_of_commerce E30_city_of_arts
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_huntsmen_fate = {
+		icon = mission_rb_conquer_the_highlands
+		required_missions {
+			E30_head_west E30_seat_of_power
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_end_question = {
+		icon = mission_rb_rule_britannia_irish_version
+		required_missions {
+			E30_huntsmen_fate
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_military_readiness = {
+		icon = mission_rb_rein_in_the_highland_clans
+		required_missions {
+			E30_home_secured
+		}
+		position = 9
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_secret_secret_tunnel = {
+		icon = mission_rb_conquer_brittany
+		required_missions {
+			E30_military_readiness
+		}
+		position = 10
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_onto_mainland = {
+		icon = mission_rb_angevin_kingdom
+		required_missions {
+			E30_secret_secret_tunnel
+		}
+		position = 11
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+aethylwex_mission_tree_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = E30
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	E30_city_of_arts = {
+		icon = mission_rb_trinity_college_dublin
+		required_missions {
+			E30_consolidate_south
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_gnomish_relations = {
+		icon = mission_establish_oktoberfest
+		required_missions {
+			E30_seat_of_power
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##Mission Start
+	E30_end_gnomish_question = {
+		icon = mission_geneva_conventions
+		required_missions {
+			E30_gnomish_relations
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			##MISSIONEFFECT
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

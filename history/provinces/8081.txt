@@ -1,0 +1,12 @@
+owner = E18
+controller = E18
+add_core = E18
+culture = sea_troll
+religion = mountain_watcher
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = wool
+capital = ""
+is_city = yes

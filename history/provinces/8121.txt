@@ -1,0 +1,12 @@
+owner = E19
+controller = E19
+add_core = E19
+culture = wood_elf
+religion = fey_court
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = 
+capital = ""
+is_city = yes

@@ -1,0 +1,12 @@
+owner = E12
+controller = E12
+add_core = E12
+culture = middle_aethyl
+religion = regent_court
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = fur
+capital = "Hildasburg"
+is_city = yes

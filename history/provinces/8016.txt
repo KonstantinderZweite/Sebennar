@@ -1,0 +1,12 @@
+owner = E05
+controller = E05
+add_core = E05
+culture = west_aethyl
+religion = regent_court
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 3
+trade_goods = naval_supplies
+capital = "Wulfricslund"
+is_city = yes

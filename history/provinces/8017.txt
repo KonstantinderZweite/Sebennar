@@ -1,0 +1,12 @@
+owner = E05
+controller = E05
+add_core = E05
+culture = west_aethyl
+religion = regent_court
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = salt
+capital = "Wynnstan"
+is_city = yes
