@@ -5,6 +5,100 @@
 
 
 ### Nation specific idea groups
+Aethyl Ideas
+E01_ideas = {
+	start = {
+	army_tradition_from_battle = 1.5
+	loot_amount = 0.33
+	available_province_loot = 0.5
+	}
+
+	bonus = {
+		infantry_power = 0.1
+	}
+
+	trigger = {
+		OR = {
+			tag = E01
+			tag = E08
+		}
+	}
+	free = yes
+
+	E08_1 = {
+		can_fabricate_for_vassals = yes
+	}
+	E08_2 = {
+		diplomatic_annexation_cost = -0.33
+	}
+	E08_3 = {
+		movement_speed = 0.1
+	}
+	E08_4 = {
+		diplomats = 1
+	}
+	E08_5 = {
+		infantry_fire = 0.25
+	}
+	E08_6 = {
+		global_unrest = -1
+	}
+	E08_7 = {
+		free_dip_policy = 1
+	}
+}
+#Generic Aethyl Vassals
+E08_ideas = {
+	start = {
+	land_forcelimit = 4
+	global_tax_income = 18
+	}
+
+	bonus = {
+		shock_damage = 0.1
+	}
+
+	trigger = {
+		OR = {
+			tag = E02
+			tag = E03
+			tag = E04
+			tag = E05
+			tag = E06
+			tag = E07
+			tag = E09
+			tag = E10
+			tag = E11
+			tag = E12
+			tag = E13
+			tag = E14
+			tag = E15
+		}
+	}
+	free = yes
+
+	E02_1 = {
+		development_cost = -0.2
+	}
+	E02_2 = {
+		global_trade_goods_size_modifier =  0.1
+	}
+	E02_3 = {
+		can_chain_claim = yes
+	}
+	E02_4 = {
+		technology_cost = -0.05
+	}
+	E02_5 = {
+		manpower_in_own_culture_provinces = 0.1
+	}
+	E02_6 = {
+		global_unrest = -1
+	}
+	E02_7 = {
+		discipline = 0.025
+	}
+}
 
 #Lorent ideas
 A01_ideas = {
