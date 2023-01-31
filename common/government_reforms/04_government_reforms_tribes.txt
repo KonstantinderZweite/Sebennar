@@ -287,7 +287,7 @@ greentide_horde = {
 	start_territory_to_estates = 0.5
 	
 	maintain_dynasty = yes
-	native_mechanic = yes
+	native_mechanic = no
 	allow_migration = yes
 
 	conditional = {
@@ -988,8 +988,7 @@ solidarity_in_the_clan = {
 		NOT = { culture_group = goblin }
 	}
 	modifiers = {
-		tribal_development_growth = 0.02
-		settle_cost = -0.2
+		development_cost = -0.05
 	}
 	ai = {
 		factor = 2

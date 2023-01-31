@@ -564,19 +564,19 @@ kobold_military = {
 	
 	fire_damage = 0.1						#1 A / crazy guns
 	artillery_power = 0.1				#1 A / crazy experimental machines
-	land_forcelimit_modifier = 0.2		#1 A / big lad
+	land_forcelimit_modifier = 0.25		#1 A / big lad
 	special_unit_forcelimit = 0.05 #artificers
 	
 	#0.3 + 1.5 + 1 + 1 + 1 + 1 = 5.8
 	
 	#Negatives
 	land_morale = -0.05					#-0.5 A / 
-	fire_damage_received = 0.1			#1 B / self-inflicted from experiments
+	fire_damage_received = 0.05		#1 B / self-inflicted from experiments
 	
 	#Short people set
 	galley_power = -0.2					#-2 D / you need long legs for galleys... and, well..
 	cavalry_power = -0.2					#-2 B / standard small person cav malus
-	shock_damage_received = 0.1			#-1 C / 
+	shock_damage_received = 0.05			#-1 C / 
 	
 	#1 + 0.75 + 0.8 + 1.5 + 0.5 = 5.06
 	
@@ -734,13 +734,13 @@ troll_military = {			#MAYBE MAKE THIS: military and conquest - how they treat th
 	#0.75 + 1 + 1 = 3.25
 	
 	#Negatives
-	mil_tech_cost_modifier = 0.1			#-1 B / trolls dont see need to innovate as they are invulnerable
+				#-1 B / trolls dont see need to innovate as they are invulnerable
 	
 	#Negatives - Giantkind
 	ship_durability = -0.1					#-1 A / big guy malus
 	land_maintenance_modifier = 0.1			#-1 A / 
 	naval_maintenance_modifier = 0.2		#-2 B / its hard to maintain and repair navy when youre a big guy
-	manpower_recovery_speed = -0.15			#-1 B / they do not have a high population
+			#-1 B / they do not have a high population
 	
 	global_regiment_recruit_speed = 1.0 	#-3 E / it takes longer to arm big guys
 	
@@ -933,10 +933,11 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	mercenary_manpower = -0.25
 	land_forcelimit_modifier = 1.5 #4 S
 	land_attrition = -0.75	#3.3 D
+	discipline = -0.10
 	
 	manpower_recovery_speed = 0.1 #10 A
 	sailors_recovery_speed = 0.5 #Lol I'm not counting this
-	reinforce_speed = 1 #0.66 B
+	reinforce_speed = 0.75 #0.66 B
 	reinforce_cost_modifier = -0.5 #2 B
 	
 	#5 + 0.6 + 4 + 3.3  + 10 + 0.66 + 2 - 7.5 - 0.5 = 17.56
@@ -961,10 +962,10 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	
 	reserves_organisation = 4 		# 4 D Unbreakable
 	# morale_damage_received = -0.9 # 4 A Unbreakable
-	shock_damage_received = 0.3
-	shock_damage = -0.3
-	fire_damage = -0.3
-	fire_damage_received = 0.3
+	shock_damage_received = 0.5
+	shock_damage = -0.5
+	fire_damage = -0.5
+	fire_damage_received = 0.5
 	
 	war_exhaustion = -0.02	#negates attrition war exhaustion
 	

@@ -319,7 +319,7 @@ country_event = {
 	}
 }
 
-Deactivated Great Conqueror
+#Deactivated Great Conqueror
 country_event = {
 	id = great_conqueror.1
 	title = great_conqueror.1.t
@@ -334,7 +334,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	No GC
+	#No GC
 	option = {
 		name = great_conqueror.1.a
 		ai_chance = {  factor = 100 }
@@ -345,8 +345,8 @@ country_event = {
 	option = {
 		name = great_conqueror.1.b
 		ai_chance = {  factor = 0 }
-		add_prestige = 1
-		custom_tooltip = great_conqueror_tooltip
+		ai_chance = {  factor = 100 }
+		hidden_effect = { set_global_flag = no_great_conqueror }
 	}
 	
 	#Oh boi
@@ -354,7 +354,8 @@ country_event = {
 		name = great_conqueror.1.c
 		ai_chance = {  factor = 0 }
 		add_splendor = 10
-		hidden_effect = { set_global_flag = mythical_conqueror }
-		custom_tooltip = mythical_conqueror_tooltip
+		ai_chance = {  factor = 100 }
+		hidden_effect = { set_global_flag = no_great_conqueror }
+	
 	}
 }
