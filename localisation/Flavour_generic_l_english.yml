@@ -54,6 +54,17 @@
  renovated_capital_2:0 "Grand Capital"
  permanent_peasant_levies:0 "Permanent Levies"
  manufactoring_center:0 "Manufactoring Center"
+ money_g:0 "Money Focus"
+ advisors_g:0 "Advisors Focus"
+ progress_g:0 "Progress Focus"
+ construction_g:0 "Construction Focus"
+ mana_g:0 "Mana Focus"
+ population_surge_g:0 "Population Surge"
+ efficient_taxation:0 "Efficient Taxation"
+ influential_diplomacy_g:0 "Influential Diplomacy"
+ powerful_diplomacy_g:0 "Powerful Diplomacy"
+ colonial_policy_g:0 "Colonial Policy"
+ colonial_expansion_g:0 "Colonial Expansion"
  
  flavor_generic.1.t:0 "Military Direction"
  flavor_generic.1.d:0 "How do we want to moderize our great army." 
@@ -67,6 +78,22 @@
  flavor_generic.2.d:0 "We have started the process of establishing our academy for military thinkers. Do we focus our efforts on the brightest student, or focus on everyone?" 
  flavor_generic.2.a:0 "Generic the Everyman"
  flavor_generic.2.b:0 "General Battle Studies"
+ 
+ flavor_generic.3.t:0 "Economic Expansion 1"
+ flavor_generic.3.d:0 "We have begun investing into our own manufactoring capabilities, our goods shall be known throughout Halann." 
+ flavor_generic.3.a:0 "New manufactoring center"
+ 
+ flavor_generic.4.t:0 "Economic Expansion 2"
+ flavor_generic.4.d:0 "We have begun investing into our own manufactoring capabilities, our goods shall be known throughout Halann." 
+ flavor_generic.4.a:0 "New manufactoring center"
+ 
+ flavor_generic.5.t:0 "Economic Direction"
+ flavor_generic.5.d:0 "How do we want to moderize our economy for the industrial future." 
+ flavor_generic.5.a:0 "MORE MONEY"
+ flavor_generic.5.b:0 "Cheaper Advisors"
+ flavor_generic.5.c:0 "Idea and Technology"
+ flavor_generic.5.e:0 "Construction Cost"
+ flavor_generic.5.f:0 "Flat mana"
  
  
 

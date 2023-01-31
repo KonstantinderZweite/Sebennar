@@ -63,6 +63,8 @@
  steel_legions:0 "Steel Legions"
  rubydwarf_charm:0 "Ruby Dwarf Charm"
  ancestor_worhsip_reinforced:0 "Ancestor Worship Reinforced"
+ road_developement:0 "Road Developement"
+ ruby_mine:0 "Ruby Mine"
  
  A20_traditions_effects_tt:0 "\nIf §Y[Root.GetName]§! chooses the §YTraditions Path§!, the following effects will occur:"
  A20_faith_effects_tt:0 "\nIf §Y[Root.GetName]§! chooses the §Faith Path§!, the following effects will occur:"
