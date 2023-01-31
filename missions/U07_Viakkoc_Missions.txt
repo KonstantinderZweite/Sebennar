@@ -124,9 +124,10 @@
 				}
 			}
 		trigger = {
+			adm_tech = 8
 			religious_unity = 0.8
 					num_of_owned_provinces_with = {
-					value = 45
+					value = 55
 					}
 				high_tolerance_human_race_trigger = yes
 		}
