@@ -1,0 +1,96 @@
+namespace = flavor_generic
+country_event = { #Military Direction
+	id = flavor_generic.1
+	title = flavor_generic.1.t
+	desc = flavor_generic.1.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		#mission
+
+	}
+	
+	option = { #morale
+			name = "flavor_generic.1.a" 
+			add_mil_power = 100
+			add_country_modifier = {
+				name = morale_g
+				duration = -1
+			}
+			
+	}
+	option = { #shock
+			name = "flavor_generic.1.b"
+			add_mil_power = 100
+			add_country_modifier = {
+				name = shock_g
+				duration = -1
+			}
+			
+	}
+	option = { #fire
+			name = "flavor_generic.1.c"
+			add_mil_power = 100
+			add_country_modifier = {
+				name = fire_g
+				duration = -1
+			}
+			
+	}
+	option = { #infantry
+			name = "flavor_generic.1.e"
+			add_mil_power = 100
+			add_country_modifier = {
+				name = infantry_g
+				duration = -1
+			}
+			
+	}
+	option = { #quantity
+			name = "flavor_generic.1.f"
+			add_mil_power = 100
+			add_country_modifier = {
+				name = quantity_g
+				duration = -1
+			}
+			
+	}
+}
+
+country_event = { #General Academy
+	id = flavor_generic.2
+	title = flavor_generic.2.t
+	desc = flavor_generic.2.d
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		#mission
+
+	}
+	
+	option = { #stock general
+			name = "flavor_generic.2.a" 
+			define_general = {
+				name = "Generic the Everyman"
+				fire = 4
+				shock = 4
+				manuever = 2
+				siege = 2
+			}
+			
+	}
+	option = { #shock
+			name = "flavor_generic.2.b"
+			add_country_modifier = {
+				name = general_buff
+				duration = 10950
+			}
+			
+	}
+}
