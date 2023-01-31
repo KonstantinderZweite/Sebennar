@@ -23,11 +23,11 @@ a_community_we_enter = {
 }
 
 capital_hold_renovations = {
-	local_development_cost = -0.3
+	local_development_cost = -0.2
 }
 
 rubyhold_government_buildings = {
-	idea_cost = -0.025
+	defensiveness = 0.2
 	governing_capacity_modifier = 0.1
 }
 
@@ -56,7 +56,7 @@ hafling_relocation = {
 }
 
  hafling_work_camps = {
-	trade_goods_size = 0.75
+	trade_goods_size = 0.5
 	local_development_cost = -0.1
 	province_trade_power_modifier = 0.25
 }
@@ -67,7 +67,7 @@ human_relocation = {
 }
 
 lorentish_plantations = {
-	trade_goods_size = 0.75
+	trade_goods_size = 0.5
 	local_development_cost = -0.1
 	local_manpower_modifier = 0.25
 }
@@ -138,6 +138,15 @@ rubydwarf_charm = {
 ancestor_worhsip_reinforced = {
 	land_morale = 0.05
 	defensiveness = 0.10
+}
+
+road_developement = {
+	local_development_cost = -0.15
+}
+
+ruby_mine = {
+	local_development_cost = -0.50
+	trade_goods_size = 0.5
 }
 
 #Viakkoc
@@ -228,7 +237,7 @@ southern_colonies = {
 }
 
 salt_flats = {
-	trade_goods_size = 1.0
+	trade_goods_size = 2.0
 }
 
 khet_administration = {
@@ -279,6 +288,29 @@ gnoll_homeland = {
 	same_culture_advisor_cost = -0.20
 }
 
+#Busilar
+
+a29_copper_mines = {
+	trade_goods_size_modifier = 0.10
+	trade_goods_size = 0.5
+}
+
+a29_khenak_fortifications = {
+	local_defensiveness = 0.35
+	local_garrison_size = 0.2
+}
+
+a29_modern_busilari_arsenal = {
+	naval_forcelimit = 10
+	backrow_artillery_damage = 0.05
+	sailors_recovery_speed = 0.1
+}
+
+a29_busilari_security_concerns = {
+	country_military_power = 1
+	infantry_power = 0.10
+}
+
 #Generic
 
 war_of_last_resort = {
@@ -306,7 +338,7 @@ infantry_g = {
 quantity_g = {
 	global_manpower_modifier = 0.10
 	land_forcelimit_modifier = 0.10
-	global_manpower_modifier = 0.05
+	manpower_recovery_speed = 0.05
 }
 
 reformed_army = {
@@ -354,3 +386,55 @@ efficient_taxation = {
 manufactoring_center = {
 	trade_goods_size = 1.0
 }
+
+money_g = {
+	global_tax_modifier = 0.1
+	production_efficiency = 0.1
+	trade_efficiency = 0.1
+}
+
+advisors_g = {
+	advisor_cost = -0.20
+	advisor_pool = 1
+}
+
+progress_g = {
+	technology_cost = -0.025
+	idea_cost = -0.05
+}
+
+construction_g = {
+	build_cost = -0.10
+}
+
+mana_g = {
+	monarch_military_power = 1
+}
+
+population_surge_g = {
+	development_cost = -0.05
+}
+
+influential_diplomacy_g = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.2
+	ae_impact = -0.2
+	diplomats = 1
+}
+
+powerful_diplomacy_g = {
+	diplomatic_reputation = 1
+	diplomatic_annexation_cost = -0.2
+	vassal_forcelimit_bonus = 1
+	vassal_income = 0.20
+}
+
+colonial_policy_g = {
+	colonists = 1
+}
+
+colonial_expansion_g = {
+	global_colonial_growth = 40
+	trade_steering = 0.1
+}
+
