@@ -356,30 +356,6 @@ Rubyhold_2 = {
 				name = dwarven_industrial_boom
 				duration = 9125 
 			}
-			8001 = {
-			add_province_modifier = {
-					name = road_developement
-					duration = 9125
-				}
-			}
-			8002 = {
-			add_province_modifier = {
-					name = road_developement
-					duration = 9125
-				}
-			}
-			8009 = {
-			add_province_modifier = {
-					name = road_developement
-					duration = 9125
-				}
-			}
-			8006 = {
-			add_province_modifier = {
-					name = ruby_mine
-					duration = -1
-				}
-			}
 		}
 	}
 	##Mission End
