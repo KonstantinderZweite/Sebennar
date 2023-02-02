@@ -10,7 +10,7 @@ busilar_1 = {
 	}
 	
 	A29_secure_highlands = {
-		icon = mission_unknown_mission
+		icon = mission_great_wall
 		position = 1
 		
 		provinces_to_highlight = {
@@ -202,6 +202,18 @@ busilar_1 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			411 = {
+			add_province_modifier = {
+					name = a29_highcliff_fisheries
+					duration = -1
+				}
+			}
+			413 = {
+			add_province_modifier = {
+					name = a29_highcliff_fisheries
+					duration = -1
+				}
+			}
 		}
 	}
 }
@@ -310,6 +322,10 @@ busilar_2 = {
 					duration = -1
 				}
 			}
+			add_country_modifier = {
+                    name = a29_northern_lion
+                    duration = -1
+                }
 		}
 	}
 }
@@ -560,6 +576,10 @@ busilar_3 = {
 		}
 		
 		effect = {
+			add_country_modifier = {
+                    name = a29_eastern_lion
+                    duration = -1
+                }
 			516 = {
 				center_of_trade = 1
 				add_province_modifier = {
@@ -870,6 +890,10 @@ busilar_4 = {
 		}
 		
 		effect = {
+			add_country_modifier = {
+                    name = a29_southern_lion
+                    duration = -1
+                }
 			382 = {
 				add_province_modifier = {
 					name = busilar_busilari_stone_lion
@@ -1058,6 +1082,280 @@ busilar_5 = {
 	
 	potential = {
 		tag = A29
+	}
+	
+	A29_northern_diplomacy = {
+		icon = mission_alliances
+		
+		position = 2
+		
+		required_missions = {
+			A29_stabilize_the_country
+		}
+		
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			num_of_allies = 2
+			calc_true_if = {
+				all_ally = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				amount = 2
+			}
+		}
+		
+		effect = {
+			define_advisor = {
+			
+				type = statesman
+				skill = 2
+				cost_multiplier = 0.33
+				culture = busilari
+				name = "Lenard Dauphine"
+			}
+		}
+	}
+	
+	A29_imperial_entrance = {
+		icon = mission_dancing_with_dead
+		
+		position = 3
+		
+		required_missions = {
+			A29_northern_diplomacy
+		}
+		
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			prestige = 25
+			emperor = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+		}
+		
+		effect = {
+			emperor = {
+				country_event = { id = flavor_busilar.1 } 
+				
+			}
+		}
+	}
+	
+	A29_verne_question = {
+		icon = mission_unknown_mission
+		
+		position = 4
+		
+		required_missions = {
+			A29_imperial_entrance
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 292
+			}
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+			}
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = A29_acceptance_triggers_tt
+					always = no
+				}
+				AND = {
+					army_size = 40
+					OR = {
+					NOT = { exists = A33 }
+					A40 = { 
+						has_spy_network_from = {
+							who = ROOT
+							value = 30
+					}
+				}
+			}
+					custom_trigger_tooltip = {
+						tooltip = A29_acceptance_path_tooltip
+						has_country_flag = A29_acceptance_path
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = A29_rejection_triggers_tt
+					always = no
+				}
+				AND = {
+					army_size = 40
+					OR = {
+					NOT = { exists = A33 }
+					A40 = { 
+						has_spy_network_from = {
+							who = ROOT
+							value = 30
+					}
+				}
+			}
+					custom_trigger_tooltip = {
+						tooltip = A29_rejection_path_tooltip
+						has_country_flag = A29_rejection_path
+					}
+				}
+			}
+		}
+	
+	effect = {
+			if = {
+                limit = { has_country_flag = A29_acceptance_path }
+               add_casus_belli = {
+					target = A33
+					type = cb_vassalize_mission
+					months = 360
+				}
+            }
+            
+            else = {
+                custom_tooltip = A29_rejection_effects_tt
+                verne_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			menibor_loop_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			wyvernmark_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_core = ROOT
+			}
+            }
+		}
+	}
+	
+	a29_verne_integration = {
+		icon = mission_unknown_mission
+		
+		position = 5
+		
+		required_missions = {
+			A29_verne_question
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = verne_area
+				area = wyvernmark_area
+				area = menibor_loop_area
+			}
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+			}
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = A29_acceptance_triggers_tt
+					always = no
+				}
+				AND = {
+				dip_power = 200
+				A33 = {
+				OR = {
+					AND = {
+						is_subject_of = ROOT
+						NOT = { liberty_desire = 35 }
+						NOT = { total_development = 250 }
+					}
+					NOT = { exists = yes }
+				}
+			}
+					custom_trigger_tooltip = {
+						tooltip = A29_acceptance_path_tooltip
+						has_country_flag = A29_acceptance_path
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = A29_rejection_triggers_tt
+					always = no
+				}
+				AND = {
+				adm_power = 200
+					verne_area = {
+				type = all
+				owned_by = ROOT
+					}
+					wyvernmark_area = {
+				type = all
+				owned_by = ROOT
+					}
+					menibor_loop_area = {
+				type = all
+				owned_by = ROOT
+					}
+					custom_trigger_tooltip = {
+						tooltip = A29_rejection_path_tooltip
+						has_country_flag = A29_rejection_path
+					}
+				}
+			}
+		}
+	
+	effect = {
+			if = {
+                limit = { has_country_flag = A29_acceptance_path }
+               add_dip_power = -200
+			   add_country_modifier = {
+				name = a29_verne_crown
+				duration = -1
+			}
+			   custom_tooltip = rubyhold_inherit_tt
+			hidden_effect = {
+				if = {
+					limit = { A33 = { is_subject_of = ROOT } }
+					inherit = A33
+					}
+				}
+			
+            }
+            
+            else = {
+                custom_tooltip = A29_rejection_effects_tt
+				 add_adm_power = -200
+				 add_country_modifier = {
+				name = a29_verne_crown
+				duration = -1
+				}
+				country_event = { id = flavor_busilar.4 } 
+            }
+		}
 	}
 	
 	A29_wander_to_aelantir = {
