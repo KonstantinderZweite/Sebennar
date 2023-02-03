@@ -33,6 +33,30 @@ plains_delete = {
 		nuzurbokh_region = {
 			cede_province = XXX
 		}
+		haraf_region = {
+			cede_province = XXX
+		}
+		reapers_coast_region = {
+			cede_province = XXX
+		}
+		trollsbay_region = {
+			cede_province = XXX
+		}
+		bloodgroves_region = {
+			cede_province = XXX
+		}
+		amadia_region = {
+			cede_province = XXX
+		}
+		leechdens_region = {
+			cede_province = XXX
+		}
+		southern_isles_region = {
+			cede_province = XXX
+		}
+		northern_isles_region = {
+			cede_province = XXX
+		}
 		set_global_flag = fp_deleted
 		}
 		}

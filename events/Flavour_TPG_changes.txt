@@ -1,0 +1,208 @@
+###Busilar
+
+namespace = flavor_TPG
+namespace = flavor_rubyhold
+
+#Will Busilar be able to join the empire
+country_event = {
+	id = flavor_busilar.1
+	title = flavor_busilar.1.t
+	desc = flavor_busilar.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		#mission
+
+	}
+	
+	#Let Busilar in
+	option = {
+		name = flavor_busilar.1.a
+		
+
+		add_prestige = 25
+		add_dip_power = 50
+		
+		ai_chance = { factor = 5 } 
+		A29 = { 
+			country_event = { id = flavor_busilar.3 } 
+			set_in_empire = yes 
+		}
+	}
+	
+	#Reject the stone Lion
+	option = {
+		name = flavor_busilar.1.b
+		
+		add_prestige = -25
+		add_dip_power = -50
+		
+		A29 = {
+				country_event = { id = flavor_busilar.2 } 
+			}
+		
+		ai_chance = { factor = 5 } 
+	}
+
+}
+
+#Busilar stands alone
+country_event = {
+	id = flavor_busilar.2
+	title = flavor_busilar.2.t
+	desc = flavor_busilar.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		#mission
+
+	}
+	
+	option = {
+		name = flavor_busilar.2.a
+		custom_tooltip =  A29_rejection_tooltip
+		add_mil_power = 100
+		add_country_modifier = {
+				name = a29_surrounded
+				duration = 7300
+			}
+			
+			hidden_effect = { 
+			set_country_flag =  A29_rejection_path
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+#Busilar stands united
+country_event = {
+	id = flavor_busilar.3
+	title = flavor_busilar.3.t
+	desc = flavor_busilar.3.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		#mission
+
+	}
+	
+	option = {
+		name = flavor_busilar.3.a
+		custom_tooltip = A29_acceptance_tooltip
+		add_dip_power = 100
+		add_prestige = 25
+		
+		hidden_effect = { 
+			set_country_flag = A29_acceptance_path
+			swap_non_generic_missions = yes
+		}
+	}
+}
+
+#Busilar stands united
+country_event = {
+	id = flavor_busilar.4
+	title = flavor_busilar.4.t
+	desc = flavor_busilar.4.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		#mission
+
+	}
+	
+	option = {
+		name = flavor_busilar.4.a
+			290 = {
+				change_religion = ROOT
+				change_culture = busilari
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			291 = {
+				change_religion = ROOT
+				change_culture = busilari
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			838 = {
+				change_religion = ROOT
+				change_culture = busilari
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			288 = { 
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			289 = { 
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			292 = { 
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			293 = { 
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			283 = { 
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			286 = { 
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			285 = { 
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			331 = { 
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+			561 = { 
+				add_province_modifier = {
+					name = vernish_integration
+					duration = -1
+				}
+			}
+		
+	}
+}

@@ -573,7 +573,7 @@ scorched_earth = {
 ##########################################################################
 
 base_values = {
-	max_absolutism = 65
+	max_absolutism = 115
 	merchants = 2							#Start with 2 merchants
 	diplomats = 2							#Start with 2 diplomats..
 	missionaries = 1						#1 missionary
@@ -607,6 +607,7 @@ base_values = {
 	#Anbennar
 	hob_lion_command_influence = 0.1
 	yearly_patriarch_authority = -0.005
+	can_fabricate_for_vassals = yes
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
