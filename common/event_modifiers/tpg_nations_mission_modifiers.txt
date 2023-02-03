@@ -389,12 +389,12 @@ general_buff = {
 }
 
 renovated_capital = {
-	local_development_cost = -0.25
+	local_development_cost = -0.15
 	local_tax_modifier = 0.33
 }
 
 renovated_capital_2 = {
-	local_development_cost = -0.50
+	local_development_cost = -0.30
 	local_tax_modifier = 0.50
 	trade_goods_size = 0.75
 	local_manpower_modifier = 0.3

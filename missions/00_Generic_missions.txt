@@ -12,7 +12,7 @@
 	
 	##Mission Start
 	last_war = {
-		icon = mission_unknown_mission
+		icon = mission_landsknecht_soldier
 		required_missions {
 			
 		}
@@ -33,7 +33,7 @@
 	##Mission End
 	##Mission Start
 	grand_ambition = {
-		icon = mission_unknown_mission
+		icon = mission_arabian_fort
 		required_missions {
 			increased_levies
 		}
@@ -62,7 +62,7 @@
 	##Mission End
 	##Mission Start
 	imperial_dreams = {
-		icon = mission_unknown_mission
+		icon = mission_unite_home_region
 		required_missions {
 			grand_ambition
 		}
@@ -71,15 +71,14 @@
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			grown_by_states = 10
+			grown_by_states = 15
 			treasury = 500
 		}
 		effect = {
 			treasury = -500
 			add_prestige = 25
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				set_government_rank = 2
 			}
 			else = {
 				add_splendor = 200
@@ -90,9 +89,10 @@
 	##Mission End
 	##Mission Start
 	reformed_army = {
-		icon = mission_unknown_mission
+		icon = mission_pf_soldier
 		required_missions {
 			imperial_dreams
+			general_staff
 		}
 		position = 4
 		provinces_to_highlight = {
@@ -125,7 +125,7 @@
 	
 	##Mission Start
 	increased_levies = {
-		icon = mission_unknown_mission
+		icon = mission_accomodate_the_rajputs
 		required_missions {
 			
 		}
@@ -147,7 +147,7 @@
 	##Mission End
 	##Mission Start
 	permanent_levies = {
-		icon = mission_unknown_mission
+		icon = mission_integrate_the_purbias
 		required_missions {
 			increased_levies
 		}
@@ -156,7 +156,7 @@
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			army_size = 30
+			army_size = 40
 			num_of_generals = 1
 		}
 		effect = {
@@ -169,7 +169,7 @@
 	##Mission End
 	##Mission Start
 	general_staff = {
-		icon = mission_unknown_mission
+		icon = mission_deccanis
 		required_missions {
 			permanent_levies
 		}
@@ -189,9 +189,10 @@
 	##Mission End
 	##Mission Start
 	hegamonic_reality = {
-		icon = mission_unknown_mission
+		icon = avoid_fragmentation
 		required_missions {
 			general_staff
+			grand_capital
 		}
 		position = 4
 		provinces_to_highlight = {
@@ -214,7 +215,7 @@
 	##Mission End
 	##Mission Start
 	new_home = {
-		icon = mission_unknown_mission
+		icon = brest_dockyards
 		required_missions {
 		
 		}
@@ -223,16 +224,23 @@
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			treasury = 500
+			dip_power = 100
+			dip_tech = 5
 		}
 		effect = {
-			##MISSIONEFFECT
+			treasury = -500
+			add_dip_power = -100
+			add_country_modifier = {
+				name = colonial_policy_g
+				duration = 27375
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
 	frontier_colonization = {
-		icon = mission_unknown_mission
+		icon = mission_rb_import_potatoes
 		required_missions {
 			new_home
 		}
@@ -241,10 +249,18 @@
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			dip_tech = 7
+			OR = {
+				exploration_ideas = 3
+				
+				expansion_ideas = 3
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = colonial_expansion_g
+				duration = 9125
+			}
 		}
 	}
 	##Mission End
@@ -262,7 +278,7 @@
 	
 	##Mission Start
 	develop_capital = {
-		icon = mission_unknown_mission
+		icon = mission_hanseatic_city
 		required_missions {
 			
 		}
@@ -285,7 +301,7 @@
 	##Mission End
 	##Mission Start
 	new_institutions = {
-		icon = mission_unknown_mission
+		icon = interest_of_holland
 		required_missions {
 			develop_capital
 		}
@@ -301,14 +317,14 @@
 		effect = {
 			add_country_modifier = {
 				name = new_scholars
-				duration = 9125
+				duration = -1
 			}
 		}
 	}
 	##Mission End
 	##Mission Start
 	grand_capital = {
-		icon = mission_unknown_mission
+		icon = develop_provence
 		required_missions {
 			new_institutions
 		}
@@ -350,7 +366,7 @@
 	
 	##Mission Start
 	expand_economy = {
-		icon = mission_unknown_mission
+		icon = mission_high_income
 		required_missions {
 			
 		}
@@ -371,7 +387,7 @@
 	##Mission End
 	##Mission Start
 	building_spree = {
-		icon = mission_unknown_mission
+		icon = mission_early_game_buildings
 		required_missions {
 			expand_economy
 		}
@@ -396,7 +412,7 @@
 	##Mission End
 	##Mission Start
 	economic_developement = {
-		icon = mission_unknown_mission
+		icon = mission_have_manufactories
 		required_missions {
 			building_spree
 		}
@@ -423,53 +439,39 @@
 					}
 				}
 			}
-			home_trade_node_effect_scope = {
-				random_trade_node_member_province = {
-						limit = {
-							owned_by = ROOT
-							}
-					add_province_modifier = {
-						name = manufactoring_center
-						duration = -1
-					}
-				}
-			}
-			home_trade_node_effect_scope = {
-				random_trade_node_member_province = {
-						limit = {
-							owned_by = ROOT
-							}
-					add_province_modifier = {
-						name = manufactoring_center
-						duration = -1
-					}
-				}
-			}
+			country_event = { id = flavor_generic.3 }
+			country_event = { id = flavor_generic.4 }
 		}
 	}
 	##Mission End
 	##Mission Start
 	monetary_policy = {
-		icon = mission_unknown_mission
+		icon = mission_rb_build_furnaces
 		required_missions {
 			economic_developement
+			grand_capital
 		}
 		position = 4
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			share_of_starting_income = 6
+			adm_tech = 8
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = population_surge_g
+				duration = -1
+			}
+			country_event = { id = flavor_generic.5 }
 		}
 	}
 	##Mission End
 	##
 	##Mission Start
 	found_friends_a = {
-		icon = mission_unknown_mission
+		icon = mission_alliances
 		required_missions {
 			
 		}
@@ -478,30 +480,49 @@
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			custom_trigger_tooltip = {
+				tooltip = building_alliances.tooltip
+				num_of_allies = 2
+				calc_true_if = {
+					all_ally = {
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+					}
+					amount = 2
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_dip_power = 50
+			add_country_modifier = {
+				name = influential_diplomacy_g
+				duration = 10950
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
 	forced_friends = {
-		icon = mission_unknown_mission
+		icon = mission_have_two_subjects
 		required_missions {
-			found_friends
+			found_friends_a
 		}
 		position = 6
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
-		}
+			num_of_non_tributary_subjects = 2 
+			}
 		effect = {
-			##MISSIONEFFECT
+			add_dip_power = 50
+			add_country_modifier = {
+				name = powerful_diplomacy_g
+				duration = 10950
+			}
 		}
-	}
 	##Mission End
 }
 ##BranchEnd 3
