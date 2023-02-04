@@ -57,7 +57,7 @@ atlantis = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			administrative_efficiency = 0.02
+			administrative_efficiency = 0.01
 			naval_forcelimit_modifier = 0.05
 		}
 		on_upgraded = {
