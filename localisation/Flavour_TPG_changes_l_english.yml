@@ -48,3 +48,14 @@
  flavor_busilar.4.t:0 "Vernish Integration"
  flavor_busilar.4.d:0 "With all Verne now submitting to the kings of Busilar, it is time to restructure the administration of the new territory to make sure it follows the commands of Hapaine."
  flavor_busilar.4.a:0 "Bind them"
+ 
+ 
+ #Verne
+ A33_fill_title:0 "Verne Fill"
+ A33_fill_desc:0 "Need a mission here in order for Verne not to get a portion of the new generic mission tree."
+ 
+ #Command
+ R62_fill_title:0 "Command Fill"
+ R62_fill_desc:0 "Need a mission here in order for Verne not to get a portion of the new generic mission tree."
+ R62_fill_1_title:0 "Command Fill"
+ R62_fill_1_desc:0 "Need a mission here in order for Verne not to get a portion of the new generic mission tree."
