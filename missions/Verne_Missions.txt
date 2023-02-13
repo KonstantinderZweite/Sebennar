@@ -849,11 +849,11 @@ A33_fill_missions_slot = {
 		}
 		
 		trigger = {
-			dip_power = 50
+			dip_power = 1
 		}
 		
 		effect = {
-			add_dip_power = 50
+			add_dip_power = 1
 		}
 	}
 }

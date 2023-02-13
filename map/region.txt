@@ -668,65 +668,6 @@ isles_of_lament_region = {
 	}
 }
 
-aethylwex_region = {
-	areas = {
-		saewine_area
-		glaedwine_area
-		heard_area
-		ealdhelm_area
-		eadburg_area
-		dunstan_area
-		deorwine_area
-		cyneweard_area
-		cynemaer_area
-		cerdiclund_area
-		cyneric_area
-		swithin_area
-		waermundland_area
-		wilburh_area
-		wynnflaed_area
-		hinterlands_area
-		olcodd_area
-	}
-}
-wildlands_region = {
-	areas = {
-	draya_area
-	salla_dywya_area
-	salla_loen_area
-	pellamath_area
-	salla_cliryo_area
-	difaeth_area
-	awyur_area
-	dayr_area
-	aeryn_aera
-	builth_area
-	iarllaeth_caer_area
-	gwynedd_area
-	}
-}
-
-frozen_north_region = {
-	areas = {
-	styn_area
-	esktra_area
-	veioog_area
-	augrimyr_area
-	zixip_area
-	igarza_area
-	nuoarbex_area
-	onuxzex_area
-	}
-}
-tuhki_hrom_region = {
-	areas = {
-	tuhki_hrom_area
-	sunka_area
-	zemna_area
-	jazho_area
-	liezmo_area
-	}
-}
 lencenor_region = {
 	areas = {
 		venail_area
@@ -737,6 +678,7 @@ lencenor_region = {
 		shrouded_coast_area
 		ionnidar_area
 		redglades_area
+		ruby_heights_area
 		ruby_mountains_area
 		deranne_area
 		northern_flats_area
@@ -746,7 +688,6 @@ lencenor_region = {
 		upper_winebay_area
 		lower_winebay_area
 		southroy_area
-		west_ruby_mountains_area
 	}
 }
 
@@ -851,6 +792,7 @@ esmaria_region = {
 		low_esmar_area
 		hearthswood_area
 		bennonhill_area
+		havoral_passage_area
 		cann_esmar_area
 		songbarges_area
 		ashfields_area

@@ -1,9 +1,4 @@
-#These are Generic missions, available to all tags that don't have an override.
-
-#Below are mission series, within them are the actual missions.
-	
-##BranchStart 0
- = {
+generic_column_2 = {
 	slot = 2
 	generic = yes
 	potential = {
@@ -75,14 +70,9 @@
 			treasury = 500
 		}
 		effect = {
-			treasury = -500
+			ROOT = {
 			add_prestige = 25
-			if = {
-				set_government_rank = 2
-			}
-			else = {
-				add_splendor = 200
-				add_stability_or_adm_power = yes
+			set_government_rank = 3
 			}
 		}
 	}
@@ -114,9 +104,8 @@
 	##
 	
 }
-##BranchEnd 0
-##BranchStart 1
- = {
+
+generic_column_3 = {
 	slot = 3
 	generic = yes
 	potential = {
@@ -137,7 +126,9 @@
 			army_size_percentage = 1
 		}
 		effect = {
-			add_manpower = 5
+			ROOT = {
+				add_manpower = 5
+			}
 			add_country_modifier = {
 					name = expansion_priority
 					duration = 7300
@@ -182,7 +173,6 @@
 			mil_power = 100
 		}
 		effect = {
-			add_mil_power = -100
 			country_event = { id = flavor_generic.2 }
 		}
 	}
@@ -203,9 +193,11 @@
 			total_development = 600
 		}
 		effect = {
+			ROOT = {
 			add_adm_power = 100
 			add_dip_power = 100
 			add_mil_power = 100
+			}
 			add_country_modifier = {
 				name = imperial_ambition
 				duration = 9125
@@ -229,8 +221,6 @@
 			dip_tech = 5
 		}
 		effect = {
-			treasury = -500
-			add_dip_power = -100
 			add_country_modifier = {
 				name = colonial_policy_g
 				duration = 27375
@@ -267,9 +257,8 @@
 	##
 	
 }
-##BranchEnd 1
-##BranchStart 2
- = {
+
+generic_column_4 = {
 	slot = 4
 	generic = yes
 	potential = {
@@ -355,9 +344,8 @@
 	##Mission End
 	##
 }
-##BranchEnd 2
-##BranchStart 3
- = {
+
+generic_column_5 = {
 	slot = 5
 	generic = yes
 	potential = {
@@ -402,7 +390,9 @@
 			}
 		}
 		effect = {
+			ROOT = {
 			add_adm_power = 100
+			}
 			add_country_modifier = {
 				name = efficient_taxation
 				duration = 18250
@@ -495,7 +485,9 @@
 			}
 		}
 		effect = {
-			add_dip_power = 50
+			ROOT = {
+				add_dip_power = 50
+			}
 			add_country_modifier = {
 				name = influential_diplomacy_g
 				duration = 10950
@@ -517,14 +509,15 @@
 			num_of_non_tributary_subjects = 2 
 			}
 		effect = {
-			add_dip_power = 50
+			ROOT = {
+				add_dip_power = 50
+			}
 			add_country_modifier = {
 				name = powerful_diplomacy_g
 				duration = 10950
 			}
 		}
 	##Mission End
+	}
 }
-##BranchEnd 3
-##BranchStart 4
  
