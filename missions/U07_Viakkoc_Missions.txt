@@ -1,5 +1,4 @@
-##BranchStart 0
- = {
+U07_column_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -143,9 +142,7 @@
 
 
 }
-##BranchEnd 0
-##BranchStart 1
- = {
+U07_column_2 = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -372,9 +369,8 @@
 	}
 	##Mission End
 }
-##BranchEnd 1
-##BranchStart 2
- = {
+
+U07_column_3 = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -606,9 +602,7 @@
 	
 }
 
-##BranchEnd 2
-##BranchStart 3
- = {
+U07_column_4 = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -900,9 +894,8 @@
 	##Mission End
 	##
 }
-##BranchEnd 3
-##BranchStart 4
- = {
+
+U07_column_5 = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -1188,4 +1181,3 @@
 	##
 	
 }
-##BranchEnd 4

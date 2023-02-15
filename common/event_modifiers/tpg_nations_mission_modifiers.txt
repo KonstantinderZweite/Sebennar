@@ -284,7 +284,6 @@ new_division_system = {
 }
 
 gnoll_homeland = {
-	development_cost = -0.05
 	same_culture_advisor_cost = -0.20
 }
 
@@ -343,6 +342,118 @@ a29_verne_crown = {
 
 vernish_integration = {
 	local_autonomy = -0.10
+}
+
+#Kheterata
+
+army_recovery = {
+	manpower_recovery_speed = 0.15
+	army_tradition = 1.0
+}
+
+elven_salt_mine = {
+	trade_goods_size_modifier = 0.35
+}
+
+khet_mint = {
+	inflation_reduction = -0.05
+	build_cost = -0.05
+	land_maintenance_modifier = -0.05
+}
+
+bulwar_trade_disruption = {
+	embargo_efficiency = 0.5
+	naval_morale = 0.05
+	global_ship_trade_power = 0.1
+	diplomatic_reputation = -1
+}
+
+bulwar_trade_domination = {
+	trade_steering = 0.20
+	trade_efficiency = 0.1
+}
+
+hold_the_line = {
+	infantry_fire = 0.05
+	shock_damage_received = -0.05
+}
+
+khet_tolerance = {
+	tolerance_heretic = 1
+	religious_unity = 0.25
+	global_tax_modifier = 0.1
+}
+
+khet_collapse = {
+	global_autonomy = 0.05
+	global_unrest = 6
+	stability_cost_modifier = 0.25
+}
+
+camel_calvary = {
+	cav_to_inf_ratio = 0.15
+	cavalry_cost = -0.15
+}
+
+elephant_calvary = {
+	cav_to_inf_ratio = 0.25
+	cavalry_cost = -0.15
+	cavalry_fire = 0.5
+}
+
+U01_khet_grain = {
+	trade_goods_size_modifier = 0.30
+}
+
+U01_pop_gain = {
+	local_development_cost = -0.10
+}
+
+U01_desert_mines = {
+	local_development_cost = -0.15
+	trade_goods_size = 0.5
+}
+
+U01_monuement_elikhet = {
+	development_cost = -0.05
+	governing_capacity_modifier = 0.1
+	global_autonomy = -0.025
+	trade_goods_size = 1.0
+}
+
+U01_xhazobkult_conversion = {
+	global_heathen_missionary_strength = 0.05
+}
+
+U01_rebuilding = {
+	local_development_cost = -0.10
+	local_build_cost = -0.10
+}
+
+U01_scourge = {
+	land_morale = 0.1
+	naval_morale = 0.1
+}
+
+U01_influx_gnolls = {
+	production_efficiency = 0.1
+	global_manpower_modifier = 0.10
+}
+
+U01_grain_bonus_prod = {
+	trade_goods_size = 0.4
+	local_production_efficiency = 0.20
+}
+	
+#Telgier
+telgier_professional_armies = {
+	discipline = 0.05
+}
+
+#Gnomish Hierachy
+A79_rebuild_oddansbay_modifier = {
+	development_cost = -0.05
+	governing_capacity_modifier = -0.1
 }
 
 #Generic
@@ -438,7 +549,7 @@ progress_g = {
 }
 
 construction_g = {
-	build_cost = -0.10
+	build_cost = -0.15
 }
 
 mana_g = {

@@ -1181,7 +1181,7 @@ busilar_5 = {
 					army_size = 40
 					OR = {
 					NOT = { exists = A33 }
-					A40 = { 
+					A33 = { 
 						has_spy_network_from = {
 							who = ROOT
 							value = 30
@@ -1201,7 +1201,7 @@ busilar_5 = {
 					army_size = 40
 					OR = {
 					NOT = { exists = A33 }
-					A40 = { 
+					A33 = { 
 						has_spy_network_from = {
 							who = ROOT
 							value = 30
