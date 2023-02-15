@@ -21,6 +21,7 @@ cannorian = {
 			ravelian
 		}
 		country = {
+			global_tax_modifier = 0.10 
 			tolerance_heathen = 2
 			tolerance_heretic = 1
 		}
