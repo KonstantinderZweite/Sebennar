@@ -832,17 +832,23 @@ A33_colonial_missions_slot = {
 }
 
 A33_fill_missions_slot = {
+	
 	slot = 5
 	generic = no
 	ai = yes
+	 
+	 
 	potential = {
 		tag = A33
+		
 	}
 	has_country_shield = yes
 	
 	A33_fill = {
 		icon = mission_unknown_mission
+		 
 		position = 1
+
 		
 		provinces_to_highlight = {
 			
@@ -850,10 +856,12 @@ A33_fill_missions_slot = {
 		
 		trigger = {
 			dip_power = 1
+			
 		}
 		
 		effect = {
 			add_dip_power = 1
+			 
 		}
 	}
 }
