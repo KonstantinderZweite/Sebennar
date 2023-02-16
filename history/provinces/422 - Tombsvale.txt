@@ -6,7 +6,7 @@ add_core = A77
 culture = aldresian
 religion = regent_court
 
-hre = yes
+hre = no
 
 base_tax = 3
 base_production = 3
