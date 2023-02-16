@@ -1804,6 +1804,9 @@ oak_monarchy_reform = {
 		diplomatic_reputation = 1
 		yearly_absolutism = 0.5
 		advisor_cost = 0.1
+		monarch_admin_power = 2
+		monarch_diplomatic_power = 2
+		monarch_military_power = 2	
 	}
 	custom_attributes = {
 		locked_government_type = yes
