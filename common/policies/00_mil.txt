@@ -334,7 +334,7 @@ military_zeal_act = {
 		full_idea_group = religious_ideas
 	}
 	
-	land_morale = 0.05
+	land_morale = 0.075
 	siege_ability = 0.1
 
 	ai_will_do = {
@@ -359,7 +359,7 @@ field_priests = {
 		full_idea_group = quantity_ideas
 	}
 
-	land_morale = 0.05
+	land_morale = 0.075
 	recover_army_morale_speed = 0.10
 	
 	ai_will_do = {
@@ -444,7 +444,7 @@ underhanded_diplomacy_act = {
 		full_idea_group = offensive_ideas
 	}
 	
-	yearly_army_professionalism = 0.006
+	yearly_army_professionalism = 0.01
 
 
 	ai_will_do = {
@@ -493,7 +493,7 @@ the_tenures_abolition_act = {
 	}
 
 	free_leader_pool = 1
-	cavalry_power = 0.1
+	reserves_organisation = 0.20
 		
 	ai_will_do = {
 		factor = 0.6
@@ -658,7 +658,7 @@ foreign_conscription_centers = {
 	}	
 	
 	reinforce_cost_modifier = -0.20
-	diplomatic_upkeep = 1
+	military_tactics = 0.05
 	
 	ai_will_do = {
 		factor = 1
@@ -1254,6 +1254,64 @@ render_unto_caesar_policy = {
 		modifier = {
 			factor = 1.5
 			is_at_war = yes
+		}
+	}
+}
+
+the_witchcraft_act = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = religious_ideas
+		has_idea_group = aristocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = religious_ideas
+		full_idea_group = aristocracy_ideas
+	}
+	
+	shock_damage = 0.1
+	global_missionary_strength = 0.01
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			religious_unity = 1
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.6 }
+		}			
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.4 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_unity = 0.2 }
+		}
+		
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 2
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 4
+		}			
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 6
+		}
+		modifier = {
+			factor = 1.5
+			average_effective_unrest = 8
 		}
 	}
 }
