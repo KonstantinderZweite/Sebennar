@@ -149,7 +149,7 @@ country_event = { #Scholars of Rubyhold
 		}
 			
 	}
-	option = { We don't trust any Dwarves
+	option = { #We don't trust any Dwarves
 			name = "flavor_rubyhold.3.b"
 			add_dip_power = 100
 	}

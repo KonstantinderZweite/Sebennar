@@ -137,12 +137,17 @@ wex_slot_1 = {
 		
 		provinces_to_highlight = {
 			province_id = 303
-			NOT = { development = 30 }
+			NOT = {
+				AND = {
+					has_production_building_trigger = yes
+					development = 35
+				}
+			}
 		}
 		
 		trigger = {
 			303 = {
-				development = 30
+				development = 20
 			}
 		}
 		
@@ -156,6 +161,7 @@ wex_slot_1 = {
 		}
 	}
 	
+	has_production_building_trigger = yes
 	A30_black_heart_of_wex = {
 		icon = mission_treasure_room
 		required_missions = { A30_ironhill }
@@ -163,18 +169,18 @@ wex_slot_1 = {
 		
 		provinces_to_highlight = {
 			province_id = 303
-			OR = {
-				NOT = { trade_goods = coal }
-				NOT = { has_building = furnace }
-				NOT = { development = 40 }
+			NOT = {
+				AND = {
+					has_manufactory_trigger = yes
+					development = 35
+				}
 			}
 		}
 		
 		trigger = {
 			303 = {
-				trade_goods = coal
-				has_building = furnace
-				development = 40
+				has_manufactory_trigger = yes
+				development = 35
 			}
 		}
 		
@@ -345,13 +351,16 @@ wex_slot_2 = {
 		position = 11
 		
 		provinces_to_highlight = {
-			owned_by = ROOT
-			trade_goods = coal
-			NOT = { has_building = furnace }
+			country_or_non_sovereign_subject_holds = ROOT  
+			trade_goods = iron
 		}
 		
 		trigger = {
-			furnace = 4
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				trade_goods = iron
+				has_production_building_trigger = yes 
+				value = 10
+			}
 		}
 		
 		effect = {

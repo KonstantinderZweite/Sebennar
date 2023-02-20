@@ -871,8 +871,8 @@ A24_ideas = {
 #Damescrown ideas
 A25_ideas = {
 	start = {
-		global_trade_power = 0.1
 		trade_efficiency = 0.10
+		mercenary_discipline = 0.05
 	}
 
 	bonus = {
@@ -892,6 +892,7 @@ A25_ideas = {
 	}
 	A25_banking_clan = {	#InterGalactic Banking Clan
 		interest = -0.5
+		land_morale = 0.10
 	}
 	A25_cannorian_trade_posts = {
 		global_foreign_trade_power = 0.1
@@ -899,6 +900,7 @@ A25_ideas = {
 	}
 	A25_the_barques_of_damescrown = {
 		light_ship_power = 0.15
+		artillery_power = 0.1
 	}
 	A25_the_grand_exchange = {
 		global_trade_goods_size_modifier = 0.1
@@ -908,6 +910,7 @@ A25_ideas = {
 	}
 	A25_the_world_comes_to_damescrown = {
 		trade_steering = 0.15
+		global_trade_power = 0.1
 	}
 }
 
@@ -2053,6 +2056,7 @@ B34_ideas = {
 U01_ideas = {
 	start = {
 		discipline = 0.05
+		stability_cost_modifier = -0.10
 		
 	}
 
