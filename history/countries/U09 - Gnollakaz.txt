@@ -20,4 +20,5 @@ capital = 487
 		mil = 3
 		female = yes
 	}
+	add_ruler_personality = conqueror_personality
 }

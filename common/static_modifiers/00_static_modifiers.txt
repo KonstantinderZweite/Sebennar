@@ -608,6 +608,7 @@ base_values = {
 	hob_lion_command_influence = 0.1
 	yearly_patriarch_authority = -0.005
 	can_fabricate_for_vassals = yes
+	
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -2083,7 +2084,9 @@ hussars_regiment = {
 }
 
 marine_regiment = {
-    shock_damage_received = 0.1
+    shock_damage_received = -0.05
+	fire_damage_received = -0.05
+	
     regiment_disembark_speed = 2
 }
 

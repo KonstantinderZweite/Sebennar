@@ -458,11 +458,11 @@ pirate_republic_reform = {
 	modifiers = {
 		republican_tradition = -1
 		max_absolutism = 10
-		naval_forcelimit_modifier = 0.5
+		naval_forcelimit_modifier = 0.1
 		capture_ship_chance = 0.33
 		state_governing_cost = 0.75
 		may_perform_slave_raid_on_same_religion = yes
-		allowed_marine_fraction = 0.5
+		allowed_marine_fraction = 0.1
 	}
 	trigger = {
 		OR = {
@@ -2940,10 +2940,10 @@ the_pirate_ways_reform = {	# new LotN
 	}
 	modifiers = {
 		privateer_efficiency = 0.25
-		land_morale = 0.1
-		naval_morale = 0.1
-		naval_maintenance_modifier = -0.10
-		republican_tradition = 1
+		land_morale = 0.05
+		naval_morale = 0.05
+		naval_maintenance_modifier = -0.05
+		republican_tradition = 0.25
 	}
 	effect = {
 		custom_tooltip = break_every_non_pirate_alliance_tt
@@ -4103,7 +4103,7 @@ power_to_the_captains_reform = {	#new LotN
 	}
 	modifiers = {
 		pr_captains_influence = 0.1
-		heavy_ship_power = 0.1
+		heavy_ship_power = 0.05
 		movement_speed_in_fleet_modifier = 1
 	}
 	ai = {
@@ -4348,7 +4348,7 @@ empowered_quartermasters_reform = {	#new LotN
 		}
 	}
 	modifiers = {
-		naval_maintenance_modifier = -0.15
+		naval_maintenance_modifier = -0.05
 		max_absolutism = -15
 	}
 	effect = {
