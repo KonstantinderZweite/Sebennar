@@ -1,7 +1,7 @@
 
 setup_vision = yes
-government = tribal
-add_government_reform = dwarovar_warband
+government = republic
+add_government_reform = technocracy_republic_reform
 government_rank = 1
 primary_culture = cave_goblin
 religion = goblinic_shamanism

@@ -952,11 +952,6 @@ Rubyhold_3 = {
 					months = 360
 				}
 			add_casus_belli = {
-					target = A14
-					type = cb_vassalize_mission
-					months = 360
-				}
-			add_casus_belli = {
 					target = A87
 					type = cb_vassalize_mission
 					months = 360
@@ -988,7 +983,7 @@ Rubyhold_3 = {
 					AND = {
 						is_subject_of = ROOT
 						NOT = { liberty_desire = 50 }
-						NOT = { total_development = 75 }
+						NOT = { total_development = 100 }
 					}
 					NOT = { exists = yes }
 				}
@@ -998,7 +993,7 @@ Rubyhold_3 = {
 					AND = {
 						is_subject_of = ROOT
 						NOT = { liberty_desire = 50 }
-						NOT = { total_development = 75 }
+						NOT = { total_development = 100 }
 					}
 					NOT = { exists = yes }
 				}
@@ -1008,17 +1003,7 @@ Rubyhold_3 = {
 					AND = {
 						is_subject_of = ROOT
 						NOT = { liberty_desire = 50 }
-						NOT = { total_development = 75 }
-					}
-					NOT = { exists = yes }
-				}
-			}
-			A14 = {
-				OR = {
-					AND = {
-						is_subject_of = ROOT
-						NOT = { liberty_desire = 50 }
-						NOT = { total_development = 75 }
+						NOT = { total_development = 100 }
 					}
 					NOT = { exists = yes }
 				}
@@ -1044,13 +1029,6 @@ Rubyhold_3 = {
 				if = {
 					limit = { A87 = { is_subject_of = ROOT } }
 					inherit = A87
-				}
-			}
-			custom_tooltip = rubyhold_inherit_tt
-			hidden_effect = {
-				if = {
-					limit = { A14 = { is_subject_of = ROOT } }
-					inherit = A14
 				}
 			}
 		}

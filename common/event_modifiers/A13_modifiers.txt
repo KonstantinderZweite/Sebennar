@@ -1,0 +1,42 @@
+#Gawed
+
+A13_bulwark_fortifications = {
+	local_defensiveness = 0.2
+	local_garrison_size = 0.2
+}
+
+A13_trade_gateway = {
+	trade_efficiency = 0.1
+}
+
+A13_fur_bonus = {
+	trade_goods_size = 0.4
+	local_manpower_modifier = 0.2
+}
+
+A13_northern_expansion = {
+	land_attrition = -0.2
+	naval_morale = 0.10
+	global_trade_power = 0.1
+}
+
+A13_damescrown_loan = {
+	interest = -0.25
+	global_tax_modifier = 0.1
+}
+
+A13_industrialization = {
+	global_trade_goods_size_modifier = 0.10
+	global_manpower_modifier = 0.10
+}
+
+A13_faster_integration = {
+	global_autonomy = -0.05
+	core_creation = -0.1
+}
+
+A13_end_elven_dominance = {
+	prestige = 1
+	province_warscore_cost = -0.10
+	land_morale = 0.05
+}

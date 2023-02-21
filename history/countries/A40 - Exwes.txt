@@ -15,9 +15,21 @@ capital = 153
 	monarch = {
 		name = "Godric II"
 		dynasty = "Silcalas"
-		birth_date = 1381.8.12
+		birth_date = 1410.8.12
 		adm = 2
 		dip = 4
 		mil = 6
 	}
 }
+
+heir = {
+		name = "Aldres"
+		monarch_name = "Aldres V"
+		dynasty = "Silcalas"
+		birth_date = 1430.8.11
+		death_date = 1449.1.1
+		claim = 100
+		adm = 3
+		dip = 3
+		mil = 3
+	}
