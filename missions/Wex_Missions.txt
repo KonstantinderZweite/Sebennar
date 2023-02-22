@@ -139,14 +139,17 @@ wex_slot_1 = {
 			province_id = 303
 			NOT = {
 				AND = {
+					owned_by = ROOT
 					has_production_building_trigger = yes
-					development = 35
+					development = 20
 				}
 			}
 		}
 		
 		trigger = {
 			303 = {
+				owned_by = ROOT
+				has_production_building_trigger = yes
 				development = 20
 			}
 		}
@@ -161,7 +164,6 @@ wex_slot_1 = {
 		}
 	}
 	
-	has_production_building_trigger = yes
 	A30_black_heart_of_wex = {
 		icon = mission_treasure_room
 		required_missions = { A30_ironhill }
@@ -171,6 +173,7 @@ wex_slot_1 = {
 			province_id = 303
 			NOT = {
 				AND = {
+					owned_by = ROOT
 					has_manufactory_trigger = yes
 					development = 35
 				}
@@ -179,6 +182,7 @@ wex_slot_1 = {
 		
 		trigger = {
 			303 = {
+				owned_by = ROOT
 				has_manufactory_trigger = yes
 				development = 35
 			}
