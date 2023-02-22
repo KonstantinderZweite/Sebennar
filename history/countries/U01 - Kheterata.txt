@@ -21,4 +21,5 @@ capital = 475
 		mil = 3
 	}
 	set_country_flag  = nirat_defiance
+	add_ruler_personality = righteous_personality
 }

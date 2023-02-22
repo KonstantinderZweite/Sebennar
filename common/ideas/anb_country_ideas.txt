@@ -744,8 +744,8 @@ A21_ideas = {
 #Neckcliffe ideas
 A22_ideas = {
 	start = {
-		blockade_efficiency = 0.33
-		sailor_maintenance_modifer = -0.1
+		global_sailors_modifier = 0.30
+		discipline = 0.05 
 	}
 
 	bonus = {
@@ -20757,7 +20757,7 @@ A73_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	A73_Silver_Army_Engineer_Corps = {
-		siege_ability = 0.15
+		fire_damage = 0.10
 	}
 	A73_The_Voice_of_Imperial_Dwarves = {
 		prestige = 1

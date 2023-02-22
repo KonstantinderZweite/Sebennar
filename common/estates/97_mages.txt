@@ -23,14 +23,14 @@ estate_mages = {
 	country_modifier_happy = {
 		all_power_cost = -0.05
 		imperial_authority = 0.05
-		technology_cost = 0.1
+		technology_cost = 0.10
 	}
 	country_modifier_neutral = {
 		#all_power_cost = 0.025
 	}	
 	country_modifier_angry = {
 		all_power_cost = 0.05
-		technology_cost = 0.1
+		technology_cost = 0.10
 	}
 	land_ownership_modifier = {
 		mages_loyalty_modifier = 0.2

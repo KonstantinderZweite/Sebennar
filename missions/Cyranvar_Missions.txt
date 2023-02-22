@@ -43,9 +43,9 @@ cyranvar_1 = {
 			if = {
 				limit = { ai = no }
 				add_years_of_income = -1
-				add_adm_power = -100
-				add_dip_power = -100
-				add_mil_power = -100
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
 			}
 			else = {
 				add_years_of_income = -0.4
@@ -96,9 +96,9 @@ cyranvar_1 = {
 			if = {
 				limit = { ai = no }
 				add_years_of_income = -1
-				add_adm_power = -100
-				add_dip_power = -100
-				add_mil_power = -100
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
 			}
 			else = {
 				add_years_of_income = -0.4
@@ -149,9 +149,9 @@ cyranvar_1 = {
 			if = {
 				limit = { ai = no }
 				add_years_of_income = -1
-				add_adm_power = -100
-				add_dip_power = -100
-				add_mil_power = -100
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
 			}
 			else = {
 				add_years_of_income = -0.4
@@ -202,9 +202,9 @@ cyranvar_1 = {
 			if = {
 				limit = { ai = no }
 				add_years_of_income = -1
-				add_adm_power = -100
-				add_dip_power = -100
-				add_mil_power = -100
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
 			}
 			else = {
 				add_years_of_income = -0.4
@@ -255,9 +255,9 @@ cyranvar_1 = {
 			if = {
 				limit = { ai = no }
 				add_years_of_income = -1
-				add_adm_power = -100
-				add_dip_power = -100
-				add_mil_power = -100
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
 			}
 			else = {
 				add_years_of_income = -0.4
@@ -308,9 +308,9 @@ cyranvar_1 = {
 			if = {
 				limit = { ai = no }
 				add_years_of_income = -1
-				add_adm_power = -100
-				add_dip_power = -100
-				add_mil_power = -100
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
 			}
 			else = {
 				add_years_of_income = -0.4
@@ -361,9 +361,9 @@ cyranvar_1 = {
 			if = {
 				limit = { ai = no }
 				add_years_of_income = -1
-				add_adm_power = -100
-				add_dip_power = -100
-				add_mil_power = -100
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
 			}
 			else = {
 				add_years_of_income = -0.4
@@ -414,9 +414,9 @@ cyranvar_1 = {
 			if = {
 				limit = { ai = no }
 				add_years_of_income = -1
-				add_adm_power = -100
-				add_dip_power = -100
-				add_mil_power = -100
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
 			}
 			else = {
 				add_years_of_income = -0.4
@@ -467,9 +467,9 @@ cyranvar_1 = {
 			if = {
 				limit = { ai = no }
 				add_years_of_income = -1
-				add_adm_power = -100
-				add_dip_power = -100
-				add_mil_power = -100
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
 			}
 			else = {
 				add_years_of_income = -0.4
@@ -573,9 +573,9 @@ cyranvar_2 = {
 		
 		effect = {
 			add_prestige = 10
-			add_mil_power = -150
-			add_adm_power = -150
-			add_dip_power = -150
+			add_mil_power = -100
+			add_adm_power = -100
+			add_dip_power = -100
 			add_country_modifier = {
 				name = cyranvar_renaissance
 				duration = 21900
@@ -722,9 +722,9 @@ cyranvar_2 = {
 					mil = 6
 				}
 				AND = {
-					adm_power = 500
-					dip_power = 500
-					mil_power = 500
+					adm_power = 100
+					dip_power = 100
+					mil_power = 100
 				}
 			}
 		}
@@ -738,9 +738,9 @@ cyranvar_2 = {
 						dip = 6 
 					}
 				}
-				add_adm_power = -500
-				add_dip_power = -500
-				add_mil_power = -500
+				add_adm_power = -100
+				add_dip_power = -100
+				add_mil_power = -100
 			}
 			add_prestige = 25
 			add_country_modifier = {
@@ -1287,9 +1287,9 @@ cyranvar_4 = {
 					mil = 6
 				}
 				AND = {
-					adm_power = 500
-					dip_power = 500
-					mil_power = 500
+					adm_power = 100
+					dip_power = 100
+					mil_power = 100
 				}
 			}
 		}
@@ -1303,9 +1303,9 @@ cyranvar_4 = {
 						dip = 6 
 					}
 				}
-				add_adm_power = -500
-				add_dip_power = -500
-				add_mil_power = -500
+				add_adm_power = -100
+				add_dip_power = -100
+				add_mil_power = -100
 			}
 			add_prestige = 25
 			add_country_modifier = {

@@ -68,7 +68,7 @@ rubyhold_academy = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 1000
+			factor = 500
 		}
 		province_modifiers = {
 		}
@@ -88,7 +88,7 @@ rubyhold_academy = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 3500
+			factor = 2500
 		}
 		province_modifiers = {
 		}
@@ -108,7 +108,7 @@ rubyhold_academy = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 7000
+			factor = 5000
 		}
 		province_modifiers = {
 		}
