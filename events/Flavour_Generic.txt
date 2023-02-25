@@ -6,7 +6,6 @@ country_event = { #Military Direction
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	trigger = {
 		#mission
@@ -67,7 +66,6 @@ country_event = { #General Academy
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	trigger = {
 		#mission
@@ -102,7 +100,6 @@ country_event = { #New Manufactoring Centers
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	trigger = {
 		#mission
@@ -133,7 +130,6 @@ country_event = { #New Manufactoring Centers
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	trigger = {
 		#mission
@@ -163,7 +159,6 @@ country_event = { #Economic Direction
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	trigger = {
 		#mission
