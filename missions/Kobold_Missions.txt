@@ -85,15 +85,28 @@ KOB_2 = {
 		
 		trigger = {
 			army_size_percentage = 0.75
-			is_year = 1450
+			is_year = 1447
 		}
 		
 		effect = {
-			capital_scope = {
+			170 = {
 				add_base_tax = 1
 				add_base_manpower = 2
 				add_base_production = 1
 			}
+			if = { 
+    limit = { 170 = { fort_level = 2 } }
+  
+}
+else = {
+    170 = { 
+        
+           add_building = fort_15th
+            
+        }
+    }
+
+		
 		}
 	}
 	
@@ -592,20 +605,5 @@ KOB_fill_missions_slot = {
 	}
 	has_country_shield = yes
 	
-	KOB_fill = {
-		icon = mission_unknown_mission
-		position = 1
-		
-		provinces_to_highlight = {
-			
-		}
-		
-		trigger = {
-			dip_power = 50
-		}
-		
-		effect = {
-			add_dip_power = 50
-		}
-	}
+
 }
