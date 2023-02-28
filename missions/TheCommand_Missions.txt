@@ -1,5 +1,23 @@
 
+command_blank_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    has_country_shield = yes
+    potential = {
+        tag = R62
+    }
+}
 
+command_blank_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    has_country_shield = yes
+    potential = {
+        tag = R62
+    }
+}
 command_warroom_3 = {
 	slot = 3
 	generic = no
@@ -5918,7 +5936,7 @@ command_1 = {
 	}
 }
 
-command_2 = {
+command_slot_2_blank = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -5927,22 +5945,7 @@ command_2 = {
 		tag = R62
 	}
 	
-	R62_fill = {
-		icon = mission_unknown_mission
-		position = 1
-		
-		provinces_to_highlight = {
-			
-		}
-		
-		trigger = {
-			dip_power = 50
-		}
-		
-		effect = {
-			add_dip_power = 50
-		}
-	}
+	
 	
 	R62_secure_logistics = {
 		icon = mission_advance_to_the_arabian_sea
@@ -7360,7 +7363,7 @@ command_3 = {
 	}
 }
 
-command_4 = {
+command_slot_4_blank = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -7369,22 +7372,6 @@ command_4 = {
 		tag = R62
 	}
 	
-	R62_fill_1 = {
-		icon = mission_unknown_mission
-		position = 1
-		
-		provinces_to_highlight = {
-			
-		}
-		
-		trigger = {
-			dip_power = 50
-		}
-		
-		effect = {
-			add_dip_power = 50
-		}
-	}
 	
 	R62_cursed_temples = {
 		icon = mission_make_it_fall

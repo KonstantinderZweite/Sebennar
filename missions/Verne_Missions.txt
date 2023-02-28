@@ -831,7 +831,7 @@ A33_colonial_missions_slot = {
 	}
 }
 
-A33_fill_missions_slot = {
+A33_slot_5_blank = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -840,20 +840,5 @@ A33_fill_missions_slot = {
 	}
 	has_country_shield = yes
 	
-	A33_fill = {
-		icon = mission_unknown_mission
-		position = 1
-		
-		provinces_to_highlight = {
-			
-		}
-		
-		trigger = {
-			dip_power = 50
-		}
-		
-		effect = {
-			add_dip_power = 50
-		}
-	}
+	
 }
