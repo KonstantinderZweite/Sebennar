@@ -30,11 +30,12 @@ fixed_capital = 4208
 		name = "Garlim"
 		dynasty = "Frozenforge"
 		birth_date = 1298.11.4
-		adm = 5
-		dip = 5
-		mil = 4
+		adm = 6
+		dip = 6
+		mil = 6
 	}
 	add_ruler_personality = immortal_personality
+	add_ruler_personality = expansionist_personality
 	set_ruler_flag = clan_frozenforge
 	change_estate_land_share = {
 		estate = estate_mages

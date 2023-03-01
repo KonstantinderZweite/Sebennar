@@ -85,7 +85,7 @@ KOB_2 = {
 		
 		trigger = {
 			army_size_percentage = 0.75
-			is_year = 1447
+			is_year = 1444
 		}
 		
 		effect = {

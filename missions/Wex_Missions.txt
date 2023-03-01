@@ -1,4 +1,12 @@
-
+Wex_blank_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    has_country_shield = yes
+    potential = {
+        tag = A30
+    }
+}
 wex_slot_1 = {
 	slot = 1
 	generic = no
@@ -679,22 +687,7 @@ wex_slot_4 = {
 	}
 	has_country_shield = yes
 	
-	A30_fill = {
-		icon = mission_unknown_mission
-		position = 1
-		
-		provinces_to_highlight = {
-			
-		}
-		
-		trigger = {
-			dip_power = 50
-		}
-		
-		effect = {
-			add_dip_power = 50
-		}
-	}
+	
 	
 	A30_order_sugamber = {
 		icon = mission_dark_book
