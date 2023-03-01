@@ -1,9 +1,5 @@
 
 
-owner = H89
-controller = H89
-add_core = H89
-
 culture = cave_goblin
 religion = goblinic_shamanism
 trade_goods = paper

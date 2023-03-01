@@ -13865,10 +13865,7 @@ H89_ideas = {
 		trade_efficiency = 0.1
 	}
 	H89_idea_7 = {
-		fire_damage = 0.3
 		artillery_power = 0.1
-		fire_damage_received = 0.1
-		shock_damage_received = 0.1
 	}
 }
 
