@@ -9342,7 +9342,7 @@ Z45_ideas = {
 R21_ideas = {
 	start = {				# Legacy as a porcelain city - apt at hiding the secret production techniques
 		production_efficiency = 0.1
-		global_spy_defence = 0.25
+		land_forcelimit_modifier = 0.25 
 	}
 
 	bonus = {				# Control the trade, control the world
@@ -9361,6 +9361,7 @@ R21_ideas = {
 	}
 	R21_coveted_by_many_conquered_by_none = { # Strong sense of independence and self-rule
 		garrison_size = 0.15
+		morale_damage_received = -0.10 
 	}
 	R21_out_of_the_slums_into_the_army = {	# Everything is better than life in the sprawling slums of this city - even serving in the army
 		global_manpower_modifier = 0.2
@@ -13789,7 +13790,7 @@ Z26_ideas = {
 #Spiderwretch
 H90_ideas = {
 	start = {
-		cav_to_inf_ratio = 0.50
+		land_forcelimit_modifier = 0.25
 		shock_damage_received = -0.10
 	}
 
@@ -13806,8 +13807,7 @@ H90_ideas = {
 		cavalry_power = 0.2
 	}
 	H90_venombrew = {
-		prestige = 0.5
-		idea_cost = -0.05
+		cav_to_inf_ratio = 0.50
 	}
 	H90_cavern_lords = {
 		global_trade_goods_size_modifier = 0.1

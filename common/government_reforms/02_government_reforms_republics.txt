@@ -2044,9 +2044,11 @@ krak_clan_council = { #krakdhumvror starting republic
 		nobles_influence_modifier = 0.1
 		burghers_influence_modifier = -0.1
 		advisor_cost = -0.1
-		election_cycle = -6 #10 years
+		election_cycle = 84 #10 years
 		republican_tradition = -0.5
 		max_absolutism = 40
+	
+		
 	}
 
 	custom_attributes = {
@@ -2075,7 +2077,8 @@ krak_free_council = { #krakdhumvror reformed republic
 		advisor_cost = -0.15
 		global_unrest = -2
 		max_absolutism = 20
-		election_cycle = 24 #40 years
+		election_cycle = 84 #40 years
+		
 	}
 
 	custom_attributes = {
