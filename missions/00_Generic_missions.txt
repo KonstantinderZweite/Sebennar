@@ -147,7 +147,7 @@ generic_column_3 = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			army_size = 40
+			land_forcelimit = 40
 			num_of_generals = 1
 		}
 		effect = {
