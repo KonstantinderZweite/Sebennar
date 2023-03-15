@@ -768,6 +768,7 @@ ruler_is_human = {
 			ruler_culture = kintonan
 			ruler_culture = kusonin
 			ruler_culture = rinonokegyun
+			#Aethyl
 			ruler_culture = south_aethyl
 			ruler_culture = middle_aethyl
 			ruler_culture = west_aethyl

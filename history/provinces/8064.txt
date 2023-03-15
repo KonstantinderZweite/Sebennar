@@ -1,0 +1,14 @@
+
+owner = EG9
+controller = EG9
+add_core = EG9
+culture = wildman
+religion = regent_court
+hre = no
+base_tax = 7
+base_production = 6
+base_manpower = 5
+center_of_trade = 2
+trade_goods = cloth
+capital = ""
+is_city = yes

@@ -1,0 +1,13 @@
+
+owner = EG2
+controller = EG2
+add_core = EG2
+culture = wood_elf
+religion = fey_court
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = fur
+capital = ""
+is_city = yes

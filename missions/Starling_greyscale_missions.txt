@@ -1,0 +1,744 @@
+EF7_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		tag = EF7
+		tag = EH4
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	EF7_appropriate_industry = {
+		icon = mission_war_for_the_crown
+		required_missions {
+			EF7_build_homes
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			id = 8077 id = 8078 id = 8083 id = 8084
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					region = frozen_north_region
+				}
+				add_local_autonomy = -5
+			}
+			8077 = {
+				remove_province_modifier = gnomish_minority_oppressed_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			8078 = {
+				remove_province_modifier = gnomish_minority_oppressed_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			8083 = {
+				remove_province_modifier = gnomish_minority_oppressed_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			8084 = {
+				remove_province_modifier = gnomish_minority_oppressed_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			if = {
+				limit = {
+					has_country_modifier = EF7_very_weakend_by_dragonwake
+				}
+				remove_country_modifier = EF7_very_weakend_by_dragonwake
+				add_country_modifier = {
+					name = EF7_weakend_by_dragonwake
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = EF7_weakend_by_dragonwake
+				}
+				remove_country_modifier = EF7_weakend_by_dragonwake
+				add_country_modifier = {
+					name = EF7_somewhat_weakend_by_dragonwake
+					duration = -1
+				}
+			}
+			else = {
+				limit = {
+					has_country_modifier = EF7_somewhat_weakend_by_dragonwake
+				}
+				remove_country_modifier = EF7_somewhat_weakend_by_dragonwake
+				add_country_modifier = {
+					name = EF7_a_little_weakend_by_dragonwake
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 0
+##BranchStart 1
+EF7_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		tag = EF7
+		tag = EH4
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	consolidate_gains = {
+		icon = mission_control_the_channel
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_country_flag = dragonwake_end
+			NOT = {
+				average_autonomy = 55
+			}
+		}
+		effect = {
+			remove_country_modifier = EF7_severely_weakend_by_dragonwake
+			add_country_modifier = {
+				name = EF7_heavily_weakend_by_dragonwake
+				duration = -1
+			}
+			every_owned_province = {
+				limit = {
+					region = frozen_north_region
+				}
+				add_local_autonomy = -5
+			}
+			8073 = {
+				remove_province_modifier = gnomish_minority_oppressed_large
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_devastation = 20
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_build_homes = {
+		icon = mission_pol_develop_countryside
+		required_missions {
+			consolidate_gains
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			id = 8074 id = 8075 id = 8084
+		}
+		effect = {
+			remove_country_modifier = EF7_heavily_weakend_by_dragonwake
+			add_country_modifier = {
+				name = EF7_very_weakend_by_dragonwake
+				duration = -1
+			}
+			every_owned_province = {
+				limit = {
+					region = frozen_north_region
+				}
+				add_local_autonomy = -5
+				remove_province_modifier = gnomish_minority_oppressed_large
+				add_permanent_province_modifier = {
+					name = gnomish_minority_oppressed_small
+					duration = -1
+				}
+				add_devastation = 10
+			}
+			8074 = {
+				add_province_modifier = {
+					name = ef7_kobold_homes
+					duration = -1
+				}
+			}
+			8075 = {
+				add_province_modifier = {
+					name = ef7_kobold_homes
+					duration = -1
+				}
+			}
+			8084 = {
+				add_province_modifier = {
+					name = ef7_kobold_homes
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_appropriate_farmlands = {
+		icon = mission_pol_breadbasket_europe
+		required_missions {
+			EF7_build_homes
+		}
+		position = 3
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			id = 8074 id = 8075
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					region = frozen_north_region
+				}
+				add_local_autonomy = -5
+			}
+			8074 = {
+				remove_province_modifier = gnomish_minority_oppressed_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			8075 = {
+				remove_province_modifier = gnomish_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			if = {
+				limit = {
+					has_country_modifier = EF7_very_weakend_by_dragonwake
+				}
+				remove_country_modifier = EF7_very_weakend_by_dragonwake
+				add_country_modifier = {
+					name = EF7_weakend_by_dragonwake
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = EF7_weakend_by_dragonwake
+				}
+				remove_country_modifier = EF7_weakend_by_dragonwake
+				add_country_modifier = {
+					name = EF7_somewhat_weakend_by_dragonwake
+					duration = -1
+				}
+			}
+			else = {
+				limit = {
+					has_country_modifier = EF7_somewhat_weakend_by_dragonwake
+				}
+				remove_country_modifier = EF7_somewhat_weakend_by_dragonwake
+				add_country_modifier = {
+					name = EF7_a_little_weakend_by_dragonwake
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_gnomish_end = {
+		icon = mission_impaled_soldiers
+		required_missions {
+			EF7_appropriate_industry EF7_appropriate_farmlands EF7_gnome_onion_soup
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					region = frozen_north_region
+				}
+				add_province_modifier = {
+					name = ef7_resettlement
+					duration = 9125 #25 years
+				}
+			}
+			remove_country_modifier = EF7_a_little_weakend_by_dragonwake
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_military_problem = {
+		icon = mission_invade_kanem
+		required_missions {
+			EF7_bold_plan
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_modifier = ef7_government_problem
+					has_country_modifier = ef7_biology_problem
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ef7_military_problem
+				duration = 1825
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 1
+##BranchStart 2
+EF7_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		tag = EF7
+		tag = EH4
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	EF7_gnome_onion_soup = {
+		icon = mission_dominate_persian_gulf
+		required_missions {
+			EF7_build_homes EF7_trollish_alliance
+		}
+		position = 3
+		provinces_to_highlight = {
+			id = 8078 id = 8079 id = 8085 id = 8086 id = 8087
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					region = frozen_north_region
+				}
+				add_local_autonomy = -5
+			}
+			8085 = {
+				remove_province_modifier = gnomish_minority_oppressed_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			8086 = {
+				remove_province_modifier = gnomish_minority_oppressed_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			8087 = {
+				remove_province_modifier = gnomish_minority_oppressed_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			8079 = {
+				remove_province_modifier = gnomish_minority_oppressed_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			8078 = {
+				remove_province_modifier = gnomish_minority_oppressed_small
+				add_devastation = 10
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			if = {
+				limit = {
+					has_country_modifier = EF7_very_weakend_by_dragonwake
+				}
+				remove_country_modifier = EF7_very_weakend_by_dragonwake
+				add_country_modifier = {
+					name = EF7_weakend_by_dragonwake
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = EF7_weakend_by_dragonwake
+				}
+				remove_country_modifier = EF7_weakend_by_dragonwake
+				add_country_modifier = {
+					name = EF7_somewhat_by_dragonwake
+					duration = -1
+				}
+			}
+			else = {
+				limit = {
+					has_country_modifier = EF7_somewhat_weakend_by_dragonwake
+				}
+				remove_country_modifier = EF7_somewhat_weakend_by_dragonwake
+				add_country_modifier = {
+					name = EF7_a_little_weakend_by_dragonwake
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_bold_plan = {
+		icon = mission_indian_stateman
+		required_missions {
+			EF7_gnomish_end EF7_chieftain_grateful
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			##MISSIONTRIGGER
+		}
+		effect = {
+			create_union = EF8
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_government_problem = {
+		icon = mission_native_reductions
+		required_missions {
+			EF7_bold_plan
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_modifier = ef7_military_problem
+					has_country_modifier = ef7_biology_problem
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ef7_government_problem
+				duration = 1825
+			}
+			every_owned_province = {
+				add_institution_embracement = {
+					which = feudalism
+					value = 100
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_monstrous_confederation = {
+		icon = mission_pol_moldavia
+		required_missions {
+			EF7_military_problem EF7_government_problem EF7_biology_problem
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_modifier = ef7_biology_problem
+					has_country_modifier = ef7_military_problem
+					has_country_modifier = ef7_government_problem
+				}
+			}
+		}
+		effect = {
+			change_tag = EH4
+			hidden_effect = { restore_country_name = yes }
+			swap_non_generic_missions = yes
+			add_prestige = 25
+			set_government_rank = 2
+			change_government = monarchy
+			add_government_reform = monstrous_confederation
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			remove_country_modifier = kobold_military
+			add_country_modifier = {
+				name = trollbold_military
+				duration = -1
+			}
+			add_country_modifier = {
+				name = restructuring_military
+				hidden = yes
+				duration = -1
+			}
+			add_country_modifier = {
+				name = restructuring_racial_military_counter
+				hidden = yes
+				duration = -1
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 2
+##BranchStart 3
+EF7_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		tag = EF7
+		tag = EH4
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	EF7_greeting_trolls = {
+		icon = mission_protestant_heddal_church
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+				EF8 = {
+					has_opinion = {
+						who = ROOT
+						value = 50
+					}
+				}
+				EF8 = {
+					is_enemy = ROOT
+					EF7 = {
+						army_size_percentage = 1
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = flavor_EF7.2
+				days = 60
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_trollish_alliance = {
+		icon = mission_pol_wallachia
+		required_missions {
+			EF7_greeting_trolls
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			alliance_with = EF8
+		}
+		effect = {
+			every_province = {
+				limit = {
+					culture = sea_troll
+				}
+				add_core = EF8
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_assist_reconquest_big_island = {
+		icon = mission_the_livonians
+		required_missions {
+			EF7_trollish_alliance
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = augrimyr_area
+			area = veioog_area
+		}
+		trigger = {
+			ROOT = {
+				is_at_war = no
+			}
+		}
+		effect = {
+			declare_war = EH2
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_chieftain_grateful = {
+		icon = mission_lit_reform_magdeburg_laws
+		required_missions {
+			EF7_assist_reconquest_big_island EF7_assist_reconquest_small_island
+		}
+		position = 4
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			OR = {
+				AND = {
+					has_won_war_against = {
+						who = EH2
+						max_years_since = 100
+					}
+					has_won_war_against = {
+						who = EH3
+						max_years_since = 100
+					}
+				}
+				AND = {
+					esktra_area = {
+						type = all
+						owned_by = EF8
+					}
+					veioog_area = {
+						type = all
+						owned_by = EF8
+					}
+					styn_area = {
+						type = all
+						owned_by = EF8
+					}
+					augrimyr_area = {
+						type = all
+						owned_by = EF8
+					}
+				}
+			}
+		}
+		effect = {
+			add_treasury = 300
+			add_dip_power = 200
+			add_manpower = 7.5
+			EF8 = {
+				inherit = EH2
+				inherit = EH3
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EF7_biology_problem = {
+		icon = mission_intervene_in_castille
+		required_missions {
+			EF7_bold_plan
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT = {
+				OR = {
+					has_country_modifier = ef7_military_problem
+					has_country_modifier = ef7_government_problem
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ef7_biology_problem
+				duration = 1825
+			}
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 3
+##BranchStart 4
+EF7_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		tag = EF7
+		tag = EH4
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	##Mission Start
+	EF7_assist_reconquest_small_island = {
+		icon = mission_conquer_sweden
+		required_missions {
+			EF7_trollish_alliance
+		}
+		position = 3
+		provinces_to_highlight = {
+			area = esktra_area
+			area = styn_area
+		}
+		trigger = {
+			ROOT = {
+				is_at_war = no
+			}
+		}
+		effect = {
+			declare_war = EH3
+		}
+	}
+	##Mission End
+	##
+	
+}
+##BranchEnd 4

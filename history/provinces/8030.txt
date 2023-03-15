@@ -1,0 +1,13 @@
+
+owner = EE0
+controller = EE0
+add_core = EE0
+culture = south_aethyl
+religion = regent_court
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 3
+trade_goods = grain
+capital = "Aelfstan"
+is_city = yes

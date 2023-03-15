@@ -43,7 +43,7 @@ categories =  {
 		defence = 1
 		movement_cost = 1.25
 		supply_limit = 2		
-		local_development_cost = 0.35
+		local_development_cost = 0.5
 		nation_designer_cost_multiplier = 0.75		
 		
 		terrain_override = {		
@@ -54,6 +54,9 @@ categories =  {
 
 			#North Haless
 			6511 6512
+			
+			#starlingisle
+			8096 8095
 		}
 	}
 
@@ -70,6 +73,9 @@ categories =  {
 		nation_designer_cost_multiplier = 1.05
 		
 		terrain_override = {
+			#starlingisle
+			8074 8029 8027 8028 8010 8009 8011 8007 8008 8001 8002 8025 8030 8064
+			
 			#Lencenor
 			32 34 38 59 70 73 74 78 79 80 81 82 83 84 85 86 87 88 95 97 108 113 114 119 124 125 128 
 
@@ -173,6 +179,9 @@ categories =  {
 		terrain_override = { 
 			#Gerudia
 			987 
+			
+			#starlingisle
+			8043 8053 8021 8023 8020 8071 8072 8070 8012 8013 8038 8039 8061
 
 			#Northern Pass
 			4194 
@@ -219,8 +228,29 @@ categories =  {
 			#Deepwoods
 			3049 3066 3050 3071 3048 3054 3051 3052 3053 3057 3055 3056 3068 3059 3060 3061 3065 3063 3062 3064 3058 6258
 			
+			#starlingisle
+			8106 8100 8113 8115 8132 8119 8126 8131 8150
+			
 			#Eordand
 			6241 6242 6243 6244 6245
+		}                                      
+	}
+	
+	crystal_woods_terrain = {
+		color = { 31 200 60 }
+
+		type = forest
+		sound_type = forest
+		
+		movement_cost = 2
+		defence = 3
+		supply_limit = 1
+		local_development_cost = 1.6
+		nation_designer_cost_multiplier = 0.9
+		local_hostile_movement_speed = -0.25
+		
+		terrain_override = {
+			8097 8098 8099
 		}                                      
 	}
 	
@@ -243,6 +273,9 @@ categories =  {
 			3025 3026 3027 3028 3029 3030 3031 3032 3033 3034 3035 3036 3037 3038 3039 3040 3041 3042 3043 3044
 			3045 3046 3047 3067
 			
+			#starlingisle
+			8104 8101 8105 8107 8108 8109 8110 8111 8112 8114 8116 8117 8118 8120 8122 8123 8124 8125 8126 8127 8128 8129 8130 8102 8103
+			
 			#Eordand
 			2033 2034 2039 2044 2005 2503 1994 2042 2027 2045
 			6246 6247 6248 6251 6252 6253 6255 6256 6257 6249 6250 6254
@@ -264,6 +297,9 @@ categories =  {
 		supply_limit = 5
 		
 		terrain_override = {
+			#starlingisle
+			 8069 8068 8051 8054 8042 8006 8175 8154
+		
 			#Lencenor
 			71 72 90 91 93 100 
 			
@@ -281,9 +317,7 @@ categories =  {
 			
 			#Damescrown
 			254
-			#Esmaria
-			8008 8010			
-
+			
 			#Businor
 			362 366 367 
 			
@@ -449,19 +483,20 @@ categories =  {
 
 		movement_cost = 1.5
 		defence = 2
-		
 		local_defensiveness = 0.25
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.75
 		supply_limit = 4
 		
 		terrain_override = {
-
+			#starlingisle
+			8067 64 8154
+			
 			#East Dameshead
 			4 
 
 			#Lencenor
-			64 65 
+			65 
 
 			#Esmaria
 			270
@@ -535,6 +570,9 @@ categories =  {
 		nation_designer_cost_multiplier = 1
 		
 		terrain_override = {
+			#starlingisle 
+			8063 8065 8176
+			
 			#Aelantir
 			1004 2164 2501 2555
 
@@ -638,7 +676,7 @@ categories =  {
 
 		movement_cost = 1.05
 		supply_limit = 4
-		local_development_cost = 0.35
+		local_development_cost = 0.50
 		nation_designer_cost_multiplier = 0.8
 		
 		terrain_override = { 
@@ -661,7 +699,7 @@ categories =  {
 		sound_type = desert
 
 		movement_cost = 1.0
-		local_development_cost = 0.20
+		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.9		
 		supply_limit = 4
 
@@ -691,7 +729,7 @@ categories =  {
 		sound_type = sea
 
 		movement_cost = 1.0
-		local_development_cost = 0.20
+		local_development_cost = 0.25
 		nation_designer_cost_multiplier = 0.85		
 		supply_limit = 6 
 		
@@ -817,6 +855,9 @@ categories =  {
 		nation_designer_cost_multiplier = 0.9	
 
 		terrain_override = {
+			#starlingisle
+			8079 8082 8080 8087 8086 8085 8081 8078
+			
 			#Dragon Coast
 			179 180 182 184 
 			
@@ -991,7 +1032,6 @@ categories =  {
 
 		defence = 2
 		movement_cost = 1.3
-		fort_level = 0
 		supply_limit = 12		
 		local_development_cost = -0.05
 		local_defensiveness = 0.25
@@ -1009,7 +1049,7 @@ categories =  {
 
 		type = mountains
 		sound_type = mountainss
-		fort_level = 0
+
 		defence = 2
 		movement_cost = 1.3
 		supply_limit = 12		
@@ -1019,7 +1059,7 @@ categories =  {
 		nation_designer_cost_multiplier = 1.2		
 		
 		terrain_override = {		
-			4265 4266 4323 2863 4097 2963 4100 2942 4238 4124 2914 912 4020 4147 5424
+			4265 4266 4323 2863 4097 2963 4100 2942 4238 4124 2914 912 4020 4147 5424 8160 8073 8066
 		}
 	}
 
@@ -1043,11 +1083,11 @@ categories =  {
 			2937 2878 2879 4103 2880 2881 2882 2883 4029 2884 4038 4037 4036 2985 2984 2980 2981 2979 2970
 			2968 4240 2962 2946 2945 2944 2943 2955 2954 2956 2957 2987 2885 4028 2886 2887 2888 2889
 			2890 2891 4027 2892 2893 2894 2895 4231 4091 4111 4112 4113 4114 4090 2969 4082 2986 4121
-			4120
+			4120 8153 8152 8175 8174
 			
 			4242 4243 4244 4245 4246 4248 4249 4250 4251 4252 4253 4254 4255 4256 4257 4258 4259 4260 
 			4261 4262 4263 4264 4297 4298 4300 4301 4302 4303 4304 4305 4306 4307 4308 4309 4310
-			4314 4315 4316 4317 4318 4319 4320 4356 4359 4360 4312 8001 8002 8009
+			4314 4315 4316 4317 4318 4319 4320 4356 4359 4360 4312
 			
 		}
 	}
@@ -1073,12 +1113,11 @@ categories =  {
 			4035 2982 2978 2983 2977 2974 4099 2975 4098 2976 2972 2971 4126 2967 2964 2966 2965 4127 2961 2959 
 			2958 2960 2947 2948 2950 4032 4034 4031 4033 2941 4030 2939 2940 4227 4228 4229 4215 4214 4080 4239 
 			4084 4079 4081 4083 4216 4085 4230 4088 4110 4086 4087 4108 4109 4107 4106 4092 4095 4094
-			4089 4220 4219 4221 4222 4223 4101 4203 4207 4206 4205 4204 4552 4553
+			4089 4220 4219 4221 4222 4223 4101 4203 4207 4206 4205 4204 4552 4553 8155 8156 8157 8158 8159 8161 8162 8163 8164 8165 8166 8167 8168 8169 8170 8171 8177 8174
 			
 			4277 4279 4280 4281 4271 4267 4282 4269 4270 4272 4292 4274 4275 4268 4283 4285 4287
 			4286 4288 4293 4294 4295 4296 4299 4278 4273 4290 4289 4291 4332 4344 4354 4345 4355 4342 4341 4340
-			4339 4338 4337 4336 4335 4334 4351 4352 4348 4349 4324 4325 4326 4353 4327 4329 4330 4331 8003 8004
-			8005 8006 8012
+			4339 4338 4337 4336 4335 4334 4351 4352 4348 4349 4324 4325 4326 4353 4327 4329 4330 4331
 			
 			#Dragonheights
 			185 186 187 189 4643 4644 4645 4646 
@@ -1102,7 +1141,7 @@ categories =  {
 		supply_limit = 7	 
 
 		terrain_override = {				 
-			2367 2368 2369 2370 2371 2372 2373 2374 
+			2367 2368 2369 2370 2371 2372 2373 2374
 		} 
 	} 
 
@@ -1120,7 +1159,8 @@ categories =  {
 		allowed_num_of_buildings = 2
 		nation_designer_cost_multiplier = 1.2		
 		
-		terrain_override = {				
+		terrain_override = {	
+			8059 8019 8018 8121
 			8 #Anbenncost
 			52 #Port Munas
 			63 66 #Viswall

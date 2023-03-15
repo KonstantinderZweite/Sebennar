@@ -1,0 +1,14 @@
+
+owner = EH2
+controller = EH2
+add_core = EH2
+culture = sea_troll
+religion = mountain_watcher
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 4
+trade_goods = grain
+center_of_trade = 1
+capital = ""
+is_city = yes

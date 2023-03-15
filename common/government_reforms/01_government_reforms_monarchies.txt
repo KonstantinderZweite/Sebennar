@@ -7028,6 +7028,9 @@ extreme_decentralization_reform = {
 	legacy_equivalent = feudal_monarchy
 	valid_for_nation_designer = no
 	lock_level_when_selected = yes
+	potential = {
+		has_reform = extreme_decentralization_reform
+	}
 	modifiers = {
 		diplomatic_upkeep = 6
 		diplomats = 1
@@ -7041,5 +7044,40 @@ extreme_decentralization_reform = {
 	}
 	ai = {
 		factor = 0.5 #generic
+	}
+aethyl_autocratic_monarchy = {
+	icon = "british_queen"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = aethyl_autocratic_monarchy
+}
+	start_territory_to_estates = 0.65
+	modifiers = {
+		governing_capacity = 100
+		production_efficiency = 0.15
+		nobles_loyalty_modifier = -0.05
+		harsh_treatment_cost = -0.33
+		autonomy_change_time = -0.33
+		max_absolutism = 20
+	}
+}
+monstrous_confederation = {
+	icon = "british_queen"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = monstrous_confederation
+	}
+	start_territory_to_estates = 0.65
+	modifiers = {
+		fort_maintenance_modifier = -0.2
+		governing_capacity = 150
+		garrison_size = 0.33
+		province_warscore_cost = -0.1
+		land_forcelimit_modifier = 0.10
+	}
+	conditional = {
+		has_parliament = yes
 	}
 }

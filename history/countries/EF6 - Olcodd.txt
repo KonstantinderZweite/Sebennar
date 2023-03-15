@@ -1,0 +1,28 @@
+
+setup_vision = yes
+government = republic
+add_government_reform = plutocracy_reform
+government_rank = 1
+primary_culture = remnant_gnome
+religion = the_thought
+technology_group = tech_gnomish
+capital = 8059
+
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_state }
+1000.1.1 = { set_estate_privilege = estate_artificers_organization_independent_unions }
+
+1401.6.11 = {
+	monarch = {
+		name = "Torbin"
+		dynasty = "Orannam"
+		birth_date = 1410.2.7
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = industrious_personality
+	add_ruler_personality = entrepreneur
+	set_ruler_flag = set_immortality
+}

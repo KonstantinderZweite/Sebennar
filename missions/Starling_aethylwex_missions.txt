@@ -1,88 +1,288 @@
-##BranchStart 0
 aethylwex_mission_tree_1 = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
-		tag = E30
+		tag = EG0
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
 	##Mission Start
-	E30_sow_fields = {
+	EG0_sow_fields = {
 		icon = mission_dalmation_conquest
 		required_missions {
-			E30_aftermath_of_war
+			EG0_aftermath_of_war
+		}
+		position = 2
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = EG0_resow_fields_trigger
+				aethylwex_region = {
+					type = all
+					OR = {
+						NOT = { 
+							trade_goods = wine
+							trade_goods = grain
+						}
+						AND = {
+							base_production = 4
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			aethylwex_region = {
+				type = all
+				owned_by = ROOT
+				OR = { 
+					NOT = { 
+						trade_goods = wine
+						trade_goods = grain
+					}
+					AND = {
+						base_production = 4
+					}
+				}
+			}
+			custom_tooltip = EG0_resow_fields_effect
+			add_province_modifier = {
+				name = eg0_recovering_farmlands
+				duration = 7300
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EG0_fortify_border = {
+		icon = mission_fixed_garrison_system
+		required_missions {
+			EG0_rebuild_army EG0_sow_fields
+		}
+		position = 3
+		provinces_to_highlight = {
+		}
+		trigger = {
+			8048 = {
+				has_building = fort_15th
+			}
+			8053 = {
+				has_building = fort_15th
+			}
+			8051 = {
+				has_building = fort_15th
+			}
+			8021 = {
+				has_building = fort_15th
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eg0_protected_hinterlands
+				duration = 7300
+			}
+			8048 = {
+				add_permanent_province_modifier = {
+					name = reclaimed_aethylwar_forts
+					duration = -1
+				}
+			}
+			8053 = {
+				add_permanent_province_modifier = {
+					name = reclaimed_aethylwar_forts
+					duration = -1
+				}
+			}
+			8051 = {
+				add_permanent_province_modifier = {
+					name = reclaimed_aethylwar_forts
+					duration = -1
+				}
+			}
+			8021 = {
+				add_permanent_province_modifier = {
+					name = reclaimed_aethylwar_forts
+					duration = -1
+				}
+			}
+			every_province = {
+				limit = {
+					has_province_modifier = dilapidated_aethylwar_fort
+				}
+				remove_province_modifier = dilapidated_aethylwar_fort
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EG0_establish_museum = {
+		icon = mission_fixed_garrison_system
+		required_missions {
+			EG0_fortify_border
+		}
+		position = 3
+		provinces_to_highlight = {
+			id = 8027
+		}
+		trigger = {
+			treasury = 50
+		}
+		effect = {
+			add_treasury = -50
+			8027 = {
+				add_permanent_province_modifier = {
+					name = eg0_aethylwar_museum
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EG0_bad_cottage = {
+		icon = mission_rb_colonise_canada
+		required_missions {
+			EG0_enclosure
+		}
+		position = 10
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			8064 = {
+				base_production = 7
+			}
+			8039 = {
+				base_production = 7
+			}
+			8104 = {
+				base_production = 7
+			}
+			8101 = {
+				base_production = 7
+			}
+		}
+		effect = {
+			hidden_effect = {
+			set_variable = {
+				which = count 
+				value = 5 
+			}
+			}
+			while = {
+  	 			limit = {
+   					check_variable = { 
+						which = count
+						value = 1 
+					}
+				}
+				subtract_variable = { 
+					which = count 
+					value = 1 
+				}
+				random_owned_province = {
+      				limit = {
+      					region = aethylwex_region
+						trade_goods = wool
+     					NOT = { 
+							has_province_modifier = eg0_early_textile_adopter
+						}
+       				}
+        			change_trade_goods = cloth
+					add_province_modifier = {
+						name = eg0_early_textile_adopter
+						duration = -1
+					}
+					spawn_rebels = {
+						type = anti_tax_rebels
+						size = 3
+					}
+				}
+			}
+			custom_tooltip = EG0_bad_cottage_effect
+			add_country_modifier = {
+				name = eg0_unpopular_cottage
+				duration = 3650
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EG0_basic_manufactories = {
+		icon = mission_fixed_garrison_system
+		required_missions {
+			EG0_bad_cottage
+		}
+		position = 11
+		provinces_to_highlight = {
+			OR = {
+				region = aethylwex_region
+				region = frozen_north_region
+				region = wildlands_region
+			}
+			OR = {
+				AND = {
+					trade_goods = cloth
+					NOT = {
+						has_building = textile
+					}
+				}
+				AND = {
+					trade_goods = wool
+					NOT = {
+						has_building = textile
+					}
+				}
+				AND = {
+					trade_goods = silk
+					NOT = {
+						has_building = textile
+					}
+				}
+				AND = {
+					trade_goods = dyes
+					NOT = {
+						has_building = textile
+					}
+				}
+			}
+		}
+		trigger = {
+			textile = 10
+		}
+		effect = {
+			country_event = {
+				id = flavor_EG0.6
+				days = 0
+			}
+		}
+	}
+	##Mission End
+	##
+	##Mission Start
+	EG0_secure_logistics = {
+		icon = mission_glory_to_the_black_army
+		required_missions {
+			EG0_basic_manufactories EG0_develop_rural_industries
 		}
 		position = 2
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			
 		}
 		effect = {
-			##MISSIONEFFECT
+			country_event = {
+				id = flavor_EG0.7
+			}
 		}
 	}
 	##Mission End
-	##Mission Start
-	E30_fortify_border = {
-		icon = mission_fixed_garrison_system
-		required_missions {
-			E30_rebuild_army E30_sow_fields
-		}
-		position = 3
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
-		trigger = {
-			##MISSIONTRIGGER
-		}
-		effect = {
-			##MISSIONEFFECT
-		}
-	}
-	##Mission End
-	##Mission Start
-	E30_basic_manufactories = {
-		icon = mission_fixed_garrison_system
-		required_missions {
-			E30_bad_cottage
-		}
-		position = 10
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
-		trigger = {
-			##MISSIONTRIGGER
-		}
-		effect = {
-			##MISSIONEFFECT
-		}
-	}
-	##Mission End
-	##Mission Start
-	E30_how_bad_can_i_be = {
-		icon = mission_fixed_garrison_system
-		required_missions {
-			E30_basic_manufactories
-		}
-		position = 11
-		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
-		}
-		trigger = {
-			##MISSIONTRIGGER
-		}
-		effect = {
-			##MISSIONEFFECT
-		}
-	}
-	##Mission End
-	##
-	
 }
 ##BranchEnd 0
 ##BranchStart 1
@@ -91,156 +291,450 @@ aethylwex_mission_tree_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = E30
+		tag = EG0
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
 	##Mission Start
-	E30_rebuild_army = {
+	EG0_rebuild_army = {
 		icon = mission_glory_to_the_black_army
 		required_missions {
-			E30_aftermath_of_war
+			EG0_aftermath_of_war
 		}
 		position = 2
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			army_size_percentage = 1
+			manpower_percentage = 0.75
+			army_professionalism = 0.15
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = eg0_rebuilt_army
+				duration = 1825
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_consolidate_north = {
+	EG0_consolidate_north = {
 		icon = mission_electorate_of_brandenburg
 		required_missions {
-			E30_begin_consolidation
+			EG0_begin_consolidation
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			EF4 = {
+				exists = no
+			}
+			EF3 = {
+				exists = no
+			}
+			EF1 = {
+				exists = no
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			wynnflaed_area =  {
+				add_province_modifier = {
+					name = eg0_north_consolidated
+					duration = 7300
+				}
+			}
+			wilburh_area =  {
+				add_province_modifier = {
+					name = eg0_north_consolidated
+					duration = 7300
+				}
+			}
+			cynemaer_area =  {
+				add_province_modifier = {
+					name = eg0_north_consolidated
+					duration = 7300
+				}
+			}
+			waermundland_area =  {
+				add_province_modifier = {
+					name = eg0_north_consolidated
+					duration = 7300
+				}
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_strike_north = {
+	EG0_strike_north = {
 		icon = mission_rb_into_england
 		required_missions {
-			E30_fortify_border E30_consolidate_north
+			EG0_fortify_border EG0_consolidate_north
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
 		}
 		effect = {
-			##MISSIONEFFECT
+			hidden_effect = {
+			E17 = {
+				country_event = {
+					id = flavor_EG0.2
+				}
+			}	
+			}
+			custom_tooltip = EG0_strike_north
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_sending_relief = {
+	EG0_sending_relief = {
 		icon = mission_hands_praying
 		required_missions {
-			E30_aethylwex_unified E30_strike_north
+			EG0_aethylwex_unified EG0_strike_north
 		}
 		position = 5
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			hinterlands_area = {
+				type = all
+				OR = {
+					base_manpower = 3
+					base_production = 3
+					base_tax = 3
+				}
+				OR = {
+					has_building = barracks
+					has_building = workshop
+					has_building = temple
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			EG0 = {
+				inherit = E15
+			}
+			custom_tooltip = EG0_relief
+			hidden_effect = {
+			onuxzex_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			nuoarbex_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			igarza_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			zixip_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_end_dragonwake = {
+	EG0_end_dragonwake = {
 		icon = mission_rb_into_ireland
 		required_missions {
-			E30_sending_relief
+			EG0_sending_relief
 		}
 		position = 7
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			frozen_north_region = {
+				type = all
+				NOT = {
+					area = styn_area
+					area = esktra_area
+				}
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			frozen_north_region = {
+				type = all
+				NOT = {
+					area = styn_area
+					area = esktra_area
+				}
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			frozen_north_region = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			8073 = {
+				change_province_name = "Copper Pass"
+				rename_capital = "Aethylhold"
+				add_permanent_province_modifier = {
+					name = eg0_copper_pass
+					duration = -1
+				}
+				remove_province_modifier = kobold_majority
+				remove_province_modifier = kobold_minority_large
+				remove_province_modifier = kobold_minority_small
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_bad_cottage = {
-		icon = mission_rb_colonise_canada
+	EG0_enclosure = {
+		icon = mission_rb_conquer_wales
 		required_missions {
-			E30_home_secured
+			EG0_home_secured
 		}
 		position = 9
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			OR = {
+				region = aethylwex_region
+				area = iarllaeth_caer_area
+			}
+			trade_goods = livestock
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			custom_trigger_tooltip = {
+			tooltip = EG0_enclosure_trigger
+			aethylwex_region = {
+				type = all
+				owned_by = ROOT
+				OR = { 
+					NOT = { 
+						trade_goods = livestock 
+						area = oldcodd_area
+					}
+					AND = {
+						has_building = farm_estate
+						base_production = 5
+					}
+				}
+			}
+			iarllaeth_caer_area = {
+				type = all
+				owned_by = ROOT
+				OR = { 
+					NOT = { 
+						trade_goods = livestock 
+					}
+					AND = {
+						has_building = farm_estate
+						base_production = 5
+					}
+				}
+			}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = aethylwex_region
+							area = iarllaeth_caer_area
+						}
+						trade_goods = livestock
+					}
+					spawn_rebels = {
+						type = anti_tax_rebels
+						size = 3
+					}
+					add_province_modifier = {
+						name = eg0_enclosure
+						duration = -1
+					}
+				}
+				add_country_modifier = {
+					name = eg0_unpopular_enclosure
+					duration = 1825
+				}
+			}
 		}
-	}
 	##Mission End
 	##Mission Start
-	E30_invest_in_countryside = {
+	EG0_invest_in_countryside = {
 		icon = mission_rb_conquer_wales
 		required_missions {
-			E30_bad_cottage
+			EG0_enclosure
 		}
 		position = 10
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			is_institution_enabled = manufactories
 		}
 		effect = {
-			##MISSIONEFFECT
+			country_event = {
+				id = flavor_EG0.4
+				days = 0
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_develop_rural_industries = {
+	EG0_develop_rural_industries = {
 		icon = mission_rb_import_potatoes
 		required_missions {
-			E30_invest_in_countryside
+			EG0_invest_in_countryside EG0_bad_cottage
 		}
 		position = 11
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			custom_trigger_tooltip = {
+			tooltip = EG0_develop_rural_industries_trigger
+			num_of_owned_provinces_with = {
+				value = 6
+				OR = {
+					trade_goods = salt
+					trade_goods = fish
+					trade_goods = tropical_wood
+					trade_goods = fur
+                }
+                has_production_building_trigger = yes
+                base_production = 8
+            }
+		}
 		}
 		effect = {
-			##MISSIONEFFECT
+			custom_tooltip = EG0_develop_rural_industries_effect_1
+			hidden_effect = {
+			set_variable = {
+				which = count 
+				value = 6
+			}
+			while = {
+  	 			limit = {
+   					check_variable = { 
+						which = count
+						value = 1 
+					}
+				}
+				subtract_variable = { 
+					which = count 
+					value = 1 
+				}
+				random_owned_province = {
+      				limit = {
+      					region = aethylwex_region
+						base_production = 8
+						has_production_building_trigger = yes
+						OR = {
+							trade_goods = salt
+							trade_goods = fish
+							trade_goods = tropical_wood
+							trade_goods = fur
+						}
+       				}
+					add_province_modifier = {
+						name = eg0_expanded_rural_resources
+						duration = -1
+					}
+				}
+			}
+			}
+			custom_tooltip = EG0_develop_rural_industries_effect_2
+			every_owned_province = {
+				limit = {
+					OR = {
+						region = aethylwex_region
+						region = frozen_north_region
+						region = wildlands_region
+					}
+					OR = {
+						has_terrain = city_terrain
+						has_terrain = dwarven_hold_surface
+					}
+				}
+				spawn_rebels = {
+					type = particularist_rebels
+					size = 4
+				}
+			}
 		}
 	}
 	##Mission End
 	##
+	##Mission Start
+	EG0_how_bad_can_i_be = {
+		icon = mission_fixed_garrison_system
+		required_missions {
+			EG0_basic_manufactories EG0_develop_rural_industries EG0_sail
+		}
+		position = 12
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			is_institution_enabled = manufactories
+			EG0 = {
+				colony = 1
+			}
+			num_of_owned_provinces_with = {
+				value = 80
+				OR = {
+					has_building = manufactory
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+		}
+		effect = {
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = aethylwex_region
+							region = frozen_north_region
+							region = wildlands_region
+						}
+					}
+					add_institution_embracement = {
+					which = manufactories
+					value = 100
+					}
+				}
+			}
+			custom_tooltip = how_bad_tooltip
+		}
+	}
+	##Mission End
 	
 }
 ##BranchEnd 1
@@ -250,13 +744,13 @@ aethylwex_mission_tree_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = E30
+		tag = EG0
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
 	##Mission Start
-	E30_aftermath_of_war = {
+	EG0_aftermath_of_war = {
 		icon = mission_centralize_france
 		required_missions {
 			
@@ -269,15 +763,18 @@ aethylwex_mission_tree_3 = {
 			##MISSIONTRIGGER
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = eg0_aftermath
+				duration = 9125
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_begin_consolidation = {
+	EG0_begin_consolidation = {
 		icon = mission_centralize_france
 		required_missions {
-			E30_aftermath_of_war
+			EG0_aftermath_of_war
 		}
 		position = 2
 		provinces_to_highlight = {
@@ -287,76 +784,260 @@ aethylwex_mission_tree_3 = {
 			##MISSIONTRIGGER
 		}
 		effect = {
-			##MISSIONEFFECT
+			custom_tooltip = EG0_begin_consolidation_effect
+			set_country_flag = EG0_begin_consolidation
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_consolidate_center = {
+	EG0_consolidate_center = {
 		icon = mission_centralize_france
 		required_missions {
-			E30_begin_consolidation
+			EG0_begin_consolidation
 		}
 		position = 3
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			EE7 = {
+				exists = no
+			}
+			EE6 = {
+				exists = no
+			}
+			EE9 = {
+				exists = no
+			}
+			EF2 = {
+				exists = no
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			cerdiclund_area =  {
+				add_province_modifier = {
+					name = eg0_center_consolidated
+					duration = 7300
+				}
+			}
+			swithin_area =  {
+				add_province_modifier = {
+					name = eg0_center_consolidated
+					duration = 7300
+				}
+			}
+			dunstan_area =  {
+				add_province_modifier = {
+					name = eg0_center_consolidated
+					duration = 7300
+				}
+			}
+			deorwine_area =  {
+				add_province_modifier = {
+					name = eg0_center_consolidated
+					duration = 7300
+				}
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_aethylwex_unified = {
+	EG0_aethylwex_unified = {
 		icon = mission_rb_ascendant
 		required_missions {
-			E30_consolidate_south E30_consolidate_north E30_consolidate_center
+			EG0_consolidate_south EG0_consolidate_north EG0_consolidate_center
 		}
 		position = 4
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			region = aethylwex_region
+			NOT = {
+				owned_by = ROOT
+				area = hinterlands_area
+				area = oldcodd_area
+			}
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			aethylwex_region = {
+				type = all
+				AND = {
+					owned_by = EG0
+					NOT = {
+						area = hinterlands_area
+						area = oldcodd_area
+					}
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			aethylwex_region = {
+				NOT = {
+					limit = {
+						area = hinterlands_area
+					}
+				}
+				add_province_modifier = {
+					name = eg0_unification_festivals
+					duration = 3650
+				}
+			}
+			custom_tooltip = EG0_unification
+			hidden_effect = {
+			iarllaeth_caer_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+				discover_country = ROOT
+			}
+			builth_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+				discover_country = ROOT
+			}
+			gwynedd_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+				discover_country = ROOT
+			}
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_head_west = {
+	EG0_head_west = {
 		icon = mission_all_roads_lead_to_milan
 		required_missions {
-			E30_aethylwex_unified
+			EG0_aethylwex_unified
 		}
 		position = 5
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = iarllaeth_caer_area
+			NOT = {
+				owned_by = ROOT
+			}
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			iarllaeth_caer_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			8064 = {
+				add_province_modifier = {
+					name = eg0_grand_shipyard_1
+					duration = -1
+				}
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_home_secured = {
+	EG0_conquer_borderlands = {
+		icon = mission_anatolian_frontier
+		required_missions {
+			EG0_head_west
+		}
+		position = 6
+		provinces_to_highlight = {
+			area = gwynedd_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			gwynedd_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			8064 = {
+				remove_province_modifier = eg0_grand_shipyard_1
+				add_province_modifier = {
+					name = eg0_grand_shipyard_2
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission Start
+	EG0_stomp_stouties = {
+		icon = mission_bavarian_netherlands
+		required_missions {
+			EG0_conquer_borderlands
+		}
+		position = 7
+		provinces_to_highlight = {
+			area = builth_area
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			builth_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			8064 = {
+				remove_province_modifier = eg0_grand_shipyard_2
+				add_province_modifier = {
+					name = eg0_grand_shipyard_3
+					duration = -1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EG0_home_secured = {
 		icon = mission_rb_rule_britannia_scottish_version
 		required_missions {
-			E30_end_gnomish_question E30_end_question E30_end_dragonwake
+			EG0_end_gnomish_question EG0_end_question EG0_end_dragonwake EG0_stomp_stouties
 		}
 		position = 8
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			aethylwex_region = {
+				NOT = {
+					area = oldcodd_area
+				}
+			}
+			region = frozen_north_region
+			region = wildlands_region 
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			aethylwex_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					area = oldcodd_area
+				}
+			}
+			frozen_north_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			wildlands_region = {
+				NOT = {
+					id = 8050
+				}
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
 			##MISSIONEFFECT
@@ -364,38 +1045,67 @@ aethylwex_mission_tree_3 = {
 	}
 	##Mission End
 	##Mission Start
-	E30_contemplate_colonialism = {
+	EG0_contemplate_colonialism = {
 		icon = mission_rb_scottish_the_darien_scheme
 		required_missions {
-			E30_bad_cottage
+			EG0_enclosure
 		}
 		position = 10
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			OR = {
+				num_of_heavy_ship = 60
+				num_of_light_ship = 180
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			is_institution_enabled = global_trade
+			add_country_modifier = {
+				name = eg0_contemplate_colonialism
+				duration = 18250
+			}
+			add_dip_power = 200
+			create_explorer = { tradition = 75 }
+			add_country_modifier = {
+				name = eg0_unpopular_foreign_excursions
+				duration = 1825
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_sail = {
+	EG0_sail = {
 		icon = mission_rb_scottish_north_sea_trade
 		required_missions {
-			E30_contemplate_colonialism
+			EG0_contemplate_colonialism
 		}
 		position = 11
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			custom_trigger_tooltip = {
+				tooltip = EG0_sail_tooltip
+				EG0 = {
+					OR = {
+						has_discovered = 1202
+						has_discovered = 1214
+						has_discovered = 932
+						has_discovered = 1015
+						has_discovered = 945
+						has_discovered = 2796
+					}
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = eg0_sail
+				duration = 18250
+			}
+			add_dip_power = 200
 		}
 	}
 	##Mission End
@@ -409,95 +1119,203 @@ aethylwex_mission_tree_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = E30
+		tag = EG0
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
 	##Mission Start
-	E30_consolidate_south = {
+	EG0_consolidate_south = {
 		icon = mission_electorate_of_saxony
 		required_missions {
-			E30_begin_consolidation
+			EG0_begin_consolidation
 		}
 		position = 3
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			EE2 = {
+				exists = no
+			}
+			EE3 = {
+				exists = no
+			}
+			EE4 = {
+				exists = no
+			}
+			EE5 = {
+				exists = no
+			}
+			EE0 = {
+				exists = no
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			glaedwine_area =  {
+				add_province_modifier = {
+					name = eg0_south_consolidated
+					duration = 7300
+				}
+			}
+			saewine_area =  {
+				add_province_modifier = {
+					name = eg0_south_consolidated
+					duration = 7300
+				}
+			}
+			heard_area =  {
+				add_province_modifier = {
+					name = eg0_south_consolidated
+					duration = 7300
+				}
+			}
+			cyneric_area =  {
+				add_province_modifier = {
+					name = eg0_south_consolidated
+					duration = 7300
+				}
+			}
+			cyneweard_area =  {
+				add_province_modifier = {
+					name = eg0_south_consolidated
+					duration = 7300
+				}
+			}
+			ealdhelm_area =  {
+				add_province_modifier = {
+					name = eg0_south_consolidated
+					duration = 7300
+				}
+			}
+			eadburg_area =  {
+				add_province_modifier = {
+					name = eg0_south_consolidated
+					duration = 7300
+				}
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_city_of_commerce = {
+	EG0_city_of_commerce = {
 		icon = mission_rb_scottish_conquer_london
 		required_missions {
-			E30_consolidate_south
+			EG0_consolidate_south
 		}
 		position = 4
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			8019 = {
+				AND = {
+					development = 30
+					base_production = 14
+				}
+				has_building = marketplace
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			8019 = {
+				add_province_modifier = {
+					name = eg0_city_of_commerce
+					duration = -1
+				}
+				remove_building = marketplace
+				add_building = trade_depot
+				add_building = university
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_seat_of_power = {
+	EG0_seat_of_power = {
 		icon = mission_rb_the_bank_of_scotland
 		required_missions {
-			E30_aethylwex_unified E30_city_of_commerce E30_city_of_arts
+			EG0_aethylwex_unified EG0_city_of_commerce EG0_city_of_arts
 		}
 		position = 5
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			ROOT = {
+				is_at_war = no
+			}
+			cyneric_area = {
+				is_prosperous = yes
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			EG0 = {
+				country_event = {
+					id = flavor_EG0.1
+					days = 0
+				}
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_huntsmen_fate = {
+	EG0_huntsmen_fate = {
 		icon = mission_rb_conquer_the_highlands
 		required_missions {
-			E30_head_west E30_seat_of_power
+			EG0_head_west EG0_seat_of_power
 		}
 		position = 6
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			area = aeryn_area
+			area = difaeth_area
+			area = dayr_area
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			aeryn_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			difaeth_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dayr_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			wildlands_region = {
+				add_permanent_claim = ROOT
+				discover_country = ROOT
+			}
+			8102 = {
+				create_colony = 400
+			}
+			add_prestige = 25
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_end_question = {
+	EG0_end_question = {
 		icon = mission_rb_rule_britannia_irish_version
 		required_missions {
-			E30_huntsmen_fate
+			EG0_huntsmen_fate
 		}
 		position = 7
 		provinces_to_highlight = {
-			##PROVINCESHIGHLIGHTCODE
+			region = wildlands_region
+			NOT = {
+				owned_by = ROOT
+			}
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			wildlands_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					id = 8150
+				}
+			}
 		}
 		effect = {
 			##MISSIONEFFECT
@@ -505,17 +1323,52 @@ aethylwex_mission_tree_4 = {
 	}
 	##Mission End
 	##Mission Start
-	E30_military_readiness = {
+	EG0_end_gnomes = {
+		icon = mission_conquer_5_states
+		required_missions {
+			EG0_end_gnomish_question
+		}
+		position = 8
+		provinces_to_highlight = {
+			area = olcodd_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			NOT = {
+				exists = EF6
+				
+			}
+			custom_trigger_tooltip = {
+				tooltip = EG0_destroy_gnomes_tooltip
+				NOT = {
+					has_country_flag = EG0_working_with_gnomes
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eg0_gnomes_destroyed
+				duration = 18250
+			}
+			set_country_flag = EG0_ended_gnomes
+		}
+	}
+	##Mission End
+	##Mission Start
+	EG0_military_readiness = {
 		icon = mission_rb_rein_in_the_highland_clans
 		required_missions {
-			E30_home_secured
+			EG0_home_secured
 		}
 		position = 9
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			army_size = 150
+			army_professionalism = 0.6
 		}
 		effect = {
 			##MISSIONEFFECT
@@ -523,10 +1376,10 @@ aethylwex_mission_tree_4 = {
 	}
 	##Mission End
 	##Mission Start
-	E30_secret_secret_tunnel = {
+	EG0_secret_secret_tunnel = {
 		icon = mission_rb_conquer_brittany
 		required_missions {
-			E30_military_readiness
+			EG0_military_readiness
 		}
 		position = 10
 		provinces_to_highlight = {
@@ -541,10 +1394,10 @@ aethylwex_mission_tree_4 = {
 	}
 	##Mission End
 	##Mission Start
-	E30_onto_mainland = {
+	EG0_onto_mainland = {
 		icon = mission_rb_angevin_kingdom
 		required_missions {
-			E30_secret_secret_tunnel
+			EG0_secret_secret_tunnel
 		}
 		position = 11
 		provinces_to_highlight = {
@@ -568,52 +1421,80 @@ aethylwex_mission_tree_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = E30
+		tag = EG0
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
 	##Mission Start
-	E30_city_of_arts = {
+	EG0_city_of_arts = {
 		icon = mission_rb_trinity_college_dublin
 		required_missions {
-			E30_consolidate_south
+			EG0_consolidate_south
 		}
 		position = 4
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			8018 = {
+				AND = {
+					development = 30
+					base_tax = 14
+				}
+				has_building = courthouse
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			8018 = {
+				add_province_modifier = {
+					name = eg0_city_of_arts
+					duration = -1
+				}
+				remove_building = courthouse
+				add_building = town_hall
+				add_building = university
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_gnomish_relations = {
+	EG0_gnomish_relations = {
 		icon = mission_establish_oktoberfest
 		required_missions {
-			E30_seat_of_power
+			EG0_seat_of_power
 		}
 		position = 6
 		provinces_to_highlight = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			##MISSIONTRIGGER
+			EF6 = {
+				OR = {
+					has_opinion = {
+						who = ROOT
+						value = 80
+					}
+					alliance_with = EG0
+					EG0 = {
+						is_claim = 8060
+					}
+				}
+			}
 		}
 		effect = {
-			##MISSIONEFFECT
+			add_country_modifier = {
+				name = eg0_gnomish_relations
+				duration = 9125
+			}
 		}
 	}
 	##Mission End
 	##Mission Start
-	E30_end_gnomish_question = {
+	EG0_end_gnomish_question = {
 		icon = mission_geneva_conventions
 		required_missions {
-			E30_gnomish_relations
+			EG0_gnomish_relations
 		}
 		position = 7
 		provinces_to_highlight = {
@@ -623,7 +1504,361 @@ aethylwex_mission_tree_5 = {
 			##MISSIONTRIGGER
 		}
 		effect = {
-			##MISSIONEFFECT
+			EG0 = {
+				country_event = {
+					id = flavor_EG0.9
+					days = 1
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EG0_invest_in_gnomish_shipbuilding = {
+		icon = dominate_home_trade_node
+		required_missions {
+			EG0_end_gnomish_question EG0_home_secured
+		}
+		position = 9
+		provinces_to_highlight = {
+			id = 8060
+		}
+		trigger = {
+			treasury = 1500
+			NOT = {
+				has_country_modifier = eg0_recent_investment
+			}
+			custom_trigger_tooltip = {
+				tooltip = EG0_allied_gnomes_tooltip
+				NOT = {
+					has_country_flag = EG0_working_against_gnomes
+				}
+			}
+		}
+		effect = {
+			add_treasury = -1500
+			set_country_flag = EG0_allied_gnomes
+			custom_tooltip = EG0_gnomish_shipbuilding
+			add_country_modifier = {
+				name = eg0_recent_investment
+				duration = 5475
+			}
+			if = {
+				custom_tooltip = EG0_gnomish_shipbuilding_1
+				limit = {
+					NOT = {
+						gwynedd_area = {
+							type = all
+							owned_by = ROOT
+							has_building = wharf
+							base_production = 8
+						}
+					}
+				}
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							region = aethylwex_region
+							trade_goods = naval_supplies
+						}
+						add_base_production = 2
+						add_base_tax = 1
+						add_base_manpower = 1
+					}
+				}
+				8060 = {
+					add_province_modifier = {
+						name = eg0_gnomish_shipyard_investment
+						duration = -1
+					}
+				}
+				8064 = {
+					add_province_modifier = {
+						name = eg0_quality_wood
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = EG0_gnomish_shipbuilding_2
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							OR = {
+								region = aethylwex_region
+								area = gwynedd_area
+							}
+							OR = {
+								trade_goods = naval_supplies
+								trade_goods = tropical_wood
+							}
+						}
+						add_base_production = 2
+						add_base_tax = 1
+						add_base_manpower = 1
+					}
+				}
+				8060 = {
+					add_province_modifier = {
+						name = eg0_gnomish_shipyard_investment
+						duration = -1
+					}
+				}
+				8064 = {
+					add_province_modifier = {
+						name = eg0_quality_wood
+						duration = -1
+					}
+				}
+				8062 = {
+					add_province_modifier = {
+						name = eg0_surplus_supplies_1
+						duration = -1
+					}
+				}
+				8063 = {
+					add_province_modifier = {
+						name = eg0_surplus_supplies_1
+						duration = -1
+					}
+				}
+				8065 = {
+					add_province_modifier = {
+						name = eg0_surplus_supplies_1
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EG0_invest_in_gnomish_production = {
+		icon = dominate_home_trade_node
+		required_missions {
+			EG0_invest_in_gnomish_shipbuilding
+		}
+		position = 10
+		provinces_to_highlight = {
+			id = 8061
+		}
+		trigger = {
+			treasury = 2000
+			NOT = {
+				has_country_modifier = eg0_recent_investment
+			}
+		}
+		effect = {
+			add_treasury = -2000
+			custom_tooltip = EG0_gnomish_production_1
+			add_country_modifier = {
+				name = eg0_recent_investment
+				duration = 5475
+			}
+			if = {
+				custom_tooltip = EG0_gnomish_production_2
+				limit = {
+					builth_area = {
+						type = all
+						owned_by = ROOT
+						OR = {
+							AND = {
+								base_production = 6
+								has_building = weapons
+							}
+							NOT = {
+								trade_goods = copper
+							}
+						}
+					}
+					frozen_north_region = {
+						type = all
+						owned_by = ROOT
+						OR = {
+							AND = {
+								base_production = 6
+								has_building = weapons
+							}
+							NOT = {
+								trade_goods = copper
+							}
+						}
+					}
+					aethylwex_region = {
+						type = all
+						owned_by = ROOT
+						OR = {
+							AND = {
+								base_production = 6
+								has_building = weapons
+							}
+							NOT = {
+								trade_goods = copper
+							}
+						}
+					}
+				}
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							OR = {
+								region = frozen_north_region
+								region = aethylwex_region
+								area = builth_area
+							}
+							trade_goods = copper
+						}
+						add_base_production = 2
+						add_base_tax = 1
+						add_base_manpower = 1
+					}
+				}
+				8064 = {
+					add_province_modifier = {
+						name = eg0_quality_bronze
+						duration = -1
+					}
+				}
+				8061 = {
+					add_province_modifier = {
+						name = eg0_copper_bands
+						duration = -1
+					}
+				}
+				8062 = {
+					remove_province_modifier = eg0_surplus_supplies_1
+					add_province_modifier = {
+						name = eg0_surplus_supplies_2
+						duration = -1
+					}	
+				}
+				8063 = {
+					remove_province_modifier = eg0_surplus_supplies_1
+					add_province_modifier = {
+						name = eg0_surplus_supplies_2
+						duration = -1
+					}
+				}
+				8065 = {
+					remove_province_modifier = eg0_surplus_supplies_1
+					add_province_modifier = {
+						name = eg0_surplus_supplies_2
+						duration = -1
+					}
+				}
+			}
+			else = {
+				custom_tooltip = EG0_gnomish_production_3
+				hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							region = frozen_north_region
+							region = aethylwex_region
+							area = builth_area
+						}
+						trade_goods = copper
+					}
+					hidden_effect = {
+						add_base_production = 1
+						add_base_tax = 1
+						add_base_manpower = 1
+					}
+				}
+				}
+				8064 = {
+					add_province_modifier = {
+						name = eg0_quality_bronze
+						duration = -1
+					}
+				}
+				8061 = {
+					add_province_modifier = {
+						name = eg0_copper_bands
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	EG0_invest_in_gnomish_education = {
+		icon = mission_hands_praying
+		required_missions {
+			EG0_invest_in_gnomish_production
+		}
+		position = 11
+		provinces_to_highlight = {
+			id = 8059
+		}
+		trigger = {
+			treasury = 5000
+			NOT = {
+				has_country_modifier = eg0_recent_investment
+			}
+		}
+		effect = {
+			custom_tooltip = EG0_invest_in_gnomish_education
+			add_treasury = -5000
+			add_country_modifier = {
+				name = eg0_recent_investment
+				duration = 5475
+			}
+			if = {
+				limit = {
+					NOT = {
+						salla_dywya_area = {
+							type = all
+							owned_by = ROOT
+						}
+					}
+				}
+				8019 = {
+					add_province_modifier = {
+						name = eg0_gnomish_idea_exchange
+						duration = -1
+					}
+				}
+				8018 = {
+					add_province_modifier = {
+						name = eg0_gnomish_idea_exchange
+						duration = -1
+					}
+				}
+				8059 = {
+					add_province_modifier = {
+						name = eg0_aethyl_idea_exchange
+						duration = -1
+					}
+				}
+			}
+			else = {
+				8019 = {
+					add_province_modifier = {
+						name = eg0_gnomish_idea_exchange
+						duration = -1
+					}
+				}
+				8018 = {
+					add_province_modifier = {
+						name = eg0_gnomish_idea_exchange
+						duration = -1
+					}
+				}
+				8059 = {
+					add_province_modifier = {
+						name = eg0_gnomish_idea_exchange
+						duration = -1
+					}
+				}
+				8097 = {
+					add_province_modifier = {
+						name = eg0_joint_aethyl_gnomish_study
+						duration = -1
+					}
+				}
+			}
 		}
 	}
 	##Mission End

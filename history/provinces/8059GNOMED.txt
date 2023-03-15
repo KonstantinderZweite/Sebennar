@@ -1,0 +1,13 @@
+
+owner = EF6
+controller = EF6
+add_core = EF6
+culture = remnant_gnome
+religion = the_thought
+hre = no
+base_tax = 4
+base_production = 3
+base_manpower = 2
+trade_goods = dyes
+capital = "Refugee Camp"
+is_city = yes

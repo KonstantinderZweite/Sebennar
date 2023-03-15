@@ -1,0 +1,132 @@
+country_decisions = {
+	explo_ideas_1 = {
+		major = yes
+		potential = {
+			OR = {
+				technology_group = tech_cannorian
+				technology_group = tech_gerudian
+				technology_group = tech_halfling
+				technology_group = tech_gnomish
+				technology_group = tech_troll
+				technology_group = tech_kobold
+				technology_group = tech_elven
+			}
+			capital_scope = {
+				continent = europe
+			}
+			num_of_ports = 1
+			adm_tech = 5
+			NOT = {
+				AND = {
+					is_year = 1480
+					tag = A32
+				}
+			}
+			NOT = { 
+				OR = {
+					has_country_flag = explo_decision_blah
+					has_country_flag = explo_decision_1
+				}
+			}
+		}
+		allow = {
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			country_event = {
+				id = explo_ideas.1
+				days = 1
+			}
+			set_country_flag = explo_decision_1 
+		}
+	}
+	explo_ideas_2 = {
+		major = yes
+		potential = {
+			has_country_flag = explo_decision_1 
+			NOT = {
+				has_country_flag = explo_decision_2
+			}
+		}
+		allow = {
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			add_country_modifier = {
+				name = explo_ideas_2
+				duration = -1
+			}
+			set_country_flag = explo_decision_2
+			clr_country_flag = explo_decision_1
+			set_country_flag = explo_decision_blah
+		}
+	}
+	explo_ideas_3 = {
+		major = yes
+		potential = {
+			has_country_flag = explo_decision_2
+			NOT = {
+				has_country_flag = explo_decision_3
+			}
+		}
+		allow = {
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			add_country_modifier = {
+				name = explo_ideas_3
+				duration = -1
+			}
+			remove_country_modifier = explo_ideas_2
+			clr_country_flag = explo_decision_2
+			set_country_flag = explo_decision_3
+		}
+	}
+	explo_ideas_4 = {
+		major = yes
+		potential = {
+			has_country_flag = explo_decision_3
+			NOT = {
+				has_country_flag = explo_decision_4
+			}
+		}
+		allow = {
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			add_country_modifier = {
+				name = explo_ideas_4
+				duration = -1
+			}
+			remove_country_modifier = explo_ideas_3
+			clr_country_flag = explo_decision_3
+			set_country_flag = explo_decision_4
+		}
+	}
+	explo_ideas_5 = {
+		major = yes
+		potential = {
+			has_country_flag = explo_decision_4
+			NOT = {
+				has_country_flag = explo_decision_5
+			}
+		}
+		allow = {
+			dip_power = 200
+		}
+		effect = {
+			add_dip_power = -200
+			add_country_modifier = {
+				name = explo_ideas_5
+				duration = -1
+			}
+			remove_country_modifier = explo_ideas_4
+			clr_country_flag = explo_decision_4
+			set_country_flag = explo_decision_5
+		}
+	}
+}
