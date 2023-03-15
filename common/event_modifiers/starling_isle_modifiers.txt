@@ -173,15 +173,15 @@ eg0_city_of_arts = {
 	nobility_loyalty_modifier = 0.05
 }
 cyneburg_capital = {
-	advisor_cost = -0.1
-	advisor_pool = 1
-	prestige = 0.5
+	trade_efficiency = 0.075
+	diplomatic_reputation = 0.5
 	legitimacy = 1
 	republican_tradition = 0.3
 }
 cyneburga_capital = {
-	trade_efficiency = 0.075
-	diplomatic_reputation = 0.5
+	advisor_cost = -0.1
+	advisor_pool = 1
+	prestige = 0.5
 	legitimacy = 1
 	republican_tradition = 0.3
 }

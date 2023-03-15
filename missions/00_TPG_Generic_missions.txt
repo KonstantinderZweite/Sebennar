@@ -2,7 +2,7 @@ generic_column_2 = {
 	slot = 2
 	generic = yes
 	potential = {
-	   always = yes
+		always = yes
 	}
 	
 	##Mission Start

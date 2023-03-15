@@ -54,9 +54,9 @@ country_event = {
 	option = {
 		name = flavor_EG0.2.b
 		EG0 = {
-			vassalize = E15
+			vassalize = EF5
 		}
-		8057 = {`
+		8057 = {
 			add_province_modifier = {
 				name = eg0_collapsed_tunnels
 				duration = 10950 #30years
@@ -79,7 +79,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_EG0.3.a
-		declare_war = E17
+		declare_war = EF7
 	}
 	option = {
 		name = flavor_EG0.3.b
@@ -178,7 +178,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = flavor_EG0.5.f
+		name = flavor_EG0.4.f
 		add_country_modifier = {
 			name = eg0_large_spending
 			duration = -1
@@ -203,7 +203,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = flavor_EG0.5.a
+		name = flavor_EG0.4.g
 		add_country_modifier = {
 			name = eg0_beyond_rational_spending
 			duration = -1
@@ -337,6 +337,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	id = flavor_EG0.6
 	title = flavor_EG0.6.t
@@ -350,12 +351,13 @@ country_event = {
 
 	}
 	option = {
-		name = flavor_EG0.a
-		EG0 = {
-			add_country_modifier = eg0_aethylwexer_clothes
-			add_prestige = 10
-			add_years_of_income = 0.5
+		name = flavor_EG0.6.a
+		add_country_modifier = {
+			name = eg0_aethylwexer_clothes
+			duration = -1
 		}
+		add_prestige = 10
+		add_years_of_income = 0.5
 		change_price = {
 			trade_goods = cloth
 			key = aethyl_surplus_textiles
@@ -382,7 +384,7 @@ country_event = {
 				duration = -1
 			}
 			country_event = {
-				id = flavor_EG0.5
+				id = flavor_EG0.8
 				days = 3650
 			}
 		}
@@ -394,7 +396,7 @@ country_event = {
 				duration = -1
 			}
 			country_event = {
-				id = flavor_EG0.5
+				id = flavor_EG0.8
 				days = 3650
 			}
 		}
@@ -406,19 +408,19 @@ country_event = {
 				duration = -1
 			}
 			country_event = {
-				id = flavor_EG0.5
+				id = flavor_EG0.8
 				days = 3650
 			}
 		}
 		option = {
-			name = flavor_EG0.7.cc
+			name = flavor_EG0.7.h
 			set_country_flag = eg0_large_infrastructure
 			add_country_modifier = {
 				name = eg0_large_infrastructure_investment
 				duration = -1
 			}
 			country_event = {
-				id = flavor_EG0.5
+				id = flavor_EG0.8
 				days = 3650
 			}
 		}
@@ -430,7 +432,7 @@ country_event = {
 				duration = -1
 			}
 			country_event = {
-				id = flavor_EG0.5
+				id = flavor_EG0.8
 				days = 3650
 			}
 		}
@@ -442,7 +444,7 @@ country_event = {
 				duration = -1
 			}
 			country_event = {
-				id = flavor_EG0.5
+				id = flavor_EG0.8
 				days = 3650
 			}
 		}
@@ -552,3 +554,4 @@ country_event = {
 			name = flavor_EG0.9.b
 			set_country_flag = EG0_working_against_gnomes
 		}
+}

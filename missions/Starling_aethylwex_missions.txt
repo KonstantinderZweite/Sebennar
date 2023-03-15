@@ -257,7 +257,6 @@ aethylwex_mission_tree_1 = {
 		effect = {
 			country_event = {
 				id = flavor_EG0.6
-				days = 0
 			}
 		}
 	}
