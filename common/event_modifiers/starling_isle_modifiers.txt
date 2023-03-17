@@ -437,22 +437,22 @@ eg0_industrial_resource_production = {
 	trade_goods_size_modifier = 0.25
 	local_unrest = 3
 }
-eg0_token_infrastructure = {
+eg0_token_infrastructure_investment = {
 	global_tax_income = -240
 }
-eg0_small_infrastructure = {
+eg0_small_infrastructure_investment = {
 	global_tax_income = -480
 }
-eg0_medium_infrastructure = {
+eg0_medium_infrastructure_investment = {
 	global_tax_income = -960
 }
-eg0_large_infrastructure = {
+eg0_large_infrastructure_investment = {
 	global_tax_income = -960
 }
-eg0_huge_infrastructure = {
+eg0_huge_infrastructure_investment = {
 	global_tax_income = -1920
 }
-eg0_beyond_rational_infrastructure = {
+eg0_beyond_rational_infrastructure_investment = {
 	global_tax_income = -3840
 }
 eg0_infrastructure_1 =  {
