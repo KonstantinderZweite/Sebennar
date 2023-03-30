@@ -684,7 +684,7 @@ aethylwex_mission_tree_2 = {
 				}
 				spawn_rebels = {
 					type = particularist_rebels
-					size = 4
+					size = 2.75
 				}
 			}
 		}
@@ -709,7 +709,20 @@ aethylwex_mission_tree_2 = {
 			num_of_owned_provinces_with = {
 				value = 80
 				OR = {
-					has_building = manufactory
+					custom_trigger_tooltip = {
+						tooltip = EG0_how_bad_effect
+					OR = {
+						
+						has_building = wharf
+						has_building = weapons
+						has_building = textile
+						has_building = plantations
+						has_building = tradecompany
+						has_building = farm_estate
+						has_building = mills
+						has_building = furnace
+					}
+					}
 					has_building = workshop
 					has_building = counting_house
 				}
@@ -1342,9 +1355,7 @@ aethylwex_mission_tree_4 = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = EG0_destroy_gnomes_tooltip
-				NOT = {
-					has_country_flag = EG0_working_with_gnomes
-				}
+				has_country_flag = EG0_working_against_gnomes
 			}
 		}
 		effect = {
@@ -1530,9 +1541,7 @@ aethylwex_mission_tree_5 = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = EG0_allied_gnomes_tooltip
-				NOT = {
-					has_country_flag = EG0_working_against_gnomes
-				}
+				has_country_flag = EG0_working_with_gnomes
 			}
 		}
 		effect = {

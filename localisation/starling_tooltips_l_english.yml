@@ -21,3 +21,4 @@
  EG0_develop_rural_industries_effect_1: "6 random provinces meeting the previous requirements will gain 1 production and 10% goods produced, but +1.5 unrest"
  EG0_develop_rural_industries_effect_2: "All city-type provinces in the Starling Isle, such as Holds or Urban, will spawn rebels"
  EG0_bad_cottage_effect: "5 random provinces that produce wool will gain 0.5 production and 20% goods produced and change their trade goods to cloth, but +3 unrest. Rebels will rise up in these provinces."
+ EG0_how_bad_trigger: "Has any manufactory"
