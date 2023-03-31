@@ -2,10 +2,13 @@ version="0.1"
 tags={
 	"Alternative History"
 }
+name="Sebennar Github"
 dependencies={
 	"Anbennar: A Fantasy Total Conversion"
+	"Anbennar-PublicFork"
+	"Anbennar-Steam-Release"
 }
-name="Sebennar Github"
 supported_version="1.34.5"
+picture="thumbnail.png"
 remote_file_id="2933697562"
-path="C:\Users\epicp\Documents\Paradox Interactive\Europa Universalis IV\mod\Sebennar Github"
+path="mod/Sebennar Github"
