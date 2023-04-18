@@ -4,7 +4,7 @@ controller = R62
 add_core = R62
 add_core = R80
 culture = wolf_command
-religion = godlost
+religion = old_dookan
 center_of_trade = 1
 
 hre = no

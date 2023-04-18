@@ -4,8 +4,8 @@ owner = R62
 controller = R62
 add_core = R62
 add_core = R80
-culture = royal_harimari
-religion = high_philosophy
+culture = brown_orc
+religion = old_dookan
 
 hre = no
 

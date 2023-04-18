@@ -5,8 +5,8 @@ controller = R62
 add_core = R62
 add_core = R80
 add_core = R79
-culture = kamtarhid
-religion = high_philosophy
+culture = brown_orc
+religion = old_dookan
 
 hre = no
 
