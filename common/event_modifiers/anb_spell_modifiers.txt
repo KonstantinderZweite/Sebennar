@@ -140,8 +140,8 @@ magic_realm_abjuration_field_of_freedom = {
 }
 
 magic_realm_abjuration_field_of_forbiddance = {
-	local_hostile_movement_speed = -0.75
-	local_hostile_attrition = 5
+	local_hostile_movement_speed = -0.25
+	local_hostile_attrition = 2.5
 }
 
 magic_realm_abjuration_field_of_fortification = {
@@ -301,14 +301,17 @@ magic_realm_evocation_war_magic_3 = {
 
 magic_realm_illusion_glamour = {
 	diplomatic_reputation = 1
+	vassal_income = 0.30
 }
 
 magic_realm_illusion_enchanted_glamour = {
 	diplomatic_reputation = 2
+	vassal_income = 0.40
 }
 
 magic_realm_illusion_otherworldly_glamour = {
 	diplomatic_reputation = 3
+	vassal_income = 0.50
 }
 
 magic_realm_illusion_simulacrum = {

@@ -1,0 +1,13 @@
+
+
+EscannScaler = {
+	land_forcelimit = 5
+	global_manpower = 5 
+	global_tax_income = 48
+	
+
+}
+
+adjacent_fort_penalty = {
+	local_defensiveness = -2.50
+}

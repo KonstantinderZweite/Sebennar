@@ -687,6 +687,7 @@ mag_tower_four = {
 	local_development_cost = -0.2
 	trade_goods_size = 0.25
 	global_tax_modifier = 0.025
+	all_power_cost = -0.01
 }
 
 mag_tower_five = {
@@ -696,7 +697,7 @@ mag_tower_five = {
 	trade_goods_size = 0.5
 	global_tax_modifier = 0.05
 	production_efficiency = 0.025
-	all_power_cost = -0.025
+	all_power_cost = -0.02
 }
 
 mag_tower_six = {
@@ -706,7 +707,7 @@ mag_tower_six = {
 	trade_goods_size = 0.75
 	global_tax_modifier = 0.075
 	production_efficiency = 0.05
-	all_power_cost = -0.05
+	all_power_cost = -0.03
 }
 
 mag_tower_seven = {
@@ -716,7 +717,7 @@ mag_tower_seven = {
 	trade_goods_size = 1
 	global_tax_modifier = 0.1
 	production_efficiency = 0.075
-	all_power_cost = -0.075
+	all_power_cost = -0.04
 }
 
 mag_tower_eight = {
@@ -725,7 +726,7 @@ mag_tower_eight = {
 	trade_goods_size = 1.5
 	global_tax_modifier = 0.1
 	production_efficiency = 0.1
-	all_power_cost = -0.1
+	all_power_cost = -0.05
 }
 
 mag_breakthrought = {
@@ -3964,7 +3965,7 @@ arannen_country_of_craftsmen = {
 }
 
 arannen_anbenncost_of_the_east = {
-		prestige_decay = -0.01
+		prestige_decay = -0.02
 }
 
 arannen_source_of_iron = {
@@ -22671,6 +22672,11 @@ G59_motivated_marines = {
 	is_marine_modifier = yes
 	discipline = 0.05
 	land_morale = 0.10
+}
+forbidden = {
+local_colonial_growth = -100
+global_tax_income = -10000
+yearly_corruption = 100
 }
 
 #Cestirmark - H33

@@ -1,0 +1,102 @@
+#Building Tracker
+	building_tracker_decision = {
+		major = yes
+		potential = {
+			ai = no 
+		}
+		allow = {
+			always = no
+			
+			
+			#Temples
+			calc_true_if = {
+				desc = bt_total_temples_tt
+				all_owned_province = {
+					has_building = temple
+				}
+				amount = 0
+			}
+			#Cathedrals
+			calc_true_if = {
+				desc = bt_total_cathedral_tt
+				all_owned_province = {
+					has_building = cathedral
+				}
+				amount = 0
+			}
+			#Barracks
+			calc_true_if = {
+				desc = bt_total_barracks_tt
+				all_owned_province = {
+					has_building = barracks
+				}
+				amount = 0
+			}
+			#Training Fields
+			calc_true_if = {
+				desc = bt_total_training_fields_tt
+				all_owned_province = {
+					has_building = training_fields
+				}
+				amount = 0
+			}
+			#Soldier's Households
+			calc_true_if = {
+				desc = bt_total_soldiershouseholds_tt
+				all_owned_province = {
+					has_building = soldier_households
+				}
+				amount = 0
+			}
+			#Workshops
+			calc_true_if = {
+				desc = bt_total_workshops_tt
+				all_owned_province = {
+					has_building = workshop
+				}
+				amount = 0
+			}
+			#Counting Houses
+			calc_true_if = {
+				desc = bt_total_counting_house_tt
+				all_owned_province = {
+					has_building = counting_house
+				}
+				amount = 0
+			}
+			#Manufactories
+			calc_true_if = {
+				desc = bt_total_manufactories_tt
+				all_owned_province = {
+					OR = {
+						has_building = mills
+						has_building = farm_estate
+						has_building = tradecompany
+						has_building = plantations
+						has_building = textile
+						has_building = weapons
+						has_building = wharf
+						has_building = furnace
+					}
+				}
+				amount = 0
+			}
+			#Regimental Camps
+			calc_true_if = {
+				desc = bt_total_regimentalcamps_tt
+				all_owned_province = {
+					has_building = regimental_camp
+				}
+				amount = 0
+			}
+			#Conscription Centres
+			calc_true_if = {
+				desc = bt_total_conscription_center_tt
+				all_owned_province = {
+					has_building = conscription_center
+				}
+				amount = 0
+			}
+			
+		}
+	}

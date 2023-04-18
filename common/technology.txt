@@ -509,7 +509,7 @@ groups = {
 		}
 	}
 	tech_exodus_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -526,7 +526,7 @@ groups = {
 		}
 	}
 	tech_cave_goblin = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -544,7 +544,7 @@ groups = {
 	}
 	#Troll
 	tech_troll = {
-		start_level = 2
+		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {

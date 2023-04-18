@@ -112,13 +112,17 @@ ravelian_mage_heretical_cult_leader = {
 	min_local_autonomy = 50
 	local_autonomy = 0.05
 }
+papal_blessing = {
+land_morale = 0.05
+prestige = 1
+}
 
 warrior_automata = {
-	infantry_power = 0.1
+	infantry_power = 0.05
 }
 
 sanction_for_artificer_tax = {
-	production_efficiency = 0.15
+	production_efficiency = 0.10
 }
 
 holy_research = {

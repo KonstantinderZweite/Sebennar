@@ -768,10 +768,6 @@ ruler_is_human = {
 			ruler_culture = kintonan
 			ruler_culture = kusonin
 			ruler_culture = rinonokegyun
-			ruler_culture = south_aethyl
-			ruler_culture = middle_aethyl
-			ruler_culture = west_aethyl
-			ruler_culture = north_aethyl
 	
 		}
 	}
@@ -1309,10 +1305,7 @@ consort_is_human = {
 			consort_culture = kintonan
 			consort_culture = kusonin
 			consort_culture = rinonokegyun
-			consort_culture = south_aethyl
-			consort_culture = middle_aethyl
-			consort_culture = north_aethyl
-			consort_culture = west_aethyl
+			
 
 		}
 	}
@@ -1850,10 +1843,7 @@ heir_is_human = {
 			heir_culture = kintonan
 			heir_culture = kusonin
 			heir_culture = rinonokegyun
-			heir_culture = south_aethyl
-			heir_culture = middle_aethyl
-			heir_culture = north_aethyl
-			heir_culture = west_aethyl
+			
 		}
 	}
 }
@@ -2178,7 +2168,7 @@ culture_is_short_lived = {
 		culture_group = odheongun
 		culture_group = khantaar
 		culture_group = besholgi
-		culture_group = aethyl
+
 	}
 }
 
@@ -2306,7 +2296,7 @@ culture_is_human = {
 			culture_group = khantaar
 			culture_group = besholgi
 			culture_group = wuhyun
-			culture_group = aethyl
+		
 		}
 		NOT = { culture_is_half_orcish = yes }
 		NOT = { culture_is_half_elven = yes }
@@ -2889,10 +2879,7 @@ has_human_advisor = {
 			employed_advisor = { culture = kintonan }
 			employed_advisor = { culture = kusonin }
 			employed_advisor = { culture = rinonokegyun }
-			employed_advisor = { culture = south_aethyl }
-			employed_advisor = { culture = north_aethyl }
-			employed_advisor = { culture = west_aethyl }
-			employed_advisor = { culture = middle_aethyl }
+		
 		}
 	}
 }
@@ -3066,10 +3053,7 @@ has_human_advisor_of_category = {
 			employed_advisor = { category = $category$ culture = kintonan }
 			employed_advisor = { category = $category$ culture = kusonin }
 			employed_advisor = { category = $category$ culture = rinonokegyun }
-			employed_advisor = { category = $category$ culture = south_aethyl }
-			employed_advisor = { category = $category$ culture = north_aethyl }
-			employed_advisor = { category = $category$ culture = west_aethyl }
-			employed_advisor = { category = $category$ culture = middle_aethyl }
+
 		}
 	}
 }
@@ -3522,12 +3506,6 @@ has_human_accepted_culture = {
 		accepted_culture = kintonan
 		accepted_culture = kusonin
 		accepted_culture = rinonokegyun
-		#Aethyl
-		accepted_culture = south_aethyl
-		accepted_culture = west_aethyl
-		accepted_culture = middle_aethyl
-		accepted_culture = north_aethyl
-		
 		
 		# Break in case of emergency!
 		# accepted_culture = nurcestiran

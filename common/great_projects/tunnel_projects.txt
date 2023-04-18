@@ -1270,7 +1270,7 @@ tungr_tunnel = {
 		2940 = {
 			destroy_great_project = {
 				type = tungr_tunnel_ranger
-				instant = yes
+				
 			}
 		}
 	}
@@ -1697,7 +1697,7 @@ tungr_tunnel_copy = {
 		2940 = {
 			destroy_great_project = {
 				type = tungr_tunnel_ranger
-				instant = yes
+				
 			}
 		}
 	}

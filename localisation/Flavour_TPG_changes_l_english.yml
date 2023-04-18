@@ -12,8 +12,11 @@
  a29_surrounded: "Surrounded On All Sides"
  a29_verne_crown: "The Crown of Verne"
  vernish_integration: "Integrating Verne"
- 
- 
+ adjacent_fort_penalty:0 "Adjacent Fort Penalty"
+ desc_adjacent_fort_penalty:0 "This province is adjacent to another fort, it is not your capital fort or only adjacent to a capital fort, and it is not related to a mission tree requiring adjacent forts.\n§OSo long as this remains true, you cannot build Ramparts or Mage Towers in this province, and Advanced Fortifications will have no effect.§W"
+ new_events.8.t: "An exception to the rule"
+ new_events.8.d: "If you are reading this you have come into position of the White Walls of Castanor, these provinces are special and ignore the fort adjacent rule."
+ new_events.8.1: "OwO"
  A29_secure_highlands_title:0 "Move to Secure Highlands"
  A29_secure_highlands_desc:0 "Busilar is naturally defendable with high mountains shielding our northern reaches, while the great Divenhal Sea protects our southern flank. In an ideal world this fact of geography would lead to its natural conclusion, but alas that is not true. Tens of thousands' of gnolls occupy the western slope of the Khenak mountains, and perpetually raid our heartland. This gaping wound in are armor must be sealed, and for that King Marcan prepares to march. "
  A29_northern_diplomacy_title:0 "Northern Diplomacy"

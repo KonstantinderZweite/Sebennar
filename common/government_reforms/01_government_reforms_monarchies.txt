@@ -1792,6 +1792,8 @@ oak_monarchy_reform = {
 			AND = {
 				have_had_reform = oak_monarchy_reform
 				is_playing_custom_nation = yes
+				government = monarchy 
+				
 			}
 		}
 	}

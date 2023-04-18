@@ -397,9 +397,8 @@ brown_orc_horde = {
 		land_maintenance_modifier = -0.20
 		movement_speed = 0.2
 		reinforce_cost_modifier = -0.1
-		reform_progress_growth = -0.5
+		reform_progress_growth = -0.25
 		global_institution_spread = -0.3
-		diplomatic_upkeep = -2
 		
 		global_manpower_modifier = 0.4
 		land_forcelimit_modifier = 0.3
@@ -506,9 +505,7 @@ roaming_horde = {
 		#land_maintenance_modifier = -0.20
 		#movement_speed = 0.2
 		reinforce_cost_modifier = -0.35
-		reform_progress_growth = -0.5
 		global_institution_spread = -0.3
-		diplomatic_upkeep = -2
 		
 		land_maintenance_modifier = -0.35
 		movement_speed = 0.35

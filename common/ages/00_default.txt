@@ -344,9 +344,8 @@ age_of_reformation = {
 	abilities = {
 	
 		ab_allow_religion_enforced = {
-			effect = {
-				custom_tooltip = religion_enforced_edict
-				set_country_flag = religion_enforced_edict
+			modifier = {
+				administrative_efficiency = 0.05 
 			}
 			ai_will_do = {
 				factor = 0
@@ -600,7 +599,7 @@ age_of_absolutism = {
 	
 		ab_adm_efficiency = {
 			modifier = {
-				administrative_efficiency = 0.05
+				administrative_efficiency = 0.10
 			}
 			ai_will_do = {
 				factor = 10
@@ -759,7 +758,7 @@ age_of_revolutions = {
 
 		ab_allow_anti_revolutionary_zeal = {
 			modifier = {
-				liberty_desire_from_subject_development = -0.33
+				administrative_efficiency = 0.15
 			}
 			ai_will_do = {
 				factor = 15

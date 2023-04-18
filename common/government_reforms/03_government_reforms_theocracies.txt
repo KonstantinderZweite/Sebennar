@@ -475,6 +475,7 @@ aelantir_adventurer_reform = {
 	modifiers = {
 		manpower_recovery_speed = 0.33
 		colonists = 1	#so they can colonize?
+		global_colonial_growth = 30
 		diplomats = -1
 		#diplomatic_upkeep = -2
 		reform_progress_growth = -0.75
@@ -526,7 +527,7 @@ magisterium_reform = {
 		monarch_admin_power = 1
 		monarch_diplomatic_power = 1
 		monarch_military_power = 1
-		
+		all_power_cost = -0.05
 		mages_loyalty_modifier = 0.1
 		mages_influence_modifier = 0.1
 	}
@@ -587,6 +588,9 @@ magocracy_reform = {
 	
 	rulers_can_be_generals = yes
 	heirs_can_be_generals = yes
+	custom_attributes = {
+		locked_government_type = yes
+	}
 }
 
 verkal_ozovar_magocracy = {

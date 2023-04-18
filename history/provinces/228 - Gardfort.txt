@@ -1,9 +1,8 @@
 
 #228 - Beira |
 
-owner = A13
-controller = A13
-add_core = A13
+owner = Z32
+controller = Z32
 add_core = A50
 culture = old_alenic
 religion = regent_court

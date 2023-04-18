@@ -269,7 +269,7 @@ country_event = {
 		}
 		else_if = {
 			limit = { ai = no }
-			add_treasury = -350
+			add_treasury = -275
 		}
 		hidden_effect = {
 			set_country_flag = dig_through
@@ -338,7 +338,7 @@ country_event = {
 		}
 		else_if = {
 			limit = { ai = no }
-			add_treasury = -750
+			add_treasury = -575
 		}
 		hidden_effect = {
 			set_country_flag = dig_through
@@ -405,7 +405,7 @@ country_event = {
 		}
 		else_if = {
 			limit = { ai = no }
-			add_treasury = -2250
+			add_treasury = -1750
 		}
 		hidden_effect = {
 			set_country_flag = dig_through
@@ -471,7 +471,7 @@ country_event = {
 		}
 		else_if = {
 			limit = { ai = no }
-			add_treasury = -3750
+			add_treasury = -2875
 		}
 		hidden_effect = {
 			set_country_flag = dig_through
@@ -536,7 +536,7 @@ country_event = {
 		}
 		else_if = {
 			limit = { ai = no }
-			add_treasury = -5250
+			add_treasury = -3975
 		}
 		hidden_effect = {
 			set_country_flag = dig_through
@@ -601,7 +601,7 @@ country_event = {
 		}
 		else_if = {
 			limit = { ai = no }
-			add_treasury = -5500
+			add_treasury = -4175
 		}
 		hidden_effect = {
 			set_country_flag = dig_through

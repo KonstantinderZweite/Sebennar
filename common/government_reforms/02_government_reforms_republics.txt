@@ -2077,7 +2077,7 @@ krak_free_council = { #krakdhumvror reformed republic
 		advisor_cost = -0.15
 		global_unrest = -2
 		max_absolutism = 20
-		election_cycle = 84 #40 years
+		election_cycle = 24 #40 years
 		
 	}
 
@@ -5692,7 +5692,7 @@ northern_league_magnates = {
 	conditional = {
 		allow = { has_dlc = "Third Rome" } # DLC requirement
 		government_abilities = {
-			russian_mechanic
+		
 		}
 	}
 	

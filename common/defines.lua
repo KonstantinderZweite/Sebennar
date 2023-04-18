@@ -43,7 +43,7 @@ NDiplomacy = {
 	NORMAL_TRUST_EQUILIBRIUM = 50,
 	SUBJECT_TRUST_EQUILIBRIUM = 70,
 	MIN_MONTHLY_COST_FOR_INFLUENCE_NATION = 5,
-	ESTATE_DISLIKE_ALLIANCE_ON_VC = -0.1,
+	ESTATE_DISLIKE_ALLIANCE_ON_VC = 0,
 	HEGEMONY_LOST_DAYS = 7300,
 	HEGEMONY_MONTHLY_PROGRESS = 0.5,
 	CHANGE_RIVAL_YEARS = 25,
@@ -409,7 +409,7 @@ NDiplomacy = {
 
 	PAY_SUBJECT_DEBT_LIBERTY_DESIRE_REDUCTION = 5,	-- Amount of liberty desire the subject loses per paid loan
 
-	NUM_OF_GREAT_POWERS = 8,						-- The number of ordinary (i.e. non-leaving) Great Powers if RightsOfManDLC is enabled.
+	NUM_OF_GREAT_POWERS = 12,						-- The number of ordinary (i.e. non-leaving) Great Powers if RightsOfManDLC is enabled.
 	LEAVING_GREAT_POWER_YEARS = 5,					-- The number of years a Great Power can remain after being removed from the top (8).
 	GREAT_POWER_SUBJECT_CONTRIBUTION = 0.5,			-- Share of subjects' development that will count towards overlord's Great Power score.
 
@@ -1180,7 +1180,7 @@ NEconomy = {
 	MERCHANT_MAX_POWER_BONUS = 2.0,					-- MERCHANT_MAX_POWER_BONUS
 	TRADE_SHIP_MAX_DAYS_IN_PORT = 5.0,				-- TRADE_SHIP_MAX_DAYS_IN_PORT
 	TRADE_SHIP_ORG_LIMIT = 0.5,						-- TRADE_SHIP_ORG_LIMIT
-	TRADE_NON_CAPITAL_OFFICE = -0.20,				-- TRADE_NON_CAPITAL_OFFICE
+	TRADE_NON_CAPITAL_OFFICE = -0.50,				-- TRADE_NON_CAPITAL_OFFICE
 	TRADE_MERCHANT_PRESENT = 0.1,					-- bonus on income if trade present
 	EMBARGO_BASE_EFFICIENCY = 0.5,					-- EMBARGO_BASE_EFFICIENCY
 	EMBARGO_MERCANTILISM_EFFICIENCY = 50,			-- Percentage added to embargo efficiency modifier scaled by mercantilism.

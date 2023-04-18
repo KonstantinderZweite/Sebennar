@@ -5,9 +5,9 @@ namespace = new_events
 
 country_event = {
 
-	id = new_events.4
-	title = "new_events_4.t"
-	desc = "new_events_4.d"
+	id = new_events.5
+	title = "new_events_5.t"
+	desc = "new_events_5.d"
 	picture = TRADEGOODS_eventPicture
 
 	fire_only_once = yes
@@ -26,5 +26,170 @@ country_event = {
 }
 	option = {
 		name = free_stab_event
+	}
+}
+
+country_event = {
+
+	id = new_events.6
+	title = "new_events_6.t"
+	desc = "new_events_6.d"
+	picture = TRADEGOODS_eventPicture
+	hidden = yes 
+	trigger = {
+	is_year = 1445 
+		has_reform = adventurer_reform
+	}
+	option = {
+		name = free_scaler_event
+		add_country_modifier = {
+				name = "EscannScaler"
+				duration = 16425	
+			}
+	}
+}
+
+country_event = {
+	id = new_events.7
+	title = "new_events_7.t"
+	desc = "new_events_7.d"
+	picture = TRADEGOODS_eventPicture
+	
+
+	hidden = yes
+	
+	trigger = {
+	ai = no 
+	is_year = 1500
+	}
+
+mean_time_to_happen = {
+		months = 1
+}
+	immediate = {
+		every_country = {
+				bulwar_superregion = { discover_country = ROOT }
+				western_cannor_superregion = { discover_country = ROOT }
+				escann_superregion = { discover_country = ROOT }
+				gerudia_superregion = { discover_country = ROOT }
+				west_serpentspine_superregion = { discover_country = ROOT }
+				deepwoods_superregion = { discover_country = ROOT }
+				salahad_superregion = { discover_country = ROOT }
+				haless_superregion = { discover_country = ROOT }
+				north_haless_superregion = { discover_country = ROOT }
+				south_haless_superregion = { discover_country = ROOT }
+				rahen_superregion = { discover_country = ROOT }
+				yanshen_superregion = { discover_country = ROOT }
+				east_serpentspine_superregion = { discover_country = ROOT }
+				north_aelantir_coast_region = { discover_country = ROOT }
+				southeast_aelantir_coast_region = { discover_country = ROOT }
+				north_uelos_lament_ocean_region = { discover_country = ROOT }
+				south_uelos_lament_ocean_region = { discover_country = ROOT }
+				south_sarhal_coast_region = { discover_country = ROOT }
+				west_salahad_coast_region = { discover_country = ROOT }
+				cleaved_sea_coast_region = { discover_country = ROOT }
+				north_ocean_of_the_lost_region = { discover_country = ROOT }
+				south_ocean_of_the_lost_region = { discover_country = ROOT }
+				punctured_coast_region = { discover_country = ROOT }
+				west_aelantir_coast_region = { discover_country = ROOT }
+				torn_sea_region = { discover_country = ROOT }
+				outer_torn_sea_region = { discover_country = ROOT }
+				northern_sea_region = { discover_country = ROOT }
+				ringlet_sea_region = { discover_country = ROOT } 
+				gulf_of_rahen_region = { discover_country = ROOT }
+				northeast_haless_coast_region = { discover_country = ROOT }
+				kedwali_gulf_region = { discover_country = ROOT } 
+				dameshead_sea_region = { discover_country = ROOT } 
+				giants_grave_sea_region = { discover_country = ROOT }
+				divenhal_sea_region = { discover_country = ROOT }
+				westcoast_region = { discover_country = ROOT }
+				northern_thaw_region = { discover_country = ROOT } 
+				broken_sea_region = { discover_country = ROOT } 
+				western_broken_sea_region = { discover_country = ROOT }
+				ruined_sea_region = { discover_country = ROOT } 
+				calamity_pass_region = { discover_country = ROOT } 
+		}
+}
+	option = {
+		name = free_stab_event
+	}
+}
+
+province_event = {
+
+	id = new_events.8
+	title = new_events.8.t
+	desc = new_events.8.d
+	hidden = yes
+	picture = POPE_PREACHING_eventPicture
+	
+	is_triggered_only = yes
+		
+	trigger = {
+		is_city = yes
+	}
+
+	mean_time_to_happen = { days = 1 }
+
+	option = {
+		name = "homebrew.8.1"
+		if = {
+			limit = {
+				NOT = {
+					OR = { #thx azkare for singlehandedly doubling this list
+						is_capital = yes
+						province_group = white_walls
+						province_group = wall_of_yanshen
+						province_id = 4396
+						province_id = 4600
+						province_id = 4489
+						province_id = 4470
+						province_id = 4500
+						province_id = 4620
+						province_id = 4364
+						province_id = 4444
+						province_id = 4548
+						province_id = 4361
+						province_id = 4533
+						province_id = 4622
+						province_id = 4625
+						province_id = 4626
+						province_id = 4816
+						province_id = 4173
+						province_id = 4174
+						province_id = 4176
+						province_id = 854
+						province_id = 855
+						province_id = 831
+						province_id = 832
+						province_id = 833
+						NOT = {
+							any_neighbor_province = {
+								owner = {
+									tag = ROOT
+									ai = no
+								}
+								OR = {
+									has_building = fort_15th
+									has_construction = fort_15th
+									has_building = fort_16th
+									has_construction = fort_16th
+									has_building = fort_17th
+									has_construction = fort_17th
+									has_building = fort_18th
+									has_construction = fort_18th
+								}
+								NOT = { is_capital = yes }
+							}
+						}
+					}
+				}
+				fort_level = 1
+			}
+			add_province_modifier = { name = adjacent_fort_penalty duration = -1 }
+		}
+		else = {
+			remove_province_modifier = adjacent_fort_penalty
+		}
 	}
 }

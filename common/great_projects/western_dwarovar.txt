@@ -778,6 +778,7 @@ kozenad_brothel = {
 		}
 		province_modifiers = {
 			local_production_efficiency = 0.50
+			local_development_cost = -0.10
 		}
 		area_modifier = {			
 		}
@@ -789,12 +790,7 @@ kozenad_brothel = {
 			spy_offence = 0.3
 		}
 		on_upgraded = {
-			owner = {
-				add_country_modifier = {
-				name = kozenad_brothel_new_ladies_of_the_opal_calling
-				duration = 9125
-				}
-			}
+			
 		}
 	}
 }
