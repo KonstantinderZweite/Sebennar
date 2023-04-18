@@ -1889,6 +1889,9 @@ damescrown_republic_reform = {
 	modifiers = {
 		merchants = 1
 		max_absolutism = 5
+		candidate_random_bonus = 1
+		burghers_loyalty_modifier = 0.10
+		burghers_influence_modifier_modifier = 0.10
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 30
@@ -1954,15 +1957,17 @@ damescrown_republic_reform = {
 
 		states_general_mechanic = {
 			republicans = {
+				trade_efficiency = 0.1
 				yearly_corruption = -0.1
 				global_ship_trade_power = 0.2
-				republican_tradition = 1
+				republican_tradition = 0.1
 			}
 
 			clstc = {
-				production_efficiency = 0.1
+				global_trade_goods_size_modifier = 0.10
 				prestige = 1
-				republican_tradition = -1
+				republican_tradition = -1.5
+				governing_capacity_modifier = 0.10
 			}
 		}
 	}
