@@ -162,14 +162,9 @@
  #Nimscodd
  A79_rebuild_oddansbay_modifier:0 "The Great Rebuilding Effort"
  
- #Wex
- A30_fill_title:0 "Wex Fill"
- A30_fill_desc:0 "Bug fixing"
- 
- #Tlukkt
- F28_fill_title:0 "Tlukkt Fill"
- F28_fill_desc:0 "Bug fixing"
- 
- #Kobolds
- KOB_fill_title:0 "Kobold Fill"
- KOB_fill_desc:0 "Bug Fixing"
+ #Istralor
+ A45_national_integration:0 "National Integration"
+ A45_dale_iron_mines:0 "Dale Iron Mines"
+ A45_marshal_empire:0 "Marshal of The Empire"
+ A45_commanders:0 "Istalori Commanders"
+ A45_corinite_emporer:0 "Corinite Emporer"

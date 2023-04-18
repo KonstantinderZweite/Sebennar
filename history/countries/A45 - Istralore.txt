@@ -22,8 +22,8 @@ elector = yes
 		name = "Aucanna I"
 		dynasty = "Silistra"
 		birth_date = 1423.6.20
-		adm = 1
-		dip = 1
+		adm = 3
+		dip = 3
 		mil = 5
 		female = yes
 	}
