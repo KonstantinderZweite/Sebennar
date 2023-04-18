@@ -1,0 +1,10 @@
+
+setup_vision = yes
+government = tribal
+add_government_reform = monstrous_confederation
+government_rank = 2
+primary_culture = greyscale_kobold
+religion = kobold_dragon_cult
+technology_group = tech_kobold
+
+capital = 8073

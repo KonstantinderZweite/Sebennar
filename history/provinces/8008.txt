@@ -1,0 +1,13 @@
+
+owner = EE1
+controller = EE1
+add_core = EE1
+culture = south_aethyl
+religion = regent_court
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 3
+trade_goods = livestock
+capital = "Beorhtricslund"
+is_city = yes

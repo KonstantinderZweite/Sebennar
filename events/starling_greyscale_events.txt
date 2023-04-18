@@ -1,0 +1,122 @@
+namespace = flavor_EF7
+
+country_event = {
+	id = flavor_EF7.1
+	title = flavor_EF7.1.t
+	desc =  flavor_EF7.1.d
+	picture = ENLIGHTENMENT_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = EF7
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = flavor_EF7.1.a
+		add_country_modifier = {
+			name = EF7_severely_weakend_by_dragonwake
+			duration = -1
+		}
+		set_country_flag = dragonwake_end
+		every_owned_province = {
+			limit = {
+				region = frozen_north_region
+			}
+			add_local_autonomy = 85
+			add_province_modifier = {
+				name = EF7_cultural_hostility
+				duration = 3650
+			}
+		}
+		E15 = {
+			add_liberty_desire = -50
+		}
+	}
+}
+
+country_event = {
+	id = flavor_EF7.2
+	title = flavor_EF7.2.t
+	desc =  flavor_EF7.2.d
+	picture = ENLIGHTENMENT_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		#mission
+	}
+
+	option = {
+		name = flavor_EF7.2.a
+		if = {
+			limit = {
+				EF8 = {
+					is_enemy = ROOT
+				}
+			}
+			remove_rival = EF7
+			add_historical_friend = EF7
+		}
+		else = {
+			EF8 = {
+				add_historical_friend = EF7
+			}
+		}	
+	}
+}
+
+country_event = {
+	id = flavor_EF7.3
+	title = flavor_EF7.3.t
+	desc =  flavor_EF7.3.d
+	picture = ENLIGHTENMENT_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		8090 = {
+			OR = {
+				controlled_by = EF8
+				controlled_by = EF7
+			}
+		}
+		tag = EF8
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = flavor_EF7.3.a
+		EF8 = {
+			inherit = EH2
+		}
+	}
+}
+
+country_event = {
+	id = flavor_EF7.4
+	title = flavor_EF7.4.t
+	desc =  flavor_EF7.4.d
+	picture = ENLIGHTENMENT_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		8093 = {
+			OR = {
+				controlled_by = EF8
+				controlled_by = EF7
+			}
+		}
+		tag = EF8
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	option = {
+		name = flavor_EF7.3.a
+		EF8 = {
+			inherit = EH3
+		}
+	}
+}

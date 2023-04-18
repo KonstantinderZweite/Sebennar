@@ -1,0 +1,13 @@
+
+owner = EG1
+controller = EG1
+add_core = EG1
+culture = wild_dwarf
+religion = ancestor_worship
+hre = no
+base_tax = 1
+base_production = 3
+base_manpower = 2
+trade_goods = iron
+capital = ""
+is_city = yes

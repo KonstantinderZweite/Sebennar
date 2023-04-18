@@ -1,0 +1,22 @@
+
+setup_vision = yes
+government = tribal
+add_government_reform = settled_horde
+government_rank = 1
+primary_culture = sea_troll
+religion = mountain_watchers
+technology_group = tech_troll
+
+capital = 8090
+
+1437.5.13 = {
+	monarch = {
+		name = "Askel"
+		dynasty = "the Rash"
+		birth_date = 1432.3.7
+		adm = 2
+		dip = 5
+		mil = 4
+	}
+	add_ruler_personality = tactical_genius_personality
+}

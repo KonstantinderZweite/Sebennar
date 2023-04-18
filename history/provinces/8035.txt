@@ -1,0 +1,22 @@
+
+owner = EF1
+controller = EF1
+add_core = EF1
+culture = middle_aethyl
+religion = regent_court
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 4
+trade_goods = salt
+capital = "Cynemaer"
+is_city = yes
+add_permanent_province_modifier = {
+    name = civil_war_headquarters
+    duration = -1
+}
+fort_15th = yes 
+add_permanent_province_modifier = {
+	name = dilapidated_aethylwar_fort
+	duration = -1
+}

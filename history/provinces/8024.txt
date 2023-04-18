@@ -1,0 +1,17 @@
+
+owner = EE6
+controller = EE6
+add_core = EE6
+culture = west_aethyl
+religion = regent_court
+hre = no
+base_tax = 3
+base_production = 3
+base_manpower = 4
+trade_goods = grain
+capital = "East Dunstan"
+is_city = yes
+add_permanent_province_modifier = {
+    name = civil_war_headquarters
+    duration = -1
+}

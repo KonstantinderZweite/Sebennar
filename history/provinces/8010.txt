@@ -1,0 +1,13 @@
+
+owner = EE2
+controller = EE2
+add_core = EE2
+culture = south_aethyl
+religion = regent_court
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 2
+trade_goods = grain
+capital = "Ealhburg"
+is_city = yes

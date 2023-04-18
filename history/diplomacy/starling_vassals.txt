@@ -1,0 +1,91 @@
+
+#Aethylweald
+vassal = {
+	first = EE8
+	second = EE3
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE8
+	second = EE4
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE8
+	second = EE5
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE8
+	second = EE7
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE8
+	second = EF2
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE8
+	second = EF4
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+
+
+#Aethelweard
+vassal = {
+	first = EE1
+	second = EE0
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE1
+	second = EE2
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE1
+	second = EE9
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE1
+	second = EF3
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE1
+	second = EF1
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE1
+	second = EF3
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+vassal = {
+	first = EE1
+	second = EE6
+	start_date = 1444.1.1
+	end_date = 1500.2.1
+}
+#Greyscale
+dependency = {
+	subject_type = "tributary_state"
+	first = EF7
+	second = EF5
+	start_date = 1444.1.1
+	end_date = 1644.4.22
+}

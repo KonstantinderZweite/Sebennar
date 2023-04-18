@@ -7,6 +7,10 @@ country_decisions = {
 			NOT = { has_country_flag = kobold_hoard_menu }
 			NOT = { has_global_flag = dragon_roar }
 			NOT = { has_country_modifier = kobold_hoard_timer }
+			NOT = { 
+				tag = E17
+				tag = E34
+			} 
 		}
 
 		allow = {
@@ -55,7 +59,11 @@ country_decisions = {
 			culture_group = kobold
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
-			NOT = { exists = Z38 } 
+			NOT = { 
+				exists = Z38
+				tag = E17
+				tag = E34
+			} 
 			capital_scope = { continent = europe }
 		}
 		provinces_to_highlight = {
@@ -69,7 +77,11 @@ country_decisions = {
 					NOT = { owned_by = ROOT }
 					NOT = { 197 = { owned_by = ROOT } }
 				}
-				
+				AND = {
+					province_id = 197
+					NOT = { owned_by = ROOT }
+					NOT = { 173 = { owned_by = ROOT } }
+				}
 			}
 		}
 		allow = {
@@ -87,14 +99,14 @@ country_decisions = {
 					tag = A26
 				}
 				NOT = { exists = A27 } 
-
+				NOT = { exists = A28 } 
 			}
 			else_if = {
 				limit = {
 					tag = A27
 				}
 				NOT = { exists = A26 } 
-
+				NOT = { exists = A28 } 
 			}
 			else_if = {
 				limit = {
@@ -108,7 +120,8 @@ country_decisions = {
 					culture_group = kobold
 				}
 				NOT = { exists = A26 } 
-				NOT = { exists = A27 }  
+				NOT = { exists = A27 } 
+				NOT = { exists = A28 } 
 			}
 		}
 		effect = {

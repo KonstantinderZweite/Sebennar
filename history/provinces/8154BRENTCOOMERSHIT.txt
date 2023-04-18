@@ -1,0 +1,13 @@
+
+owner = EH5
+controller = EH5
+add_core = EH5
+culture = cave_goblin
+religion = goblinic_shamanism
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = fungi
+capital = ""
+is_city = yes

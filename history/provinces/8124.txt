@@ -1,0 +1,13 @@
+
+culture = wood_elf
+religion = fey_court
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = 
+capital = ""
+is_city = yes
+latent_trade_goods = {
+	coal
+}

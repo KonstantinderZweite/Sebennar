@@ -16,21 +16,67 @@ setup_vision = {
 					}
 				}
 				NOT = {
+					is_adventurer = yes
 					monstrous_culture = yes
 				}
 			}
 			
-			
 			#Discover civilized Cannor
 			western_cannor_superregion = {
-				limit = {
-					NOT = {
-						province_id = 8003
-						province_id = 8004
-						province_id = 8005
-						province_id = 8012
-					}
-				}
+				discover_country = ROOT
+			}
+			aethylwex_region = {
+				discover_country = ROOT
+			}
+			frozen_north_region = {
+				discover_country = ROOT
+			}
+			8183 = {
+				discover_country = ROOT
+			}
+			8184 = {
+				discover_country = ROOT
+			}
+			8179 = {
+				discover_country = ROOT
+			}
+			8180 = {
+				discover_country = ROOT
+			}
+			8181 = {
+				discover_country = ROOT
+			}
+			8182 = {
+				discover_country = ROOT
+			}
+			8141 = {
+				discover_country = ROOT
+			}
+			8142 = {
+				discover_country = ROOT
+			}
+			8143 = {
+				discover_country = ROOT
+			}
+			8173 = {
+				discover_country = ROOT
+			}
+			blossom_glades_area = {
+				discover_country = ROOT
+			}
+			wither_glades_area = {
+				discover_country = ROOT
+			}
+			reaversea_area = {
+				discover_country = ROOT
+			}
+			1482 = {
+				discover_country = ROOT
+			}
+			8139 = {
+				discover_country = ROOT
+			}
+			8138 = {
 				discover_country = ROOT
 			}
 			gerudia_superregion = {
@@ -51,9 +97,6 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			dostanor_region = {
-				discover_country = ROOT
-			}
-			8011 = {
 				discover_country = ROOT
 			}
 			1976 = {
@@ -136,9 +179,6 @@ setup_vision = {
 			}
 			
 			#Discover civilized divenhal
-			8007 = {
-				discover_country = ROOT
-			}
 			ourdia_region = {
 				discover_country = ROOT
 			}
@@ -328,9 +368,6 @@ setup_vision = {
 			
 			
 			#Discover civilized divenhal
-			8007 = {
-				discover_country = ROOT
-			}
 			bulwar_superregion = {
 				discover_country = ROOT
 			}
@@ -414,14 +451,6 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			esmaria_region = {
-				limit = {
-					NOT = {
-						province_id = 8003
-						province_id = 8004
-						province_id = 8005
-						province_id = 8012
-					}
-				}
 				discover_country = ROOT
 			}
 			east_dameshead_region = {
@@ -593,14 +622,6 @@ setup_vision = {
 				undiscover_country = ROOT
 			}
 			esmaria_region = {
-				limit = {
-					NOT = {
-						province_id = 8003
-						province_id = 8004
-						province_id = 8005
-						province_id = 8012
-					}
-				}
 				undiscover_country = ROOT
 			}
 			iochand_area = {
@@ -703,6 +724,12 @@ setup_vision = {
 				discover_country = ROOT
 			}
 			1326 = {
+				discover_country = ROOT
+			}
+			cursewood_area = {
+				discover_country = ROOT
+			}
+			whistlevale_area = {
 				discover_country = ROOT
 			}
 		}
@@ -830,9 +857,6 @@ setup_vision = {
 				}
 				
 				#Discover civilized divenhal
-				8007 = {
-					discover_country = ROOT
-				}
 				bahar_region = {
 					discover_country = ROOT
 				}
@@ -903,10 +927,33 @@ setup_vision = {
 					capital_scope = {
 						region = alenic_frontier_region
 					}
+					capital_scope = {
+						region = frozen_north_region
+					}
 				}
 				culture_group = kobold
 			}
-			
+			1290 = {
+				discover_country = ROOT
+			}
+			1436 = {
+				discover_country = ROOT
+			}
+			thurrsbol_area = {
+				discover_country = ROOT
+			}
+			dalrfjall_area = {
+				discover_country = ROOT
+			}
+			reaversea_area = {
+				discover_country = ROOT
+			}
+			hinterlands_area = {
+				discover_country = ROOT
+			}
+			frozen_north_region = {
+				discover_country = ROOT
+			}
 			dragon_coast_region = {
 				discover_country = ROOT
 			}

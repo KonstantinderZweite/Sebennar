@@ -1,0 +1,13 @@
+
+owner = EG8
+controller = EG8
+add_core = EG8
+culture = wildman
+religion = regent_court
+hre = no
+base_tax = 3
+base_production = 4
+base_manpower = 3
+trade_goods = iron
+capital = ""
+is_city = yes

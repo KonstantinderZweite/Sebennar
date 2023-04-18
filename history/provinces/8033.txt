@@ -1,0 +1,13 @@
+
+owner = EE0
+controller = EE0
+add_core = EE0
+culture = south_aethyl
+religion = regent_court
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = fish
+capital = "Eadwig"
+is_city = yes

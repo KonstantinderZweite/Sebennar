@@ -1,0 +1,13 @@
+
+owner = EE8
+controller = EE8
+add_core = EE8
+culture = north_aethyl
+religion = regent_court
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 4
+trade_goods = iron
+capital = "Wulfstan"
+is_city = yes
