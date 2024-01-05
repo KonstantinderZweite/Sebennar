@@ -24,7 +24,7 @@ orc_rivals = {
 			}
 		}
 		effect = {
-			add_prestige = 11
+			add_prestige = 10
 		}
 	}
 	
