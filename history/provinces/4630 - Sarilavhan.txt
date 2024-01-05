@@ -1,7 +1,7 @@
 # No previous file for Banten
-owner = R62
-controller = R62
-add_core = R62
+owner = R63
+controller = R63
+add_core = R63
 add_core = R80
 culture = wolf_command
 religion = old_dookan
@@ -42,10 +42,5 @@ add_permanent_province_modifier = {
 
 add_permanent_province_modifier = {
 	name = damaged_temple_complex
-	duration = -1
-}
-
-add_province_modifier = {
-	name = command_wolf_warcamp
 	duration = -1
 }

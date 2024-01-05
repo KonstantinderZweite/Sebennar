@@ -72,10 +72,10 @@ country_decisions = {
 			}
 		}
 		allow = {
+			owns_core_province = 840	#North Citadel
 			adm_tech = 7
 			government_rank = 1
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			if = {
 				limit = { has_adventurer_reform = yes }
@@ -83,7 +83,6 @@ country_decisions = {
 				has_reform = local_administration
 			}
 			#num_of_cities = 5
-			owns_core_province = 840	#North Citadel
 			num_of_owned_provinces_with = {
 				value = 10
 				region = inner_castanor_region
@@ -201,6 +200,73 @@ country_decisions = {
 		ai_importance = 400
 	}
 	
+	ai_consolidation = {
+		major = yes
+		potential = {
+			has_global_flag = escanni_wars_global_flag
+			NOT = { is_year = 1661 }
+			ai = yes
+			OR = {
+				culture_group = escanni
+				primary_culture = marrodic
+				primary_culture = stone_dwarf
+				primary_culture = iron_dwarf
+				primary_culture = newfoot_halfling
+			}
+			capital_scope = {
+				OR  = {
+					region = south_castanor_region
+					region = west_castanor_region
+					region = inner_castanor_region
+					area = cursewood_area
+					area = whistlevale_area
+				}
+			}
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				region = south_castanor_region
+				region = west_castanor_region
+				region = inner_castanor_region
+				area = cursewood_area
+				area = whistlevale_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		allow = {
+			south_castanor_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_castanor_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			inner_castanor_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			cursewood_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			whistlevale_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			country_event = { id = escanni_wars.2 }
+		}
+		ai_will_do = {
+			factor = 2
+		}
+		ai_importance = 400
+	}
+	
 	castanor_nation = {
 		major = yes
 		potential = {
@@ -253,9 +319,11 @@ country_decisions = {
 		}
 		
 		allow = {
+			hidden_trigger = {
+				has_country_flag = escanni_wars_castanor_option_unlocked
+			}
 			#adm_tech = 10
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 
 			#Requires provinces
@@ -349,21 +417,29 @@ country_decisions = {
 		}
 		
 		allow = {
+			hidden_trigger = {
+				capital_scope = {
+					region = south_castanor_region
+				}
+			}
 			adm_tech = 7
 			government_rank = 1
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			NOT = { has_country_modifier = monstrous_nation }
-			has_reform = found_our_nation
-			has_reform = local_administration
-			
-			
-			
+				has_reform = found_our_nation
+				has_reform = local_administration
 			#num_of_cities = 5
 			
 			#Ruler Prerequisites
-			
+			OR = {
+				mil = 5 #Ruler has at least 5 mil
+				ruler_has_personality = just_personality
+				ruler_has_personality = righteous_personality
+				ruler_has_personality = bold_fighter_personality
+				ruler_has_personality = inspiring_leader_personality
+			}
+			NOT = { ruler_has_personality = craven_personality }
 			
 			#Province Prerequisites
 			num_of_owned_provinces_with = {
@@ -583,18 +659,18 @@ country_decisions = {
 		}
 		
 		allow = {
+			owns_core_province = 774	#Taranton
 			adm_tech = 7
+			tag = B07
 			government_rank = 1
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			if = {
 				limit = { has_adventurer_reform = yes }
 				has_reform = found_our_nation
 				has_reform = local_administration
 			}
-			#num_of_cities = 5
-			owns_core_province = 774	#Taranton
+			#num_of_cities = 5			
 			if = {
 				limit = { has_dlc = "Wealth of Nations" }
 				has_personal_deity = adean
@@ -814,10 +890,10 @@ country_decisions = {
 		}
 		
 		allow = {
+			owns_core_province = 777	#Escin
 			adm_tech = 7
 			government_rank = 1
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			if = {
 				limit = { has_adventurer_reform = yes }
@@ -825,7 +901,7 @@ country_decisions = {
 				has_reform = local_administration
 			}
 			#num_of_cities = 5
-			owns_core_province = 777	#Escin
+			
 			num_of_owned_provinces_with = {
 				value = 8
 				OR = {
@@ -981,12 +1057,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 7
-			government_rank = 1
-			#is_free_or_tributary_trigger = yes #vrorenmarch defined by being a march of Castanor
-			is_nomad = no
-			is_at_war = no
-			num_of_cities = 10
 			owns_core_province = 740	#Bal Vroren
 			owns_core_province = 735
 			#owns_core_province = 749
@@ -994,6 +1064,12 @@ country_decisions = {
 			owns_core_province = 738
 			owns_core_province = 739
 			#owns_core_province = 742
+			adm_tech = 7
+			government_rank = 1
+			#is_free_or_tributary_trigger = yes #vrorenmarch defined by being a march of Castanor
+			is_at_war = no
+			num_of_cities = 10
+			
 		}
 		effect = {
 			if = {
@@ -1084,12 +1160,6 @@ country_decisions = {
 				}
 				add_claim = Z45
 			}
-			drowned_giant_isles_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_claim = Z45
-			}
 			add_prestige = 50
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -1140,9 +1210,11 @@ country_decisions = {
 			}
 		}
 		allow = {
+			hidden_trigger = {
+				tag = B32
+			}
 			adm_tech = 7
 			is_free_or_tributary_trigger = yes
-			is_nomad = no
 			is_at_war = no
 			num_of_cities = 10
 			owns_core_province = 740	#Bal Vroren
@@ -1244,12 +1316,6 @@ country_decisions = {
 					add_claim = Z45
 				}
 				east_chillsbay_area = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_claim = Z45
-				}
-				drowned_giant_isles_area = {
 					limit = {
 						NOT = { owned_by = ROOT }
 					}

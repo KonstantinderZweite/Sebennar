@@ -17,8 +17,8 @@ capital = 27 # Neckcliffe
 		dynasty = "Cliffman"
 		birth_date = 1399.9.1
 		adm = 4
-		dip = 3
-		mil = 4
+		dip = 0
+		mil = 2
 	}
 }
 

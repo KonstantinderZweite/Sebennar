@@ -234,7 +234,7 @@ modern_siege_weapons = {
 		full_idea_group = offensive_ideas
 	}
 	
-	siege_ability = 0.1
+	siege_ability = 0.20
 	leader_siege = 1
 
 	ai_will_do = {
@@ -658,7 +658,7 @@ foreign_conscription_centers = {
 	}	
 	
 	reinforce_cost_modifier = -0.20
-	military_tactics = 0.05
+	reinforce_speed = 0.15
 	
 	ai_will_do = {
 		factor = 1
@@ -1313,5 +1313,352 @@ the_witchcraft_act = {
 			factor = 1.5
 			average_effective_unrest = 8
 		}
+	}
+}
+
+mobile_siege_engines_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = offensive_ideas 
+	}
+	
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = offensive_ideas 
+	}
+	
+	movement_speed = 0.1
+	artillery_levels_available_vs_fort = 2
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+bolstered_defence_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = defensive_ideas 
+	}
+	
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = defensive_ideas 
+	}
+	
+	land_morale = 0.05
+	garrison_size = 0.25
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+handpicked_recruits_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = quality_ideas 
+	}
+	
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = quality_ideas 
+	}
+	
+	drill_decay_modifier = -0.15
+	yearly_army_professionalism = 0.0075
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+mass_conscription_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = quantity_ideas 
+	}
+	
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = quantity_ideas
+		
+	}
+	
+	reinforce_speed = 0.2
+	reinforce_cost_modifier = -0.2
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+naval_armament_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = naval_ideas 
+	}
+	
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = naval_ideas 
+	}
+	
+	global_ship_recruit_speed = -0.25
+	movement_speed_in_fleet_modifier = 1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+mercenary_tactical_movement_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = mercenary_ideas 
+	}
+	
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = mercenary_ideas 
+	}
+	
+	mercenary_discipline = 0.05
+	mercenary_manpower = 0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+universal_serfdom_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = aristocracy_ideas 
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = aristocracy_ideas 
+	}
+	
+	nobles_loyalty_modifier = 0.1
+	global_manpower_modifier = 0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+gentle_conquest_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = infrastructure_ideas
+		has_idea_group = horde_gov_ideas 
+	}
+	
+	allow = {
+		full_idea_group = infrastructure_ideas
+		full_idea_group = horde_gov_ideas 
+	}
+	
+	global_monthly_devastation = -0.25
+	land_maintenance_modifier = -0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+sharp_wits_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = offensive_ideas 
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = offensive_ideas 
+	}
+	
+	power_projection_from_insults = 0.25
+	morale_damage = 0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+sturdy_argument_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = defensive_ideas 
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = defensive_ideas 
+	}
+	
+	ae_impact = -0.1
+	morale_damage_received = -0.1
+	
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+special_forces_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = quality_ideas 
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = quality_ideas 
+	}
+	
+	special_unit_forcelimit = 0.20
+	yearly_army_professionalism = 0.002
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+plentiful_materials_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = quantity_ideas  
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = quantity_ideas 
+	}
+	
+	artillery_cost = -0.15
+	infantry_cost = -0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+naval_competence_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = naval_ideas  
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = naval_ideas 
+	}
+	
+	leader_naval_manuever = 1 
+	leader_naval_fire = 1 
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+dutiful_mercenaries_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = religious_ideas  
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = religious_ideas 
+	}
+	
+	land_morale = 0.075
+	global_missionary_strength = 0.02
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
+	}
+}
+
+hired_expeditions_act = { 
+	monarch_power = MIL
+	
+	potential = {
+		has_idea_group = mercenary_ideas
+		has_idea_group = expansion_ideas   
+	}
+	
+	allow = {
+		full_idea_group = mercenary_ideas
+		full_idea_group = expansion_ideas 
+	}
+	
+	force_march_free = yes 
+	recover_army_morale_speed = 0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0			
 	}
 }

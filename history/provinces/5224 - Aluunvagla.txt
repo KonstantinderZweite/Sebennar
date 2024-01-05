@@ -12,6 +12,6 @@ trade_goods = copper
 capital = ""
 
 is_city = yes
-owner =
+owner = 
 controller = 
 add_core = 

@@ -6,7 +6,6 @@ owner =
 controller = 
 add_core = 
 
-
 hre = no
 
 base_tax = 1

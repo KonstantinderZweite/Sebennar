@@ -1,440 +1,13 @@
 
-kheterata_western_expansion = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		tag = U01
-	}
-	has_country_shield = yes
-
-	kheterata_supress_nirat_rebellion = {
-		icon = mission_bedouins
-		required_missions = { }
-		
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					OR = {	
-						province_id = 472
-						province_id = 473
-						province_id = 491
-					}
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				owned_by = U02
-			}
-		}
-		
-		trigger = {
-			472 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			473 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			491 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			NOT = { exists = U02 }
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = army_recovery
-				duration = 9125 #25 years
-			}
-			454 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			459 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			460 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			461 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-		}
-		
-	}
-	
-	kheterata_secure_western_border = {
-		icon = mission_cannons_firing
-		required_missions = { kheterata_supress_nirat_rebellion }
-		
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					OR = {
-						province_id = 454
-						province_id = 459
-						province_id = 460
-						province_id = 461
-					}
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				owned_by = U10
-			}
-		}
-		
-		trigger = {
-			454 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			459 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			460 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			461 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			NOT = { exists = U10 }
-		}
-		
-		effect = {
-			397 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			399 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			383 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			oris_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			deshak_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			add_casus_belli = {
-				target = U06
-				type = cb_vassalize_mission
-			}
-		}
-	}
-	
-	kheterata_subjugate_deshak = {
-		icon = mission_have_two_subjects
-		required_missions = { kheterata_secure_western_border }
-		
-		provinces_to_highlight = {
-			OR = {
-				area = oris_area
-				area = deshak_area
-				province_id = 397
-				province_id = 399
-				province_id = 383
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			397 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			399 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			383 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			oris_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			deshak_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			400 = {
-				if = {
-					limit = {
-						NOT = {
-							is_permanent_claim = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			akan_mountains_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			middle_akan_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			isle_of_tef_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			add_casus_belli = {
-				target = A47
-				type = cb_vassalize_mission
-			}
-		}
-	}
-	
-	kheterata_conquer_viakkoc = {
-		icon = mission_cannons_firing
-		required_missions = { kheterata_subjugate_deshak }
-		
-		provinces_to_highlight = {
-			OR = {
-				area = middle_akan_area
-				area = akan_mountains_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			middle_akan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			akan_mountains_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			country_event = { id = flavor_khet.10 }
-			ekha_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			akarat_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	kheterata_subjugate_ekha = {
-		icon = mission_assemble_an_army
-		required_missions = { kheterata_conquer_viakkoc }
-		
-		provinces_to_highlight = {
-			OR = {
-				area = akarat_area
-				area = ekha_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			akarat_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			ekha_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_adm_power = 100
-		}
-	}
-	kheterata_recolonize_tef = {
-		icon = mission_sea_battles
-		required_missions = { kheterata_subjugate_ekha }
-		position = 6
-		
-		provinces_to_highlight = {
-			area = isle_of_tef_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			isle_of_tef_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = "eng_channel_dominance"	#Its called Merchant Navy in-game
-				duration = 5475
-			}
-			busilari_straits_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			busilar_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	kheterata_land_in_busilar = {
-		icon = mission_cannons_firing
-		required_missions = { kheterata_recolonize_tef }
-		position = 7
-		
-		provinces_to_highlight = {
-			OR = {
-				area = busilari_straits_area
-				area = busilar_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			busilari_straits_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			busilar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_casus_belli = {
-				target = U17
-				type = cb_vassalize_mission
-			}
-			crathanor_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	kheterata_crathanor_colony = {
-		icon = mission_sea_battles
-		required_missions = { kheterata_land_in_busilar }
-		position = 8
-		
-		provinces_to_highlight = {
-			area = crathanor_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			crathanor_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			add_adm_power = 50 
-			add_dip_power = 50
-			add_mil_power = 50
-		}
-	}
-}
-
 kheterata_eastern_expansion = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
+		OR = {
 		tag = U01
+		tag = U02
+		}
 	}
 	has_country_shield = yes
 	
@@ -684,12 +257,448 @@ kheterata_eastern_expansion = {
 	}
 }
 
+kheterata_western_expansion = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+		tag = U01
+		tag = U02
+		}
+	}
+	has_country_shield = yes
+
+	kheterata_supress_nirat_rebellion = {
+		icon = mission_bedouins
+		required_missions = { }
+		
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {	
+						province_id = 472
+						province_id = 473
+						province_id = 491
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				owned_by = U02
+			}
+		}
+		
+		trigger = {
+			472 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			473 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			491 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = U02 }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = army_recovery
+				duration = 9125 #25 years
+			}
+			454 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			459 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			460 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			461 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+		
+	}
+	
+	kheterata_secure_western_border = {
+		icon = mission_cannons_firing
+		required_missions = { kheterata_supress_nirat_rebellion }
+		
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						province_id = 454
+						province_id = 459
+						province_id = 460
+						province_id = 461
+					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				owned_by = U10
+			}
+		}
+		
+		trigger = {
+			454 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			459 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			460 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			461 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = U10 }
+		}
+		
+		effect = {
+			397 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			399 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			383 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			oris_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			deshak_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_casus_belli = {
+				target = U06
+				type = cb_vassalize_mission
+			}
+		}
+	}
+	
+	kheterata_subjugate_deshak = {
+		icon = mission_have_two_subjects
+		required_missions = { kheterata_secure_western_border }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = oris_area
+				area = deshak_area
+				province_id = 397
+				province_id = 399
+				province_id = 383
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			397 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			399 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			383 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			oris_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			deshak_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			400 = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			akasik_mountains_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			middle_akasik_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			isle_of_tef_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_casus_belli = {
+				target = A47
+				type = cb_vassalize_mission
+			}
+		}
+	}
+	
+	kheterata_conquer_viakkoc = {
+		icon = mission_cannons_firing
+		required_missions = { kheterata_subjugate_deshak }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = middle_akasik_area
+				area = akasik_mountains_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			middle_akasik_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			akasik_mountains_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_khet.10 }
+			ekha_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			akarat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	kheterata_subjugate_ekha = {
+		icon = mission_assemble_an_army
+		required_missions = { kheterata_conquer_viakkoc }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = akarat_area
+				area = ekha_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			akarat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ekha_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	kheterata_recolonize_tef = {
+		icon = mission_sea_battles
+		required_missions = { kheterata_subjugate_ekha }
+		position = 6
+		
+		provinces_to_highlight = {
+			area = isle_of_tef_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			isle_of_tef_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eng_channel_dominance"	#Its called Merchant Navy in-game
+				duration = 5475
+			}
+			busilari_straits_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			busilar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	kheterata_land_in_busilar = {
+		icon = mission_cannons_firing
+		required_missions = { kheterata_recolonize_tef }
+		position = 7
+		
+		provinces_to_highlight = {
+			OR = {
+				area = busilari_straits_area
+				area = busilar_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			busilari_straits_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			busilar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_casus_belli = {
+				target = U17
+				type = cb_vassalize_mission
+			}
+			crathanor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	kheterata_crathanor_colony = {
+		icon = mission_sea_battles
+		required_missions = { kheterata_land_in_busilar }
+		position = 8
+		
+		provinces_to_highlight = {
+			area = crathanor_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			crathanor_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 50 
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}
+
 kheterata_colonial_missions = {
 	slot = 3
 	generic = no
 	ai = yes
 	potential = {
+		OR = {
 		tag = U01
+		tag = U02
+		}
 	}
 	has_country_shield = yes
 	
@@ -755,6 +764,13 @@ kheterata_colonial_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			hapmot_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -768,6 +784,7 @@ kheterata_colonial_missions = {
 				area = golkora_stretch_area
 				area = gnollakaz_area
 				area = gnolltauz_area
+				area = hapmot_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -782,6 +799,10 @@ kheterata_colonial_missions = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			gnolltauz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hapmot_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -814,6 +835,7 @@ kheterata_colonial_missions = {
 				area = zeewix_area
 				area = saymas_area
 				area = krahilyn_area
+				area = hapmot_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -840,6 +862,10 @@ kheterata_colonial_missions = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			krahilyn_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hapmot_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1002,7 +1028,10 @@ kheterata_aelantir_missions = {
 	generic = no
 	ai = yes
 	potential = {
+		OR = {
 		tag = U01
+		tag = U02
+		}
 	}
 	has_country_shield = yes
 
@@ -1198,7 +1227,10 @@ kheterata_economic_missions = {
 	generic = no
 	ai = yes
 	potential = {
+		OR = {
 		tag = U01
+		tag = U02
+		}
 	}
 	has_country_shield = yes
 	

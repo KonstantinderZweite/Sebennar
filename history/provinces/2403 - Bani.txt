@@ -1,7 +1,7 @@
 
-owner = 
-controller = 
-add_core = 
+owner = G87
+controller = G87
+add_core = G87
 culture = doosun
 religion = animism
 capital = ""
@@ -18,3 +18,7 @@ add_permanent_province_modifier = {
 	name = munasin_estuary_modifier
 	duration = -1
 }
+
+native_size = 20
+native_ferocity = 2
+native_hostileness = 4

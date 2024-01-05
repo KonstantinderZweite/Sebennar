@@ -809,7 +809,6 @@ country_event = {
 		estate_loyalty = {
 			estate = estate_church
 			loyalty = 70
-			
 		}
 
 		NOT = {has_heir_flag = sebhuliam_heir}
@@ -980,6 +979,7 @@ country_event = {
 		add_estate_influence_modifier = {
 			estate = estate_church
 			influence = -10
+			duration = 5475
 		}
 
 		set_heir_flag = denied_sebhuliam
@@ -1263,23 +1263,68 @@ country_event = {
 		ai_chance = {
 			factor = 33
 			}
+		add_ruler_modifier = {
+			name = dartaxagerdim_god_king
+			duration = -1
+		}
 
 		clear_ruler_personalities = yes
 		add_ruler_personality = mage_personality
 		add_ruler_personality = immortal_personality
+		increase_witch_king_points_massive = yes
 		
 		hidden_effect = {
 
-			set_ruler_flag = transmutation_2 set_ruler_flag = transmutation_1
-			set_ruler_flag = illusion_1 
-			set_ruler_flag = enchantment_1
-			set_ruler_flag = evocation_1
-			set_ruler_flag = abjuration_1
-			set_ruler_flag = divination_1
-			set_ruler_flag = necromancy_1
-			set_ruler_flag = conjuration_1
+			add_ruler_modifier = {
+				name = dartax_madness_cooldown
+				duration = 7000
+				hidden = yes
+			}
+
+			random_list = {
+				75 = {set_ruler_flag = evocation_3 set_ruler_flag = evocation_2 set_ruler_flag = evocation_1}
+				25 = {set_ruler_flag = evocation_2 set_ruler_flag = evocation_1}
+			}
+			
+			random_list = {
+				50 = {set_ruler_flag = abjuration_3 set_ruler_flag = abjuration_2 set_ruler_flag = abjuration_1} 
+				50 = {set_ruler_flag = abjuration_2 set_ruler_flag = abjuration_1}
+			}
+			
+			random_list = {
+				90 = {set_ruler_flag = divination_3 set_ruler_flag = divination_2 set_ruler_flag = divination_1}
+				10 = {set_ruler_flag = divination_2 set_ruler_flag = divination_1}
+			}
+			
+			random_list = {
+				10 = {set_ruler_flag = necromancy_2 set_ruler_flag = necromancy_1}
+				90 = {set_ruler_flag = necromancy_1}
+			}
+			
+			
+			random_list = {
+				66 = {set_ruler_flag = transmutation_3 set_ruler_flag = transmutation_2 set_ruler_flag = transmutation_1}
+				33 = {set_ruler_flag = transmutation_2 set_ruler_flag = transmutation_1}
+			}
+			
+			random_list = {
+				50 = {set_ruler_flag = enchantment_3 set_ruler_flag = enchantment_2 set_ruler_flag = enchantment_1}
+				50 = {set_ruler_flag = enchantment_2 set_ruler_flag = enchantment_1}
+			}
+			
+			random_list = {
+				50 = {set_ruler_flag = conjuration_3 set_ruler_flag = conjuration_2 set_ruler_flag = conjuration_1}
+				50 = {set_ruler_flag = conjuration_2 set_ruler_flag = conjuration_1}
+			}
+			
+			random_list = {
+				50 = {set_ruler_flag = illusion_3 set_ruler_flag = illusion_2 set_ruler_flag = illusion_1}
+				50 = {set_ruler_flag = illusion_2 set_ruler_flag = illusion_1}
 			}
 		}
+
+
+	}
 }
 
 

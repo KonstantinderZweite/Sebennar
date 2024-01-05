@@ -176,16 +176,7 @@ U07_column_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			akan_mountains_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			hapak_area = {
+			akasik_mountains_area = {
 				limit = {
 					NOT = {
 						owned_by = ROOT
@@ -390,8 +381,6 @@ U07_column_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = deshak_area
-				area = akan_mountains_area
-				area = hapak_area
 			}
 		}
 		trigger = {
@@ -399,14 +388,7 @@ U07_column_3 = {
 				type = all
 				owned_by = ROOT
 			}
-			akan_mountains_area = {
-				type = all
-				owned_by = ROOT
-			}
-			hapak_area = {
-				type = all
-				owned_by = ROOT
-			}
+			
 		}
 		effect = {
 			add_treasury = 250
@@ -820,15 +802,6 @@ U07_column_4 = {
 			country_event = { id = flavor_viakkoc.4 }
 			country_event = { id = flavor_viakkoc.5 }
 			country_event = { id = flavor_viakkoc.6 }
-			north_salahad_region = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
 			gol_region = {
 				limit = {
 					NOT = {

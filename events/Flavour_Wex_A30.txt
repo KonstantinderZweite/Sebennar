@@ -51,7 +51,59 @@ country_event = {
 		always = yes
 	}
 	
-	
+	option = {
+		name = flavor_wex.2.a
+		
+		ai_chance = {
+			factor = 0
+		}
+		release_with_religion_and_culture = { tag = Z40 religion = regent_court culture = east_damerian }
+		create_subject = {
+			subject_type = autonomous_vassal
+			subject = Z40
+		}
+		Z40 = { 
+			remove_opinion = {
+				who = A30
+				modifier = released_vassal
+				}
+			add_opinion = {
+				who = A30
+				modifier = wex_loyalist_rule
+				}
+			}
+		release_with_religion_and_culture = { tag = Z41 religion = regent_court culture = east_damerian }
+		create_subject = {
+			subject_type = autonomous_vassal
+			subject = Z41
+		}
+		Z41 = { 
+			remove_opinion = {
+				who = A30
+				modifier = released_vassal
+				}
+			add_opinion = {
+				who = A30
+				modifier = wex_loyalist_rule
+				}
+			}
+		release_with_religion_and_culture = { tag = Z42 religion = regent_court culture = moon_elf }
+		create_subject = {
+			subject_type = autonomous_vassal
+			subject = Z42
+		}
+		Z42 = { 
+			remove_opinion = {
+				who = A30
+				modifier = released_vassal
+				}
+			add_opinion = {
+				who = A30
+				modifier = wex_loyalist_rule
+				}
+			}
+		set_country_flag = lothane_benevolent
+	}
 	option = {
 		name = flavor_wex.2.b
 		
@@ -355,7 +407,7 @@ country_event = {
 		name = flavor_wex.9.c
 		trigger = { has_consort = yes }
 		ai_chance = { factor = 50 }
-		remove_consort = yes
+		remove_consort_effect = yes
 		add_legitimacy = -10
 		define_consort = {
 			name = "Kerstin"

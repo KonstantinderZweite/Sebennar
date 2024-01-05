@@ -1,8 +1,8 @@
 
 # No previous file for Banten
-owner = R38
-controller = R38
-add_core = R38
+owner = R43
+controller = R43
+add_core = R43
 culture = sarniryabsad
 religion = high_philosophy
 

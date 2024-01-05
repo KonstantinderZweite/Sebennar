@@ -1,12 +1,4 @@
-Wex_blank_4 = {
-    slot = 4
-    generic = no
-    ai = yes
-    has_country_shield = yes
-    potential = {
-        tag = A30
-    }
-}
+
 wex_slot_1 = {
 	slot = 1
 	generic = no
@@ -145,20 +137,12 @@ wex_slot_1 = {
 		
 		provinces_to_highlight = {
 			province_id = 303
-			NOT = {
-				AND = {
-					owned_by = ROOT
-					has_production_building_trigger = yes
-					development = 20
-				}
-			}
+			NOT = { development = 30 }
 		}
 		
 		trigger = {
 			303 = {
-				owned_by = ROOT
-				has_production_building_trigger = yes
-				development = 20
+				development = 30
 			}
 		}
 		
@@ -179,20 +163,18 @@ wex_slot_1 = {
 		
 		provinces_to_highlight = {
 			province_id = 303
-			NOT = {
-				AND = {
-					owned_by = ROOT
-					has_manufactory_trigger = yes
-					development = 35
-				}
+			OR = {
+				NOT = { trade_goods = coal }
+				NOT = { has_building = furnace }
+				NOT = { development = 40 }
 			}
 		}
 		
 		trigger = {
 			303 = {
-				owned_by = ROOT
-				has_manufactory_trigger = yes
-				development = 35
+				trade_goods = coal
+				has_building = furnace
+				development = 40
 			}
 		}
 		
@@ -363,16 +345,13 @@ wex_slot_2 = {
 		position = 11
 		
 		provinces_to_highlight = {
-			country_or_non_sovereign_subject_holds = ROOT  
-			trade_goods = iron
+			owned_by = ROOT
+			trade_goods = coal
+			NOT = { has_building = furnace }
 		}
 		
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				trade_goods = iron
-				has_production_building_trigger = yes 
-				value = 10
-			}
+			furnace = 4
 		}
 		
 		effect = {
@@ -614,7 +593,7 @@ wex_slot_3 = {
 	}
 	
 	A30_industrial_expertise = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = { }
 		position = 10
 		
@@ -686,8 +665,6 @@ wex_slot_4 = {
 		tag = A30
 	}
 	has_country_shield = yes
-	
-	
 	
 	A30_order_sugamber = {
 		icon = mission_dark_book

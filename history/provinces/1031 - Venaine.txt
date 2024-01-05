@@ -1,12 +1,12 @@
 
 # No previous file for Kamikawa
-owner = 
-add_core = 
-controller = 
+owner = G42
+add_core = G42
+controller = G42
 culture = boek
 religion = dotimism
 capital = ""
-tribal_owner = 
+tribal_owner = G42
 
 hre = no
 

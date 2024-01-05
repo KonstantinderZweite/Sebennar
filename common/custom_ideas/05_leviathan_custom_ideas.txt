@@ -604,7 +604,7 @@ leviathan_idea_dip_modifiers = {
 	custom_may_explore = {
 		may_explore = yes
 		max_level = 1
-		level_cost_1 = 40
+		level_cost_1 = 20
 		chance = {
 			factor = 0.01
 		}

@@ -1932,7 +1932,7 @@ vertesk_3_missions = {
 				area = northern_greatwoods_area
 				area = mawriver_area
 				area = dinesck_area
-				area = drowned_giant_isles_area
+
 				area = west_chillsbay_area
 			}
 			OR = {
@@ -1963,11 +1963,6 @@ vertesk_3_missions = {
 				is_core = ROOT
 			}
 			dinesck_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
-			drowned_giant_isles_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
@@ -2957,13 +2952,6 @@ vertesk_5_missions = {
 		effect = {
 			add_dip_power = 200
 			west_chillsbay_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			drowned_giant_isles_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }

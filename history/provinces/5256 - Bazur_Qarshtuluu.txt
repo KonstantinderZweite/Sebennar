@@ -17,3 +17,5 @@ owner =
 controller = 
 add_core = 
 add_devastation = 80
+
+add_core = 

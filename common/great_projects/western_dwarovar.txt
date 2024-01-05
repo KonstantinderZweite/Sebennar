@@ -778,6 +778,7 @@ kozenad_brothel = {
 		}
 		province_modifiers = {
 			local_production_efficiency = 0.50
+			local_development_cost = -0.10
 		}
 		area_modifier = {			
 		}
@@ -789,12 +790,7 @@ kozenad_brothel = {
 			spy_offence = 0.3
 		}
 		on_upgraded = {
-			owner = {
-				add_country_modifier = {
-				name = kozenad_brothel_new_ladies_of_the_opal_calling
-				duration = 9125
-				}
-			}
+			
 		}
 	}
 }
@@ -1379,13 +1375,14 @@ ramvault_mines = {
 	on_destroyed = {		
 	}	
 	can_use_modifiers_trigger = {
+		culture_group = dwarven
+		owner = {culture_group = dwarven}
 		AND = {
 			development = 10
 				custom_trigger_tooltip = {
 					tooltip = dwarven_monuments_can_use_tooltip
 						 dwarven_monuments_has_acceptable_culture_or_race = yes
 				}
-			province_is_or_accepts_culture = yes
 		}
 	}
 	can_upgrade_trigger = {
@@ -1421,7 +1418,7 @@ ramvault_mines = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 400
+			factor = 1000
 		}
 		province_modifiers = {
 			local_development_cost = -0.2
@@ -1445,7 +1442,7 @@ ramvault_mines = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 1800
+			factor = 2500
 		}
 		province_modifiers = {
 			local_development_cost = -0.4
@@ -1467,7 +1464,7 @@ ramvault_mines = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 3600
+			factor = 5000
 		}
 		province_modifiers = {
 			local_development_cost = -0.6
@@ -1881,13 +1878,11 @@ jorkad_aqueduct = {
 			local_defensiveness = 0.33
 			local_hostile_attrition = 1
 		}
-		area_modifier = {		
-		}
-		region_modifier = {
-			allowed_num_of_buildings = 1
+		area_modifier = {	
+				allowed_num_of_buildings = 2
 		}
 		country_modifiers = {
-			state_maintenance_modifier = -0.25
+			state_maintenance_modifier = -0.30
 			garrison_size = 0.33
 		}
 		on_upgraded = {
@@ -1955,7 +1950,7 @@ sedadhum_mining_settlement = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 400
+			factor = 1000
 		}
 		province_modifiers = {
 			local_development_cost = -0.3
@@ -1980,7 +1975,7 @@ sedadhum_mining_settlement = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 1800
+			factor = 2500
 		}
 		province_modifiers = {
 			local_development_cost = -0.6
@@ -2005,7 +2000,7 @@ sedadhum_mining_settlement = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 3600
+			factor = 5000
 		}
 		province_modifiers = {
 			local_development_cost = -0.9

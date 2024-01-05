@@ -152,10 +152,10 @@ damescrown_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			own = 234
-			own = 249
-			own = 216
-			own = 151
+			owns = 234
+			owns = 249
+			owns = 216
+			owns = 151
 			234 = { is_strongest_trade_power = ROOT }
 			234 = {
 				trade_share = {
@@ -372,6 +372,7 @@ damescrown_2 = {
 			num_of_estate_privileges = { estate = estate_burghers value = 7 }
 			}
 		effect = {
+			add_republican_tradition = 20
 			A25 = { change_government = republic }
 			add_government_reform = clstc_oligarchy
 			remove_country_modifier = A25_republic_tensions
@@ -550,7 +551,7 @@ damescrown_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			heartlands_area = {
+			 heartland_borders_area = {
 				limit = {
 					NOT = {
 						owned_by = ROOT

@@ -283,7 +283,7 @@ hammerhome_artificers_guild = {
 		country_modifiers = {
 			artificers_loyalty_modifier = 0.05
 			artificers_influence_modifier = 0.025
-			special_unit_forcelimit = 0.025
+			allowed_rajput_fraction = 0.025
 			fire_damage_received = -0.025
 		}
 		on_upgraded = {
@@ -316,18 +316,12 @@ hammerhome_artificers_guild = {
 		country_modifiers = {
 			artificers_loyalty_modifier = 0.1
 			artificers_influence_modifier = 0.05
-			special_unit_forcelimit = 0.05
+			allowed_rajput_fraction = 0.05
 			fire_damage_received = -0.05
 		}
 		on_upgraded = {
 			add_base_production = 3
 			center_of_trade = 1
-			owner = {
-				country_event = { 
-					id = cannorian_monuments_hammerhome_artificers.1
-					days = 1
-				}
-			}
 		}
 	}
 }

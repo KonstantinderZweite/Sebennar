@@ -45,6 +45,7 @@ neckcliffe_1 = {
 				add_trust = {
 					who = A04
 					value = 25
+					mutual = yes
 				}
 				add_country_modifier = {
 					name = "neckcliffe_connections_of_wesdam"
@@ -61,6 +62,7 @@ neckcliffe_1 = {
 				add_trust = {
 					who = A11
 					value = 25
+					mutual = yes
 				}
 				add_country_modifier = {
 					name = "neckcliffe_pearlsedger_trade_deals"
@@ -1147,7 +1149,11 @@ neckcliffe_4 = {
 		}
 		
 		trigger = {
-			
+			OR = {
+				ruler_has_personality = just_personality
+				ruler_has_personality = righteous_personality
+				ruler_has_personality = intricate_web_weaver_personality
+			}
 			26 = { #Throatport
 				has_courthouse_building_trigger = yes
 			}
@@ -1171,7 +1177,11 @@ neckcliffe_4 = {
 		position = 3
 		
 		trigger = {
-			
+			OR = {
+				ruler_has_personality = architectural_visionary_personality
+				ruler_has_personality = industrious_personality
+				ruler_has_personality = obsessive_perfectionist_personality
+			}
 			adm_power = 50
 		}
 		
@@ -1313,7 +1323,7 @@ neckcliffe_5 = {
 			employed_advisor = {
 				type = master_of_mint
 			}
-			
+			NOT = { ruler_has_personality = embezzler_personality }
 			dip = 3
 			26 = { #Throatport
 				owned_by = ROOT
@@ -1333,7 +1343,11 @@ neckcliffe_5 = {
 		position = 2
 		
 		trigger = {
-			
+			OR = {
+				ruler_has_personality = benevolent_personality
+				ruler_has_personality = entrepreneur_personality
+				ruler_has_personality = intricate_web_weaver_personality
+			}
 			NOT = { mission_completed = A22_put_an_end_to_the_bribery }
 			hidden_trigger = { ai = no }
 		}
@@ -1389,7 +1403,7 @@ neckcliffe_5 = {
 		effect = {
 			every_known_country = {
 				limit = {
-					capital_scope = { region = north_salahad_region }
+					capital_scope = { region = kheterata_region }
 					culture_group = gnollish
 				}
 				every_owned_province = { add_claim = ROOT }
