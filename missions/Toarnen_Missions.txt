@@ -843,7 +843,7 @@ toarnen_column_two = {
 			}
 			total_development = A32 # Ibevar
 			treasury = 500
-			314 = { # Téinmas
+			314 = { # Tï¿½inmas
 				owned_by = A32 # Ibevar
 			}
 			A32 = { # Ibevar
