@@ -14,5 +14,5 @@ capital = "The Noble Sister"
 
 is_city = yes
 owner = 
-controller = 
+controller =
 add_core = 

@@ -549,7 +549,10 @@ country_event = {
 		any_owned_province = {
 			has_province_modifier = "verne_sanctuary"
 		}
-		has_country_modifier = verne_wyvern_riders
+		OR = {
+			has_country_modifier = verne_wyvern_riders
+			has_country_modifier = verne_wyvern_riders_dlc
+		}
 		OR = {
 			accepted_culture = vernman
 			primary_culture = vernman
@@ -557,7 +560,7 @@ country_event = {
 	}
 		
 	mean_time_to_happen = {
-		months = 600
+		months = 960
 	}
 	
 	immediate = {

@@ -1,8 +1,8 @@
 
 # No previous file for Ha Tinh
-owner = 
-controller = 
-add_core = 
+owner = G05
+controller = G05
+add_core = G05
 culture = kwineh
 religion = weeping_mother
 capital = ""

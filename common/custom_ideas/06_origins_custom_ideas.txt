@@ -95,15 +95,6 @@ origins_idea_adm_modifiers = {
 		}
 	}
 	
-	custom_move_capital_cost_modifier = {
-		move_capital_cost_modifier = -0.2
-		level_cost_2 = 3
-		level_cost_3 = 9
-		level_cost_4 = 18
-		chance = {
-			factor = 0.1
-		}
-	}
 	
 	custom_all_estate_loyalty_equilibrium = {
 		all_estate_loyalty_equilibrium = 0.05

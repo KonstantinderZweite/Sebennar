@@ -1,0 +1,11 @@
+country_event = {
+	id = Akluztajo.1
+	title = Akluztajo.1.t
+	desc = Akluztajo.1.d
+	picture = KOBOLD_BALRIS_eventPicture
+
+	is_triggered_only = yes
+	option = {
+		name = Akluztajo.1.b
+	}
+}

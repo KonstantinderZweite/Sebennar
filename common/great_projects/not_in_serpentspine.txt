@@ -536,7 +536,7 @@ verkal_ozovar_phokhao_citadel = {
 				culture = root
 				religion = root
 				location = 5424
-				ost_multiplier = 0.25
+				cost_multiplier = 0.25
 			}
 		}
 	}

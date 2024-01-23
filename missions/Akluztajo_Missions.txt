@@ -1,0 +1,50 @@
+Akluztajo_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	
+	potential = {
+		tag = Z87
+	}
+	Z87_Gladeway_development = {
+		icon = mission_asian_trader
+		position = 1
+		provinces_to_highlight = {
+           province_group = deepwoods_outward_gladeway
+        }
+		trigger = {
+		manpower = 20
+		treasury = 250 
+		deepwoods_outward_gladeway = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			}
+		effect = {
+			add_treasury = -250
+			add_manpower = -20
+           
+           deepwoods_outward_gladeway = {
+                add_province_modifier = {
+                    name =  Z87_GladeWayExpansion 
+                    duration = -1
+                }
+            }
+	
+		}
+		}
+		Z87_Gladeway_Infusion = {
+		icon = mission_asian_trader
+		position = 2 
+		required_missions = { Z87_Gladeway_development }
+		trigger = {
+		manpower = 20
+		}
+		effect = { 
+		add_manpower = -20
+		}
+		
+		}
+}
+

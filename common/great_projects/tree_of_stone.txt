@@ -227,7 +227,7 @@ ovdal_kanzad_cannon_foundry = {
 		}
 		country_modifiers = {
 			artillery_cost = -0.01
-			artillery_fire = 0.01
+			artillery_fire = 0.05
 		}
 		on_upgraded = {
 			add_center_of_trade_level = 1
@@ -249,7 +249,7 @@ ovdal_kanzad_cannon_foundry = {
 		}
 		country_modifiers = {
 			artillery_cost = -0.025
-			artillery_fire = 0.05
+			artillery_fire = 0.10
 		}
 		on_upgraded = {
 			owner = {
@@ -282,7 +282,7 @@ ovdal_kanzad_cannon_foundry = {
 		}
 		country_modifiers = {
 			artillery_cost = -0.05
-			artillery_fire = 0.10
+			artillery_fire = 0.20
 		}
 		on_upgraded = {
 			owner = {

@@ -409,7 +409,7 @@ verkal_dromak_mage_academy = {
 				culture = root
 				religion = root
 				location = 4323
-				ost_multiplier = 0.25
+				cost_multiplier = 0.25
 			}
 		}
 	}

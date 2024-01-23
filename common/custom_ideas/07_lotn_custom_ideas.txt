@@ -1,16 +1,6 @@
 lotn_idea_adm_modifiers = {
 	category = ADM
 	
-	custom_global_allowed_num_of_buildings = {
-		global_allowed_num_of_buildings = 1
-		max_level = 2
-		level_cost_1 = 5
-		level_cost_2 = 30
-		
-		chance = {
-			factor = 0.1
-		}
-	}
 	
 	custom_all_estate_influence_modifier_positive = {
 		all_estate_influence_modifier = 0.05
@@ -198,10 +188,10 @@ lotn_idea_dip_modifiers = {
 	
 	custom_reasons_to_elect = {
 		reasons_to_elect = 5
-		level_cost_1 = 15
-		level_cost_2 = 30
-		level_cost_3 = 45
-		level_cost_4 = 60
+		level_cost_1 = 5
+		level_cost_2 = 10
+		level_cost_3 = 15
+		level_cost_4 = 20
 		
 		chance = {
 			factor = 0.1

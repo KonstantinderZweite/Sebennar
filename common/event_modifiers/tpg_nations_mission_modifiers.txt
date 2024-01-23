@@ -391,12 +391,12 @@ khet_collapse = {
 }
 
 camel_calvary = {
-	cav_to_inf_ratio = 0.15
+	cav_to_inf_ratio = 0.10
 	cavalry_cost = -0.15
 }
 
 elephant_calvary = {
-	cav_to_inf_ratio = 0.25
+	cav_to_inf_ratio = 0.15
 	cavalry_cost = -0.15
 	cavalry_fire = 0.5
 }
@@ -450,6 +450,11 @@ telgier_professional_armies = {
 	discipline = 0.05
 }
 
+A62_drill = {
+	drill_decay_modifier = -0.33
+	drill_gain_modifier = 0.50
+}
+
 #Gnomish Hierachy
 A79_rebuild_oddansbay_modifier = {
 	development_cost = -0.05
@@ -483,6 +488,29 @@ A45_commanders = {
 	infantry_fire = -0.20
 }
 
+#Bjarnrik 
+
+Z08_proto_industry = {
+	production_efficiency = 0.15
+}
+
+Z08_faith_secured = {
+	tolerance_own = 2
+	global_missionary_strength = 0.01
+}
+
+Z08_eagle_slayers = {
+	shock_damage = 0.05
+	infantry_shock = 0.40
+	infantry_fire = -0.20
+}
+	
+#Akluztajo 
+
+Z87_GladeWayExpansion  = {
+local_development_cost = -0.75
+
+}
 #Generic
 
 war_of_last_resort = {
@@ -532,11 +560,11 @@ renovated_capital = {
 }
 
 renovated_capital_2 = {
-	local_development_cost = -0.30
-	local_tax_modifier = 0.50
-	trade_goods_size = 0.75
-	local_manpower_modifier = 0.3
-	province_trade_power_modifier = 0.25
+	local_development_cost = -0.25
+	local_tax_modifier = 0.75
+	trade_goods_size = 0.50
+	local_manpower_modifier = 0.25
+	province_trade_power_modifier = 0.10
 }
 	
 
@@ -548,7 +576,7 @@ new_scholars = {
 permanent_peasant_levies = {
 	global_manpower = 5
 	global_tax_income = 24
-	land_forcelimit	= 5
+	land_forcelimit	= 3
 }
 
 efficient_taxation = {
@@ -590,7 +618,7 @@ population_surge_g = {
 influential_diplomacy_g = {
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.2
-	ae_impact = -0.2
+	ae_impact = -0.1
 	diplomats = 1
 }
 

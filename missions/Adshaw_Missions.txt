@@ -1161,7 +1161,7 @@ adshaw_2_missions_nc = {
 				}
 				add_permanent_claim = ROOT
 			}
-			alptborg_area  = {
+			varheim_area  = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -1199,7 +1199,7 @@ adshaw_2_missions_nc = {
 		provinces_to_highlight = {
 			OR = {
 				area = bjarnland_area
-				area = alptborg_area
+				area = varheim_area
 				area = revrland_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -1210,7 +1210,7 @@ adshaw_2_missions_nc = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			alptborg_area = {
+			varheim_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1255,7 +1255,7 @@ adshaw_2_missions_nc = {
 		provinces_to_highlight = {
 			OR = {
 				area = bjarnland_area
-				area = alptborg_area 
+				area = varheim_area
 				area = revrland_area
 				area = elkaesals_slumber_area
 				area = olavslund_area
@@ -1263,7 +1263,6 @@ adshaw_2_missions_nc = {
 				area = naugsvol_area
 				area = esfjall_area
 				area = frostbridges_area
-				area = giants_manse_area 
 			}
 			NOT = {
 				AND = {
@@ -1279,7 +1278,7 @@ adshaw_2_missions_nc = {
 				has_owner_religion = yes
 				type = all
 			}
-			alptborg_area = {
+			varheim_area = {
 				owned_by = Z26
 				has_owner_religion = yes
 				type = all
@@ -1310,11 +1309,6 @@ adshaw_2_missions_nc = {
 				type = all
 			}
 			naugsvol_area = {
-				owned_by = Z26
-				has_owner_religion = yes
-				type = all
-			}
-			giants_manse_area = {
 				owned_by = Z26
 				has_owner_religion = yes
 				type = all
@@ -1651,7 +1645,7 @@ adshaw_3_missions_s = {
 				add_base_manpower = -5
 				add_devastation = 100
 				change_trade_goods = fish
-				add_center_of_trade_level = -3
+				add_center_of_trade_level = -2
 				hidden_effect = {
 					remove_building = fort_15th
 					remove_building = fort_16th
@@ -1723,12 +1717,9 @@ adshaw_3_missions_s = {
 		
 		effect = {
 			set_government_rank = 2
-			add_dip_power = 100
-			add_adm_power = 100
-			add_mil_power = 100
 			add_country_modifier = {
-				name = Z26_return_king
-				duration = -1
+				name = adshaw_return_of_the_king_m
+				duration = 18250
 			}
 			western_alenic_reach = {
 				limit = {
@@ -2362,7 +2353,7 @@ adshaw_4_missions_s = {
 				add_base_manpower = -6
 				add_devastation = 100
 				change_trade_goods = fish
-				add_center_of_trade_level = -3
+				add_center_of_trade_level = -2
 				change_culture = blue_reachman
 				hidden_effect = {
 					remove_building = fort_15th
@@ -2541,11 +2532,15 @@ adshaw_4_missions_m = {
 			hidden_effect = {
 				A13 = {
 					every_owned_province = {
-						limit = {
-							culture = old_alenic
-						}
-						add_nationalism = 25
-						add_unrest = 15
+						limit = { culture = old_alenic }
+						# add_nationalism = 25		# add_nationalism doesn't work if there is none.
+						# add_unrest = 15
+						add_unrest = 27.5
+					}
+					add_country_modifier = {
+						name = adshaw_tempting_the_wolf_m
+						duration = 10220	# 28 years; same duration as the added unrest.
+						hidden = yes
 					}
 				}
 			}
@@ -2748,7 +2743,7 @@ adshaw_4_missions_m = {
 	}
 	
 	adshaw_empire_of_the_reach_m = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		position = 13
 		required_missions = {
 			adshaw_restore_clan_wight

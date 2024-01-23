@@ -5,7 +5,7 @@ is_city = yes
 owner = 
 controller = 
 add_core = 
-add_core = 
+add_core =
 
 
 hre = no

@@ -233,7 +233,7 @@ azjakuma_ajgriijarul_the_bright_claw = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			infantry_shock = 0.01
+			infantry_shock = 0.02
 			ajgriijarul_loyalty_modifier = 0.025		
 		}
 		on_upgraded = {
@@ -257,7 +257,7 @@ azjakuma_ajgriijarul_the_bright_claw = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			infantry_shock = 0.02
+			infantry_shock = 0.05
 			ajgriijarul_loyalty_modifier = 0.05
 			ajgriijarul_influence_modifier = 0.025		
 		}
@@ -292,7 +292,7 @@ azjakuma_ajgriijarul_the_bright_claw = {
 		region_modifier = {
 		}
 		country_modifiers = {
-			infantry_shock = 0.05
+			infantry_shock = 0.10
 			leader_land_shock = 1
 			ajgriijarul_loyalty_modifier = 0.1
 			ajgriijarul_influence_modifier = 0.05

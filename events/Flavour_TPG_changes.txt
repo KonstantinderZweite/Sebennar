@@ -1,7 +1,6 @@
 ###Busilar
 
 namespace = flavor_TPG
-namespace = flavor_rubyhold
 
 #Will Busilar be able to join the empire
 country_event = {
@@ -14,7 +13,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		#mission
+		
 
 	}
 	

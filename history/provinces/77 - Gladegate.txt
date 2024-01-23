@@ -13,7 +13,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 3
 
-trade_goods = silk
+trade_goods = wine
 
 capital = "Entrance to the Redglades"
 
@@ -23,7 +23,11 @@ fort_15th = yes
 
 
 
+
+
+
+
 add_permanent_province_modifier = {
-	name = gladegate
+	name = human_minority_coexisting_small
 	duration = -1
 }

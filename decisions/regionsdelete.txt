@@ -1,0 +1,28 @@
+
+country_decisions = {
+regions_delete = {
+    potential = {
+    NOT = { has_global_flag = mp_regions_deleted}
+    ai = no
+    NOT = {
+        is_year = 1445
+        }
+
+        }
+    allow={
+         ai = no
+
+    }
+
+    effect = {
+                fangaula_superregion = { destroy_province_permanently = yes }
+                west_sarhal_superregion = { destroy_province_permanently = yes }
+                east_sarhal_superregion = { destroy_province_permanently = yes }
+                south_sarhal_superregion = { destroy_province_permanently = yes }
+				forbidden_lands_superregion = { destroy_province_permanently = yes }
+				limit = { province_id = 463
+				}
+        set_global_flag = mp_regions_deleted
+    }
+}
+}

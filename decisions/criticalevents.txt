@@ -1,0 +1,33 @@
+
+country_decisions = {
+critical_events = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = Radical
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = ArmyReformer
+				NOT = { has_country_flag = military_reform }
+			}
+			custom_trigger_tooltip = {
+				tooltip = Commandant
+				NOT = { has_country_flag = commandant }
+			}
+			custom_trigger_tooltip = {
+				tooltip = Captain
+				NOT = { has_country_flag = grand_captain }
+			}
+			always = no
+		}
+		effect = {
+		}
+	}
+}

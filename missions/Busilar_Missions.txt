@@ -32,15 +32,7 @@ busilar_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			inner_khenak_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
+
 			mountainway_area = {
 				limit = {
 					NOT = {
@@ -658,13 +650,10 @@ busilar_3 = {
 			every_owned_province = {
 				limit = {
 					culture = west_sandfang_gnoll
-					OR = {
-						area = hapak_area
 						AND = {
 							area = deshak_area
 							NOT = { province_id = 403 }
 						}
-					}
 				}
 				change_culture = desha
 				change_religion = ROOT
@@ -674,8 +663,8 @@ busilar_3 = {
 				limit = {
 					culture = west_sandfang_gnoll
 					OR = {
-						area = akan_mountains_area
-						area = middle_akan_area
+						area = akasik_mountains_area
+						area = middle_akasik_area
 						province_id = 403
 					}
 				}
@@ -689,7 +678,6 @@ busilar_3 = {
 					OR = {
 						area = akarat_area
 						area = ekha_area
-						area = akan_isles_area
 					}
 				}
 				change_culture = far_akani
@@ -917,14 +905,14 @@ busilar_4 = {
 		}
 		
 		effect = {
-			middle_akan_area = {
+			middle_akasik_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			akan_mountains_area = {
+			 akasik_mountains_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -944,18 +932,18 @@ busilar_4 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				area = middle_akan_area
-				area = akan_mountains_area
+				area = middle_akasik_area
+				area = akasik_mountains_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			middle_akan_area = {
+			middle_akasik_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			akan_mountains_area = {
+			akasik_mountains_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -976,13 +964,6 @@ busilar_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			akan_isles_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			coastal_krahway_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -991,13 +972,6 @@ busilar_4 = {
 				add_permanent_claim = ROOT
 			}
 			salahad_islands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			hapak_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

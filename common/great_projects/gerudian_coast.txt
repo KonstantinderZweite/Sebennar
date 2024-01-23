@@ -83,7 +83,7 @@ urviksten_ebonsteel_armory = {
 			supply_limit = 0.5
 		}
 		country_modifiers = {
-			infantry_shock = 0.05
+			infantry_shock = 0.02
 			infantry_cost = -0.025
 		}
 		on_upgraded = {
@@ -138,7 +138,7 @@ urviksten_ebonsteel_armory = {
 			supply_limit = 2
 		}
 		country_modifiers = {
-			infantry_shock = 0.05
+			infantry_shock = 0.10
 			infantry_cost = -0.1
 			shock_damage_received = -0.05
 		}

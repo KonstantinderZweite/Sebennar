@@ -207,7 +207,7 @@ verkal_skomdihr_warding_gate = {
 		}
 		country_modifiers = {
 			infantry_cost = -0.05
-			infantry_fire = 0.01
+			infantry_fire = 0.02
 		}
 		on_upgraded = {
 		}
@@ -227,7 +227,7 @@ verkal_skomdihr_warding_gate = {
 		}
 		country_modifiers = {
 			infantry_cost = -0.075
-			infantry_fire = 0.025
+			infantry_fire = 0.05
 		}
 		on_upgraded = {
 		}
@@ -247,7 +247,7 @@ verkal_skomdihr_warding_gate = {
 		}
 		country_modifiers = {
 			infantry_cost = -0.1
-			infantry_fire = 0.05
+			infantry_fire = 0.10
 			leader_land_fire = 1
 		}
 		on_upgraded = {
@@ -658,10 +658,10 @@ orlghelovar_great_waterfall = {
 					70 = {
 						add_dip_power = 100
 					}
-					20 = {
+					30 = {
 						change_dip = 1
 					}
-					10 = {
+					0 = {
 						add_dip_tech = 1
 					}
 				}

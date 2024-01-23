@@ -244,7 +244,7 @@ telgeir_vanbury_steel_foundry = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			infantry_fire = 0.01
+			infantry_fire = 0.02
 		}
 		on_upgraded = {
 			add_base_production = 2
@@ -264,7 +264,7 @@ telgeir_vanbury_steel_foundry = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			infantry_fire = 0.02
+			infantry_fire = 0.05
 			fire_damage_received = -0.025
 		}
 		on_upgraded = {
@@ -286,7 +286,7 @@ telgeir_vanbury_steel_foundry = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			infantry_fire = 0.05
+			infantry_fire = 0.10
 			fire_damage_received = -0.05
 		}
 		on_upgraded = {

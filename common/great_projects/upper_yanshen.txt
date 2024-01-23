@@ -114,10 +114,7 @@ jinquiu_heiyukcheng_the_black_jade_citadel = {
 		}
 		on_upgraded = {
 			owner = {
-				country_event = { 
-					id = haless_and_aelantir_monuments_heiyukcheng.1
-					days = 1
-				}
+				
 			}
 		}
 	}

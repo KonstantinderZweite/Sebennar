@@ -1,7 +1,7 @@
 
 setup_vision = yes
-government = monarchy
-add_government_reform = feudalism_reform
+government = tribal
+add_government_reform = wood_elf_salla
 government_rank = 1
 primary_culture = wood_elf
 religion = fey_court
@@ -10,7 +10,7 @@ capital = 3012
 1395.3.10 = {
 monarch = {
 		name = "Alara"
-		dynasty = "Cen√°g"
+		dynasty = "Cen·g"
 		adm = 4
 		dip = 2
 		mil = 5
@@ -42,7 +42,7 @@ monarch = {
 	heir = {
 		name = "Iras"
 		monarch_name = "Iras"
-		dynasty = "Cen√°g"
+		dynasty = "Cen·g"
 		birth_date = 1396.2.11
 		death_date = 1581.3.2
 		claim = 95
@@ -69,4 +69,17 @@ monarch = {
 	add_historical_friend = I33
 	add_historical_friend = I34
 	add_stability = 2
+}
+
+set_variable = {
+	which = seelieCourtRelations
+	value = 50
+}
+set_variable = {
+	which = unseelieCourtRelations
+	value = 50
+}
+set_variable = {
+	which = unalignedFeyRelations
+	value = 50
 }

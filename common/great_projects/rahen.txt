@@ -84,7 +84,7 @@ temple_mindanan = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			infantry_shock = 0.01
+			infantry_shock = 0.02
 			shock_damage = 0.025
 		}
 		on_upgraded = {
@@ -102,7 +102,7 @@ temple_mindanan = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			infantry_shock = 0.02
+			infantry_shock = 0.05
 			shock_damage = 0.05
 			max_absolutism = 5
 		}
@@ -121,7 +121,7 @@ temple_mindanan = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			infantry_shock = 0.05
+			infantry_shock = 0.10
 			shock_damage = 0.075
 			max_absolutism = 10
 		}

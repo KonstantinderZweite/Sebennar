@@ -1,13 +1,5 @@
 # í <-- This is here to make sure that the encoding stays ANSI, do not remove it
-Daengun_blank_5 = {
-    slot = 5
-    generic = no
-    ai = yes
-    has_country_shield = yes
-    potential = {
-        tag = Y93
-    }
-}
+
 daengun_intro_left = {
 	slot = 2
 	generic = no

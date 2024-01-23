@@ -1,13 +1,5 @@
 # _# is column number.
-GreedyGrin_blank_2 = {
-    slot = 2
-    generic = no
-    ai = yes
-    has_country_shield = yes
-    potential = {
-        tag = H82
-    }
-}
+
 ################## by Abyssmoon
 ##### Vault ######
 ##################
@@ -358,9 +350,9 @@ greedy_grin_2 = {
 		
 		provinces_to_highlight = {
 			OR = {
-				province_id = 4350 #Tuwad-DhÃ»makon
-				province_id = 4311 #GrÃ´nstuand
-				province_id = 4313 #VÃ»driz-Ã‚ndriz
+				province_id = 4350 #Tuwad-Dhûmakon
+				province_id = 4311 #Grônstuand
+				province_id = 4313 #Vûdriz-Ândriz
 			}
 		}
 

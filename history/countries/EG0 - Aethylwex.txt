@@ -1,8 +1,0 @@
-
-setup_vision = yes
-government = monarchy
-add_government_reform = extreme_decentralization_reform
-government_rank = 1
-primary_culture = south_aethyl
-religion = regent_court
-technology_group = tech_cannorian

@@ -68,7 +68,7 @@ verkal_gulan_hero_gate = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 600
+			factor = 1000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -88,7 +88,7 @@ verkal_gulan_hero_gate = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2000
+			factor = 2500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.3
@@ -117,7 +117,7 @@ verkal_gulan_hero_gate = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 4000
+			factor = 5000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.4
@@ -211,7 +211,7 @@ seghdihr_home_of_the_seg_band = {
 			months = 120
 		}
 		cost_to_upgrade = {
-			factor = 600
+			factor = 1000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.1
@@ -231,7 +231,7 @@ seghdihr_home_of_the_seg_band = {
 			months = 240
 		}
 		cost_to_upgrade = {
-			factor = 2000
+			factor = 2500
 		}
 		province_modifiers = {
 			local_defensiveness = 0.2
@@ -252,7 +252,7 @@ seghdihr_home_of_the_seg_band = {
 			months = 480
 		}
 		cost_to_upgrade = {
-			factor = 4000
+			factor = 5000
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
@@ -495,7 +495,7 @@ gor_vazumbrog_the_vaulthold = {
 		}
 		country_modifiers = {
 			fire_damage = 0.03
-			special_unit_forcelimit = 0.025
+			allowed_rajput_fraction = 0.025
 			artificers_loyalty_modifier = 0.05
 			artificers_influence_modifier = 0.025
 		}
@@ -516,19 +516,13 @@ gor_vazumbrog_the_vaulthold = {
 		}
 		country_modifiers = {
 			fire_damage = 0.05
-			special_unit_forcelimit = 0.05
+			allowed_rajput_fraction = 0.05
 			artificers_influence_modifier = 0.05
 			artificers_loyalty_modifier = 0.1
 		}
 		on_upgraded = {
 			change_trade_goods = precursor_relics
 			set_province_flag = permanent_precursor_relics
-			owner = {
-				country_event = { 
-					id = dwarven_monuments_vaulthold.1
-					days = 1
-				}
-			}
 		} 
 	}
 }

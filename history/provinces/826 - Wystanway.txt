@@ -1,7 +1,6 @@
 
 # No previous file for Choco
 
-tribal_owner = B02 
 culture = green_orc
 religion = great_dookan
 
