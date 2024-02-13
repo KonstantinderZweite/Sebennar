@@ -921,7 +921,7 @@ harpy_define_pop_to_take = {
 harpy_move_pop_to_capital_effect = {
 	if = { limit = { has_elven_majority_trigger = yes }
 		ROOT = {
-			capital_scope = {
+			event_target:harpy_define_where = {
 				if = { limit = { has_large_elven_minority_trigger = yes }
 					random_list = {
 						33 = { add_base_tax = 1 }
@@ -937,7 +937,7 @@ harpy_move_pop_to_capital_effect = {
 	}
 	else_if = { limit = { has_orcish_majority_trigger = yes }
 		ROOT = {
-			capital_scope = {
+			event_target:harpy_define_where = {
 				if = { limit = { has_large_orcish_minority_trigger = yes }
 					random_list = {
 						33 = { add_base_tax = 1 }
@@ -953,7 +953,7 @@ harpy_move_pop_to_capital_effect = {
 	}
 	else_if = { limit = { has_ruinborn_majority_trigger = yes }
 		ROOT = {
-			capital_scope = {
+			event_target:harpy_define_where = {
 				if = { limit = { has_large_ruinborn_minority_trigger = yes }
 					random_list = {
 						33 = { add_base_tax = 1 }
@@ -969,7 +969,7 @@ harpy_move_pop_to_capital_effect = {
 	}
 	else_if = { limit = { has_goblin_majority_trigger = yes }
 		ROOT = {
-			capital_scope = {
+			event_target:harpy_define_where = {
 				if = { limit = { has_large_goblin_minority_trigger = yes }
 					random_list = {
 						33 = { add_base_tax = 1 }
@@ -985,7 +985,7 @@ harpy_move_pop_to_capital_effect = {
 	}
 	else_if = { limit = { has_hobgoblin_majority_trigger = yes }
 		ROOT = {
-			capital_scope = {
+			event_target:harpy_define_where = {
 				if = { limit = { has_large_hobgoblin_minority_trigger = yes }
 					random_list = {
 						33 = { add_base_tax = 1 }
@@ -1001,7 +1001,7 @@ harpy_move_pop_to_capital_effect = {
 	}
 	else_if = { limit = { has_human_majority_trigger = yes }
 		ROOT = {
-			capital_scope = {
+			event_target:harpy_define_where = {
 				if = { limit = { has_large_human_minority_trigger = yes }
 					random_list = {
 						33 = { add_base_tax = 1 }
@@ -1016,9 +1016,9 @@ harpy_move_pop_to_capital_effect = {
 		}
 	}
 	random_list = {
-		33 = { add_base_tax = -1 ROOT = { capital_scope = { add_base_tax = 1 } } }
-		33 = { add_base_production = -1 ROOT = { capital_scope = { add_base_production = 1 } } }
-		33 = { add_base_manpower = -1 ROOT = { capital_scope = { add_base_manpower = 1 } } }
+		33 = { add_base_tax = -1 ROOT = { event_target:harpy_define_where = { add_base_tax = 1 } } }
+		33 = { add_base_production = -1 ROOT = { event_target:harpy_define_where = { add_base_production = 1 } } }
+		33 = { add_base_manpower = -1 ROOT = { event_target:harpy_define_where = { add_base_manpower = 1 } } }
 	}
 	if = {
 		limit = { NOT = { owned_by = ROOT } }
