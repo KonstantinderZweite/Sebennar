@@ -81,7 +81,7 @@ country_event = {
 		trigger = { has_saved_event_target = harpy_pop1 }
 		goto = harpy_pop1
 		event_target:harpy_pop1 = {
-			harpy_move_pop_to_capital_effect = yes
+		harpy_move_pop_to_roost_effect = yes
 		}
 	}
 	option = {
@@ -90,7 +90,7 @@ country_event = {
 		trigger = { has_saved_event_target = harpy_pop2 }
 		goto = harpy_pop2
 		event_target:harpy_pop2 = {
-			harpy_move_pop_to_capital_effect = yes
+		harpy_move_pop_to_roost_effect = yes
 		}
 	}
 	option = {
@@ -99,7 +99,7 @@ country_event = {
 		trigger = { has_saved_event_target = harpy_pop3 }
 		goto = harpy_pop3
 		event_target:harpy_pop3 = {
-			harpy_move_pop_to_capital_effect = yes
+		harpy_move_pop_to_roost_effect = yes
 		}
 	}
 	option = {
@@ -108,7 +108,7 @@ country_event = {
 		trigger = { has_saved_event_target = harpy_pop4 }
 		goto = harpy_pop4
 		event_target:harpy_pop4 = {
-			harpy_move_pop_to_capital_effect = yes
+		harpy_move_pop_to_roost_effect = yes
 		}
 	}
 	option = {
@@ -117,7 +117,7 @@ country_event = {
 		trigger = { has_saved_event_target = harpy_pop5 }
 		goto = harpy_pop5
 		event_target:harpy_pop5 = {
-			harpy_move_pop_to_capital_effect = yes
+		harpy_move_pop_to_roost_effect = yes
 		}
 	}
 	option = {
@@ -584,7 +584,7 @@ country_event = {
 		trigger = { has_saved_event_target = harpy_pop1 }
 		goto = harpy_pop1
 		event_target:harpy_pop1 = {
-			harpy_move_pop_to_capital_effect = yes
+		harpy_move_pop_to_roost_effect = yes
 		}
 	}
 	option = {
@@ -593,7 +593,7 @@ country_event = {
 		trigger = { has_saved_event_target = harpy_pop2 }
 		goto = harpy_pop2
 		event_target:harpy_pop2 = {
-			harpy_move_pop_to_capital_effect = yes
+		harpy_move_pop_to_roost_effect = yes
 		}
 	}
 	option = {
@@ -602,7 +602,7 @@ country_event = {
 		trigger = { has_saved_event_target = harpy_pop3 }
 		goto = harpy_pop3
 		event_target:harpy_pop3 = {
-			harpy_move_pop_to_capital_effect = yes
+		harpy_move_pop_to_roost_effect = yes
 		}
 	}
 	option = {
@@ -611,7 +611,7 @@ country_event = {
 		trigger = { has_saved_event_target = harpy_pop4 }
 		goto = harpy_pop4
 		event_target:harpy_pop4 = {
-			harpy_move_pop_to_capital_effect = yes
+		harpy_move_pop_to_roost_effect = yes
 		}
 	}
 	option = {
@@ -620,7 +620,7 @@ country_event = {
 		trigger = { has_saved_event_target = harpy_pop5 }
 		goto = harpy_pop5
 		event_target:harpy_pop5 = {
-			harpy_move_pop_to_capital_effect = yes
+		harpy_move_pop_to_roost_effect = yes
 		}
 	}
 	option = {

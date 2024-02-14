@@ -918,7 +918,7 @@ harpy_define_pop_to_take = {
 	}
 }
 
-harpy_move_pop_to_capital_effect = {
+harpy_move_pop_to_roost_effect = {
 	if = { limit = { has_elven_majority_trigger = yes }
 		ROOT = {
 			event_target:harpy_define_where = {
