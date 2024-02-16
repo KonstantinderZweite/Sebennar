@@ -39,7 +39,11 @@ country_event = {
 					has_terrain = hills
 				}
 				NOT = { has_province_modifier = harpy_roost }
-				NOT = { has_province_modifier = harpy_roost_under_construction }
+				NOT = {
+					any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 			}
 		}
 		goto = capital_scope
@@ -57,6 +61,11 @@ country_event = {
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region1
+			NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region1
 		
@@ -70,6 +79,11 @@ country_event = {
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region2
+			NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}		
 		}
 		goto = harpy_roost_region2
 		
@@ -83,6 +97,11 @@ country_event = {
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region3
+			NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}			
 		}
 		goto = harpy_roost_region3
 		
@@ -96,6 +115,11 @@ country_event = {
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region4
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region4
 		
@@ -109,6 +133,11 @@ country_event = {
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region5
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region5
 		
@@ -122,6 +151,11 @@ country_event = {
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region6
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region6
 		
@@ -135,6 +169,11 @@ country_event = {
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region7
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region7
 		
@@ -148,6 +187,11 @@ country_event = {
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region8
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region8
 		
@@ -161,6 +205,11 @@ country_event = {
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region9
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region9
 		
@@ -176,6 +225,11 @@ country_event = {
 			has_saved_event_target = harpy_roost_region10
 		}
 		goto = harpy_roost_region10
+					NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		
 		hidden_effect = {
 			event_target:harpy_roost_region10 = { province_event = { id = harpy_events.2 } }

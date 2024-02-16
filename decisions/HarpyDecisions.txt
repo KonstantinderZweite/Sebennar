@@ -5,7 +5,7 @@ country_decisions = {
 		potential = {
 			has_country_modifier = harpy_administration
 			NOT = { has_country_flag = open_harpy_roost_menu }
-			NOT = { has_country_flag = harpy_roost_AI_cooldown }
+			NOT = { has_country_modifier = harpy_roost_AI_cooldown }
 		}
 		major = yes
 		
@@ -22,11 +22,11 @@ country_decisions = {
 		#			has_terrain = hills
 		#		}
 		#	}
-			NOT = {
-				any_owned_province = {
-					has_province_modifier = harpy_roost_under_construction
-				}
-			}
+		#	NOT = {
+		#		any_owned_province = {
+		#			has_province_modifier = harpy_roost_under_construction
+		#		}
+		#	}
 		#	can_build_roost = yes
 		}
 	
