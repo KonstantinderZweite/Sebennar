@@ -37,7 +37,7 @@ country_decisions = {
 				AI = yes
 				add_country_modifier = {
 				name = harpy_roost_AI_cooldown 
-				duration = 1825
+				duration = 3650
 				hidden = yes
 				}
 			}
