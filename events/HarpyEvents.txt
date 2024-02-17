@@ -26,7 +26,7 @@ country_event = {
 	
 	option = { #build in capital
 		name = harpy_events.1.a
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 100 }
 		trigger = {
 			can_build_roost = yes
 			capital_scope = {
@@ -39,7 +39,11 @@ country_event = {
 					has_terrain = hills
 				}
 				NOT = { has_province_modifier = harpy_roost }
-				NOT = { has_province_modifier = harpy_roost_under_construction }
+				NOT = {
+					any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 			}
 		}
 		goto = capital_scope
@@ -53,10 +57,15 @@ country_event = {
 	}
 	option = { #build in region 1
 		name = harpy_events.1.b
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region1
+			NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region1
 		
@@ -66,10 +75,15 @@ country_event = {
 	}
 	option = { #build in region 2
 		name = harpy_events.1.c
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region2
+			NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}		
 		}
 		goto = harpy_roost_region2
 		
@@ -79,10 +93,15 @@ country_event = {
 	}
 	option = { #build in region 3
 		name = harpy_events.1.dd
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region3
+			NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}			
 		}
 		goto = harpy_roost_region3
 		
@@ -92,10 +111,15 @@ country_event = {
 	}
 	option = { #build in region 4
 		name = harpy_events.1.e
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region4
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region4
 		
@@ -105,10 +129,15 @@ country_event = {
 	}
 	option = { #build in region 5
 		name = harpy_events.1.f
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region5
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region5
 		
@@ -118,10 +147,15 @@ country_event = {
 	}
 	option = { #build in region 6
 		name = harpy_events.1.g
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region6
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region6
 		
@@ -131,10 +165,15 @@ country_event = {
 	}
 	option = { #build in region 7
 		name = harpy_events.1.h
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region7
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region7
 		
@@ -144,10 +183,15 @@ country_event = {
 	}
 	option = { #build in region 8
 		name = harpy_events.1.i
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region8
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region8
 		
@@ -157,10 +201,15 @@ country_event = {
 	}
 	option = { #build in region 9
 		name = harpy_events.1.j
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region9
+						NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		}
 		goto = harpy_roost_region9
 		
@@ -170,12 +219,17 @@ country_event = {
 	}
 	option = { #build in region 10
 		name = harpy_events.1.k
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			can_build_roost = yes
 			has_saved_event_target = harpy_roost_region10
 		}
 		goto = harpy_roost_region10
+					NOT = {
+				any_owned_province = {
+					has_province_modifier = harpy_roost_under_construction
+					}
+				}
 		
 		hidden_effect = {
 			event_target:harpy_roost_region10 = { province_event = { id = harpy_events.2 } }
@@ -214,7 +268,7 @@ province_event = {
 	
 	option = {
 		name = harpy_events.2.a
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			has_saved_event_target = harpy_roost1
 			event_target:harpy_roost1 = { has_province_flag = harpy_roost_@PREV }
@@ -238,7 +292,7 @@ province_event = {
 	}
 	option = {
 		name = harpy_events.2.b
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			has_saved_event_target = harpy_roost2
 			event_target:harpy_roost2 = { has_province_flag = harpy_roost_@PREV }
@@ -262,7 +316,7 @@ province_event = {
 	}
 	option = {
 		name = harpy_events.2.c
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			has_saved_event_target = harpy_roost3
 			event_target:harpy_roost3 = { has_province_flag = harpy_roost_@PREV }
@@ -286,7 +340,7 @@ province_event = {
 	}
 	option = {
 		name = harpy_events.2.dd
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			has_saved_event_target = harpy_roost4
 			event_target:harpy_roost4 = { has_province_flag = harpy_roost_@PREV }
@@ -310,7 +364,7 @@ province_event = {
 	}
 	option = {
 		name = harpy_events.2.e
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			has_saved_event_target = harpy_roost5
 			event_target:harpy_roost5 = { has_province_flag = harpy_roost_@PREV }
@@ -334,7 +388,7 @@ province_event = {
 	}
 	option = {
 		name = harpy_events.2.f
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			has_saved_event_target = harpy_roost6
 			event_target:harpy_roost6 = { has_province_flag = harpy_roost_@PREV }
@@ -358,7 +412,7 @@ province_event = {
 	}
 	option = {
 		name = harpy_events.2.g
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			has_saved_event_target = harpy_roost7
 			event_target:harpy_roost7 = { has_province_flag = harpy_roost_@PREV }
@@ -382,7 +436,7 @@ province_event = {
 	}
 	option = {
 		name = harpy_events.2.h
-        ai_chance = { factor = 1 }
+        ai_chance = { factor = 10 }
 		trigger = {
 			has_saved_event_target = harpy_roost8
 			event_target:harpy_roost8 = { has_province_flag = harpy_roost_@PREV }

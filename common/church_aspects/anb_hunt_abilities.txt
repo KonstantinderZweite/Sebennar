@@ -77,7 +77,7 @@ harpy_gain_siege_aspect = {
 
 harpy_move_pop_aspect = {
 	sprite = "GFX_gather_breeding_mates"
-	cost = 100
+	cost = 75
 	
 	potential = {
 		NOT = { has_country_flag = no_longer_monstrous }
@@ -106,7 +106,7 @@ harpy_move_pop_aspect = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 7
 		modifier = {
 			factor = 0
 			is_at_war = yes
@@ -180,7 +180,7 @@ harpy_entice_immigration_aspect = {
 	}
 	
 	ai_will_do = {
-		factor = 10
+		factor = 7
 		modifier = {
 			factor = 0
 			is_at_war = yes
