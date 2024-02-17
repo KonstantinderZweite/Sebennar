@@ -41,15 +41,29 @@ country_event = {
 					has_province_modifier = harpy_roost
 					has_harpy_majority_trigger = yes
 					OR = {
-						fort_level = 1 
+						has_fort_building_trigger = yes 
 						is_capital = YES
 					}
 					save_event_target_as = harpy_define_where
 					}
 			}
-	}
-	}
-	}
+		every_owned_province = {
+				limit = {
+					has_province_modifier = harpy_roost
+					has_harpy_majority_trigger = yes
+					OR = {
+						has_fort_building_trigger = yes 
+						is_capital = YES
+					}
+					NOT = { 
+							higher_development_than = harpy_define_where
+						}
+					}
+					save_event_target_as = harpy_define_where
+				}
+			}
+		}
+		}
 	
 	
 	after = {
