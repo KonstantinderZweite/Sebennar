@@ -44,7 +44,7 @@ country_event = {
 						fort_level = 1 
 						is_capital = YES
 					}
-					save_event_target_as = harpy_define_WHERE
+					save_event_target_as = harpy_define_where
 					}
 			}
 		every_owned_province = {
@@ -56,7 +56,7 @@ country_event = {
 						is_capital = YES
 					}
 					NOT = { 
-							higher_development_than = harpy_define_WHERE
+							higher_development_than = harpy_define_where
 						}
 					}
 					save_event_target_as = harpy_define_where
