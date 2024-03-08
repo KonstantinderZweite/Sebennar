@@ -606,7 +606,9 @@ country_decisions = {
 			NOT = { tag = Z45 } #Vrorenmarch
 			NOT = { tag = B60 } #Farranean
 			NOT = { tag = B02 } #Corintar
-			
+			NOT = { tag = B10 }
+            NOT = { tag = B19 }
+            NOT = { tag = B15 }
 			NOT = { has_country_flag = feudal_escann_kingdom }	#prevents countries like Blademarches from forming
 			NOT = { has_country_flag = orc_nation_formed }	#prevents orc formables from forming it
 			NOT = { has_country_flag = adventurer_derived_government }	#if you've formed something like Nurcestir, you wont be able to form Castellyr. You need to form it while you're an adventurer
@@ -661,7 +663,6 @@ country_decisions = {
 		allow = {
 			owns_core_province = 774	#Taranton
 			adm_tech = 7
-			tag = B07
 			government_rank = 1
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -686,6 +687,9 @@ country_decisions = {
 				set_country_flag = adventurer_derived_government
 			}
 			change_tag = B58
+			774 = {
+			move_capital_effect = yes
+			}
 			set_country_flag = feudal_escann_kingdom
 			set_country_flag = no_formable_culture_shift
 			if = {

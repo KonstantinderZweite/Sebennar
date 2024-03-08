@@ -4,7 +4,7 @@ edict_advancement_effort = {
 	}
 	
 	allow = {
-		always = yes
+		NOT = { has_country_flag = disable_all_state_edicts_bool }
 	}
 	
 	modifier = {

@@ -1,7 +1,8 @@
 
 setup_vision = yes
-government = republic
-add_government_reform = dwarovar_elected_clans_reform
+government = monarchy
+add_government_reform = dwarovar_dwarven_clan_reform
+add_adm_power = 172
 add_stability = 2
 government_rank = 1
 primary_culture = malachite_dwarf

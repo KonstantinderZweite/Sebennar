@@ -976,7 +976,7 @@ country_event = {
 		custom_tooltip = raj_ganyakanar_becomes_ruler_tt
 	}
 	
-	#Ganjina’s rule offers the chance for a powerful union
+	#Ganjinaï¿½s rule offers the chance for a powerful union
 	option = {
 		name = rahenraj.90.c
 		goto = sarnavan_capital
@@ -4492,7 +4492,7 @@ country_event = { #Someone seems to be sabotaging the Raj!
 		name = rahenraj.1105.a
 		ai_chance = { factor = 1 }
 		tooltip = {
-			raj_cohesion_change_absolute = { amount = -1 }
+			raj_cohesion_change_absolute = { amount = -2 }
 		}
 	}
 
@@ -4500,7 +4500,7 @@ country_event = { #Someone seems to be sabotaging the Raj!
 		name = rahenraj.1105.b
 		ai_chance = { factor = 0 }
 		tooltip = {
-			raj_cohesion_change_absolute = { amount = -1 }
+			raj_cohesion_change_absolute = { amount = -2 }
 		}
 		set_country_flag = raj_hidden_sabotage_events
 	}
@@ -4519,7 +4519,7 @@ country_event = { #Someone seems to be sabotaging the Raj! hidden version
 	option = {
 		name = rahenraj.1105.a
 		ai_chance = { factor = 1 }
-		raj_cohesion_change_absolute = { amount = -1 }
+		raj_cohesion_change_absolute = { amount = -2 }
 		if = { limit = { NOT = { has_country_flag = raj_hidden_sabotage_events } }
 			country_event = { id = rahenraj.1105 }
 		}
@@ -6104,7 +6104,7 @@ country_event = {
 			NOT = { has_country_flag = raj_vizier }
 			overlord = { has_spy_network_from = { who = ROOT value = 30 } }
 		}
-		tooltip = { raj_cohesion_change_absolute = { amount = -1 } }
+		tooltip = { raj_cohesion_change_absolute = { amount = -2 } }
 		overlord = {
 			add_spy_network_from = { who = ROOT value = -30 }
 			country_event = { id = rahenraj.1106 }

@@ -3582,7 +3582,6 @@ has_any_active_incomplete_idea_group_of_category = {
                 AND = { has_idea_group = spy_ideas         	NOT = { full_idea_group = spy_ideas } }
                 AND = { has_idea_group = diplomatic_ideas  	NOT = { full_idea_group = diplomatic_ideas } }
                 AND = { has_idea_group = trade_ideas       	NOT = { full_idea_group = trade_ideas } }
-                AND = { has_idea_group = exploration_ideas 	NOT = { full_idea_group = exploration_ideas } }
                 AND = { has_idea_group = maritime_ideas    	NOT = { full_idea_group = maritime_ideas } }
                 AND = { has_idea_group = influence_ideas   	NOT = { full_idea_group = influence_ideas } }
                 AND = { has_idea_group = court_ideas       	NOT = { full_idea_group = court_ideas } }

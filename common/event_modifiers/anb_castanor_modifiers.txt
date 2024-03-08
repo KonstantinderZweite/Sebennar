@@ -11,7 +11,7 @@ castanor_wardens_of_the_white_walls = {
 castanor_dragonforge_built_already = {
 	build_time = -0.2
 	build_cost = -0.2
-	global_regiment_cost = -0.2
+	global_regiment_cost = -0.15
 }
 castanor_modernized_the_dragonforge = {
 	fire_damage = 0.1
@@ -278,7 +278,7 @@ castanor_desperate_times_lake_fed = {
 	mil_tech_cost_modifier = -0.2
 }
 castanor_dwarovar_trade_agreement_castanor = {
-	global_regiment_cost = -0.2
+	global_regiment_cost = -0.15
 	inflation_reduction = 0.1
 	trade_efficiency = 0.2
 }
@@ -299,7 +299,7 @@ castanor_lake_fed_trade_castanor = {
 	diplomatic_reputation = 2
 }
 castanor_lake_fed_trade_lake_fed = {
-	global_regiment_cost = -0.2
+	global_regiment_cost = -0.15
 	technology_cost = -0.1
 }
 castanor_northern_pass_trade_posts_prov = {

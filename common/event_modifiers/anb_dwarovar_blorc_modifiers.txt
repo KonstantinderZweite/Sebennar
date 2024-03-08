@@ -215,7 +215,7 @@ blorc_trophy10 = { #200 dev
 	province_trade_power_modifier = 0.5
 	trade_goods_size_modifier = 0.2
 
-	global_regiment_cost = -0.15
+	global_regiment_cost = -0.125
 	army_tradition_decay = -0.05
 	fort_maintenance_modifier = -0.4
 	reduced_liberty_desire = 15
@@ -230,7 +230,7 @@ blorc_trophy11 = { #220 dev
 	province_trade_power_modifier = 0.5
 	trade_goods_size_modifier = 0.25
 
-	global_regiment_cost = -0.15
+	global_regiment_cost = -0.125
 	army_tradition_decay = -0.05
 	fort_maintenance_modifier = -0.4
 	reduced_liberty_desire = 15
@@ -245,7 +245,7 @@ blorc_trophy12 = { #240 dev
 	province_trade_power_modifier = 0.5
 	trade_goods_size_modifier = 0.3
 
-	global_regiment_cost = -0.15
+	global_regiment_cost = -0.125
 	army_tradition_decay = -0.05
 	fort_maintenance_modifier = -0.4
 	reduced_liberty_desire = 15
@@ -260,7 +260,7 @@ blorc_trophy13 = { #260 dev
 	province_trade_power_modifier = 0.5
 	trade_goods_size_modifier = 0.4
 
-	global_regiment_cost = -0.15
+	global_regiment_cost = -0.125
 	army_tradition_decay = -0.05
 	fort_maintenance_modifier = -0.4
 	reduced_liberty_desire = 20
@@ -275,7 +275,7 @@ blorc_trophy14 = { #280 dev
 	province_trade_power_modifier = 0.5
 	trade_goods_size_modifier = 0.45
 
-	global_regiment_cost = -0.2
+	global_regiment_cost = -0.15
 	army_tradition_decay = -0.05
 	fort_maintenance_modifier = -0.5
 	reduced_liberty_desire = 20
@@ -290,7 +290,7 @@ blorc_trophy15 = { #300 dev
 	province_trade_power_modifier = 0.5
 	trade_goods_size_modifier = 0.5
 
-	global_regiment_cost = -0.2
+	global_regiment_cost = -0.15
 	army_tradition_decay = -0.05
 	fort_maintenance_modifier = -0.5
 	reduced_liberty_desire = 20

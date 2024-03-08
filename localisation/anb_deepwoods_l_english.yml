@@ -27,6 +27,7 @@ l_english:
  deepwoods_cluster_8:0 "§YRiver Grove§!"
  deepwoods_cluster_9:0 "§YShadow Grove§!"
  deepwoods_outward_gladeway:0 "§YOutward Gladeway§!"
+ deepwoods_inward_gladeway:0 "§YInward Gladeway§!"
 
  cyranvar_impose_tarifs:0 "Impose New Tariffs"
  cyranvar_draft_in_the_army:0 "Mobilize the Reservists"

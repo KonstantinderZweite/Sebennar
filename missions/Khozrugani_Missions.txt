@@ -1367,6 +1367,7 @@ khozrugan_army_tree = {
 			NOT = { has_manpower_building_trigger = yes }
 		}
 		trigger = {
+			NOT = { has_country_modifier = orc_warg_cavalry }
 			num_of_owned_provinces_with = {
 				value = 5
 				has_manpower_building_trigger = yes

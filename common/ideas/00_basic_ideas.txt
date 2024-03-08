@@ -605,38 +605,37 @@ economic_ideas = {
 }
 
 
-exploration_ideas = {
+exploitation_ideas = {
 	category = DIP
 	important = yes
 
 	bonus = {
-		cb_on_primitives = yes
+		manpower_in_true_faith_provinces = 0.10
 	}
 
-	quest_for_the_new_world	= {
-		may_explore = yes
+	strictier_enforcement	= {
+		reinforce_speed = 0.15
 	}
 
-	colonial_ventures = {
-		colonists = 1
+	peaceful_exploitation = {
+		state_maintenance_modifier = -0.3
+		global_missionary_strength = 0.01
 	}
 	
-	overseas_exploration = {
-		range = 0.5
+	nonpeaceful_exploitation = {
+		land_attrition = -0.15
 	}
-	land_of_opportunity = {
-		global_colonial_growth = 10
+	glorious_rulers = {
+		monthly_splendor = 2
 	}
-	vice_roys  = {
-		global_tariffs = 0.10
- 		envoy_travel_time = -0.20
+	slave_tax_collectors  = {
+		global_tax_modifier = 0.15
  	}
-	free_colonies = {
-		colonist_placement_chance = 0.1
+	efficient_assimilation = {
+		culture_conversion_cost = -0.15
 	}
-	global_empire = {
-		naval_forcelimit_modifier = 0.25
-		treasure_fleet_income = 0.25
+	quicker_assimilation = {
+		culture_conversion_time = -0.15
 	}
 }
 		
@@ -790,13 +789,15 @@ expansion_ideas = {
 
 	bonus = {
  		min_autonomy_in_territories = -0.1
+		cb_on_primitives = yes
 	}
 
 	additional_colonists = {
 		colonists = 1
 	}
-	additional_merchants = {
-		merchants = 1
+	quest_for_the_new_world	= {
+		may_explore = yes
+		range = 0.5
 	}
 	faster_colonists = {
 		global_colonial_growth = 20
@@ -806,31 +807,36 @@ expansion_ideas = {
 		center_of_trade_upgrade_cost = -0.2
 	}
 	additional_diplomats = {
-		diplomatic_upkeep = 1
+		global_tariffs = 0.1
+		
 	}
 	general_colonization_law  = {
 		colonists = 1
-		colonist_placement_chance = 0.05
+		colonist_placement_chance = 0.1
 	}
 	competetive_merchants  = {
 		global_trade_power = 0.2
 	}
 
 	ai_will_do = {
-		factor = 0.48
+		factor = 0.55
 		modifier = {
 			factor = 10
 			OR = {
-				has_idea_group = exploration_ideas
 				is_colonial_nation = yes
 			}
 		}
 		modifier = {
-			factor = 5
+			factor = 1000000000
 			OR = {
 				tag = CAS
 				tag = POR
 				tag = SPA
+				tag = A21 
+				tag = A02
+				tag = A06
+				tag = Z08
+				tag = A33 
 			}
 		}
 		modifier = {
@@ -844,7 +850,6 @@ expansion_ideas = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { has_idea_group = exploration_ideas }
 			NOT = { is_colonial_nation = yes }
 			NOT = {
 				any_owned_province = {

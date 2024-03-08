@@ -28,8 +28,13 @@ verkaldromak_11 = {
 		}
 		
 		effect = {
+			add_adm_power = -80 
 			jade_mines_region = {
 				add_permanent_claim = ROOT
+			4323 = {
+			add_core = I25
+			move_capital_effect = yes
+			}
 			}
 		}
 	}

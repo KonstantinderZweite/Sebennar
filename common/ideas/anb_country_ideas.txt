@@ -289,18 +289,17 @@ A06_ideas = {
 	}
 	free = yes		#will be added at load.
 
-	A06_gnomish_liberation_army = {
-		global_manpower_modifier = 0.15
+	A06_foreign_auxiliaries_gnomish_liberation = {
+		mercenary_manpower = 0.25
 	}
-	A06_redevelopment_initiative = {
-		development_cost = -0.1
+	A06_city_planning_in_the_splinters = {
+		build_cost = -0.1
 	}
 	A06_the_island_fleet = {
-		light_ship_cost = -0.15
-		light_ship_power = 0.10
+		global_ship_cost = -0.10
+		navy_tradition = 0.5
 	}
-	A06_nimscodd_engineering_academy = {
-		production_efficiency = 0.05
+	A06_nimscodd_academy_artificing_engineering = {
 		idea_cost = -0.1
 	}
 	A06_the_eyes_of_dr_tj_ecklebozz = {	#Great Gatsby reference TJ Eckleburg
@@ -308,10 +307,11 @@ A06_ideas = {
 		global_spy_defence = 0.10
 	}
 	A06_cliff_gnome_resilience = {
-		land_morale = 0.1
+		defensiveness = 0.075
+		land_attrition = -0.15
 	}
 	A06_artificer_combat_exoskeleton_mk1 = {
-		infantry_power = 0.2
+		infantry_power = 0.1
 	}
 }
 
@@ -1798,7 +1798,49 @@ A72_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 }
+#Gnomish Hierarchy ideas
+A79_ideas = {
+	start = {
+		infantry_power = 0.1
+		yearly_army_professionalism = 0.003
+	}
 
+	bonus = {
+		discipline = 0.05
+	}
+
+	trigger = {
+		tag = A79 #Gnomish Hierarchy
+	}
+	free = yes
+
+	A79_reconstitute_reconstruct_repatriate = {
+		development_cost = -0.15
+	}
+	A79_all_small_artillerists = {
+		fire_damage_received = -0.1
+		backrow_artillery_damage = 0.1
+	}
+	A79_damestear_born_damestear_developed = {
+		idea_cost = -0.1
+		production_efficiency = 0.05
+	}
+	A79_gnomeostasis = {
+		global_unrest = -2
+		yearly_harmony = 0.5
+	}
+	A79_aggregate_amalgamate = {
+		global_trade_goods_size_modifier = 0.1
+		global_autonomy = -0.025
+	}
+	A79_shattered_sea_dragon_coast = {
+		trade_efficiency = 0.15
+	}
+	A79_age_of_the_hierarch = {
+		ship_durability = 0.1
+		heavy_ship_power = 0.1
+	}
+}
 #Magisterium Ideas
 A85_ideas = {
 	start = {
@@ -2563,7 +2605,7 @@ A35_ideas = {
 		build_cost = -0.15
 	}
 	A35_the_drill_instructor_manual = {
-		land_morale = 0.05
+		land_morale = 0.15
 		naval_morale = 0.05
 	}
 	A35_innovative_accademia = {
@@ -2571,6 +2613,7 @@ A35_ideas = {
 	}
 	A35_provincial_system = {
 		land_forcelimit_modifier = 0.15
+		manpower_recovery_speed = 0.15
 	}
 }
 
@@ -2818,7 +2861,7 @@ Z08_ideas = {
 		naval_forcelimit_modifier = 0.25
 	}
 	Z08_northern_empire = {
-		manpower_in_culture_group_provinces = 0.25
+		manpower_in_accepted_culture_provinces = 0.25
 	}
 }
 
@@ -7021,23 +7064,23 @@ I25_ideas = {
 	}
 	free = yes
 
-	I25_dromaki_brawls = {
+	I25_fantastical_shows = {
 		infantry_power = 0.15
 	}
-	I25_colorful_language = {
+	I25_colourful_language = {
 		power_projection_from_insults = 1
 	}
 	I25_seers_scryers_and_mystics = {
 		spy_offence = 0.25
 		global_spy_defence = 0.25
 	}
-	I25_disorienting_architecture = {
+	I25_dream_unleashed = {
 		hostile_attrition = 1
 	}
 	I25_the_right_to_nap_act = {
 		global_unrest = -1
 	}
-	I25_dromaki_cave_marines = { 					#Marine Idea (Emperor)
+	I25_malachite_cave_marines = { 					#Marine Idea (Emperor)
 		global_sailors = 15000
 		sailors_recovery_speed = 0.30
 		allowed_marine_fraction = 0.30 #before you say anything about three modifiers, Great Britain ideas have an idea with 3 modifiers so they could get allowed_marine_fraction on it
@@ -19246,7 +19289,7 @@ Z66_ideas = {
 	}
 
 	bonus = {
-		global_regiment_cost = -0.2
+		global_regiment_cost = -0.15
 	}
 
 	trigger = {
@@ -19265,10 +19308,11 @@ Z66_ideas = {
 	}
 	Z66_longjudan = { #Imperial armies created in the vein of the old Phoenix Empire legions
 		discipline = 0.05
+		morale_damage_received = -0.05
 	}
 	Z66_house_of_the_tortoise = { #Imperial military academy
-		leader_land_manuever = 1
 		leader_land_fire = 1
+		drill_decay_modifier = -0.15
 	}
 	Z66_jade_seal_ships = { #Armed merchant ships granted green licenses by the imperial throne to conduct trade
 		global_trade_power = 0.15
@@ -19301,6 +19345,7 @@ Z67_ideas = {
 
 	Z67_return_of_the_king = { #The Harimari have returned to rule Yanshen
 		years_of_nationalism = -5
+		discipline = 0.075
 	}
 	Z67_the_eastern_castes = { #Adapting the caste system to Yanshen
 		stability_cost_modifier = -0.15
@@ -19314,13 +19359,15 @@ Z67_ideas = {
 	}
 	Z67_warlords_to_marshals = { #Appointing the former warlords of Haless as generals
 		free_leader_pool = 2
+		leader_cost = -0.15
 	}
 	Z67_order_of_the_divine_call = { #Diplomatic corp of the empire
 		diplomatic_reputation = 1
 		improve_relation_modifier = 0.2
 	}
 	Z67_journey_to_the_west = { #Conquering back west towards Rahen
-		province_warscore_cost = -0.2
+		province_warscore_cost = -0.10
+		core_creation = -0.10 
 	}
 }
 
@@ -24562,5 +24609,82 @@ Z87_ideas = {
 	}
 	Z87_pactchain_unions = {
 		fire_damage = 0.10 
+	}
+}
+#Soyzkaru Cartel
+Z86_ideas = {
+	start = {
+		fire_damage = 0.1
+		hostile_attrition = 1
+	}
+	bonus = {
+		global_trade_power = 0.15
+	}
+	trigger = {
+		tag = Z86
+	}
+	free = yes
+
+	Z86_goblin_grindset = {
+		advisor_cost = -0.15
+	}
+	Z86_hired_muscle = {
+		mercenary_cost = -0.10
+		harsh_treatment_cost = -0.25
+	}
+	Z86_forest_and_fey_into_the_forest = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	Z86_cartel_subterfuge = {
+		diplomatic_reputation = 1
+	}
+	Z86_opportunistic_piety = {
+		tolerance_heathen = 1
+		trade_efficiency = 0.1
+	}
+	Z86_cartel_towns = {
+		trade_company_investment_cost = -0.15
+	}
+	Z86_the_ciernkakest = {
+		dip_tech_cost_modifier = -0.1
+	}
+}
+#Xerdgonfa
+R82_ideas = {
+	start = {
+		defensiveness = 0.15
+		shock_damage_received = -0.1
+	}
+	bonus = {
+		war_exhaustion = -0.03 
+	}
+	
+	trigger = {
+		tag = R82 #Xerdgonfa
+	}
+	free = yes
+	
+	R82_golden_monastery = {
+		prestige = 1
+	}
+	R82_rak_six_points = {
+		land_morale = 0.1
+	}
+	R82_the_greatest_victory = {
+		ae_impact = -0.1
+	}
+	R82_seclusion_through_misdirection = {
+		global_spy_defence = 0.3
+	}
+	R82_treasure_groves = {
+		adventurers_loyalty_modifier = 0.05
+		inflation_reduction = 0.05
+	}
+	R82_end_of_an_era = {
+		development_cost = -0.05
+		mil_tech_cost_modifier = -0.05
+	}
+	R82_hidden_treasure = {
+		production_efficiency = 0.1
 	}
 }

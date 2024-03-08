@@ -112,8 +112,7 @@ lorent_colonial = {
 		position = 6
 		
 		trigger = {
-			has_idea_group = exploration_ideas
-			exploration_ideas = 1
+			has_idea = quest_for_the_new_world
 		}
 		
 		effect = {
@@ -495,10 +494,10 @@ lorent_internal = {
 			}	
 			OR = {
 				dynasty = "Siloriel"
-				dynasty = "síl Rubenaire"
-				dynasty = "síl Eilísin"
-				dynasty = "síl Madelaire"
-				dynasty = "síl Kyliande"
+				dynasty = "sï¿½l Rubenaire"
+				dynasty = "sï¿½l Eilï¿½sin"
+				dynasty = "sï¿½l Madelaire"
+				dynasty = "sï¿½l Kyliande"
 			}
 		}
 		

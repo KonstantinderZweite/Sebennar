@@ -421,7 +421,7 @@ country_event = {
 	
 	trigger = {
 		num_of_cities = 25
-		has_idea_group = exploration_ideas
+		has_idea_group = expansion_ideas
 		OR = {
 			north_america = { has_discovered = ROOT }
 			south_america = { has_discovered = ROOT }

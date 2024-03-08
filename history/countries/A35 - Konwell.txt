@@ -19,7 +19,7 @@ capital = 275
 		dynasty = "Konwell"
 		birth_date = 1406.11.16
 		adm = 3
-		dip = 0
-		mil = 0
+		dip = 3
+		mil = 3
 	}
 }

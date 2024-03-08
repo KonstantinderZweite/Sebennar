@@ -417,7 +417,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			has_idea_group = exploration_ideas
+			has_idea_group = expansion_ideas
 		}
 		modifier = {
 			factor = 0.75

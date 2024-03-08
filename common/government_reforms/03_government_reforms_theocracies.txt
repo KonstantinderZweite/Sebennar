@@ -1258,7 +1258,6 @@ adventurer_reform = {
 		global_tax_income = 24
 
 		#New Ones
-		tribal_development_growth = 0.02
 		reform_progress_growth = 0.30
 		
 		#Taken from natives
@@ -2024,7 +2023,6 @@ mission_to_civilize_reform = {
 	trigger = {
 		OR = {
 			num_of_colonists = 1
-			has_idea_group = exploration_ideas
 			has_idea_group = expansion_ideas
 		}
 	}
@@ -2750,7 +2748,6 @@ local_administration = {
 		}
 	}
 	modifiers = {
-		tribal_development_growth = 0.04 # Maybe tie feudal escanni formable to this?
 		development_cost = -0.05
 	}
 	
@@ -3105,19 +3102,6 @@ found_our_nation = {
 	effect = {
 		custom_tooltip = gain_cores_on_tribal_land_tt
 		hidden_effect = {
-			capital_scope = {
-				if = {
-					limit = {	# Cleanest trigger I found that avoided error log spam. v1.35.6
-						NOT = { tribal_land_of = ROOT }
-					}
-					tribal_owner = {
-						add_core = PREV
-						country_event = { id = adventurer.4 }
-					}
-					change_tribal_land = ROOT
-				}
-				# settle_province = ROOT	# So that most of your tribal dev goes to your capital.
-			}
 			every_tribal_land_province = {
 				if = {
 					limit = {

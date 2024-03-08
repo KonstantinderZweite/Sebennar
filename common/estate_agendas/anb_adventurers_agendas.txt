@@ -1268,7 +1268,7 @@ estate_adventurers_build_a_fleet = {
 		}
 		modifier = {
 			factor = 2
-			has_idea_group = exploration_ideas
+			has_idea_group = expansion_ideas
 		}
 	}
 	task_requirements = {

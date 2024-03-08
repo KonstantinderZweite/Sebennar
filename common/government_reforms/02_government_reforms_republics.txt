@@ -6610,16 +6610,10 @@ northern_league_magnates = {
 
 	modifiers = {
 		production_efficiency = 0.10
-		development_cost = -0.10
-		governing_capacity = 350
+		development_cost = -0.05
+		governing_capacity = 150
 		candidate_random_bonus = 1
 		max_absolutism = 20
-	}
-	
-	conditional = {
-		government_abilities = {
-			magnate_mechanic
-		}
 	}
 
 	effect = {
@@ -6644,7 +6638,6 @@ northern_league_magnates = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = yes
-		disables_regular_estates = yes
 	}
 	
 	ai = { # Always pick this if you lose it

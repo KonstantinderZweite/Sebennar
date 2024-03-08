@@ -22,7 +22,7 @@ historical_friend = Y59 #Thirabnir
 		culture = sunrise_elf
 		adm = 3
 		dip = 3
-		mil = 3
+		mil = 5
 	}
 	add_ruler_personality = immortal_personality
 	add_ruler_personality = just_personality

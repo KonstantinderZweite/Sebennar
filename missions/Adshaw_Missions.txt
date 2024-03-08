@@ -807,13 +807,13 @@ adshaw_2_missions_s = {
 					limit = { has_leader = "Berthold the Huntsman" }
 					has_spy_network_in = {
 						who = Z33
-						value = 30
+						value = 5
 					}
 				}
 				else = {
 					has_spy_network_in = {
 						who = Z33
-						value = 50
+						value = 5
 					}
 				}
 				AND = {

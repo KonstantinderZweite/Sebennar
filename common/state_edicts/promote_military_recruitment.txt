@@ -4,7 +4,7 @@ edict_promote_military_recruitment = {
 	}
 	
 	allow = {
-		always = yes
+		NOT = { has_country_flag = disable_all_state_edicts_bool }
 	}
 	
 	modifier = {

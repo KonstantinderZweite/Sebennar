@@ -7,6 +7,7 @@ generic_column_2 = {
 	NOT = {tag = U07}
 	NOT = {tag = A13}
 	NOT = {tag = H75}
+	NOT = {tag = F46}
 	}
 	
 	##Mission Start
@@ -117,6 +118,8 @@ generic_column_3 = {
 		NOT = {tag = A03}
 		NOT = {tag = A13}
 		NOT = {tag = U01}
+		NOT = {tag = F46}
+		NOT = {tag = Z87}
 	}
 	
 	##Mission Start
@@ -248,7 +251,6 @@ generic_column_3 = {
 		trigger = {
 			dip_tech = 7
 			OR = {
-				exploration_ideas = 3
 				
 				expansion_ideas = 3
 			}
@@ -277,6 +279,8 @@ generic_column_4 = {
 		NOT = {tag = A03}
 		NOT = {tag = A13}
 		NOT = {tag = U01}
+		NOT = {tag = F46}
+		NOT = {tag = Z87}
 	}
 	
 	##Mission Start
@@ -377,6 +381,9 @@ generic_column_5 = {
 	NOT = {tag = U01}
 	NOT = {tag = Z38}
 	NOT = {tag = I28}
+	NOT = {tag = F46}
+	NOT = {tag = Z87}
+	NOT = {tag = H88}
 	}
 	
 	##Mission Start

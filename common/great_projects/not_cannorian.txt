@@ -27,6 +27,7 @@ pyramids_of_khet = {
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
+						culture = hapremiti
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -148,6 +149,7 @@ koroshesh_grain_port = {
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
+						culture = hapremiti
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -405,13 +407,14 @@ deshak_temple_of_the_elements = {
 	can_use_modifiers_trigger = {
 		AND = {
 			has_owner_religion = yes
-			religion_group = kheteratan
+			religion = mother_akasik
 			custom_trigger_tooltip = {
 				tooltip = cannorian_monuments_can_use_tooltip_north_salahad
 					OR = {
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
+						culture = desha
 					}
 			}
 			province_is_or_accepts_culture = yes
@@ -539,6 +542,7 @@ ekha_harbor = {
 						culture = delta_gnome
 						culture = sun_elf
 						culture = castanorian
+						culture = far_akasi
 					}
 			}
 			province_is_or_accepts_culture = yes

@@ -5199,7 +5199,7 @@ indep_prabhi_reform = {
 	}
 	legacy_equivalent = indep_daimyo_legacy
 	modifiers = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	custom_attributes = {
 		locked_government_type = yes
@@ -7947,7 +7947,7 @@ vanrahar_warrior_caste = {
 		}
 	}
 	modifiers = {
-		land_forcelimit_modifier = 0.25
+		land_forcelimit_modifier = 0.15
 		global_manpower_modifier = 0.1
 	}
 }
@@ -10084,7 +10084,7 @@ strengthened_parliament_reform = {
 	}
 	modifiers = {
 		max_absolutism = -20
-		development_cost_in_primary_culture = -0.1
+		development_cost_in_primary_culture = -0.075
 		parliament_backing_chance = 0.05
 	}
 	ai = {

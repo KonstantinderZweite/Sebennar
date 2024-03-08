@@ -51,10 +51,7 @@
  desc_aakhetist_aakhet_wrath:0 "While he may normally take the form of a human, Aakhet is still a great and powerful dragon. His fiery breath can melt even the most sturdy of castle walls"
  aakhetist_aakhet_wrath_tooltip:0 "May His flame §Ydemolish§Y that which would obstruct us."
 
- aakhetist_aakhet_rage:0 "Aakhet's Rage"
- desc_aakhetist_aakhet_rage:0 "If one angers Aakhet, he will personally find and burn them alive, no matter how far away they are from Him"
- aakhetist_aakhet_rage_tooltip:0 "Our enemy has hired multiple §Ygenerals§!"
- aakhetist_aakhet_rage_tooltip2:0 "By His fire be §Ypurged§!!"
+
 
  aakhetist_aakhet_conquest:0 "Aakhet's Conquest"
  desc_aakhetist_aakhet_conquest:0 "Aakhet's conquests were not about destruction, but about subjugation. You don't need to burn down an entire country when one singular, all-encompassing show of force will do"

@@ -509,7 +509,58 @@ Z08_eagle_slayers = {
 
 Z87_GladeWayExpansion  = {
 local_development_cost = -0.75
+trade_goods_size = 0.05
 
+}
+Z87_FlameWayExpansion = {
+	local_development_cost = -0.9
+	trade_goods_size = 0.05
+}
+
+Z87_fire_blessed = {
+	monarch_lifespan = 100
+}
+
+Z87_Pretender = {
+global_unrest = 10
+}
+
+Z87_semi_pacified_west = {
+global_unrest = 2 
+global_tax_modifier = -0.05
+}
+Z87_semi_pacified_east = {
+global_unrest = 2
+global_tax_modifier = -0.05
+}
+
+Z87_purged = { 
+local_tax_modifier = -0.75
+local_manpower_modifier = -0.75
+local_production_efficiency = -0.75
+}
+Z87_haze = {
+country_admin_power = -3
+country_diplomatic_power = -2
+country_military_power = -4
+}
+Z87_colonist_rush = {
+colonists = 1
+global_tax_modifier = -0.15
+may_explore = yes
+}
+Z87_false_prophet = {
+global_unrest = 5 
+land_morale = -0.05
+}
+Z87_elven_defeat = {
+morale_damage_received = -0.025
+}
+Z87_greenskin_exterimnator = {
+morale_damage = 0.025
+}
+Z87_dark_fey_blessing = {
+monarch_lifespan = 100
 }
 #Generic
 

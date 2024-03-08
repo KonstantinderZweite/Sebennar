@@ -8,7 +8,6 @@ color = { 153  239  222 }
 
 
 historical_idea_groups = {
-	exploration_ideas
 	expansion_ideas
 	maritime_ideas
 	economic_ideas
@@ -158,9 +157,9 @@ ship_names = {
 }
 
 army_names = {
-	"Venáili Army" "Elven Army" "Army of the Forest" "Army of the Isle" "Army of $PROVINCE$"
+	"Venï¿½ili Army" "Elven Army" "Army of the Forest" "Army of the Isle" "Army of $PROVINCE$"
 }
 
 fleet_names = {
-	"Venáili Navy" "Elven Navy" "Westcoast Squadron" "Winebay Squadron" "Elven Squadron" "Moon Squadron" "Remnant Squadron" "Wanderer Squadron" "Seeker Squadron"
+	"Venï¿½ili Navy" "Elven Navy" "Westcoast Squadron" "Winebay Squadron" "Elven Squadron" "Moon Squadron" "Remnant Squadron" "Wanderer Squadron" "Seeker Squadron"
 }

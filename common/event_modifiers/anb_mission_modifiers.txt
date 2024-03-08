@@ -2574,7 +2574,7 @@ damerian_army = {
 }
 
 dameria_safeguard_empire = {
-	shock_damage_received = -0.3
+	shock_damage_received = -0.10
 }
 
 # Wesdam
@@ -2919,7 +2919,7 @@ khozrugan_loyal_clans = {
 }
 
 khozrugan_defeated_pretender = {
-	discipline = 0.1
+	discipline = 0.05
 }
 
 khozrugan_unifiers_of_orcs = {
@@ -2951,11 +2951,11 @@ khozrugan_influx_of_warriors = {
 }
 
 khozrugan_first_victory = {
-	manpower_recovery_speed = 0.25
+	manpower_recovery_speed = 0.20
 }
 
 khozrugan_crushed_enemy = {
-	shock_damage = 0.25
+	shock_damage = 0.20
 }
 
 khozrugan_impaled_slavers = {
@@ -3004,7 +3004,7 @@ khozrugan_most_desired_city_in_the_world = {
 }
 
 khozrugan_worg_cavalry = {
-	cavalry_power = 0.33
+	cavalry_power = 0.25
 }
 
 khozrugan_organized_army = {
@@ -6542,7 +6542,7 @@ blademarches_bal_ouord_fortifications = {
 }
 
 blademarches_hegemon_of_the_south = {
-	global_regiment_cost = -0.20
+	global_regiment_cost = -0.15
 }
 
 blademarches_grave_of_elecast = {
@@ -12199,28 +12199,28 @@ A90_cardesti_haven = {
 }
 
 A90_bardic_influence_1 = {
-	land_morale = 0.025
-	discipline = 0.025
+	land_morale = 0.01
+	discipline = 0.01
 }
 
 A90_bardic_influence_2 = {
-	land_morale = 0.05
-	discipline = 0.05
+	land_morale = 0.025
+	discipline = 0.02
 }
 
 A90_bardic_influence_3 = {
-	land_morale = 0.075
-	discipline = 0.05
+	land_morale = 0.05
+	discipline = 0.03
 }
 
 A90_bardic_influence_4 = {
-	land_morale = 0.10
-	discipline = 0.075
+	land_morale = 0.075
+	discipline = 0.04
 }
 
 A90_bardic_influence_5 = {
-	land_morale = 0.15
-	discipline = 0.10
+	land_morale = 0.10
+	discipline = 0.05
 }
 
 A90_imperial_ambitions = {
@@ -13074,7 +13074,7 @@ moredhal_dwarovar_bastion = {
 	garrison_growth = 0.15
 }
 moredhal_grudgeknight_HQ = {
-	global_regiment_cost = -0.2
+	global_regiment_cost = -0.15
 	army_tradition = 0.1
 }
 moredhal_devotee_HQ = {
@@ -15718,16 +15718,16 @@ azkare_phonan_bonus_small = {
 	cavalry_cost = -0.05
 }
 azkare_bokai_bonus_massive = {
-	global_manpower_modifier = 0.33
-}
-azkare_bokai_bonus_big = {
 	global_manpower_modifier = 0.20
 }
-azkare_bokai_bonus_medium = {
+azkare_bokai_bonus_big = {
 	global_manpower_modifier = 0.15
 }
-azkare_bokai_bonus_small = {
+azkare_bokai_bonus_medium = {
 	global_manpower_modifier = 0.10
+}
+azkare_bokai_bonus_small = {
+	global_manpower_modifier = 0.05
 }
 azkare_binhrung_bonus_massive = {
 	province_warscore_cost = -0.2
@@ -15994,16 +15994,16 @@ azkare_sobhagand_bonus_small = {
 	build_cost = -0.05
 }
 azkare_shandibad_bonus_massive = {
-	land_maintenance_modifier = -0.20
-}
-azkare_shandibad_bonus_big = {
 	land_maintenance_modifier = -0.15
 }
-azkare_shandibad_bonus_medium = {
+azkare_shandibad_bonus_big = {
 	land_maintenance_modifier = -0.10
 }
-azkare_shandibad_bonus_small = {
+azkare_shandibad_bonus_medium = {
 	land_maintenance_modifier = -0.05
+}
+azkare_shandibad_bonus_small = {
+	land_maintenance_modifier = -0.025
 }
 azkare_rajnadhid_bonus_massive = {
 	dip_tech_cost_modifier = -0.15
@@ -16030,16 +16030,16 @@ azkare_khedarid_bonus_small = {
 	mil_tech_cost_modifier = -0.025
 }
 azkare_shamadhan_bonus_massive = {
-	global_regiment_cost = -0.15
-}
-azkare_shamadhan_bonus_big = {
 	global_regiment_cost = -0.10
 }
-azkare_shamadhan_bonus_medium = {
+azkare_shamadhan_bonus_big = {
 	global_regiment_cost = -0.075
 }
-azkare_shamadhan_bonus_small = {
+azkare_shamadhan_bonus_medium = {
 	global_regiment_cost = -0.05
+}
+azkare_shamadhan_bonus_small = {
+	global_regiment_cost = -0.025
 }
 azkare_kamtarhid_bonus_massive = {
 	adm_tech_cost_modifier = -0.15
@@ -16222,19 +16222,19 @@ azkare_royal_harimari_bonus_small = {
 	administrative_efficiency = 0.025
 }
 azkare_swallow_command_bonus_massive = {
-	mercenary_discipline = 0.15
-}
-azkare_swallow_command_bonus_big = {
 	mercenary_discipline = 0.10
 }
-azkare_swallow_command_bonus_medium = {
+azkare_swallow_command_bonus_big = {
 	mercenary_discipline = 0.05
+}
+azkare_swallow_command_bonus_medium = {
+	mercenary_discipline = 0.025
 }
 azkare_swallow_command_bonus_small = {
 	mercenary_discipline = 0.025
 }
 azkare_fenghuang_command_bonus_massive = {
-	discipline = 0.1
+	discipline = 0.075
 }
 azkare_fenghuang_command_bonus_big = {
 	discipline = 0.05
@@ -16258,16 +16258,16 @@ azkare_pezarangi_harpy_bonus_small = {
 	movement_speed = 0.05
 }
 azkare_nephrite_dwarf_bonus_massive = {
-	fire_damage_received = -0.20
-}
-azkare_nephrite_dwarf_bonus_big = {
 	fire_damage_received = -0.15
 }
-azkare_nephrite_dwarf_bonus_medium = {
+azkare_nephrite_dwarf_bonus_big = {
 	fire_damage_received = -0.10
 }
-azkare_nephrite_dwarf_bonus_small = {
+azkare_nephrite_dwarf_bonus_medium = {
 	fire_damage_received = -0.05
+}
+azkare_nephrite_dwarf_bonus_small = {
+	fire_damage_received = -0.025
 }
 azkare_goldscale_kobold_bonus_massive = {
 	global_unrest = -2.5

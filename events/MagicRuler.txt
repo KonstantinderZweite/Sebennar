@@ -2727,9 +2727,9 @@ country_event = {
 					has_ruler_flag = summer_waves_patron
 				}
 			}
-			adm_power = 150
-			dip_power = 150
-			mil_power = 150
+			adm_power = 175
+			dip_power = 175
+			mil_power = 175
 			NOT = { has_ruler_modifier = magic_realm_divination_foresight }
 			NOT = { has_ruler_modifier = magic_realm_divination_foresight_madness }
 			NOT = { has_ruler_modifier = magic_foresight_cooldown }

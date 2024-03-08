@@ -37,6 +37,7 @@ country_decisions = {
 			tag = I27
 			tag = I28
 			tag = I29
+			tag = I33
 			tag = I30
 			is_playing_custom_nation = yes
 			}	
@@ -184,6 +185,10 @@ country_decisions = {
 			}
 		}
 		effect = {
+			if = {
+			limit = { NOT = { government = monarchy } }
+			change_government = monarchy
+		}
 			change_tag = Z87
 			hidden_effect = { restore_country_name = yes }
 			swap_non_generic_missions = yes

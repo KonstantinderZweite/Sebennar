@@ -169,6 +169,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/KOBOLD_BALRIS_eventPicture.dds"
 	}
 	spriteType = {
+		name = "Green_dragon_eventPicture"
+		texturefile = "gfx/event_pictures/Green_dragon_eventPicture.dds"
+	}
+	spriteType = {
 		name = "KOBOLD_HOARD_eventPicture"
 		texturefile = "gfx/event_pictures/KOBOLD_HOARD_eventPicture.dds"
 	}
