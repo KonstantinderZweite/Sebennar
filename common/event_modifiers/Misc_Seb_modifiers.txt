@@ -46,3 +46,7 @@ technology_cost	= -0.25
 Megastructures = {
 global_defender_dice_roll_bonus = 4 
 }
+build_roost_AI_cooldown = {
+}
+building_roost = {
+}

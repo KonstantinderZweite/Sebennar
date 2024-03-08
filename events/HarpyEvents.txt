@@ -50,6 +50,10 @@ country_event = {
 			#add_province_modifier = { name = same_roost_owner duration = -1 hidden = yes }
 		}
 		update_roost_count = yes
+		add_country_modifier = {
+			name = building_roost
+			duration = 1800
+		}
 	}
 	option = { #build in region 1
 		name = harpy_events.1.b
@@ -234,7 +238,12 @@ province_event = {
 				province_event = { id = harpy_events.11 days = 1800 }
 			}
 		}
-		FROM = { update_roost_count = yes }
+		FROM = { update_roost_count = yes
+		add_country_modifier = {
+			name = building_roost
+			duration = 1800
+		}
+		}
 	}
 	option = {
 		name = harpy_events.2.b
@@ -258,7 +267,12 @@ province_event = {
 				province_event = { id = harpy_events.11 days = 1800 }
 			}
 		}
-		FROM = { update_roost_count = yes }
+		FROM = { update_roost_count = yes
+		add_country_modifier = {
+			name = building_roost
+			duration = 1800
+		}
+		}
 	}
 	option = {
 		name = harpy_events.2.c
@@ -282,7 +296,12 @@ province_event = {
 				province_event = { id = harpy_events.11 days = 1800 }
 			}
 		}
-		FROM = { update_roost_count = yes }
+		FROM = { update_roost_count = yes
+		add_country_modifier = {
+			name = building_roost
+			duration = 1800
+		}
+		}
 	}
 	option = {
 		name = harpy_events.2.dd
@@ -306,7 +325,12 @@ province_event = {
 				province_event = { id = harpy_events.11 days = 1800 }
 			}
 		}
-		FROM = { update_roost_count = yes }
+		FROM = { update_roost_count = yes
+		add_country_modifier = {
+			name = building_roost
+			duration = 1800
+		}
+		}
 	}
 	option = {
 		name = harpy_events.2.e
@@ -330,7 +354,12 @@ province_event = {
 				province_event = { id = harpy_events.11 days = 1800 }
 			}
 		}
-		FROM = { update_roost_count = yes }
+		FROM = { update_roost_count = yes
+		add_country_modifier = {
+			name = building_roost
+			duration = 1800
+		}
+		}
 	}
 	option = {
 		name = harpy_events.2.f
@@ -354,7 +383,12 @@ province_event = {
 				province_event = { id = harpy_events.11 days = 1800 }
 			}
 		}
-		FROM = { update_roost_count = yes }
+		FROM = { update_roost_count = yes
+		add_country_modifier = {
+			name = building_roost
+			duration = 1800
+		}
+		}
 	}
 	option = {
 		name = harpy_events.2.g
@@ -378,7 +412,12 @@ province_event = {
 				province_event = { id = harpy_events.11 days = 1800 }
 			}
 		}
-		FROM = { update_roost_count = yes }
+		FROM = { update_roost_count = yes
+		add_country_modifier = {
+			name = building_roost
+			duration = 1800
+		}
+		}
 	}
 	option = {
 		name = harpy_events.2.h
@@ -402,7 +441,12 @@ province_event = {
 				province_event = { id = harpy_events.11 days = 1800 }
 			}
 		}
-		FROM = { update_roost_count = yes }
+		FROM = { update_roost_count = yes
+		add_country_modifier = {
+			name = building_roost
+			duration = 1800
+		}
+		}
 	}
 	option = { #Back
 		name = harpy_events.2.x
