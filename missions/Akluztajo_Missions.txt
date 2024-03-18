@@ -156,6 +156,23 @@ duration = 10950
 
 
 }
+Z87_Learning = {
+icon = mission_women_prayer
+position = 8
+required_missions = {
+Z87_pacification
+} 
+trigger = {
+total_development = 700
+}
+effect = {
+add_country_modifier = {
+name = Z87_dark_fey_blessing
+duration = 10950
+}
+country_event = { id = magic_study.23}
+}
+}
 }
 Akluztajo_3 = {
 	slot = 3
@@ -261,6 +278,99 @@ if = {
 				}
 }
 }
+Z87_Gladeway_Defense = {
+        icon = mission_mahmudabad
+        position = 7 
+        provinces_to_highlight = {
+        OR = {
+           province_group = deepwoods_outward_gladeway
+
+           }
+        }
+        required_missions = { Z87_goblin_development }
+        trigger = {
+        manpower = 10
+        treasury = 1000
+        deepwoods_outward_gladeway = {
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+                development = 10
+            }
+        }
+        effect = { 
+        add_manpower = -10
+        add_treasury = -1000
+		add_country_modifier = {
+		name = Z87_defender_of_deepwoods 
+		duration = -1
+		}
+        deepwoods_outward_gladeway = {
+        add_building = ramparts
+        }
+
+        }
+}
+Z87_Economic_Infusion = {
+		icon = mission_have_manufactories
+        position = 8
+		required_missions = { Z87_Gladeway_Defense }
+		trigger = {
+		monthly_income = 50
+		}
+	effect = {
+	add_country_modifier = {
+		name = Z87_money
+		duration = 3650
+		}
+}
+}
+Z87_religious_unity = {
+icon = mission_star_comet
+position = 9 
+required_missions = {
+Z87_lost_special_tools
+Z87_Economic_Infusion
+Z87_Learning
+Z87_sacrafice
+}
+trigger = {
+religious_unity = 0.9
+}
+
+effect = {
+add_country_modifier = {
+name = Z87_religious_harmony
+duration = -1
+}
+}
+
+}
+Z87_dragons_path = {
+icon = mission_solaris
+position = 10
+required_missions = {
+Z87_religious_unity
+}
+trigger ={ 
+treasury = 5000
+ruler_has_mage_personality = yes
+custom_trigger_tooltip = {
+tooltip = tooltip_has_divination_2
+has_ruler_flag = divination_2
+					}
+NOT = { great_power_rank = 8 }
+monthly_income = 200
+NOT = {subsidised_percent_amount = { 
+									value = 0.10
+								}
+								}
+}
+effect = {
+country_event = { id = flavor_Akluztajo.7}
+add_treasury = -5000
+}
+
+}
 }
 Akluztajo_4 = {
 	slot = 4
@@ -310,6 +420,45 @@ duration = -1
 }
 }
 }
+Z87_to_another_forest = {
+		icon = mission_alone_in_the_forest
+		position = 7
+		
+		required_missions = {
+			Z87_elven_integration
+		}
+		
+		trigger = {
+			dip_power = 200
+			dip_tech = 11
+		}
+		
+		effect = {
+			custom_tooltip = to_another_forest_tooltip
+			add_dip_power = -200
+			hidden_effect = { country_event = { id = cyranvar.7 days = 10 } }
+		}
+	}
+Z87_lost_special_tools= {
+	icon = mission_jawal_silver_mine
+	position = 8
+	required_missions = {
+	Z87_to_another_forest
+	}
+	trigger = { 
+	3042 = {
+	development = 30
+	}
+	}
+	effect = {
+	3042 = {
+	add_province_modifier = {
+	name = Z87_special_tools
+	}
+	}
+	}
+	
+}
 }
 
 Akluztajo_5 = {
@@ -321,9 +470,6 @@ Akluztajo_5 = {
 potential = {
 tag = Z87 
 }
-
-
-
 
 }
 

@@ -562,6 +562,34 @@ morale_damage = 0.025
 Z87_dark_fey_blessing = {
 monarch_lifespan = 100
 }
+Z87_defender_of_deepwoods = {
+defensiveness = 0.15
+garrison_size = 0.15
+}
+Z87_money= {
+build_cost = -0.2
+build_time = -0.15
+global_unrest = 2
+}
+Z87_special_tools= {
+trade_goods_size = 1.0
+}
+Z87_religious_harmony = {
+tolerance_own = 3 
+}
+Z87_dragon_kinship = {
+fire_damage = 0.10
+morale_damage = 0.025
+morale_damage_received = -0.025
+}
+Z87_dragon_armour = {
+is_rajput_modifier = yes
+fire_damage_received = -0.10
+shock_damage_received = -0.10
+morale_damage_received = -0.10
+regiment_manpower_usage = -0.1
+
+}
 #Generic
 
 war_of_last_resort = {
