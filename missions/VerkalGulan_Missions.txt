@@ -116,7 +116,7 @@ verkalgulan_government_missions = {
 			else = {
 				2915 = {
 					owned_by = ROOT
-					has_great_project = { type = heros_gate tier = 2 }
+					
 				}
 			}
 		}

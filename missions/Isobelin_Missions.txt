@@ -740,20 +740,8 @@ isobelin_3_1 = {
 		}
 		trigger = {
 			crown_land_share = 50
-
-			if = {
-				limit = { has_dlc = "Leviathan" }
-				1036 = {
-					has_great_project = {
-						type = city_that_never_sleeps
-						tier = 1
-					}
-
-				}
-			}
-			else = {
-				treasury = 2500
-			}
+			treasury = 2500
+		
 
 		}
 		effect = {
@@ -3230,15 +3218,6 @@ isobelin_3_3 = {
 			}
 		}
 		trigger = {
-			if = {
-				limit = { has_dlc = "Leviathan" }
-				1036 = {
-					has_great_project = {
-						type = city_that_never_sleeps
-						tier = 3
-					}
-				}
-			}
 
 			if = {
 				limit = {
