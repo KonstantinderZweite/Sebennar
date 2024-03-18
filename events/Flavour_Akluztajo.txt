@@ -171,3 +171,31 @@ change_adm = 1
 change_mil = 1
 }
 }
+
+country_event = {
+id = flavor_Akluztajo.7
+title = flavor_Akluztajo.7.t
+desc = flavor_Akluztajo.7.d
+picture = sleep_green_dragon
+is_triggered_only = yes
+trigger = {
+tag = Z87
+}
+option = {
+name = flavor_Akluztajo.7.a 
+add_country_modifier = {
+name = Z87_dragon_kinship
+duration = -1
+}
+
+}
+
+option = {
+name = flavor_Akluztajo.7.b 
+add_country_modifier = {
+name = Z87_dragon_armour
+duration = -1
+}
+
+}
+}
