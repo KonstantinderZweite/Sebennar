@@ -2,9 +2,9 @@ capital = "Al-Dimiryat"
 
 hre = no
 
-owner = L16
-controller = L16
-add_core = L16
+owner = L14
+controller = L14
+add_core = L14
 culture = ndurubu
 religion = fangaulan_pantheon
 

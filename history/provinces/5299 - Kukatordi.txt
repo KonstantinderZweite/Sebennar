@@ -15,7 +15,7 @@ trade_goods = wool
 capital = ""
 
 is_city = yes
-owner = 
-controller = 
-add_core = 
+owner = J30
+controller = J30
+add_core = J30
 add_devastation = 50

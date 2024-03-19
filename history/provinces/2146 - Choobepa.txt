@@ -1,6 +1,6 @@
 
 # No previous file for Ningguo
-tribal_owner = G03
+
 culture = kooras
 religion = jaakaiin
 capital = ""

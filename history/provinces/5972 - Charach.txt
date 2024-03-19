@@ -1,6 +1,6 @@
-owner = L75
-controller = L75
-add_core = L75
+owner = L95
+controller = L95
+add_core = L95
 add_core = L78
 culture = ashhama_lizardfolk
 religion = zaradyrra

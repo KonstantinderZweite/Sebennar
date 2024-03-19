@@ -2,9 +2,9 @@
 culture = fathide_ogre
 religion = feast_of_the_gods
 is_city = yes
-owner = 
-controller = 
-add_core = 
+owner = J36
+controller = J36
+add_core = J36
 
 
 hre = no

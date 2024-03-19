@@ -1,6 +1,5 @@
 
 # No previous file for Xuzhou
-tribal_owner = G03
 culture = kooras
 religion = jaakaiin
 capital = ""

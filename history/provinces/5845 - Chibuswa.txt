@@ -1,6 +1,6 @@
-owner = L09
-controller = L09
-add_core = L09
+owner = L10
+controller = L10
+add_core = L10
 add_core = L11
 culture = horakheti
 religion = elikhetist

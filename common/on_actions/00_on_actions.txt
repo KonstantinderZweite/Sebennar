@@ -6513,6 +6513,42 @@ on_yearly_pulse = {
 		limit = { tag = I16 } 
 		country_event = { id = flavour_gor_burad.60 }
 	}
+	################################### Artificery ###################################
+	#Failsave
+	country_event = {
+		id = anbennar_setup.19
+	}
+	#Research
+	if = {
+		limit = {
+			has_country_flag = artifice_research_in_progress
+		}
+		subtract_variable = {
+			which = ResearchSpeed
+			value = 1
+		}
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = ResearchSpeed
+						value = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = artifice_research_in_progress
+				}
+				country_event = {
+					id = artifice_research.4
+					days = 1
+					random = 120
+				}
+			}
+		}
+	}
+	################################### Artificery End ###################################
 }
 on_yearly_pulse_2 = {
 }
@@ -17311,3 +17347,4 @@ on_mil_development = {
 		}
 	}
 }
+

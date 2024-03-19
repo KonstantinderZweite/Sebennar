@@ -1,8 +1,8 @@
 
 # No previous file for Banten
-owner = S24
-controller = S24
-add_core = S24
+owner = S44
+controller = S44
+add_core = S44
 culture = talilibeti
 religion = sky_domain
 

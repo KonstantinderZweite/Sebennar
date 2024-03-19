@@ -1,8 +1,6 @@
 
 # No previous file for Derajat
-owner = G44
-controller = G44
-add_core = G44
+
 culture = kooras
 religion = jaakaiin
 capital = ""

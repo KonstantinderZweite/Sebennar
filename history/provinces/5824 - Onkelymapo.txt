@@ -1,8 +1,8 @@
 # No previous file for Nakhchivan
 
-owner = L52
-controller = L52
-add_core = L52
+owner = L37
+controller = L37
+add_core = L37
 culture = mboala
 religion = nakavy_avo
 capital = ""

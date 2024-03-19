@@ -1,8 +1,8 @@
 
 # No previous file for Banten
-owner = L58
-controller = L58
-add_core = L58
+owner = S30
+controller = S30
+add_core = S30
 culture = yeteferen
 religion = sky_domain
 

@@ -1,8 +1,8 @@
 
 # No previous file for Banten
-owner = S53
-controller = S53
-add_core = S53
+owner = S44
+controller = S44
+add_core = S44
 add_permanent_claim = S54
 culture = yeteferen
 religion = sky_domain

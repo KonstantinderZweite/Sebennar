@@ -1,8 +1,8 @@
 # No previous file for Nakhchivan
 
-owner = S22
-controller = S22
-add_core = S22
+owner = S33
+controller = S33
+add_core = S33
 culture = ashamadi
 religion = rinta_seekers
 capital = ""

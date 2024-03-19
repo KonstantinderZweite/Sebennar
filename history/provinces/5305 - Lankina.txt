@@ -1,4 +1,7 @@
 #
+owner = J30
+controller = J30
+add_core = J30
 culture = metsamic
 religion = kodave_followers
 

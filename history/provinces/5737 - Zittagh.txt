@@ -3,7 +3,7 @@
 owner = F69
 controller = F69
 add_core = F69
-add_core = L17
+add_core = L14
 culture = taafi
 religion = fangaulan_pantheon
 capital = ""

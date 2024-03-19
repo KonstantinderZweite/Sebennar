@@ -1,9 +1,8 @@
 
 # No previous file for Banten
-owner = L67
-controller = L67
-add_core = L67
-add_core = S68
+owner = S33
+controller = S33
+add_core = S33
 culture = sitewosi
 religion = sky_domain
 

@@ -1,9 +1,8 @@
 
 # No previous file for Banten
-owner = S60
-controller = S60
-add_core = S60
-add_core = S59
+owner = S44
+controller = S44
+add_core = S44
 culture = yeteferen
 religion = sky_domain
 base_tax = 6

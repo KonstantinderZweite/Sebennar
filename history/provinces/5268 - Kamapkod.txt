@@ -13,7 +13,7 @@ trade_goods = naval_supplies
 capital = ""
 
 is_city = yes
-owner = 
-controller = 
-add_core = 
+owner = J18
+controller = J18
+add_core = J18
 add_devastation = 50

@@ -1,6 +1,6 @@
-owner = L71
-controller = L71
-add_core = L71
+owner = L80
+controller = L80
+add_core = L80
 culture = skarakara_lizardfolk
 religion = anzalkatsa
 

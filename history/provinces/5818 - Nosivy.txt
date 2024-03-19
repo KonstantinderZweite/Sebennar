@@ -3,7 +3,6 @@
 owner = L38
 controller = L38
 add_core = L38
-add_core = L32
 
 culture = amezatany
 religion = nakavy_avo

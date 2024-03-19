@@ -1,10 +1,10 @@
 # No previous file for Nakhchivan
 
-owner = S58
-controller = S58
-add_core = S58
-add_core = S60
-add_core = S59
+owner = S44
+controller = S44
+add_core = S44
+
+
 culture = yeteferen
 religion = sky_domain
 capital = ""

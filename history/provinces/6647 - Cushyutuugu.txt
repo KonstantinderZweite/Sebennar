@@ -1,7 +1,7 @@
 # No previous file for Banten
-owner = L63
-controller = L63
-add_core = L63
+owner = S30
+controller = S30
+add_core = S30
 culture = antmvura
 religion = beast_memory
 trade_goods = silk

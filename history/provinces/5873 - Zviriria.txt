@@ -1,6 +1,6 @@
-owner = L05
-controller = L05
-add_core = L05
+owner = L10
+controller = L10
+add_core = L10
 add_core = L11
 culture = kuivanhi
 religion = noukahi_pantheon

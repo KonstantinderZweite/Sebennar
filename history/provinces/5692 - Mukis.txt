@@ -1,6 +1,6 @@
-owner = F61
-controller = F61
-add_core = F61
+owner = F63
+controller = F63
+add_core = F63
 culture = tijarikheti
 religion = nirakhetist
 

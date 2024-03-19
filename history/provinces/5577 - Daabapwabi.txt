@@ -1,8 +1,8 @@
 # No previous file for Nakhchivan
 
-owner = S31
-controller = S31
-add_core = S31
+owner = S30
+controller = S30
+add_core = S30
 add_permanent_claim = S27
 add_permanent_claim = S28
 add_permanent_claim = S29
