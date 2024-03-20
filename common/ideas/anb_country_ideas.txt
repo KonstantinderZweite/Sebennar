@@ -25354,3 +25354,548 @@ L43_ideas = {
 		shock_damage = 0.1
 	}
 }
+
+#Zulbur
+L80_ideas = {
+	start = {
+		diplomats = 1
+		hostile_attrition = 1
+	}
+	bonus = {
+		advisor_cost = -0.1
+	}
+	trigger = {
+		tag = L80 #Zulbur
+	}
+	free = yes
+	L80_the_architect_of_zulbur = {
+		prestige = 1
+	}
+	L80_thushnek = {
+		shock_damage = 0.1
+	}
+	L80_flowers_admist_the_thorns = {
+		reform_progress_growth = 0.15
+	}
+	L80_gakha_dak = {
+		build_cost = -0.1
+	}
+	L80_claw_marks = {
+		state_maintenance_modifier = -0.25
+	}
+	L80_khagaarsa = {
+		leader_land_shock = 1
+	}
+	L80_soshasru_the_iriktrask = {
+		diplomatic_reputation = 1
+	}
+}
+S20_ideas = {
+	start = {
+		shock_damage = 0.1
+		diplomatic_reputation = 1
+		female_advisor_chance = 0.5
+	}
+	bonus = {
+		free_dip_policy = 1
+	}
+	trigger = {
+		tag = S20
+	}
+	free = yes
+
+
+	S20_the_brightest_blossom_of_the_bouquet = {
+		monarch_diplomatic_power = 1
+	}
+	S20_a_city_reborn = {
+		prestige = 1
+	}
+	S20_a_monopoly_on_exploration = {
+		vassal_income = 0.25
+		mercenary_cost = -0.1
+	}
+	S20_an_ubakhiyo_welcome = {
+		trade_efficiency = 0.1
+	}
+	S20_the_daughters_of_xawla = {
+		fire_damage_received = -0.1
+		may_recruit_female_generals = yes
+	}
+	S20_kunbakh_dawaalhag = {
+		diplomatic_annexation_cost = -0.2
+	}
+	S20_nwali_dadubakha = {
+		artillery_cost = -0.1
+	}
+}
+
+#Tanizu
+S33_ideas = {
+	start = {
+		infantry_power = 0.1
+		vassal_income = 0.25
+	}
+	bonus = {
+		diplomatic_upkeep = 1
+	}
+
+	trigger = {
+		tag = S33 #Red Fanged Gorilla
+	}
+	free = yes
+
+	tanizu_red_fanged_gorilla = {
+		morale_damage_received = -0.05
+	}
+	tanizu_age_grades = {
+		leader_land_shock = 1
+	}
+	tanizu_rememberers_of_beast_and_man = {
+		advisor_cost = -0.1
+		advisor_pool = 1
+	}
+	tanizu_ceremonial_marriages = {
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+	}
+	tanizu_village_watchers = {
+		tolerance_own = 1
+		defensiveness = 0.05
+	}
+	tanizu_ibijubza = {
+		global_tax_modifier = 0.1
+	}
+	tanizu_the_alternate_model = {
+		prestige = 1
+	}
+}
+#Death Bringing Cobra
+S30_ideas = {
+	start = {
+		spy_offence = 0.25
+		siege_ability = 0.1
+	}
+	bonus = {
+		years_of_nationalism = -5
+	}
+	trigger = {
+		tag = S30 #Death Bringing Cobra
+	}
+
+	free = yes
+
+	S30_death_to_traitors = {
+		discipline = 0.05
+
+	}
+	S30_a_legendary_legacy = {
+			
+		legitimacy = 1
+		republican_tradition = 0.3
+		devotion = 1
+		horde_unity = 1
+	}
+	S30_the_demons_call = {
+		shock_damage = 0.1
+	}
+	S30_binding_the_wounds = {
+		province_warscore_cost = -0.15
+	}
+	S30_legacy_of_exile = {
+		defensiveness = 0.15
+	}
+	S30_surrounded_by_enemies = {
+		global_manpower_modifier= 0.15
+	}
+	S30_great_dakinshi = {
+		development_cost = -0.1
+	}
+}
+#Kidsit Yitsi
+L67_ideas = {
+	start = {
+		morale_damage_received = -0.1 #been defending their swamp a long time
+		tolerance_own = 2 #very religious society
+	}
+	bonus = {
+		global_manpower_modifier = 0.15 #high population
+	}
+	trigger = {
+		tag = L67 #Kidsit Yiti
+	}
+	free = yes
+
+	L67_a_holy_swamp = { #Kidsit Yitsi is mostly swamp and its people see it as an example of Amilak's perfect swamp in opposition to the Shadow Swamp. As such they treasure the area and don't really drain or reclaim land from it.
+		prestige = 1
+	}
+	L67_a_confederation_of_kings = { #A somewhat loose confederation of kings under a high king. Born after a particularly brutal Tanizu raid in the early 11th century when some of the smaller chiefs in the borderlands banded together under an elected chief from among their ranks. Some of the weakest internal kings can act as diplomats to other states.
+		diplomats = 1
+	}
+	L67_bulwark_of_the_holy_land = { #They see themselves as a bulwark against the Tanizu and Dakinshi, have managed to fend them off from the holy land time after time.
+		shock_damage_received = -0.1
+	}
+	L67_submerged_shamans = { #Water is Amilak's blessing as it appears to come directly from him (the sky), they have made their home in his water and are holier for it. Therefore, those who immerse themselves in the swamps are the holiest of all. Holy men in Kidsit Yitsi live fully in the swamps and lakes, travelling through them between villages and towns, living off the fish and wild Sorghum found in the waterways of the Kingdom.
+		global_missionary_strength = 0.02
+	}
+	L67_ricebasket_of_the_mengi = { #Rice imported from Rahen thrives in the wetlands of Kidsit Yiti. Thanks to this and the Kingdom's relative stability they have an oversized population for their size.
+		global_tax_modifier = 0.15
+	}
+	L67_ever_greater_union = { #The Kings of Kidist Yitsi see their united front as their greatest strength, the thing that has sustained them against the Tanizu and Trolls, the thing that raises them above the other fractured Mengi. They see this unity as proving them to be the final Sitewosi kingdom, and carry on that philosophy to justify being absorbed into Melakmengi seeing that as the final and perfect Mengi kingdom.
+	improve_relation_modifier = 0.2
+	}
+
+	L67_kwariketema = { #In a united Melakmengi they start using building techniques akin to those of Venice to make better use of the swamps.
+		build_cost = -0.1
+	}
+}
+#Matamot
+S44_ideas = {
+	start = {
+		yearly_corruption = -0.1 #shared with pechuketema pact members
+		land_forcelimit_modifier = 0.15 #big boi of the alliance
+	}
+	bonus = {
+		advisor_cost = -0.10
+	}
+	trigger = {
+		tag = S44 #Matamot
+	}
+	free = yes
+	
+	S44_pechuketema_pact = { #big cool alliance of inland Ofehibi cities, founded after the fall of Mewojala in 1368 to Simegasa. Alliance proves its worth in 1384 when Simegasa tries to conquer Manta and is defeated at the Battle of Manta.
+		diplomats = 1
+	}
+	S44_the_hegemonic_city = { #the traditional leader and founder of the pechuketema pact. Positions itself as the defender of the inland Ofehibi from Simegasan aggression.
+		diplomatic_reputation = 1
+		improve_relation_modifier = 0.1
+	}
+	S44_akaus_adventure = { #cool founding myth about matamot, explains the name. Place where legendary hero Akau?s mother died and where he eventually settled down. Many Matamoti hope to emulate Akau and his feats of heroism and bravery.
+		land_morale = 0.10
+	}
+	S44_the_beginning_of_the_chain_road = { #matamot mostly sells slaves to the yeteferen, big important road starts in Matamot and ends in Yetmetsira
+		global_prov_trade_power_modifier = 0.1
+	}
+	S44_cow_leaping = { #cool bull-dance practiced in matamot, based on the irl equivalent in france
+		prestige_decay = -0.01
+	}
+	S44_the_master_plan = { #matamot slowly centralizes the alliance until the other 3 cities agree willingly to unite into a federation, with Matamot taking on a central role. All according to Keikaku
+		spy_offence = 0.20
+	}
+	S44_a_combined_army = { #the pechuketema pact centralizes into a federation. forms a unified, professional army at some point in the mid 1500s. Early example of a professional Mengi army.
+		yearly_army_professionalism = 0.003
+	}
+}
+#Rayaz 
+L95_ideas = {
+	start = {
+		infantry_cost = -0.1 #People flock to our standards already armed and ready to fight
+		advisor_cost = -0.1 #We have more naga than most, they�re the advisor caste	
+	}
+	bonus = {
+		infantry_power = 0.1 #This was changed during balance review, TODO
+	}
+	trigger = {
+		tag = L95 #Rayaz
+	}
+	free = yes
+	
+	L95_chosen_of_the_naga = { #We are the chosen family, groomed for the Nagas' ambitions
+		monarch_admin_power = 1 
+	}
+	L95_twin_academy = { #We have a university
+		reform_progress_growth = 0.1
+		idea_cost = -0.05
+	}
+	L95_making_soldier_from_a_tribesman = { #This is self explanatory
+		 discipline = 0.05
+	}
+	L95_destined_unifiers = { #The prophecy about 3 brothers (us) who unify the Lizards in the final empire
+		diplomatic_annexation_cost = -0.15
+		accept_vassalization_reasons = 10
+	}
+	L95_people_of_the_river = { #Our position is great for trade
+		merchants = 1
+	}
+	L95_expert_trappers = { #There's a lot of stuff you can hide in the jungles
+		hostile_attrition = 1
+	}
+	L95_sykars_codex = { #Legal reforms in line with teachings of their religion
+		global_autonomy = -0.05
+	}
+}
+#Kunolo
+L10_ideas = {
+	start = {
+		num_accepted_cultures = 2
+		global_unrest = -1 
+	}
+	bonus = {
+		trade_efficiency = 0.1 
+	}
+	trigger = {
+		tag = L10 #Kunolo
+	}
+	free = yes
+
+	L10_defying_the_cat = { #Dislike being under the boot of others, especially under the Khets.
+		global_manpower_modifier = 0.15
+	}
+	L10_halfling_shipbuilder = { #Halflings who stayed behind are efficient shipbuilders.
+		light_ship_cost = -0.2
+	}
+	L10_kunolo_kola = { #Like to chew nuts which eventually developes into what we know as cola.
+		production_efficiency = 0.1
+	}
+	L10_a_home_for_the_different = { #Extremely tolerant towards minorities of most kinds. 
+		advisor_cost = -0.1
+		advisor_pool = 1
+	}
+	L10_the_chibados = { #Third gender with the role of spiritual guidance. 
+		adm_tech_cost_modifier = -0.1
+	}
+	L10_introduction_of_oware = { #Boardgame from Kunolo which slowly expands around the world through merchants and sailors.
+		global_trade_power = 0.1
+		merchants = 1
+	}
+	L10_gate_to_sarhal = { #Very wealthy and important tradingport.
+		placed_merchant_power = 5
+		build_cost = -0.075
+	}
+}
+#Kulugiash
+L08_ideas = {
+	start = {
+		army_tradition = 0.5
+		drill_gain_modifier = 0.5
+	}
+	bonus = {
+		years_of_nationalism = -5
+	}
+	
+	trigger = {
+		tag = L08 #Kulugiash
+	}
+	free = yes
+	
+	L08_peace_between_houses = {
+		stability_cost_modifier = -0.15
+	}
+	L08_the_quagga = {
+		global_supply_limit_modifier = 0.2
+	}
+	L08_our_men_for_our_own = {
+		global_manpower_modifier = 0.10
+		free_leader_pool = 1
+	}
+	L08_religion = {
+		tolerance_own = 2
+	}
+	L08_pastorialists = {
+		production_efficiency = 0.1
+	}
+	L08_a_divided_nation = {
+		harsh_treatment_cost = -0.2
+	}
+	L08_a_modern_army = {
+		infantry_fire = 0.15
+		leader_land_fire = 1
+	}
+}
+#Aramoole
+F63_ideas = {
+	start = {
+		global_autonomy = -0.05 #rule with a magic iron fist
+		shock_damage_received = -0.1 #abjuration spells
+	}
+	bonus = {
+		discipline = 0.05 #an army led by battlemages is discliplined
+	}
+	trigger = {
+		tag = F63 #Aramoole
+	}
+	free = yes
+	
+	F63_battlemages_junta = { #battlemage stratocracy lore, stratocracy by way of battlemages.
+		stability_cost_modifier = -0.15
+	}
+	F63_raising_a_battlemage = { #If a child shows magical potential, irrespective if they were born a noble or a slave, they're taken in by the state to be raised as an elite battlemage. No two are trained the same, each specializing in different weapons and magic. But they all end up the same- deadly, disciplined, and powerful warriors.
+		leader_land_fire = 1
+	}
+	F63_militarized_capital = { #militarize aramoole proper. Build shit like barracks, forts, academies, training grounds, equipment workshops, mage towers, guards everywhere, dragonne packs, the works.
+		global_unrest = -2
+	}
+	F63_tijarikheti_attatan = { #mac and cheese, it's on the food dishes wiki page
+		prestige = 1
+	}
+	
+	F63_a_bronze_eye_watching = { #whenever it seems like we're gonna loose, we win. Not to mention rumors of dragon shit. Hmmmmmm 
+		war_exhaustion = -0.03
+	}
+	F63_great_cannons = { #haha cannons go boom, lore about aakhet sending dudes out to get artillery
+		artillery_power = 0.1
+	}
+	F63_reforge_aakhets_empire = { #with Khetapera united, we shall go north and seize the mandate, then push east until there is no more east!
+		core_creation = -0.1
+	}
+}
+
+#Negefaama
+L14_ideas = {
+	start = {
+		land_maintenance_modifier = -0.10 #use abundant ironwood to make military equipment
+		num_accepted_cultures = 2 #multicultural republic
+	}
+	bonus = {
+		discipline = 0.05 #horon
+	}
+	trigger = {
+		tag = L14 #Negefaama
+	}
+	free = yes
+
+	L14_iron_wood_lumber = { #iron wood
+		production_efficiency = 0.10
+	}
+	L14_legacy_of_the_dendugma_conquest = { #good at fighting guerillas
+		shock_damage_received = -0.10
+	}
+	L14_village_democracy = { #freedomTM
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		horde_unity = 1
+	}
+	L14_gafekalanyoro_library = {
+		idea_cost = -0.1
+	}
+	L14_prototype_golems = { #use golems for building stuff
+		build_cost = -0.1
+	}
+	L14_embracing_the_truth = { #early embracement of ravellianism, uses their faith and diplomats to play cannorians off eachother
+		global_missionary_strength = 0.02
+		diplomatic_reputation = 1
+	}
+	L14_wisdom_of_the_masses = {
+		global_unrest = -1
+	}
+}
+#Tzilekal
+F65_ideas = {
+	start = {
+		siege_ability = 0.15
+		tolerance_heathen = 2
+	}
+	bonus = {
+		core_creation = -0.1
+	}
+
+	trigger = {
+		tag = F65 #Tzilekal
+	}
+	free = yes
+
+	F65_ozyl_the_betrayer = {
+		spy_offence = 0.2
+		diplomats = 1
+	}
+	F65_a_dream_of_genies = {
+		prestige = 1
+		monthly_splendor = 1
+	}
+	F65_superficial_swindlers = {
+		trade_efficiency = 0.1
+	}
+	F65_the_illustrious_port_of_zitan_tomon = {
+		global_institution_spread = 0.2
+	}
+	F65_xholameenic_architecture = {
+		build_cost = -0.1 
+	}
+	F65_fangaulan_cultural_exchange = {
+		num_accepted_cultures = 1
+		improve_relation_modifier = 0.2
+	}
+	F65_junansuars_blessing = {
+		fire_damage = 0.10
+	}
+}
+
+L55_ideas = { #Naleni Ideas
+	start = {
+		disengagement_chance = 0.1
+		available_province_loot = 0.2
+	}
+	bonus = {
+		diplomats = 1
+	}
+
+	trigger = {
+		tag = L55
+	}
+	free = yes	#will be added at load.
+
+	L55_pirates_wit = { #The Harpies of the Naleni pirates were once disorganized flocks, but as they grew stronger, they began to spread out. The silver tongues of their leaders let them cut deals and cross cut courts, stitching together a small pirate empire out of the husk of the old Irkan Eparta before anyone could begin to realize how much they really controlled.
+		diplomatic_upkeep = 1
+		improve_relation_modifier = 0.1
+	}
+	L55_eye_for_talent = { #Harpies spend their entire lives hunting, and the Pirates of Naleni are no different. They have a fine eye for quality in what they want, both men and treasure. This lets them quickly decide when they raid coastal towns or rival shipping which men would work best under the decks of the galley as rowing slaves, or above board as the soldiers of their new 'masters'.
+		global_sailors_modifier = 0.1
+		naval_tradition_from_battle = 0.25
+	}
+	L55_sirens_song = { # the harpies of Naleni are renowned for their singing, even sparking stories of sirens. They have used their skills to great effect in combat, luring in unsuspecting opponents and lowering their guard.
+		fire_damage_received = -0.1
+	}
+	L55_prosperous_racket = { #The Harpies of Naleni have built a league of trading factors throughout the ringlet sea. They double as both merchants and strong arms, negotiating the 'protection fees' to do business in the local ports, as well as reminding people how cheap the price of their protection is, versus almost guaranteed plundering from eager pirates.
+		placed_merchant_power = 5
+	}
+	L55_ravelian_investments = { # Naleni converted to Ravelianism following increasing Busilari presence in the Ringlet in an attempt to strengthen relations. This led to Naleni becoming the center of operations for the church in east Sarhal, resulting in increased education and artificery development.
+		technology_cost = -0.05
+	}
+	L55_aerial_logistics = { # The Naleni pirates have overtime grown to utilize their strengths as harpies to conduct large raids over longer distances than would otherwise be possible
+		coast_raid_range = 1 #honestly not sure if this modifier is allowed, the standard raid range is 3 sea tiles.
+	}
+	L55_mountain_monuments = { # Naleni has carried forth a tradition from the former kingdom of irkan eparta they used to showcase their authority of carving leaders into the sides of the Emot Nepas Sedar. perhaps to show superiority over the former human kingdoms, the harpies of Naleni have constructed their statues far higher than the human carvings. the factional nature of Naleni's political system demands many more statues be carved into the mountain side than their predecessor, resulting in a wealth of masonry and construction knowledge.
+		build_cost = -0.1
+	}
+}
+
+# Yezel Mora
+S70_ideas = {
+	start = {
+		land_attrition = -0.33
+		years_of_nationalism = -5
+	}
+	bonus = {
+		manpower_recovery_speed = 0.15
+	}
+	trigger = {
+		tag = S70 #Yezel Mora
+	}
+	free = yes
+
+	S70_to_walk_on_nails = {
+		global_tax_modifier = 0.15
+	}
+	S70_ritual_scarification = {
+		morale_damage_received = -0.1
+	}
+	S70_two_worlds_one_life = {
+		tolerance_own = 2
+		advisor_cost = -0.05
+	}
+	S70_water_spider_doctrine = {
+		discipline = 0.05
+	}
+	S70_honesty_and_pacts_of_trolls = {
+		yearly_corruption = -0.15
+	}
+	S70_refuge_in_darkness = {
+		army_tradition_from_battle = 1
+	}
+	S70_the_binding = {
+		all_power_cost = -0.035
+	}
+}

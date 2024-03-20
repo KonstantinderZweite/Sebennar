@@ -50,3 +50,7 @@ build_roost_AI_cooldown = {
 }
 building_roost = {
 }
+
+aibadwar = {
+can_not_declare_war = yes
+}

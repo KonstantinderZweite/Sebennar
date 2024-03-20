@@ -361,6 +361,34 @@ country_event = {
 			}
 	}
 }
+country_event = {
+id = new_events.19
+title = "new_events_19.t"
+desc = "new_events.19.d"
+picture = TRADEGOODS_eventPicture
+hidden = yes
+trigger = {
+OR = {
+								
+	technology_group = tech_west_sarhaly
+	technology_group = tech_south_sarhaly
+	technology_group = tech_east_sarhaly
+	technology_group = tech_lizardfolk
+	technology_group = tech_baashidi	
+	technology_group = tech_inyaswarosa
+	technology_group = tech_swamp_troll		
+							
+							}
+}
+
+option = {
+name = ai_bad_event
+add_country_modifier = {
+	name = "aibadwar"
+	duration = 10950
+	}
+}
+}
 
 
 
