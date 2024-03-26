@@ -16821,11 +16821,19 @@ on_capital_moved = {
 	#dwarovar reclaimer
 	if = { limit = { continent = serpentspine }
 		owner = { add_country_modifier = { name = reclaiming_dwarovar duration = -1 } }
-	}
+	}	
 	else = {
 		owner = { remove_country_modifier = reclaiming_dwarovar }
 	}
-
+	if = { limit = { continent = serpentspine }
+		ROOT = {
+			owner = {
+				all_neighbor_province {
+					discover_country = owner
+				}
+			}
+		}
+	}
 	yrw_move_iosahar_debug_modifier = yes
 	#CENTAUR NOMADISM
 	
