@@ -137,6 +137,11 @@ dig_11 = {
 }
 
 
+gold_hold = {
+	local_gold_depletion_chance_modifier = -1
+	trade_goods_size_modifier = -0.2
+	picture = "gold_hold"
+}
 
 
 
