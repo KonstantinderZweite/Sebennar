@@ -4,6 +4,8 @@ country_decisions = {
 			OR = {
 				tag = I45
 				was_tag = I45
+				tag = Z87
+				was_tag = Z87
 			}
 			has_country_flag = cyranvar_colonizing_domandrod
 			domandrod_region = {
