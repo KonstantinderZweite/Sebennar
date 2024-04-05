@@ -836,7 +836,7 @@ expansion_ideas = {
 				tag = A02
 				tag = A06
 				tag = Z08
-				tag = A33 
+				tag = A33
 			}
 		}
 		modifier = {
