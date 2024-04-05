@@ -1049,7 +1049,7 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	mercenary_manpower = -0.25
 	land_forcelimit_modifier = 1.5 #4 S
 	land_attrition = -0.75	#3.3 D
-	discipline = -0.10
+	discipline = -0.075
 	general_cost = 0.25
 	
 	manpower_recovery_speed = 0.25 #10 A
@@ -1079,10 +1079,10 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	
 	reserves_organisation = 4 		# 4 D Unbreakable
 	# morale_damage_received = -0.9 # 4 A Unbreakable
-	shock_damage_received = 0.525
+	shock_damage_received = 0.45
 	shock_damage = -0.5
 	fire_damage = -0.5
-	fire_damage_received = 0.525
+	fire_damage_received = 0.45
 	
 	war_exhaustion = -0.02	#negates attrition war exhaustion
 	

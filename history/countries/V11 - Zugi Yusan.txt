@@ -1,0 +1,23 @@
+setup_vision = yes
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 2
+primary_culture = eagle_command
+religion = eagle_worship
+technology_group = tech_eagle_hobgoblin
+capital = 6821
+
+1422.1.1 = {
+	monarch = {
+		name = "Ayla"
+		dynasty = "Ashborn"	
+		birth_date = 1410.7.2
+		adm = 5
+		dip = 5
+		mil = 6
+		female = yes
+	}
+	add_ruler_personality = scholar_personality 
+	add_ruler_personality = cruel_personality
+	add_ruler_personality = strict_personality
+}

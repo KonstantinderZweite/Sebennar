@@ -1,8 +1,8 @@
 capital = "Ganforo"
 
-owner = L14
-controller = L14
-add_core = L14
+owner = F65
+controller = F65
+add_core = F65
 culture = binwarji
 religion = fangaulan_pantheon
 hre = no

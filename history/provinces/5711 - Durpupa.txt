@@ -1,6 +1,6 @@
-owner = L10
-controller = L10
-add_core = L10
+owner = L08
+controller = L08
+add_core = L08
 culture = ndurubu
 religion = fangaulan_pantheon
 

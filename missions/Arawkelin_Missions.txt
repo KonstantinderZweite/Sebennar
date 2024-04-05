@@ -553,7 +553,19 @@ arawkelin_2 = {
 		position = 8
 		
 		trigger = {
-			province_id = 1366
+			1366 = {
+				trade_share = {
+					country = ROOT
+					share = 80
+				}
+			}
+			any_known_country = {
+				has_cannorian_tech_group = yes
+				has_opinion = {
+					who = ROOT
+					value = 100
+				}
+			}
 		}
 		
 		effect = {

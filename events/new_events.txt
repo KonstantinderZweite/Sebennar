@@ -293,7 +293,7 @@ Country_event = {
 	hidden = yes 
 	trigger = {
 	is_march = yes 
-	was_player = yes 
+	ai = no
 	NOT = { has_country_modifier = RuleBreakerMarch } 
 	}
 	option = { 
@@ -310,7 +310,7 @@ Country_event = {
 	desc = "new_events_16.d"
 	hidden = yes 
 	trigger = { 
-	was_player = yes 
+	ai = no
 	is_march = no 
 	has_country_modifier = RuleBreakerMarch
 	}
@@ -367,6 +367,7 @@ title = "new_events_19.t"
 desc = "new_events.19.d"
 picture = TRADEGOODS_eventPicture
 hidden = yes
+fire_only_once = yes
 trigger = {
 OR = {
 								
