@@ -453,19 +453,7 @@ generic_column_5 = {
 			stability = 2
 		}
 		effect = {
-			home_trade_node_effect_scope = {
-				random_trade_node_member_province = {
-						limit = {
-							owned_by = ROOT
-							}
-					add_province_modifier = {
-						name = manufactoring_center
-						duration = -1
-					}
-				}
-			}
 			country_event = { id = flavor_generic.3 }
-			country_event = { id = flavor_generic.4 }
 		}
 	}
 	##Mission End

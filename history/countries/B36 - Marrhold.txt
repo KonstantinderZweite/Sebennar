@@ -12,6 +12,7 @@ capital = 4097
 1000.1.1 = { 
 	set_estate_privilege = estate_mages_organization_state
 	set_country_flag = feudal_escann_kingdom 
+	set_country_flag = owns_hold_province
 }
 
 1442.3.17 = {

@@ -113,43 +113,30 @@ country_event = { #New Manufactoring Centers
 						limit = {
 							owned_by = ROOT
 							}
-					add_province_modifier = {
-						name = manufactoring_center
-						duration = -1
-					}
+					save_event_target_as = province1
 				}
-			}
-			
-	}
-}
-
-country_event = { #New Manufactoring Centers
-	id = flavor_generic.4
-	title = flavor_generic.4.t
-	desc = flavor_generic.4.d
-	picture = DIPLOMACY_eventPicture
-	
-	is_triggered_only = yes
-
-	trigger = {
-		#mission
-
-	}
-	
-	option = { #stock general
-			name = "flavor_generic.4.a"
-			home_trade_node_effect_scope = {
 				random_trade_node_member_province = {
 						limit = {
 							owned_by = ROOT
+							NOT = {
+								event_target:province1
 							}
+							}
+					save_event_target_as = province2
+				}
+			}
+			event_target:province1 = {
+			add_province_modifier = {
+						name = manufactoring_center
+						duration = -1
+			}
+			event_target:province2 = {
 					add_province_modifier = {
 						name = manufactoring_center
 						duration = -1
-					}
-				}
 			}
-			
+			}
+		}
 	}
 }
 country_event = { #Economic Direction
