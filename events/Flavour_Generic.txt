@@ -156,6 +156,7 @@ country_event = { #New Manufactoring Centers
 		}
 	}
 }
+}
 country_event = { #Economic Direction
 	id = flavor_generic.5
 	title = flavor_generic.5.t
