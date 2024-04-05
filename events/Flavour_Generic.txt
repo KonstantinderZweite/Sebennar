@@ -124,6 +124,18 @@ country_event = { #New Manufactoring Centers
 							}
 					save_event_target_as = province2
 				}
+				random_trade_node_member_province = {
+						limit = {
+							owned_by = ROOT
+							NOT = {
+								OR = {
+									event_target:province1
+									event_target:province2
+								}
+							}
+							}
+					save_event_target_as = province3
+				}
 			}
 			event_target:province1 = {
 			add_province_modifier = {
@@ -131,6 +143,11 @@ country_event = { #New Manufactoring Centers
 						duration = -1
 			}
 			event_target:province2 = {
+					add_province_modifier = {
+						name = manufactoring_center
+						duration = -1
+			}
+			event_target:province3 = {
 					add_province_modifier = {
 						name = manufactoring_center
 						duration = -1
