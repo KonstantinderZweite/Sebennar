@@ -2373,6 +2373,7 @@ adenica_5_missions = {
 					}
 				}
 				AND = {
+					NOT = { has_country_modifier = slackening_modifier }
 					hre_leagues_enabled = yes
 					in_or_leading_regent_court_league = yes
 					OR = {

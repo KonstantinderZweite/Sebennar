@@ -1187,6 +1187,7 @@ Centralization = {
 			
 		}
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			has_ruler_flag = servator_online
 			army_tradition = 70
 			mil_power = 200

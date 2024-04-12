@@ -2929,6 +2929,7 @@ tluukt_5z = {
 		}
 		
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			OR = {
 				AND = {
 					is_at_war = no

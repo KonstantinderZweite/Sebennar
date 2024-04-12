@@ -667,6 +667,7 @@ corintar_2_missions = {
 		}
 
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			escerfork_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -807,6 +808,7 @@ corintar_2_missions = {
 		}
 
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			custom_trigger_tooltip = {
 				tooltip = corintar_recruits_tt
 				all_known_country = {
@@ -980,6 +982,7 @@ corintar_2_missions = {
 		provinces_to_highlight = {}
 
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				calc_true_if = {
