@@ -467,12 +467,13 @@ on_startup = {
 		}
 		country_event = { id = bim_lau_flavour.4 days = 1 } #Bim Lau Necropolis Setup
     }
-
-	Y09 = { #tyrant system setup
-		country_event = {
-			id = bianfang.7
-			days = 1
-		}
+	if = {
+		limit = { tag = Y09 }
+		Y09 = { #tyrant system setup
+			country_event = {
+				id = bianfang.7
+				days = 1
+			}
 	}
 
 	#Khom civil war events START

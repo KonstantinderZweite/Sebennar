@@ -315,14 +315,10 @@ ai_colonialist = {
 		}			
 		modifier = {
 			factor = 1.1
-			exploration_ideas = 1
-		}			
-		modifier = {
-			factor = 1.1
 			maritime_ideas = 1
 		}
 		modifier = {
-			factor = 1.1
+			factor = 1.2
 			expansion_ideas = 1
 		}		
 		modifier = {
