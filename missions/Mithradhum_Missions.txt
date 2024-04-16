@@ -5,7 +5,7 @@ I05_North = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = I05 #Mithradhûm
+		tag = I05 #Mithradhï¿½m
 	}
 	has_country_shield = yes
 	
@@ -478,7 +478,7 @@ I05_Amldhir = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = I05 #Mithradhûm
+		tag = I05 #Mithradhï¿½m
 	}
 	has_country_shield = yes
 	
@@ -749,7 +749,7 @@ I05_Purity = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = I05 #Mithradhûm
+		tag = I05 #Mithradhï¿½m
 	}
 	has_country_shield = yes
 		
@@ -979,7 +979,7 @@ I05_Hold_Company = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = I05 #Mithradhûm
+		tag = I05 #Mithradhï¿½m
 	}
 	has_country_shield = yes
 	
@@ -1554,7 +1554,7 @@ I05_Mithril_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = I05 #Mithradhûm
+		tag = I05 #Mithradhï¿½m
 	}
 	has_country_shield = yes
 	
@@ -1858,7 +1858,7 @@ I05_Mithril_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = I05 #Mithradhûm
+		tag = I05 #Mithradhï¿½m
 	}
 	has_country_shield = yes
 		
@@ -2064,7 +2064,7 @@ I05_Escann = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = I05 #Mithradhûm
+		tag = I05 #Mithradhï¿½m
 	}
 	has_country_shield = yes
 	
@@ -2354,6 +2354,7 @@ I05_Escann = {
 		}
 		
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			if = {
 				limit = { has_dlc = "Mare Nostrum" }
 				calc_true_if = {

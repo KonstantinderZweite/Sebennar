@@ -1169,6 +1169,7 @@ goblin_den_column_3 = {
 		}
 		
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			OR = {
 				war_with = H79
 				H79 = { exists = no }

@@ -1966,6 +1966,7 @@ shatteredcrown_5 = {
 		position = 1
 		
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			OR = {
 				any_country = { 
 					culture_group = orcish
@@ -1994,6 +1995,7 @@ shatteredcrown_5 = {
 		position = 2
 		
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			calc_true_if = {
 				amount = 2
 				all_country = {
@@ -2031,6 +2033,7 @@ shatteredcrown_5 = {
 		}
 		
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			west_dwarovar_region = {
 				type = all
 				OR = {
@@ -2076,6 +2079,7 @@ shatteredcrown_5 = {
 		position = 3
 		
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			H81 = {
 				OR = {
 					is_subject_of = ROOT

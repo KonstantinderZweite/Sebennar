@@ -2650,6 +2650,7 @@ LAKE_3_2 = {
 		}
 		
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			custom_trigger_tooltip = {
 				tooltip = no_federation_crisis_tooltip
 				NOT = { has_disaster = lake_federation_crisis }

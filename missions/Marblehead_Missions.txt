@@ -873,6 +873,7 @@ marblehead_near_east = {
 		}
 		
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			U13 = {
 				OR = {
 					AND = {

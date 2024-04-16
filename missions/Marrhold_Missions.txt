@@ -253,6 +253,7 @@ marrhold = {
 				in_or_leading_regent_court_league = yes
 				in_or_leading_corinite_league = yes
 			}
+			NOT = { has_country_modifier = slackening_modifier }
 		}
 		
 		effect = {
