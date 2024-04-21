@@ -200,6 +200,13 @@ country_decisions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_estate = estate_artificers
+				}
+				set_country_flag = magic_artificery_artificery_only
+				update_artifice_points = yes
+			}
 			
 			#gets rid of all mages advisors and stuffs in your country
 			if = {
