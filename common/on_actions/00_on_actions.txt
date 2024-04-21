@@ -607,8 +607,17 @@ on_startup = {
 	}
 
 	#Birsartanses setup
-	F21 = {
+	if = {
+		limit = {
+			tag = F21
+		}
 		country_event = { id = flavour_birsartanses.0 }
+	}
+	if = {
+		limit = {
+			AI = no
+		}
+		country_event = { id = magic_ruler.0 }
 	}
 
 	if = {
