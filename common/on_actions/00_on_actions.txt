@@ -613,12 +613,6 @@ on_startup = {
 		}
 		country_event = { id = flavour_birsartanses.0 }
 	}
-	if = {
-		limit = {
-			AI = no
-		}
-		country_event = { id = magic_ruler.0 }
-	}
 
 	if = {
 		limit = { tag = R51 NOT = { check_variable = { diplomaticAnnexations = 1 } } }
