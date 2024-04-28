@@ -385,6 +385,9 @@ generic_column_5 = {
 	NOT = {tag = F46}
 	NOT = {tag = Z87}
 	NOT = {tag = H88}
+	NOT = {tag = F38}
+	NOT = {tag = F21}
+	NOT = {tag = I46}
 	}
 	
 	##Mission Start
