@@ -6205,6 +6205,7 @@ G27_imperial_branch_5 = {
 		} 
 
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			1815 = {
 				owner = {
 					OR = {

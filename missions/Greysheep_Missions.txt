@@ -617,6 +617,7 @@ greysheep_sheep_branch = {
 		}
 
 		trigger = {
+			NOT = { has_country_modifier = slackening_modifier }
 			manpower_percentage = 0.75
 			treasury = 200
 			total_development = 100
