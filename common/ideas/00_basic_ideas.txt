@@ -451,7 +451,7 @@ offensive_ideas = {
 	}
 	grand_army = {
 		land_forcelimit_modifier = 0.15
-		allowed_rajput_fraction = 0.1
+		special_unit_forcelimit = 0.1
 	}
 	napoleonic_warfare = {
 		discipline = 0.05
