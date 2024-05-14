@@ -1111,12 +1111,18 @@ busilar_5 = {
 		
 		trigger = {
 			prestige = 25
-			emperor = {
-					has_opinion = {
-						who = ROOT
-						value = 150
+			OR = {
+					AND = {
+						emperor = {
+							has_opinion = {
+							who = ROOT
+							value = 150
+							}
+						}
 					}
+					NOT = { is_emperor = yes }
 				}
+
 		}
 		
 		effect = {
