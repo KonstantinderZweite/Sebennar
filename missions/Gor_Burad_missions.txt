@@ -408,18 +408,9 @@ gor_burad_3a = {
 				}
 				AND = {
 					H77 = {
-						if = {
-							limit = { has_dlc = "Dharma" }	
-							has_opinion_modifier = {
-								who = ROOT
-								modifier = scornfully_insulted
-							}
-						}
-						else = {
-							has_opinion_modifier = {
-								who = ROOT
-								modifier = insulted
-							}							
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = scornfully_insulted
 						}
 					}
 					army_size = H77
@@ -468,13 +459,9 @@ gor_burad_4a = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = gor_burad_borborduz_reignited_trigger_tt
-				OR = {
-					has_country_modifier = gor_burad_basalt_rage_5
-					has_country_modifier = gor_burad_basalt_rage_6
-					has_country_modifier = gor_burad_basalt_rage_7
-					has_country_modifier = gor_burad_basalt_rage_8
-					has_country_modifier = gor_burad_basalt_rage_9
-					has_country_modifier = gor_burad_basalt_rage_10
+				check_variable = {
+					which = gor_burad_var_basalt_rage_event_num
+					value = 5
 				}
 			}
 			adm_power = 200
@@ -646,18 +633,9 @@ gor_burad_5a = {
 			OR = {
 				4093 = {
 					owner = {
-						if = {
-							limit = { has_dlc = "Dharma" }	
-							has_opinion_modifier = {
-								who = ROOT
-								modifier = scornfully_insulted
-							}
-						}
-						else = {
-							has_opinion_modifier = {
-								who = ROOT
-								modifier = insulted
-							}							
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = scornfully_insulted
 						}
 					}
 				}
@@ -691,7 +669,7 @@ gor_burad_5a = {
 	}
 	
 	gor_burad_the_reckoning = {
-		position = 7
+		position = 6
 		icon = mission_impaled_soldies
 		
 		required_missions =  {
@@ -840,11 +818,12 @@ gor_burad_1b = {
 		}
 		
 		provinces_to_highlight = {
-			area = zarn_area
-			OR = {
-				is_city = no
-				not = {
-					owned_by = ROOT
+			zarn_area = {
+				OR = {
+					is_city = no
+					not = {
+						owned_by = ROOT
+					}
 				}
 			}
 		}
@@ -1121,7 +1100,6 @@ gor_burad_3b = {
 		}
 		
 		trigger = {
-			mission_completed = gor_burad_borborduz_reignited
 			has_disaster = gor_burad_the_eruption
 			4041 = {
 				development = 30
@@ -1352,13 +1330,8 @@ gor_burad_3b = {
 		trigger = {
 			4039 = {
 				hold_condition = { Repaired = yes }
-			}
-			custom_trigger_tooltip = {
-				tooltip = gor_burad_truly_basalt_hold_trigger_tt	
-				4039 = {
-					NOT = {
-						devastation = 0.01
-					}
+				NOT = {
+					devastation = 0.01
 				}
 			}
 			stability = 1
@@ -1434,21 +1407,11 @@ gor_burad_4b = {
 		}
 		
 		trigger = {
-			OR = {
-				2963 = {
-					owned_by = ROOT
-					hold_condition = { Repaired = yes }
-					development = 40
-				}
-				2963 = {
-					owner = {
-						has_spy_network_from = {
-							who = ROOT
-							value = 40
-						}
-					}
-				}
-			}
+			2963 = {
+				owned_by = ROOT
+				hold_condition = { Repaired = yes }
+				development = 40
+			}			
 			check_variable = {
 				which = gor_burad_industry
 				value = 40
@@ -1541,6 +1504,9 @@ gor_burad_4b = {
 				owned_by = ROOT
 				hold_condition = { Repaired = yes }
 				development = 40
+				has_building = mage_tower
+			}
+			2973 = { # Ovdal Lodhum
 				has_building = mage_tower
 			}
 			4039 = { # Gor Burad
@@ -1717,7 +1683,12 @@ gor_burad_1c = {
 		}
 		
 		trigger = {
-			adm_power = 100
+			estate_influence = {
+				estate = estate_burghers
+				influence = 60
+			}
+			crown_land_share = 40
+			adm_power = 100			
 			buradforge_area = {
 				type = all
 				has_manufactory_trigger = yes
@@ -2160,13 +2131,7 @@ gor_burad_3c = {
 		}
 		
 		trigger = {
-			OR = {
-				is_hegemon = yes
-				development_in_provinces = {
-					value = 1500
-					region = serpentreach_region
-				}
-			}
+			is_hegemon = yes
 			custom_trigger_tooltip = {
 				tooltip = gor_burad_the_everraging_realm_trigger_tt_1
 				NOT = {
@@ -2195,6 +2160,10 @@ gor_burad_3c = {
 						influence = 40
 					}
 				}
+			}
+			development_in_provinces = {
+				value = 1500
+				region = serpentreach_region
 			}
 		}
 		
@@ -2230,18 +2199,9 @@ gor_burad_4c = {
 		
 		trigger = {
 			mercantilism = 30
-			OR = {
-				4100 = {
-					hold_condition = { Repaired = yes }
-					has_dwarven_hold_2 = yes
-				}
-				4100 = {
-					if = {
-						limit = { has_dlc = "Dharma" }	
-						province_has_center_of_trade_of_level = 3
-					}
-					has_building = ramparts
-				}
+			4100 = {
+				hold_condition = { Repaired = yes }
+				has_dwarven_hold_2 = yes
 			}
 		}
 		
@@ -2355,7 +2315,7 @@ gor_burad_4c = {
 		}
 		
 		trigger = {
-			monthly_income = 400
+			monthly_income = 500
 			check_variable = {
 				which = gor_burad_industry
 				value = 120

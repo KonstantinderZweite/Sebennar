@@ -20,6 +20,7 @@ capital = 5618
 		adm = 2
 		dip = 2
 		mil = 3
+		female = no
 	}
 	add_ruler_personality = greedy_personality
 	add_country_modifier = {

@@ -343,7 +343,7 @@ adshaw_1_missions_nc = {
 		}
 		
 		trigger = {
-			owns_or_non_sovereign_subject_of = 985
+			owns_core_province = 985
 			adm_power = 100
 		}
 		
@@ -807,13 +807,13 @@ adshaw_2_missions_s = {
 					limit = { has_leader = "Berthold the Huntsman" }
 					has_spy_network_in = {
 						who = Z33
-						value = 30
+						value = 5
 					}
 				}
 				else = {
 					has_spy_network_in = {
 						who = Z33
-						value = 50
+						value = 5
 					}
 				}
 				AND = {
@@ -2171,8 +2171,18 @@ adshaw_3_missions_e = {
 				}
 				add_accepted_culture = city_goblin
 			}
-			switch_bayvic_to_bayvek = yes
 			723 = {
+				if = {
+					limit = {
+						723 = {
+							NOT = {
+								culture = city_goblin
+							}
+						}
+					}
+					change_culture = city_goblin
+					change_province_name = "Bayvek"
+				}
 				if = {
 					limit = {
 						723 = {
@@ -3405,10 +3415,7 @@ adshaw_5_missions_mcv = {
 		
 		effect = {
 			add_dip_power = -250
-			if = {
-				limit = { NOT = { senior_union_with = Z45  } }
-				create_union = Z45
-			}
+			create_union = Z45
 		}
 	}
 	

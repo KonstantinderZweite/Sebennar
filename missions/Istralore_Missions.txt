@@ -20,6 +20,13 @@ A45_west_expansion = {
 		}
 		
 		effect = {
+			damerian_dales_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			the_commons_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -77,27 +84,18 @@ A45_west_expansion = {
 		}
 		
 		effect = {
-			if = {
-				limit = { 
-					5 = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-				}
-				5 = {
-					add_permanent_claim = ROOT
-				}
+			add_dip_power = 50
+			add_adm_power = 50
+			add_country_modifier = {
+				name = A45_national_integration
+				duration = 9125 #25 years
 			}
-			if = {
-				limit = { 
-					2 = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
+			konwell_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
 				}
-				2 = {
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -746,7 +744,7 @@ A45_corinite_emperor = {
 		
 		effect = {
 			add_country_modifier = {
-				name = "army_enthusiasm"
+				name = army_recovery
 				duration = 9125 #25 years
 			}
 		}
@@ -772,7 +770,6 @@ A45_corinite_emperor = {
 				OR = {
 					AND = {
 						religion = corinite
-						is_league_leader = yes
 					}
 					hre_religion_locked = yes
 					hre_religion_treaty = yes
@@ -780,22 +777,13 @@ A45_corinite_emperor = {
 			}
 			else = {
 				religion = corinite
-				is_league_leader = yes
 				hre_religion_treaty = no
 			}
 		}
 		
 		effect = {
-			if = {
-				limit = {
-					NOT = {
-						hre_religion_locked = yes
-						hre_religion_treaty = yes
-					}
-				}
 				add_legitimacy = 25
-				add_prestige = 25
-			}
+				add_prestige = 50
 		}
 	}
 	
@@ -857,13 +845,17 @@ A45_corinite_emperor = {
 				}
 				add_claim = ROOT
 			}
-			uelaire_area = {
+			dames_forehead_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_claim = ROOT
 			}
+			add_country_modifier = {
+				name = A45_corinite_emporer
+				duration = 36500 #100 years
+			}	
 		}
 	}
 	
@@ -1008,6 +1000,9 @@ A45_istralore_army = {
 				full_idea_group = quality_ideas
 				full_idea_group = offensive_ideas
 				full_idea_group = defensive_ideas
+				full_idea_group = quantity_deas
+				full_idea_group = plutocratic_ideas
+				full_idea_group = aristocratic_ideas
 			}
 		}
 		
@@ -1054,6 +1049,18 @@ A45_istralore_army = {
 				name = "istralore_iron_supply"
 				duration = 9125 #25 years
 			}
+			276 = {
+			add_province_modifier = {
+					name = A45_dale_iron_mines
+					duration = -1
+				}
+			}
+			277 = {
+			add_province_modifier = {
+					name = A45_dale_iron_mines
+					duration = -1
+				}
+			}
 		}
 	}
 	
@@ -1065,7 +1072,7 @@ A45_istralore_army = {
 		trigger = {
 			has_global_modifier_value = {
 				which = land_morale
-				value = 0.75
+				value = 0.65
 			}
 			army_tradition = 50
 		}
@@ -1084,17 +1091,13 @@ A45_istralore_army = {
 		position = 6
 		
 		trigger = {
-			all_known_country = {
-				OR = {
-					is_part_of_hre = no
-					NOT = { army_size = ROOT }
-				}
-			}
+			land_forcelimit = 100
+			num_of_generals = 1
 		}
 		
 		effect = {
 			add_country_modifier = {
-				name = "istralore_empire_marshal"
+				name = A45_marshal_empire
 				duration = -1
 			}
 		}
@@ -1124,12 +1127,10 @@ A45_istralore_army = {
 		
 		effect = {
 			custom_tooltip = istralore_imperial_levy_tooltip
-			hidden_effect = {
 				add_country_modifier = {
 					name = "istralore_imperial_levy"
 					duration = -1
 				}
-			}
 		}
 	}
 	
@@ -1172,7 +1173,7 @@ A45_istralore_army = {
 		
 		effect = {
 			add_country_modifier = {
-				name = "istralari_commanders_istralore"
+				name = A45_commanders
 				duration = -1
 			}
 			custom_tooltip = istralore_istralari_commanders_tooltip

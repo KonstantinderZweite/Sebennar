@@ -3,7 +3,6 @@
 owner = F25
 controller = F25
 add_core = F25
-add_core = F83
 culture = zanite
 religion = bulwari_sun_cult
 

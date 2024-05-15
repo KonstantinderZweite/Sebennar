@@ -1088,11 +1088,25 @@ corintar_3_missions = {
 		trigger = {
 			OR = {
 				any_ally = {
-					has_100_opinion_improved_relation = { target = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = corintar_max_improve_relations_tt
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = improved_relation
+							value = 100
+						}
+					}
 				}
 				any_known_country = {
 					has_spy_network_from = { who = ROOT value = 50 }
-					has_100_opinion_improved_relation = { target = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = corintar_max_improve_relations_tt
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = improved_relation
+							value = 100
+						}
+					}
 				}
 			}
 		}
@@ -1104,7 +1118,14 @@ corintar_3_missions = {
 							alliance_with = ROOT
 							has_spy_network_from = { who = ROOT value = 50 }
 						}
-						has_100_opinion_improved_relation = { target = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = corintar_max_improve_relations_tt
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = improved_relation
+							value = 100
+							}
+						}
 					}
 				add_country_modifier = { name = corintar_corintar_chapter duration = -1 }
 				hidden_effect = { set_country_flag = corintar_chapter }
@@ -2056,7 +2077,14 @@ corintar_4_missions = {
 							primary_culture = gray_orc
 							tag = Z50
 						}
-						has_100_opinion_improved_relation = { target = ROOT }
+						custom_trigger_tooltip = {
+							tooltip = corintar_max_improve_relations_tt
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = improved_relation
+								value = 100
+							}
+						}
 					}
 					amount = 2
 				}

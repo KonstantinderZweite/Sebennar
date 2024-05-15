@@ -15,6 +15,6 @@ trade_goods = wool
 
 capital = ""
 is_city = yes
-owner = I51
-controller = I51
-add_core = I51
+owner = I61
+controller = I61
+add_core = I61

@@ -114,7 +114,7 @@ A11_wine_missions_slot = {
 		
 		provinces_to_highlight = {
 			OR = { 
-				province_id = 1445
+				province_id = 1720
 				province_id = 1690
 				province_id = 1693
 				province_id = 1683
@@ -125,7 +125,7 @@ A11_wine_missions_slot = {
 		}
 		
 		trigger = {
-			1445 = {
+			1720 = {
 				is_strongest_trade_power = ROOT
 			}
 			1690 = {
@@ -415,8 +415,7 @@ A11_diplomacy_missions_slot = {
 		position = 3
 		
 		trigger = {
-			has_idea_group = exploration_ideas
-			exploration_ideas = 1
+			has_idea = quest_for_the_new_world
 			colonial_endralliande = {
 				has_discovered = ROOT
 			}

@@ -1,9 +1,7 @@
 
 # No previous file for Tucume
-owner = G43
-controller = G43
-add_core = G43
-tribal_owner = G43
+
+
 culture = harafe
 religion = dai_nadeilhil
 capital = ""

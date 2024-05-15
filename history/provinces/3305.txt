@@ -1,7 +1,6 @@
 
 culture = chiunife  
-religion = great_tceusluhd
-center_of_trade = 1
+religion = animism
 
 hre = no
 

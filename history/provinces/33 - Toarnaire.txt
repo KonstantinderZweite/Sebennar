@@ -1,8 +1,8 @@
 
 #33 - Neva | 
 
-owner = Z68
-controller = Z68
+owner = A87
+controller = A87
 add_core = Z68
 add_core = A87
 add_core = A78
@@ -29,11 +29,11 @@ is_city = yes
 
 
 add_permanent_province_modifier = {
-	name = half_elven_minority_integrated_large
+	name = half_elven_minority_coexisting_large
 	duration = -1
 }
 
 add_permanent_province_modifier = {
-	name = elven_minority_integrated_small
+	name = elven_minority_coexisting_small
 	duration = -1
 }

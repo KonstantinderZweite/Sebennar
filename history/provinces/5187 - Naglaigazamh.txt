@@ -1,7 +1,7 @@
-owner = I80
-controller = I80
-add_core = I80
-add_core = I50
+owner = I49
+controller = I49
+add_core = I49
+add_core = I49
 culture = plain_centaur
 religion = irdaeos_worship
 capital = ""

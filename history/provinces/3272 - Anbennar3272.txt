@@ -15,6 +15,6 @@ trade_goods = incense
 
 capital = ""
 is_city = yes
-owner = I48
-controller = I48
-add_core = I48 
+owner = I83
+controller = I83
+add_core = I83 

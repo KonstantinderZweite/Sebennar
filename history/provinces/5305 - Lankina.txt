@@ -1,4 +1,8 @@
 #
+
+owner = J30
+controller = J30
+add_core = J30
 culture = metsamic
 religion = kodave_followers
 
@@ -13,8 +17,5 @@ trade_goods = salt
 capital = "Shield of the West"
 
 is_city = yes
-owner = J30
-controller = J30
-add_core = J30
 center_of_trade = 1
 add_devastation = 30

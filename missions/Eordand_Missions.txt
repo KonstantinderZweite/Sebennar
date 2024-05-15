@@ -1034,8 +1034,8 @@ eordand_2 = {
 			OR = {
 				AND = {
 					OR = {
-						province_id = 2092
-						province_id = 4658
+						province_id = 2087
+						province_id = 2088
 					}
 					NOT = { owned_by = ROOT }
 				}
@@ -1055,10 +1055,10 @@ eordand_2 = {
 		}
 		
 		trigger = {
-			2092 = {
+			2087 = {
 				owned_by = ROOT
 			}
-			4658 = {
+			2088 = {
 				owned_by = ROOT
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -1068,19 +1068,13 @@ eordand_2 = {
 		}
 		
 		effect = {
-			drabs_cambann_area = {
-				add_permanent_claim = ROOT
-			}
-			gommiochand_area = {
-				add_permanent_claim = ROOT
-			}
-			koonbepa_area = {
-				add_permanent_claim = ROOT
-			}
 			taldoud_kaysa_area = {
 				add_permanent_claim = ROOT
 			}
-			eekinahi_area = {
+			mestikardu_area = {
+				add_permanent_claim = ROOT
+			}
+			the_tokal_area = {
 				add_permanent_claim = ROOT
 			}
 		}
@@ -1092,7 +1086,7 @@ eordand_2 = {
 		required_missions = { eord_2_silence_cacophony }
 		
 		provinces_to_highlight = {
-			province_id = 4658
+			province_id = 2088
 			NOT = {
 				AND = {
 					owned_by = ROOT
@@ -1105,7 +1099,7 @@ eordand_2 = {
 		}
 		
 		trigger = {
-			4658 = {
+			2088 = {
 				owned_by = ROOT
 				is_core = ROOT
 				has_trade_building_trigger = yes
@@ -1119,12 +1113,12 @@ eordand_2 = {
 				limit = {
 					NOT = {
 						OR = {
-							4658 = { has_province_modifier = caamas_urdea_samrad_mod }
-							4658 = { has_province_modifier = kairncal_urdea_samrad_mod }
+							2088 = { has_province_modifier = caamas_urdea_samrad_mod }
+							2088 = { has_province_modifier = kairncal_urdea_samrad_mod }
 						}
 					}
 				}
-				4658 = { 
+				2088 = { 
 					add_province_modifier = { name = caamas_urdea_samrad_mod duration = -1 }
 					change_province_name = "Urdea Samrad" #New South Summer
 					rename_capital = "Urdea Samrad"
@@ -1132,7 +1126,7 @@ eordand_2 = {
 			}
 			else = {
 				add_mercantilism = 5
-				4658 = {
+				2088 = {
 					add_base_tax = 2
 					add_base_production = 2
 					add_base_manpower = 2
@@ -1293,7 +1287,6 @@ eordand_2 = {
 		}
 		
 		effect = {
-			increase_free_state_action = { action = genocide }
 			leechdens_region = {
 				add_permanent_claim = ROOT
 			}
@@ -1425,12 +1418,19 @@ eordand_deepwoods_conquest_2 = {
 		required_missions = { eordconq_3_beachhead_faithful }
 		
 		provinces_to_highlight = {
-			province_group = deepwoods_shadow_grove
+			OR = {
+				area = arsydpydru_area
+				area = ghul_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			deepwoods_shadow_grove = {
+			arsydpydru_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ghul_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1440,13 +1440,15 @@ eordand_deepwoods_conquest_2 = {
 			add_adm_power = 25
 			add_dip_power = 25
 			add_mil_power = 25
-			increase_free_state_action = { action = genocide }
 			harpy_hills_region = {
 				discover_country = ROOT
 			}
 			every_owned_province = {
 				limit = { 
-					province_group = deepwoods_shadow_grove
+					OR = {
+						area = arsydpydru_area
+						area = ghul_area
+					}
 				}
 				add_ruinborn_minority_size_effect = yes
 			}
@@ -2584,12 +2586,19 @@ eordand_deepwoods_conquest_3 = {
 		required_missions = { eordconq_3_beachhead_faithful }
 		
 		provinces_to_highlight = {
-			province_group = deepwoods_flower_grove
+			OR = {
+				area = scothaear_area
+				area = scothalar_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			deepwoods_flower_grove = {
+			scothalar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			scothaear_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2604,7 +2613,10 @@ eordand_deepwoods_conquest_3 = {
 			}
 			every_owned_province = {
 				limit = { 
-					province_group = deepwoods_flower_grove
+					OR = {
+						area = scothaear_area
+						area = scothalar_area
+					}
 				}
 				add_ruinborn_minority_size_effect = yes
 			}
@@ -2621,12 +2633,19 @@ eordand_deepwoods_conquest_3 = {
 		}
 		
 		provinces_to_highlight = {
-			province_group = deepwoods_thorn_grove
+			OR = {
+				area = dennesayrn_area
+				area = drennen_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			deepwoods_thorn_grove = {
+			dennesayrn_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			drennen_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2638,7 +2657,10 @@ eordand_deepwoods_conquest_3 = {
 			add_mil_power = 25
 			every_owned_province = {
 				limit = { 
-					province_group = deepwoods_thorn_grove
+					OR = {
+						area = dennesayrn_area
+						area = drennen_area
+					}
 				}
 				add_ruinborn_minority_size_effect = yes
 			}
@@ -2728,49 +2750,81 @@ eordand_deepwoods_conquest_3 = {
 			}
 			if = {
 				limit = { religion = spring_court }
-				deepwoods_flower_grove = {
+				scothaear_area = {
+					religion = spring_court
+				}
+				scothalar_area = {
 					religion = spring_court
 				}
 				development_in_provinces = {
-					province_group = deepwoods_flower_grove
+					OR = {
+						area = scothaear_area
+						area = scothalar_area
+					}
 					value = 70
 				}
 			}
 			else_if = {
 				limit = { religion = summer_court }
-				deepwoods_lake_grove = { religion = summer_court }
+				sawallar_area = {
+					religion = summer_court
+				}
+				sawelear_area = {
+					religion = summer_court
+				}
 				development_in_provinces = {
-					province_group = deepwoods_lake_grove
+					OR = {
+						area = sawallar_area
+						area = sawelear_area
+					}
 					value = 70
 				}
 			}
 			else_if = {
 				limit = { religion = autumn_court }
-				deepwoods_hunter_grove = {
+				fealmyraeth_area = {
+					religion = autumn_court
+				}
+				coryllann_area = {
 					religion = autumn_court
 				}
 				development_in_provinces = {
-					province_group = deepwoods_hunter_grove
+					OR = {
+						area = fealmyraeth_area
+						area = coryllann_area
+					}
 					value = 65
 				}
 			}
 			else_if = {
 				limit = { religion = winter_court }
-				deepwoods_river_grove = {
+				criodharka_area = {
+					religion = winter_court
+				}
+				yfelorr_area = {
 					religion = winter_court
 				}
 				development_in_provinces = {
-					province_group = deepwoods_river_grove
+					OR = {
+						area = criodharka_area
+						area = yfelorr_area
+					}
 					value = 50
 				}
 			}
 			else_if = {
 				limit = { religion = eordellon }
-				deepwoods_mountain_grove = {
+				clirypriah_area = {
+					religion = eordellon
+				}
+				prehnryn_area = {
 					religion = eordellon
 				}
 				development_in_provinces = {
-					province_group = deepwoods_mountain_grove
+					OR = {
+						area = clirypriah_area
+						area = prehnryn_area
+					}
 					value = 70
 				}
 			}
@@ -2785,7 +2839,10 @@ eordand_deepwoods_conquest_3 = {
 				deepwoods_superregion = {
 					add_province_modifier = { name = eord_winds_of_growth duration = -1 }
 				}
-				deepwoods_flower_grove = {
+				scothaear_area = {
+					add_province_modifier = { name = eord_vernal_wellspring duration = -1 }
+				}
+				scothalar_area = {
 					add_province_modifier = { name = eord_vernal_wellspring duration = -1 }
 				}
 			}
@@ -2794,7 +2851,10 @@ eordand_deepwoods_conquest_3 = {
 				deepwoods_superregion = {
 					add_province_modifier = { name = eord_winds_of_prosperity duration = -1 }
 				}
-				deepwoods_lake_grove = {
+				sawelear_area = {
+					add_province_modifier = { name = eord_estival_wellspring duration = -1 }
+				}
+				sawallar_area = {
 					add_province_modifier = { name = eord_estival_wellspring duration = -1 }
 				}
 			}
@@ -2803,7 +2863,10 @@ eordand_deepwoods_conquest_3 = {
 				deepwoods_superregion = {
 					add_province_modifier = { name = eord_winds_of_vigilance duration = -1 }
 				}
-				deepwoods_hunter_grove = {
+				fealmyraeth_area = {
+					add_province_modifier = { name = eord_autumnal_wellspring duration = -1 }
+				}
+				coryllann_area = {
 					add_province_modifier = { name = eord_autumnal_wellspring duration = -1 }
 				}
 			}
@@ -2812,7 +2875,10 @@ eordand_deepwoods_conquest_3 = {
 				deepwoods_superregion = {
 					add_province_modifier = { name = eord_winds_of_serenity duration = -1 }
 				}
-				deepwoods_river_grove = {
+				criodharka_area = {
+					add_province_modifier = { name = eord_hiemal_wellspring duration = -1 }
+				}
+				yfelorr_area = {
 					add_province_modifier = { name = eord_hiemal_wellspring duration = -1 }
 				}
 			}
@@ -2821,7 +2887,10 @@ eordand_deepwoods_conquest_3 = {
 				deepwoods_superregion = {
 					add_province_modifier = { name = eord_winds_of_equilibrium duration = -1 }
 				}
-				deepwoods_mountain_grove = {
+				clirypriah_area = {
+					add_province_modifier = { name = eord_well_of_stability duration = -1 }
+				}
+				prehnryn_area = {
 					add_province_modifier = { name = eord_well_of_stability duration = -1 }
 				}
 			}
@@ -3331,7 +3400,7 @@ eordand_4 = {
 					key = STRONG_MERCHANTS
 				}
 			}
-			1957 = {
+			2855 = {
 				add_trade_modifier = {
 					who = ROOT
 					duration = -1
@@ -3669,12 +3738,19 @@ eordand_deepwoods_conquest_4 = {
 		required_missions = { eordconq_3_beachhead_faithful }
 		
 		provinces_to_highlight = {
-			province_group = deepwoods_lake_grove
+			OR = {
+				area = sawallar_area
+				area = sawelear_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			deepwoods_lake_grove = {
+			sawallar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sawelear_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -3695,7 +3771,10 @@ eordand_deepwoods_conquest_4 = {
 			}
 			every_owned_province = {
 				limit = { 
-					province_group = deepwoods_lake_grove
+					OR = {
+						area = sawelear_area
+						area = sawallar_area
+					}
 				}
 				add_ruinborn_minority_size_effect = yes
 			}
@@ -4768,7 +4847,7 @@ eordand_5_domandrod = {
 					}
 				}
 				AND = {
-					province_id = 6557
+					province_id = 6554
 					NOT = {
 						AND = {
 							owned_by = ROOT
@@ -4788,7 +4867,7 @@ eordand_5_domandrod = {
 				area = domandrod_gladeway_4_area
 				value = 30
 			}
-			6557 = {
+			6554 = {
 				owned_by = ROOT
 				development = 15
 			}
@@ -4798,7 +4877,7 @@ eordand_5_domandrod = {
 			domandrod_gladeway_4_area = {
 				add_province_modifier = { name = eord_autumn_glade duration = -1 }
 			}
-			6557 = {
+			6554 = {
 				add_province_modifier = { name = eord_autumn_city duration = -1 }
 				center_of_trade = 1
 			}
@@ -4827,7 +4906,7 @@ eordand_5_domandrod = {
 					}
 				}
 				AND = {
-					province_id = 6554
+					province_id = 6557
 					NOT = {
 						AND = {
 							owned_by = ROOT
@@ -4847,7 +4926,7 @@ eordand_5_domandrod = {
 				area = domandrod_gladeway_1_area
 				value = 30
 			}
-			6554 = {
+			6557 = {
 				owned_by = ROOT
 				development = 15
 			}
@@ -4857,7 +4936,7 @@ eordand_5_domandrod = {
 			domandrod_gladeway_1_area = {
 				add_province_modifier = { name = eord_winter_glade duration = -1 }
 			}
-			6554 = {
+			6557 = {
 				add_province_modifier = { name = eord_winter_city duration = -1 }
 				center_of_trade = 1
 			}

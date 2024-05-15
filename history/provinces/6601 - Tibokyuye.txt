@@ -1,8 +1,8 @@
 # No previous file for Nakhchivan
 
-owner = L33
-controller = L33
-add_core = L33
+owner = L38
+controller = L38
+add_core = L38
 culture = amezatany
 religion = nakavy_avo
 capital = ""

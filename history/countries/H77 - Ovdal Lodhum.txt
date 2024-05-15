@@ -50,8 +50,6 @@ fixed_capital = 2973
 		dip = 3
 		mil = 5
 	}
-	set_heir_flag = long_lived_ruler
-
 	queen = {
 		country_of_origin = H77
 		name = "Dwalra"
@@ -63,5 +61,4 @@ fixed_capital = 2973
 		dip = 5
 		mil = 2
 	}
-	set_consort_flag = long_lived_ruler
 }

@@ -3,7 +3,6 @@ dartax_1 = {
 	slot = 1
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
 		OR = {
 			tag = F22
@@ -466,7 +465,6 @@ dartax_2 = {
 	slot = 2
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
 		OR = {
 			tag = F22
@@ -648,7 +646,7 @@ dartax_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			lawassar_area = {
+			upper_gelkali_area = {
 				limit = {
 					NOT = {
 						owned_by = ROOT
@@ -871,7 +869,6 @@ dartax_3 = {
 	slot = 3
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
 		OR = {
 			tag = F22
@@ -1082,7 +1079,7 @@ dartax_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = gelkalis_area
-				area = lawassar_area
+				area = upper_gelkali_area
 				area = siffiraeri_area
 				area = kuzak_area
 			}
@@ -1096,7 +1093,7 @@ dartax_3 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			lawassar_area = {
+			upper_gelkali_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -1120,7 +1117,7 @@ dartax_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			nansalen_area = {
+			nanshalen_area = {
 				limit = {
 					NOT = {
 						owned_by = ROOT
@@ -1292,7 +1289,6 @@ dartax_4 = {
 	slot = 4
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
 		OR = {
 			tag = F22
@@ -1557,7 +1553,6 @@ dartax_5 = {
 	slot = 5
 	generic = no
 	ai = yes
-	has_country_shield = yes
 	potential = {
 		OR = {
 			tag = F22

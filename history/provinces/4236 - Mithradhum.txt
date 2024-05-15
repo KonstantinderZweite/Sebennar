@@ -3,7 +3,7 @@
 
 culture = black_orc
 religion = old_dookan
-trade_goods = unknown
+trade_goods = mithril
 hre = no
 base_tax = 5
 base_production = 7

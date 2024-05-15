@@ -3,9 +3,9 @@
 
 owner = U05
 controller = U05
+add_core = U05
 add_core = U01
-add_core = L28
-culture = korosheshi
+culture = hapremiti
 religion = elikhetist
 
 hre = no
@@ -20,7 +20,7 @@ capital = ""
 
 is_city = yes
 
-
+fort_15th = yes
 
 
 

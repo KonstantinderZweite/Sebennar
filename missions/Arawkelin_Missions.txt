@@ -264,8 +264,12 @@ arawkelin_1 = {
 		position = 8
 		
 		trigger = {
-			alliance_with = Y20
-			reverse_has_opinion = { who = Y20 value = 200 }
+			tag = Y20
+			alliance_with = ROOT
+			has_opinion = {
+				who = ROOT
+				value = 200
+			}
 		}
 		
 		effect = {
@@ -289,13 +293,14 @@ arawkelin_1 = {
 		position = 9
 		
 		trigger = {
-			any_known_country = {
-				OR = {
-					tag = A01
-					tag = A16
-					has_reform = wine_lord_reform
-				}
-				has_opinion = { who = ROOT value = 150 }
+			OR = {
+				tag = A01
+				tag = A16
+				has_reform = wine_lord_reform
+			}
+			has_opinion = {
+				who = ROOT
+				value = 150
 			}
 		}
 		
@@ -942,7 +947,7 @@ arawkelin_3 = {
 			AND = {
 				region = lupulan_rainforest_region
 				country_or_non_sovereign_subject_holds = ROOT
-				NOT = { religion = ravelian }
+				NOT = { religion = ravellian }
 			}
 		}
 
@@ -974,8 +979,8 @@ arawkelin_3 = {
 			AND = {
 				region = lupulan_rainforest_region
 				country_or_non_sovereign_subject_holds = ROOT
-				NOT = { religion = ravelian }
-				NOT = { culture_group = kelino }
+				NOT = { religion = ravellian }
+				NOT = { culture = kelino }
 			}
 		}
 
@@ -992,7 +997,7 @@ arawkelin_3 = {
 			}
 			lupulan_rainforest_region = {
 				type = all
-				culture_group = kelino
+				culture = kelino
 				religion = ravelian
 			}
 		}
@@ -1061,6 +1066,8 @@ arawkelin_4 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 3
+				has_terrain = jungle
+				region = lupulan_rainforest_region
 				has_province_modifier = arawkelin_deforestation_in_progress
 			}
 			arawkelin_area = {
@@ -1118,8 +1125,8 @@ arawkelin_4 = {
 				NOT = { province_id = 4963 }
 				NOT = {
 					OR = {
-						has_building = workshop
-						has_building = counting_house
+					has_building = workshop
+					has_building = counting_house
 					}
 				}
 				NOT = {
@@ -1423,7 +1430,7 @@ arawkelin_5 = {
 		}
 		
 		effect = {
-			pingurnsai_area = {
+			agluwadai_area = {
 				add_province_modifier = {
 					name = arawkelin_countryside_conversion
 					duration = 9125

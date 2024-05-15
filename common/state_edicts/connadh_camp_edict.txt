@@ -5,7 +5,7 @@ connadh_camp_edict = {
 	}
 	
 	allow = {
-		always = yes
+		NOT = { has_country_flag = disable_all_state_edicts_bool }
 	}
 	
 	modifier = {

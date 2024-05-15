@@ -47,7 +47,7 @@ namespace = flavor_rogieria
 		# name = "flavor_rogieria.1.b"
 		# ai_chance = { factor = 1 }	
 		# define_heir = {
-			# dynasty = "síl Rogieria"	#of the crossing
+			# dynasty = "sï¿½l Rogieria"	#of the crossing
 			# age = 16
 			# male = yes
 			# change_adm = 1
@@ -111,7 +111,10 @@ country_event = {
 		ai_chance = { factor = 1 }
 		if = {
 			limit = { 
-				NOT = { has_ruler_flag = rogieria_rogier_alive }
+				NOT = {
+					has_ruler = "Rogier"
+					dynasty = "Silmuna"
+				}
 			}
 			define_ruler = {
 				name = "Rogier 'Young Owl'"
@@ -144,14 +147,13 @@ country_event = {
 			}
 			hidden_effect = {
 				add_heir_personality = silver_tongue_personality
-				set_heir_flag = rogieria_young_owl_alive
-				set_heir_flag = set_heir_race
+				set_heir_culture = half_orc
 			}
 		}
 	}
 }
 
-#The Crown of Farraneán
+#The Crown of Farraneï¿½n
 country_event = {
 	id = flavor_rogieria.3
 	title = flavor_rogieria.3.t
@@ -171,7 +173,7 @@ country_event = {
 		add_prestige = 10
 		define_consort = {
 			name = "Margery"
-			dynasty = "síl na Eán"
+			dynasty = "sï¿½l na Eï¿½n"
 			culture = farrani
 			age = 23
 			female = yes
@@ -195,7 +197,7 @@ country_event = {
 	}
 }
 
-#The Cogaulúis Ball
+#The Cogaulï¿½is Ball
 country_event = {
 	id = flavor_rogieria.4
 	title = flavor_rogieria.4.t
@@ -1660,10 +1662,6 @@ country_event = {
 					NOT = { ruler_culture = half_orc }
 				}
 				set_ruler_culture = half_orc
-				hidden_effect = {
-					clear_fast_ruler_flags = yes
-					set_ruler_flag = half_orcish_ruler
-				}
 			}
 		}
 	}

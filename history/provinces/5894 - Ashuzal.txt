@@ -1,6 +1,6 @@
-owner = L68
-controller = L96
-add_core = L68
+owner = L95
+controller = L95
+add_core = L95
 culture = shagashay_lizardfolk
 religion = anzalkatsa
 
@@ -17,4 +17,4 @@ capital = ""
 is_city = yes
 fort_15th = yes
 
-add_claim = L96
+add_claim = L95

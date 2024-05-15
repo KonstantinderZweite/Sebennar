@@ -3,7 +3,7 @@
 owner = F65
 controller = F65
 add_core = F65
-add_core = L22
+add_core = L14
 culture = binwarji
 religion = fangaulan_pantheon
 capital = ""
@@ -16,7 +16,3 @@ base_manpower = 3
 
 trade_goods = fish
 
-add_institution_embracement = {
-    which = feudalism
-    value = 100
-}

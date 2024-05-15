@@ -4,7 +4,6 @@
 owner = A29
 controller = A29
 add_core = A29
-add_core = B81
 culture = busilari
 religion = regent_court
 
@@ -19,7 +18,7 @@ trade_goods = cloth
 capital = ""
 
 is_city = yes
-fort_15th = yes
+
 
 
 

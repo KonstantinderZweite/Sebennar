@@ -1,0 +1,132 @@
+country_decisions = {
+	artifacts_wearing = {
+		major = yes
+		potential = {
+	    has_country_flag = V11_artifacts
+		NOT = { has_country_flag = artifact_open_menu }		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		
+			}
+		effect = {
+		set_country_flag = artifact_open_menu
+		}
+	}
+	mudblade_wearing = {
+		major = yes
+		potential = {
+	    has_country_flag = artifact_open_menu
+		NOT = { has_country_modifier = V11_mud_blade_modifier }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		
+			}
+		effect = {
+		add_ruler_modifier = {
+		name = "V11_mud_blade_modifier"
+		duration = 1825
+		}
+		}
+	}
+	blackhelmet_wearing = {
+		major = yes
+		potential = {
+	    has_country_flag = artifact_open_menu
+		NOT = { has_country_modifier = V11_black_helmet_modifier}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		
+			}
+		effect = {
+		add_ruler_modifier = {
+		name = "V11_black_helmet_modifier"
+		duration = 1825
+		}
+		}
+	}
+	fireshield_wearing = {
+		major = yes
+		potential = {
+	    has_country_flag = artifact_open_menu
+		NOT = { has_country_modifier = V11_fire_shield_modifier}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		
+			}
+		effect = {
+		add_ruler_modifier = {
+		name = "V11_fire_shield_modifier"
+		duration = 1825
+		}
+		}
+	}
+	slickarmour_wearing = {
+		major = yes
+		potential = {
+	    has_country_flag = artifact_open_menu
+		NOT = { has_country_modifier = V11_slick_armour_modifier}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		
+			}
+		effect = {
+		add_ruler_modifier = {
+		name = "V11_slick_armour_modifier"
+		duration = 1825
+		}
+		}
+	}
+	potion_wearing = {
+		major = yes
+		potential = {
+	    has_country_flag = artifact_open_menu
+		NOT = { has_country_modifier = V11_potion_modifier}		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		
+			}
+		effect = {
+		add_ruler_modifier = {
+		name = "V11_potion_modifier"
+		duration = 1825
+		}
+		}
+	}
+	close_artifact = {
+		major = yes
+		potential = {
+	    has_country_flag = artifact_open_menu
+				
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		
+			}
+		effect = {
+		set_country_flag = close_artifact_menu
+		clr_country_flag = artifact_open_menu
+		}
+	}
+}
+
+

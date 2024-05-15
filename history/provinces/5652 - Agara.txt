@@ -1,7 +1,6 @@
-owner = S22
-controller = S22
-add_core = S22
-add_core = L84
+owner = S33
+controller = S33
+add_core = S33
 culture = rhada_lizardfolk
 religion = anzalkatsa
 

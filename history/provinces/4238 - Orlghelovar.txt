@@ -1,4 +1,9 @@
-culture = blooded_orc
+
+
+
+
+
+culture = black_orc
 religion = old_dookan
 trade_goods = glass
 hre = no

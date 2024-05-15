@@ -4,7 +4,7 @@ estate_gerunanin = {
 	color = { 0 109 122 }
 	
 	trigger = {
-		has_reform = hobgoblin_stratocracy_reform
+		tag = R62
 	}
 	
 	country_modifier_happy = {

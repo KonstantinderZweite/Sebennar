@@ -7,7 +7,7 @@ country_event = {
 	id = estate_adeen.1
 	title = estate_adeen.1.t
 	desc = estate_adeen.1.d
-	picture = MULTI_RACIAL_MERC_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	mean_time_to_happen = {
 		years = 1
@@ -34,7 +34,7 @@ country_event = {
 	id = estate_adeen.2
 	title = estate_adeen.2.t
 	desc = estate_adeen.2.d
-	picture = GENERALS_DISCUSSING_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -122,7 +122,7 @@ country_event = {
 	id = estate_adeen.3
 	title = estate_adeen.3.t
 	desc = estate_adeen.3.d
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -162,7 +162,7 @@ country_event = {
 	id = estate_adeen.4
 	title = estate_adeen.4.t
 	desc = estate_adeen.4.d
-	picture = ELECTION_REPUBLICAN_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -215,7 +215,7 @@ country_event = {
 	id = estate_adeen.5
 	title = estate_adeen.5.t
 	desc = estate_adeen.5.d
-	picture = CORRUPTION_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -249,7 +249,7 @@ country_event = {
 	id = estate_adeen.6
 	title = estate_adeen.6.t
 	desc = estate_adeen.6.d
-	picture = PEASANTS_BARTERING_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -290,7 +290,7 @@ country_event = {
 	id = estate_adeen.7
 	title = estate_adeen.7.t
 	desc = estate_adeen.7.d
-	picture = LIBERUM_VETO_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -339,7 +339,7 @@ country_event = {
 	id = estate_adeen.8
 	title = estate_adeen.8.t
 	desc = estate_adeen.8.d
-	picture = CONQUEST_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -382,7 +382,7 @@ country_event = {
 	id = estate_adeen.9
 	title = estate_adeen.9.t
 	desc = estate_adeen.9.d
-	picture = ARTWORK_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -440,8 +440,8 @@ country_event = {
 	
 	is_triggered_only = yes
 	hidden = yes
-	trigger = {
-		NOT = { has_disaster = estate_adeen_palace_coup }
+	trigger = { 
+		always = yes
 	}
 
 	immediate = {
@@ -512,7 +512,7 @@ country_event = {
 	id = estate_adeen.11
 	title = estate_adeen.11.t
 	desc = estate_adeen.11.d
-	picture = DEBATE_REPUBLICAN_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -522,7 +522,6 @@ country_event = {
 			has_estate_privilege = estate_adeen_adeen_curtailed
 			has_estate_privilege = estate_adeen_adeen_integrated
 		}
-		NOT = { has_disaster = estate_adeen_palace_coup }
 	}
 
 	option = {
@@ -611,9 +610,8 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_adeen
-			loyalty = 15
+			loyalty = 30
 		}
-		add_country_modifier = { name = adeen_revoke_cooldown_mod duration = 730 }
 	}
 	option = {
 		name = estate_adeen.11.z
@@ -632,7 +630,7 @@ country_event = {
 	id = estate_adeen.12
 	title = estate_adeen.12.t
 	desc = estate_adeen.12.d
-	picture = COURT_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -642,7 +640,6 @@ country_event = {
 			has_estate_privilege = estate_adeen_adeen_curtailed
 			has_estate_privilege = estate_adeen_adeen_integrated
 		}
-		NOT = { has_disaster = estate_adeen_palace_coup }
 	}
 
 	option = {
@@ -662,7 +659,7 @@ country_event = {
 
 	option = {
 		name = estate_adeen.12.b
-		mil_power_cost = 200
+		mil_power_cost = -200
 		add_estate_influence_modifier = {
 			estate = estate_adeen
 			desc = adeen_ceremonial_offices
@@ -739,9 +736,8 @@ country_event = {
 		}
 		add_estate_loyalty = {
 			estate = estate_adeen
-			loyalty = 15
+			loyalty = 30
 		}
-		add_country_modifier = { name = adeen_revoke_cooldown_mod duration = 730 }
 	}
 	option = {
 		name = estate_adeen.12.z
@@ -760,7 +756,7 @@ country_event = {
 	id = estate_adeen.13
 	title = estate_adeen.13.t
 	desc = estate_adeen.13.d
-	picture = DIPLOMACY_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	trigger = { 
 		is_year = 1620
@@ -816,7 +812,7 @@ country_event = {
 	id = estate_adeen.14
 	title = estate_adeen.14.t
 	desc = estate_adeen.14.d
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -854,7 +850,8 @@ country_event = {
 	id = estate_adeen.15
 	title = estate_adeen.14.t
 	desc = estate_adeen.14.d
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
+
 	is_triggered_only = yes
 	
 	trigger = { 
@@ -895,7 +892,7 @@ country_event = {
 	id = estate_adeen.100
 	title = estate_adeen.100.t
 	desc = estate_adeen.100.d
-	picture = CIVIL_WAR_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -909,7 +906,7 @@ country_event = {
 			spawn_rebels = {
 				type = adeen_coupists
 				culture = adeen
-				size = 2
+				size = 2.5
 				should_take_capital = yes
 			}
 		}
@@ -950,7 +947,7 @@ country_event = {
 	id = estate_adeen.101
 	title = estate_adeen.101.t
 	desc = estate_adeen.101.d
-	picture = IMPALED_SOLDIERS_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -981,7 +978,7 @@ country_event = {
 	id = estate_adeen.102
 	title = estate_adeen.102.t
 	desc = estate_adeen.102.d
-	picture = COUNTRY_COLLAPSE_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 	trigger = { 
@@ -1020,7 +1017,7 @@ country_event = {
 	id = estate_adeen.103
 	title = estate_adeen.103.t
 	desc = estate_adeen.103.d
-	picture = MILITARY_CAMP_eventPicture
+	picture = KOBOLD_BALRIS_eventPicture
 	
 	is_triggered_only = yes
 

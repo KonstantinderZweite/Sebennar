@@ -119,9 +119,16 @@ luciande_1_missions = {
 					}
 				}
 				treasury = 300
-				451 = {
-					owner = {
-						has_25_opinion_sent_gift = { target = ROOT }
+				custom_trigger_tooltip = { 
+					tooltip = luciande_sent_gift_tt
+					451 = {
+						owner = {
+							has_opinion_modifier = {
+								modifier = sent_gift
+								who = ROOT
+								value = 25
+							}
+						}
 					}
 				}
 				is_year = 1520
@@ -1083,6 +1090,7 @@ luciande_3_ending_missions_2 = {
 			NOT = {
 				num_of_units_in_province = {
 					who = ROOT
+					type = any
 					amount = 20
 				}
 			}
@@ -1105,6 +1113,7 @@ luciande_3_ending_missions_2 = {
 			435 = {
 				num_of_units_in_province = {
 					who = ROOT
+					type = any
 					amount = 20
 				}
 			}
@@ -1259,8 +1268,8 @@ luciande_4_missions = {
 			set_country_flag = B34_slave_economy
 			custom_tooltip = luciande_hills_of_green_tt
 			hidden_effect = {
-				generic_end_expulsion = { race = orcish }
-				generic_end_purge = { race = orcish }
+				remove_country_modifier = racial_pop_orcish_purge
+				remove_country_modifier = racial_pop_orcish_expulsion
 			}
 			custom_tooltip = luciande_stop_orc_purge_tt
 			
@@ -1292,7 +1301,11 @@ luciande_4_missions = {
 					province_id = 451
 					owner = {
 						NOT = { 
-							has_100_opinion_improved_relation = { target = ROOT }
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = improved_relation
+								value = 100
+							}
 						}
 					}
 				}
@@ -1300,7 +1313,11 @@ luciande_4_missions = {
 					province_id = 216
 					owner = {
 						NOT = { 
-							has_100_opinion_improved_relation = { target = ROOT }
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = improved_relation
+								value = 100
+							}
 						}
 					}
 				}
@@ -1317,12 +1334,26 @@ luciande_4_missions = {
 			}
 			451 = {
 				owner = {
-					has_100_opinion_improved_relation = { target = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = luciande_max_improve_relations_tt
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = improved_relation
+							value = 100
+						}
+					}
 				}
 			}
 			216 = {
 				owner = {
-					has_100_opinion_improved_relation = { target = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = luciande_max_improve_relations_tt
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = improved_relation
+							value = 100
+						}
+					}
 				}
 			}
 			treasury = 250	
@@ -1359,6 +1390,7 @@ luciande_4_missions = {
 				has_manpower_building_trigger = yes
 				num_of_units_in_province = {
 					who = ROOT
+					type = any
 					amount = 2
 				}
 			}
@@ -1555,16 +1587,11 @@ luciande_4_ending_missions = {
 				change_trade_goods = paper 
 			}
 			custom_tooltip = luciande_upgraded_board_2_tt
-			set_country_flag = luciande_tier2_slaves_flag
+			set_country_flag = luciande_tier3_slaves_flag
 			hidden_effect = {
-				every_owned_province = {
-					limit = { trade_goods = slaves }
-					remove_province_modifier = B34_board_of_chains_boost
-					add_province_modifier = {
-						name = B34_board_of_chains_boost_upgraded
-						duration = -1
-						hidden = yes
-					}
+				country_event = {
+					id = flavor_luciande.52
+					days = 1
 				}
 			}
 		}
@@ -1590,8 +1617,22 @@ luciande_4_ending_missions = {
 					exists = G95
 				}
 				G95 = {
-					has_25_opinion_sent_gift = { target = ROOT }
-					has_100_opinion_improved_relation = { target = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = luciande_sent_gift_tt_2
+						has_opinion_modifier = {
+							modifier = sent_gift
+							who = ROOT
+							value = 25
+						}
+					}
+					custom_trigger_tooltip = {
+						tooltip = luciande_max_improve_relations_tt
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = improved_relation
+							value = 100
+						}
+					}
 				}
 			}
 			else = {
@@ -1603,10 +1644,18 @@ luciande_4_ending_missions = {
 				limit = {
 					exists = G95
 					G95 = {
-						has_100_opinion_improved_relation = { target = ROOT }
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = improved_relation
+							value = 100
+						}
 					}
 					G95 = {
-						has_25_opinion_sent_gift = { target = ROOT }
+						has_opinion_modifier = {
+							modifier = sent_gift
+							who = ROOT
+							value = 25
+						}
 					}
 				}
 				country_event = {
@@ -1614,17 +1663,12 @@ luciande_4_ending_missions = {
 				}
 			}
 			custom_tooltip = luciande_upgraded_board_3_tt
-			set_country_flag = luciande_tier3_slaves_flag
+			set_country_flag = luciande_tier4_slaves_flag
 			
 			hidden_effect = {
-				every_owned_province = {
-					limit = { trade_goods = slaves }
-					remove_province_modifier = B34_board_of_chains_boost_upgraded
-					add_province_modifier = {
-						name = B34_board_of_chains_boost_upgraded_2
-						duration = -1
-						hidden = yes
-					}
+				country_event = {
+					id = flavor_luciande.53
+					days = 1
 				}
 			}
 		}
@@ -1697,7 +1741,14 @@ luciande_5_missions = {
 							has_country_modifier = racial_pop_orcish_expulsion
 							has_country_modifier = racial_pop_orcish_purge
 						}
-						has_100_opinion_improved_relation = { target = ROOT }
+						custom_trigger_tooltip = {
+							tooltip = luciande_max_improve_relations_tt
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = improved_relation
+								value = 100
+							}
+						}
 					}
 					has_opinion = {
 						who = ROOT
@@ -1708,6 +1759,7 @@ luciande_5_missions = {
 		}
 
 		effect = {
+			custom_tooltip = luciande_upgraded_board_tt
 			if = {
 				limit = {
 					NOT = { has_dlc = "Dharma" }
@@ -1716,16 +1768,22 @@ luciande_5_missions = {
 					add_center_of_trade_level = 1
 				}
 			}
-			custom_tooltip = luciande_upgraded_board_tt
-			set_country_flag = luciande_tier1_slaves_flag
+			set_country_flag = luciande_tier2_slaves_flag
+			
+			every_owned_province = {
+				limit = {
+					trade_goods = slaves
+				}
+				add_province_modifier = {
+					name = B34_board_of_chains_boost
+					duration = -1
+					hidden = yes
+				}
+			}
 			hidden_effect = {
-				every_owned_province = {
-					limit = { trade_goods = slaves }
-					add_province_modifier = {
-						name = B34_board_of_chains_boost
-						duration = -1
-						hidden = yes
-					}
+				country_event = {
+					id = flavor_luciande.51
+					days = 1
 				}
 			}
 		}

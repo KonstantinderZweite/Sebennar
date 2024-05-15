@@ -15,14 +15,14 @@ col_1_post_D2 = {
 		required_missions = { Z97_debate_2_buildup } 
 		provinces_to_highlight = {
 			superregion = western_cannor_superregion
-			not = { religion = ravelian }
-		} 
+			not = {religion = ravelian}
+			} 
 
 		trigger = {
 			calc_true_if = {
-				western_cannor_superregion = {
-					type = all
+				all_province = {
 					religion = ravelian
+					superregion = western_cannor_superregion
 				}
 				amount = 250
 			}
@@ -50,13 +50,13 @@ col_1_post_D2 = {
 		required_missions = { Z97_ravelianism_in_anbennar } 
 		provinces_to_highlight = {
 			continent = europe
-			not = { religion = ravelian }
+			not = {religion = ravelian}
 		}
 
 		trigger = {
 			calc_true_if = {
-				europe = {
-					type = all
+				all_province = {
+					continent = europe
 					religion = ravelian
 				}
 				amount = 400
@@ -84,7 +84,6 @@ col_1_post_D2 = {
 					name = z97_debate2_erudite2
 					duration = -1
 				}
-				hidden_effect = { set_country_flag = 30_trade_power_for_propogate_religion }
 			}
 			
 		}
@@ -99,7 +98,7 @@ col_1_post_D2 = {
 				continent = north_america
 				continent = south_america
 			}
-			not = { religion = ravelian }
+			not = {religion = ravelian}
 		}
 
 		trigger = {
@@ -193,11 +192,11 @@ col_1_post_D4 = {
 		} 
 
 		trigger = {
-			gommo_provinces_haless_bulwar = {
+			asia = {
 				type = all
-				OR = {
-					religion = ravelian
-					NOT = { continent = asia }
+				gommo_provinces_haless_bulwar = {
+						type = all
+						religion = ravelian
 				}
 			}
 		}
@@ -509,11 +508,11 @@ col_2_post_D4 = {
 			continent = africa
 		} 
 		trigger = {
-			gommo_provinces_haless_bulwar = {
+			africa = { 
 				type = all
-				OR = {
-					religion = ravelian
-					NOT = { continent = africa }
+				gommo_provinces_haless_bulwar = {
+						type = all
+						religion = ravelian
 				}
 			}
 		}
@@ -902,8 +901,8 @@ col_3_post_D4 = {
 			mil_power = 250
 			898 = { has_great_project = {type = ravioli_bastion	tier = 2}}
 			calc_true_if = {
-				europe = {
-					type = all 
+				all_province = { 
+					continent = europe
 					owner = {
 						has_country_flag = estates_overseen_by_ravelians
 					}
@@ -985,11 +984,11 @@ col_4_start = {
 					set_province_flag = upgrade_botgf}
 			hidden_effect = {	#Not sure why this roundabout method is needed- it also doesn't work?
 				random_owned_province = { 
-					limit = { has_province_flag = ravioli_bastion }
-					add_great_project = {
-						type = ravioli_bastion
-						instant = no
-					}
+				limit = { has_province_flag = ravioli_bastion }}
+			#898 ={
+				add_great_project = {
+					type = ravioli_bastion
+					instant = no
 				}
 			}
 			custom_tooltip = build_botgf_tt	
@@ -1114,7 +1113,6 @@ col_4_post_D4 = {
 					name = z97_debate2_erudite3
 					duration = -1
 				}
-				hidden_effect = { set_country_flag = 15_trade_power_for_propogate_religion }
 			}
 		
 		} 

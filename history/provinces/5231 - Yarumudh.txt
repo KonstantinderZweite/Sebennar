@@ -12,6 +12,6 @@ trade_goods = cloth
 capital = "The Carpetwood City"
 
 is_city = yes
-owner = J03
-controller = J03
-add_core = J03
+owner = J02
+controller = J02
+add_core = J02

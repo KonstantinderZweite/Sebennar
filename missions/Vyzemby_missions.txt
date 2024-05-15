@@ -231,7 +231,7 @@ vyzemby_1 = {
 		
 		trigger = {
 			NOT  = { has_country_modifier = vyzemby_preparing_for_return }
-			narawan_jigin_area = {
+			narawan_jigin_area {
 				type = all
 				owned_by = ROOT
 			}
@@ -290,7 +290,7 @@ vyzemby_2 = {
 	ai = yes
 	potential = {
 		NOT = { primary_culture = amezatany }
-		is_vyzemby_primary_culture = yes
+		culture_group = vyzemby
 		
 	}
 	has_country_shield = yes
@@ -386,7 +386,6 @@ vyzemby_2 = {
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			region = fahvanosy_region
 		}
 		
 		trigger = {
@@ -417,12 +416,9 @@ vyzemby_2 = {
 				merc_company = merc_mboala_war_dogs
 				free_merc = yes
 			}
-			hidden_effect = {
-				add_accepted_culture_or_dip_power = {
-					culture = mboala
-				}
+			add_accepted_culture_or_dip_power = {
+				culture = mboala
 			}
-			custom_tooltip = mboala_accepted_culture_tooltip
 		}
 	}
 	
@@ -436,7 +432,6 @@ vyzemby_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			is_city = yes
-			region = fahvanosy_region
 		}
 		
 		trigger = {
@@ -468,12 +463,9 @@ vyzemby_2 = {
 		}
 		
 		effect = {
-			hidden_effect = {
-				add_accepted_culture_or_dip_power = {
-					culture = fomarati
-				}
+			add_accepted_culture_or_dip_power = {
+				culture = fomarati
 			}
-			custom_tooltip = fomarati_accepted_culture_tooltip
 			if = {
 				limit = { ai = no }
 				hidden_effect = {
@@ -521,7 +513,6 @@ vyzemby_2 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			is_city = yes
-			region = fahvanosy_region
 		}
 		
 		trigger = {
@@ -558,12 +549,9 @@ vyzemby_2 = {
 		}
 		
 		effect = {
-			hidden_effect = {
-				add_accepted_culture_or_dip_power = {
-					culture = amezatany
-				}
+			add_accepted_culture_or_dip_power = {
+				culture = amezatany
 			}
-			custom_tooltip = amezatany_accepted_culture_tooltip
 			if = {
 				limit = { has_estate = estate_nobles }
 				change_estate_land_share = {
@@ -637,7 +625,7 @@ vyzemby_2 = {
 								is_prosperous = yes
 								NOT = { local_autonomy = 10 }
 							}
-							owner = { add_splendor = 10 }
+							add_splendor = 10
 						}
 					}
 				}
@@ -795,7 +783,7 @@ vyzemby_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		is_vyzemby_primary_culture = yes
+		culture_group = vyzemby
 		NOT = { primary_culture = mazava }
 	}
 	has_country_shield = yes
@@ -1000,17 +988,9 @@ vyzemby_5 = {
 				owns_core_province = 5821
 				owns_core_province = 5829
 			}
-			if = {
-				limit = {
-					NOT = { has_reform = pirate_republic_reform }
-				}
-				OR = {
-					has_reform = shrine_guardians_reform
-					has_reform = religious_societies_reform
-				}
-			}
-			else = {
-				crown_land_share = 50
+			OR = {
+				has_reform = shrine_guardians_reform
+				has_reform = religious_societies_reform
 			}
 		}
 		
@@ -1077,7 +1057,7 @@ vyzemby_5 = {
 						}
 						add_permanent_province_modifier = {
 							name = ananoma_construction
-							duration = 3650
+							duration = -1
 						}
 					}
 					else = {
@@ -1100,7 +1080,7 @@ vyzemby_6 = {
 	generic = no
 	ai = yes
 	potential = {
-		is_vyzemby_primary_culture = yes
+		culture_group = vyzemby
 	}
 	has_country_shield = yes
 	
@@ -1245,7 +1225,7 @@ vyzemby_7 = {
 	generic = no
 	ai = yes
 	potential = {
-		is_vyzemby_primary_culture = yes
+		culture_group = vyzemby
 	}
 	has_country_shield = yes
 	
@@ -1294,7 +1274,7 @@ vyzemby_8 = {
 	generic = no
 	ai = yes
 	potential = {
-		is_vyzemby_primary_culture = yes
+		culture_group = vyzemby
 	}
 	has_country_shield = yes
 	
@@ -1351,7 +1331,7 @@ vyzemby_9 = {
 	potential = {
 		NOT = { primary_culture = amezatany }
 		NOT = { primary_culture = mazava }
-		is_vyzemby_primary_culture = yes
+		culture_group = vyzemby
 	}
 	has_country_shield = yes
 	
@@ -1387,12 +1367,9 @@ vyzemby_9 = {
 		
 		
 		effect = {
-			hidden_effect = {
-				add_accepted_culture_or_dip_power = {
-					culture = mazava
-				}
+			add_accepted_culture_or_dip_power = {
+				culture = mazava
 			}
-			custom_tooltip = mazava_accepted_culture_tooltip
 			add_years_of_income = 1
 			hidden_effect = {
 				random_owned_province = {

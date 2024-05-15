@@ -1,8 +1,6 @@
-owner = L21
-controller = L21
-
-add_core = L21
-add_core = L20
+owner = L14
+controller = L14
+add_core = L14
 culture = kaino
 religion = fangaulan_pantheon
 
@@ -12,13 +10,8 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 
-trade_goods = iron
+trade_goods = incense
 
 capital = "Bubunin Kulu"
 
 is_city = yes
-
-add_permanent_province_modifier = {
-	name = ironwood_trees
-	duration = -1
-}

@@ -13,7 +13,6 @@
 #Ex: "High tolerance of Elven people"
 defined_text = {
 	name = GetElvenTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -42,7 +41,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetHalflingTolerance
-	random = no
 
 	
 	text = {
@@ -72,7 +70,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetDwarvenTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -101,7 +98,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetGnomishTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -130,7 +126,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetOrcishTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -159,7 +154,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetKoboldTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -188,7 +182,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetLizardfolkTolerance
-	random = no
 	
 	text = {
 		localisation_key = primary_tolerance_text
@@ -217,7 +210,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetHalfOrcTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -246,7 +238,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetHumanTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -275,7 +266,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetGnollTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -304,7 +294,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetRuinbornTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -333,7 +322,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetGoblinTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -362,7 +350,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetHarpyTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -391,7 +378,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetTrollTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -420,7 +406,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetHalfElfTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -449,7 +434,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetHarimariTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -478,7 +462,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetHobgoblinTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -507,7 +490,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetCentaurTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text
@@ -536,7 +518,6 @@ defined_text = {
 }
 defined_text = {
 	name = GetOgreTolerance
-	random = no
 
 	text = {
 		localisation_key = primary_tolerance_text

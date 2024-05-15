@@ -1,0 +1,702 @@
+
+
+namespace = flavor_emberscar
+#First hunt
+country_event = {
+	id = flavor_emberscar.1
+	title = flavor_emberscar.1.t
+	desc = flavor_emberscar.1.d
+	picture = Dragonnel-1
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.1.b"
+		country_event = { id = flavor_emberscar.2 days = 30}
+	}
+}
+country_event = {
+	id = flavor_emberscar.2
+	title = flavor_emberscar.2.t
+	desc = flavor_emberscar.2.d
+	picture = hobgoblin_death
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.2.b"
+		country_event = { id = flavor_emberscar.3 days = 2}
+	}
+}
+country_event = {
+	id = flavor_emberscar.3
+	title = flavor_emberscar.3.t
+	desc = flavor_emberscar.3.d
+	picture = Dragonnelskull-1
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.3.b"
+		add_treasury = 250
+		add_ruler_modifier = {
+		name = Dragonnel_hunter
+		duration = -1
+	}
+}
+}
+#Earth
+country_event = {
+	id = flavor_emberscar.4
+	title = flavor_emberscar.4.t
+	desc = flavor_emberscar.4.d
+	picture = shield_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.4.b"
+		random_list = {
+					80 = { increase_ruler_mil_effect = yes
+					add_ruler_personality = inspiring_leader_personality
+					country_event ={
+					id = flavor_emberscar.13
+					}
+					}
+					20 = {kill_ruler = yes 
+					country_event ={
+					id = flavor_emberscar.18
+					}
+					}
+				}
+	}
+	option = {
+		name = "flavor_emberscar.4.c"
+		random_list = {
+					90 = { 
+					add_ruler_personality = craven_personality
+					country_event ={
+					id = flavor_emberscar.13
+					}
+					}
+					10 = {kill_ruler = yes 
+					country_event ={
+					id = flavor_emberscar.18
+					}
+					}
+				}
+	}
+}
+#Death
+country_event = {
+	id = flavor_emberscar.5
+	title = flavor_emberscar.4.t
+	desc = flavor_emberscar.5.d
+	picture = shield_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.4.b"
+		random_list = {
+					70 = { increase_ruler_mil_effect = yes
+					add_ruler_personality = inspiring_leader_personality
+					country_event ={
+					id = flavor_emberscar.14
+					}
+					}
+					30 = {kill_ruler = yes 
+					country_event ={
+					id = flavor_emberscar.19
+					}
+					}
+				}
+	}
+	option = {
+		name = "flavor_emberscar.4.c"
+		random_list = {
+					80 = { 
+					add_ruler_personality = craven_personality
+					country_event ={
+					id = flavor_emberscar.14
+					}
+					}
+					20 = {kill_ruler = yes 
+					country_event ={
+					id = flavor_emberscar.19
+					}
+					}
+				}
+	}
+}
+#fire
+country_event = {
+	id = flavor_emberscar.6
+	title = flavor_emberscar.4.t
+	desc = flavor_emberscar.6.d
+	picture = shield_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.4.b"
+		random_list = {
+					70 = { increase_ruler_mil_effect = yes
+					add_ruler_personality = inspiring_leader_personality
+					country_event ={
+					id = flavor_emberscar.15
+					}
+					}
+					30 = {kill_ruler = yes 
+					country_event ={
+					id = flavor_emberscar.20
+					}
+					}
+				}
+	}
+	option = {
+		name = "flavor_emberscar.4.c"
+		random_list = {
+					80 = { 
+					add_ruler_personality = craven_personality
+					country_event ={
+					id = flavor_emberscar.15
+					}
+					}
+					20 = {kill_ruler = yes 
+					country_event ={
+					id = flavor_emberscar.20
+					}
+					}
+				}
+	}
+}
+#water
+country_event = {
+	id = flavor_emberscar.7
+	title = flavor_emberscar.4.t
+	desc = flavor_emberscar.7.d
+	picture = shield_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.4.b"
+		random_list = {
+					70 = { increase_ruler_mil_effect = yes
+					add_ruler_personality = inspiring_leader_personality
+					country_event ={
+					id = flavor_emberscar.16
+					}
+					}
+					30 = {kill_ruler = yes 
+					country_event ={
+					id = flavor_emberscar.21
+					}
+					}
+				}
+	}
+	option = {
+		name = "flavor_emberscar.4.c"
+		random_list = {
+					80 = { 
+					add_ruler_personality = craven_personality
+					country_event ={
+					id = flavor_emberscar.16
+					}
+					}
+					20 = {kill_ruler = yes 
+					country_event ={
+					id = flavor_emberscar.21
+					}
+					}
+				}
+	}
+}
+#Pyschodelic
+country_event = {
+	id = flavor_emberscar.8
+	title = flavor_emberscar.4.t
+	desc = flavor_emberscar.8.d
+	picture = shield_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.4.b"
+		random_list = {
+					70 = { increase_ruler_mil_effect = yes
+					add_ruler_personality = inspiring_leader_personality
+					country_event ={
+					id = flavor_emberscar.17
+					}
+					}
+					30 = {kill_ruler = yes 
+					country_event ={
+					id = flavor_emberscar.22
+					}
+					}
+				}
+	}
+	option = {
+		name = "flavor_emberscar.4.c"
+		random_list = {
+					80 = { 
+					add_ruler_personality = craven_personality
+					country_event ={
+					id = flavor_emberscar.17
+					}
+					}
+					20 = {kill_ruler = yes 
+					country_event ={
+					id = flavor_emberscar.22
+					}
+					}
+				}
+	}
+}
+country_event = {
+	id = flavor_emberscar.9
+	title = flavor_emberscar.9.t
+	desc = flavor_emberscar.9.d
+	picture = flood_eventPicture
+	trigger = {
+	has_country_flag = great_uncovering
+	tag = V11
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+	days = 730
+	}
+	option = {
+		name = "flavor_emberscar.9.b"
+		
+		V11_river_provinces = {
+		add_province_modifier = {
+		name = V11_prepation
+		duration = -1
+		}
+		}
+	}
+	
+}
+
+country_event = {
+	id = flavor_emberscar.10
+	title = flavor_emberscar.10.t
+	desc = flavor_emberscar.10.d
+	picture = Dragonnelskull-1
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.10.b"
+	}
+	option = {
+		name = "flavor_emberscar.10.c"
+	}
+	
+}
+#duel
+country_event = {
+	id = flavor_emberscar.11
+	title = flavor_emberscar.11.t
+	desc = flavor_emberscar.11.d
+	picture = Dragonnelskull-1
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.11.b"
+		random_list = {
+					70 = { increase_ruler_mil_effect = yes
+					add_ruler_modifier = {
+					name = V11_people_pleaser
+					duration = -1
+					}
+					}
+					30 = {kill_ruler = yes 
+					country_event = {id = flavor_emberscar.12 } 
+					}
+				}
+	}
+	
+}
+#rejecting the loss
+country_event = {
+	id = flavor_emberscar.12
+	title = flavor_emberscar.12.t
+	desc = flavor_emberscar.12.d
+	picture = Dragonnelskull-1
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.12.b"
+		add_country_modifier = {
+		name = V11_accept_defeat
+		duration = 3650
+		}
+	}
+	option = {
+		name = "flavor_emberscar.12.c"
+		add_country_modifier = {
+		name = V11_reject_defeat
+		duration = 3650
+		}
+	}
+	
+}
+#Win Dragonnel Hunts 5
+#Earth
+country_event = {
+	id = flavor_emberscar.13
+	title = flavor_emberscar.13.t
+	desc = flavor_emberscar.13.d
+	picture = earth_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.13.b"
+		add_treasury = 150
+		set_country_flag = Earth_win
+		custom_tooltip = V11_artifacts_tt
+	}
+	
+}
+#Death
+country_event = {
+	id = flavor_emberscar.14
+	title = flavor_emberscar.14.t
+	desc = flavor_emberscar.14.d
+	picture = rotten_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.14.b"
+		add_treasury = 200
+		set_country_flag = Death_win
+		custom_tooltip = V11_artifacts_tt
+	}
+	
+}
+#Fire
+country_event = {
+	id = flavor_emberscar.15
+	title = flavor_emberscar.15.t
+	desc = flavor_emberscar.15.d
+	picture = flame_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.15.b"
+		add_treasury = 200
+		set_country_flag = Fire_win
+		custom_tooltip = V11_artifacts_tt
+	}
+	
+}
+#Water
+country_event = {
+	id = flavor_emberscar.16
+	title = flavor_emberscar.16.t
+	desc = flavor_emberscar.16.d
+	picture = water_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.16.b"
+		add_treasury = 200
+		set_country_flag = Water_win
+		custom_tooltip = V11_artifacts_tt
+	}
+	
+}
+#Pyschodelic 
+country_event = {
+	id = flavor_emberscar.17
+	title = flavor_emberscar.17.t
+	desc = flavor_emberscar.17.d
+	picture = potion_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.17.b"
+		add_treasury = 100
+		set_country_flag = Pyschodelic_win
+		custom_tooltip = V11_artifacts_tt
+	}
+	
+}
+
+#Lose Dragonnel Hunts 5
+#Earth
+country_event = {
+	id = flavor_emberscar.18
+	title = flavor_emberscar.18.t
+	desc = flavor_emberscar.18.d
+	picture = earth_defeat_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.18.b"
+		
+	}
+	
+}
+#Death
+country_event = {
+	id = flavor_emberscar.19
+	title = flavor_emberscar.19.t
+	desc = flavor_emberscar.19.d
+	picture = deathdefeat_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.19.b"
+		
+	}
+	
+}
+#Fire
+country_event = {
+	id = flavor_emberscar.20
+	title = flavor_emberscar.20.t
+	desc = flavor_emberscar.20.d
+	picture = firedefeat_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.20.b"
+		
+	}
+	
+}
+#Water
+country_event = {
+	id = flavor_emberscar.21
+	title = flavor_emberscar.21.t
+	desc = flavor_emberscar.21.d
+	picture = waterdefeat_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.21.b"
+		
+	}
+	
+}
+#Pyschodelic
+country_event = {
+	id = flavor_emberscar.22
+	title = flavor_emberscar.22.t
+	desc = flavor_emberscar.22.d
+	picture = shroomdefeat_eventPicture
+	trigger = {
+	tag = V11
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.22.b"
+		
+	}
+	
+}
+#Shows hidden missions 
+country_event = {
+	id = flavor_emberscar.23
+	title = flavor_emberscar.23.t
+	desc = flavor_emberscar.23.d
+	picture = shroomdefeat_eventPicture
+	hidden = yes 
+	fire_only_once = yes 
+	trigger = {
+	tag = V11
+	AND ={
+	has_country_flag = Earth_win
+	has_country_flag = Death_win
+	has_country_flag = Fire_win
+	has_country_flag = Water_win
+	has_country_flag = Pyschodelic_win
+	}
+	}
+	option = {
+		name = "flavor_emberscar.23.b"
+		swap_non_generic_missions = yes
+		
+	}
+	
+}
+
+country_event = {
+	id = flavor_emberscar.24
+	title = flavor_emberscar.24.t
+	desc = flavor_emberscar.24.d
+	picture = bloodlines_eventPicture
+	trigger = {
+	tag = V11
+	
+	}
+	fire_only_once = yes 
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.24.b"
+		add_country_modifier = {
+		name = V11_dragonnel_bloodline
+		duration = -1
+		}
+		
+	}
+	
+}
+country_event = {
+	id = flavor_emberscar.25
+	title = flavor_emberscar.25.t
+	desc = flavor_emberscar.25.d
+	picture = bloodlines_eventPicture
+	trigger = {
+	tag = V11
+	}
+	fire_only_once = yes 
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.25.b"
+		V11_river_provinces = {
+		add_base_tax = -1
+		add_base_production = -1
+		add_base_manpower = -1
+		add_devastation = 25
+		add_province_modifier = {
+		name = V11_flooded_province
+		duration = 3650
+		}
+		}
+		kanzad_area ={
+		add_base_tax = -1
+		add_base_production = -1
+		add_base_manpower = -1
+		add_devastation = 30
+		add_province_modifier = {
+		name = V11_flooded_province
+		duration = 3650
+		}
+		}
+		ibran_pass_area = {
+		add_base_tax = -2
+		add_base_production = -2
+		add_base_manpower = -2
+		add_devastation = 30
+		add_province_modifier = {
+		name = V11_flooded_province
+		duration = 3650
+		}
+		}
+		sulimak_area = {
+		add_base_tax = -2
+		add_base_production = -2
+		add_base_manpower = -2
+		add_devastation = 30
+		add_province_modifier = {
+		name = V11_flooded_province
+		duration = 3650
+		}
+		}
+		
+		
+		}
+		option = {
+		name = "flavor_emberscar.25.c"
+		V11_river_provinces = {
+		add_base_tax = -1
+		add_base_production = -1
+		add_base_manpower = -1
+		add_devastation = 25
+		add_province_modifier = {
+		name = V11_flooded_province
+		duration = 3650
+		}
+		}
+		kradhungur_area = {
+		add_base_tax = -2
+		add_base_production = -2
+		add_base_manpower = -2
+		add_devastation = 30
+		add_province_modifier = {
+		name = V11_flooded_province
+		duration = 3650
+		}
+		}
+		khamarutar_area = {
+		add_base_tax = -2
+		add_base_production = -2
+		add_base_manpower = -2
+		add_devastation = 30
+		add_province_modifier = {
+		name = V11_flooded_province
+		duration = 3650
+		}
+		}
+		tamvihar_area = {
+		add_base_tax = -2
+		add_base_production = -2
+		add_base_manpower = -2
+		add_devastation = 30
+		add_province_modifier = {
+		name = V11_flooded_province
+		duration = 3650
+		}
+		}
+		}
+		
+	}
+	
+
+country_event = {
+	id = flavor_emberscar.26
+	title = flavor_emberscar.26.t
+	desc = flavor_emberscar.26.d
+	picture = bloodlines_eventPicture
+	trigger = {
+	tag = V11
+	}
+	fire_only_once = yes 
+	is_triggered_only = yes
+	option = {
+		name = "flavor_emberscar.26.b"
+		V11_river_provinces = {
+		add_province_modifier = {
+		name = V11_rare_matierals
+		duration = -1
+		}
+		}
+}
+}

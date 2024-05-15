@@ -1,7 +1,7 @@
 # No previous file for PROV6735
-owner = S23
-controller = S23
-add_core = S23
+owner = S44
+controller = S44
+add_core = S44
 culture = ofehibi
 religion = sky_domain
 

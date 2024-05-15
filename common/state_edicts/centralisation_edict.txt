@@ -4,11 +4,11 @@ edict_centralization_effort = {
 	}
 	
 	allow = {
-		always = yes
+		NOT = { has_country_flag = disable_all_state_edicts_bool }
 	}
 	
 	modifier = {
-		local_autonomy = -0.03
+		local_autonomy = -0.05
 	}
 	
 	color = {  220 178 155 }

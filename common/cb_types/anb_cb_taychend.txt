@@ -2,10 +2,7 @@ cb_taychend_glory = {
 	valid_for_subject = no 
 
 	prerequisites_self = {
-		OR = {
-			religion = gods_of_the_taychend
-			religion = oren_nayiru
-		}
+		religion = gods_of_the_taychend
 	}
 
 	prerequisites = {
@@ -39,6 +36,5 @@ cb_taychend_glory = {
 		po_form_personal_union
 		po_transfer_vassals
 		po_humiliate
-		po_humiliate_rival
 	}
 }

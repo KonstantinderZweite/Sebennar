@@ -1,9 +1,8 @@
 
 # 78 - Mainz | Greatfield
-owner = A15
-controller = A15
-add_core = A15
-add_core = B76
+owner = A14
+controller = A14
+add_core = A14
 culture = low_lorentish
 religion = regent_court
 hre = no

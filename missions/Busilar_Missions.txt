@@ -9,9 +9,53 @@ busilar_1 = {
 		tag = A29
 	}
 	
+	A29_secure_highlands = {
+		icon = mission_great_wall
+		position = 1
+		
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			monthly_mil = 9
+			army_size_percentage = 1
+		}
+		
+		effect = {
+			khenak_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			mountainway_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = a29_busilari_security_concerns
+				duration = 7300
+			}
+		}
+	}
+	
 	A29_reclaim_mount_khenak = {
 		icon = mission_control_the_desh
-		position = 1
+		position = 2
+		
+		required_missions = {
+			A29_secure_highlands
+		}
 		
 		provinces_to_highlight = {
 			province_id = 364
@@ -150,6 +194,18 @@ busilar_1 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			411 = {
+			add_province_modifier = {
+					name = a29_highcliff_fisheries
+					duration = -1
+				}
+			}
+			413 = {
+			add_province_modifier = {
+					name = a29_highcliff_fisheries
+					duration = -1
+				}
+			}
 		}
 	}
 }
@@ -166,7 +222,7 @@ busilar_2 = {
 	
 	A29_reinforce_the_khenak = {
 		icon = alpine_defenses
-		position = 2
+		position = 3
 		
 		required_missions = {
 			A29_reclaim_mount_khenak
@@ -192,64 +248,7 @@ busilar_2 = {
 			add_treasury = -100
 			364 = {
 				add_province_modifier = {
-					name = busilar_khenak_fortifications
-					duration = -1
-				}
-			}
-		}
-	}
-	
-	A29_revitalize_the_copper_mines = {
-		icon = mission_rb_central_belt_coal_mining
-		position = 3
-		
-		required_missions = {
-			A29_reinforce_the_khenak
-		}
-		
-		provinces_to_highlight = {
-			OR = {
-				province_id = 364
-				province_id = 371
-				province_id = 367
-			}
-			OR = {
-				NOT = { has_production_building_trigger = yes }
-				NOT = { development = 15 }
-			}
-		}
-		
-		trigger = {
-			364 = {
-				has_production_building_trigger = yes
-				development = 15
-			}
-			371 = {
-				has_production_building_trigger = yes
-				development = 15
-			}
-			367 = {
-				has_production_building_trigger = yes
-				development = 15
-			}
-		}
-		
-		effect = {
-			364 = {
-				add_province_modifier = {
-					name = busilar_busilari_copper_mines
-					duration = -1
-				}
-			}
-			367 = {
-				add_province_modifier = {
-					name = busilar_busilari_copper_mines
-					duration = -1
-				}
-			}
-			371 = {
-				add_province_modifier = {
-					name = busilar_busilari_copper_mines
+					name = a29_khenak_fortifications
 					duration = -1
 				}
 			}
@@ -262,6 +261,7 @@ busilar_2 = {
 		
 		required_missions = {
 			A29_claim_escandar
+			A29_reinforce_the_khenak
 		}
 		
 		provinces_to_highlight = {
@@ -289,7 +289,7 @@ busilar_2 = {
 	
 	A29_the_imperial_cub = {
 		icon = mission_onward_to_gaur
-		position = 8
+		position = 7
 		
 		required_missions = {
 			A29_rhinmond_area
@@ -314,6 +314,10 @@ busilar_2 = {
 					duration = -1
 				}
 			}
+			add_country_modifier = {
+                    name = a29_northern_lion
+                    duration = -1
+                }
 		}
 	}
 }
@@ -328,9 +332,66 @@ busilar_3 = {
 		tag = A29
 	}
 	
+	A29_revitalize_the_copper_mines = {
+		icon = mission_rb_central_belt_coal_mining
+		position = 2
+		
+		required_missions = {
+			A29_stabilize_the_country
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 364
+				province_id = 371
+				province_id = 367
+			}
+			OR = {
+				NOT = { has_production_building_trigger = yes }
+				NOT = { development = 12 }
+			}
+		}
+		
+		trigger = {
+			364 = {
+				has_production_building_trigger = yes
+				development = 12
+			}
+			371 = {
+				has_production_building_trigger = yes
+				development = 12
+			}
+			367 = {
+				has_production_building_trigger = yes
+				development = 12
+			}
+		}
+		
+		effect = {
+			364 = {
+				add_province_modifier = {
+					name = a29_copper_mines
+					duration = -1
+				}
+			}
+			367 = {
+				add_province_modifier = {
+					name = a29_copper_mines
+					duration = -1
+				}
+			}
+			371 = {
+				add_province_modifier = {
+					name = a29_copper_mines
+					duration = -1
+				}
+			}
+		}
+	}
+	
 	A29_modernize_the_arsenal = {
 		icon = africa_proconsulare
-		position = 4
+		position = 3
 		
 		required_missions = {
 			A29_revitalize_the_copper_mines
@@ -340,24 +401,24 @@ busilar_3 = {
 		provinces_to_highlight = {
 			province_id = 365
 			OR = {
-				NOT = { development = 35 }
-				NOT = { has_building = drydock }
-				NOT = { has_building = grand_shipyard }
+				NOT = { development = 30 }
+				NOT = { has_building = dock }
+				NOT = { has_building = shipyard }
 			}
 		}
 		
 		trigger = {
 			365 = {
-				development = 35
-				has_building = drydock
-				has_building = grand_shipyard
+				development = 30
+				has_building = dock
+				has_building = shipyard
 			}
 		}
 		
 		effect = {
 			365 = {
 				add_province_modifier = {
-					name = busilar_modern_busilari_arsenal
+					name = a29_modern_busilari_arsenal
 					duration = -1
 				}
 			}
@@ -366,7 +427,7 @@ busilar_3 = {
 	
 	A29_reunite_with_our_brothers = {
 		icon = mission_protect_granada
-		position = 5
+		position = 4
 		
 		required_missions = {
 			A29_rebuild_the_lion_armada
@@ -409,7 +470,7 @@ busilar_3 = {
 	
 	A29_a_frontier_for_crathanor = {
 		icon = mission_arabian_fort
-		position = 6
+		position = 5
 		
 		required_missions = {
 			A29_reunite_with_our_brothers
@@ -458,7 +519,7 @@ busilar_3 = {
 	
 	A29_the_copper_dwarves = {
 		icon = mission_fortify_rajputana
-		position = 7
+		position = 6
 		
 		required_missions = {
 			A29_a_frontier_for_crathanor
@@ -494,9 +555,9 @@ busilar_3 = {
 		}
 	}
 	
-	A29_katrano_pillar = {
+	A29_westend_pillar = {
 		icon = mission_conquer_tunisia
-		position = 8
+		position = 7
 		
 		required_missions = {
 			A29_the_copper_dwarves
@@ -507,6 +568,10 @@ busilar_3 = {
 		}
 		
 		effect = {
+			add_country_modifier = {
+                    name = a29_eastern_lion
+                    duration = -1
+                }
 			516 = {
 				center_of_trade = 1
 				add_province_modifier = {
@@ -519,11 +584,11 @@ busilar_3 = {
 	
 	A29_stone_lions_of_busilar = {
 		icon = mission_reclaim_dehli
-		position = 9
+		position = 8
 		
 		required_missions = {
 			A29_the_imperial_cub
-			A29_katrano_pillar
+			A29_westend_pillar
 			A29_a_symbol_of_our_protection
 		}
 
@@ -540,15 +605,15 @@ busilar_3 = {
 	
 	A29_the_gnolls_defeated = {
 		icon = mission_accomodate_the_rajputs
-		position = 11
+		position = 10
 		
 		required_missions = {
 			A29_fulfilling_our_promise
 		}
 		
 		provinces_to_highlight = {
-			trade_company_region = trade_company_divenhal_gate
-			culture = seascourge_gnoll
+			trade_company_region = trade_company_akan
+			culture = windhowler_gnoll
 			NOT = {
 				province_id = 6091
 				province_id = 6092
@@ -565,8 +630,8 @@ busilar_3 = {
 		
 		trigger = {
 			owns_all_provinces = {
-				trade_company_region = trade_company_divenhal_gate
-				culture = seascourge_gnoll
+				trade_company_region = trade_company_akan
+				culture = windhowler_gnoll
 				NOT = {
 					province_id = 6091
 					province_id = 6092
@@ -584,11 +649,11 @@ busilar_3 = {
 		effect = {
 			every_owned_province = {
 				limit = {
-					culture = seascourge_gnoll
-					AND = {
-						area = deshak_area
-						NOT = { province_id = 403 }
-					}
+					culture = windhowler_gnoll
+						AND = {
+							area = deshak_area
+							NOT = { province_id = 403 }
+						}
 				}
 				change_culture = desha
 				change_religion = ROOT
@@ -596,7 +661,7 @@ busilar_3 = {
 			}
 			every_owned_province = {
 				limit = {
-					culture = seascourge_gnoll
+					culture = windhowler_gnoll
 					OR = {
 						area = akasik_mountains_area
 						area = middle_akasik_area
@@ -609,13 +674,13 @@ busilar_3 = {
 			}
 			every_owned_province = {
 				limit = {
-					culture = seascourge_gnoll
+					culture = windhowler_gnoll
 					OR = {
 						area = akarat_area
 						area = ekha_area
 					}
 				}
-				change_culture = far_akasi
+				change_culture = far_akani
 				change_religion = ROOT
 				add_devastation = 10
 			}
@@ -635,7 +700,7 @@ busilar_4 = {
 	
 	A29_stabilize_the_country = {
 		icon = mission_secure_khandesh
-		position = 2
+		position = 1
 		
 		trigger = {
 			stability = 2
@@ -644,14 +709,14 @@ busilar_4 = {
 		effect = {
 			add_country_modifier = {
 				name = busilar_reconstruction
-				duration = 3650
+				duration = 7300
 			}
 		}
 	}
 	
 	A29_expand_port_jaher = {
 		icon = a_question_of_spain
-		position = 3
+		position = 2
 		
 		required_missions = {
 			A29_stabilize_the_country
@@ -660,17 +725,15 @@ busilar_4 = {
 		provinces_to_highlight = {
 			province_id = 365
 			OR = {
-				NOT = { development = 25 }
-				NOT = { has_dock_building_trigger = yes }
-				NOT = { has_shipyard_building_trigger = yes }
+				NOT = { development = 20 }
+				NOT = { has_trade_building_trigger = yes }
 			}
 		}
 		
 		trigger = {
 			365 = {
-				development = 25
-				has_dock_building_trigger = yes
-				has_shipyard_building_trigger = yes
+				development = 20
+				has_trade_building_trigger = yes
 			}
 		}
 		
@@ -690,7 +753,7 @@ busilar_4 = {
 	
 	A29_rebuild_the_lion_armada = {
 		icon = crusader_fleet
-		position = 4
+		position = 3
 		
 		required_missions = {
 			A29_expand_port_jaher
@@ -722,7 +785,7 @@ busilar_4 = {
 	
 	A29_prepare_for_our_revenge = {
 		icon = mission_warrior_gold
-		position = 5
+		position = 4
 		
 		required_missions = {
 			A29_rebuild_the_lion_armada
@@ -749,7 +812,7 @@ busilar_4 = {
 	
 	A29_ending_the_rivalry = {
 		icon = the_latin_empire
-		position = 6
+		position = 5
 		
 		required_missions = {
 			A29_prepare_for_our_revenge
@@ -796,7 +859,7 @@ busilar_4 = {
 	
 	A29_a_symbol_of_our_protection = {
 		icon = mission_plus_ultra
-		position = 8
+		position = 7
 		
 		required_missions = {
 			A29_ending_the_rivalry
@@ -815,6 +878,10 @@ busilar_4 = {
 		}
 		
 		effect = {
+			add_country_modifier = {
+                    name = a29_southern_lion
+                    duration = -1
+                }
 			382 = {
 				add_province_modifier = {
 					name = busilar_busilari_stone_lion
@@ -826,7 +893,7 @@ busilar_4 = {
 	
 	A29_surpass_the_gnolls = {
 		icon = mission_conquer_timbuktu
-		position = 9
+		position = 8
 		
 		required_missions = {
 			A29_a_symbol_of_our_protection
@@ -845,7 +912,7 @@ busilar_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			akasik_mountains_area = {
+			 akasik_mountains_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -857,7 +924,7 @@ busilar_4 = {
 	
 	A29_fulfilling_our_promise = {
 		icon = mission_reconquer_ceuta
-		position = 10
+		position = 9
 		
 		required_missions = {
 			A29_surpass_the_gnolls
@@ -916,7 +983,7 @@ busilar_4 = {
 	
 	A29_lion_marsh = {
 		icon = mission_clear_the_delta
-		position = 11
+		position = 10
 		
 		required_missions = {
 			A29_a_western_outpost
@@ -949,7 +1016,7 @@ busilar_4 = {
 	
 	A29_nur_hapaine = {
 		icon = mission_demand_garjat_fealty
-		position = 12
+		position = 11
 		
 		required_missions = {
 			A29_lion_marsh
@@ -991,12 +1058,286 @@ busilar_5 = {
 		tag = A29
 	}
 	
-	A29_wander_to_aelantir = {
-		icon = mission_launch_a_flagship
+	A29_northern_diplomacy = {
+		icon = mission_alliances
+		
+		position = 2
+		
+		required_missions = {
+			A29_stabilize_the_country
+		}
+		
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			num_of_allies = 2
+			calc_true_if = {
+				all_ally = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				amount = 2
+			}
+		}
+		
+		effect = {
+			define_advisor = {
+			
+				type = statesman
+				skill = 2
+				cost_multiplier = 0.33
+				culture = busilari
+				name = "Lenard Dauphine"
+			}
+		}
+	}
+	
+	A29_imperial_entrance = {
+		icon = mission_dancing_with_dead
+		
+		position = 3
+		
+		required_missions = {
+			A29_northern_diplomacy
+		}
+		
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			prestige = 25
+			emperor = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+		}
+		
+		effect = {
+			emperor = {
+				country_event = { id = flavor_busilar.1 } 
+				
+			}
+		}
+	}
+	
+	A29_verne_question = {
+		icon = mission_unknown_mission
+		
 		position = 4
 		
 		required_missions = {
-			A29_expand_port_jaher
+			A29_imperial_entrance
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 292
+			}
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+			}
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = A29_acceptance_triggers_tt
+					always = no
+				}
+				AND = {
+					army_size = 40
+					OR = {
+					NOT = { exists = A33 }
+					A33 = { 
+						has_spy_network_from = {
+							who = ROOT
+							value = 30
+					}
+				}
+			}
+					custom_trigger_tooltip = {
+						tooltip = A29_acceptance_path_tooltip
+						has_country_flag = A29_acceptance_path
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = A29_rejection_triggers_tt
+					always = no
+				}
+				AND = {
+					army_size = 40
+					OR = {
+					NOT = { exists = A33 }
+					A33 = { 
+						has_spy_network_from = {
+							who = ROOT
+							value = 30
+					}
+				}
+			}
+					custom_trigger_tooltip = {
+						tooltip = A29_rejection_path_tooltip
+						has_country_flag = A29_rejection_path
+					}
+				}
+			}
+		}
+	
+	effect = {
+			if = {
+                limit = { has_country_flag = A29_acceptance_path }
+               add_casus_belli = {
+					target = A33
+					type = cb_vassalize_mission
+					months = 360
+				}
+            }
+            
+            else = {
+                custom_tooltip = A29_rejection_effects_tt
+                verne_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			menibor_loop_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			wyvernmark_area = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_core = ROOT
+			}
+            }
+		}
+	}
+	
+	a29_verne_integration = {
+		icon = mission_unknown_mission
+		
+		position = 5
+		
+		required_missions = {
+			A29_verne_question
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = verne_area
+				area = wyvernmark_area
+				area = menibor_loop_area
+			}
+		}
+		
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+			}
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = A29_acceptance_triggers_tt
+					always = no
+				}
+				AND = {
+				dip_power = 200
+				A33 = {
+				OR = {
+					AND = {
+						is_subject_of = ROOT
+						NOT = { liberty_desire = 35 }
+						NOT = { total_development = 250 }
+					}
+					NOT = { exists = yes }
+				}
+			}
+					custom_trigger_tooltip = {
+						tooltip = A29_acceptance_path_tooltip
+						has_country_flag = A29_acceptance_path
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = A29_rejection_triggers_tt
+					always = no
+				}
+				AND = {
+				adm_power = 200
+					verne_area = {
+				type = all
+				owned_by = ROOT
+					}
+					wyvernmark_area = {
+				type = all
+				owned_by = ROOT
+					}
+					menibor_loop_area = {
+				type = all
+				owned_by = ROOT
+					}
+					custom_trigger_tooltip = {
+						tooltip = A29_rejection_path_tooltip
+						has_country_flag = A29_rejection_path
+					}
+				}
+			}
+		}
+	
+	effect = {
+			if = {
+                limit = { has_country_flag = A29_acceptance_path }
+               add_dip_power = -200
+			   add_country_modifier = {
+				name = a29_verne_crown
+				duration = -1
+			}
+			   custom_tooltip = rubyhold_inherit_tt
+			hidden_effect = {
+				if = {
+					limit = { A33 = { is_subject_of = ROOT } }
+					inherit = A33
+					}
+				}
+			
+            }
+            
+            else = {
+                custom_tooltip = A29_rejection_effects_tt
+				 add_adm_power = -200
+				 add_country_modifier = {
+				name = a29_verne_crown
+				duration = -1
+				}
+				country_event = { id = flavor_busilar.4 } 
+            }
+		}
+	}
+	
+	A29_wander_to_aelantir = {
+		icon = mission_launch_a_flagship
+		position = 6
+		
+		required_missions = {
+			
 		}
 		
 		trigger = {
@@ -1013,7 +1354,7 @@ busilar_5 = {
 	
 	A29_a_western_outpost = {
 		icon = mission_claim_the_canaries
-		position = 10
+		position = 9
 		
 		required_missions = {
 			A29_wander_to_aelantir
@@ -1046,7 +1387,7 @@ busilar_5 = {
 
 	A29_nariande = {
 		icon = mission_colonize_the_west
-		position = 11
+		position = 10
 		
 		required_missions = {
 			A29_a_western_outpost
@@ -1079,7 +1420,7 @@ busilar_5 = {
 	
 	A29_nur_lorbet = {
 		icon = mission_unite_coromandel
-		position = 12
+		position = 11
 		
 		required_missions = {
 			A29_nariande
@@ -1112,7 +1453,7 @@ busilar_5 = {
 	
 	A29_nur_busilar = {
 		icon = mission_south_african_bases
-		position = 13
+		position = 12
 		
 		required_missions = {
 			A29_nur_lorbet

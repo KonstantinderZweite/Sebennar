@@ -1,6 +1,6 @@
-owner = L07
-controller = L07
-add_core = L07
+owner = F63
+controller = F63
+add_core = F63
 culture = gumzemo
 religion = noukahi_pantheon
 

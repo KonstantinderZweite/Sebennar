@@ -4,7 +4,7 @@ government = monarchy
 add_government_reform = verkal_ozovar_monarchy
 government_rank = 1
 primary_culture = nephrite_dwarf
-religion = dwarven_pantheon
+religion = ancestor_worship
 technology_group = tech_east_dwarven
 capital = 5424
 fixed_capital = 5424
@@ -37,12 +37,12 @@ historical_friend = Y67 #Temporary
 		dip = 4
 		mil = 4
 	}
-	
+	add_ruler_personality = immortal_personality
 	add_ruler_personality = benevolent_personality
 	add_ruler_personality = lawgiver_personality
-	set_ruler_flag = long_lived_ruler
+	set_ruler_flag = set_immortality
 		
-	queen = {
+		queen = {
 		name = "Otha"
 		dynasty = "Surehammer"
 		birth_date = 1320.5.20
@@ -52,7 +52,6 @@ historical_friend = Y67 #Temporary
 		dip = 5
 		mil = 4
 	}
-	set_consort_flag = long_lived_ruler
 }
 1400.2.11 = {
 	heir = {
@@ -66,6 +65,5 @@ historical_friend = Y67 #Temporary
 		dip = 6
 		mil = 4
 	}
-	set_heir_flag = long_lived_ruler
 }
 

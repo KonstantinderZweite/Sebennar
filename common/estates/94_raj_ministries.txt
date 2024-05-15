@@ -12,9 +12,9 @@ estate_raj_ministries = {
 		OR = {
 			tag = R70 # Harimraj
 			tag = R71 # Rahenraj
-			has_government_attribute = is_raja
+			has_reform = raja_reform
 			has_reform = tiltaghar_grand_vizier_reform
-			overlord = { has_government_attribute = is_raja }
+			overlord = { has_reform = raja_reform }
 		}
 	}
 
@@ -22,7 +22,6 @@ estate_raj_ministries = {
 	country_modifier_happy = {
 		state_maintenance_modifier = -0.25
 		vassal_income = 0.25
-		development_cost = -0.1
 	}
 	country_modifier_neutral = {
 		state_maintenance_modifier = -0.25
@@ -151,7 +150,7 @@ estate_raj_ministries = {
 			}
 			any_neighbor_country = {
 				NOT = {
-					has_government_attribute = is_raja
+					has_reform = raja_reform
 					has_reform = prabhi_reform
 					has_reform = senapti_reform
 				}

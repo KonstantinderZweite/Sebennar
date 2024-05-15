@@ -1,7 +1,8 @@
-owner = H83
-controller = H83
-add_core = H83
-culture = drakeclaw_orc
+
+
+
+
+culture = black_orc
 religion = old_dookan
 trade_goods = unknown
 hre = no

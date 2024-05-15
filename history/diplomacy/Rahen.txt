@@ -54,12 +54,12 @@ vassal = {
 	end_date = 1500.1.1
 }
 #Sarnavan - Parraj
-alliance = {
-	first = R10
-	second = R09
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
+# alliance = {
+	# first = R10
+	# second = R09
+	# start_date = 1444.1.1
+	# end_date = 1500.1.1
+# }
 
 ### Hobgoblin Vassals ###
 
@@ -119,59 +119,11 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1500.1.1
 }
-#Dagari
-dependency = {
-	subject_type = "daimyo_vassal"
-	first = R51
-	second = R32
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
-#Alkayivad
-dependency = {
-	subject_type = "daimyo_vassal"
-	first = R51
-	second = R30
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
 #Tudhina
 dependency = {
 	subject_type = "daimyo_vassal"
 	first = R51
 	second = R42
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
-#Tekhara Makhan
-dependency = {
-	subject_type = "daimyo_vassal"
-	first = R51
-	second = R27
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
-#Sheramvi
-dependency = {
-	subject_type = "daimyo_vassal"
-	first = R51
-	second = R31
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
-#Dakhilamvi
-dependency = {
-	subject_type = "daimyo_vassal"
-	first = R51
-	second = R28
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
-#Shekivad
-dependency = {
-	subject_type = "daimyo_vassal"
-	first = R51
-	second = R29
 	start_date = 1444.1.1
 	end_date = 1500.1.1
 }
@@ -427,43 +379,3 @@ march = {
 ### Hobgoblin Command ###
 #########################
 
-#Thunderfist Clan
-dependency = {
-	subject_type = "slave_state"
-	first = R62
-	second = R63
-	start_date = 1444.1.1
-	end_date = 1600.1.1
-}
-# Bloodsong Clan
-dependency = {
-	subject_type = "slave_state"
-	first = R62
-	second = R64
-	start_date = 1444.1.1
-	end_date = 1600.1.1
-}
-# Blackstep Clan
-dependency = {
-	subject_type = "slave_state"
-	first = R62
-	second = R65
-	start_date = 1444.1.1
-	end_date = 1600.1.1
-}
-# Stolen Gem clan
-dependency = {
-	subject_type = "slave_state"
-	first = R62
-	second = R66
-	start_date = 1444.1.1
-	end_date = 1600.1.1
-}
-
-#Sarkhashabid - Maqet
-alliance = {
-	first = R02
-	second = F56
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}

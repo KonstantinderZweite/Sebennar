@@ -2,7 +2,6 @@
 # No previous file for Tlapanec
 culture = green_orc
 religion = great_dookan
-tribal_owner = B26
 hre = no
 
 base_tax = 2

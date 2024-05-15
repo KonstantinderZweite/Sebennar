@@ -680,49 +680,34 @@ country_decisions = {
 
 		allow = {
 			hidden_trigger = { tag = G91 }
-			if = {
-				limit = { 
+			OR = {
+				controls = 4070 #yidab's nest
+				AND = {
 					4070 = {
-						is_city = yes
-					}
-				}
-				OR = {
-					controls = 4070 #yidab's nest
-					AND = {
-						4070 = {
-							num_of_units_in_province = {
+						num_of_units_in_province = {
+							who = ROOT
+							amount = 20
+						}
+						owner = {
+							has_opinion = {
+								value = 150
 								who = ROOT
-								amount = 20
-							}
-							owner = {
-								has_opinion = {
-									value = 150
-									who = ROOT
-								}
 							}
 						}
-						OR = {
-							treasury = 500
-							4070 = {
-								owner = {
-									owes_favors = { 
-										who = ROOT 
-										value = 30
-									   }
-								}
+					}
+					OR = {
+						treasury = 500
+						4070 = {
+							owner = {
+								owes_favors = { 
+									who = ROOT 
+									value = 30
+						   		}
 							}
-						}				
-					}
+						}
+					}				
 				}
-			}
-			else = {
-				4070 = {
-					num_of_units_in_province = {
-						who = ROOT
-						amount = 20
-					}
-				}
-			}
+			}	
 		}
 		
 		effect = {

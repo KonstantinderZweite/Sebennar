@@ -36,56 +36,24 @@ alliance = {
 
 
 #Tanizu vassals
-#Eel - Gorrila
+#Gorilla - Natani
 vassal = {
-	first = S34
-	second = S33
-	start_date = 1438.1.1
-	end_date = 1500.1.1
-}
-#Eel - Natani
-vassal = {
-	first = S34
+	first = S33
 	second = S11
 	start_date = 1438.1.1
 	end_date = 1500.1.1
 }
-
-#Katidariga - Hut Building weaver
+#Elephant - Izmeri
 vassal = {
-	first = S83
-	second = S39
-	start_date = 1438.1.1
-	end_date = 1500.1.1
-}
-
-#Katidariga - Izmeri
-vassal = {
-	first = S83
+	first = S35
 	second = L82
 	start_date = 1438.1.1
 	end_date = 1500.1.1
 }
-
-#Katidariga - Ksataza
+#Parrot - Ksataza
 vassal = {
-	first = S83
+	first = S42
 	second = S12
-	start_date = 1438.1.1
-	end_date = 1500.1.1
-}
-
-#Goose - Parrot
-vassal = {
-	first = S43
-	second = S42
-	start_date = 1438.1.1
-	end_date = 1500.1.1
-}
-#Goose - Parrot
-vassal = {
-	first = S43
-	second = S38
 	start_date = 1438.1.1
 	end_date = 1500.1.1
 }

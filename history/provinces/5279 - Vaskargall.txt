@@ -13,7 +13,7 @@ trade_goods = copper
 capital = ""
 
 is_city = yes
-owner = J21
-controller = J21
-add_core = J21
+owner = J24
+controller = J24
+add_core = J24
 add_devastation = 20

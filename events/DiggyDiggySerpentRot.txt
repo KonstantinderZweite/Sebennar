@@ -312,7 +312,7 @@ country_event = {
 	}
 }
 
-#Lose dev
+#Loose dev because of shit
 province_event = {
 	id = serpent_rot.5
 	title = serpent_rot.5.t
@@ -452,6 +452,7 @@ country_event = {
 	option = {
         name = serpent_rot.7.c
         ai_chance = { factor = 100 }
+		highlight = yes
 		hidden_effect = { country_event = { id = serpent_rot.17 days = 650 random = 100 } } ##Fight with fire path
 	}
 }
@@ -727,6 +728,7 @@ country_event = {
 	option = {
         name = serpent_rot.12.c
         ai_chance = { factor = 100 }
+		highlight = yes
 		hidden_effect = {
 			country_event = { id = serpent_rot.17 days = 465 random = 50 } #fight it with fire
 		}
@@ -1642,6 +1644,7 @@ country_event = {
 	option = {
         name = serpent_rot.27.b
         ai_chance = { factor = 100 }
+		highlight = yes
 		#add_years_of_income = -0.5
 		custom_tooltip = pay_0.5year_of_income
 		currency_effect = { currency=treasury takeFrom=ROOT which=HalfYearOfIncome }

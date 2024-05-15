@@ -1,11 +1,10 @@
 
 # No previous file for Banten
-owner = S64
-controller = S64
-add_core = S64
-add_core = S29
-culture = wakoodak
-religion = beast_memory
+owner = S30
+controller = S30
+add_core = S30
+culture = antmvura
+religion = righteous_path
 
 hre = no
 
@@ -19,4 +18,4 @@ capital = ""
 
 is_city = yes
 
-# fort_15th = yes
+fort_15th = yes

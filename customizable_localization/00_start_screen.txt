@@ -305,34 +305,6 @@ defined_text = {
 		}
 	}
 
-	text = { #Lo Ngoen
-		localisation_key = string_start_title_LoNgoen
-		trigger = {
-			tag = Y60
-		}
-	}
-
-	text = { #Thirabnir
-		localisation_key = string_start_title_Thirabnir
-		trigger = {
-			tag = Y59
-		}
-	}
-
-	text = { #Khao Elnak
-		localisation_key = string_start_title_KhaoElnak
-		trigger = {
-			tag = Y62
-		}
-	}
-
-	text = { #Daengun
-		localisation_key = string_start_title_Daengun
-		trigger = {
-			tag = Y93
-		}
-	}
-
 	#Regions, leave this before the Countries otherwise this will be shown instead (this is a backup shown for countries who dont have special intros
 	# text = {
 		# localisation_key = string_start_title_bahar
@@ -347,7 +319,7 @@ defined_text = {
 		localisation_key = string_start_title_northern_isles
 		trigger = {
 			capital_scope = {
-				region = north_yarikhoi_region
+				region = northern_isles_region
 			}
 		}
 	}
@@ -356,7 +328,7 @@ defined_text = {
 		localisation_key = string_start_title_southern_isles
 		trigger = {
 			capital_scope = {
-				region = south_yarikhoi_region
+				region = southern_isles_region
 			}
 		}
 	}
@@ -473,15 +445,6 @@ defined_text = {
 					superregion = deepwoods_superregion
 				}
 				primary_culture = green_orc
-			}
-		}
-	}
-	
-	text = {
-		localisation_key = string_start_title_taychend
-		trigger = {
-			capital_scope = {
-				superregion = taychend_superregion
 			}
 		}
 	}
@@ -1062,6 +1025,14 @@ defined_text = {
 		}
 	}
 
+	#Aelantir
+	text = {
+		localisation_key = string_start_amacimst
+		trigger = {
+			tag = G26
+		}
+	}
+
 	text = { #Elizna
 		localisation_key = string_start_Elizna
 		trigger = {
@@ -1120,39 +1091,11 @@ defined_text = {
 	}
 
 	text = { # Chien Binhrung
-		localisation_key = string_start_chienbinhrung
-		trigger = {
-			tag = Y72
-		}
+	localisation_key = string_start_chienbinhrung
+	trigger = {
+		tag = Y72
 	}
-
-	text = { #Lo Ngoen
-		localisation_key = string_start_LoNgoen
-		trigger = {
-			tag = Y60
-		}
-	}
-
-	text = { #Thirabnir
-		localisation_key = string_start_Thirabnir
-		trigger = {
-			tag = Y59
-		}
-	}
-
-	text = { #Khao Elnak
-		localisation_key = string_start_KhaoElnak
-		trigger = {
-			tag = Y62
-		}
-	}
-
-	text = { #Daengun
-		localisation_key = string_start_Daengun
-		trigger = {
-			tag = Y93
-		}
-	}
+}
 
 	# Adventurer Companies in Escann
 	text = {
@@ -1223,7 +1166,7 @@ defined_text = {
 	localisation_key = string_start_northern_isles_description
 	trigger = {
 			capital_scope = {
-				region = north_yarikhoi_region
+				region = northern_isles_region
 			}
 		}
 	}
@@ -1232,7 +1175,7 @@ defined_text = {
 	localisation_key = string_start_southern_isles_description
 	trigger = {
 			capital_scope = {
-				region = south_yarikhoi_region
+				region = southern_isles_region
 			}
 		}
 	}
@@ -1423,15 +1366,6 @@ defined_text = {
 					superregion = eordand_superregion
 				}
 				religion = eordellon
-			}
-		}
-	}
-	
-	text = {
-	localisation_key = string_start_taychend
-	trigger = {
-			capital_scope = {
-				superregion = taychend_superregion
 			}
 		}
 	}
@@ -1660,13 +1594,6 @@ defined_text = {
 		localisation_key = string_start_religion_pactseeker
 		trigger = {
 			religion = pactseeker
-		}
-	}
-	
-	text = {
-		localisation_key = string_start_religion_gods_of_the_taychend
-		trigger = {
-			religion = gods_of_the_taychend
 		}
 	}
 

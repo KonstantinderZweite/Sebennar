@@ -13,6 +13,6 @@ trade_goods = cloth
 capital = "The Old Tower"
 
 is_city = yes
-owner = J20
-controller = J20
-add_core = J20
+owner = J18
+controller = J18
+add_core = J18

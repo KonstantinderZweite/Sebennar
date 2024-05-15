@@ -13,6 +13,6 @@ trade_goods = iron
 capital = ""
 
 is_city = yes
-owner = J08
-controller = J08
-add_core = J08
+owner = J02
+controller = J02
+add_core = J02

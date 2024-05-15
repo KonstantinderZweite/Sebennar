@@ -1,7 +1,8 @@
+
 owner = H86
 controller = H86
 add_core = H86
-culture = skull_orc
+culture = black_orc
 religion = old_dookan
 trade_goods = unknown
 hre = no

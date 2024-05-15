@@ -434,7 +434,7 @@ estate_jains_monopoly_of_textiles = {
 				}
 			}
 			tooltip = JY_LF_not_trading #Anbennar
-			NOT = { has_country_modifier = JY_LF_recent_trade }
+			NOT = { any_owned_province = { has_province_modifier = JY_LF_trading } }
 			# NOT = { has_disaster = french_revolution }
 			# NOT = {
 				# has_disaster_progress = {
@@ -558,7 +558,7 @@ estate_jains_monopoly_of_dyes = {
 				}
 			}
 			tooltip = JY_LF_not_trading #Anbennar
-			NOT = { has_country_modifier = JY_LF_recent_trade }
+			NOT = { any_owned_province = { has_province_modifier = JY_LF_trading } }
 			# NOT = { has_disaster = french_revolution }
 			# NOT = {
 				# has_disaster_progress = {
@@ -673,7 +673,7 @@ estate_jains_monopoly_of_glass = {
 				}
 			}
 			tooltip = JY_LF_not_trading #Anbennar
-			NOT = { has_country_modifier = JY_LF_recent_trade }
+			NOT = { any_owned_province = { has_province_modifier = JY_LF_trading } }
 			# NOT = { has_disaster = french_revolution }
 			# NOT = {
 				# has_disaster_progress = {
@@ -788,7 +788,7 @@ estate_jains_monopoly_of_paper = {
 				}
 			}
 			tooltip = JY_LF_not_trading #Anbennar
-			NOT = { has_country_modifier = JY_LF_recent_trade }
+			NOT = { any_owned_province = { has_province_modifier = JY_LF_trading } }
 			# NOT = { has_disaster = french_revolution }
 			# NOT = {
 				# has_disaster_progress = {
@@ -1265,9 +1265,9 @@ estate_jains_promote_jain_bookkeeping = {
 	loyalty_scaled_conditional_modifier = {
 		trigger = { always = yes }
 		modifier = {
-			inflation_action_cost = -0.5
-			interest = -0.5
-			state_maintenance_modifier = -0.25
+			inflation_action_cost = -0.2
+			interest = -0.15
+			state_maintenance_modifier = -0.125
 		}
 	}
 	on_granted = {

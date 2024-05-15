@@ -271,6 +271,9 @@ A99_column_1_part_1 = {
 					amount = 2
 					high = yes
 				}
+				every_owned_province = {
+					update_racial_province_modifier_tolerance = yes
+				}
 			}
 		}
 	}
@@ -1296,7 +1299,7 @@ A99_column_5_part_1 = {
 					}
 				}
 			}
-			901 = {
+			266 = {
 				#Varainé (province)
 				trade_share = {
 					country = ROOT
@@ -1351,7 +1354,7 @@ A99_column_5_part_1 = {
 			any_owned_province = {
 				province_has_center_of_trade_of_level = 3
 			}
-			901 = {
+			266 = {
 				#Esmaraine (province)
 				trade_share = {
 					country = ROOT

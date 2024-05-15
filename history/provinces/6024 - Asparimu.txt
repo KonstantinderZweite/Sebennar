@@ -1,7 +1,7 @@
-owner = L95
-controller = L95
+owner = F63
+controller = F63
+add_core = F63
 add_core = L95
-add_core = L99
 culture = ichiadza_lizardfolk
 religion = anzalkatsa
 
@@ -26,20 +26,4 @@ add_permanent_province_modifier = {
 	name = human_minority_oppressed_large
 	duration = -1
 }
-
-1.1.1 = { #Anzaran rule from 32 BA
-	owner = L69
-	controller = L69
-}
-
-462.1.1 = { #Katsanada gets established
-	owner = L99
-	controller = L99
-}
-
-1443.11.12 = { #Zerat vs Rayaz war + Yushyn rebellion - medium separatism
-	owner = L95
-	controller = L95
-}
-
-add_nationalism = 20
+# No previous file for Anbennar5969

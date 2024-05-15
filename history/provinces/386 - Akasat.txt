@@ -5,7 +5,7 @@ owner = U07
 controller = U07
 add_core = U07
 add_core = F57
-culture = khasani
+culture = far_akasi
 religion = mother_akasik
 
 hre = no

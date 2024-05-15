@@ -1,0 +1,18 @@
+country_decisions = {
+	open_wiki = {
+		major = yes
+		
+		potential = {
+			ai = no
+		}
+		
+		trigger = {
+			hidden_trigger = { ai = no }
+		}
+		
+		effect = {
+			hidden_effect = {
+				country_event = { id = category_events.0 }
+			}
+		}
+}

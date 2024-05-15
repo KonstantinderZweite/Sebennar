@@ -5,7 +5,7 @@ owner = U07
 controller = U07
 add_core = U07
 add_core = U08
-culture = seascourge_gnoll
+culture = windhowler_gnoll
 religion = xhazobkult
 
 hre = no

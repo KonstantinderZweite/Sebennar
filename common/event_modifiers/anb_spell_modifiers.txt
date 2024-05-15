@@ -11,7 +11,6 @@ magic_menu_cooldown = {
 }
 
 heir_mage_personality_mod = {
-	picture = "heir_is_powerful_mage"
 }
 
 consort_mage_personality_mod = {
@@ -71,7 +70,6 @@ witch_king_modifier = {	#the witch king event should also give a ruler_flag, so 
 	republican_tradition = -1
 
 	yearly_karma_decay = 0.05 #subverts the corinite faith. they are might makes right and cult of personality around them
-	picture = "witch_king"
 }
 
 witch_king_death = {
@@ -137,13 +135,13 @@ magic_realm_abjuration_empowered_ward = {
 }
 
 magic_realm_abjuration_field_of_freedom = {
-	local_friendly_movement_speed = 0.75
+	local_friendly_movement_speed = 0.40
 	supply_limit_modifier = 0.25
 }
 
 magic_realm_abjuration_field_of_forbiddance = {
-	local_hostile_movement_speed = -0.75
-	local_hostile_attrition = 5
+	local_hostile_movement_speed = -0.25
+	local_hostile_attrition = 2.5
 }
 
 magic_realm_abjuration_field_of_fortification = {
@@ -193,13 +191,13 @@ magic_realm_divination_scrying_neighbours = {
 }
 
 magic_realm_divination_scrying_affairs = {
-	all_power_cost = -0.1
+	all_power_cost = -0.075
 
 	diplomatic_reputation = -1
 }
 
 magic_realm_divination_foresight = {
-	all_power_cost = -0.33
+	all_power_cost = -0.15
 	migration_cost = 0.33 # To remove infinite mana migration exploit
 }
 
@@ -271,7 +269,7 @@ magic_realm_enchantment_modify_memories_overlook_national_blunders = {
 }
 
 magic_realm_enchantment_modify_memories_encourage_subservience = {
-	global_autonomy = -0.01
+	global_autonomy = -0.10
 	stability_cost_modifier = -0.25
 }
 
@@ -283,34 +281,37 @@ magic_realm_enchantment_modify_memories_forget_atrocities = {
 
 magic_realm_evocation_war_magic_1 = {
 	land_morale = 0.05
-	shock_damage = 0.2
+	shock_damage = 0.1
 }
 
 magic_realm_evocation_war_magic_2 = {
 	land_morale = 0.1
-	shock_damage = 0.2
-	fire_damage_received = -0.1
+	shock_damage = 0.15
+	fire_damage_received = -0.05
 }
 	
 
 magic_realm_evocation_war_magic_3 = {
 	land_morale = 0.1
-	shock_damage = 0.3
-	fire_damage_received = -0.2
+	shock_damage = 0.20
+	fire_damage_received = -0.1
 }
 
 #Illusion
 
 magic_realm_illusion_glamour = {
 	diplomatic_reputation = 1
+	vassal_income = 0.30
 }
 
 magic_realm_illusion_enchanted_glamour = {
 	diplomatic_reputation = 2
+	vassal_income = 0.40
 }
 
 magic_realm_illusion_otherworldly_glamour = {
 	diplomatic_reputation = 3
+	vassal_income = 0.50
 }
 
 magic_realm_illusion_simulacrum = {
@@ -334,9 +335,7 @@ magic_realm_illusion_simulacrum_exposed = {
 magic_realm_necromancy_undead_army_lost_control = {
 	global_unrest = 3
 	global_tax_modifier = -0.25
-	production_efficiency = -0.5
-	development_cost = 0.5
-	
+	production_efficiency = -0.25
 	hostile_attrition = 10
 	
 }
@@ -404,16 +403,16 @@ ruler_recently_casted_spell = {
 	#build_time = -0.5
 # }
 magic_estate_aiding_construction_1 = {
-	build_time = -0.1
-	build_cost = -0.1
+	build_time = -0.10
+	build_cost = -0.05
 }
 magic_estate_aiding_construction_2 = {
-	build_time = -0.2
-	build_cost = -0.2
+	build_time = -0.20
+	build_cost = -0.10
 }
 magic_estate_aiding_construction_3 = {
-	build_time = -0.3
-	build_cost = -0.3
+	build_time = -0.30
+	build_cost = -0.15
 }
 
 magic_estate_magnificent_feast_1 = {
@@ -635,11 +634,11 @@ army_organiser_homunculus = {
 	country_military_power = 1
 }
 army_reformer_homunculus = { 
-	land_morale = 0.10
+	land_morale = 0.05
 	country_military_power = 1
 }
 commandant_homunculus = { 
-	discipline = 0.05
+	discipline = 0.025
 	country_military_power = 1
 }
 grand_captain_homunculus = { 
@@ -657,8 +656,4 @@ military_engineer_homunculus = {
 quartermaster_homunculus = { 
 	reinforce_speed = 0.33
 	country_military_power = 1
-}
-
-allow_war_wizard_after_exile_delay = {
-	#set for 1 day, define_ruler_to_general does not work after a returning ruler who was a general until 1 day has passed or the game has been reloaded
 }

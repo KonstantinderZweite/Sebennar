@@ -4,9 +4,8 @@ owner = U09
 controller = U09
 add_core = U09
 add_core = L26
-add_core = U01
 culture = irsmahapan
-religion = nirakhetist
+religion = elikhetist
 
 hre = no
 
@@ -19,7 +18,7 @@ trade_goods = grain
 capital = ""
 
 is_city = yes
-center_of_trade = 1
+
 add_institution_embracement = {
     which = feudalism
     value = 100

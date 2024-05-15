@@ -1,5 +1,5 @@
 
-# Slavers with nets
+# Slavers with nets and shit
 
 type = cavalry
 unit_type = tech_gnollish

@@ -10,6 +10,7 @@ country_event = {
 
 	is_triggered_only = yes
 	fire_only_once = yes
+	hidden = yes
 
 	trigger = {
 		NOT = {
@@ -133,7 +134,7 @@ country_event = {
 	id = flavour_amacimst.3
 	title = flavour_amacimst.3.t
 	desc = flavour_amacimst.3.d
-	picture = VIKINGS_eventPicture
+	picture = MULTI_RACIAL_MERC_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
@@ -4685,22 +4686,20 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = {
-			random_known_country = {
-				limit = {
-					has_country_flag = G26_observing_joust
-				}
-				save_event_target_as = g26_drunk_1
+		random_known_country = {
+			limit = {
+				has_country_flag = G26_observing_joust
 			}
-			random_known_country = {
-				limit = {
-					has_country_flag = G26_observing_joust
-					NOT = {
-						tag = event_target:g26_drunk_1
-					}
+			save_event_target_as = G26_drunk_1
+		}
+		random_known_country = {
+			limit = {
+				has_country_flag = G26_observing_joust
+				NOT = {
+					tag = event_target:G26_drunk_1
 				}
-				save_event_target_as = g26_drunk_2
 			}
+			save_event_target_as = G26_drunk_2
 		}
 	}
 
@@ -4714,11 +4713,11 @@ country_event = {
 		}
 		add_dip_power = -30
 		add_prestige = -5
-		event_target:g26_drunk_1 = {
+		event_target:G26_drunk_1 = {
 			add_liberty_desire = -10
 			add_prestige = -5
 		}
-		event_target:g26_drunk_2 = {
+		event_target:G26_drunk_2 = {
 			add_liberty_desire = -10
 			add_prestige = -5
 		}
@@ -4742,19 +4741,19 @@ country_event = {
 		else = {
 			add_mil_power = 20
 		}
-		event_target:g26_drunk_1 = {
+		event_target:G26_drunk_1 = {
 			add_liberty_desire = 5
 			add_prestige = -10
 			add_opinion = {
-				who = event_target:g26_drunk_2
+				who = event_target:G26_drunk_2
 				modifier = ynn_joust_drunks
 			}
 		}
-		event_target:g26_drunk_2 = {
+		event_target:G26_drunk_2 = {
 			add_liberty_desire = 5
 			add_prestige = -10
 			add_opinion = {
-				who = event_target:g26_drunk_1
+				who = event_target:G26_drunk_1
 				modifier = ynn_joust_drunks
 			}
 		}
@@ -4764,8 +4763,8 @@ country_event = {
 	option = {	#they started it
 		trigger = {
 			OR = {
-				tag = event_target:g26_drunk_1
-				tag = event_target:g26_drunk_2
+				tag = event_target:G26_drunk_1
+				tag = event_target:G26_drunk_2
 			}
 			NOT = {
 				has_country_flag = amacimst_hosting_joust
@@ -4776,15 +4775,15 @@ country_event = {
 			factor = 1
 		}
 		tooltip = {
-			event_target:g26_drunk_1 = {
+			event_target:G26_drunk_1 = {
 				add_opinion = {
-					who = event_target:g26_drunk_2
+					who = event_target:G26_drunk_2
 					modifier = ynn_joust_drunks
 				}
 			}
-			event_target:g26_drunk_2 = {
+			event_target:G26_drunk_2 = {
 				add_opinion = {
-					who = event_target:g26_drunk_1
+					who = event_target:G26_drunk_1
 					modifier = ynn_joust_drunks
 				}
 			}
@@ -4795,8 +4794,8 @@ country_event = {
 		trigger = {
 			NOT = {
 				has_country_flag = amacimst_hosting_joust
-				tag = event_target:g26_drunk_1
-				tag = event_target:g26_drunk_2
+				tag = event_target:G26_drunk_1
+				tag = event_target:G26_drunk_2
 			}
 		}
 		name = flavour_amacimst.210.e
@@ -4804,11 +4803,11 @@ country_event = {
 			factor = 1
 		}
 		add_opinion = {
-			who = event_target:g26_drunk_1
+			who = event_target:G26_drunk_1
 			modifier = ynn_joust_drunks
 		}
 		add_opinion = {
-			who = event_target:g26_drunk_2
+			who = event_target:G26_drunk_2
 			modifier = ynn_joust_drunks
 		}
 	}

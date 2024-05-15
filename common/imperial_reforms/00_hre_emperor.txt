@@ -28,6 +28,10 @@ emperor_reichsregiment = {
 		diplomatic_reputation = 1
 		diplomats = 1
 	}
+	emperor_per_prince = {
+		global_manpower = 0.2
+		land_forcelimit = 0.2
+	}
 	required_reform = emperor_reichsreform
 	gui_container = mainline
 }
@@ -39,6 +43,10 @@ emperor_reichsstabilitaet = {
 
 	potential = {
 		has_dlc = "Emperor"
+	}
+	emperor_per_prince = {
+		global_manpower = 0.10
+		land_forcelimit = 0.10
 	}
 	province = {
 		local_state_maintenance_modifier = -0.25
@@ -57,7 +65,7 @@ emperor_gemeinerpfennig = {
 		diplomatic_reputation = 1
 	}
 	emperor_per_prince = {
-		global_tax_income = 0.5
+		global_tax_income = 1.75
 	}
 	required_reform = emperor_reichsstabilitaet
 	gui_container = mainline

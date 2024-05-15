@@ -1,11 +1,11 @@
 
-#62 - Rubyhold | 
+#62 - Leipzig | 
 
 owner = A20
 controller = A20
 add_core = A20
 culture = ruby_dwarf
-religion = dwarven_pantheon
+religion = ancestor_worship
 
 hre = no
 
@@ -14,13 +14,11 @@ base_production = 11
 base_manpower = 9
 
 trade_goods = gems
-center_of_trade = 1
 capital = ""
 
 is_city = yes
 
-
-
+center_of_trade = 1
 
 
 

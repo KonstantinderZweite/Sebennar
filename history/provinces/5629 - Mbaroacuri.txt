@@ -1,13 +1,14 @@
-owner = L82 #Izmeri
-controller = L82 #Izmeri
-add_core = L82 #Izmeri
+
+owner = S33
+controller = S33
+add_core = S33
 culture = cyazizeta_lizardfolk
 religion = beast_memory
 capital = ""
 
 hre = no
 
-base_tax = 2
+base_tax = 1
 base_production = 1
 base_manpower = 1
 

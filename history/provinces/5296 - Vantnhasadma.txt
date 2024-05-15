@@ -13,7 +13,7 @@ trade_goods = cloth
 capital = "The Great Shipyard"
 
 is_city = yes
-owner = J29
-controller = J29
-add_core = J29
+owner = J30
+controller = J30
+add_core = J30
 add_devastation = 20

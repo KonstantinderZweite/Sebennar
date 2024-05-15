@@ -1,4 +1,8 @@
-culture = manhunter_orc
+
+
+
+
+culture = black_orc
 religion = old_dookan
 trade_goods = unknown
 hre = no

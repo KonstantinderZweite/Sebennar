@@ -1,10 +1,10 @@
 # No previous file for Banten
-owner = R62
-controller = R62
-add_core = R62
+owner = R63
+controller = R63
+add_core = R63
 add_core = R80
 culture = wolf_command
-religion = godlost
+religion = old_dookan
 center_of_trade = 1
 
 hre = no
@@ -31,12 +31,12 @@ add_permanent_province_modifier = {
 }
 
 add_permanent_province_modifier = {
-	name = human_minority_coexisting_large
+	name = human_minority_integrated_large
 	duration = -1
 }
 
 add_permanent_province_modifier = {
-	name = harimari_minority_oppressed_small
+	name = harimari_minority_coexisting_small
 	duration = -1
 }
 
@@ -44,10 +44,3 @@ add_permanent_province_modifier = {
 	name = damaged_temple_complex
 	duration = -1
 }
-
-add_province_modifier = {
-	name = command_wolf_warcamp
-	duration = -1
-}
-
-set_province_flag = command_wolf_warcamp

@@ -1,9 +1,6 @@
 
 # No previous file for Tauisk
-owner = G01
-controller = G01
-add_core = G01
-tribal_owner = G01
+
 culture = boek
 religion = dotimism
 capital = ""

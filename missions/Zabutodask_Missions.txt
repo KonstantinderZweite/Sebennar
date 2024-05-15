@@ -6,6 +6,7 @@ J53_1 = {
 	ai = yes
 	potential = {
 		tag = J53 #Zabutodask
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	
@@ -311,6 +312,7 @@ J53_2 = {
 	ai = yes
 	potential = {
 		tag = J53 #Zabutodask
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	
@@ -653,10 +655,12 @@ JXX_3 = {
 	potential = {
 		OR = {
 			tag = J49
+			tag = J50
 			tag = J51
 			tag = J52
 			tag = J53 #Zabutodask
 		}
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	
@@ -666,12 +670,9 @@ JXX_3 = {
 		position = 1
 		
 		trigger = {
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = JXX_won_splinter_war
-					has_global_flag = lake_federation_disbanded
-				}
-				exists = J33
+			custom_trigger_tooltip = {
+				tooltip = JXX_won_splinter_war
+				has_global_flag = lake_federation_disbanded
 			}
 		}
 		
@@ -680,8 +681,6 @@ JXX_3 = {
 				name = JXX_new_begining_m
 				duration = 7300
 			}
-			custom_tooltip = JXX_unban_mages
-			hidden_effect = { clr_country_flag = LF_mages_banned }
 	    }
 	}
 }
@@ -692,6 +691,7 @@ J53_3 = {
 	ai = yes
 	potential = {
 		tag = J53 #Zabutodask
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	
@@ -704,6 +704,7 @@ J53_3 = {
 			OR = {
 				area = domn_filaenan_area
 				area = orchekh_area
+				area = godhosegh_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -726,6 +727,11 @@ J53_3 = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
+			godhosegh_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
 		}
 		
 		effect = {
@@ -744,6 +750,11 @@ J53_3 = {
 				change_religion = yukel_followers
 			}
 			orchekh_area = { change_culture = orachav }
+			godhosegh_area = {
+				limit = { NOT = { religion = yudunyovi } }
+				change_religion = yukel_followers
+			}
+			godhosegh_area = { change_culture = orachav }
 	    }
 	}
 	
@@ -756,6 +767,7 @@ J53_3 = {
 			OR = {
 				area = domn_filaenan_area
 				area = orchekh_area
+				area = godhosegh_area
 			}
 			NOT = { has_production_building_trigger = yes }
 		}
@@ -766,6 +778,7 @@ J53_3 = {
 				OR = {
 					area = domn_filaenan_area
 					area = orchekh_area
+					area = godhosegh_area
 				}
 				has_production_building_trigger = yes
 			}
@@ -773,6 +786,7 @@ J53_3 = {
 				OR = {
 					area = domn_filaenan_area
 					area = orchekh_area
+					area = godhosegh_area
 				}
 			}
 			estate_loyalty = { estate = estate_adventurers loyalty = 40 }
@@ -1236,6 +1250,7 @@ J53_4 = {
 	ai = yes
 	potential = {
 		tag = J53 #Zabutodask
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	
@@ -1525,6 +1540,7 @@ J53_5 = {
 	ai = yes
 	potential = {
 		tag = J53 #Zabutodask
+		NOT = { has_country_modifier = lake_federation_member }
 	}
 	has_country_shield = yes
 	

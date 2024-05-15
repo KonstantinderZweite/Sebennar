@@ -14,13 +14,7 @@ trade_goods = fish
 
 capital = ""
 is_city = yes
-owner = I80
-controller = I80
-add_core = I80
-add_core = I50
-
-
-add_permanent_province_modifier = {
-	name = volutsabaj_estuary_modifier
-	duration = -1
-}
+owner = I49
+controller = I49
+add_core = I49
+add_core = I49

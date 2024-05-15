@@ -15,6 +15,6 @@ trade_goods = salt
 
 capital = ""
 is_city = yes
-owner = I82
-controller = I82
-add_core = I82 
+owner = I83
+controller = I83
+add_core = I83 

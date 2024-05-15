@@ -15,6 +15,6 @@ trade_goods = livestock
 
 capital = ""
 is_city = yes
-owner = I87
-controller = I87
-add_core = I87
+owner = I58
+controller = I58
+add_core = I58

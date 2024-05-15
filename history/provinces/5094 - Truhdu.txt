@@ -15,8 +15,6 @@ trade_goods = grain
 
 capital = ""
 is_city = yes
-owner = I76
-controller = I76
-add_core = I76
-
-center_of_trade = 1
+owner = I61
+controller = I61
+add_core = I61

@@ -13,6 +13,6 @@ trade_goods = grain
 capital = ""
 
 is_city = yes
-owner = J27
-controller = J27
-add_core = J27
+owner = J30
+controller = J30
+add_core = J30

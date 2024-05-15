@@ -1007,7 +1007,10 @@ country_event = {
 			NOT = { innovativeness_ideas = 2 }
 		}
 	}
-	
+	option = { 
+	name = "EVTOPTC4116"
+	ai_chance = {factor = 0}
+	}
 	option = {
 		name = "EVTOPTA4114"	# His efforts will be admired throughout the nation
 		ai_chance = {
@@ -1150,7 +1153,10 @@ country_event = {
 			NOT = { innovativeness_ideas = 2 }
 		}
 	}
-	
+	option = { 
+	name = "EVTOPTC4116"
+	ai_chance = {factor = 0}
+	}
 	option = {
 		name = "EVTOPTA4116"	# His efforts will be admired throughout the nation
 		ai_chance = {

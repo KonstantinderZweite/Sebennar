@@ -1,0 +1,19 @@
+country_decisions = {
+	dragonnel_pyschodelic_hunt = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = Pyschodelic_win }
+			mission_completed = V11_dragonnel_hunts
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			}
+		effect = {
+		country_event = { id = flavor_emberscar.8 }
+		}
+	}
+}
+
+

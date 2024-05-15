@@ -1,6 +1,6 @@
-owner = L96
-controller = L96
-add_core = L96
+owner = L10
+controller = L10
+add_core = L10
 culture = arraskay_lizardfolk
 religion = anzalkatsa
 

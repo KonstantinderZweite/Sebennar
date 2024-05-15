@@ -896,7 +896,7 @@ castanor_1_missions_b = {
 			OR = {
 				OR = {
 					area = firanyalen_area
-					area = nansalen_area
+					area = invaders_pass_area
 					area = ur_monkande_area
 					area = zagnabad_area
 				}
@@ -939,7 +939,7 @@ castanor_1_missions_b = {
 					}
 				}
 			}
-			nansalen_area = { province_has_current_tech_fort_trigger = yes }
+			invaders_pass_area = { province_has_current_tech_fort_trigger = yes }
 		}
 		
 		effect = {
@@ -3231,7 +3231,7 @@ castanor_3_missions_a = {
 		}
 
 		trigger = {
-			NOT = { great_power_rank = 3 }
+			NOT = { great_power_rank = 8 }
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				OR = {
@@ -5709,9 +5709,6 @@ castanor_3_missions_divenori = {
 					add_accepted_culture = hapremiti
 					add_accepted_culture = irsmahapan
 					add_accepted_culture = shasouran
-					add_accepted_culture = korosheshi
-					add_accepted_culture = tijarikheti
-					add_accepted_culture = horakheti
 					add_accepted_culture = desha
 					add_accepted_culture = far_akasi
 					add_accepted_culture = khasani
@@ -5720,9 +5717,6 @@ castanor_3_missions_divenori = {
 				add_accepted_culture = hapremiti
 				add_accepted_culture = irsmahapan
 				add_accepted_culture = shasouran
-				add_accepted_culture = korosheshi
-				add_accepted_culture = tijarikheti
-				add_accepted_culture = horakheti
 				add_accepted_culture = desha
 				add_accepted_culture = far_akasi
 				add_accepted_culture = khasani
@@ -6392,19 +6386,28 @@ castanor_4_missions = {
 		required_missions = { castanor_resurgence }
 		
 		trigger = {
-			833 = { # Castanor
+			840 = { # Castanor
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			880 = { # Marrhold
+			872 = { # Upper Alen
 				trade_share = {
 					country = ROOT
 					share = 50
 				}
 			}
-			808 = { # Marches
+			888 = { # Marrhold
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			811 = { # Marches
+				has_most_province_trade_power = ROOT
+			}
+			785 = { # Silvermere
 				has_most_province_trade_power = ROOT
 			}
 			229 = { # Middle Alen
@@ -7148,7 +7151,7 @@ castanor_4_missions = {
 				}
 				else = {
 					random_subject_country = {
-						limit = { vertesk_area = { owned_by = PREV } }
+						limit = { vertesk_area = { owned_by = THIS } }
 						release_with_religion_and_culture = { tag = A23 religion = ROOT culture = vertesker }
 					}
 				}
@@ -8297,8 +8300,8 @@ castanor_5_missions_FP_strong_centaurs_path = {
 				}
 				J33 = {
 					add_mutual_opinion_modifier_effect = {
-						target = ROOT
-						modifier = castanor_united_against_centaurs
+						scope_country = ROOT
+						opinion_modifier = castanor_united_against_centaurs
 					}
 				}
 				
@@ -8312,8 +8315,8 @@ castanor_5_missions_FP_strong_centaurs_path = {
 						mutual = yes
 					}
 					add_mutual_opinion_modifier_effect = {
-						target = ROOT
-						modifier = castanor_united_against_centaurs
+						scope_country = ROOT
+						opinion_modifier = castanor_united_against_centaurs
 					}
 				}
 			}
@@ -8342,13 +8345,13 @@ castanor_5_missions_FP_strong_centaurs_path = {
 				has_production_building_trigger = yes
 				has_manufactory_trigger = yes
 			}
-			4202 = { # Northern Pass
+			4182 = { # Northern Pass
 				OR = {
 					is_strongest_trade_power = ROOT
 					is_strongest_trade_power = J33
 				}
 			}
-			1289 = { # Vrorensbay
+			1286 = { # Vrorensbay
 				OR = {
 					is_strongest_trade_power = ROOT
 					is_strongest_trade_power = J33
@@ -8443,39 +8446,12 @@ castanor_5_missions_FP_strong_lake_fed_path = {
 					has_fort_building_trigger = yes
 				}
 			}
-			else_if = {
-				limit = { exists = J33 }
+			else = {
 				reverse_has_opinion = {
 					who = J33
 					value = 150
 				}
 				num_of_free_diplomatic_relations = 1
-			}
-			else_if = {
-				limit = {
-					any_known_country = {
-						culture_group = triunic
-						capital_scope = {
-							OR = {
-								region = north_yarikhoi_region
-								region = south_yarikhoi_region
-							}
-						}
-					}
-				}
-				any_known_country = {
-					culture_group = triunic
-					capital_scope = {
-						OR = {
-							region = north_yarikhoi_region
-							region = south_yarikhoi_region
-						}
-					}
-					has_opinion = {
-						who = PREV
-						value = 150
-					}
-				}
 			}
 		}
 		
@@ -8493,7 +8469,7 @@ castanor_5_missions_FP_strong_lake_fed_path = {
 					name = castanor_establishing_embassies
 					duration = 10950
 				}
-				4202 = { # Northern Pass
+				4182 = { # Northern Pass
 					add_trade_modifier = {
 						who = ROOT
 						duration = 5475
@@ -8501,7 +8477,7 @@ castanor_5_missions_FP_strong_lake_fed_path = {
 						key = STRONG_MERCHANTS
 					}
 				}
-				1289 = { # Vrorensbay
+				1286 = { # Vrorensbay
 					add_trade_modifier = {
 						who = ROOT
 						duration = 5475
@@ -8615,13 +8591,13 @@ castanor_5_missions_FP_strong_lake_fed_path = {
 				has_production_building_trigger = yes
 				has_manufactory_trigger = yes
 			}
-			4202 = { # Northern Pass
+			4182 = { # Northern Pass
 				OR = {
 					is_strongest_trade_power = ROOT
 					is_strongest_trade_power = J33
 				}
 			}
-			1289 = { # Vrorensbay
+			1286 = { # Vrorensbay
 				OR = {
 					is_strongest_trade_power = ROOT
 					is_strongest_trade_power = J33
@@ -8751,7 +8727,7 @@ castanor_5_missions_FP_dominant_centaurs_path = {
 				}
 				add_claim = ROOT
 			}
-			ogre_valley_region = {
+			ogre_mountains_region = {
 				limit = {
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					NOT = { is_claim = ROOT }
@@ -8799,18 +8775,18 @@ castanor_5_missions_FP_dominant_centaurs_path = {
 		required_missions = { castanor_purging_centaurs }
 		provinces_to_highlight = {
 			OR = {
-				region = north_yarikhoi_region
-				region = south_yarikhoi_region
+				region = northern_isles_region
+				region = southern_isles_region
 			} 
 			owner = { culture_is_human = no }
 		}
 		
 		trigger = {
-			north_yarikhoi_region = {
+			northern_isles_region = {
 				type = all
 				owner = { culture_is_human = yes }
 			}
-			south_yarikhoi_region = {
+			southern_isles_region = {
 				type = all
 				owner = { culture_is_human = yes }
 			}
@@ -8902,14 +8878,7 @@ castanor_5_missions_c = {
 		}
 		
 		effect = {
-			olavlund_region = {
-				limit = {
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			gerudian_frontier_region = {
+			gerudian_coast_region = {
 				limit = {
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					NOT = { is_claim = ROOT }
@@ -8935,19 +8904,12 @@ castanor_5_missions_c = {
 		position = 19
 		required_missions = { castanor_fleet_to_rival_reavers }
 		provinces_to_highlight = {
-			OR = {
-				region = olavlund_region
-				region = gerudian_frontier_region
-			}
+			region = gerudian_coast_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			olavlund_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			gerudian_frontier_region = {
+			gerudian_coast_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -8988,12 +8950,7 @@ castanor_5_missions_c = {
 				add_nationalism = -5
 				add_unrest = -3
 			}
-			olavlund_region = {
-				limit = { culture_is_human = yes }
-				add_nationalism = -5
-				add_unrest = -3
-			}
-			gerudian_frontier_region = {
+			gerudian_coast_region = {
 				limit = { culture_is_human = yes }
 				add_nationalism = -5
 				add_unrest = -3
@@ -10860,7 +10817,7 @@ castanor_5_missions_succession_war_patrician = {
 		trigger = {
 			has_disaster = castanor_succession_war
 			trade_embargoing = B61
-			833 = { is_strongest_trade_power = ROOT }
+			840 = { is_strongest_trade_power = ROOT }
 		}
 		
 		effect = {

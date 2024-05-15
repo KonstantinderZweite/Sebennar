@@ -1,14 +1,14 @@
-owner = L68
+owner = S15
 controller = S15
-add_core = L68
+add_core = S15
 culture = shagashay_lizardfolk
 religion = anzalkatsa
 
 hre = no
 
-base_tax = 3
-base_production = 3
-base_manpower = 3
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 trade_goods = livestock
 

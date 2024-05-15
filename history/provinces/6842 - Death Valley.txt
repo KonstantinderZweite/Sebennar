@@ -2,7 +2,6 @@
 owner = V12
 controller = V12
 add_core = V12
-add_core = V10
 culture = soulseeker_ogre
 religion = sudomegi
 

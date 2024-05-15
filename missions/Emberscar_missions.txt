@@ -1,0 +1,509 @@
+Emberscar_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = V11
+	}
+	
+
+}
+
+
+
+Emberscar_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = V11
+	}
+V11_enlightened_ideas = {
+icon = mission_science
+position = 3 
+required_missions = {
+V11_dynastic_reshuffle
+}
+trigger = {
+monthly_adm = 9
+monthly_dip = 9
+monthly_mil = 10
+}
+effect = {
+capital_scope = {
+				area = {
+					add_institution_embracement = {
+						which = feudalism
+						value = 95
+					}
+				}
+			}
+			
+}
+}
+V11_unholy_knowledge = {
+icon = mission_develop_alhambra
+position = 4 
+required_missions = {
+V11_enlightened_ideas
+}
+trigger = {
+6821 = {
+development = 20
+}
+}
+effect = {
+capital_scope = {
+				area = {
+					add_institution_embracement = {
+						which = renaissance
+						value = 50
+					}
+				}
+6821 = {
+add_base_tax = -3
+add_base_production = -3
+add_base_manpower = -3			
+}	
+}
+}
+}
+
+V11_Hobgoblin_surgence = {
+icon = mission_sunyanin
+position = 5 
+required_missions = {
+V11_unholy_knowledge
+}
+trigger = {
+development_in_provinces = {
+					culture_is_hobgoblin = yes
+					value = 200
+					country_or_subject_holds = ROOT
+				}
+}
+
+effect = {
+add_country_modifier = {
+name = hobgoblin_supremacy
+duration = -1
+}
+}
+}
+V11_the_pillar = {
+icon = mission_diplomacy_missive
+position = 6 
+required_missions = {
+V11_Hobgoblin_surgence
+}
+trigger = {
+6821 = {
+development = 30
+}
+}
+effect ={
+6821 = {
+			add_province_modifier = {
+				name = the_pillar
+				duration = -1
+			}
+		}
+
+}
+
+}
+V11_indoctrination = {
+icon = mission_head_on_spike
+position = 7 
+required_missions = {
+V11_the_pillar
+}
+trigger = {
+num_of_owned_provinces_with = {
+				value = 40
+				religion = eagle_worship
+			}
+}
+effect ={
+add_ruler_modifier = {
+name = V11_religious_fervor
+duration = -1
+}
+
+}
+}
+}
+
+
+
+Emberscar_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = V11
+	}
+	
+V11_unity_through_death = {
+icon = mission_skull
+position = 1 
+trigger = {
+army_size_percentage = 1.0
+}
+effect = {
+add_country_modifier = {
+name = V11_conscription
+duration = 3650
+}
+define_general = {
+				name = "Harkonnan"
+				fire = 3
+				shock = 5
+				manuever = 2
+				siege = 2
+			}
+}
+}
+V11_dynastic_reshuffle = {
+icon = mission_crowning
+position = 2 
+required_missions = {
+V11_unity_through_death
+}
+trigger = {
+6841 = {
+		owned_by = ROOT
+		}
+6827 = {
+		owned_by = ROOT
+		}
+}
+effect = {
+change_government_to_monarchy = yes 
+add_government_reform = scarred_kingdom_reform
+}
+
+}
+V11_life_or_death = {
+icon = mission_impaled_soldies
+position = 3 
+required_missions = {
+V11_dynastic_reshuffle
+}
+trigger = {
+monthly_mil = 11
+}
+effect = {
+country_event = {
+					id = flavor_emberscar.11
+					days = 1
+				}
+}
+
+}
+V11_dragonnel_hunts = {
+icon = mission_new_dawn
+position = 4 
+required_missions = {
+V11_life_or_death
+}
+trigger = {
+monthly_mil = 13
+}
+effect = {
+country_event = {
+					id = flavor_emberscar.1
+					days = 1
+				}
+}
+
+}
+
+}
+emberscar_33 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = V11
+		has_country_flag = Earth_win
+	}
+V11_blood_people = {
+icon = mission_burning_separation
+position = 5
+required_missions = {
+V11_dragonnel_hunts
+}
+trigger = {
+
+}
+effect = {
+country_event = {
+id = flavor_emberscar.24
+}
+}
+
+}
+V11_blood_weapons = {
+icon = mission_smith
+position = 6
+required_missions = {
+V11_blood_people
+}
+trigger = {
+
+}
+effect = {
+custom_tooltip = V11_artifacts_mission_tt
+set_country_flag = V11_artifacts
+}
+
+}
+V11_dwarovar_awakening = {
+icon = mission_mechanical_mining
+position = 7
+required_missions = {
+V11_blood_weapons
+}
+trigger = {
+manpower = 150
+}
+effect = {
+custom_tooltip = V11_dwarovar_tunnel_tt
+}
+
+}
+V11_hobgoblin_expedition = {
+icon = mission_runeforged_cannons
+position = 8
+required_missions = {
+V11_dwarovar_awakening
+V11_indoctrination
+V11_vital_chokes
+
+}
+trigger = {
+manpower = 200
+}
+effect = {
+custom_tooltip = V11_hobgoblin_expedition_tt
+}
+
+}
+V11_new_race = {
+icon = mission_assemble_an_army
+position = 9
+required_missions = {
+V11_hobgoblin_expedition
+}
+trigger = {
+R62 = {				
+NOT = { exists = yes }			
+			}
+kradhungur_area = {
+owned_by = ROOT
+}
+}
+
+effect = {
+custom_tooltip = V11_hobgoblin_new_race_tt
+}
+
+}
+}
+
+Emberscar_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = V11
+	}
+V11_disgusting_creatures = {
+icon = mission_invade_island
+position = 3 
+required_missions = {
+V11_dynastic_reshuffle
+}
+trigger = {
+treasury = 200
+}
+effect = {
+6848 = {
+		set_great_project_tier_1 ={
+		type = worm_pit
+		}
+       }
+}
+
+}	
+V11_the_great_nurturing = {
+icon = mission_hanseatic_city
+position = 4 
+required_missions = {
+V11_disgusting_creatures
+}
+trigger = {
+	6848 = {has_great_project = {
+					type = worm_pit
+					tier = 2
+				}
+}
+}
+effect = {
+if = {
+				limit = { 
+					has_dlc = "Domination" 
+					has_dlc = "Leviathan" 
+					6848 = { owned_by = ROOT } 
+				}
+				custom_tooltip = worm_pit2_tt
+			}
+}
+
+}
+V11_the_great_uncovering = {
+icon = mission_empowerment
+position = 5 
+required_missions = {
+V11_the_great_nurturing
+}
+trigger = {
+	6848 = {		has_great_project = {
+					type = worm_pit
+					tier = 3
+				}
+}
+treasury = 200
+manpower = 50
+}
+effect = {
+add_treasury = -200
+add_manpower = -50
+add_stability = -2
+custom_tooltip = great_uncovering_tt
+set_country_flag = great_uncovering
+
+}
+}
+V11_revisionist_explorers = {
+icon = mission_rb_increase_our_reach
+position = 6 
+required_missions = {
+V11_the_great_uncovering
+
+}
+trigger = { 
+nomsyulhan_region = {
+type = all
+country_or_non_sovereign_subject_holds = ROOT
+}
+}
+effect = {
+add_country_modifier = {
+	name = V11_travelers
+	duration = -1
+
+}
+
+	
+}
+
+}
+V11_vital_chokes = {
+icon = alpine_defenses
+position = 7 
+required_missions = {
+V11_revisionist_explorers
+
+}
+provinces_to_highlight = {
+			province_group = V11_vital_chokes
+		}
+trigger = {
+V11_vital_chokes = {
+		has_building = fort_15th
+		type = all
+        country_or_non_sovereign_subject_holds = ROOT
+		}
+							
+
+}
+effect ={
+add_building = ramparts
+add_province_modifier = {
+	name = V11_advanced_chokeholding
+	duration = -1
+
+}
+
+}
+
+}
+}
+
+
+Emberscar_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = V11
+	}
+V11_targeted_strike = {
+icon = mission_the_dame_tears
+position = 6 
+required_missions = {
+V11_the_great_uncovering  
+
+}
+trigger = {
+V11_river_provinces = {
+		has_province_modifier = V11_prepation
+		type = all
+        country_or_non_sovereign_subject_holds = ROOT
+		}
+							
+
+}
+effect ={
+country_event = {
+id = flavor_emberscar.25
+}
+
+}
+
+}
+V11_recovery_effort = {
+icon = mission_secure_khandesh
+position = 7 
+required_missions = {
+V11_targeted_strike 
+
+}
+trigger = {
+V11_river_provinces = {
+		has_province_modifier = V11_prepation
+		type = all
+        country_or_non_sovereign_subject_holds = ROOT
+		}
+							
+
+}
+effect = {
+country_event = {
+
+id = flavor_emberscar.26
+
+}
+
+}
+
+}		
+
+}

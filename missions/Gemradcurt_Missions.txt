@@ -714,18 +714,16 @@ gemradcurt_1_2 = {
 		icon = mission_frozen_star
 		position = 9
 		required_missions = { gemradcurt_spring_and_summer } 
-		provinces_to_highlight = { 
-			superregion = eordand_superregion
-				is_city = yes
-				NOT = { religion = winter_court }
-		}
+		provinces_to_highlight = {  } 
 
 		trigger = {  
 			eordand_superregion = {
 				type = all
 				OR = {
 					religion = winter_court
-					is_city = no
+					religion = raeldaeriach
+					religion = no_religion
+					region = domandrod_region
 				}
 			}
 
@@ -1425,7 +1423,14 @@ gemradcurt_2_2 = {
 								colonial_region = colonial_noruin
 							}
 						}
-						has_90_opinion_improved_relation = { target = ROOT }
+						custom_trigger_tooltip = {
+							tooltip = gemradcurt_improved_relations_90_tt
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = improved_relation
+								value = 90
+							}
+						}
 					}
 				}
 			}
@@ -1439,7 +1444,14 @@ gemradcurt_2_2 = {
 								continent = europe
 							}
 						}
-						has_90_opinion_improved_relation = { target = ROOT }
+						custom_trigger_tooltip = {
+							tooltip = gemradcurt_improved_relations_90_tt
+							has_opinion_modifier = {
+								who = ROOT
+								modifier = improved_relation
+								value = 90
+							}
+						}
 					}
 				}
 			}
@@ -2187,7 +2199,14 @@ gemradcurt_4_2 = {
 					}
 				}
 
-				has_100_opinion_improved_relation = { target = ROOT }
+				custom_trigger_tooltip = {
+					tooltip = gemradcurt_improved_relations_100_tt
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = improved_relation
+						value = 100
+					}
+				}
 
 				has_opinion_modifier = { 
 					who = ROOT 
@@ -2481,7 +2500,14 @@ gemradcurt_4_2 = {
 				amount = 5
 				all_known_country = {
 					capital_scope = { continent = europe }
-					has_50_opinion_improved_relation = { target = ROOT }
+					custom_trigger_tooltip = {
+						tooltip = gemradcurt_improved_relations_50_tt
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = improved_relation
+							value = 50
+						}
+					}
 				}
 			}	
 

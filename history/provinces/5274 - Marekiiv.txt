@@ -12,6 +12,6 @@ trade_goods = fish
 capital = "Home of the Armada"
 
 is_city = yes
-owner = J21
-controller = J21
-add_core = J21
+owner = J24
+controller = J24
+add_core = J24

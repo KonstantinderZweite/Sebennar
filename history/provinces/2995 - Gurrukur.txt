@@ -1,7 +1,11 @@
+
+
+
+
 owner = H80
 controller = H80
 add_core = H80
-culture = manhunter_orc
+culture = black_orc
 religion = great_dookan
 trade_goods = unknown
 hre = no

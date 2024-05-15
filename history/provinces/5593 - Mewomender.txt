@@ -1,8 +1,8 @@
 
 # No previous file for Banten
-owner = S66
-controller = S66
-add_core = S66
+owner = S44
+controller = S44
+add_core = S44
 culture = ofehibi
 religion = sky_domain
 

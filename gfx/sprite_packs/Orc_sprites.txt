@@ -215,7 +215,9 @@ grombar_sprite_pack = {
 black_orc_sprite_pack = {
 	# Tests against every tag in game
 	country_trigger = {
-		dwarovar_orc_culture_primary = yes
+		OR = {
+			primary_culture = black_orc
+		}
 	}
 
 	sprite_infantry = {

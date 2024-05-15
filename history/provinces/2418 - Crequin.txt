@@ -1,8 +1,8 @@
 
 # No previous file for Ukek
 
-culture = banche
-religion = rioqay_diu
+culture = doos
+religion = animism
 capital = ""
 
 hre = no

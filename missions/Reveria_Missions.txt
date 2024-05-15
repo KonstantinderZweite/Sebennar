@@ -79,10 +79,13 @@ reveria_1 = {
 			if = {
 				limit = { ai = yes }
 				hidden_effect = {
-					generic_end_purge = { race = kobold }
-					generic_end_expulsion = { race = kobold}
-					generic_start_purge = { race = kobold }
-					increase_free_state_action = { action = genocide }
+					largest_decrease_of_kobold_tolerance_effect = yes
+					remove_country_modifier = racial_pop_kobold_purge
+					remove_country_modifier = racial_pop_kobold_expulsion
+					add_country_modifier = {
+						name = racial_pop_kobold_purge
+						duration = -1
+					}
 				}
 			}
 		}
@@ -142,8 +145,8 @@ reveria_1 = {
 			}
 			country_event = { id = reveria.12 }
 			177 = {
-				change_province_name = "Drekiríki"
-				rename_capital = "Drekiríki"
+				change_province_name = "Drekirï¿½ki"
+				rename_capital = "Drekirï¿½ki"
 			}
 			if = {
 				limit = { ai = yes }
@@ -1524,13 +1527,10 @@ reveria_3 = {
 					is_core = ROOT
 				}
 			}
-			OR = {
-				NOT = {
-					Z08 = {
-						has_country_modifier = reveria_recently_hosted_feast
-					}
+			NOT = {
+				Z08 = {
+					has_country_modifier = reveria_recently_hosted_feast
 				}
-				NOT = { exists = Z08 }
 			}
 		}
 		
@@ -2727,7 +2727,7 @@ reveria_5 = {
 				duration = 7300
 			}
 			define_explorer = {
-				name = "Flokí Boatsmith"
+				name = "Flokï¿½ Boatsmith"
 				fire = 2
 				shock = 3
 				manuever = 0
@@ -2742,8 +2742,7 @@ reveria_5 = {
 		position = 2
 		
 		trigger = {
-			has_idea_group = exploration_ideas
-			exploration_ideas = 1
+			has_idea = quest_for_the_new_world
 			has_discovered = 1001
 			dip_power = 50
 		}

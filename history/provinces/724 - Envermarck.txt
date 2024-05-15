@@ -12,15 +12,13 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 
-center_of_trade = 1
-
 trade_goods = fish
 
 capital = ""
 
 is_city = yes
 
-
+center_of_trade = 1
 
 
 

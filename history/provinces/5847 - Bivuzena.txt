@@ -1,6 +1,6 @@
-owner = L06
-controller = L06
-add_core = L06
+owner = L10
+controller = L10
+add_core = L10
 culture = zuvunwa
 religion = noukahi_pantheon
 

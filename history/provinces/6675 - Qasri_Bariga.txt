@@ -1,17 +1,17 @@
 # No previous file for Nakhchivan
 
-owner = S21
-controller = S21
-add_core = S21
+owner = S33
+controller = S33
+add_core = S33
 culture = ashamadi
 religion = rinta_seekers
 capital = "Qasri Bariga"
 
 hre = no
 
-base_tax = 6
-base_production = 5
-base_manpower = 6
+base_tax = 1
+base_production = 1
+base_manpower = 1
 
 trade_goods = glass
 

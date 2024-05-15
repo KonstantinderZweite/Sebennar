@@ -765,7 +765,7 @@ anbenncost_4 = {
 		trigger = {
 			8 = {
 				owned_by = ROOT
-				has_building = university
+				
 			}
 			adm_power = 100
 		}

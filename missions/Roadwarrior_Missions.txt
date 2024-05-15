@@ -314,7 +314,7 @@ roadwarrior_main_2 = {
 		effect = {
 			custom_tooltip = roadwarrior_overdrive_tt
 			add_country_modifier = {
-				name = roadwarrior_khugdihr
+				name = roadwarrior_kugdihr
 				duration = -1
 			}
 		}

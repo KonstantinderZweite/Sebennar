@@ -1,6 +1,6 @@
-owner = L68
-controller = L68
-add_core = L68
+owner = L95
+controller = L95
+add_core = L95
 culture = shagashay_lizardfolk
 religion = anzalkatsa
 
@@ -23,4 +23,4 @@ add_permanent_province_modifier = {
 	duration = -1
 }
 
-add_claim = L96
+add_claim = L95

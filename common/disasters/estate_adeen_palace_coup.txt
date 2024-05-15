@@ -53,7 +53,10 @@ estate_adeen_palace_coup = {
 	}
 	
 	can_stop = {
-		has_any_disaster = yes
+		OR = {
+			has_any_disaster = yes
+			has_estate_privilege = estate_adeen_power_over_the_throne
+		}
 	}
 	
 	progress = {
@@ -80,7 +83,7 @@ estate_adeen_palace_coup = {
 	
 	on_monthly = {
 		random_events = {
-			120 = 0
+			100 = 0
 			10 = estate_adeen.103
 		}
 	}

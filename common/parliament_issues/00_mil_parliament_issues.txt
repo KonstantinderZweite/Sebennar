@@ -3,10 +3,7 @@ appease_the_estates = {
 	category = 1
 
 	allow = {
-		OR = {
-			has_country_flag = pol_new_issues_tt
-			has_country_flag = thangoya_appease_the_estates #Thangoya MT
-		}
+		has_country_flag = pol_new_issues_tt
 	}
 	
 	on_issue_taken = {
@@ -58,15 +55,7 @@ backing_war_effort = {
 	category = 1
 
 	allow = {
-		kalsyto_gun_issue = yes #Anbennar
 	}
-	on_issue_taken = {
-		if = {
-			limit = { tag = J33 }
-			country_event = { id = flavor_kalsyto.1004 } #Anbennar
-		}
-	}
-	
 	
 	effect = {
 		add_stability = 1
@@ -138,10 +127,7 @@ drill_exercises = {
 	category = 1
 
 	allow = {
-		OR = {
-			has_country_flag = pol_new_issues_tt
-			has_country_flag = thangoya_drill_exercises #Thangoya MT
-		}
+		has_country_flag = pol_new_issues_tt
 		OR = { 
 			army_professionalism = 0.5 
 			army_tradition = 60 
@@ -174,13 +160,6 @@ expand_officer_lists = {
 	category = 1
 
 	allow = {
-		kalsyto_soldier_issue = yes #Anbennar
-	}
-	on_issue_taken = {
-		if = {
-			limit = { tag = J33 }
-			country_event = { id = flavor_kalsyto.1002 } #Anbennar
-		}
 	}
 	
 	effect = {
@@ -213,13 +192,6 @@ expand_the_army = {
 	category = 1
 
 	allow = {
-		kalsyto_citizen_issue = yes #Anbennar
-	}
-	on_issue_taken = {
-		if = {
-			limit = { tag = J33 }
-			country_event = { id = flavor_kalsyto.1006 } #Anbennar
-		}
 	}
 	
 	effect = {
@@ -306,13 +278,6 @@ extended_peacetime_officer_commissions = {
 	allow = {
 		mil_tech = 16
 		dip_tech = 16
-		kalsyto_citizen_issue = yes #Anbennar
-	}
-	on_issue_taken = {
-		if = {
-			limit = { tag = J33 }
-			country_event = { id = flavor_kalsyto.1006 } #Anbennar
-		}
 	}
 	
 	effect = {
@@ -360,13 +325,6 @@ fortification_tax = {
 				has_building = fort_18th
 			}
 		}
-		kalsyto_citizen_issue = yes #Anbennar
-	}
-	on_issue_taken = {
-		if = {
-			limit = { tag = J33 }
-			country_event = { id = flavor_kalsyto.1006 } #Anbennar
-		}
 	}
 	
 	
@@ -396,13 +354,6 @@ quartering_of_troops = {
 	category = 1
 
 	allow = {
-		kalsyto_soldier_issue = yes #Anbennar
-	}
-	on_issue_taken = {
-		if = {
-			limit = { tag = J33 }
-			country_event = { id = flavor_kalsyto.1002 } #Anbennar
-		}
 	}
 	
 	
@@ -438,24 +389,17 @@ the_draft = {
 
 	allow = {
 		is_at_war = yes
-		kalsyto_soldier_issue = yes #Anbennar
-	}
-	on_issue_taken = { 
-		if = {
-			limit = { tag = J33 }
-			country_event = { id = flavor_kalsyto.1002 } #Anbennar
-		}
 	}
 	
 	effect = {
 		issue_effect_scaling_with_estate_influence = {
 			estate = estate_nobles
-			effect1 = "add_years_of_manpower_scaled_to_seats = 0.5"
-			effect2 = "add_years_of_manpower_scaled_to_seats = 0.75"
-			effect3 = "add_years_of_manpower_scaled_to_seats = 1"
-			effect4 = "add_years_of_manpower_scaled_to_seats = 1.25"
-			effect5 = "add_years_of_manpower_scaled_to_seats = 1.5"
-			fallback_effect = "add_years_of_manpower_scaled_to_seats = 1"
+			effect1 = "add_years_of_manpower_scaled_to_seats = 0.25"
+			effect2 = "add_years_of_manpower_scaled_to_seats = 0.385"
+			effect3 = "add_years_of_manpower_scaled_to_seats = 0.5"
+			effect4 = "add_years_of_manpower_scaled_to_seats = 0.625"
+			effect5 = "add_years_of_manpower_scaled_to_seats = 0.75"
+			fallback_effect = "add_years_of_manpower_scaled_to_seats = 0.5"
 		}
 	}
 	

@@ -13,6 +13,6 @@ trade_goods = wool
 capital = "The Black Sheep"
 
 is_city = yes
-owner = J19
-controller = J19
-add_core = J19
+owner = J18
+controller = J18
+add_core = J18

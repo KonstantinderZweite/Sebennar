@@ -13,6 +13,6 @@ trade_goods = copper
 capital = "The Haunted Wood"
 
 is_city = yes
-owner = J17
-controller = J17
-add_core = J17
+owner = J18
+controller = J18
+add_core = J18

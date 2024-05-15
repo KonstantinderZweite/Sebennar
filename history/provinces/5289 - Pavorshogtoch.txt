@@ -13,7 +13,7 @@ trade_goods = wine
 capital = ""
 
 is_city = yes
-owner = J28
-controller = J28
-add_core = J28
+owner = J30
+controller = J30
+add_core = J30
 add_devastation = 30

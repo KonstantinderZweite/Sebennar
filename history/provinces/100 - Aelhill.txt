@@ -19,7 +19,4 @@ is_city = yes
 
 
 
-add_permanent_province_modifier = {
-	name = dwarven_minority_coexisting_large
-	duration = -1
-}
+

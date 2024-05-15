@@ -76,11 +76,11 @@ urviksten_missions1 = {
 		provinces_to_highlight = {
 			OR = {	
 				AND = {
-					province_id = 1289
+					province_id = 1286
 					NOT = { is_strongest_trade_power = ROOT }
 				}
 				AND = {	
-					province_id = 1477
+					province_id = 1256
 					NOT = {
 						trade_share = {
 							country = ROOT
@@ -91,8 +91,8 @@ urviksten_missions1 = {
 			}
 		}		
 		trigger = {	
-		1289 = { is_strongest_trade_power = ROOT }
-		1477 = {
+		 1286 = { is_strongest_trade_power = ROOT }
+		 1256 = {
 				trade_share = {
 					country = ROOT
 						share = 30
@@ -207,13 +207,11 @@ urviksten_missions1 = {
 		trigger = {
 			ebonmarck_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			athfork_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			nyrford_area = {
 				type = all
@@ -281,7 +279,7 @@ urviksten_missions1 = {
 	}
 	
 	urviksten_crossing_the_bay = {
-		icon = mission_conquer_riga
+		icon = mission_advance_to_the_dnieper
 		position = 9
 		required_missions = { urviksten_the_north_reclaimed }
 
@@ -312,7 +310,7 @@ urviksten_missions1 = {
 	}
 	
 	urviksten_the_reach = {
-		icon = kingdom_of_lombardy
+		icon = mission_advance_to_the_dnieper
 		position = 10
 		required_missions = { urviksten_crossing_the_bay }
 
@@ -334,7 +332,7 @@ urviksten_missions1 = {
 	}
 	
 	urviksten_song_of_the_forefathers = {
-		icon = mission_norse_faith
+		icon = mission_advance_to_the_dnieper
 		position = 11
 		required_missions = { urviksten_the_reach }
 
@@ -373,7 +371,7 @@ urviksten_missions2 = {
 	ai = yes 
 	has_country_shield = yes
 	
-	potential = {
+	potential = {	
 		OR = {
 			tag = Z15
 			AND = {
@@ -392,8 +390,6 @@ urviksten_missions2 = {
 			OR = {
 				area = naugsvol_area
 				area = nyrford_area
-				area = olavslund_area
-				area = elkaesals_slumber_area 
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -407,55 +403,47 @@ urviksten_missions2 = {
 				owned_by = ROOT
 				type = all
 			}
-			olavslund_area = {
-				owned_by = ROOT
-				type = all
-			}
-			elkaesals_slumber_area  = {
-				owned_by = ROOT
-				type = all
-			}
 		}
 		
 		effect = {
 			add_prestige = 10
-			add_country_modifier = {
-				name = "urviksten_olavish_warriors"
-				duration = 3650
+			olavslund_area = {
+				add_permanent_claim = ROOT
 			}
 		}
 	}
 	
 	urviksten_olavlund = {
-		icon = found_the_vatican_library
+		icon = the_alpine_wall
 		position = 3
 		required_missions = { urviksten_naugsvol_avnkaup }
 
 		provinces_to_highlight = {
-			province_id = 976
-			OR = { 
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				local_autonomy = 0
-			}
+			area = olavslund_area
+			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			976 = {
+			olavslund_area = {
 				owned_by = ROOT
-				NOT = { local_autonomy = 1 }
-			}	
+				type = all
+			}
 		}
 		
 		effect = {
+			elkaesals_slumber_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "urviksten_olavish_warriors"
+				duration = 3650
+			}
 			add_country_modifier = {
 				name = "urviksten_subservant_skalds"
 				duration = -1
 			}
-			custom_tooltip = urviksten_skaldic_ebonsteel_reccords			
 		}
 	}
-	
 	urviksten_ebonfrosts_landing = {
 		icon = mission_rb_unite_the_clans
 		position = 5
@@ -473,7 +461,6 @@ urviksten_missions2 = {
 		trigger = {
 			vrorenmarch_area = {
 				owned_by = ROOT
-				is_core = ROOT
 				type = all
 			}
 		}
@@ -627,12 +614,10 @@ urviksten_missions2 = {
 		trigger = {
 			ebonmarck_area = {
 				owned_by = ROOT
-				is_core = ROOT
 				type = all
 			}
 			athfork_area = {
 				owned_by = ROOT
-				is_core = ROOT
 				type = all
 			}
 		}
@@ -674,17 +659,14 @@ urviksten_missions2 = {
 			balmire_area = {
 				type = all
 				owned_by = ROOT
-				is_core = ROOT
 			}
 			cannwood_area = {
 				type = all
 				owned_by = ROOT
-				is_core = ROOT
 			}
 			middle_alen_area = {
 				type = all
 				owned_by = ROOT
-				is_core = ROOT
 			}
 			229 = {
 				province_has_current_tech_fort_trigger = yes
@@ -815,7 +797,7 @@ urviksten_missions2 = {
 	}
 	
 	urviksten_restore_trialmount = {
-		icon = spa_new_capital
+		icon = alpine_defenses
 		position = 11
 		required_missions = { urviksten_trialmount }
 		
@@ -936,6 +918,89 @@ urviksten_missions2 = {
 	}	
 }
 
+blastanor_missions2 = {
+	slot = 2 
+	generic = no
+	ai = yes 
+	has_country_shield = yes
+	
+	potential = {	
+		OR = {
+			tag = Z15
+			AND = {
+				tag = Z34
+				was_tag =  Z15
+			}
+		}
+	}
+	
+	urviksten_castonath = {
+		icon = mission_destroyed_city
+		position = 12
+		required_missions = { urviksten_restore_trialmount }
+
+		provinces_to_highlight = {
+			area = castonath_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			castonath_area = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			831 = {
+			development = 15
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+					trade_goods = gold
+				}
+			}
+			832 = {
+			development = 15
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+					trade_goods = gold
+				}
+			}
+			833 = {
+			development = 15
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+					trade_goods = gold
+				}
+			}
+		}
+		
+		effect = {
+			castonath_area = {
+				add_province_modifier = {
+					name = urviksten_castonborg
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+
 urviksten_missions3 = {
 	slot = 3 
 	generic = no
@@ -967,15 +1032,16 @@ urviksten_missions3 = {
 			nyrford_area = {
 				add_permanent_claim = ROOT
 			}
-			olavslund_area = {
-				add_permanent_claim = ROOT
-			}
-			elkaesals_slumber_area = {
-				add_permanent_claim = ROOT
-			}
 			add_country_modifier = {
 				name = "urviksten_prepared_for_war"
 				duration = 9125
+			}
+				define_general = {
+				name = "Fulgurk"
+				fire = 2
+				shock = 6
+				manuever = 2
+				siege = 2
 			}
 		}
 	}
@@ -1117,10 +1183,7 @@ urviksten_missions3 = {
 				name = "urviksten_pioneering_spirit"
 				duration = 9175
 			}
-			olavlund_region = {
-				discover_country = ROOT
-			}
-			gerudian_frontier_region = {
+			gerudian_coast_region = {
 				discover_country = ROOT
 			}	
 			northern_pass_region = {
@@ -1133,14 +1196,7 @@ urviksten_missions3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			olavlund_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			gerudian_frontier_region = {
+			gerudian_coast_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1168,7 +1224,7 @@ urviksten_missions3 = {
 		}
 		
 		effect = {
-			add_ruler_modifier = {
+			add_country_modifier = {
 				name = urviksten_avenger_of_castanor
 				duration = -1
 			}
@@ -1234,13 +1290,13 @@ urviksten_missions3 = {
 			2830 = { add_base_production = 1 }
 			add_country_modifier = {
 				name = "urviksten_far_gerudian_rangers"
-				duration = 10950
+				duration = -1
 			}
 		}
 	}	
 
 	urviksten_the_lonely_mountain = {
-		icon = the_alpine_wall
+		icon = mission_alone_in_the_forest
 		position = 9
 		required_missions = { urviksten_far_gerudian_rangers }
 		
@@ -1273,7 +1329,7 @@ urviksten_missions3 = {
 	}	
 
 	urviksten_tvillingarna = {
-		icon = mission_expand_into_the_forest
+		icon = mission_alone_in_the_forest
 		position = 10
 		required_missions = { urviksten_the_lonely_mountain }
 		
@@ -1366,7 +1422,7 @@ urviksten_missions3 = {
 	}	
 	
 	urviksten_veins_of_steel = {
-		icon = mission_iron_and_copper
+		icon = mission_alone_in_the_forest
 		position = 11
 		required_missions = { urviksten_tvillingarna }
 		
@@ -1752,18 +1808,15 @@ urviksten_missions4 = {
 					duration = -1
 				}
 			}
-			add_country_modifier = {
-				name = "urviksten_streamlined_ebonsteel"
-				duration = -1
-			}
 		}
 	}
 	
 	urviksten_dalr_mines = {
-		icon = claim_the_borderlands
+		icon = mission_alone_in_the_wood
 		position = 7
 		required_missions = { 
 			urviksten_the_bears_den
+
 		}
 
 		provinces_to_highlight = {
@@ -1820,19 +1873,16 @@ urviksten_missions4 = {
 	}
 	
 	urviksten_fjarforska = {
-		icon = mission_hessian_jaeger_corps
+		icon = mission_alone_in_the_wood
 		position = 9
 		required_missions = { 
 			urviksten_far_gerudian_rangers
 		}
 
 		provinces_to_highlight = {
-			OR = {
-				area = upper_logr_area
-				area = middle_logr_area
-				area = hjyrtsikki_area
-				area = fyllstyn_area
-			}
+			area = upper_logr_area
+			area = middle_logr_area
+			area = hjyrtsikki_area
 			NOT = { 
 				OR = { 
 					has_building = workshop 
@@ -1870,15 +1920,6 @@ urviksten_missions4 = {
 					trade_goods = gold
 				}
 			}
-			fyllstyn_area = {
-				type = all
-				owned_by = ROOT
-				OR = { 
-					has_building = workshop
-					has_building = counting_house
-					trade_goods = gold
-				}
-			}
 			army_tradition = 40
 			4182 = { 
 				owned_by = ROOT
@@ -1904,12 +1945,6 @@ urviksten_missions4 = {
 				}
 			}
 			hjyrtsikki_area = {
-				add_permanent_province_modifier = {
-					name = "urviksten_bpc_logging"
-					duration = -1
-				}
-			}
-			fyllstyn_area = {
 				add_permanent_province_modifier = {
 					name = "urviksten_bpc_logging"
 					duration = -1
@@ -1985,7 +2020,7 @@ urviksten_missions4 = {
 	}
 	
 	urviksten_eastern_anvils = {
-		icon = mission_mountain_castle
+		icon = mission_alone_in_the_wood
 		position = 11
 		required_missions = { 
 			urviksten_tvillingarna
@@ -2063,14 +2098,14 @@ urviksten_missions5 = {
 				AND = {
 					province_id = 983
 					OR = {
-						NOT = { base_production = 4 }
+						has_production_building_trigger = no
 						NOT = { owned_by = ROOT }
 					}
 				}
 				AND = {
 					province_id = 981
 					OR = {
-						NOT = { base_production = 4 }
+						has_production_building_trigger = no
 						NOT = { owned_by = ROOT }
 					}
 				}
@@ -2079,11 +2114,11 @@ urviksten_missions5 = {
 		
 		trigger = {
 			983 = {
-				base_production = 4
+				has_production_building_trigger = yes
 				owned_by = ROOT
 			}
 			981 = {
-				base_production = 4
+				has_production_building_trigger = yes
 				owned_by = ROOT
 			}
 		}
@@ -2124,30 +2159,30 @@ urviksten_missions5 = {
 	}
 	
 	urviksten_vrorenburg_arsenal = {
-		icon = mission_early_game_buildings
+		icon = mission_smith
 		position = 4
 		required_missions = { urviksten_onyx_fleet }
 		
 		provinces_to_highlight = {
 			province_id = 740
 			OR = { 
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { province_has_current_tech_fort_trigger = yes }
-				NOT = {
-					OR = { 
-						has_building = shipyard
-						has_building = grand_shipyard
-					}
-					OR = {
-						has_building = dock
-						has_building = drydock
-					}
-					OR = { 
-						has_building = coastal_defence
-						has_building = naval_battery
-					}
+			NOT = { owned_by = ROOT }
+			NOT = { is_core = ROOT }
+			NOT = { province_has_current_tech_fort_trigger = yes }
+			NOT = {
+				OR = { 
+					has_building = shipyard
+					has_building = grand_shipyard
 				}
+				OR = {
+					has_building = dock
+					has_building = drydock
+				}
+				OR = { 
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
+			}
 			}
 		}	
 
@@ -2196,7 +2231,7 @@ urviksten_missions5 = {
 		}
 	}
 	urviksten_no_safe_havns = {
-		icon = Burn_Wooden_Wall
+		icon = mission_smith
 		position = 5
 		required_missions = { urviksten_vrorenburg_arsenal }
 		
@@ -2235,10 +2270,7 @@ urviksten_missions5 = {
 		}
 		
 		effect = {
-			olavlund_region = {
-				add_permanent_claim = ROOT
-			}
-			gerudian_frontier_region = {
+			gerudian_coast_region = {
 				add_permanent_claim = ROOT
 			}
 			dalr_region = {
@@ -2249,25 +2281,20 @@ urviksten_missions5 = {
 	}	
 
 	urviksten_the_bears_den = {
-		icon = mission_end_the_sound_toll
+		icon = mission_smith
 		position = 6
 		required_missions = { urviksten_no_safe_havns }
 		
 		provinces_to_highlight = {
 			OR = {
-				region = olavlund_region
+				region = gerudian_coast_region
 				region = dalr_region
-				region = gerudian_frontier_region
 			}
 			NOT = { owned_by = ROOT }
 		}
 		
 		trigger = {
-			olavlund_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			gerudian_frontier_region = {
+			gerudian_coast_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2286,7 +2313,7 @@ urviksten_missions5 = {
 	}
 
 	urviksten_dalr_bpc = {
-		icon = mission_develop_the_scandes
+		icon = mission_smith
 		position = 7
 		required_missions = { urviksten_the_bears_den }
 		

@@ -4,20 +4,11 @@ edict_religious_unity = {
 	}
 	
 	allow = {
-		always = yes
+		NOT = { has_country_flag = disable_all_state_edicts_bool }
 	}
 	
 	modifier = {
-		local_missionary_strength = 0.01
-	}
-	
-	#ROOT - Country, FROM - Province, if all provinces in a state, that are owned by the country,
-	#	meet this requirement, the alert will appear.
-	
-	notify_trigger = {
-		FROM = {
-			has_owner_religion = yes
-		}
+		local_missionary_strength = 0.02
 	}
 	
 	color = { 117 38 143 }

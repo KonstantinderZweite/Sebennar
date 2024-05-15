@@ -338,7 +338,7 @@ unguldavor_castonath_and_escann = {
 			castonath_area = {
 				type = all
 				owned_by = ROOT
-				has_manufactory_trigger = yes
+				has_building = university
 			}
 			833 = {
 				development = 50

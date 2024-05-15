@@ -1,8 +1,6 @@
 
 # No previous file for Kahketi
-owner = G16
-controller = G16
-add_core = G16
+
 culture = soruinic
 religion = senanset
 capital = ""

@@ -13,8 +13,8 @@ trade_goods = cloth
 capital = "The City of Grapevines"
 
 is_city = yes
-owner = J28
-controller = J28
-add_core = J28
+owner = J30
+controller = J30
+add_core = J30
 center_of_trade = 1
 add_devastation = 50

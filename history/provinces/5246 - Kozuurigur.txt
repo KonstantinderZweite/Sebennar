@@ -13,7 +13,6 @@ trade_goods = salt
 capital = "The Walled Pass"
 
 is_city = yes
-owner = J08
-controller = J08
-add_core = J08
-center_of_trade = 1
+owner = J02
+controller = J02
+add_core = J02

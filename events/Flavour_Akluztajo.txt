@@ -1,0 +1,173 @@
+
+
+namespace = flavor_akluztajo
+
+country_event = {
+	id = flavor_Akluztajo.1
+	title = flavor_Akluztajo.1.t
+	desc = flavor_Akluztajo.1.d
+	picture = Green_dragon_eventPicture
+	trigger = {
+	tag = Z87
+	}
+	is_triggered_only = yes
+	option = {
+		name = "flavor_Akluztajo.1.b"
+	}
+}
+
+country_event = {
+	id = flavor_Akluztajo.2
+	title = flavor_Akluztajo.2.t
+	desc = flavor_Akluztajo.2.d
+	picture = LOOMING_DEATH_eventPicture
+	is_triggered_only = yes
+	trigger = {
+	tag = Z87
+	}
+	option = {
+	name = "flavor_Akluztajo.2.b"
+		if = {
+				limit = { has_heir = yes }
+				kill_heir = { allow_new_heir = no }
+			}
+		add_country_modifier = {
+		name = Z87_Pretender
+		duration = -1
+		}
+			define_heir = {
+				adm = 3
+				dip = 2
+				mil = 4
+				claim = 0
+				birth_date = 1448.11.11
+				name = "Muhi"
+				dynasty = "Dragob"
+				male = yes
+			}
+			add_country_modifier = {
+			name = Z87_fire_blessed
+			duration = 14600
+		}
+		kill_ruler = yes 
+			add_ruler_personality = mage_personality
+			add_ruler_personality = babbling_buffoon_personality
+			set_ruler_flag = illusion_1
+			
+		}
+	}
+country_event = {
+    id = flavor_Akluztajo.3
+    title = flavor_Akluztajo.3.t
+    desc = flavor_Akluztajo.3.d
+    picture = FEYFOREST_eventPicture
+    is_triggered_only = yes
+	trigger = {
+	tag = Z87
+	}
+	option = {
+        name = flavor_Akluztajo.3.b
+		remove_country_modifier = Z87_Pretender
+		3010 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 4
+			}
+		}
+		3010 = {
+		add_province_modifier = {
+		name = Z87_purged
+		duration = -1
+		}
+		}
+    }
+}
+
+country_event = {
+id = flavor_Akluztajo.4
+title = flavor_Akluztajo.4.t
+desc = flavor_Akluztajo.4.d
+picture = FEYFOREST_eventPicture
+is_triggered_only = yes 
+trigger = {
+	tag = Z87
+}
+
+	option = {
+        name = flavor_Akluztajo.4.b
+		remove_country_modifier = Z87_Pretender
+		3041 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 4
+			}
+		}
+		3041 = {
+		add_province_modifier = {
+		name = Z87_purged
+		duration = -1
+		}
+		}
+    }
+}
+
+country_event = {
+id = flavor_Akluztajo.5
+title = flavor_Akluztajo.5.t
+desc = flavor_Akluztajo.5.d
+picture = DARK_EXPEDITION_eventPicture
+is_triggered_only = yes 
+trigger = {
+	tag = Z87
+}
+option = {
+	name = flavor_Akluztajo.5.a 
+	add_country_modifier = {
+	name = Z87_colonist_rush
+	}
+}
+}
+country_event = {
+id = flavor_Akluztajo.6
+title = flavor_Akluztajo.6.t
+desc = flavor_Akluztajo.6.d
+picture = DARK_EXPEDITION_eventPicture
+is_triggered_only = yes 
+trigger = {
+	tag = Z87
+}
+option = {
+name = flavor_Akluztajo.6.a 
+change_dip = 1
+change_adm = 1 
+change_mil = 1
+}
+}
+
+country_event = {
+id = flavor_Akluztajo.7
+title = flavor_Akluztajo.7.t
+desc = flavor_Akluztajo.7.d
+picture = sleep_green_dragon
+is_triggered_only = yes
+trigger = {
+tag = Z87
+}
+option = {
+name = flavor_Akluztajo.7.a 
+add_country_modifier = {
+name = Z87_dragon_kinship
+duration = -1
+}
+
+}
+
+option = {
+name = flavor_Akluztajo.7.b 
+add_country_modifier = {
+name = Z87_dragon_armour
+duration = -1
+}
+
+}
+}

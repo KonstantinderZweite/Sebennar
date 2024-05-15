@@ -1,12 +1,34 @@
 
 setup_vision = yes
-government = republic
-add_government_reform = adventurer_republic_reform
+government = monarchy
+add_government_reform = dwarovar_dwarven_clan_reform
+add_adm_power = 172
+add_stability = 2
 government_rank = 1
 primary_culture = malachite_dwarf
 religion = ancestor_worship
 technology_group = tech_east_dwarven
-capital = 4323
-fixed_capital = 4323
+capital = 4311
+fixed_capital = 4311
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+1000.1.1 = { 
+	set_estate_privilege = estate_mages_organization_state
+	add_country_modifier = {
+		name = dwarven_administration
+		duration = -1
+	}
+}
+1395.8.27 = {
+	monarch = {
+		name = "Dromakian"
+		dynasty = "Dreamers"
+		birth_date = 1282.2.7
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+	add_ruler_personality = immortal_personality
+	add_ruler_personality = bold_fighter_personality
+	set_ruler_flag = set_immortality
+}

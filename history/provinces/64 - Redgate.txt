@@ -5,13 +5,13 @@ owner = A20
 controller = A20
 add_core = A20
 culture = ruby_dwarf
-religion = dwarven_pantheon
+religion = ancestor_worship
 
 hre = no
 
 base_tax = 6
-base_production = 4
-base_manpower = 3
+base_production = 3
+base_manpower = 1
 
 trade_goods = iron
 capital = ""

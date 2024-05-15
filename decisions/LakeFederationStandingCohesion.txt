@@ -149,9 +149,6 @@ country_decisions = {
 				limit = { has_global_flag = lake_cohesion_1 }
 				custom_tooltip = lake_federation_cohesion_1
 			}
-			else = {
-				country_event = { id = lake.39 }
-			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -172,16 +169,8 @@ country_decisions = {
 					tag = J25
 				}
 			}
-			NOT = {
-				tag = J51
-				tag = J52
-				tag = J53
-				tag = J50
-				tag = J49
-			}
 		}
 		allow = {
-			hidden_trigger = { ai = no }
 			custom_trigger_tooltip = {
 				tooltip = lake_federation_cohesion_2
 				has_global_flag = lake_cohesion_2
@@ -195,7 +184,7 @@ country_decisions = {
 				num_of_owned_provinces_with = {
 					value = 8
 					culture = metsamic
-					region = south_yarikhoi_region
+					region = southern_isles_region
 				}
 				num_of_owned_provinces_with = {
 					value = 6
@@ -207,7 +196,7 @@ country_decisions = {
 				num_of_owned_provinces_with = {
 					value = 8
 					culture = khamgunai
-					region = north_yarikhoi_region
+					region = northern_isles_region
 				}
 				num_of_owned_provinces_with = {
 					value = 6
@@ -229,8 +218,8 @@ country_decisions = {
 				num_of_owned_provinces_with = {
 					value = 10
 					OR = {
-						region = north_yarikhoi_region
-						region = south_yarikhoi_region
+						region = northern_isles_region
+						region = southern_isles_region
 					}
 				}
 			}
@@ -239,8 +228,8 @@ country_decisions = {
 				num_of_owned_provinces_with = {
 					value = 10
 					OR = {
-						region = north_yarikhoi_region
-						region = south_yarikhoi_region
+						region = northern_isles_region
+						region = southern_isles_region
 					}
 				}
 			}
@@ -250,7 +239,6 @@ country_decisions = {
 			custom_tooltip = lake_federation_cohesion_splintering
 			federation_cohesion_form_formable = yes
 			set_country_flag = cohesion_followed_path
-			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0
@@ -271,9 +259,6 @@ country_decisions = {
 			exists = J33
 		}
 		allow = {
-			hidden_trigger = {
-				ai  = no
-			}
 			exists = J33
 			NOT = { tag = J33 }
 			if = {
@@ -281,7 +266,7 @@ country_decisions = {
 				num_of_owned_provinces_with = {
 					value = 8
 					culture = metsamic
-					region = south_yarikhoi_region
+					region = southern_isles_region
 				}
 				num_of_owned_provinces_with = {
 					value = 6
@@ -293,7 +278,7 @@ country_decisions = {
 				num_of_owned_provinces_with = {
 					value = 8
 					culture = khamgunai
-					region = north_yarikhoi_region
+					region = northern_isles_region
 				}
 				num_of_owned_provinces_with = {
 					value = 6
@@ -315,8 +300,8 @@ country_decisions = {
 				num_of_owned_provinces_with = {
 					value = 10
 					OR = {
-						region = north_yarikhoi_region
-						region = south_yarikhoi_region
+						region = northern_isles_region
+						region = southern_isles_region
 					}
 				}
 			}
@@ -325,15 +310,14 @@ country_decisions = {
 				num_of_owned_provinces_with = {
 					value = 10
 					OR = {
-						region = north_yarikhoi_region
-						region = south_yarikhoi_region
+						region = northern_isles_region
+						region = southern_isles_region
 					}
 				}
 			}
 		}
 		effect = {
 			federation_cohesion_form_formable = yes
-			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0

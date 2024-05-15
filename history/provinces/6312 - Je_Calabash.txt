@@ -1,8 +1,7 @@
 capital = "Je Calabash"
-
-owner = L22
-controller = L22
-add_core = L22
+owner = F65
+controller = F65
+add_core = F65
 culture = binwarji
 religion = fangaulan_pantheon
 hre = no

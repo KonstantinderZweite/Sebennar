@@ -9,7 +9,7 @@ lorent_colonial = {
 	has_country_shield = yes
 	
 	lorent_recover_from_lilac_wars = {
-		icon = mission_war_chest
+		icon = mission_new_dawn
 		required_missions = { }
 		position = 1
 		
@@ -42,7 +42,7 @@ lorent_colonial = {
 					}
 				}
 				A03 = {
-					is_march = yes
+					
 					has_opinion = {
 						who = ROOT
 						value = 150
@@ -66,7 +66,7 @@ lorent_colonial = {
 			else = {
 				OR = {
 					A03 = {
-						is_march = yes
+						
 						has_opinion = {
 							who = ROOT
 							value = 150
@@ -112,8 +112,7 @@ lorent_colonial = {
 		position = 6
 		
 		trigger = {
-			has_idea_group = exploration_ideas
-			exploration_ideas = 1
+			has_idea = quest_for_the_new_world
 		}
 		
 		effect = {
@@ -495,10 +494,10 @@ lorent_internal = {
 			}	
 			OR = {
 				dynasty = "Siloriel"
-				dynasty = "síl Rubenaire"
-				dynasty = "síl Eilísin"
-				dynasty = "síl Madelaire"
-				dynasty = "síl Kyliande"
+				dynasty = "sï¿½l Rubenaire"
+				dynasty = "sï¿½l Eilï¿½sin"
+				dynasty = "sï¿½l Madelaire"
+				dynasty = "sï¿½l Kyliande"
 			}
 		}
 		

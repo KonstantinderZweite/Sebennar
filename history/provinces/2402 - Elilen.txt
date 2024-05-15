@@ -1,8 +1,8 @@
 
 # No previous file for Sandoway
 
-culture = banche
-religion = rioqay_diu
+culture = doos
+religion = animism
 capital = ""
 
 hre = no

@@ -1,7 +1,7 @@
-owner = L69
-controller = L69
-add_core = L69
-add_core = L90
+owner = L95
+controller = L95
+add_core = L95
+add_core = L95
 culture = ichiadza_lizardfolk
 religion = anzalkatsa
 
@@ -16,21 +16,4 @@ trade_goods = iron
 capital = ""
 
 is_city = yes
-
-1.1.1 = { #Anzaran rule from 32 BA
-	owner = L69
-	controller = L69
-}
-
-529.1.1 = { #Ashkha gets established - random date
-	owner = L90
-	controller = L90
-}
-
-1444.11.11 = { #Zerat vs Rayaz war - medium separatism
-	owner = L69 #Not a typo!
-	controller = L69
-}
-
-add_nationalism = 20
-
+# No previous file for Anbennar5967

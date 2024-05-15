@@ -25,6 +25,7 @@ capital = 5661
 		adm = 4
 		dip = 6
 		mil = 1
+		female = no
 	}
 	add_ruler_personality = just_personality
 

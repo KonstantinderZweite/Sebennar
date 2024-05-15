@@ -1,6 +1,8 @@
-owner = S11 #Natani
-controller = S11 #Natani
-add_core = S11 #Natani
+
+
+owner = S33
+controller = S33
+add_core = S33
 culture = cyazizeta_lizardfolk
 religion = beast_memory
 capital = ""

@@ -522,6 +522,10 @@ A72_south = {
 				name = arannen_driven_out_the_wexonards
 				duration = 9125 #25 years
 			}
+			add_country_modifier = {
+					name = arannen_ready_for_war
+					duration = -1 #25 years
+				}
 		}
 	}
 	

@@ -1,6 +1,7 @@
-owner = S39 #Hut Building Weaver Bird
-controller = S39 #Hut Building Weaver Bird
-add_core = S39 #Hut Building Weaver Bird
+
+owner = S33
+controller = S33
+add_core = S33
 culture = tanizu
 religion = beast_memory
 capital = ""

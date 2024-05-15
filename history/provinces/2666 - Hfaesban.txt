@@ -1,17 +1,15 @@
 
-# No previous file for Tuintsundé
-owner = G63
-controller = G63
-add_core = G63
+# No previous file for Tuintsundï¿½
+
 culture = mteibhar
 religion = mazhthramazh
 capital = ""
 
 hre = no
 
-base_tax = 1
+base_tax = 2
 base_production = 3
-base_manpower = 2
+base_manpower = 1
 
 trade_goods = iron
 

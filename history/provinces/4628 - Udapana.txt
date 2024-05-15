@@ -1,8 +1,7 @@
 
-owner = R64
-controller = R64
-add_core = R64
-add_core = R85
+owner = R78
+controller = R78
+add_core = R78
 culture = brown_orc
 religion = old_dookan
 
@@ -10,7 +9,7 @@ hre = no
 
 base_tax = 5
 base_production = 4
-base_manpower = 4
+base_manpower = 2
 
 trade_goods = grain
 

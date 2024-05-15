@@ -1367,6 +1367,7 @@ khozrugan_army_tree = {
 			NOT = { has_manpower_building_trigger = yes }
 		}
 		trigger = {
+			NOT = { has_country_modifier = orc_warg_cavalry }
 			num_of_owned_provinces_with = {
 				value = 5
 				has_manpower_building_trigger = yes
@@ -1395,6 +1396,7 @@ khozrugan_army_tree = {
 			}
 		}
 		trigger = {
+			NOT = { has_country_modifier = khozrugan_worg_cavalry}
 			army_size = 100
 			num_of_owned_provinces_with = {
 				value = 20

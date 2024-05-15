@@ -18,9 +18,9 @@ historical_rival = A47 #Eborthil
 		name = "Marcan I"
 		dynasty = "Silnara"
 		birth_date = 1366.2.3
-		adm = 2
+		adm = 3
 		dip = 3
-		mil = 0
+		mil = 3
 	}
 }
 
@@ -36,6 +36,6 @@ historical_rival = A47 #Eborthil
 		claim = 95
 		adm = 4
 		dip = 6
-		mil = 1
+		mil = 3
 	}
 }

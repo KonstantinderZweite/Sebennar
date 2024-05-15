@@ -7,11 +7,7 @@ estate_adventurers_monopoly_of_slaves_mod = {
 	local_production_efficiency = -10
 }
 
-estate_artificers_monopoly_of_relics_mod = {
-	local_production_efficiency = -10
-}
-
-estate_artificers_monopoly_of_damestear_mod = {					
+estate_artificers_monopoly_of_precursor_relics_mod = {
 	local_production_efficiency = -10
 }
 
@@ -398,15 +394,15 @@ estate_kabiurgarko_energy_bending_lvl1_mod = {
 }
 
 estate_kabiurgarko_metal_bending_lvl3_mod = {
-	infantry_cost = -0.25
-}
-
-estate_kabiurgarko_metal_bending_lvl2_mod = {
 	infantry_cost = -0.15
 }
 
-estate_kabiurgarko_metal_bending_lvl1_mod = {
+estate_kabiurgarko_metal_bending_lvl2_mod = {
 	infantry_cost = -0.10
+}
+
+estate_kabiurgarko_metal_bending_lvl1_mod = {
+	infantry_cost = -0.05
 }
 Z36_balgarsmiths_production_bonus = {
 	local_production_efficiency = 0.25
@@ -460,24 +456,4 @@ estate_lowercastes_development_of_castles_ramparts_mod = {
 	local_defensiveness = 0.1
 	local_garrison_size = 0.10
 	local_fort_maintenance_modifier = -0.1
-}
-
-# Empkeios
-estate_burghers_slaver_independent_trading_mod = {
-	local_production_efficiency = -10
-}
-
-# Command
-estate_dragon_command_sunyanin_engineering_monopoly_mod = {
-	trade_goods_size = 1
-	local_production_efficiency = -10
-}
-
-# Daulophs
-estate_daulophs_monopoly_of_livestock_mod = {
-	local_production_efficiency = -10
-}
-
-estate_daulophs_monopoly_of_metals_mod = {
-	local_production_efficiency = -10
 }
