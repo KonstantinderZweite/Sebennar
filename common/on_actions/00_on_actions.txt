@@ -607,10 +607,16 @@ on_startup = {
 	}
 
 	#Birsartanses setup
-	F21 = {
+	if = {
+		limit = {
+			tag = F21
+		}
 		country_event = { id = flavour_birsartanses.0 }
 	}
-
+	if = { #fixes player unable to use ruler magic, not sure if it can be placed in decision without possibility of issues/exploits
+		limit = { AI = no }
+	close_single_menu = yes
+	}
 	if = {
 		limit = { tag = R51 NOT = { check_variable = { diplomaticAnnexations = 1 } } }
 		set_variable = { diplomaticAnnexations = 0 }
