@@ -200,6 +200,13 @@ country_decisions = {
 					}
 				}
 			}
+			if = {
+				limit = {
+					has_estate = estate_artificers
+				}
+				set_country_flag = magic_artificery_artificery_only
+				update_artifice_points = yes
+			}
 			
 			#gets rid of all mages advisors and stuffs in your country
 			if = {
@@ -249,6 +256,13 @@ country_decisions = {
 			stability = 3
 		}
 		effect = {
+			if = {
+				limit = {
+					has_estate = estate_artificers
+				}
+				set_country_flag = magic_artificery_mixed
+				update_artifice_points = yes
+			}
 			clr_country_flag = banned_magic
 			country_event = { id = estate_organization.3 days = 35 } #Delay so mage estate appears
 		}
