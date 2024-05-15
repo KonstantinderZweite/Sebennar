@@ -277,7 +277,8 @@ hierarchy_1 = {
 		}
 		
 		trigger = {
-			has_idea = quest_for_the_new_world
+			has_idea_group = exploration_ideas
+			exploration_ideas = 1
 		}
 		
 		effect = {

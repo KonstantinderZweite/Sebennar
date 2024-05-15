@@ -1,6 +1,6 @@
-owner = S33
-controller = S33
-add_core = S33
+owner = L83
+controller = L83
+add_core = L83
 culture = rhada_lizardfolk
 religion = anzalkatsa
 

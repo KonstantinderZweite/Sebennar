@@ -1,3 +1,74 @@
+innovative_payment_techniques_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = mercenary_ideas 
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = mercenary_ideas 
+	}
+	
+	mercenary_cost = -0.33
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+plutocratic_ethos_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = plutocracy_ideas 
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = plutocracy_ideas 
+	}
+	
+	reform_progress_growth = 0.25
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_final_tier_reforms_trigger = yes
+		}
+	}
+}
+
+clan_unity_act = { 
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = court_ideas
+		has_idea_group = horde_gov_ideas 
+	}
+	
+	allow = {
+		full_idea_group = court_ideas
+		full_idea_group = horde_gov_ideas 
+	}
+	
+	horde_unity = 1
+	ae_impact = -0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
 the_recruiting_act = {
 	monarch_power = DIP
 
@@ -12,8 +83,10 @@ the_recruiting_act = {
 	}
 	
 	global_sailors_modifier = 0.25
-	allowed_marine_fraction = 0.25
+	allowed_marine_fraction = 0.1
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.6
 		modifier = {
@@ -55,6 +128,8 @@ hold_the_weather_gauge = {
 	leader_naval_manuever = 1
 	ship_durability = 0.05
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -73,9 +148,11 @@ the_wooden_wall = {
 		full_idea_group = defensive_ideas
 	}
 
-	global_ship_cost = -0.10
+	global_ship_cost = -0.1
 	naval_forcelimit_modifier = 0.15
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.6
 		modifier = {
@@ -97,8 +174,11 @@ the_importation_act = {
 		full_idea_group = administrative_ideas
 	}
 	
-	trade_efficiency = 0.15
+	trade_efficiency = 0.1
+	mercantilism_cost = -0.2
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1.2
 		modifier = {
@@ -130,17 +210,19 @@ colonial_expansions = {
 
 	potential = {
 		has_idea_group = expansion_ideas
-		has_idea_group = exploitation_ideas
+		has_idea_group = exploration_ideas
 	}
 	
 	allow = {
 		full_idea_group = expansion_ideas
-		full_idea_group = exploitation_ideas
+		full_idea_group = exploration_ideas
 	}		
 
 	global_colonial_growth = 15
-	siege_ability = 0.10
+	native_uprising_chance = -0.5
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -159,19 +241,21 @@ beneficial_neglect = {
 	monarch_power = DIP
 
 	potential = {
-		has_idea_group = exploitation_ideas
+		has_idea_group = exploration_ideas
 		has_idea_group = innovativeness_ideas
 	}
 	
 	allow = {
-		full_idea_group = exploitation_ideas
+		full_idea_group = exploration_ideas
 		full_idea_group = innovativeness_ideas
 	}
 
-	trade_steering = 0.1
+	colonist_placement_chance = 0.05
 	global_trade_power = 0.1
 
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -206,6 +290,73 @@ beneficial_neglect = {
 	}
 }
 
+restrictions_for_colonies = {
+	monarch_power = DIP
+
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = religious_ideas
+	}
+	
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = religious_ideas
+	}
+
+
+
+	global_missionary_strength = 0.02
+	liberty_desire_from_subject_development = -0.15
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { colony = 1 }
+		}
+		modifier = {
+			factor = 1.25
+			colony = 2
+		}
+		modifier = {
+			factor = 1.25
+			colony = 3
+		}			
+		modifier = {
+			factor = 1.25
+			colony = 4
+		}
+		modifier = {
+			factor = 1.25
+			colony = 5
+		}
+		modifier = {
+			factor = 0
+			religious_unity = 1
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { religious_unity = 0.8 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { religious_unity = 0.6 }
+		}			
+		modifier = {
+			factor = 1.25
+			NOT = { religious_unity = 0.4 }
+		}
+		modifier = {
+			factor = 1.25
+			NOT = { religious_unity = 0.2 }
+		}			
+	}
+}
+
+
+
 
 naval_infrastructure_act = {
 	monarch_power = DIP
@@ -225,6 +376,8 @@ naval_infrastructure_act = {
 	naval_forcelimit_modifier = 0.33
 
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -266,6 +419,8 @@ new_naval_tactis = {
 	heavy_ship_power = 0.1
 
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -290,6 +445,8 @@ trade_connection_policy = {
 	global_foreign_trade_power = 0.30
 	merchants = 1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.8		
 		modifier = {
@@ -311,7 +468,31 @@ trade_connection_policy = {
 	}
 }
 
+naval_secrecy_act = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = defensive_ideas
+	}
+	
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = defensive_ideas
+	}
 
+	sunk_ship_morale_hit_recieved = -0.1
+	naval_morale = 0.1
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.8
+		modifier = {
+			factor = 0
+			NOT = { navy_size = 20 }
+		}	
+	}
+}
 
 streamlined_galley_production = {
 	monarch_power = DIP
@@ -328,6 +509,8 @@ streamlined_galley_production = {
 	galley_cost = -0.15
 	galley_power = 0.15
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -351,6 +534,8 @@ cloth_quality_edict = {
 	}
 	trade_efficiency = 0.15
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1.2
 		modifier = {
@@ -389,9 +574,11 @@ production_quota_act = {
 		full_idea_group = trade_ideas
 		full_idea_group = quantity_ideas
 	}
-	global_trade_goods_size_modifier = 0.1
+	global_trade_goods_size_modifier = 0.15
  
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.7
 	}
@@ -413,6 +600,8 @@ encouragement_of_merchant_navy = {
 	trade_steering = 0.2
  
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -455,6 +644,8 @@ commercial_embassies = {
 	global_trade_power = 0.1
 	diplomatic_reputation = 1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.8		
 		modifier = {
@@ -489,13 +680,12 @@ mandatory_service = {
 	}
 	
 	reelection_cost = -0.10
-	legitimacy = 1.0
-	devotion = 1.0
-	horde_unity = 1.0
-	meritocracy = 0.5
+	global_manpower_modifier = 0.1
 	may_recruit_female_generals = yes
 	female_advisor_chance = 0.25
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0
 	}
@@ -517,6 +707,8 @@ professional_diplomatic_corps = {
 	diplomatic_reputation = 1
 	war_exhaustion = -0.05
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.7
 	}
@@ -524,6 +716,36 @@ professional_diplomatic_corps = {
 }
 
 
+
+colonial_companies_act = {
+	monarch_power = DIP
+	potential = {
+		has_idea_group = exploration_ideas
+		has_idea_group = plutocracy_ideas
+	}
+	
+	allow = {
+		full_idea_group = exploration_ideas
+		full_idea_group = plutocracy_ideas
+	}
+	
+	range = 0.20
+	global_colonial_growth = 10
+
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { num_of_colonies = 1 }
+		}
+	}
+}
 
 protected_shipping_lanes = {
 	monarch_power = DIP
@@ -538,8 +760,10 @@ protected_shipping_lanes = {
 	}
 	
 	light_ship_cost = -0.15
-	light_ship_power = 0.15
+	global_ship_trade_power = 0.2
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -563,8 +787,10 @@ chaplains_of_the_fleet = {
 	}
 	
 	naval_morale = 0.1
-	recover_navy_morale_speed = 0.05
+	recover_navy_morale_speed = 0.1
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -587,9 +813,11 @@ multilingual_diplomats = {
 		full_idea_group = diplomatic_ideas
 	}	
 	
-	technology_cost = -0.05
+	num_accepted_cultures = 1
 	improve_relation_modifier = 0.2
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -600,17 +828,19 @@ native_assimilation_act = {
 	
 	potential = {
 		has_idea_group = humanist_ideas
-		has_idea_group = exploitation_ideas
+		has_idea_group = exploration_ideas
 	}
 	
 	allow = {
 		full_idea_group = humanist_ideas
-		full_idea_group = exploitation_ideas
+		full_idea_group = exploration_ideas
 	}	
 	
-	tolerance_own = 4
-	tolerance_heretic = 4
-	tolerance_heathen = 4 
+	global_colonial_growth = 10
+	native_assimilation = 0.5
+	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -640,6 +870,8 @@ the_foreign_aid_act = {
 	diplomatic_upkeep = 1
 	diplomatic_reputation = 1
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.9
 	}
@@ -658,13 +890,109 @@ cultural_unity = {
 		full_idea_group = religious_ideas
 	}	
 	
-	culture_conversion_cost = -0.2
+	culture_conversion_cost = -0.15
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.6
 	}
 }
 
+terms_of_surrender_statute = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = naval_ideas
+		has_idea_group = diplomatic_ideas
+	}
+	
+	allow = {
+		full_idea_group = naval_ideas
+		full_idea_group = diplomatic_ideas
+	}	
+	
+	capture_ship_chance = 0.33
+
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.6
+	}
+}
+
+skilled_cartographers = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = naval_ideas
+		has_idea_group = exploration_ideas
+	}
+	
+	allow = {
+		full_idea_group = naval_ideas
+		full_idea_group = exploration_ideas
+	}	
+	
+	global_naval_engagement_modifier = 0.2
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.6
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 0.6
+			NOT = { num_of_colonies = 1 }
+		}
+	}
+}
+
+fortified_trading_posts = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = naval_ideas
+		has_idea_group = trade_ideas
+	}
+	
+	allow = {
+		full_idea_group = naval_ideas
+		full_idea_group = trade_ideas
+	}	
+	
+	global_ship_trade_power = 0.33
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.9
+		modifier = {
+			factor = 0.6
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.2
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.3
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.4
+		}
+		modifier = {
+			factor = 1.5
+			trade_income_percentage = 0.5
+		}
+	}
+}
 
 the_integrated_administration_act = {
 	monarch_power = DIP
@@ -680,8 +1008,10 @@ the_integrated_administration_act = {
 	}	
 	
 	vassal_income = 0.25
-	global_institution_spread = 0.1
+	diplomatic_annexation_cost = -0.1
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -707,6 +1037,37 @@ the_integrated_administration_act = {
 	}
 }
 
+the_cooperation_act = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = naval_ideas
+		has_idea_group = influence_ideas
+	}
+	
+	allow = {
+		full_idea_group = naval_ideas
+		full_idea_group = influence_ideas
+	}	
+	
+	caravan_power = 0.33
+	merchants = 1
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.7
+		modifier = {
+			factor = 0.6
+			NOT = { trade_income_percentage = 0.1 }
+		}			
+		modifier = {
+			factor = 0.6
+			NOT = { trade_income_percentage = 0.2 }
+		}
+	}
+}
+
 record_keeping_act = {
 	monarch_power = DIP
 	potential = {
@@ -719,11 +1080,44 @@ record_keeping_act = {
 		full_idea_group = diplomatic_ideas
 	}
 
-	governing_capacity_modifier = 0.10
-	merc_maintenance_modifier = -0.15
+	diplomats = 1
+	global_autonomy = -0.05
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.6
+	}
+}
+
+colonial_administration_act = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = administrative_ideas
+		has_idea_group = exploration_ideas
+	}
+	allow = {
+		full_idea_group = administrative_ideas
+		full_idea_group = exploration_ideas
+	}
+	
+	global_colonial_growth = 10
+	colonist_placement_chance = 0.05
+
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { num_of_colonists = 1 }
+		}
+		modifier = {
+			factor = 0.1
+			NOT = { num_of_colonies = 1 }
+		}
 	}
 }
 
@@ -742,6 +1136,8 @@ naval_school_act = {
 
 	navy_tradition = 1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -769,6 +1165,8 @@ the_foreign_support_act = {
 	rebel_support_efficiency = 0.50
 	diplomats = 1
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0
 	}
@@ -779,15 +1177,18 @@ the_stamp_act = {
 	
 	potential = {
 		has_idea_group = economic_ideas
-		has_idea_group = exploitation_ideas
+		has_idea_group = exploration_ideas
 	}
 	allow = {
 		full_idea_group = economic_ideas
-		full_idea_group = exploitation_ideas
+		full_idea_group = exploration_ideas
 	}
 	
-	global_trade_goods_size_modifier = 0.1
+	global_trade_power = 0.1
+	global_tariffs = 0.15 
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -826,9 +1227,11 @@ black_chamber_act = {
 		full_idea_group = offensive_ideas
 	}
 	
-	spy_offence = 0.10
+	spy_offence = 0.25
 	diplomats = 1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.6
 	}
@@ -847,8 +1250,10 @@ diplomatic_defence_act = {
 	}
 
 	diplomats = 1
-	diplomatic_upkeep = 1
+	improve_relation_modifier = 0.2
 	
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.7
 		modifier = {
@@ -875,6 +1280,8 @@ armed_neutrality_act = {
 	trade_steering = 0.25
 	merchants = 1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0.6
 		modifier = {
@@ -900,7 +1307,60 @@ armed_neutrality_act = {
 	}
 }
 
+the_naval_supremacy_act = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = naval_ideas
+		has_idea_group = maritime_ideas
+	}
+	
+	allow = {
+		full_idea_group = naval_ideas
+		full_idea_group = maritime_ideas
+	}	
+	
+	siege_blockade_progress = 1
+	blockade_efficiency = 0.5
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.8
+		modifier = {
+			factor = 0
+			NOT = { navy_size = 20 }
+		}
+	}
+}
 
+letters_of_marque = {
+	monarch_power = DIP
+	
+	potential = {
+		has_idea_group = offensive_ideas
+		has_idea_group = exploration_ideas
+	}
+	
+	allow = {
+		full_idea_group = offensive_ideas
+		full_idea_group = exploration_ideas
+	}
+	
+	privateer_efficiency = 0.5
+	capture_ship_chance = 0.25
+
+	
+	effect = {}
+	removed_effect = {}
+	ai_will_do = {
+		factor = 0.6
+		modifier = {
+			factor = 0
+			NOT = { num_of_light_ship = 20 }
+		}
+	}
+}
 
 trained_marines_act = {
 	monarch_power = DIP
@@ -916,7 +1376,10 @@ trained_marines_act = {
 	}
 	
 	naval_morale = 0.1
+	allowed_marine_fraction = 0.1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -942,6 +1405,8 @@ steppe_nomad_migrations_policy = {
 	colonist_placement_chance = 0.05
 	native_uprising_chance = -0.5
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0
 	}
@@ -963,6 +1428,8 @@ riverine_navy_policy = {
 	naval_forcelimit_modifier = 0.1
 	navy_tradition = 1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
 		modifier = {
@@ -988,8 +1455,10 @@ passport_to_merchants_policy = {
 	mercantilism_cost = -0.2
 	global_own_trade_power = 0.1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1015,6 +1484,8 @@ faith_advisors_policy = {
 	monthly_piety = 0.001
 	diplomatic_reputation = 1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1	
 	}
@@ -1036,6 +1507,8 @@ one_and_true = {
 	reduced_liberty_desire = 10
 	global_missionary_strength = 0.01
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0
 	}
@@ -1055,8 +1528,10 @@ maritime_scribes = {
 	}
 	
 	naval_tradition_from_battle = 0.5
-	prestige_from_naval = 0.5
+	prestige_from_naval = 1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0
 	}
@@ -1077,8 +1552,10 @@ solidarity_policy = { #change name
 	}
 	
 	improve_relation_modifier = 0.15
-	trade_efficiency = 0.15
+	trade_efficiency = 0.1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1.2
 		modifier = {
@@ -1120,6 +1597,8 @@ appeal_to_old_powers_policy = {
 	diplomatic_reputation = 1
 	improve_relation_modifier = 0.15
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1.0
 	}
@@ -1141,6 +1620,8 @@ indirect_approach_policy = {
 	movement_speed = 0.1
 	land_attrition = -0.1
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -1166,6 +1647,8 @@ loyalty_to_the_land_policy = {
 	diplomatic_upkeep = 1
 	liberty_desire_from_subject_development = -0.15
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
@@ -1187,6 +1670,8 @@ commercial_tribes_policy = {
 	trade_range_modifier = 0.15
 	range = 0.25
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 0
 	}
@@ -1207,12 +1692,15 @@ canoe_expertise_policy = {
 	
 	disengagement_chance = 0.25
 
+	effect = {}
+	removed_effect = {}
 	ai_will_do = {
 		factor = 1
 	}
 }
 
-#1.35 policies 
+
+#1.35 Policies#
 
 the_spy_network_act = { 
 	monarch_power = DIP
@@ -1227,14 +1715,13 @@ the_spy_network_act = {
 		full_idea_group = spy_ideas
 	}
 	
-	spy_offence = 0.50
-	dip_tech_cost_modifier = -0.10
-	adm_tech_cost_modifier = -0.10
+	envoy_travel_time = -0.25
+	spy_offence = 0.5
 
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1251,13 +1738,17 @@ the_smooth_integration_act = {
 		full_idea_group = diplomatic_ideas 
 	}
 	
-	diplomatic_reputation = 2 
-	monthly_reform_progress = 0.25
+	diplomatic_reputation = 1 
+	years_to_integrate_personal_union = -10
 
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
+		# modifier = {
+		# 	factor = 0.1
+		# 	NOT = { religion_group = christian }
+		# }
 	}
 }
 
@@ -1280,7 +1771,7 @@ global_trade_networks_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1289,20 +1780,20 @@ colonial_boost_act = {
 	
 	potential = {
 		has_idea_group = infrastructure_ideas
-		has_idea_group = exploitation_ideas 
+		has_idea_group = exploration_ideas 
 	}
 	
 	allow = {
 		full_idea_group = infrastructure_ideas
-		full_idea_group = exploitation_ideas 
+		full_idea_group = exploration_ideas 
 	}
 	
-	build_cost = -0.10
+	colony_development_boost = 1
 
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1325,7 +1816,7 @@ sailor_efficiency_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1342,13 +1833,13 @@ diplomatic_consolidation_act = {
 		full_idea_group = influence_ideas 
 	}
 	
-	same_culture_advisor_cost = -0.10
-	global_supply_limit_modifier = 0.33
+	monthly_favor_modifier = 0.5
+	can_chain_claim = yes 
 
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1365,13 +1856,13 @@ centralization_power_act = {
 		full_idea_group = court_ideas 
 	}
 	
-	development_cost_in_primary_culture = -0.05
+	max_absolutism = 10 
 	yearly_corruption = -0.1
 
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1396,7 +1887,7 @@ loyal_conduct_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1418,7 +1909,7 @@ diplomatic_arms_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1441,7 +1932,7 @@ merchants_hire_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1464,7 +1955,7 @@ transportation_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1487,7 +1978,7 @@ maritime_expertise_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1510,7 +2001,7 @@ client_state_act = {
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {
-		factor = 0			
+		factor = 1
 	}
 }
 
@@ -1536,69 +2027,3 @@ native_emissaries_act = {
 	}
 }
 
-innovative_payment_techniques_act = { 
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = court_ideas
-		has_idea_group = mercenary_ideas 
-	}
-	
-	allow = {
-		full_idea_group = court_ideas
-		full_idea_group = mercenary_ideas 
-	}
-	
-	mercenary_cost = -0.20
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 0			
-	}
-}
-
-plutocratic_ethos_act = { 
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = court_ideas
-		has_idea_group = plutocracy_ideas 
-	}
-	
-	allow = {
-		full_idea_group = court_ideas
-		full_idea_group = plutocracy_ideas 
-	}
-	
-	reform_progress_growth = 0.25
-	
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 0			
-	}
-}
-
-clan_unity_act = { 
-	monarch_power = DIP
-	
-	potential = {
-		has_idea_group = court_ideas
-		has_idea_group = horde_gov_ideas 
-	}
-	
-	allow = {
-		full_idea_group = court_ideas
-		full_idea_group = horde_gov_ideas 
-	}
-	
-	horde_unity = 1
-	ae_impact = -0.1
-
-	effect = {}
-	removed_effect = {}
-	ai_will_do = {
-		factor = 0			
-	}
-}

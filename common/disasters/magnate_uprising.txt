@@ -2,7 +2,7 @@
 magnate_uprising = {
 	ended_by_country_breaking_to_rebels = no
 	potential = {
-		is_year = 1450 # Give them 50 years to see it coming
+		is_year = 1600 # Give them 50 years to see it coming
 		government = monarchy
 		has_estate_privilege = estate_burghers_magnate_council
 		tag = A13
@@ -12,7 +12,7 @@ magnate_uprising = {
 	
 	can_start = {
 		has_any_disaster = no
-		is_year = 1500
+		is_year = 1650
 		# 70 influence or below 40 loyalty
 		OR = {
 			estate_influence = {

@@ -15,12 +15,12 @@ emperor_idea_adm_modifiers = {
 	}
 	
 	custom_monarch_lifespan = {
-		monarch_lifespan = 1
+		monarch_lifespan = 0.1
 		level_cost_2 = 3
 		level_cost_3 = 9
 		level_cost_4 = 18
 		chance = {
-			factor = 1
+			factor = 0.25
 		}
 	}
 	
@@ -34,10 +34,10 @@ emperor_idea_adm_modifiers = {
 		}
 		chance = {
 			factor = 1
-			modifier = {
-				NOT = { religion = orthodox }
-				factor = 0
-			}
+			#modifier = {
+			#	NOT = { religion = orthodox }
+			#	factor = 0
+			#}
 		}
 	}
 	

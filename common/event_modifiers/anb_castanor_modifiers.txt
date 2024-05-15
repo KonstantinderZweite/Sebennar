@@ -11,7 +11,7 @@ castanor_wardens_of_the_white_walls = {
 castanor_dragonforge_built_already = {
 	build_time = -0.2
 	build_cost = -0.2
-	global_regiment_cost = -0.15
+	global_regiment_cost = -0.2
 }
 castanor_modernized_the_dragonforge = {
 	fire_damage = 0.1
@@ -180,7 +180,7 @@ castanor_folding_in_gerudian = {
 	num_accepted_cultures = 4
 }
 castanor_folding_in_divenori = {
-	num_accepted_cultures = 6
+	num_accepted_cultures = 9
 }
 castanor_folding_in_bulwari = {
 	num_accepted_cultures = 8
@@ -278,7 +278,7 @@ castanor_desperate_times_lake_fed = {
 	mil_tech_cost_modifier = -0.2
 }
 castanor_dwarovar_trade_agreement_castanor = {
-	global_regiment_cost = -0.15
+	global_regiment_cost = -0.2
 	inflation_reduction = 0.1
 	trade_efficiency = 0.2
 }
@@ -299,7 +299,7 @@ castanor_lake_fed_trade_castanor = {
 	diplomatic_reputation = 2
 }
 castanor_lake_fed_trade_lake_fed = {
-	global_regiment_cost = -0.15
+	global_regiment_cost = -0.2
 	technology_cost = -0.1
 }
 castanor_northern_pass_trade_posts_prov = {
@@ -413,7 +413,7 @@ castanor_legions_citizen_army_8_maintenance_mod_inactive = {
 }
 castanor_rebuilding_flavour = {
 	local_development_cost = 0.5
-	local_build_time = 100
+	allowed_num_of_buildings = -99
 	local_production_efficiency = -0.5
 }
 castanor_into_anbennar = {
@@ -656,7 +656,7 @@ castanor_building_legionway_survey = {
 }
 castanor_building_legionway_construction = {
 	local_development_cost = 0.5
-	local_build_time = 10
+	allowed_num_of_buildings = -99
 	local_production_efficiency = -0.5
 	trade_value_modifier = 0.05
 	supply_limit = 10

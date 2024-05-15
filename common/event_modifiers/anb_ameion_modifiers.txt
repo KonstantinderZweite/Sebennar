@@ -280,7 +280,7 @@ G52_last_stand = {
 	land_morale = 0.15
 	war_exhaustion = -0.1
 	manpower_recovery_speed = 0.25
-	global_regiment_cost = -0.15
+	global_regiment_cost = -0.25
 	defensiveness = 0.25
 }
 G52_saboteurs = {
@@ -414,7 +414,7 @@ G52_monarchist_zeal_2 = { #Monarchist AI (hidden)
 	interest = -1
 	fort_maintenance_modifier = -0.50
 	reserves_organisation = 0.25
-	global_regiment_cost = -0.15
+	global_regiment_cost = -0.2
 	mercenary_cost = -0.2
 	merc_maintenance_modifier = -0.6
 	war_exhaustion = -0.05

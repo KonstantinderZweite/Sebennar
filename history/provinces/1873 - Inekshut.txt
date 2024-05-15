@@ -1,7 +1,9 @@
 
-# No previous file for Graubï¿½nden
-
-
+# No previous file for Graubünden
+owner = G42
+controller = G42
+add_core = G42
+tribal_owner = G42
 culture = boek
 religion = dotimism
 capital = ""

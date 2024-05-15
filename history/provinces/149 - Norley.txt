@@ -1,8 +1,9 @@
 
 #149 - Edirne
 
-owner = A71
-controller = A71
+owner = A65
+controller = A65
+add_core = A65
 add_core = A71
 culture = bluefoot_halfling
 religion = regent_court

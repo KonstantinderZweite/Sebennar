@@ -13,7 +13,7 @@ trade_goods = fish
 capital = ""
 
 is_city = yes
-owner = J24
-controller = J24
-add_core = J24
+owner = J25
+controller = J25
+add_core = J25
 add_devastation = 20

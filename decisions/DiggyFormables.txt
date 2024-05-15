@@ -788,6 +788,7 @@ country_decisions = {
 				limit = { ai = yes }
 				is_year = 1600
 			}
+			NOT = { has_country_flag = H76_skip_aul_dwarov }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -806,8 +807,9 @@ country_decisions = {
 			}
 			is_free_or_tributary_trigger = yes
 			is_at_war = no				
+			has_country_modifier = dwarovkron_full
 			num_of_owned_provinces_with = {
-				value = 15
+				value = 25
 				is_core = ROOT
 				is_city = yes
 				OR = {

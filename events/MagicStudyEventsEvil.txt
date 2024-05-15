@@ -9,16 +9,12 @@ country_event = {
 	
 	trigger = {
 		has_ruler_modifier = ruler_studying_magic
-		
+		NOT = { has_country_flag = vacyntassi_jaherian_statute_flag }
 		NOT = { has_ruler_flag = ruler_studying_unregulated_research }
 	}
 	
 	mean_time_to_happen = {
 		days = 9125
-		modifier = {
-			factor = 1.70
-			ruler_has_personality = immortal_personality
-		}
 		modifier = {
 			factor = 0.8
 			ruler_has_personality = free_thinker_personality
@@ -64,7 +60,7 @@ country_event = {
 		set_ruler_flag = ruler_studying_unregulated_research
 		# custom_tooltip = tooltip_ruler_studying_increase
 		increase_study_experience = {
-			experience = 200
+			experience = 100
 		}
 	}
 	
@@ -88,16 +84,12 @@ country_event = {
 	
 	trigger = {
 		has_ruler_modifier = ruler_studying_magic
-
+		NOT = { has_country_flag = vacyntassi_jaherian_statute_flag }
 		NOT = { has_ruler_flag = ruler_studying_unsafe_experiments }
 	}
 	
 	mean_time_to_happen = {
 		days = 9125
-		modifier = {
-			factor = 1.70
-			ruler_has_personality = immortal_personality
-		}
 		modifier = {
 			factor = 0.8
 			ruler_has_personality =  obsessive_perfectionist_personality
@@ -139,7 +131,7 @@ country_event = {
 		set_ruler_flag = ruler_studying_unsafe_experiments
 		# custom_tooltip = tooltip_ruler_studying_increase
 		increase_study_experience = {
-			experience = 200
+			experience = 100
 		}
 	}
 	
@@ -167,16 +159,12 @@ country_event = {
 	
 	trigger = {
 		has_ruler_modifier = ruler_studying_magic
-		
+		NOT = { has_country_flag = vacyntassi_jaherian_statute_flag }
 		NOT = { has_ruler_flag = ruler_studying_live_experiments }
 	}
 	
 	mean_time_to_happen = {
 		days = 9125
-		modifier = {
-			factor = 1.70
-			ruler_has_personality = immortal_personality
-		}
 		modifier = {
 			factor = 0.8
 			ruler_has_personality = cruel_personality
@@ -214,7 +202,7 @@ country_event = {
 		
 		# custom_tooltip = tooltip_ruler_studying_increase
 		increase_study_experience = {
-			experience = 200
+			experience = 100
 		}
 		
 		random = {
@@ -251,7 +239,7 @@ country_event = {
 		set_ruler_flag = ruler_studying_live_experiments
 		# custom_tooltip = tooltip_ruler_studying_increase
 		increase_study_experience = {
-			experience = 200
+			experience = 100
 		}
 	}
 

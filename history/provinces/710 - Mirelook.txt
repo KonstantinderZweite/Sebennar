@@ -5,6 +5,7 @@ culture = common_goblin
 religion = goblinic_shamanism
 capital = ""
 trade_goods = fur
+tribal_owner = B45
 hre = no
 
 base_tax = 1 

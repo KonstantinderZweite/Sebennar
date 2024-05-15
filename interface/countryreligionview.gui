@@ -546,7 +546,12 @@ guiTypes = {
 			format = centre
 		}
 
-
+		guiButtonType = {
+			name = "swap_deity_button"
+			position = { x = 55 y = 251 }
+			quadTextureSprite ="GFX_swap_deity_button"
+			scripted = yes
+		}
 		
 ############## ORTHODOX PATRIARCH AUTHORITY	###### 
 
@@ -1305,7 +1310,12 @@ guiTypes = {
 			horizontalBorder = ""
 			Orientation = "UPPER_LEFT"
 					
-			
+			iconType =
+			{
+				name ="religion_overlay_hindu_bg"
+				spriteType = "GFX_blank_icon1x1"
+				position = { x= 0 y = -70 }
+			}
 			
 			
 			instantTextBoxType = {
@@ -1334,12 +1344,11 @@ guiTypes = {
 			
 			guiButtonType = {
 				name = "pick_deity"
-				position = { x=23 y = -49}
-				quadTextureSprite ="GFX_deity_button"
+				position = { x=15 y = -49}
+				quadTextureSprite ="GFX_pick_deity_button"
 				#buttonText = "SELECT"
 				#buttonFont = "vic_18"
 				Orientation = "LEFT"
-				scripted = yes
 			}
 
 			iconType =
@@ -1382,7 +1391,7 @@ guiTypes = {
 			guiButtonType = {
 				name = "pick_cult"
 				position = { x=23 y = -49}
-				quadTextureSprite ="GFX_deity_button"
+				quadTextureSprite ="GFX_pick_deity_button"
 				#buttonText = "SELECT"
 				buttonFont = "vic_18"
 				Orientation = "LEFT"

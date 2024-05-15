@@ -5,7 +5,6 @@ government_rank = 1
 primary_culture = soulseeker_ogre
 religion = sudomegi
 technology_group = tech_soulseeker_ogre
-capital = 6844
-
+capital = 6846
 
 

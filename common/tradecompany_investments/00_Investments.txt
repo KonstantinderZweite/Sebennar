@@ -299,7 +299,7 @@ settlements = {
 	}
 
 	area_modifier = {
-		local_development_cost = -0.05
+		local_development_cost = -0.075
 	}
 	
 	ai_global_worth = { factor = 0 }
@@ -320,7 +320,7 @@ district = {
 	}
 
 	area_modifier = {
-		local_development_cost = -0.10
+		local_development_cost = -0.15
 	}
 	
 	ai_global_worth = { factor = 0 }

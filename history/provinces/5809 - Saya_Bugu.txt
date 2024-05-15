@@ -1,7 +1,7 @@
 # No previous file for Chisca
-owner = F65
-controller = F65
-add_core = F65
+owner = L21
+controller = L21
+add_core = L21
 culture = tamajoba
 religion = fangaulan_pantheon
 

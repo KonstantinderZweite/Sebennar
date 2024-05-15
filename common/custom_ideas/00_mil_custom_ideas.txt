@@ -4,9 +4,6 @@ mil_idea_modifiers = {
 	custom_idea_land_morale = {
 		land_morale = 0.05
 		default = 1
-		level_cost_1 = 10
-		level_cost_2 = 20
-		max_level = 2 
 		chance = {
 			factor = 1
 		}
@@ -14,9 +11,6 @@ mil_idea_modifiers = {
 	custom_idea_discipline = {
 		discipline = 0.025
 		default = 6
-		level_cost_1 = 10
-		level_cost_2 = 20
-		max_level = 2
 		chance = {
 			factor = 1
 		}

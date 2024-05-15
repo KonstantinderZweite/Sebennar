@@ -790,17 +790,15 @@ bal_hyl = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.1
+			local_defensiveness = 0.05
 			local_hostile_attrition = 1
 		}
 
 		area_modifier = {
-			supply_limit = 0.5
 		}
 
 		country_modifiers = {
 			prestige = 0.1
-			drill_gain_modifier = 0.1
 		}
 
 		on_upgraded = {
@@ -826,18 +824,16 @@ bal_hyl = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.2
-			local_hostile_attrition = 1.5
+			local_defensiveness = 0.1
+			trade_goods_size = 0.25
 		}
 
 		area_modifier = {
-			trade_goods_size = 0.25
-			supply_limit = 1
+			local_hostile_attrition = 1
 		}
 
 		country_modifiers = {
 			prestige = 0.25
-			drill_gain_modifier = 0.2
 		}
 
 		on_upgraded = {
@@ -864,18 +860,17 @@ bal_hyl = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.33
-			local_hostile_attrition = 2
+			local_defensiveness = 0.10
+			trade_goods_size = 0.5
 		}
 
 		area_modifier = {
-			trade_goods_size = 0.5
-			supply_limit = 2
+			local_defensiveness = 0.10
+			local_hostile_attrition = 2
 		}
 
 		country_modifiers = {
 			prestige = 0.5
-			drill_gain_modifier = 0.33
 		}
 
 		on_upgraded = {
@@ -1299,14 +1294,14 @@ aelcandar = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.2
+			local_defensiveness = 0.05
 		}
 
 		area_modifier = {
 		}
 
 		country_modifiers = {
-		    prestige = 0.5
+		    prestige = 0.1
 		}
 
 		on_upgraded = {
@@ -1323,15 +1318,14 @@ aelcandar = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.33
-			local_hostile_attrition = 0.5
+			local_defensiveness = 0.1
 		}
 
 		area_modifier = {
 		}
 
 		country_modifiers = {
-		    prestige = 1
+		    prestige = 0.25
 		}
 
 		on_upgraded = {
@@ -1349,9 +1343,7 @@ aelcandar = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.5
-			local_hostile_attrition = 1
-			local_defender_dice_roll_bonus = 1
+			local_defensiveness = 0.10
 		}
 
 		area_modifier = {
@@ -1359,7 +1351,7 @@ aelcandar = {
 		}
 
 		country_modifiers = {
-		    prestige = 1.5
+		    prestige = 0.5
 		}
 
 		on_upgraded = {
@@ -1437,15 +1429,14 @@ escandar = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.2
-			local_garrison_size = 0.10
+			local_defensiveness = 0.05
 		}
 
 		area_modifier = {
 		}
 
 		country_modifiers = {
-			prestige = 0.50
+		    prestige = 0.1
 		}
 
 		on_upgraded = {
@@ -1462,16 +1453,14 @@ escandar = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.33
-			local_hostile_attrition = 0.5
-			local_garrison_size = 0.15
+			local_defensiveness = 0.1
 		}
 
 		area_modifier = {
 		}
 
 		country_modifiers = {
-		    prestige = 0.75
+		    prestige = 0.25
 		}
 
 		on_upgraded = {
@@ -1489,18 +1478,15 @@ escandar = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.5
-			local_hostile_attrition = 1
-			local_defender_dice_roll_bonus = 1
-			local_garrison_size = 0.20
+			local_defensiveness = 0.10
 		}
 
 		area_modifier = {
-			
+			local_defensiveness = 0.10
 		}
 
 		country_modifiers = {
-		     prestige = 1.0
+		    prestige = 0.5
 		}
 
 		on_upgraded = {
@@ -1578,15 +1564,14 @@ calascandar = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.2
-			local_garrison_size = 0.10
+			local_defensiveness = 0.05
 		}
 
 		area_modifier = {
 		}
 
 		country_modifiers = {
-			prestige = 0.5
+		    prestige = 0.1
 		}
 
 		on_upgraded = {
@@ -1603,17 +1588,14 @@ calascandar = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.33
-			local_hostile_attrition = 0.5
-			local_garrison_size = 0.15
+			local_defensiveness = 0.1
 		}
 
 		area_modifier = {
-			
 		}
 
 		country_modifiers = {
-		    prestige = 0.75
+		    prestige = 0.25
 		}
 
 		on_upgraded = {
@@ -1631,18 +1613,15 @@ calascandar = {
 		}
 
 		province_modifiers = {
-			local_defensiveness = 0.5
-			local_hostile_attrition = 1
-			local_defender_dice_roll_bonus = 1
-			local_garrison_size = 0.20
+			local_defensiveness = 0.10
 		}
 
 		area_modifier = {
-			
+			local_defensiveness = 0.10
 		}
 
 		country_modifiers = {
-		    prestige = 1.0
+		    prestige = 0.5
 		}
 
 		on_upgraded = {

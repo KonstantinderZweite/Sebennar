@@ -1,10 +1,10 @@
 
 # No previous file for Banten
-owner = F49
-controller = F49
-add_core = F49
+owner = R03
+controller = R03
+add_core = R03
 culture = raghamidesh
-religion = the_jadd
+religion = high_philosophy
 center_of_trade = 1
 
 hre = no

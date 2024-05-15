@@ -164,33 +164,6 @@ groups = {
 			value = 75
 		}
 	}
-	tech_spirit = {
-		start_level = 3
-		start_cost_modifier = 0.40
-	}
-
-	#Inyaswarosa
-	tech_inyaswarosa = {
-		start_level = 3
-		start_cost_modifier = 0
-	}
-	tech_pezarangi_harpy = {
-		start_level = 3
-		start_cost_modifier = 0.75
-		nation_designer_cost = {
-			trigger = {
-				capital_scope = {
-					OR = {
-						continent = new_world
-						continent = north_america
-						continent = south_america
-						continent = oceania
-					}
-				}
-			}
-			value = 75
-		}
-	}
 	#baashidi
 	tech_south_sarhaly = {
 		start_level = 3
@@ -259,6 +232,7 @@ groups = {
 	tech_taychendi = {
 		start_level = 3
 		start_cost_modifier = 0
+		is_primitive = yes 
 	}
 	tech_east_harimari = {
 		start_level = 3
@@ -439,7 +413,7 @@ groups = {
 	}
 	#Kobolds
 	tech_kobold = {
-		start_level = 3
+		start_level = 2
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -456,7 +430,7 @@ groups = {
 		}
 	}
 	tech_darkscale_kobold = {
-		start_level = 3
+		start_level = 2
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -524,7 +498,7 @@ groups = {
 			value = 75
 		}
 	}
-	tech_feng_harpy = {
+	tech_pezarangi_harpy = {
 		start_level = 3
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
@@ -595,7 +569,7 @@ groups = {
 	}
 	#Goblins
 	tech_goblin = {
-		start_level = 3
+		start_level = 2
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -612,7 +586,7 @@ groups = {
 		}
 	}
 	tech_exodus_goblin = {
-		start_level = 3
+		start_level = 2
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -629,7 +603,7 @@ groups = {
 		}
 	}
 	tech_cave_goblin = {
-		start_level = 3
+		start_level = 2
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -646,8 +620,8 @@ groups = {
 		}
 	}
 	#Troll
-	tech_troll = {
-		start_level = 3
+	tech_northern_troll = {
+		start_level = 2
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -665,7 +639,7 @@ groups = {
 	}
 	#Ogre
 	tech_ogre = {
-		start_level = 3
+		start_level = 2
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -769,14 +743,14 @@ groups = {
 		start_cost_modifier = 0.75
 	}
 
-	#Placeholder
-	tech_placeholder = {
+	#Spirit Mil
+	tech_spirit = {
 		start_level = 3
 		start_cost_modifier = 0.40
 	}
 
-	#Tanizu
-	tech_tanizu = {
+	#Inyaswarosa
+	tech_inyaswarosa = {
 		start_level = 3
 		start_cost_modifier = 0
 	}
@@ -794,7 +768,7 @@ groups = {
 	}
 	# Forest Goblins
 	tech_forest_goblin = {
-		start_level = 3
+		start_level = 2
 		start_cost_modifier = 0.75
 		nation_designer_cost = {
 			trigger = {
@@ -819,7 +793,7 @@ groups = {
 	
 	#Eastern Cave Goblins (For Tree of Stone and Jade Mines Goblins)
 	tech_east_cave_goblin = {
-		start_level = 3
+		start_level = 2
 		start_cost_modifier = 0.75
 		nation_designer_unit_type = tech_cave_goblin
 		nation_designer_cost = {
@@ -842,6 +816,7 @@ groups = {
         start_level = 2
         start_cost_modifier = 0
         nation_designer_unit_type = tech_bharbhen
+		is_primitive = yes
     }
 
 	tech_nzeri_harpy = {
@@ -861,7 +836,8 @@ groups = {
 			value = 75
 		}
 	}
-		tech_wastelander = {
+
+	tech_wastelander = {
 		start_level = 3
 		start_cost_modifier = 0
 		nation_designer_cost = {
@@ -913,6 +889,25 @@ groups = {
 		}
 	}
 
+	tech_hill_troll = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_unit_type = tech_northern_troll
+		nation_designer_cost = {
+			trigger = {
+				capital_scope = {
+					OR = {
+						continent = new_world		#Will need to be updated, this looks like capitals shouldnt be on these continents
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			value = 75
+		}
+	}
+	
 	#Vanilla
 	western = {
 		start_level = 3

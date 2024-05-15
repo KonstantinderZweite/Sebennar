@@ -367,7 +367,7 @@ telgeir_column_2_dlc = {
 		
 		effect = {
 			add_country_modifier = {
-				name = A62_drill
+				name = telgeir_drill
 				duration = -1
 			}
 		}
@@ -818,47 +818,44 @@ telgeir_column_3 = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = telgier_professional_armies
-				duration = -1
-			}
-			hidden_effect = {
-				every_core_province = { 
-					limit = {
-						OR = {
-							culture = esmari
-							AND = {
-								culture = gawedi
-								OR = {
-									area = gawed_area
-									area = south_alen_area
-								}
-							}
-						}
-					}
-					change_culture = telgeiran
-				}
-			}
-			if = {
-				limit = { ruler_culture = ROOT }
-				set_ruler_culture = telgeiran
-			}
-			if = {
-				limit = { has_heir = yes heir_culture = ROOT }
-				set_heir_culture = telgeiran
-			}
-			if = {
-				limit = { has_consort = yes consort_culture = ROOT }
-				set_consort_culture = telgeiran
-			}
-			change_primary_culture = telgeiran
-			remove_non_electors_emperors_from_empire_effect = yes
-			if = {
-				limit = {
-					NOT = { government_rank = 2 }
-				}
-				set_government_rank = 2
-			}
+			country_event = { id = flavor_telgeir.2 }
+			# hidden_effect = {
+			# 	every_core_province = { 
+			# 		limit = {
+			# 			OR = {
+			# 				culture = esmari
+			# 				AND = {
+			# 					culture = gawedi
+			# 					OR = {
+			# 						area = gawed_area
+			# 						area = south_alen_area
+			# 					}
+			# 				}
+			# 			}
+			# 		}
+			# 		change_culture = telgeiran
+			# 	}
+			# }
+			# if = {
+			# 	limit = { ruler_culture = ROOT }
+			# 	set_ruler_culture = telgeiran
+			# }
+			# if = {
+			# 	limit = { has_heir = yes heir_culture = ROOT }
+			# 	set_heir_culture = telgeiran
+			# }
+			# if = {
+			# 	limit = { has_consort = yes consort_culture = ROOT }
+			# 	set_consort_culture = telgeiran
+			# }
+			# change_primary_culture = telgeiran
+			# remove_non_electors_emperors_from_empire_effect = yes
+			# if = {
+			# 	limit = {
+			# 		NOT = { government_rank = 2 }
+			# 	}
+			# 	set_government_rank = 2
+			# }
 		}
 	}
 }
@@ -980,6 +977,7 @@ telgeir_development = {
 		}
 		
 		trigger = {
+			has_institution = manufactories
 			911 = { #Telgeir
 				owned_by = ROOT
 				is_core = ROOT
