@@ -5229,11 +5229,11 @@ G51_ideas = {
 #Ameion
 G52_ideas = {
 	start = {
-		infantry_power = 0.10
+		discipline = 0.05
 		colonists = 1
 	}
 	bonus = {
-		global_unrest = -2
+		reserves_organisation = 0.15
 	}
 	trigger = {
 		tag = G52
@@ -5241,25 +5241,27 @@ G52_ideas = {
 	free = yes
 
 	G52_laskaris_the_conqueror = {
-		province_warscore_cost = -0.2
+		province_warscore_cost = -0.15
 	}
 	G52_healing_wounds = {
 		improve_relation_modifier = 0.2
 	}
-	G52_revive_the_eisphorath = {
-		global_tax_modifier = 0.1
+	G52_kheionization = {
+		culture_conversion_cost = -0.1
+		global_missionary_strength = 0.01
 	}
 	G52_fotistrepei_regiments = {
 		manpower_in_true_faith_provinces = 0.20
 	}
-	G52_the_peoples_of_taychend = {
-		num_accepted_cultures = 2
-	}
-	G52_dependable_merchants = {
-		global_own_trade_power = 0.1
+	G52_revive_the_eisphorath = {
+		development_cost = -0.1
 	}
 	G52_the_amytoli = {
 		fort_maintenance_modifier = -0.15
+	}
+	G52_deny_cannor = {
+		global_ship_trade_power = 0.1
+		naval_morale = 0.1
 	}
 }
 

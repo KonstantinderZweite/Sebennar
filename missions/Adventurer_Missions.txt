@@ -544,7 +544,12 @@ adventurer_5 = {
 		icon = mission_rb_control_the_hansa
 		position = 2
 		trigger = {
-
+			any_federation_members = {
+				has_opinion = {
+					who = ROOT
+					value = 200
+				}
+			}
 		}
 		effect = {
 			add_dip_power = 50
@@ -558,8 +563,10 @@ adventurer_5 = {
 			ADV_ally
         }
 		trigger = {
+			OR = {
+				federation_size = 3
 				num_of_allies = 2
-			
+			}
 		}
 		effect = {
 			change_government_reform_progress = 5

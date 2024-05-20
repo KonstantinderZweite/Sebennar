@@ -150,7 +150,7 @@ teachings_of_balris = {
 		high_tolerance_kobold_race_trigger = yes
 	}
 	modifier = {
-		inflation_reduction = -0.1
+		inflation_reduction = -0.2
 		prestige_decay = -0.015
 	}
 	ai_will_do = {

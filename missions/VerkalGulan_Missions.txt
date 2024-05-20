@@ -116,7 +116,7 @@ verkalgulan_government_missions = {
 			else = {
 				2915 = {
 					owned_by = ROOT
-					
+					has_great_project = { type = heros_gate tier = 2 }
 				}
 			}
 		}
@@ -736,15 +736,11 @@ verkalgulan_the_citadel_missions = {
 		
 		provinces_to_highlight = {
 			province_id = 2914
-			OR = {
-				NOT = { is_capital_of = ROOT }
-				NOT = { has_dwarven_hold_2 = yes }
-			}
 		}
 		
 		trigger = {
 			capital = 2914
-			2914 = { has_dwarven_hold_2 = yes }
+			2914 = { has_dwarven_hold_3 = yes }
 		}
 		
 		effect = {
@@ -833,7 +829,7 @@ verkalgulan_the_citadel_missions = {
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
 				define_advisor = {
-					name = "Dhûndar Korvûzad"
+					name = "Dhï¿½ndar Korvï¿½zad"
 					type = statesman
 					skill = 4
 					discount = yes
@@ -843,7 +839,7 @@ verkalgulan_the_citadel_missions = {
 			}
 			else = {
 				define_advisor = {
-					name = "Dhûndar Korvûzad"
+					name = "Dhï¿½ndar Korvï¿½zad"
 					type = statesman
 					skill = 3
 					discount = yes

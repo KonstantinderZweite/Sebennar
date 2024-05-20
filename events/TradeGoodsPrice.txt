@@ -940,16 +940,6 @@ country_event = {
 	}
 
 	trigger = {
-		OR = {
-			capital_scope = { superregion = deepwoods_superregion }
-			AND = {
-				tag = I13
-				num_of_owned_provinces_with = {
-					superregion = deepwoods_superregion
-					value = 10
-				}
-			}
-		}
 		is_year = 1570
 		OR = {
 			current_age = age_of_reformation #Not before this
@@ -1309,7 +1299,7 @@ country_event = {
 }
 
 ###################
-### PAper
+### Paper
 ###################
 # Explosion of Early Modern Printing
 
@@ -1749,7 +1739,10 @@ country_event = {
 			development = 15
 			is_state = yes
 			is_city = yes
-			province_without_special_goods_produced_trigger = yes
+			OR = {
+				province_without_special_goods_produced_trigger = yes
+				has_latent_trade_goods = coal
+			}
 		}
 		NOT = { has_global_flag = faceting_happened }
 	}
@@ -1770,7 +1763,10 @@ country_event = {
 					development = 15
 					is_state = yes
 					is_city = yes
-					province_without_special_goods_produced_trigger = yes
+					OR = {
+						province_without_special_goods_produced_trigger = yes
+						has_latent_trade_goods = coal
+					}
 				}
 				save_event_target_as = diamond_city
 			}
@@ -1782,7 +1778,16 @@ country_event = {
 		event_target:diamond_city = {
 			if = {
 				limit = {
-					NOT = { trade_goods = gems }
+					NOT = {
+						trade_goods = gems
+						OR = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+							province_id = 1134	#Vels Domfan
+							province_id = 309	#Varain�
+							province_id = 169	#Nimscodd
+						}
+					}
 				}
 				change_trade_goods = gems
 			}
@@ -1815,7 +1820,7 @@ country_event = {
 	trigger = {
 		NOT = { current_age = age_of_discovery }
 		capital_scope = { continent = serpentspine }
-		gems = 1
+		gems = 5
 		primitives = no
 		calc_true_if = {
 			serpentspine = { type = all trade_goods = gems }
@@ -2470,7 +2475,7 @@ country_event = {
 				}
 		OR = {
 			OR = {
-				2868 = { #West Dwarovar
+				4236 = { #Westholds
 					NOT = { strongest_trade_power = { OR = { has_country_modifier = orcish_administration has_country_modifier = goblin_administration } } }
 				}
 				has_global_flag = marrhold_tunnel_opened
@@ -2650,6 +2655,7 @@ country_event = {
 	major = yes
 
 	trigger = {
+		is_year = 1540
 		mushroom_forest_region = {
 			type = all
 			owned_by = ROOT
@@ -2986,6 +2992,7 @@ country_event = {
 		hidden_effect = { set_global_flag = ivory_wand_happened }
 	}
 }
+
 ####################
 #### Cloves
 ####################
@@ -3008,7 +3015,7 @@ country_event = {
 			trade_goods = cloves
 			key = clove_trade
 			
-			value = 0.20
+			value = 0.2
 			duration = -1
 		}
 		hidden_effect = { set_global_flag = cloves_more_expensive }

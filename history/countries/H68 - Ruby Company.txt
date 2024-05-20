@@ -17,13 +17,13 @@ historical_friend = A20 #Rubyhold
 
 1404.3.7 = {
 	monarch = {
-		name = "Kûrgûm"
+		name = "Kï¿½rgï¿½m"
 		dynasty = "Gemseeker"
 		birth_date = 1352.8.8
 		adm = 4
 		dip = 3
 		mil = 4
 	}
-	add_ruler_personality = immortal_personality
+	set_ruler_flag = long_lived_ruler
 	add_ruler_personality = zealot_personality
 }

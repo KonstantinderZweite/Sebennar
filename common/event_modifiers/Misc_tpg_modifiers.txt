@@ -34,7 +34,7 @@ religious_zeal_at_conv = {
 local_missionary_strength = -0.05
 }
 papal_blessing = {
-land_morale = 0.05 
+land_morale = 0.075 
 prestige = 1.0 
 }
 Mobilization = {

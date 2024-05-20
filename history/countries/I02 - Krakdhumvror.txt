@@ -34,7 +34,7 @@ fixed_capital = 4208
 		dip = 6
 		mil = 6
 	}
-	add_ruler_personality = immortal_personality
+	set_ruler_flag = long_lived_ruler
 	add_ruler_personality = expansionist_personality
 	set_ruler_flag = clan_frozenforge
 	change_estate_land_share = {

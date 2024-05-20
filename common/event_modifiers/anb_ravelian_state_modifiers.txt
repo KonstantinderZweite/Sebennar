@@ -106,9 +106,9 @@ extranational_recruitment_2 = {
 
 slic_reserve_corps = {
 	fire_damage = 0.1
-	land_forcelimit = -0.4
+	land_forcelimit_modifier = -0.3
 	land_maintenance_modifier = 0.2
-	special_unit_forcelimit = 0.4
+	allowed_rajput_fraction = 0.4
 }
 
 ubiquitous_presence = {

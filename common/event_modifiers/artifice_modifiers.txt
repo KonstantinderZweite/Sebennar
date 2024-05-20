@@ -68,7 +68,7 @@ artificer_research_bonus_machinery_society = {
 artifice_sparkdrive_rifles = {
 	is_rajput_modifier = yes
 
-	fire_damage = 0.20
+	fire_damage = 0.10
 }
 
 artifice_exo_arms = {
@@ -84,7 +84,8 @@ artifice_war_golems = {
 	is_rajput_modifier = yes
 
 	shock_damage = 0.15
-	shock_damage_received = -0.15
+	shock_damage_received = -0.10
+	movement_speed = - 0.05
 }
 
 artifice_war_golems_asra = {
@@ -108,19 +109,20 @@ artifice_mechanim_soldiers = {
 	is_rajput_modifier = yes
 
 	fire_damage_received = -0.1
-	morale_damage_received = -0.25
+	morale_damage_received = -0.15
 }
 
 artifice_personal_mageshields = {
 	is_rajput_modifier = yes
 
-	fire_damage_received = -0.2
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
 }
 
 artifice_portable_turrets = {
 	is_rajput_modifier = yes
 
-	shock_damage_received = -0.20
+	shock_damage_received = -0.10
 }
 
 artifice_arcane_blaster = {
@@ -164,7 +166,7 @@ artifice_demonflame_throwers = {
 
 artifice_scrap_mechs = {
 	is_rajput_modifier = yes
-	infantry_shock = 0.5
+	infantry_shock = 0.3
 }
 
 artifice_predator_exoskeleton = {
@@ -195,10 +197,14 @@ artifice_giantshape_warframe = {
 	#reinforce_cost_modifier = 1.5
 }
 
+artifice_golden_gearbox = {
+	local_development_cost = -0.25
+}
+
 artifice_veykoda_rune_protections = {
 	is_rajput_modifier = yes
 
-	fire_damage_received = -0.2
+	fire_damage_received = -0.15
 
 	#reinforce_speed = -0.05
 	#reinforce_cost_modifier = 1
@@ -257,4 +263,8 @@ artifice_vg_musket_precursor_edition = {
 	is_rajput_modifier = yes
 	
 	infantry_power = 0.1
+}
+
+artifice_ivory_tools = {
+	local_development_cost = -0.05
 }

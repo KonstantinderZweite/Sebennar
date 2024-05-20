@@ -23,8 +23,8 @@ capital = 608
 		dip = 1
 		mil = 4
 	}
-	add_ruler_personality = immortal_personality
-	set_ruler_flag = set_immortality
+	set_ruler_flag = long_lived_ruler
+	
 	add_ruler_personality = mage_personality
 	set_ruler_flag = evocation_1
 	set_ruler_flag = evocation_2

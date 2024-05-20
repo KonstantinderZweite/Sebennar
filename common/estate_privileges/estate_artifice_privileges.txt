@@ -123,7 +123,7 @@ estate_artificers_organization_international_gommo = {
 	penalties = {
 	}
 	benefits = {
-		allowed_rajput_fraction = 0.1
+		allowed_rajput_fraction = 0.05
 	}
 	ai_will_do = {
 		factor = 5
@@ -249,7 +249,7 @@ estate_artificers_organization_state = {
 	penalties = {
 	}
 	benefits = {
-		allowed_rajput_fraction = 0.1
+		allowed_rajput_fraction = 0.15
 	}
 	ai_will_do = {
 		factor = 5
@@ -366,7 +366,7 @@ estate_artificers_organization_independent_unions = {
 	penalties = {
 	}
 	benefits = {
-		allowed_rajput_fraction = 0.1
+		allowed_rajput_fraction = 0.10
 	}
 	ai_will_do = {
 		factor = 0
@@ -2564,7 +2564,7 @@ artifice_invention_vorpal_bullets = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		morale_damage = 0.075
+		morale_damage = 0.05
 	}
 	ai_will_do = {
 		factor = 10
@@ -3465,7 +3465,7 @@ artifice_invention_prototype_tanks = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		cavalry_fire = 1
+		cavalry_fire = 0.75
 	}
 	ai_will_do = {
 		factor = 50
@@ -3709,7 +3709,7 @@ artifice_invention_magic_missile_deployer = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		shock_damage_received = -0.1
+		shock_damage_received = -0.075
 	}
 	ai_will_do = {
 		factor = 1
@@ -3769,7 +3769,7 @@ artifice_invention_arithmatons = {
 		artificers_privilege_slots = 1
 		global_tax_modifier = 0.15
 		inflation_reduction = 0.1
-		interest = -0.5
+		interest = -0.20
 	}
 	ai_will_do = {
 		factor = 50
@@ -4129,7 +4129,7 @@ artifice_invention_box_of_holding = {
 	benefits = {
 		artificers_privilege_slots = 1
 		#bonuses in paper provinces?
-		global_tariffs = 0.4
+		global_tariffs = 0.10
 		treasure_fleet_income = 0.1
 	}
 	ai_will_do = {

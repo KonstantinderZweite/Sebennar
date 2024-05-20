@@ -590,7 +590,7 @@
  INVITE_SCHOLAR_DELAYED_TOOLTIP:1 "Inviting a Scholar from another country will give us a unique bonus for 20 years."
  UNIQUE_TRADING_POLICY_ALREADY_ACTIVE:0 "§RThis Trading Policy can only be active for one nation in this Node and is already selected by §!$BY|Y$§R.§!"
  ARMY_PROFESSIONALISM_YEARLY_MODIFIERS_DESC:0 "§YYearly Gain:§!\n$MODIFIER$"
- ARMY_PROFESSIONALISM_STATIC_MODIFIERS_DESC:1 "§YImmediate Gain:§!\nRecruit General: §G+1%§!\nRecruit Mercenary: §R-5%§!"
+ ARMY_PROFESSIONALISM_STATIC_MODIFIERS_DESC:1 "§YImmediate Gain:§!\nRecruit General: §G+0.5%§!\nRecruit Mercenary: §R-5%§!"
  unruly_tribes:0 "Unruly Tribes"
  desc_unruly_tribes:0 "The local tribes in this area are unhappy that their deeds to support the ruler hasn't been rewarded to their preference."
  disfavored_clan:0 "Disfavored Clan"

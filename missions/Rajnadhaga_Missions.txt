@@ -3,10 +3,7 @@ rajnadhaga_conquest_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	has_country_shield = yes
 	
@@ -121,10 +118,7 @@ rajnadhaga_slaves = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	has_country_shield = yes
 	
@@ -224,10 +218,7 @@ rajnadhaga_ghankedhen = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	has_country_shield = yes
 	
@@ -276,10 +267,7 @@ rajnadhaga_conquest_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	has_country_shield = yes
 	
@@ -462,10 +450,7 @@ rajnadhaga_conquest_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	has_country_shield = yes
 	
@@ -717,10 +702,7 @@ rajnadhaga_conquest_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	has_country_shield = yes
 	
@@ -845,10 +827,7 @@ rajnadhaga_economy_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	has_country_shield = yes
 	
@@ -988,10 +967,7 @@ rajnadhaga_libraries = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	has_country_shield = yes
 	
@@ -1126,10 +1102,7 @@ rajnadaghi_university_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	
 	rajnadhaga_library_sarnavan = {
@@ -1206,10 +1179,7 @@ rajnadhaga_economy_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	
 	rajnadhaga_resettling_valley = {
@@ -1387,10 +1357,7 @@ rajnadaghi_reconquest_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
 		tag = R07
-		tag = R73
-		}
 	}
 	has_country_shield = yes
 	

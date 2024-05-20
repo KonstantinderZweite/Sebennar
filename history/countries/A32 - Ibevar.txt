@@ -14,15 +14,15 @@ capital = 352 #Ibevar
 1420.5.9 = {
 	monarch = {
 		name = "Ibenion II"
-		dynasty = "ta'Lunateín"
+		dynasty = "ta'Lunateï¿½n"
 		birth_date = 1105.10.18
 		adm = 3
 		dip = 3
 		mil = 1
 	}
-	add_ruler_personality = immortal_personality
+	set_ruler_flag = long_lived_ruler
 	add_ruler_personality = careful_personality
-	set_ruler_flag = set_immortality
+	
 }
 
 1422.1.1 = { set_country_flag = lilac_wars_rose_party }

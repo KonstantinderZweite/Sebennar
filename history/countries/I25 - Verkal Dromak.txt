@@ -28,7 +28,7 @@ fixed_capital = 4311
 		dip = 3
 		mil = 4
 	}
-	add_ruler_personality = immortal_personality
+	set_ruler_flag = long_lived_ruler
 	add_ruler_personality = bold_fighter_personality
-	set_ruler_flag = set_immortality
+	
 }

@@ -33,7 +33,7 @@ country_event = {
 		days = 7300
 		modifier = {
 			factor = 1.70
-			ruler_has_personality = immortal_personality
+			has_ruler_flag = long_lived_ruler
 		}
 		modifier = {
 			factor = 0.5
@@ -108,7 +108,7 @@ country_event = {
 		days = 7300
 		modifier = {
 			factor = 1.75
-			ruler_has_personality = immortal_personality
+			has_ruler_flag = long_lived_ruler
 		}
 		modifier = {
 			factor = 0.8
@@ -170,7 +170,7 @@ country_event = {
 		days = 7300
 		modifier = {
 			factor = 1.70
-			ruler_has_personality = immortal_personality
+			has_ruler_flag = long_lived_ruler
 		}
 		modifier = {
 			factor = 0.6
@@ -228,7 +228,7 @@ country_event = {
 		days = 7300
 		modifier = {
 			factor = 1.70
-			ruler_has_personality = immortal_personality
+			has_ruler_flag = long_lived_ruler
 		}
 		modifier = {
 			factor = 0.8
@@ -314,7 +314,7 @@ country_event = {
 		days = 7300
 		modifier = {
 			factor = 1.70
-			ruler_has_personality = immortal_personality
+			has_ruler_flag = long_lived_ruler
 		}
 		modifier = {
 			factor = 0.8
@@ -409,7 +409,7 @@ country_event = {
 		days = 7300
 		modifier = {
 			factor = 1.70
-			ruler_has_personality = immortal_personality
+			has_ruler_flag = long_lived_ruler
 		}
 		modifier = {
 			factor = 0.8
@@ -504,7 +504,7 @@ country_event = {
 		days = 7300
 		modifier = {
 			factor = 1.75
-			ruler_has_personality = immortal_personality
+			has_ruler_flag = long_lived_ruler
 		}
 		modifier = {
 			factor = 0.5
@@ -582,7 +582,7 @@ country_event = {
 		days = 7300
 		modifier = {
 			factor = 1.75
-			ruler_has_personality = immortal_personality
+			has_ruler_flag = long_lived_ruler
 		}
 		modifier = {
 			factor = 0.8
@@ -741,7 +741,7 @@ country_event = {
 		days = 7300
 		modifier = {
 			factor = 1.70
-			ruler_has_personality = immortal_personality
+			has_ruler_flag = long_lived_ruler
 		}
 		modifier = {
 			factor = 0.8
@@ -903,7 +903,7 @@ country_event = {
 		# Lazy studying
 		modifier = {
 			factor = 1.70
-			ruler_has_personality = immortal_personality
+			has_ruler_flag = long_lived_ruler
 		}
 		modifier = {
 			factor = 1.25

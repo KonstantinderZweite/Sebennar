@@ -1707,8 +1707,8 @@ toarnen_column_four = {
 		trigger = {
 			901 = { # Leslinpar
 				owner = {
-					has_opinion = {
-						who = ROOT
+				has_opinion = {
+					who = ROOT
 						value = 100
 					}
 				}
