@@ -389,7 +389,7 @@ hehodovar_school_of_architecture = {
 		area_modifier = {		
 		}
 		region_modifier = {
-			local_development_cost = -0.05
+			local_development_cost = -0.025
 			allowed_num_of_buildings = 1
 		}
 		country_modifiers = {

@@ -24,7 +24,7 @@ war_wizard_personality = {
 		# has_estate_privilege = estate_mages_battlemage_academies
 		always = no # Impossible to get naturally
 	}
-	siege_ability = 0.1
+	siege_ability = 0.05
 	shock_damage = 0.10 # Added this in place of removed modifiers
 	army_tradition_from_battle = -1
 }
@@ -145,21 +145,21 @@ cruel_tactician_personality = {
 	allow = {
 		is_admiral = no
 	}
-	morale_damage = 0.1
+	morale_damage = 0.05
 }
 
 frontline_holder_personality = {
 	allow = {
 		is_admiral = no
 	}
-	morale_damage_received = -0.1
+	morale_damage_received = -0.05
 }
 
 strict_drillmaster_personality = {
 	allow = {
 		is_admiral = no
 	}
-	drill_decay_modifier = -0.5
+	drill_decay_modifier = -0.1
 	discipline = 0.025
 }
 

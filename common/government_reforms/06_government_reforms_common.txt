@@ -2504,7 +2504,7 @@ anbennar_T5_generic_specialized_troops = {
 	trigger = {
 	}
 	modifiers = {
-		special_unit_forcelimit = 0.2
+		special_unit_forcelimit = 0.1
 	}
 	
 	ai = {
@@ -2674,7 +2674,7 @@ anbennar_T5_human_gnollish = {
 	}
 	modifiers = {
 		#Positive
-		morale_damage = 0.1
+		morale_damage = 0.075
 		loot_amount = 0.5
 		available_province_loot = 0.5
 	}
@@ -2852,7 +2852,7 @@ anbennar_T5_human_harpy = {
 	}
 	modifiers = {
 		#Positive
-		siege_ability = 0.15
+		siege_ability = 0.10
 		assault_fort_ability = 0.2
 		land_attrition = -0.1
 		#Negative
@@ -2952,7 +2952,7 @@ anbennar_T5_human_lizardfolk = {
 	modifiers = {
 		#Positive
 		naval_morale = 0.1
-		allowed_marine_fraction = 0.15
+		allowed_marine_fraction = 0.05
 		#Negative
 		cavalry_cost = 0.1
 		recover_army_morale_speed = -0.05
@@ -3008,10 +3008,10 @@ anbennar_T5_human_ogre = {
 	}
 	modifiers = {
 		#Positive
-		shock_damage_received = -0.1
+		shock_damage_received = -0.05
 		fire_damage_received = -0.05
 		#Negative
-		infantry_cost = 0.15
+		infantry_cost = 0.10
 		global_supply_limit_modifier = -0.15
 	}
 	

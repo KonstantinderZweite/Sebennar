@@ -3370,7 +3370,7 @@ karashar_inner_conflicts_settled = {
 }
 
 karashar_gelkalis_liberated = {
-	siege_ability = 0.20
+	siege_ability = 0.15
 }
 
 karashar_varamhar_conquered = {
@@ -3451,7 +3451,7 @@ verne_wyvern_riders = {
 }
 
 verne_wyvern_riders_dlc = {
-	siege_ability = 0.2
+	siege_ability = 0.15
     recover_army_morale_speed = 0.1
 	amount_of_hussars = 2
 }
@@ -7519,12 +7519,12 @@ marrhold_sky_lords = {
 	movement_speed = 0.2
 	fire_damage = 0.1
 	leader_land_shock = 1
-	siege_ability = 0.2
+	siege_ability = 0.15
 }
 
 marrhold_sky_lords_dlc = {
 	amount_of_hussars = 6
-	siege_ability = 0.2
+	siege_ability = 0.15
 	leader_land_shock = 1
 	leader_land_fire = 1
 }
@@ -7782,7 +7782,7 @@ preparing_for_war_wex2 = {
 }
 
 preparing_for_war_wex3 = {
-	siege_ability = 0.2
+	siege_ability = 0.15
 }
 
 wex_reclamation = {
@@ -7998,7 +7998,7 @@ varamhar_the_sun_reborn = {
 	hostile_attrition = 1
 	shock_damage = 0.2
 	shock_damage_received = -0.2
-	siege_ability = 0.2
+	siege_ability = 0.15
 	land_morale = 0.15
 	naval_morale = 0.15
 	administrative_efficiency = 0.33
@@ -14766,7 +14766,7 @@ corintar_balance_failed = {
 }
 
 corintar_malliaths_breath = {
-	siege_ability = 0.2
+	siege_ability = 0.15
 }
 
 marblehead_boats = {
@@ -17583,7 +17583,7 @@ azjakuma_aikogeoke_natives = { #hidden, removes uprising chance
 azjakuma_xia_buff = {
 	land_morale = 0.15
 	discipline = 0.05
-	siege_ability = 0.20
+	siege_ability = 0.15
 	defensiveness = 0.20
 	land_forcelimit = 10
 	land_forcelimit_modifier = 0.40
@@ -22144,7 +22144,7 @@ A99_the_academy_warfare = {
 	idea_cost = -0.1
 	innovativeness_gain = 0.50
 	technology_cost = -0.1
-	allowed_rajput_fraction = 0.25
+	allowed_rajput_fraction = 0.20
 	army_tradition = 0.5
 }
 

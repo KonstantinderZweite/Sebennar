@@ -436,7 +436,7 @@ blorc_ruler_shows_prowess = {
 
 ###Misc loot###
 blorc_siege_weapon_found = {
-	siege_ability = 0.2
+	siege_ability = 0.15
 }
 
 blorc_lab_tech = {

@@ -1625,6 +1625,7 @@ lorent_wine = {
 		}
 		
 		trigger = {
+			in_golden_age = yes 
 			home_trade_node = {
 				highest_value_trade_node = yes
 			}
@@ -1637,17 +1638,9 @@ lorent_wine = {
 			}
 			add_mercantilism = 5
 			if = {
-				limit = { has_dlc = "Mandate of Heaven" }
-				if = {
 					limit = { in_golden_age = yes }
-					extend_golden_age = 600
+					extend_golden_age = 180
 				}
-				else_if = {
-					limit = { has_had_golden_age = yes }
-					reset_golden_age = yes
-				}
-				else = { add_splendor = 800 }
-			}
 			else = {
 				add_stability_or_adm_power = yes
 				add_prestige_or_monarch_power = { amount = 50 }

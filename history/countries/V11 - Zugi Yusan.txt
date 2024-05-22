@@ -12,9 +12,9 @@ capital = 6821
 		name = "Ayla"
 		dynasty = "Ashborn"	
 		birth_date = 1410.7.2
-		adm = 5
+		adm = 4
 		dip = 5
-		mil = 6
+		mil = 5
 		female = yes
 	}
 	add_ruler_personality = scholar_personality 

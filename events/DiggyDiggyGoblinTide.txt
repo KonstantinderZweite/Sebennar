@@ -446,7 +446,7 @@ country_event = {
 		}
 		add_country_modifier = {
 			name = serpentspine_defender
-			duration = 36500
+			duration = 18250
 		}
 		add_prestige = 50
 		increase_legitimacy_huge_effect = yes

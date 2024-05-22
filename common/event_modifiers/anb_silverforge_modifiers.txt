@@ -177,7 +177,7 @@ grip_both_hands = {
 general_engineers = {
 	global_regiment_cost = 0.05
 	movement_speed = 0.10
-	siege_ability = 0.20
+	siege_ability = 0.15
 	artillery_levels_available_vs_fort = 1
 }
 
