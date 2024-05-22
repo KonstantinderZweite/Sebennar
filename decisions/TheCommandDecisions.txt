@@ -14,15 +14,6 @@ country_decisions = {
 				tag = R62
 				NOT = { has_country_flag = command_move_menu_open_flag }
 			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = command_sir_revolt_victory }
-				}
-				custom_trigger_tooltip = {
-					tooltip = command_sir_revolt_victory_tt
-					has_country_flag = command_sir_revolt_victory
-				}
-			}
 			is_at_war = no
 			if = { #Command will be efficient about moving its guys around
 				limit = { ai = yes }
@@ -63,15 +54,6 @@ country_decisions = {
 			hidden_trigger = {
 				tag = R62
 				NOT = { has_country_flag = command_move_menu_open_flag }
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = command_sir_revolt_victory }
-				}
-				custom_trigger_tooltip = {
-					tooltip = command_sir_revolt_victory_tt
-					has_country_flag = command_sir_revolt_victory
-				}
 			}
 			is_at_war = no
 			if = { #Command will be efficient about moving its guys around
