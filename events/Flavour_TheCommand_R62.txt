@@ -12600,7 +12600,7 @@ country_event = { #north or south
 	}
 	
 	option = { #north
-			name = "flavor_the_command.4000.a"
+			name = "flavor_the_command.4000.b"
 		gronstunad_area = {
 				limit = {
 					NOT = { is_core = ROOT }
