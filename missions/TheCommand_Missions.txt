@@ -14,10 +14,6 @@ command_warroom_3 = {
 		position = 1
 		
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = command_sir_revolt_victory_tt
-				has_country_flag = command_sir_revolt_victory
-			}
 			if = {
 				limit = { ai = no }
 				num_of_generals = 3
@@ -37,6 +33,57 @@ command_warroom_3 = {
 	}
 }
 
+command_fix_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = R62
+	}
+	
+	R62_consolidate_gains = {
+		icon = mission_crush_delhi
+		position = 1
+		
+		trigger = {
+			army_size = 20
+		}
+		
+		effect = {
+			add_adm_power = -50
+			 raghajandi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			marudhoj_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			munlanan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			khasardul_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			country_event = { id = flavor_the_command.4000 }
+		}
+	}
+}
 
 #Campaigns
 command_xiadao_2 = {
@@ -421,7 +468,6 @@ command_shamakhad_4 = {
 		
 		trigger = {
 			4460 = { #Sarnihanpur
-				sieged_by = ROOT
 				infantry_in_province = 20
 			}
 		}
@@ -5794,6 +5840,43 @@ command_1 = {
 		tag = R62
 	}
 	
+	R62_goblin_subjects = {
+		icon = mission_discussion_arch
+		required_missions {
+			
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			R65 = { 
+				has_spy_network_from = {
+					who = ROOT
+					value = 25
+					}
+				}
+			R66 = { 
+				has_spy_network_from = {
+					who = ROOT
+					value = 25
+					}
+				}
+			}
+		effect = {
+			add_casus_belli = {
+					target = R65
+					type = cb_vassalize_mission
+					months = 360
+				}
+			add_casus_belli = {
+					target = R66
+					type = cb_vassalize_mission
+					months = 360
+				}
+			}
+	}
+	
 	R62_the_marching_of_boots = {
 		icon = mission_recruit_streltsy
 		position = 2
@@ -6364,15 +6447,13 @@ command_2 = {
 		position = 7
 		
 		provinces_to_highlight = {
-			country_or_non_sovereign_subject_holds = ROOT
-			controlled_by = REB
+			OR = {
+				province_id = 4633
+			}
 		}
 		
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = command_sir_revolt_victory_tt
-				has_country_flag = command_sir_revolt_victory
-			}
+			owns = 4633
 		}
 		
 		effect = {
@@ -6476,10 +6557,6 @@ command_2 = {
 					tooltip = R62_lenient_teachings_req_tt
 					has_personal_deity = lenient_teachings
 				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = R62_an_exaltation_of_man_trigger_tt
-				has_country_flag = command_human_proves_honour_flag
 			}
 		}
 		
@@ -7079,7 +7156,7 @@ command_3 = {
 		effect = {
 			add_country_modifier = {
 				name = command_reacclimatising_to_the_surface
-				duration = 9125
+				duration = 3650
 			}
 		}
 	}
@@ -7120,7 +7197,6 @@ command_3 = {
 		}
 		
 		trigger = {
-			NOT = { has_country_modifier = command_shifting_standards }
 			if = {
 				limit = { ai = no }
 				estate_influence = {
@@ -8633,6 +8709,81 @@ command_5 = {
 	has_country_shield = yes
 	potential = {
 		tag = R62
+	}
+	
+	R62_repopulate_holds = {
+		icon = mission_colonial
+		position = 1
+		
+		provinces_to_highlight = {
+			OR = {
+				area = gronstunad_area
+				area = dwarovrod_71_74_area
+				area = dwarovrod_75_78_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			gronstunad_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dwarovrod_71_74_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dwarovrod_75_78_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			4313 = { NOT = { unrest = 1 } }
+			4311 = { NOT = { unrest = 1 } }
+		}
+		
+		effect = {
+			4313 = {
+				change_religion = ROOT
+				change_culture = wolf_command
+			}
+			4311 = {
+				change_religion = ROOT
+				change_culture = lion_command
+			}
+			4360	= {
+				change_religion = ROOT
+				change_culture = boar_command
+			}
+			4301 = {
+				change_religion = ROOT
+				change_culture = boar_command
+			}
+			4312 = {
+				change_religion = ROOT
+				change_culture = lion_command
+			}
+			4310 = {
+				change_religion = ROOT
+				change_culture = lion_command
+			}
+			4309 = {
+				change_religion = ROOT
+				change_culture = lion_command
+			}
+			4314 = {
+				change_religion = ROOT
+				change_culture = boar_command
+			}
+			4315 = {
+				change_religion = ROOT
+				change_culture = boar_command
+			}
+			4316 = {
+				change_religion = ROOT
+				change_culture = boar_command
+			}
+			
+		}
 	}
 	
 	R62_korashi_imports = {

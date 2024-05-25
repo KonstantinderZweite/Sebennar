@@ -12,7 +12,11 @@ estate_mages = {
 		NOT = { has_reform = hobgoblin_stratocracy_reform }
 		NOT = { has_adventurer_reform = yes }
 		NOT = { has_country_flag = banned_magic }
-		is_monstrous_horde = no
+		OR = {
+			is_monstrous_horde = no
+			tag = A26
+			
+			}
 		NOT = { has_estate = estate_acolytes }
 		NOT = { AND = { religion = bulwari_sun_cult has_country_flag = nsc_human_country_magic_prohibition } }
 		NOT = { is_subject_of = R62 }

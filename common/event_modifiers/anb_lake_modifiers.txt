@@ -1238,7 +1238,7 @@ J53_cav_guns_3 = {
 	cavalry_fire = 2
 	cavalry_shock = -1
 	assault_fort_ability = 0.50
-	siege_ability = 0.20
+	siege_ability = 0.15
 }
 
 #Sunijalla
@@ -1700,7 +1700,7 @@ J33_ninth_amendment_mod = {
 J33_the_bfc_mod = {
 	backrow_artillery_damage = 0.10
 	artillery_level_modifier = 0.25
-	artillery_levels_available_vs_fort = 2
+	artillery_levels_available_vs_fort = 1
 	artillery_barrage_cost = -0.5
 }
 J33_blue_star_honor_mod = {

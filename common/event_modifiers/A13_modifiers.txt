@@ -1,8 +1,9 @@
 #Gawed
 
 A13_bulwark_fortifications = {
-	local_defensiveness = 0.2
-	local_garrison_size = 0.2
+	local_defensiveness = 0.33
+	local_garrison_size = 0.33
+	local_manpower_modifier = 0.33
 }
 
 A13_trade_gateway = {
@@ -62,6 +63,11 @@ A13_alenic_resolve = {
 A13_alenic_resistance = {
 	fire_damage_received = -0.05
 	manpower_recovery_speed = 0.1
+}
+
+A13_colonize_frontier = {
+	colonists = 1
+	global_colonial_growth = 40
 }
 
 #Adshaw

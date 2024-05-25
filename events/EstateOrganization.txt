@@ -295,7 +295,7 @@ country_event = {
 			has_estate = estate_artificers
 			AND = {
 				has_estate = estate_dragon_command
-				has_institution = manufactories
+				has_institution = global_trade
 			}
 		}
 	}
@@ -412,7 +412,7 @@ country_event = {
 		has_estate = estate_artificers
 		NOT = { has_estate_privilege = estate_artificers_organization_ravelian_control }
 		NOT = { has_country_flag = ravelian_artificers_asked }
-		NOT = { has_estate_privilege = estate_artificers_organization_vazhatun_enhanced_astronomy }	#Dûr-Vazhatun
+		NOT = { has_estate_privilege = estate_artificers_organization_vazhatun_enhanced_astronomy }	#Dï¿½r-Vazhatun
 	}
 	
 	after = {

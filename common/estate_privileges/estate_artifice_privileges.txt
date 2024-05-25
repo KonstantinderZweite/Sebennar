@@ -144,7 +144,7 @@ estate_artificers_organization_state = {
 		}
 		OR = {
 			NOT = { has_estate = estate_dragon_command }
-			has_institution = manufactories
+			has_institution = global_trade
 		}
 		NOT = {
 			AND = {
@@ -725,12 +725,12 @@ estate_artificers_organization_feiten_shuimu_cadre = {
 			}
 		}
 		modifier = {
-			siege_ability = 0.2
+			siege_ability = 0.15
 			ship_power_propagation = 0.2
-			movement_speed_in_fleet_modifier = 2
+			movement_speed_in_fleet_modifier = 1
 			allowed_rajput_fraction = 0.025
 			naval_maintenance_modifier = 0.5
-			fire_damage_received = 0.2 # Balloons/airships blowing/burning up result in lots of collateral damage
+			fire_damage_received = 0.10 # Balloons/airships blowing/burning up result in lots of collateral damage
 		}
 	}
 	# 0% to 50% over cap
@@ -752,10 +752,10 @@ estate_artificers_organization_feiten_shuimu_cadre = {
 		modifier = {
 			siege_ability = 0.15
 			ship_power_propagation = 0.15
-			movement_speed_in_fleet_modifier = 1.5
+			movement_speed_in_fleet_modifier = 1
 			allowed_rajput_fraction = 0.025
 			naval_maintenance_modifier = 0.5
-			fire_damage_received = 0.2
+			fire_damage_received = 0.1
 		}
 	}
 	# 50% to 100% over cap
@@ -780,7 +780,7 @@ estate_artificers_organization_feiten_shuimu_cadre = {
 			movement_speed_in_fleet_modifier = 1
 			allowed_rajput_fraction = 0.025
 			naval_maintenance_modifier = 0.5
-			fire_damage_received = 0.2
+			fire_damage_received = 0.1
 		}
 	}
 	# >100% over cap
@@ -799,7 +799,7 @@ estate_artificers_organization_feiten_shuimu_cadre = {
 			movement_speed_in_fleet_modifier = 0.5
 			allowed_rajput_fraction = 0.025
 			naval_maintenance_modifier = 0.5
-			fire_damage_received = 0.2
+			fire_damage_received = 0.1
 		}
 	}
 	ai_will_do = {
@@ -1356,7 +1356,7 @@ estate_artificers_precursor_weapons = { #Not sure how you want this implemented
 			}
 		}
 		modifier = {
-			allowed_rajput_fraction = 0.05
+			allowed_rajput_fraction = 0.025
 		}
 	}
 	conditional_modifier = {
@@ -1373,7 +1373,7 @@ estate_artificers_precursor_weapons = { #Not sure how you want this implemented
 			}
 		}
 		modifier = {
-			allowed_rajput_fraction = 0.1
+			allowed_rajput_fraction = 0.025
 		}
 	}
 	conditional_modifier = {
@@ -1390,7 +1390,7 @@ estate_artificers_precursor_weapons = { #Not sure how you want this implemented
 			}
 		}
 		modifier = {
-			allowed_rajput_fraction = 0.2
+			allowed_rajput_fraction = 0.025
 		}
 	}
 	conditional_modifier = {
@@ -1401,7 +1401,7 @@ estate_artificers_precursor_weapons = { #Not sure how you want this implemented
 			}
 		}
 		modifier = {
-			allowed_rajput_fraction = 0.35
+			allowed_rajput_fraction = 0.025
 		}
 	}
 	conditional_modifier = {
@@ -1413,7 +1413,7 @@ estate_artificers_precursor_weapons = { #Not sure how you want this implemented
 
 		}
 		modifier = {
-			allowed_rajput_fraction = 0.05
+			allowed_rajput_fraction = 0.025
 		}
 	}
 	ai_will_do = {
@@ -1619,6 +1619,7 @@ estate_artificers_trained_mage_hunters = {
 	loyalty = 0.1
 	influence = 0.1
 	is_valid = {
+		ai = yes 
 		NOT = {
 			OR = {
 				has_ruler_modifier = witch_king_modifier
@@ -5168,7 +5169,7 @@ artifice_invention_sunbeam_armaments = {
 	}
 	benefits = {
 		artificers_privilege_slots = 1
-		siege_ability = 0.2
+		siege_ability = 0.15
 	}
 	ai_will_do = {
 		factor = 50
@@ -11692,7 +11693,7 @@ artifice_invention_allclan_drill_shells = {
 		artificers_privilege_slots = 1
 		#foo
 		artillery_power = 0.1
-		artillery_levels_available_vs_fort = 2
+		artillery_levels_available_vs_fort = 1
 	}
 	ai_will_do = {
 		factor = 5

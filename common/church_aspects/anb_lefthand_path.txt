@@ -54,7 +54,7 @@ oni_demon_warriors = { #better version of above, unlocked in Azjakuma mt
 barter_with_dark_spirits = {	#Summoning spirits
 	cost = 100
 	modifier = {
-		siege_ability = 0.2
+		siege_ability = 0.15
 		land_morale = -0.1
 	}
 	ai_will_do = {

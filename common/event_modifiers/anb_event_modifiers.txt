@@ -2509,7 +2509,7 @@ enforced_old_elven_rights = {
 
 khom_civilwar_dwarven_arms = {
 	infantry_fire = 0.05
-	siege_ability = 0.20
+	siege_ability = 0.15
 }
 
 khom_civilwar_desert_raids = {

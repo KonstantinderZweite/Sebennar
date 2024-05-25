@@ -2,8 +2,9 @@ prepare_the_return_of_surakel = {
 	is_blessing = yes
 
 	modifier = {
-		garrison_size = 0.25
-		defensiveness = 0.25 
+		garrison_size = 0.10
+		defensiveness = 0.10
+		discipline = 0.025 
 	}
 	ai_will_do = {
 		factor = 1

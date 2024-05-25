@@ -1919,7 +1919,7 @@ seghdihr_force_generals = {
 	leader_cost = 0.1
 }
 seghdihr_force_sieges = {
-	artillery_levels_available_vs_fort = 2
+	artillery_levels_available_vs_fort = 1
 	artillery_cost = 0.1
 }
 seghdihr_vigilance_speed = {
@@ -3211,7 +3211,7 @@ roadwarrior_breaker_3 = {
 	siege_ability = 0.15
 }
 roadwarrior_breaker_4 = {
-	siege_ability = 0.20
+	siege_ability = 0.15
 }
 roadwarrior_breaker_5 = {
 	siege_ability = 0.25
@@ -7416,7 +7416,7 @@ spiderwretch_order_federation_exchange = {
 }
 
 spiderwretch_trading_spies = {
-	siege_ability = 0.2
+	siege_ability = 0.15
 	spy_offence = 0.25
 }
 

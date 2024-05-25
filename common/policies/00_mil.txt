@@ -234,7 +234,7 @@ modern_siege_weapons = {
 		full_idea_group = offensive_ideas
 	}
 	
-	siege_ability = 0.20
+	siege_ability = 0.15
 	leader_siege = 1
 
 	ai_will_do = {
@@ -1561,7 +1561,7 @@ special_forces_act = {
 		full_idea_group = quality_ideas 
 	}
 	
-	special_unit_forcelimit = 0.20
+	special_unit_forcelimit = 0.15
 	yearly_army_professionalism = 0.002
 
 	effect = {}

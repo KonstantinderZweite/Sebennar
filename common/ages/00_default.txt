@@ -274,7 +274,7 @@ age_of_discovery = {
 				culture = black_orc
 			}
 			modifier = {
-				siege_ability = 0.2
+				siege_ability = 0.15
 				available_province_loot = 0.25
 			}
 			ai_will_do = {
@@ -998,7 +998,7 @@ age_of_revolutions = {
 
 		ab_fortbreaker_inventions = {	#Napoleonic Warfare
 			modifier = {
-				artillery_levels_available_vs_fort = 3
+				artillery_levels_available_vs_fort = 2
 			}
 			ai_will_do = {
 				factor = 10

@@ -473,13 +473,13 @@ magic_estate_ward_3 = {
 }
 
 magic_estate_broad_ward_1 = {
-	local_defensiveness = 0.25
+	local_defensiveness = 0.15
 }
 magic_estate_broad_ward_2 = {
-	local_defensiveness = 0.5
+	local_defensiveness = 0.35
 }
 magic_estate_broad_ward_3 = {
-	local_defensiveness = 0.75
+	local_defensiveness = 0.50
 }
 
 magic_estate_scrying_military_intelligence_1 = {

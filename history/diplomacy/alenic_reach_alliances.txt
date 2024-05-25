@@ -26,13 +26,7 @@ alliance = {
 	start_date = 1380.1.1
 	end_date = 1581.1.1
 }
-alliance = {
-	first = Z28
-	second = Z25
-	trade_league = 1
-	start_date = 1380.1.1
-	end_date = 1581.1.1
-}
+
 alliance = {
 	first = Z28
 	second = Z30

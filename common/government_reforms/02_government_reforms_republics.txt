@@ -2203,7 +2203,7 @@ technocracy_republic_reform = {
 			culture_group = gnomish
 			culture_group = goblin
 			culture_group = kobold
-			has_institution = manufactories
+			has_institution = global_trade
 			current_age = age_of_revolutions
 			has_reform = technocracy_republic_reform
 		}
@@ -2215,7 +2215,7 @@ technocracy_republic_reform = {
 			culture_group = gnomish
 			culture_group = goblin
 			culture_group = kobold
-			has_institution = manufactories
+			has_institution = global_trade
 			current_age = age_of_revolutions
 		}
 	}
@@ -7230,7 +7230,7 @@ matriarchal_pirate_republic = {
 		capture_ship_chance = 0.33
 		state_governing_cost = 0.75
 		may_perform_slave_raid_on_same_religion = yes
-		allowed_marine_fraction = 0.5
+		allowed_marine_fraction = 0.25
 		no_stability_loss_on_monarch_death = yes
 	}
 	trigger = {

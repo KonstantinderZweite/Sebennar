@@ -1185,7 +1185,7 @@ merc_newshire_squashkin = {
 	}
 	cost_modifier = 0.5
 	modifier = {
-		siege_ability = 0.4
+		siege_ability = 0.35
 		reinforce_speed = 0.3
 		movement_speed = -0.2
 	}

@@ -299,7 +299,7 @@ country_event = {
 		if = { limit = { estate_influence = { estate = estate_mages influence = 66 } }
 			add_country_modifier = {
 				name = magic_estate_scrying_rivals_3
-				duration = 3650	#10 years
+				duration = 1825	#10 years
 			}
 			every_rival_country = {
 				remove_fow = 120
@@ -310,7 +310,7 @@ country_event = {
 		else_if = { limit = { estate_influence = { estate = estate_mages influence = 33 } }
 			add_country_modifier = {
 				name = magic_estate_scrying_rivals_2
-				duration = 3650	#5 years
+				duration = 1825	#5 years
 			}
 			every_rival_country = {
 				remove_fow = 120
@@ -321,7 +321,7 @@ country_event = {
 		else = {
 			add_country_modifier = {
 				name = magic_estate_scrying_rivals_1
-				duration = 3650
+				duration = 1825
 			}
 			every_rival_country = {
 				remove_fow = 120
@@ -349,7 +349,7 @@ country_event = {
 			if = { limit = { estate_influence = { estate = estate_mages influence = 66 } }
 				add_country_modifier = {
 					name = magic_estate_scrying_rivals_3
-					duration = 3650	#10 years
+					duration = 1825	#10 years
 				}
 				every_rival_country = {
 					remove_fow = 120
@@ -360,7 +360,7 @@ country_event = {
 			else_if = { limit = { estate_influence = { estate = estate_mages influence = 33 } }
 				add_country_modifier = {
 					name = magic_estate_scrying_rivals_2
-					duration = 3650	#5 years
+					duration = 1825	#5 years
 				}
 				every_rival_country = {
 					remove_fow = 120
@@ -371,7 +371,7 @@ country_event = {
 			else = {
 				add_country_modifier = {
 					name = magic_estate_scrying_rivals_1
-					duration = 3650
+					duration = 1825
 				}
 				every_rival_country = {
 					remove_fow = 120
@@ -408,7 +408,7 @@ country_event = {
 		if = { limit = { estate_influence = { estate = estate_mages influence = 66 } }
 			add_country_modifier = {
 				name = magic_estate_scrying_neighbours_3
-				duration = 3650	#10 years
+				duration = 1825	#10 years
 			}
 			if = { limit = { neighbor_is_ahead_in_institution = yes }
 				capital_scope = {
@@ -425,7 +425,7 @@ country_event = {
 		else_if = { limit = { estate_influence = { estate = estate_mages influence = 33 } }
 			add_country_modifier = {
 				name = magic_estate_scrying_neighbours_2
-				duration = 3650	#5 years
+				duration = 1825	#5 years
 			}
 			if = { limit = { neighbor_is_ahead_in_institution = yes }
 				capital_scope = {
@@ -442,7 +442,7 @@ country_event = {
 		else = {
 			add_country_modifier = {
 				name = magic_estate_scrying_neighbours_1
-				duration = 3650
+				duration = 1825
 			}
 			if = { limit = { neighbor_is_ahead_in_institution = yes }
 				capital_scope = {
@@ -517,7 +517,7 @@ country_event = {
 		if = { limit = { estate_influence = { estate = estate_mages influence = 66 } }
 			add_country_modifier = {
 				name = magic_estate_scrying_military_intelligence_3
-				duration = 3650	#10 years
+				duration = 1825	#10 years
 			}
 			every_country = {
 				limit = { war_with = ROOT }
@@ -566,7 +566,7 @@ country_event = {
 			if = { limit = { estate_influence = { estate = estate_mages influence = 66 } }
 				add_country_modifier = {
 					name = magic_estate_scrying_military_intelligence_3
-					duration = 3650	#10 years
+					duration = 1825	#10 years
 				}
 				every_country = {
 					limit = { war_with = ROOT }

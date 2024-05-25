@@ -1098,6 +1098,7 @@ A33_ideas = {	#A lot of verne ideas have to do with great men (they certainly fo
 	start = {
 		leader_land_shock = 2
 		may_recruit_female_generals = yes
+		
 	}
 
 	bonus = {
@@ -1127,10 +1128,12 @@ A33_ideas = {	#A lot of verne ideas have to do with great men (they certainly fo
 		production_efficiency = 0.1
 	}
 	A33_frontier_act_of_1600 = {
-		global_colonial_growth = 25
+		global_colonial_growth = 15
+		colonists = 1
 	}
 	A33_great_men_great_mustachios_theory = {
 		free_leader_pool = 2
+		may_explore = yes
 	}
 	A33_bold_men_of_verne = {	#its a song/shanty thing
 		land_morale = 0.1
@@ -3604,6 +3607,45 @@ Z37_ideas = {
 	}
 	Z37_shieldcloak_infantry = {
 		fire_damage_received = -0.15
+	}
+}
+#Frozenmaw
+Z18_ideas = {
+	start = {
+		reduced_liberty_desire = 10
+		infantry_power = 0.1
+	}
+	bonus = {
+		years_of_nationalism = -5
+	}
+
+	trigger = {
+		tag = Z18
+	}
+	free = yes
+
+	Z18_hungry_maws = {
+		galley_power = 0.15
+		
+	}
+	Z18_foundation_of_ironwall = {
+		drill_gain_modifier = 0.25
+		discipline = 0.025
+	}
+	Z18_moskaran = { 
+		culture_conversion_cost = -0.2
+	}
+	gray_orc_kordoukang = {
+		leader_cost = -0.1
+	}
+	gray_orc_inscribing_mistakes = {
+		shock_damage_received = -0.1
+	}
+	gray_orc_learning_the_hard_way = {
+		production_efficiency = 0.1
+	}
+	gray_orc_lessons_of_borudan = {
+		build_cost = -0.1
 	}
 }
 
@@ -6482,6 +6524,7 @@ I12_ideas = {
 	}
 	I12_seekers_of_knowledge = {
 		idea_cost = -0.1
+		artillery_shock = 0.5
 	}
 	I12_lessons_of_decadence = {
 		reform_progress_growth = 0.15
@@ -6491,9 +6534,11 @@ I12_ideas = {
 	}
 	I12_reflecting_daylight = {
 		global_unrest = -2
+		development_cost = - 0.05
 	}
 	I12_glass_and_trumpets = {
 		land_morale = 0.1
+		morale_damage = 0.075
 	}
 	I12_guntirhug = {
 		technology_cost = -0.05
@@ -6551,7 +6596,7 @@ I13_ideas = {
 	}
 
 	bonus = {
-		siege_ability = 0.20
+		siege_ability = 0.15
 	}
 
 	trigger = {

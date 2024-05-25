@@ -174,9 +174,33 @@
  Z08_proto_industry:0 "Proto-Industrialization"
  Z08_faith_secured:0 "Faith Secured"
  Z08_eagle_slayers:0 "Eagle Slayers"
+ 
+ #The Command
+ R62_repopulate_holds_title:0 "Repopulate The Jade Mines"
+ R62_repopulate_holds_desc:0 "The Dwarves of Verkal Dromak are resurgent pushing us out of our traditional homeland. This process must be reversed."
+ R62_consolidate_gains_title:0 "Consolidate Gains"
+ R62_consolidate_gains_desc:0 "Our victories againist the Northern Kingdoms of Shamakhad were staggering at first, but continued human resistance has erroded most of our gains. We must secure our foothold and prepare for the next strike."
+ R62_goblin_subjects_title:0 "Goblin Subjects"
+ R62_goblin_subjects_desc:0 "With Verkal Dromak resurgent our slave goblins finally got the chance they had been waiting for to break free from our grasp. While temporarily weakened, we shall show them that their exit was premature."
+ korashi_supply_title:0 "Korashi Supply"
+ korashi_supply_desc:0 "Will prevent the mage disaster if Haless is deleted."
+ spawn_thunderfist_title:0 "Spawn Thunderfist"
+ spawn_thunderfist_desc:0 "Will recreate Thunderfist as a slave state."
+ spawn_bloodsong_title:0 "Spawn Bloodsong"
+ spawn_bloodsong_desc:0 "Will recreate Bloodsong as a slave state."
+ enslave_stolengem_title:0 "Enslave Stolen Gem"
+ enslave_stolengem_desc:0 "Will turn Stolen Gem into a slave state."
+ enslave_blackstep_title:0 "Enslave Blackstep"
+ enslave_blackstep_desc:0 "Will turn Blackstep into a slave state."
 
  splendor_into_power_title:0 "Invest Splendor"	
  splendor_into_power_desc:0 "Invest splendor to develop our nation"
+ 
+ flavor_the_command.4000.t:0 "North or South"
+ flavor_the_command.4000.d:0 "Our traditional homeland has been overrun, meanwhile our new conquests have been pushed back with our old capital in orc hands. Both tragedies must be rectified, the question is which?"
+ flavor_the_command.4000.a:0 "South into Sir"
+ flavor_the_command.4000.b:0 "North into Verkal Dromak"
+
 
  #idea changes 
  strictier_enforcement:0 "Stricter Enforcement"
