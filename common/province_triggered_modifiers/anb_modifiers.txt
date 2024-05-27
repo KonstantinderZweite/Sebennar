@@ -5988,7 +5988,7 @@ dragonnel_hunt_randomizer = {
 		V11 = {
 			#earth
 			if = {
-				limit = { has_country_flag = Earth_battle }
+				limit = { has_country_flag = earth_battle }
 				country_event = { id = flavor_emberscar.4 }
 			}
 			#death

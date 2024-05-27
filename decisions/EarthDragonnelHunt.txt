@@ -13,6 +13,7 @@ country_decisions = {
 		}
 		effect = {
 		set_country_flag = earth_battle
+		set_country_flag = v11_hunt
 			capital_scope = {
 				add_province_triggered_modifier = dragonnel_hunt_randomizer
 			}
