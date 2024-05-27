@@ -8,7 +8,7 @@ color = { 170 180 145 }
 
 historical_idea_groups = {
 	quantity_ideas
-	expansion_ideas
+	
 	offensive_ideas
 	innovativeness_ideas
 	quality_ideas	
@@ -100,7 +100,7 @@ leader_names = {
 	Kokang
 	Kyon
 	Kyaukku
-	Lègya
+	Lï¿½gya
 	Yatsauk
 	Lwee
 	Lwelong
@@ -114,9 +114,9 @@ leader_names = {
 	Bawnin
 	Bawzaing
 	Mogaung
-	Mönglong
+	Mï¿½nglong
 	Momeik
-	Monè
+	Monï¿½
 	Mongnawng
 	Mobye
 	"Mong Pan"
@@ -124,7 +124,7 @@ leader_names = {
 	Maingseik
 	Maington
 	Mohnyin
-	Möngyawng
+	Mï¿½ngyawng
 	Nanke
 	Nankok
 	Nankon

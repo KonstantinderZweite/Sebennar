@@ -10,7 +10,7 @@ revolutionary_colors = { 172 234 14 }
 historical_idea_groups = {
 	aristocracy_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quantity_ideas	
 	administrative_ideas	
 	trade_ideas
@@ -45,9 +45,9 @@ leader_names = {
 ship_names = {
 	Dazar Zoi Talzar Tzai Nare Tzidoil Tozgon Khohol Zakheel Bokh Barikh Erek Dzor Dozen Zer Tolgod Tengen Golkhin Tseig
 	Serei Sarts Neisar Tolg Usrek Akal Nuuk Dazkhui Dazjil Galsui Toltar Tsor Orkhon Kamdhil Enkhiin Kavkhil Orghon Tarzoi Dolin Tzhum
-	Akuuunar Unarsrek Shum Akanhuluu Ruk Lutar Zur Bazur Zurka Nzuura Kozuuri Khill Tükhei Dalkhi Gak Agaak Naar Abosrek Onakh Oncha
-	Itgavar Arkh Kesh Yaru Sirem Aluun Chor Sagat Angüi Evdel Ult Alkho Qharuul Hüükud Noosh Mudh Eniikh Estav Kuldaakin Izen Qazmoq Khinrch
-	Cergu Qarsht Rüton Olg Kov Oghen Ianakal Khuga Tareg Dazjal Araga Saklyn
+	Akuuunar Unarsrek Shum Akanhuluu Ruk Lutar Zur Bazur Zurka Nzuura Kozuuri Khill Tï¿½khei Dalkhi Gak Agaak Naar Abosrek Onakh Oncha
+	Itgavar Arkh Kesh Yaru Sirem Aluun Chor Sagat Angï¿½i Evdel Ult Alkho Qharuul Hï¿½ï¿½kud Noosh Mudh Eniikh Estav Kuldaakin Izen Qazmoq Khinrch
+	Cergu Qarsht Rï¿½ton Olg Kov Oghen Ianakal Khuga Tareg Dazjal Araga Saklyn
 }
 
 army_names = {
@@ -65,7 +65,7 @@ monarch_names = {
 	"Jasrur #1" = 1
 	"Anbaatar #1" = 1
 	"Otgayar #1" = 1
-	"Bhíl #1" = 1
+	"Bhï¿½l #1" = 1
 	"Ampo #1" = 1
 	"Mieloi #1" = 1
 	"Hurmas #1" = 1
@@ -77,13 +77,13 @@ monarch_names = {
 	"Uruvyeri #1" = 1
 	"Vihta #1" = 1
 	"Esa #1" = 1
-	"Äijö #1" = 1
+	"ï¿½ijï¿½ #1" = 1
 	"Alsen #1" = 1
 	
 	"Eliin #1" = -1
 	"Sevara #1" = -1
 	"Hahra #1" = -1
-	"Mílen #1" = -1
+	"Mï¿½len #1" = -1
 	"Enjaral #1" = -1
 	"Tuula #1" = -1
 	"Aino #1" = -1

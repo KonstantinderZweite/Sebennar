@@ -2667,7 +2667,7 @@ dragon_cult = {
 			fire_damage = 0.1
 			fire_damage_received = -0.05
 		}
-
+		fervor = yes
 		on_convert = {
 			change_religion = drozma_tur
 			add_prestige = -100

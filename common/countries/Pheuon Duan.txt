@@ -7,8 +7,8 @@ color = { 85 240 205 }
 revolutionary_colors = { 1  0  1 }
 
 historical_idea_groups = {
-	expansion_ideas
-	exploration_ideas
+	
+	
 	quantity_ideas
 	diplomatic_ideas	
 	offensive_ideas
@@ -101,7 +101,7 @@ leader_names = {
 	Kokang
 	Kyon
 	Kyaukku
-	Lègya
+	Lï¿½gya
 	Yatsauk
 	Lwee
 	Lwelong
@@ -115,9 +115,9 @@ leader_names = {
 	Bawnin
 	Bawzaing
 	Mogaung
-	Mönglong
+	Mï¿½nglong
 	Momeik
-	Monè
+	Monï¿½
 	Mongnawng
 	Mobye
 	"Mong Pan"
@@ -125,7 +125,7 @@ leader_names = {
 	Maingseik
 	Maington
 	Mohnyin
-	Möngyawng
+	Mï¿½ngyawng
 	Nanke
 	Nankok
 	Nankon

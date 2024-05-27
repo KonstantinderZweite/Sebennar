@@ -10,7 +10,7 @@ revolutionary_colors = { 70 41 12 }
 historical_idea_groups = {
 	aristocracy_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quantity_ideas	
 	administrative_ideas	
 	trade_ideas
@@ -50,7 +50,7 @@ ship_names = {
 
 army_names = {
 	"Orachav Riders" "Plainswalkers" "Khodhez Clan" "Taqoshur's Radiance" "Uugariin Clan" "Kallio Clan"
-	"Yerush's Lance" "Nykína Clan" "Asimlik's Guard" "Arjen Clan" "Tayoghur's Shield" "O'ldoshqev Clan"
+	"Yerush's Lance" "Nykï¿½na Clan" "Asimlik's Guard" "Arjen Clan" "Tayoghur's Shield" "O'ldoshqev Clan"
 }
 
 fleet_names = {
@@ -64,7 +64,7 @@ monarch_names = {
 	"Jasrur #1" = 1
 	"Anbaatar #1" = 1
 	"Otgayar #1" = 1
-	"Bhíl #1" = 1
+	"Bhï¿½l #1" = 1
 	"Ampo #1" = 1
 	"Mieloi #1" = 1
 	"Hurmas #1" = 1
@@ -76,13 +76,13 @@ monarch_names = {
 	"Uruvyeri #1" = 1
 	"Vihta #1" = 1
 	"Esa #1" = 1
-	"Äijö #1" = 1
+	"ï¿½ijï¿½ #1" = 1
 	"Alsen #1" = 1
 	
 	"Eliin #1" = -1
 	"Sevara #1" = -1
 	"Hahra #1" = -1
-	"Mílen #1" = -1
+	"Mï¿½len #1" = -1
 	"Enjaral #1" = -1
 	"Tuula #1" = -1
 	"Aino #1" = -1

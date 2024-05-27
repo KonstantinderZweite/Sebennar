@@ -9,7 +9,7 @@ color = { 102 45 145 }
 historical_idea_groups = {
 	economic_ideas
 	offensive_ideas
-	exploration_ideas
+	
 	defensive_ideas	
 	administrative_ideas	
 	maritime_ideas
@@ -180,9 +180,9 @@ ship_names = {
 }
 
 army_names = {
-	"Ghúla Army" "Army of $PROVINCE$"
+	"Ghï¿½la Army" "Army of $PROVINCE$"
 }
 
 fleet_names = {
-	"Ghúla Navy" "Tree Squadron" "Bark Squadron" "Bush Squadron" "Grass Squadron"
+	"Ghï¿½la Navy" "Tree Squadron" "Bark Squadron" "Bush Squadron" "Grass Squadron"
 }

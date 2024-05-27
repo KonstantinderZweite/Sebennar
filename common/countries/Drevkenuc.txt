@@ -15,7 +15,7 @@ historical_idea_groups = {
 	diplomatic_ideas #contacts abroad and poetry
 	aristocracy_ideas #nobility
 	offensive_ideas #adventuring spirit from potraga
-	exploration_ideas #same as above
+	 #same as above
 }
 
 historical_units = {

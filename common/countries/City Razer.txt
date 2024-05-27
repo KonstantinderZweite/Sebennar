@@ -10,7 +10,7 @@ revolutionary_colors = { 147 165 172 }
 historical_idea_groups = {
 	aristocracy_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quantity_ideas	
 	administrative_ideas	
 	trade_ideas

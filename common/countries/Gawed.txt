@@ -8,11 +8,11 @@ color = { 48  51  108 }
 revolutionary_colors = { 13  8  13 }
 
 historical_idea_groups = {
-	exploration_ideas
+	
 	maritime_ideas
 	economic_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quality_ideas	
 	administrative_ideas	
 	influence_ideas
@@ -150,7 +150,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassína" = -10
+	"Cassï¿½na" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10
@@ -194,7 +194,7 @@ leader_names = {
 	Norleigh "of Morban" Jonsway Mossford Oudesker Wolfden Aldtempel Gardfort Drakesford Somberwold Westfield Baldfather Alenfield "of the Greatmarch"
 	
 	"of Northburn" "of Elderhollow" "of Bluesfield" Redgrave Morton Winters Brooks Robinson Alenson Woods Oldfort Newfort Eaglefort Horsefort Gilmore Swyft Mottram Rackham Thaxton Barton Bateman
-	Curran Doe Elk Avery "of Ashby" "of Vineroot Hollow" Smith Hammerford Croxford Shoebridge Slowbridge Guardbridge Butler Broadhurst Mason "síl Wex" "of Vinerick" Moss Moore Reed Wicknman Potts Toadswell Wood Townsend
+	Curran Doe Elk Avery "of Ashby" "of Vineroot Hollow" Smith Hammerford Croxford Shoebridge Slowbridge Guardbridge Butler Broadhurst Mason "sï¿½l Wex" "of Vinerick" Moss Moore Reed Wicknman Potts Toadswell Wood Townsend
 }
 
 ship_names = {
