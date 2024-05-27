@@ -9,9 +9,15 @@ dragonnel_death_hunt = {
 			factor = 0
 		}
 		allow = {
+		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
 		country_event = { id = flavor_emberscar.5 }
+			set_country_flag = death_battle
+			set_country_flag = v11_hunt
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}
 		}
 	}
 
@@ -25,9 +31,14 @@ dragonnel_fire_hunt = {
 			factor = 0
 		}
 		allow = {
+		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
-		country_event = { id = flavor_emberscar.6 }
+		set_country_flag = fire_battle
+		set_country_flag = v11_hunt
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}
 		}
 	}
 dragonnel_pyschodelic_hunt = {
@@ -40,9 +51,14 @@ dragonnel_pyschodelic_hunt = {
 			factor = 0
 		}
 		allow = {
+		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
-		country_event = { id = flavor_emberscar.8 }
+		set_country_flag = psychodelic_battle
+			set_country_flag = v11_hunt
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}
 		}
 	}
 dragonnel_water_hunt = {
@@ -55,9 +71,14 @@ dragonnel_water_hunt = {
 			factor = 0
 		}
 		allow = {
+		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
-		country_event = { id = flavor_emberscar.7 }
+		set_country_flag = water_battle
+			set_country_flag = v11_hunt
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}
 		}
 	}
 dragonnel_earth_hunt = {
@@ -70,10 +91,14 @@ dragonnel_earth_hunt = {
 			factor = 0
 		}
 		allow = {
+		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
-		country_event = { id = flavor_emberscar.4 }
-		
+		set_country_flag = earth_battle
+		set_country_flag = v11_hunt
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}		
 		}
 	}
 
