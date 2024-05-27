@@ -49,14 +49,6 @@ saloren_prep = {
 		}
 		
 		trigger = {
-			calc_true_if = {
-				A01 = {
-					all_subject_country = {
-						has_opinion = { who = A87 value = 125 }
-					}
-				}
-				amount = 2
-			}
 			A01 = {
 				OR = {
 					has_opinion_modifier = {
@@ -86,7 +78,7 @@ saloren_prep = {
 					culture = roilsardi
 					religion = regent_court
 				}
-				add_liberty_desire = 50
+				
 			}
 		}
 	}
@@ -277,19 +269,12 @@ saloren_centre = {
 		}
 		
 		effect = {
-			custom_tooltip = saloren_roilsardi_tt
+			
 			40 = {
 				add_permanent_claim = A87
 			}
 			59 = {
 				add_permanent_claim = A87
-			}
-			ROOT = {
-				country_event = { 
-					id = flavor_saloren.1
-					days = 30
-					random = 15
-				}
 			}
 		}
 	}
