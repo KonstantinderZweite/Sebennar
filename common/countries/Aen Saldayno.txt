@@ -10,7 +10,7 @@ color = { 122 82 114 }
 historical_idea_groups = {
 	economic_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	indigenous_ideas	
 	administrative_ideas	
 	trade_ideas

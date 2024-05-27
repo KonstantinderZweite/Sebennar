@@ -334,6 +334,7 @@ hubao_the_tiger_fortress = {
 						culture_group = yan
 						culture = east_harimari
 						culture = horned_ogre
+						culture = serene_harimari
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -349,6 +350,7 @@ hubao_the_tiger_fortress = {
 						culture_group = yan
 						culture = east_harimari
 						culture = horned_ogre
+						culture = serene_harimari
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}

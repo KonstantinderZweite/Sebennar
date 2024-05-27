@@ -4,6 +4,7 @@ country_decisions = {
 		color = { 33 64 96 }
 		major = yes
 		potential = {
+			ai = no
 			capital_scope = { continent = serpentspine }
 			OR = {
 				REB = { check_variable = { nbExpedition = 1 } }

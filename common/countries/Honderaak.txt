@@ -11,7 +11,7 @@ historical_idea_groups = {
 	economic_ideas
 	diplomatic_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quality_ideas	
 	administrative_ideas	
 	influence_ideas

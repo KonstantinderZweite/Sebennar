@@ -10,7 +10,7 @@ color = { 226  200  107 }
 historical_idea_groups = {
 	economic_ideas
 	offensive_ideas
-	exploration_ideas
+	
 	defensive_ideas	
 	administrative_ideas	
 	maritime_ideas
@@ -156,7 +156,7 @@ ship_names = {
 	Chairacha Yotfa Worawongsa Chakkraphat Mahin
 	Sanpet Naresuan Ekathotsarot "Si Saowaphak"
 	Songtham Chehha "Somdet Phra" "Prasat Thong" Chai
-	Suthammaracha Narai Petratcha Süa Phumintharacha
+	Suthammaracha Narai Petratcha Sï¿½a Phumintharacha
 	Uthumpon Ekkathat
 	
 }
