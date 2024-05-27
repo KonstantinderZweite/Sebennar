@@ -6,7 +6,7 @@ dwarven_traditions_modifier = {
 }
 
 new_faith_modifier = {
-	global_missionary_strength = 0.02
+	global_missionary_strength = 0.03
 	global_unrest = 2
 }
 
@@ -59,6 +59,7 @@ hafling_relocation = {
 	trade_goods_size = 0.5
 	local_development_cost = -0.1
 	province_trade_power_modifier = 0.25
+	local_unrest = 10
 }
 
 human_relocation = {
@@ -70,6 +71,7 @@ lorentish_plantations = {
 	trade_goods_size = 0.5
 	local_development_cost = -0.1
 	local_manpower_modifier = 0.25
+	local_unrest = 10
 }
 
 scout_maps = { 
@@ -93,7 +95,7 @@ great_dwarvish_tradeport = {
 
 dwarvish_coastal_city = {
 	local_development_cost = -0.25
-	trade_goods_size = 0.5
+	trade_goods_size = 2.0
 	naval_forcelimit_modifier = 0.10
 	global_own_trade_power = 0.05
 }
@@ -116,7 +118,7 @@ gnomish_scholars = {
 }
 
 dwarven_politik = {
-	governing_capacity_modifier = 0.1
+	diplomatic_reputation = 2
 	administrative_efficiency = 0.05
 }
 

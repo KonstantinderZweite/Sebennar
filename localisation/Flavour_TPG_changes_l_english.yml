@@ -195,6 +195,12 @@
 
  splendor_into_power_title:0 "Invest Splendor"	
  splendor_into_power_desc:0 "Invest splendor to develop our nation"
+ 
+ flavor_the_command.4000.t:0 "North or South"
+ flavor_the_command.4000.d:0 "Our traditional homeland has been overrun, meanwhile our new conquests have been pushed back with our old capital in orc hands. Both tragedies must be rectified, the question is which?"
+ flavor_the_command.4000.a:0 "South into Sir"
+ flavor_the_command.4000.b:0 "North into Verkal Dromak"
+
 
  #idea changes 
  strictier_enforcement:0 "Stricter Enforcement"

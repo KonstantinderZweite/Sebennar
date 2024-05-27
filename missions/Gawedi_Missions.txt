@@ -35,7 +35,7 @@ gawed_column_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			dames_forehead_area = {
+			uelaire_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -60,7 +60,7 @@ gawed_column_1 = {
 		provinces_to_highlight = {
 			OR = {
 				area = lorentish_approach_area
-				area = dames_forehead_area
+				area = uelaire_area
 				area = norley_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -71,7 +71,7 @@ gawed_column_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			dames_forehead_area = {
+			uelaire_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -535,7 +535,7 @@ gawed_column_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			dames_forehead_area = {
+			uelaire_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -1623,18 +1623,19 @@ gawed_column_5 = {
 				AND = {
 					OR = {
 						province_id = 228
-						province_id = 242
+						province_id = 240
 						province_id = 217
 					}
 					OR = {
 						NOT = { owned_by = ROOT }
-						NOT = { base_manpower = 3 }
+						NOT = { base_manpower = 5 }
 					}
 				}
 				AND = {
 					OR = {
 						province_id = 228
 						province_id = 217
+						province_id = 240
 					}
 					NOT = { has_fort_building_trigger = yes }
 				}
@@ -1645,16 +1646,16 @@ gawed_column_5 = {
 			228 = {
 				owned_by = ROOT
 				has_fort_building_trigger = yes
-				base_manpower = 3
+				base_manpower = 5
 			}
-			242 = {
+			240 = {
 				owned_by = ROOT
-				base_manpower = 3
+				base_manpower = 5
 			}
 			217 = {
 				owned_by = ROOT
 				has_fort_building_trigger = yes
-				base_manpower = 3
+				base_manpower = 5
 			}
 		}
 		
@@ -1665,7 +1666,7 @@ gawed_column_5 = {
 					duration = -1
 				}
 			}
-			242 = {
+			240 = {
 				add_permanent_province_modifier = {
 					name = A13_bulwark_fortifications
 					duration = -1
@@ -1943,18 +1944,20 @@ gawed_column_5 = {
 		}
 		
 		effect = {
-			gerudian_coast_region = {
+			gerudian_frontier_region = {
 				limit = {
 					NOT = {
 						owned_by = ROOT
-						is_core = ROOT
-					}
 				}
 				add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = A13_colonize_frontier
+				duration = 18250
 			}
 		}
 	}
-	
 	A13_alenic_triumph = {
 		icon = mission_rb_conquer_the_highlands
 		required_missions = { A13_consolidate_eastern_reach
@@ -1962,17 +1965,7 @@ gawed_column_5 = {
 		position = 6
 		
 		provinces_to_highlight = {
-			OR = {
 				superregion = gerudia_superregion
-					NOT = {
-						ROOT = {
-							num_of_owned_provinces_with = {
-								value = 70
-								superregion = gerudia_superregion
-							}
-						}
-					}
-				}
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		

@@ -297,7 +297,6 @@ kheterata_western_expansion = {
 			491 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			NOT = { exists = U02 }
 		}
 		
 		effect = {
@@ -1040,7 +1039,6 @@ kheterata_aelantir_missions = {
 		required_missions = { }
 		
 		trigger = {
-			NOT = { exists = U02 }
 			stability = 2
 			total_development = 300
 			advisor = inquisitor
