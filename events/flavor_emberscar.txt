@@ -370,6 +370,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
+		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.13.b"
 		add_treasury = 150
 		set_country_flag = Earth_win
@@ -388,6 +389,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
+		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.14.b"
 		add_treasury = 200
 		set_country_flag = Death_win
@@ -406,6 +408,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
+		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.15.b"
 		add_treasury = 200
 		set_country_flag = Fire_win
@@ -424,6 +427,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
+		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.16.b"
 		add_treasury = 200
 		set_country_flag = Water_win
@@ -442,6 +446,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
+		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.17.b"
 		add_treasury = 100
 		set_country_flag = Pyschodelic_win
@@ -462,6 +467,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
+		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.18.b"
 		clr_country_flag = Earth_battle
 	}
@@ -478,6 +484,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
+		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.19.b"
 		clr_country_flag = death_battle
 	}
@@ -494,6 +501,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
+		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.20.b"
 		clr_country_flag = fire_battle
 	}
@@ -510,6 +518,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
+		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.21.b"
 		clr_country_flag = water_battle
 	}
@@ -526,6 +535,7 @@ country_event = {
 	}
 	is_triggered_only = yes
 	option = {
+		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.22.b"
 		clr_country_flag = Pyschodelic_battle
 	}

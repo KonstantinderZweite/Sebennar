@@ -9,10 +9,13 @@ country_decisions = {
 			factor = 0
 		}
 		allow = {
-			}
+			not = { has_country_flag = v11_hunt }
+		}
 		effect = {
-		country_event = { id = flavor_emberscar.4 }
-		
+		set_country_flag = earth_battle
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}
 		}
 	}
 }

@@ -6011,6 +6011,11 @@ dragonnel_hunt_randomizer = {
 				limit = { has_country_flag = psychodelic_battle }
 				country_event = { id = flavor_emberscar.8 }
 			}
+			clr_country_flag = Earth_battle
+			clr_country_flag = death_battle
+			clr_country_flag = fire_battle
+			clr_country_flag = water_battle
+			clr_ountry_flag = psychodelic_battle
 		}
 		remove_province_triggered_modifier = dragonnel_hunt_randomizer
 	}
