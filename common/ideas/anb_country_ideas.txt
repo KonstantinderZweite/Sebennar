@@ -1818,7 +1818,7 @@ A79_ideas = {
 	free = yes
 
 	A79_reconstitute_reconstruct_repatriate = {
-		development_cost = -0.15
+		development_cost = -0.10
 	}
 	A79_all_small_artillerists = {
 		fire_damage_received = -0.1
@@ -1840,7 +1840,7 @@ A79_ideas = {
 		trade_efficiency = 0.15
 	}
 	A79_age_of_the_hierarch = {
-		ship_durability = 0.1
+		ship_durability = 0.05
 		heavy_ship_power = 0.1
 	}
 }
@@ -6534,7 +6534,7 @@ I12_ideas = {
 	}
 	I12_reflecting_daylight = {
 		global_unrest = -2
-		development_cost = - 0.05
+		development_cost = -0.05
 	}
 	I12_glass_and_trumpets = {
 		land_morale = 0.1

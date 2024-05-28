@@ -1624,11 +1624,11 @@ hobgoblin_ideas = {
 		global_spy_defence = 0.25
 	}
 	hobgoblin_expanded_ninyu_kikun = {
-		land_forcelimit_modifier = 0.25
+		land_forcelimit_modifier = 0.20
 	}
 	hobgoblin_military_education = {
 		free_leader_pool = 1
-		general_cost = -0.2
+		general_cost = -0.10
 	}
 	hobgoblin_direct_control = {
 		governing_capacity_modifier = 0.20

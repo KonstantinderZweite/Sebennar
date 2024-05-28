@@ -2336,6 +2336,7 @@ khaashalg_region = {
 		west_plateau_area #Bazuniezar
 		north_wall_area #Northern Peaks
 		south_wall_area #Southern Shield
+		nomsyulhan_portal_area
 	}
 }
 
@@ -2363,7 +2364,7 @@ nomsyulhan_region = {
 		valley_west_lower_area #Sanctuary
 		valley_west_mid_area #Iona Saothar
 		valley_west_upper_area #Overgrowth
-		nomsyulhan_portal_area #Nomsyulhan
+		 #Nomsyulhan
 	}
 }
 
