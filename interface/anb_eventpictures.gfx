@@ -185,6 +185,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/DARK_EXPEDITION_eventPicture.dds"
 	}
 	spriteType = {
+		name = "sleep_green_dragon"
+		texturefile = "gfx/event_pictures/sleep_green_dragon.dds"
+	}
+	spriteType = {
 		name = "ANB_GLOBAL_TRADE_eventPicture"
 		texturefile = "gfx/event_pictures/ANB_GLOBAL_TRADE_eventPicture.dds"
 	}

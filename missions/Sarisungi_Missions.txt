@@ -505,7 +505,7 @@ sarisung_missions = {
 			}
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
-				in_golden_age = yes
+				
 				custom_trigger_tooltip = {
 					tooltip = SARISUNG_PROSPERITY
 					sarisung_area = {

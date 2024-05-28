@@ -8,11 +8,11 @@ color = { 137  159  250 }
  
 
 historical_idea_groups = {
-	exploration_ideas
+	
 	maritime_ideas
 	economic_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quality_ideas	
 	administrative_ideas	
 	influence_ideas
@@ -131,7 +131,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassína" = -10
+	"Cassï¿½na" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10
@@ -177,7 +177,7 @@ leader_names = {
 	"of the Approach" "of Geycombe" "of Long Crags" "of Elkwood" "of Twofork" "of Lonevalley" "of Fluddhill" "of Gaweton" "of Viswall" "of Norley" "of Old Course" "of Newacre" "of Manyburrows" 
 	
 	#Country Neighbours
-	"of Gawed" "of Vertesk" "of Beepeck" "of Elkmarch" "of Anbenncóst" "of Damescrown" "of Uelaire" "of Reveria" "of Pearview"
+	"of Gawed" "of Vertesk" "of Beepeck" "of Elkmarch" "of Anbenncï¿½st" "of Damescrown" "of Uelaire" "of Reveria" "of Pearview"
 	
 	#Geographic Neighbours
 	"of the Small Country" "of the Damescrown" "of the Dameshead" "of Gawed" "of the Approach" "of Lencenor"
@@ -212,7 +212,7 @@ ship_names = {
 	Strength Dexterity Constitution Intelligence Wisdom Charisma
 	
 	#Elven
-	Lunetéin Agraseina 
+	Lunetï¿½in Agraseina 
 	
 	#Regent Court Deities
 	Castellos Dame "The Dame" Halanna Ysh Yshtralania Agrados Adean Esmaryal Ryala Edronias Falah Nerat Ara Minara Munas Moonsinger Nathalyne Begga Corin Balgar

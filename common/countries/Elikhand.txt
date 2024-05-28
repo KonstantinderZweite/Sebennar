@@ -8,8 +8,8 @@ color = { 232  118  121 }
 
 
 historical_idea_groups = {
-	expansion_ideas
-	exploration_ideas
+	
+	
 	quantity_ideas
 	diplomatic_ideas	
 	offensive_ideas
@@ -368,8 +368,8 @@ monarch_names = {
 	"Marilna" = -10
 	"Matilda" = -10
 	"Nara" = -10
-	"Reínne" = -10
-	"Riennón" = -10
+	"Reï¿½nne" = -10
+	"Riennï¿½n" = -10
 	"Sofina" = -10
 	"Valenca" = -10
 	"Varina" = -10

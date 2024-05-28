@@ -10,7 +10,7 @@ color = { 175  111  73 }
 historical_idea_groups = {
 	economic_ideas
 	offensive_ideas
-	exploration_ideas
+	
 	defensive_ideas	
 	administrative_ideas	
 	maritime_ideas
@@ -157,7 +157,7 @@ ship_names = {
 	Strength Dexterity Constitution Intelligence Wisdom Charisma
 	
 	#Elven
-	Lunetéin Agraseina 
+	Lunetï¿½in Agraseina 
 	
 	#Regent Court Deities
 	Castellos Dame "The Dame" Halanna Ysh Yshtralania Agrados Adean Esmaryal Ryala Edronias Falah Nerat Ara Minara Munas Moonsinger Nathalyne Begga Corin Balgar

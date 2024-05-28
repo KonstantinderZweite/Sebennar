@@ -9,7 +9,7 @@ color = { 255  153  0 }
 historical_idea_groups = {
 	economic_ideas
 	offensive_ideas
-	exploration_ideas
+	
 	defensive_ideas	
 	administrative_ideas	
 	maritime_ideas
@@ -153,7 +153,7 @@ monarch_names = {
 	"Schiamaka #0" = -1
 	"Amara #0" = -1
 	"Amarachi #0" = -1
-	"Añuli #0" = -1
+	"Aï¿½uli #0" = -1
 	"Chi #0" = -1
 	"Chioma #0" = -1
 	"Chizoba #0" = -1

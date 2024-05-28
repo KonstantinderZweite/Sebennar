@@ -8,8 +8,8 @@ color = { 58  124  223 }
 revolutionary_colors = { 58  124  223 }
 
 historical_idea_groups = {
-	expansion_ideas
-	exploration_ideas
+	
+	
 	quantity_ideas
 	diplomatic_ideas	
 	offensive_ideas
@@ -180,7 +180,7 @@ monarch_names = {
 	"Marilda" = -10
 	"Nara" = -10
 	"Revhild" = -10
-	"Riennón" = -10
+	"Riennï¿½n" = -10
 	"Sebillr" = -10
 	"Sesill" = -10
 	"Sofia" = -10

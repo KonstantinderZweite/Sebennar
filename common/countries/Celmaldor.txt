@@ -8,12 +8,12 @@ color = { 133  133  160 }
 
 
 historical_idea_groups = {
-	exploration_ideas
+	
 	economic_ideas
 	trade_ideas
 	maritime_ideas
 	diplomatic_ideas
-	expansion_ideas
+	
 	quality_ideas		
 	influence_ideas
 }

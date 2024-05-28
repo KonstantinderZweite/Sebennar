@@ -1367,6 +1367,7 @@ country_event = {
 	
 	trigger = {
 		has_unmatching_military_to_unit = yes
+		NOT = {unit_type = tech_eagle_hobgoblin}
 	}
 	
 	#Orcish Option
@@ -1862,6 +1863,7 @@ country_event = {
 		trigger = {
 			has_country_modifier = hobgoblin_military
 			NOT = { unit_type = tech_hobgoblin }
+			
 		}
 
 		change_unit_type = tech_hobgoblin
