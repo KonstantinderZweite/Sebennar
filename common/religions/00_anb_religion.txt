@@ -2754,7 +2754,7 @@ goblin = {
 			land_attrition = -0.2
 			shock_damage = 0.15
 		}
-
+		fervor = yes 
 		province = {
 			local_missionary_strength = 0.02
 		}

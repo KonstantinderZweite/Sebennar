@@ -727,10 +727,10 @@ Rubyhold_3 = {
 						owned_by = ROOT
 				}
 				add_permanent_claim = ROOT
-			}
+				}
+			}	
 		}
 	}
-	
 }
 
  Rubyhold_4 = {

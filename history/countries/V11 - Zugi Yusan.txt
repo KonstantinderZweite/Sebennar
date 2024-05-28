@@ -12,8 +12,8 @@ capital = 6821
 		name = "Ayla"
 		dynasty = "Ashborn"	
 		birth_date = 1410.7.2
-		adm = 4
-		dip = 5
+		adm = 6
+		dip = 6
 		mil = 5
 		female = yes
 	}
