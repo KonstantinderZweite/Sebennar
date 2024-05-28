@@ -2,6 +2,7 @@ country_decisions = {
 dragonnel_death_hunt = {
 		major = yes
 		potential = {
+			tag = v11
 			NOT = { has_country_flag = Death_win }
 			mission_completed = V11_dragonnel_hunts
 		}
@@ -9,6 +10,7 @@ dragonnel_death_hunt = {
 			factor = 0
 		}
 		allow = {
+		tag = v11
 		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
@@ -24,6 +26,7 @@ dragonnel_death_hunt = {
 dragonnel_fire_hunt = {
 		major = yes
 		potential = {
+			tag = v11
 			NOT = { has_country_flag = Fire_win }
 			mission_completed = V11_dragonnel_hunts
 		}
@@ -31,6 +34,7 @@ dragonnel_fire_hunt = {
 			factor = 0
 		}
 		allow = {
+			tag = v11
 		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
@@ -44,6 +48,7 @@ dragonnel_fire_hunt = {
 dragonnel_pyschodelic_hunt = {
 		major = yes
 		potential = {
+			tag = v11
 			NOT = { has_country_flag = Pyschodelic_win }
 			mission_completed = V11_dragonnel_hunts
 		}
@@ -51,6 +56,7 @@ dragonnel_pyschodelic_hunt = {
 			factor = 0
 		}
 		allow = {
+			tag = v11
 		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
@@ -64,6 +70,7 @@ dragonnel_pyschodelic_hunt = {
 dragonnel_water_hunt = {
 		major = yes
 		potential = {
+			tag = v11
 			NOT = { has_country_flag = Water_win }
 			mission_completed = V11_dragonnel_hunts
 		}
@@ -71,6 +78,7 @@ dragonnel_water_hunt = {
 			factor = 0
 		}
 		allow = {
+			tag = v11
 		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
@@ -84,6 +92,7 @@ dragonnel_water_hunt = {
 dragonnel_earth_hunt = {
 		major = yes
 		potential = {
+			tag = v11
 			NOT = { has_country_flag = Earth_win }
 			mission_completed = V11_dragonnel_hunts
 		}
@@ -91,6 +100,7 @@ dragonnel_earth_hunt = {
 			factor = 0
 		}
 		allow = {
+			tag = v11
 		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
