@@ -8,7 +8,7 @@ color = { 20  50  30 }
 
 historical_idea_groups = {
 	quantity_ideas
-	expansion_ideas
+	
 	offensive_ideas
 	innovativeness_ideas
 	quality_ideas	
@@ -189,7 +189,7 @@ ship_names = {
 	Chairacha Yotfa Worawongsa Chakkraphat Mahin
 	Sanpet Naresuan Ekathotsarot "Si Saowaphak"
 	Songtham Chehha "Somdet Phra" "Prasat Thong" Chai
-	Suthammaracha Narai Petratcha Süa Phumintharacha
+	Suthammaracha Narai Petratcha Sï¿½a Phumintharacha
 	Uthumpon Ekkathat
 	
 }

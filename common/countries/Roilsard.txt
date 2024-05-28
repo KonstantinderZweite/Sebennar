@@ -10,7 +10,7 @@ color = { 238  13  121 }
 historical_idea_groups = {
 	economic_ideas
 	offensive_ideas
-	exploration_ideas
+	
 	defensive_ideas	
 	administrative_ideas	
 	maritime_ideas
@@ -43,13 +43,13 @@ monarch_names = {
 	#Roilsardi Name List
 	"Adran" = 10
 	"Adrien" = 10
-	"Adémar" = 10
+	"Adï¿½mar" = 10
 	"Alain" = 10
-	"Aldré" = 10
+	"Aldrï¿½" = 10
 	"Alfonse" = 10
 	"Alois" = 10
 	"Alvier" = 10
-	"André" = 10
+	"Andrï¿½" = 10
 	"Ardand" = 10
 	"Ardor" = 10
 	"Aril" = 10
@@ -66,8 +66,8 @@ monarch_names = {
 	"Brayan" = 10
 	"Calas" = 10
 	"Carlean" = 10
-	"Castén" = 10
-	"Castín" = 10
+	"Castï¿½n" = 10
+	"Castï¿½n" = 10
 	"Cecile" = 10
 	"Darran" = 10
 	"Denare" = 10
@@ -78,7 +78,7 @@ monarch_names = {
 	"Erenn" = 10
 	"Erlan" = 10
 	"Evin" = 10
-	"Fredéric" = 10
+	"Fredï¿½ric" = 10
 	"Galin" = 10
 	"Gelmon" = 10
 	"Guillame" = 10
@@ -89,19 +89,19 @@ monarch_names = {
 	"Lucian" = 10
 	"Marion" = 10
 	"Maurice" = 10
-	"Odó" = 10
+	"Odï¿½" = 10
 	"Olor" = 10
-	"Reán" = 10
+	"Reï¿½n" = 10
 	"Ricain" = 10
-	"Rión" = 10
+	"Riï¿½n" = 10
 	"Robin" = 10
 	"Rogier" = 10
 	"Sandur" = 10
-	"Tadgán" = 10
+	"Tadgï¿½n" = 10
 	"Taelar" = 10
 	"Thal" = 10
 	"Thiren" = 10
-	"Tomáis" = 10
+	"Tomï¿½is" = 10
 	"Trian" = 10
 	"Trystane" = 10
 	"Trystane" = 10
@@ -124,12 +124,12 @@ monarch_names = {
 	"Ruben" = 10
 	"Silas" = 10
 	"Stefan" = 10
-	"Tomáis" = 10
+	"Tomï¿½is" = 10
 	
 	
 	
 	"Adranne" = -10
-	"Adéle" = -10
+	"Adï¿½le" = -10
 	"Alara" = -10
 	"Aldressa" = -10
 	"Aline" = -10
@@ -140,8 +140,8 @@ monarch_names = {
 	"Athara" = -10
 	"Belle" = -10
 	"Calassa" = -10
-	"Casténne" = -10
-	"Castíne" = -10
+	"Castï¿½nne" = -10
+	"Castï¿½ne" = -10
 	"Cela" = -10
 	"Celadora" = -10
 	"Claire" = -10
@@ -149,31 +149,31 @@ monarch_names = {
 	"Corale" = -10
 	"Coraline" = -10
 	"Coraline" = -10
-	"Cécille" = -10
-	"Eilís" = -10
-	"Eilísibet" = -10
-	"Eléanore" = -10
+	"Cï¿½cille" = -10
+	"Eilï¿½s" = -10
+	"Eilï¿½sibet" = -10
+	"Elï¿½anore" = -10
 	"Emile" = -10
 	"Erela" = -10
 	"Galinde" = -10
-	"Giséle" = -10
+	"Gisï¿½le" = -10
 	"Guillamina" = -10
 	"Isobel" = -10
 	"Isobelle" = -10
 	"Kylia" = -10
 	"Laurenne" = -10
-	"Laurentíne" = -10
+	"Laurentï¿½ne" = -10
 	"Lisolette" = -10
-	"Madaléin" = -10
+	"Madalï¿½in" = -10
 	"Margery" = -10
 	"Marianne" = -10
 	"Marien" = -10
 	"Marinne" = -10
-	"Marié" = -10
+	"Mariï¿½" = -10
 	"Mina" = -10
 	"Nara" = -10
-	"Reánna" = -10
-	"Reánnon" = -10
+	"Reï¿½nna" = -10
+	"Reï¿½nnon" = -10
 	"Sofie" = -10
 	"Sybille" = -10
 	"Thalia" = -10
@@ -189,9 +189,9 @@ monarch_names = {
 }
 
 leader_names = {
-	"síl Lorenith" "síl Redfort" "síl Rewanfork" "síl Roilsard" "síl na Loop" "síl Vivin" "síl Saloren" 
+	"sï¿½l Lorenith" "sï¿½l Redfort" "sï¿½l Rewanfork" "sï¿½l Roilsard" "sï¿½l na Loop" "sï¿½l Vivin" "sï¿½l Saloren" 
 	"of the Rose Knights" ", Knight-Commander"
-	"síl Wesmar" 
+	"sï¿½l Wesmar" 
 
 	"'the Red'" "'the Red Rose'" "'the White Rose'" "'the Black Rose'" "'the Ashen Rose'" "'the Thorned Rose'" "'Manythorns'"
 	"'Redriver'"
@@ -228,12 +228,12 @@ ship_names = {
 	
 	#Lorent-specific
 	"Black Rose" Rose "Great Rose" "High Rose" "Ashen Rose" "Water Rose" "Waterlilly" "Rose Galley" Rosebush Rosekiss 
-	Reán Kylian Lorenan Rewalt Rewan Ruben "Sweet Ioriel" "Lady Ioriel" "Great Ioriel" "Red Ioriel" "Maidenrose"
-	"Prince Reán" "Prince Kylian" "Prince Ruben" "Prince of the Redglades" "Prince of Lorenith"
-	"Great Reán" "Great Kylian" "Old Lorenan" "Great Lorenan" "Great Rewalt" "Great Ruben"
-	"Royal Reán" "Royal Kylian" "Blood Lorenan" "Royal Ruben"
-	Eilisín "Lady Eilisín" "Sweet Eilisín" "Lovely Eilisín" Madaléin "Lady Madaléin" "Sweet Madaléin" "Lovely Madaléin" "Madaléin and Eilisín"
-	Lorentainé "Great Lorentainé" "Red Lorentainé" "Loyal Lorentainé" Lorenith Oldport Bloodwine Ionnidar Redfort
+	Reï¿½n Kylian Lorenan Rewalt Rewan Ruben "Sweet Ioriel" "Lady Ioriel" "Great Ioriel" "Red Ioriel" "Maidenrose"
+	"Prince Reï¿½n" "Prince Kylian" "Prince Ruben" "Prince of the Redglades" "Prince of Lorenith"
+	"Great Reï¿½n" "Great Kylian" "Old Lorenan" "Great Lorenan" "Great Rewalt" "Great Ruben"
+	"Royal Reï¿½n" "Royal Kylian" "Blood Lorenan" "Royal Ruben"
+	Eilisï¿½n "Lady Eilisï¿½n" "Sweet Eilisï¿½n" "Lovely Eilisï¿½n" Madalï¿½in "Lady Madalï¿½in" "Sweet Madalï¿½in" "Lovely Madalï¿½in" "Madalï¿½in and Eilisï¿½n"
+	Lorentainï¿½ "Great Lorentainï¿½" "Red Lorentainï¿½" "Loyal Lorentainï¿½" Lorenith Oldport Bloodwine Ionnidar Redfort
 
 }
 

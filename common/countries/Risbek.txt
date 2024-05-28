@@ -7,11 +7,11 @@ graphical_culture = asiangfx
 color = { 243  120  28 }
 
 historical_idea_groups = {
-	exploration_ideas
+	
 	maritime_ideas
 	economic_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quality_ideas	
 	administrative_ideas	
 	influence_ideas

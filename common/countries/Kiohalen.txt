@@ -8,9 +8,9 @@ color = { 238  46  46 }
 
 
 historical_idea_groups = {
-	expansion_ideas
+	
 	offensive_ideas
-	exploration_ideas
+	
 	quality_ideas	
 	religious_ideas	
 	trade_ideas
@@ -129,13 +129,13 @@ monarch_names = {
 	
 	"Firanya #0" = -10
 	"Sarojini #0" = -10
-	"Ištara #0" = -10
+	"Iï¿½tara #0" = -10
 	"Niloheunthu #0" = -10
 	"Heunthoevesa #0" = -10
 	"Elavyenna #0" = -10
-	"Šinenthu #0" = -10
+	"ï¿½inenthu #0" = -10
 	"Elu #0" = -10
-	"Šananthu #0" = -10
+	"ï¿½ananthu #0" = -10
 	"Vinkanthu #0" = -10
 	"Askina #0" = -10
 	"Pomaranthu #0" = -10
@@ -150,7 +150,7 @@ monarch_names = {
 	"Henranthu #0" = -10
 	"Nilli #0" = -10
 	"Eva #0" = -10
-	"Mišqa #0" = -10
+	"Miï¿½qa #0" = -10
 	"Herun #0" = -10
 	"Rauva #0" = -10
 	"Varva #0" = -10
@@ -162,18 +162,18 @@ monarch_names = {
 	"Thelavi #0" = -10
 	"Harpa #0" = -10
 	"Syphe #0" = -10
-	"Rišpan #0" = -10
-	"Tušakor #0" = -10
+	"Riï¿½pan #0" = -10
+	"Tuï¿½akor #0" = -10
 	"Pielli #0" = -10
 	"Kerria #0" = -10
 	"Nala #0" = -10
 	"Lysi #0" = -10
 	"Touna #0" = -10
-	"Monše #0" = -10
+	"Monï¿½e #0" = -10
 	"Jorouna #0" = -10
-	"Lyškoler #0" = -10
-	"Sillyška #0" = -10
-	"Lyškomus #0" = -10
+	"Lyï¿½koler #0" = -10
+	"Sillyï¿½ka #0" = -10
+	"Lyï¿½komus #0" = -10
 	"Nalaisa #0" = -10
 	"Siatuna #0" = -10
 	"Sarvatun #0" = -10
@@ -193,25 +193,25 @@ monarch_names = {
 	"Seturno #0" = -10
 	"Saero #0" = -10
 	"Ienosita #0" = -10
-	"Mustyš #0" = -10
+	"Mustyï¿½ #0" = -10
 	"Heise #0" = -10
-	"Pessityš #0" = -10
+	"Pessityï¿½ #0" = -10
 	"Jarme #0" = -10
 	"Iliosita #0" = -10
 	"Firaer #0" = -10
 	"Astusol #0" = -10
 	"Nalayni #0" = -10
-	"Hišaer #0" = -10
-	"Hišavi #0" = -10
+	"Hiï¿½aer #0" = -10
+	"Hiï¿½avi #0" = -10
 	"Vainiosse #0" = -10
 	"Kellaun #0" = -10
-	"Kiriša #0" = -10
+	"Kiriï¿½a #0" = -10
 	"Kironephe #0" = -10
 	"Pessi #0" = -10
 	"Hassi #0" = -10
 	"Teisi #0" = -10
 	"Mursi #0" = -10
-	"Thišši #0" = -10
+	"Thiï¿½ï¿½i #0" = -10
 	"Qhenol #0" = -10
 	"Parmae #0" = -10
 	"Felvaa #0" = -10
@@ -239,24 +239,24 @@ monarch_names = {
 	"Nehiunus #0" = -10
 	"Nephiokestar #0" = -10
 	"Telar #0" = -10
-	"Telšali #0" = -10
+	"Telï¿½ali #0" = -10
 	"Ikoutel #0" = -10
 	"Esivene #0" = -10
-	"Šite #0" = -10
+	"ï¿½ite #0" = -10
 	"Akolvi #0" = -10
 	"Riane #0" = -10
 	"Ivinnanthu #0" = -10
-	"Išlananthu #0" = -10
-	"Išlanthu #0" = -10
+	"Iï¿½lananthu #0" = -10
+	"Iï¿½lanthu #0" = -10
 	"Jonsenthu #0" = -10
 	"Hytiranya #0" = -10
-	"Ašuria #0" = -10
+	"Aï¿½uria #0" = -10
 	"Relyore #0" = -10
 	"Renianta #0" = -10
 	"Kevofa #0" = -10
 	"Ayara #0" = -10
-	"Mišara #0" = -10
-	"Nanša #0" = -10
+	"Miï¿½ara #0" = -10
+	"Nanï¿½a #0" = -10
 	"Lysinya #0" = -10
 	
 		#Generic Aelantir Names
@@ -395,14 +395,14 @@ monarch_names = {
 leader_names = {
 
 	#Firanyan Harpy
-	Nostanthu Ernoqhantova Jereron Mauteron Saroeron Veššaeron Sekhujini Sekhuvara Veluvosqantu Soiokhanthu Soioosqantu Soiojakhanthu Soiosesanthu Latioqhantova Vekhiara Vekhieron Vekhisekhu
-	Qhonioenna Qhoneara Qhoneeron Maujali Thiušali Thiuvekhi Thiusekhu Thiuivene Saroivene Pesivene Honfira Honnephe Nephiofira Nephiosekhu Nephiošali Pamoqhantova Panvelu
+	Nostanthu Ernoqhantova Jereron Mauteron Saroeron Veï¿½ï¿½aeron Sekhujini Sekhuvara Veluvosqantu Soiokhanthu Soioosqantu Soiojakhanthu Soiosesanthu Latioqhantova Vekhiara Vekhieron Vekhisekhu
+	Qhonioenna Qhoneara Qhoneeron Maujali Thiuï¿½ali Thiuvekhi Thiusekhu Thiuivene Saroivene Pesivene Honfira Honnephe Nephiofira Nephiosekhu Nephioï¿½ali Pamoqhantova Panvelu
 	Mourveta Pamoveta Fillanveta Nephioveta Aratoveta Fisaveta Vetanos Vetaeron Vetaara Vetafirar
 	#Firanyan-exclusive
-	Ayarato Mišarato Lysinyau Firanyau
+	Ayarato Miï¿½arato Lysinyau Firanyau
 	
 	#Titles
-	Rišthe Hivana Quste Qhone Harpy Parsa Vetanthu Fisavi Ištaranthu
+	Riï¿½the Hivana Quste Qhone Harpy Parsa Vetanthu Fisavi Iï¿½taranthu
 }
 
 ship_names = {

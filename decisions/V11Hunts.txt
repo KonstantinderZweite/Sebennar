@@ -1,0 +1,107 @@
+country_decisions = {
+dragonnel_death_hunt = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = Death_win }
+			mission_completed = V11_dragonnel_hunts
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		not = { has_country_flag = v11_hunt }
+			}
+		effect = {
+		country_event = { id = flavor_emberscar.5 }
+			set_country_flag = death_battle
+			set_country_flag = v11_hunt
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}
+		}
+	}
+
+dragonnel_fire_hunt = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = Fire_win }
+			mission_completed = V11_dragonnel_hunts
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		not = { has_country_flag = v11_hunt }
+			}
+		effect = {
+		set_country_flag = fire_battle
+		set_country_flag = v11_hunt
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}
+		}
+	}
+dragonnel_pyschodelic_hunt = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = Pyschodelic_win }
+			mission_completed = V11_dragonnel_hunts
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		not = { has_country_flag = v11_hunt }
+			}
+		effect = {
+		set_country_flag = psychodelic_battle
+			set_country_flag = v11_hunt
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}
+		}
+	}
+dragonnel_water_hunt = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = Water_win }
+			mission_completed = V11_dragonnel_hunts
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		not = { has_country_flag = v11_hunt }
+			}
+		effect = {
+		set_country_flag = water_battle
+			set_country_flag = v11_hunt
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}
+		}
+	}
+dragonnel_earth_hunt = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = Earth_win }
+			mission_completed = V11_dragonnel_hunts
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		not = { has_country_flag = v11_hunt }
+			}
+		effect = {
+		set_country_flag = earth_battle
+		set_country_flag = v11_hunt
+			capital_scope = {
+				add_province_triggered_modifier = dragonnel_hunt_randomizer
+			}		
+		}
+	}
+
+
+
+}

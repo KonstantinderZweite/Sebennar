@@ -9,7 +9,7 @@ revolutionary_colors = { 4  1  4 }
 
 historical_idea_groups = {
 	quantity_ideas
-	expansion_ideas
+	
 	offensive_ideas
 	innovativeness_ideas
 	quality_ideas	

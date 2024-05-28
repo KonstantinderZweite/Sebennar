@@ -68,6 +68,10 @@ Z87_dragons_path_desc:0 "An ashy sky. A cry of death. A story of love. A bleedin
  flavor_Akluztajo.7.d:0 "Goblins,elves, and other lesser classes have followed Muhi into the great unknown of the fey relam. Madness this was the thinking of many on this trip. A trip to find a dragon that is long thought to be dead. Lost in the forest was the likely outcome. Muhi could not be denied whatever came of this would decide the fate of our world. Months and what felt like years passed as they kept traveling scouring every dirt pile until eventually they found what looked like a cave. Fear crept through the whole entourage many remembering the previous fate of those that came to a cave under Muhis guidance. Muhi walked forward. His eyes a haze of red a read none of his people have ever seen. Muhis entourage were paralyzed with fear. Only Muhi moved inch by inch until he saw on beast sleeping in the cave. The beast looked strong on the outside but Muhi felt that the dragon was weakend. By what only the dragon and whoever did damage to the beast knew. The dragon opened its eyes and peered at Muhi. A deep snare of a voice came out of the dragon weakness creeping from the dragons vocal cords "A fate destined to fall on me, I am not strong enough to fight a mage as powerful as you in my current state." Muhi knew he had two choices to partner with this beast and betray his peoples past to empower his country and himself. Or he could choose to end the life of a beast and use the scales for his own men."
  flavor_Akluztajo.7.a:0 "Help us"
  flavor_Akluztajo.7.b:0 "CHARGE!!!"
+ flavor_Akluztajo.8.t:0 "A Dragons Hoard?"
+ flavor_Akluztajo.8.d:0 "Each day our dragon grows hungry for more loot. He has nested himself on one of our holds. His power is unmatched and it has inspired people from all across the world to join him near his dwelling. This dragon has unfourtantely taken a lot of our funds"
+ flavor_Akluztajo.8.a:0 "A dragons greed"
+ 
 #modifiers 
 Z87_fire_blessed:0 "Fire Blessed"
 Z87_GladeWayExpansion:0 "Fey Enriched land"

@@ -8,14 +8,14 @@ color = { 222  87  87 }
 
 
 historical_idea_groups = {
-	naval_ideas
+	
 	trade_ideas
 	religious_ideas
 	offensive_ideas
 	maritime_ideas
 	economic_ideas
 	quality_ideas
-	exploration_ideas
+	
 }
 
 historical_units = {
@@ -165,7 +165,7 @@ leader_names = {
 	
 	
 	#Country Neighbours
-	"af Bjarnrík" "af Revrhavn" "af Sidaett"
+	"af Bjarnrï¿½k" "af Revrhavn" "af Sidaett"
 	
 	#Geographic Neighbours
 	"af Gerudia" "ava Giant's Grave" "afa Serpentshead" "of the Alen" "ava Titan's Walk" "af Fjordsbay"

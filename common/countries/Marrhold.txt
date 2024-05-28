@@ -8,11 +8,11 @@ color = { 157  121  115 }
 
 
 historical_idea_groups = {
-	exploration_ideas
+	
 	maritime_ideas
 	economic_ideas
 	offensive_ideas
-	expansion_ideas
+	
 	quality_ideas	
 	administrative_ideas	
 	influence_ideas
@@ -231,7 +231,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassína" = -10
+	"Cassï¿½na" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10
@@ -320,8 +320,8 @@ monarch_names = {
 	"Marilna" = -10
 	"Matilda" = -10
 	"Nara" = -10
-	"Reínne" = -10
-	"Riennón" = -10
+	"Reï¿½nne" = -10
+	"Riennï¿½n" = -10
 	"Sofina" = -10
 	"Valenca" = -10
 	"Varina" = -10
@@ -372,7 +372,7 @@ ship_names = {
 	Strength Dexterity Constitution Intelligence Wisdom Charisma
 	
 	#Elven
-	Lunetéin Agraseina 
+	Lunetï¿½in Agraseina 
 	
 	#Regent Court Deities
 	Castellos Dame "The Dame" Halanna Ysh Yshtralania Agrados Adean Esmaryal Ryala Edronias Falah Nerat Ara Minara Munas Moonsinger Nathalyne Begga Corin Balgar

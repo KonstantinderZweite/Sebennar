@@ -10,7 +10,7 @@ color = { 42  150  23 }
 historical_idea_groups = {
 	economic_ideas
 	offensive_ideas
-	exploration_ideas
+	
 	defensive_ideas	
 	administrative_ideas	
 	maritime_ideas
@@ -102,7 +102,7 @@ monarch_names = {
 	"Ottolin" = 10
 	"Ottomac" = 10
 	"Ottrac" = 10
-	"Otó" = 10
+	"Otï¿½" = 10
 	
 	
 	"Abigail" = -10
@@ -120,7 +120,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassína" = -10
+	"Cassï¿½na" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10
@@ -154,19 +154,19 @@ monarch_names = {
 
 leader_names = {
 	#Country Specific
-	"of Bisan" "of Bladewall" "of Hiltsford" "of Corseton" "of Aelthíl"
+	"of Bisan" "of Bladewall" "of Hiltsford" "of Corseton" "of Aelthï¿½l"
 	
 	#Province Neighbours
 	"of Ottocam" "of Vinerick" "of Countsbridge" "of Gnollsgate" "of Rhinmond" "of Whistlepoint" "of Walterton" "of Cestaire" "of Elensbridge" "of Clawmarches" "of Heartspier"
 	
 	#Country Neighbours
-	"of Busilar" "of Magdalaire" "of Galéinn" "of Indlebury" "of Wex" "of Sugamber" "of Cestirande" "of Tellum" "of Verne"
+	"of Busilar" "of Magdalaire" "of Galï¿½inn" "of Indlebury" "of Wex" "of Sugamber" "of Cestirande" "of Tellum" "of Verne"
 	
 	#Geographic Neighbours
 	"of the Diven" "of the Borders" "of the Bardswood"
 	
 	#Noble Families
-	"síl Aelthíl" "sína Corse"
+	"sï¿½l Aelthï¿½l" "sï¿½na Corse"
 	
 	
 	#Generic Alenic names

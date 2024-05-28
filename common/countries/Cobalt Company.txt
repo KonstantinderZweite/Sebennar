@@ -8,8 +8,8 @@ color = { 0  71  171 }
  
 
 historical_idea_groups = {
-	expansion_ideas
-	exploration_ideas
+	
+	
 	quantity_ideas
 	diplomatic_ideas	
 	offensive_ideas
@@ -132,7 +132,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassína" = -10
+	"Cassï¿½na" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10

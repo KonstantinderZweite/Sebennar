@@ -8,8 +8,8 @@ color = { 110  66  80  }
 
 
 historical_idea_groups = {
-	expansion_ideas
-	exploration_ideas
+	
+	
 	quantity_ideas
 	diplomatic_ideas	
 	offensive_ideas
@@ -130,7 +130,7 @@ leader_names = {
 	
 	
 	#Country Neighbours
-	"fran Bjarník" "fran Revrhavn" "fran Sidaett"
+	"fran Bjarnï¿½k" "fran Revrhavn" "fran Sidaett"
 	
 	#Geographic Neighbours
 	"fran Gerudia" "fran Giant's Grave" "fran Serpentshead" "fran Alen" "fran Titan's Walk" "fran Fjordsbay"
