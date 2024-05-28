@@ -13,8 +13,9 @@ dragonnel_death_hunt = {
 		not = { has_country_flag = v11_hunt }
 			}
 		effect = {
-		set_country_flag = death_battle
-		set_country_flag = v11_hunt
+			set_country_flag = death_battle
+			set_country_flag = v11_hunt
+
 			capital_scope = {
 				add_province_triggered_modifier = dragonnel_hunt_randomizer
 			}

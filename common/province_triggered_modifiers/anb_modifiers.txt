@@ -5989,33 +5989,33 @@ dragonnel_hunt_randomizer = {
 			#earth
 			if = {
 				limit = { has_country_flag = earth_battle }
+				clr_country_flag = earth_battle
 				country_event = { id = flavor_emberscar.4 }
 			}
 			#death
 			if = {
 				limit = { has_country_flag = death_battle }
+				clr_country_flag = death_battle
 				country_event = { id = flavor_emberscar.5 }
 			}
 			#fire 
 			if = {
 				limit = { has_country_flag = fire_battle }
+				clr_country_flag = fire_battle
 				country_event = { id = flavor_emberscar.6 }
 			}
 			#water
 			if = {
 				limit = { has_country_flag = water_battle }
+				clr_country_flag = water_battle 
 				country_event = { id = flavor_emberscar.7 }
 			}
 			#Pyschodelic
 			if = {
 				limit = { has_country_flag = psychodelic_battle }
+				clr_country_flag = psychodelic_battle
 				country_event = { id = flavor_emberscar.8 }
 			}
-			clr_country_flag = Earth_battle
-			clr_country_flag = death_battle
-			clr_country_flag = fire_battle
-			clr_country_flag = water_battle
-			clr_ountry_flag = psychodelic_battle
 		}
 		remove_province_triggered_modifier = dragonnel_hunt_randomizer
 	}
