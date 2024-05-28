@@ -514,6 +514,7 @@ country_decisions = {
 		}	
 		
 		allow = {
+			tag = Y00
 			golden_highway_south_haless = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -549,6 +550,7 @@ country_decisions = {
 		}	
 		
 		allow = {
+			tag = Y00
 			golden_highway_shamakhad = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
