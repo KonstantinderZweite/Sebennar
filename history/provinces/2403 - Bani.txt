@@ -1,6 +1,6 @@
 
 
-culture = doosun
+culture = quruwei
 religion = animism
 capital = ""
 

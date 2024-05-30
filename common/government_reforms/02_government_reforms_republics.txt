@@ -4212,9 +4212,7 @@ consolidation_of_power_reform = {
 	}
 	effect = {
 	}
-	custom_attributes = {
-		reelection_depowers_estates = yes
-	}
+	
 }
 
 lottery_reform = {

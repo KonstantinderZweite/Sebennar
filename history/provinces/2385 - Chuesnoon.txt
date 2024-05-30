@@ -1,7 +1,7 @@
 
 # No previous file for Nongbua Lamphu
 
-culture = doosun
+culture = quruwei
 religion = animism
 capital = ""
 

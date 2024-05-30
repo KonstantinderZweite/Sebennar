@@ -38,7 +38,7 @@ hoardcursed_rebels = {
 		factor = 1000
 		modifier = {
 			factor = 0
-			owner = { NOT = { has_disaster = hoardcurse } }
+			
 	 	}
 		modifier = {
 			factor = 0

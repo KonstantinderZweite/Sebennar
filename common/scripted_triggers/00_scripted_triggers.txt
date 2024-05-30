@@ -2293,7 +2293,7 @@ num_of_idea_groups_chosen = {
 		has_idea_group = defensive_ideas
 		has_idea_group = quality_ideas
 		has_idea_group = quantity_ideas
-		has_idea_group = naval_ideas
+		has_idea_group = exploitation_ideas
 		has_idea_group = theocracy_gov_ideas
 		has_idea_group = indigenous_ideas
 		has_idea_group = horde_gov_ideas
@@ -2662,16 +2662,12 @@ is_not_free_merc_company = {
 has_free_mercs_trait = {
 	OR = {
 		# has_country_modifier = dan_sca_merc_contract
-		has_idea = seasoned_veterans
-		has_government_attribute = mercs_do_not_cost_army_professionalism
 		# has_country_flag = fra_free_mercs_bargain_sale_flag
 	}
 }
 
 has_not_free_mercs_trait = {
-	NOT = { has_country_modifier = dan_sca_merc_contract }
-	NOT = { has_idea = seasoned_veterans } #1.35
-	NOT = { has_government_attribute = mercs_do_not_cost_army_professionalism }
+	NOT = { has_country_modifier = dan_sca_merc_contract } #1.35
 	NOT = { has_country_flag = fra_free_mercs_bargain_sale_flag } #1.35
 }
 
@@ -3803,7 +3799,6 @@ has_any_active_incomplete_idea_group_of_category = {
                 AND = { has_idea_group = horde_gov_ideas       	    NOT = { full_idea_group = horde_gov_ideas } }
                 AND = { has_idea_group = plutocracy_ideas        	NOT = { full_idea_group = plutocracy_ideas } }
                 AND = { has_idea_group = mercenary_ideas        	NOT = { full_idea_group = mercenary_ideas } }
-                AND = { has_idea_group = naval_ideas				NOT = { full_idea_group = naval_ideas } }
             }
         }
     ]

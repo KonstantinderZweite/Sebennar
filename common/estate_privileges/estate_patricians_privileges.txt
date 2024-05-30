@@ -1328,7 +1328,7 @@ estate_castonath_patricians_indebted_to_patricians = {
 		NOT = { has_country_flag = estate_burghers_indebted_to_burghers_disabled }						
 	}
 	can_select = {
-		NOT = { has_disaster = hoardcurse }	#Anbennar
+			#Anbennar
 	}
 	on_granted = {
 		custom_tooltip = estate_castonath_patricians_indebted_to_patricians_effect_tooltip

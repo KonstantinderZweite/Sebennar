@@ -509,10 +509,7 @@ country_event = {
 		custom_tooltip = sardonyx_invasion_play_tooltip
 		ROOT = { switch_tag = H94 }
 		hidden_effect = {
-			if = {
-				limit = { has_country_flag = hoardcurse_happened }
-				H94 = { set_country_flag = hoardcurse_happened }
-			}
+			
 			H94 = { remove_country_modifier = restructuring_administration } # in case they spawned from a non-dwarven nation
 		}
 	}

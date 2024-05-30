@@ -1,7 +1,7 @@
 
 # No previous file for Majar
 
-culture = doosun
+culture = quruwei
 religion = animism
 capital = ""
 

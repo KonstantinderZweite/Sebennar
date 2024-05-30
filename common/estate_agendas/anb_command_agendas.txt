@@ -9336,10 +9336,7 @@ estate_dragon_command_build_a_fleet = {
 			factor = 0.5
 			NOT = { num_of_ports = 3 }
 		}
-		modifier = {
-			factor = 2
-			has_idea_group = naval_ideas
-		}
+		
 	}
 	task_requirements = {
 		if = {
