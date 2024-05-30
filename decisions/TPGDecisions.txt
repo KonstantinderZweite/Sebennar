@@ -12,6 +12,7 @@ country_decisions = {
 		}
 		
 		allow = {
+			tag = F23
 			adm_power = 75
 			dip_power = 75
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -47,6 +48,10 @@ country_decisions = {
 		}
 		
 		allow = {
+			tag = R62
+			NOT = { has_country_flag = korashi_fix }
+			NOT = { exists = Y01 }
+			current_age = age_of_discovery
 			adm_power = 50
 			dip_power = 50
 		}
@@ -81,7 +86,6 @@ country_decisions = {
 		}
 		
 		allow = {
-			
 		}
 		
 		effect = {
