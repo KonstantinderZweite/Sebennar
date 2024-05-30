@@ -2481,8 +2481,7 @@ country_event = {
 			name = spiderwretch_yarikhoi_scholars
 			duration = 3650
 		}
-		#@niller wrong area
-		damazgubli_area = {
+		caubheameas_area = {
 			type = all
 			add_human_minority_size_effect = yes
 		}
