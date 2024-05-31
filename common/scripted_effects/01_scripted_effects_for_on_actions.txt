@@ -834,12 +834,6 @@ on_new_monarch_effect = { #1.35
 			A01 = { has_ruler_flag = kylian_siloriel_flag }
 			B72 = { has_ruler_flag = kylian_siloriel_flag }
 		}
-		A01 = {
-			country_event = {
-				id = flavor_lorent.16
-				days = 1
-			}
-		 }
 	}
 	if = {
 		limit = {
@@ -851,12 +845,6 @@ on_new_monarch_effect = { #1.35
 			}
 			A01 = { has_ruler_flag = ruben_siloriel_flag }
 			B68 = { has_ruler_flag = ruben_siloriel_flag }
-		}
-		A01 = {
-			country_event = {
-				id = flavor_lorent.17
-				days = 1
-			}
 		}
 	}
 

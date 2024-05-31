@@ -149,10 +149,10 @@ lorentaine_mage_academy = {
 					estate = estate_mages
 					loyalty = 15
 				}
-				add_country_modifier = {
-					name = lorentaine_mage_academy_loyalty
-					duration = 7300
-				}
+				#add_country_modifier = {
+				#	name = lorentaine_mage_academy_loyalty
+				#	duration = 7300
+				#}
 				define_general = {
 					name = "Calissa Castanern"
 					trait = war_wizard_personality
@@ -294,12 +294,12 @@ lorent_new_adea_naval_school = {
 		on_upgraded = {
 			add_base_production = 3
 			center_of_trade = 1
-			owner = {
-				add_country_modifier = {
-					name = lorent_new_adea_naval_school_new_admiralty
-					duration = 3650
-				}
-			}
+			#owner = {
+			#	add_country_modifier = {
+			#		name = lorent_new_adea_naval_school_new_admiralty
+			#		duration = 3650
+			#	}
+			#}
 		}
 	}
 }
@@ -431,10 +431,10 @@ deranne_westport_gateway_to_aelantir = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = deranne_westport_derannic_colonial_enthusiasm
-					duration = 5475
-				}
+				#add_country_modifier = {
+				#	name = deranne_westport_derannic_colonial_enthusiasm
+				#	duration = 5475
+				#}
 				define_explorer = {
 					name = "Artorian Agnel"
 					trait = accomplished_sailor_personality
@@ -583,12 +583,12 @@ minara_temple = {
 			global_tax_income = 75
 		}
 		on_upgraded = {
-			owner = {
-				add_country_modifier = {
-					name = minara_temple_degenerate_sex_party
-					duration = 7300
-				}
-			}
+			#owner = {
+			#	add_country_modifier = {
+			#		name = minara_temple_degenerate_sex_party
+			#		duration = 7300
+			#	}
+			#}
 		}
 	}
 }

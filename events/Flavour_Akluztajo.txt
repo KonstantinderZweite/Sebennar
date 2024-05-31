@@ -3,30 +3,30 @@
 namespace = flavor_akluztajo
 
 country_event = {
-	id = flavor_Akluztajo.1
-	title = flavor_Akluztajo.1.t
-	desc = flavor_Akluztajo.1.d
+	id = flavor_akluztajo.1
+	title = flavor_akluztajo.1.t
+	desc = flavor_akluztajo.1.d
 	picture = Green_dragon_eventPicture
 	trigger = {
 	tag = Z87
 	}
 	is_triggered_only = yes
 	option = {
-		name = "flavor_Akluztajo.1.b"
+		name = "flavor_akluztajo.1.b"
 	}
 }
 
 country_event = {
-	id = flavor_Akluztajo.2
-	title = flavor_Akluztajo.2.t
-	desc = flavor_Akluztajo.2.d
+	id = flavor_akluztajo.2
+	title = flavor_akluztajo.2.t
+	desc = flavor_akluztajo.2.d
 	picture = LOOMING_DEATH_eventPicture
 	is_triggered_only = yes
 	trigger = {
 	tag = Z87
 	}
 	option = {
-	name = "flavor_Akluztajo.2.b"
+	name = "flavor_akluztajo.2.b"
 		if = {
 				limit = { has_heir = yes }
 				kill_heir = { allow_new_heir = no }
@@ -57,16 +57,16 @@ country_event = {
 		}
 	}
 country_event = {
-    id = flavor_Akluztajo.3
-    title = flavor_Akluztajo.3.t
-    desc = flavor_Akluztajo.3.d
+    id = flavor_akluztajo.3
+    title = flavor_akluztajo.3.t
+    desc = flavor_akluztajo.3.d
     picture = FEYFOREST_eventPicture
     is_triggered_only = yes
 	trigger = {
 	tag = Z87
 	}
 	option = {
-        name = flavor_Akluztajo.3.b
+        name = flavor_akluztajo.3.b
 		remove_country_modifier = Z87_Pretender
 		3010 = {
 			spawn_rebels = {
@@ -84,9 +84,9 @@ country_event = {
 }
 
 country_event = {
-id = flavor_Akluztajo.4
-title = flavor_Akluztajo.4.t
-desc = flavor_Akluztajo.4.d
+id = flavor_akluztajo.4
+title = flavor_akluztajo.4.t
+desc = flavor_akluztajo.4.d
 picture = FEYFOREST_eventPicture
 is_triggered_only = yes 
 trigger = {
@@ -94,7 +94,7 @@ trigger = {
 }
 
 	option = {
-        name = flavor_Akluztajo.4.b
+        name = flavor_akluztajo.4.b
 		remove_country_modifier = Z87_Pretender
 		3041 = {
 			spawn_rebels = {
@@ -112,32 +112,32 @@ trigger = {
 }
 
 country_event = {
-id = flavor_Akluztajo.5
-title = flavor_Akluztajo.5.t
-desc = flavor_Akluztajo.5.d
+id = flavor_akluztajo.5
+title = flavor_akluztajo.5.t
+desc = flavor_akluztajo.5.d
 picture = DARK_EXPEDITION_eventPicture
 is_triggered_only = yes 
 trigger = {
 	tag = Z87
 }
 option = {
-	name = flavor_Akluztajo.5.a 
+	name = flavor_akluztajo.5.a 
 	add_country_modifier = {
 	name = Z87_colonist_rush
 	}
 }
 }
 country_event = {
-id = flavor_Akluztajo.6
-title = flavor_Akluztajo.6.t
-desc = flavor_Akluztajo.6.d
+id = flavor_akluztajo.6
+title = flavor_akluztajo.6.t
+desc = flavor_akluztajo.6.d
 picture = DARK_EXPEDITION_eventPicture
 is_triggered_only = yes 
 trigger = {
 	tag = Z87
 }
 option = {
-name = flavor_Akluztajo.6.a 
+name = flavor_akluztajo.6.a 
 change_dip = 1
 change_adm = 1 
 change_mil = 1
@@ -145,16 +145,16 @@ change_mil = 1
 }
 
 country_event = {
-id = flavor_Akluztajo.7
-title = flavor_Akluztajo.7.t
-desc = flavor_Akluztajo.7.d
+id = flavor_akluztajo.7
+title = flavor_akluztajo.7.t
+desc = flavor_akluztajo.7.d
 picture = sleep_green_dragon
 is_triggered_only = yes
 trigger = {
 tag = Z87
 }
 option = {
-name = flavor_Akluztajo.7.a 
+name = flavor_akluztajo.7.a 
 add_country_modifier = {
 name = Z87_dragon_kinship
 duration = -1
@@ -164,7 +164,7 @@ set_ruler_flag = immortal_ruler
 }
 
 option = {
-name = flavor_Akluztajo.7.b 
+name = flavor_akluztajo.7.b 
 add_country_modifier = {
 name = Z87_dragon_armour
 duration = -1
@@ -173,9 +173,9 @@ duration = -1
 }
 }
 country_event = {
-id = flavor_Akluztajo.8
-title = flavor_Akluztajo.8.t
-desc = flavor_Akluztajo.8.d
+id = flavor_akluztajo.8
+title = flavor_akluztajo.8.t
+desc = flavor_akluztajo.8.d
 picture = KOBOLD_HOARD_eventPicture
 fire_only_once = yes 
 trigger = {
@@ -183,7 +183,7 @@ tag = Z87
 has_ruler_flag = dragon_kinshipper
 }
 option = {
-name = flavor_Akluztajo.8.a 
+name = flavor_akluztajo.8.a 
 4100 = {
 add_base_tax = 3
 add_base_production = 3

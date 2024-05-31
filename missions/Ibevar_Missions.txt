@@ -137,7 +137,7 @@ ibevar_2 = {
 		}
 		
 		trigger = {
-			NOT = { has_disaster = ibevar_reformation }
+			#NOT = { has_disaster = ibevar_reformation }
 			if = {
 				limit = { A83 = { exists = yes } }
 				dip_power = 200
