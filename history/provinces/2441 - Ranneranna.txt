@@ -1,7 +1,7 @@
 
 # No previous file for Iglino
 
-culture = doosun
+culture = quruwei
 religion = animism
 capital = ""
 

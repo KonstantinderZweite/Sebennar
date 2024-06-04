@@ -1,7 +1,7 @@
 
 # No previous file for Terengganu
 
-culture = doos
+culture = quchamar
 religion = animism
 capital = ""
 

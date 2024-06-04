@@ -1,7 +1,7 @@
 
 # No previous file for Khukhanor Surin
 
-culture = doosun
+culture = quruwei
 religion = animism
 capital = ""
 

@@ -223,7 +223,7 @@ trigger = {
 NOT = { has_country_modifier = Z87_haze }
 }
 effect = {
-country_event = { id = flavor_Akluztajo.5}
+country_event = { id = flavor_akluztajo.5}
 }
 }
 Z87_dwarven_hold = {
@@ -251,7 +251,7 @@ name = Z87_false_prophet
 duration = 1825
 }
 country_event = {
-					id = flavor_Akluztajo.6
+					id = flavor_akluztajo.6
 					days = 1825
 				}
 add_treasury = 100
@@ -366,7 +366,7 @@ NOT = {subsidised_percent_amount = {
 								}
 }
 effect = {
-country_event = { id = flavor_Akluztajo.7}
+country_event = { id = flavor_akluztajo.7}
 add_treasury = -5000
 }
 
@@ -393,7 +393,7 @@ trigger = {
 manpower = 15
 }
 effect = {
-country_event = { id = flavor_Akluztajo.4}
+country_event = { id = flavor_akluztajo.4}
 }
 }
 Z87_elven_integration = {

@@ -1158,7 +1158,7 @@ infrastructure_ideas = {
 			factor = 1.15
 			OR = {
 				has_idea_group = trade_ideas
-				has_idea_group = naval_ideas
+				
 			}
 		}
 	}

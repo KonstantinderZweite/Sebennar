@@ -244,7 +244,7 @@ country_event = { #the servator
 			add_ruler_personality = cruel_personality
 			add_ruler_personality = strict_personality
 			add_ruler_personality = industrious_personality
-			add_ruler_personality = immortal_personality
+			set_ruler_flag = long_lived_ruler
 			set_ruler_flag = servator_online
 			lock_racial_admin = yes
 		}

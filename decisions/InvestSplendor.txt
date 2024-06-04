@@ -5,13 +5,13 @@ splendor_into_power = {
 			splendor = 0
 		}
 		allow = {	
-			splendor = 1000
+			splendor = 800
 		}
 		effect = {
-			add_splendor = -1000
-			add_adm_power = 50
-			add_dip_power = 50
-			add_mil_power = 50
+			add_splendor = -800
+			add_adm_power = 40
+			add_dip_power = 40
+			add_mil_power = 40
 		}
 		ai_will_do = {factor = 1}
 	}

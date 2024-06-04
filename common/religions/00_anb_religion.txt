@@ -2754,7 +2754,7 @@ goblin = {
 			land_attrition = -0.2
 			shock_damage = 0.15
 		}
-
+		fervor = yes 
 		province = {
 			local_missionary_strength = 0.02
 		}
@@ -3939,6 +3939,7 @@ fey_religion = {
 			development_cost = -0.1
 			global_missionary_strength = 0.02
 		}
+		fervor = yes 
 
 		on_convert = {
 			change_religion = eordellon
@@ -4072,7 +4073,7 @@ fey_religion = {
 			hostile_attrition = 2
 			war_exhaustion = -0.03
 		}
-
+		fervor = yes 
 		on_convert = {
 			change_religion = winter_court
 			add_prestige = -100

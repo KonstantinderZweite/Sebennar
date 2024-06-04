@@ -74,8 +74,8 @@ on_startup = {
 		flavor_nuugdan_tsarai.1					#Faceless Queen
 		flavour_balrijin.29	#Balrijin-Lanjinhui favor/trust setup
 		the_command.0			#The Great Command
-		zokka_jaddari_war.1 #zokka starting event
-		zokka_jaddari_war.14 #jaddari starting event
+		#zokka_jaddari_war.1 #zokka starting event
+		#zokka_jaddari_war.14 #jaddari starting event
 		spirits.001				#Sets up temple coverage
 		treasurefleet.0			#Treasure Fleet Begin Cycle
 		guhe.100 				#Guhe Setup Event
@@ -1325,7 +1325,7 @@ on_war_won = {
 				tag = F25
 			}
 		}
-		country_event = { id = zokka_jaddari_war.13 }
+		#country_event = { id = zokka_jaddari_war.13 }
 	}
 	
 	remove_country_modifier = anb_defense_of_empire
@@ -8784,17 +8784,17 @@ on_five_year_pulse = {
 		100 = ideagroups.1609
 
 		# Naval		11 (7g 4b)
-		100 = ideagroups.1700
-		100 = ideagroups.1701
-		100 = ideagroups.1702
-		100 = ideagroups.1703
-		100 = ideagroups.1704
-		100 = ideagroups.1705
-		100 = ideagroups.1706
-		100 = ideagroups.1707
-		100 = ideagroups.1708
-		100 = ideagroups.1709
-		100 = ideagroups.1710
+		#100 = ideagroups.1700
+		#100 = ideagroups.1701
+		#100 = ideagroups.1702
+		#100 = ideagroups.1703
+		#100 = ideagroups.1704
+		#100 = ideagroups.1705
+		#100 = ideagroups.1706
+		#100 = ideagroups.1707
+		#100 = ideagroups.1708
+		#100 = ideagroups.1709
+		#100 = ideagroups.1710
 
 		# Influence		11 (7g 4b)
 		100 = ideagroups.1800

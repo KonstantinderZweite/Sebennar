@@ -1,7 +1,7 @@
 
 # No previous file for Mansur
 
-culture = doos
+culture = quchamar
 religion = animism
 capital = ""
 

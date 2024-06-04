@@ -1,7 +1,7 @@
 
 # No previous file for Yarmanka
 
-culture = doosun
+culture = quruwei
 religion = animism
 capital = ""
 

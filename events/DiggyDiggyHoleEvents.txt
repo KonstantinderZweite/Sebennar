@@ -4427,7 +4427,7 @@ province_event = {
 		}
 		is_capital = no                                #am dum - capital should be too bound to existing administration/the court/ways of life for this event to happen
 		NOT = { culture = obsidian_dwarf }     #Obsidian invasion is too angry to swap 
-		NOT = { owner = { has_disaster = hoardcurse } }	#hoardcurse deals with this, just in case these want to fire (it should not!)
+			#hoardcurse deals with this, just in case these want to fire (it should not!)
 	}
 	
 	immediate = {

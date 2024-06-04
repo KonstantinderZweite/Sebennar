@@ -573,7 +573,7 @@ estate_middlecastes_control_over_monetary_policy = {
 
 estate_middlecastes_indebted_to_middlecastes = {
 	can_select = {
-		NOT = { has_disaster = hoardcurse }
+		
 	}
 	icon = privilege_give_money
 	max_absolutism = -5

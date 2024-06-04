@@ -715,7 +715,7 @@ dock = {
 		modifier = {
 			owner = {
 				OR = {
-					full_idea_group = naval_ideas
+					
 					has_idea_group = maritime_ideas
 				}
 			}

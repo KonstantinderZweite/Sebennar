@@ -690,12 +690,12 @@ emerald_spire = {
 			diplomatic_reputation = 1.5
 		}
 		on_upgraded = {
-			owner = {
-				add_permanent_province_modifier = {
-					name = emerald_spire_emerald_deposit_beneath_the_spire
-					duration = -1
-				}
-			}
+			#owner = {
+			#	add_permanent_province_modifier = {
+			#		name = emerald_spire_emerald_deposit_beneath_the_spire
+			#		duration = -1
+			#	}
+			#}
 		}
 	}
 }

@@ -1027,10 +1027,7 @@ country_event = {
 				trigger = {	has_country_flag = orldhum_vampiric_trysts }
 				country_event = { id = flavour_orldhum.66 } #vampiric trysts
 			}
-			1000000 = {
-				trigger = {	has_disaster = hoardcurse }
-				country_event = { id = flavour_orldhum.69 } #Spoiled Echelon
-			}
+			
 		}
 		#Currently in on_five_year_pulse
 	}
@@ -2012,7 +2009,7 @@ country_event = {
 	
 	trigger = {
 		is_or_was_tag = { tag = I08 }
-		has_disaster = hoardcurse
+		always = no
 		NOT = { has_country_flag = curtailing_hoardcursed }
 	}
 	
@@ -2071,7 +2068,7 @@ country_event = {
 	
 	trigger = {
 		is_or_was_tag = { tag = I08 }
-		has_disaster = hoardcurse
+		always = no
 	}
 	
 	mean_time_to_happen = {
@@ -2130,7 +2127,7 @@ country_event = {
 	
 	trigger = {
 		is_or_was_tag = { tag = I08 }
-		has_disaster = hoardcurse
+		always = no
 		NOT = { has_country_flag = hoard_contract_reform }
 	}
 	

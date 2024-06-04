@@ -104,12 +104,7 @@ revolutionary_rebels = {
 		}
 
 		#Anbennar
-		modifier = {
-			factor = 0
-			owner = {
-				has_disaster = hoardcurse
-			}
-		}
+		
 	}
  
  	# This is checked for EACH province in the Area of Operations

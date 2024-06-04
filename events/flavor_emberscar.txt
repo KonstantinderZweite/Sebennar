@@ -469,7 +469,7 @@ country_event = {
 	option = {
 	clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.18.b"
-		clr_country_flag = Earth_battle
+		clr_country_flag = earth_battle
 	}
 	
 }
@@ -537,7 +537,7 @@ country_event = {
 	option = {
 		clr_country_flag = v11_hunt 
 		name = "flavor_emberscar.22.b"
-		clr_country_flag = Pyschodelic_battle
+		clr_country_flag = pyschodelic_battle
 	}
 	
 }

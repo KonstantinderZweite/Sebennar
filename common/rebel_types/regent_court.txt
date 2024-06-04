@@ -236,7 +236,7 @@ regent_court_rebels = {
 			limit = {
 				NOT = { religion = regent_court }
 				dominant_religion = regent_court
-				NOT = { has_disaster = ibevar_reformation }
+				#NOT = { has_disaster = ibevar_reformation }
 			}
 			change_religion = regent_court
 			force_converted = yes
