@@ -147,10 +147,10 @@ giberd_academy_of_engineering = {
 		on_upgraded = {
 			owner = { 
 				change_innovativeness = 3
-				add_country_modifier = {
-					name = giberd_academy_of_engineering_building_boom
-					duration = 3650
-				}
+				#add_country_modifier = {
+				#	name = giberd_academy_of_engineering_building_boom
+				#	duration = 3650
+				#}
 			}
 			add_building = university
 		}

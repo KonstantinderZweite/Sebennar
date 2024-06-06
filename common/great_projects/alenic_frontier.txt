@@ -293,12 +293,12 @@ gawed_castle_gaweton = {
 			province_warscore_cost = -0.1
 		}
 		on_upgraded = {
-			owner = {
-				add_country_modifier = {
-					name = gawed_castle_gaweton_northern_lord_meeting
-					duration = 5475
-				}
-			}
+			#owner = {
+			#	add_country_modifier = {
+			#		name = gawed_castle_gaweton_northern_lord_meeting
+			#		duration = 5475
+			#	}
+			#}
 		}
 	}
 }

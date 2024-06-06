@@ -145,12 +145,12 @@ urviksten_ebonsteel_armory = {
 		on_upgraded = {
 			add_base_production = 3
 			center_of_trade = 1
-			owner = {
-				add_country_modifier = {
-					name = urviksten_ebonsteel_armory_roars_to_life
-					duration = 730
-				}
-			}
+			#owner = {
+			#	add_country_modifier = {
+			#		name = urviksten_ebonsteel_armory_roars_to_life
+			#		duration = 730
+			#	}
+			#}
 		}
 	}
 }

@@ -259,10 +259,10 @@ ovdal_tungr_port_hold = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = ovdal_tungr_port_hold_ship_durability
-					duration = 730
-				}
+				#add_country_modifier = {
+				#	name = ovdal_tungr_port_hold_ship_durability
+				#	duration = 730
+				#}
 			}
 		}
 	}
@@ -420,10 +420,10 @@ marrhold_gate_to_the_serpentspine = {
 					manuever = 5
 					siege = 2
 				}
-				add_country_modifier = {
-					name = marrhold_tatake_tatake
-					duration = 730
-				}	
+				#add_country_modifier = {
+				#	name = marrhold_tatake_tatake
+				#	duration = 730
+				#}	
 			}
 		}
 	}
@@ -562,10 +562,10 @@ verkal_ozovar_phokhao_citadel = {
 		on_upgraded = {
 			owner = {
 				add_dip_power = 60
-				add_country_modifier = {
-					name = verkal_ozovar_phokhao_citadel_its_simple_gentlemen
-					duration = 5475
-				}
+				#add_country_modifier = {
+				#	name = verkal_ozovar_phokhao_citadel_its_simple_gentlemen
+				#	duration = 5475
+				#}
 			}
 		}
 	}

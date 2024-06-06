@@ -32,8 +32,7 @@ capital = 3004
 		dip = 6
 		mil = 3
 	}
-	add_queen_personality = immortal_personality
-	set_consort_flag = set_immortality
+	set_consort_flag = long_lived_ruler
 	}
 	1438.3.10 = {
 
@@ -49,9 +48,8 @@ capital = 3004
 		dip = 6
 		mil = 4
 	}
-	add_heir_personality = immortal_personality
 	add_heir_personality = scholar_personality
-	set_heir_flag = set_immortality
+	set_heir_flag = long_lived_ruler
 }
 1430.1.1 = {
 	add_country_modifier = {

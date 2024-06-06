@@ -140,12 +140,12 @@ damescrown_grand_exchange = {
 			center_of_trade_upgrade_cost = -0.2
 		}
 		on_upgraded = {
-			owner = {
-				add_country_modifier = {
-					name = damescrown_grand_exchange_the_prosperous_merchants
-					duration = 7300
-				}
-			}
+			#owner = {
+			#	add_country_modifier = {
+			#		name = damescrown_grand_exchange_the_prosperous_merchants
+			#		duration = 7300
+			#	}
+			#}
 		}
 	}
 }
@@ -287,12 +287,12 @@ beepeck_the_largest_small_city = {
 			merchants = 1
 		}
 		on_upgraded = {
-			owner = {
-				add_country_modifier = {
-					name = beepeck_the_largest_small_city_traders_of_beepeck_dominating
-					duration = 9125
-				}
-			}
+			#owner = {
+			#	add_country_modifier = {
+			#		name = beepeck_the_largest_small_city_traders_of_beepeck_dominating
+			#		duration = 9125
+			#	}
+			#}
 		}
 	}
 }
@@ -442,12 +442,12 @@ ara_temple = {
 			global_tax_modifier = 0.1
 		}
 		on_upgraded = {
-			owner = {
-				add_country_modifier = {
-					name = ara_temple_lods_of_emone
-					duration = 3650
-				}
-			}
+			#owner = {
+			#	add_country_modifier = {
+			#		name = ara_temple_lods_of_emone
+			#		duration = 3650
+			#	}
+			#}
 		}
 	}
 }

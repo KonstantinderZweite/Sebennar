@@ -400,10 +400,10 @@ gundhaghidur_library_of_insight = {
 		on_upgraded = {
 			owner = { 
 				change_innovativeness = 3
-				add_country_modifier = {
-					name = gundhaghidur_library_of_insight_library_research
-					duration = 5475
-				}
+				#add_country_modifier = {
+				#	name = gundhaghidur_library_of_insight_library_research
+				#	duration = 5475
+				#}
 			}
 		}
 	}
@@ -548,10 +548,10 @@ aoshan_hanging_temple = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = aoshan_hanging_temple_hokuto_shinken
-					duration = 5475
-				}
+				#add_country_modifier = {
+				#	name = aoshan_hanging_temple_hokuto_shinken
+				#	duration = 5475
+				#}
 				define_general = {
 					name = "Kenshiro"
 					trait = master_of_arms_personality

@@ -820,7 +820,7 @@ expansion_ideas = {
 	}
 
 	ai_will_do = {
-		factor = 0.55
+		factor = 0.75
 		modifier = {
 			factor = 10
 			OR = {
@@ -850,7 +850,7 @@ expansion_ideas = {
 			}
 		}
 		modifier = {
-			factor = 0
+			factor = 1
 			NOT = { is_colonial_nation = yes }
 			NOT = {
 				any_owned_province = {
@@ -859,12 +859,28 @@ expansion_ideas = {
 			}
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.2
 			NOT = {
 				technology_group = western
 				technology_group = eastern
 				technology_group = muslim
 			}
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 5
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 10
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 15
+		}
+		modifier = {
+			factor = 2.0
+			num_of_ports = 20
 		}
 	}
 }

@@ -252,10 +252,10 @@ verkal_skomdihr_warding_gate = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = verkal_skomdihr_warding_gate_extra_firepower
-					duration = 730
-				}
+				#add_country_modifier = {
+				#	name = verkal_skomdihr_warding_gate_extra_firepower
+				#	duration = 730
+				#}
 			}
 		}
 	}
@@ -343,10 +343,10 @@ ovdal_lodhum_tunnel_of_love = {
 		on_upgraded = {
 			add_center_of_trade_level = 1
 			owner = {
-				add_country_modifier = {
-					name = ovdal_lodhum_tunnel_of_love_colonizing_the_serpentspine
-					duration = 7300
-				}
+				#add_country_modifier = {
+				#	name = ovdal_lodhum_tunnel_of_love_colonizing_the_serpentspine
+				#	duration = 7300
+				#}
 			}
 		}
 	}
@@ -515,12 +515,12 @@ arg_ordstun_great_clast_shafts = {
 			production_efficiency = 0.1
 		}
 		on_upgraded = {
-			owner = {
-				add_country_modifier = {
-					name = arg_ordstun_great_clast_shafts_development
-					duration = 1
-				}
-			}
+			#owner = {
+			#	add_country_modifier = {
+			#		name = arg_ordstun_great_clast_shafts_development
+			#		duration = 1
+			#	}
+			#}
 		}
 	}
 }

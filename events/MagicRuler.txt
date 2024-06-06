@@ -8071,8 +8071,8 @@ country_event = {
 			factor = 50
 		}
 
-		add_adm_power = -5
-		add_mil_power = -5
+		add_adm_power = -400
+		add_mil_power = -400
 		custom_tooltip = magic_absorb_life_effect_tt
 		country_event = { id = magic_ruler.13 }
 

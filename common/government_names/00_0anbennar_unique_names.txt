@@ -3792,29 +3792,29 @@ kinah_federation = {
 	}
 }
 
-great_corsair_empire = {
-	rank = {
-		1 = GREAT_CORSAIR_EMPIRE
-		2 = GREAT_CORSAIR_EMPIRE
-		3 = GREAT_CORSAIR_EMPIRE
-	}
+#great_corsair_empire = {
+#	rank = {
+#		1 = GREAT_CORSAIR_EMPIRE
+#		2 = GREAT_CORSAIR_EMPIRE
+#		3 = GREAT_CORSAIR_EMPIRE
+#	}
 	
-	ruler_male = {
-		1 = CORSAIR_EMPEROR
-		2 = CORSAIR_EMPEROR
-		3 = CORSAIR_EMPEROR
-	}
+#	ruler_male = {
+#		1 = CORSAIR_EMPEROR
+#		2 = CORSAIR_EMPEROR
+#		3 = CORSAIR_EMPEROR
+#	}
 
-	ruler_female = {
-		1 = CORSAIR_EMPRESS
-		2 = CORSAIR_EMPRESS
-		3 = CORSAIR_EMPRESS
-	}
+#	ruler_female = {
+#		1 = CORSAIR_EMPRESS
+#		2 = CORSAIR_EMPRESS
+#		3 = CORSAIR_EMPRESS
+#	}
 
-	trigger = {
-		has_reform = great_corsair_empire_reform
-	}
-}
+#	trigger = {
+#		has_reform = great_corsair_empire_reform
+#	}
+#}
 
 shrine = {
 	rank = {

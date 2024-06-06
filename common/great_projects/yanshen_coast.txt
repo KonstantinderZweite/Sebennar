@@ -715,10 +715,10 @@ yinquan_the_conquerors_hotspring = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = yinquan_the_conquerors_hotspring_soaked_men_tell_no_tales
-					duration = 7300
-				}
+				#add_country_modifier = {
+				#	name = yinquan_the_conquerors_hotspring_soaked_men_tell_no_tales
+				#	duration = 7300
+				#}
 			}
 		}
 	}

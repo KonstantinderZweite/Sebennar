@@ -116,12 +116,12 @@ marrhold_the_feather_academy = {
 			leader_land_manuever = 1
 		}
 		on_upgraded = {
-			owner = {
-				add_country_modifier = {
-				name = marrhold_the_feather_academy_aerial_cavalry
-				duration = 730
-				}
-			}
+			#owner = {
+			#	add_country_modifier = {
+			#	name = marrhold_the_feather_academy_aerial_cavalry
+			#	duration = 730
+			#	}
+			#}
 		}
 	}
 }

@@ -267,10 +267,10 @@ seghdihr_home_of_the_seg_band = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = seghdihr_home_of_the_seg_band_warriors_of_the_segbandal
-					duration = 730
-				}
+				#add_country_modifier = {
+				#	name = seghdihr_home_of_the_seg_band_warriors_of_the_segbandal
+				#	duration = 730
+				#}
 			}
 		}
 	}

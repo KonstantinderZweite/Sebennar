@@ -137,10 +137,10 @@ earthseed = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = earthseed_missionaries
-					duration = 7300
-				}
+				#add_country_modifier = {
+				#	name = earthseed_missionaries
+				#	duration = 7300
+				#}
 				add_estate_loyalty = {
 					estate = estate_church
 					loyalty = 15
@@ -286,10 +286,10 @@ ovdal_kanzad_cannon_foundry = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = ovdal_kanzad_cannon_foundry_experimental_artillery
-					duration = 730
-				}
+				#add_country_modifier = {
+				#	name = ovdal_kanzad_cannon_foundry_experimental_artillery
+				#	duration = 730
+				#}
 			}
 		}
 	}
@@ -413,10 +413,10 @@ grozumdhir_green_gate = {
 			missionaries = 1
 		}
 		on_upgraded = {
-			add_country_modifier = {
-				name = grozumdhir_green_gate_friendlier_relations
-				duration = 7300
-			}
+			#add_country_modifier = {
+			#	name = grozumdhir_green_gate_friendlier_relations
+			#	duration = 7300
+			#}
 		}
 	}
 }
@@ -550,10 +550,10 @@ ovdal_az_an_grand_lake_ballroom = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = ovdal_az_an_display_of_state_power
-					duration = 5475
-				}
+				#add_country_modifier = {
+				#	name = ovdal_az_an_display_of_state_power
+				#	duration = 5475
+				#}
 			}
 		}
 	}

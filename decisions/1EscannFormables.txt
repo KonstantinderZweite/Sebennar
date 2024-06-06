@@ -419,11 +419,10 @@ country_decisions = {
 			is_at_war = no
 			NOT = { has_country_modifier = monstrous_nation }
 			
-			if = {
-				limit = { has_adventurer_reform = yes }
+				NOT = { has_country_modifier = monstrous_nation }
 				has_reform = found_our_nation
 				has_reform = local_administration
-			}
+			
 			#num_of_cities = 5
 			
 			#Ruler Prerequisites
@@ -660,11 +659,10 @@ country_decisions = {
 			government_rank = 1
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			if = {
-				limit = { has_adventurer_reform = yes }
+				NOT = { has_country_modifier = monstrous_nation }
 				has_reform = found_our_nation
 				has_reform = local_administration
-			}
+			
 			#num_of_cities = 5			
 			if = {
 				limit = { has_dlc = "Wealth of Nations" }

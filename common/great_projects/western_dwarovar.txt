@@ -124,10 +124,10 @@ kronium_throne = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = kronium_throne_one_throne_to_rule_them_all
-					duration = 3650
-				}
+				#add_country_modifier = {
+				#	name = kronium_throne_one_throne_to_rule_them_all
+				#	duration = 3650
+				#}
 			}
 		}
 	}
@@ -260,10 +260,10 @@ amlharaz_assembly = {
 		on_upgraded = {
 		add_base_production = 3
 			owner = {
-				add_country_modifier = {
-					name = amlharaz_assembly_hold_council
-					duration = 3650
-				}
+				#add_country_modifier = {
+				#	name = amlharaz_assembly_hold_council
+				#	duration = 3650
+				#}
 			}
 		}
 	}
@@ -394,10 +394,10 @@ fortress_of_verkal_vazkron = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = fortress_of_verkal_vazkron_capital_terrain_bonus
-					duration = 730
-				}
+				#add_country_modifier = {
+				#	name = fortress_of_verkal_vazkron_capital_terrain_bonus
+				#	duration = 730
+				#}
 			}
 		}
 	}
@@ -1074,10 +1074,10 @@ orldhum_estates = {
 		on_upgraded = {
 			add_base_manpower = 3
 			owner = {
-				add_country_modifier = {
-					name = haraz_orldhum_nobles_pleased_with_hold_improvements
-					duration = 10950
-				}
+				#add_country_modifier = {
+				#	name = haraz_orldhum_nobles_pleased_with_hold_improvements
+				#	duration = 10950
+				#}
 				add_estate_loyalty = {
 					estate = estate_nobles
 					loyalty = 15
@@ -1217,10 +1217,10 @@ khugdihr_bank = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = khugdihr_bank_generous_interest_rates
-					duration = 1825
-				}
+				#add_country_modifier = {
+				#	name = khugdihr_bank_generous_interest_rates
+				#	duration = 1825
+				#}
 			}
 		}
 	}
@@ -1348,9 +1348,9 @@ orlazam_food_silos = {
 		}
 		on_upgraded = {
 			owner = {
-				add_country_modifier = {
-					name = orlazam_food_silos_shrimp_fried_rice
-					duration = 7300
+				#add_country_modifier = {
+				#	name = orlazam_food_silos_shrimp_fried_rice
+				##	duration = 7300
 				}
 			}
 		}
@@ -1481,10 +1481,10 @@ ramvault_mines = {
 		on_upgraded = {
 			add_base_production = 3
 			owner = {
-				add_country_modifier = {
-					name = ramvault_mines_rise_of_the_rams
-					duration = 730
-				}
+				#add_country_modifier = {
+				#	name = ramvault_mines_rise_of_the_rams
+				#	duration = 730
+				#}
 			}
 		}
 	}
@@ -1964,10 +1964,9 @@ sedadhum_mining_settlement = {
 		}
 		on_upgraded = {
 			change_trade_goods = mithril
-			add_permanent_province_modifier = {
-				name = sedadhum_discovery_of_mithril_small
-				duration = -1
-			}
+			#add_permanent_province_modifier = {
+			#	duration = -1
+			#}
 		}
 	}
 	tier_2 = {
@@ -1989,10 +1988,10 @@ sedadhum_mining_settlement = {
 		}
 		on_upgraded = {
 			remove_province_modifier = sedadhum_discovery_of_mithril_small
-			add_permanent_province_modifier = {
-				name = sedadhum_discovery_of_mithril_medium
-				duration = -1
-			}
+			#add_permanent_province_modifier = {
+			#	name = sedadhum_discovery_of_mithril_medium
+			#	duration = -1
+			#}
 		}
 	}
 	tier_3 = {
@@ -2015,10 +2014,10 @@ sedadhum_mining_settlement = {
 		on_upgraded = {
 			center_of_trade = 1
 			remove_province_modifier = sedadhum_discovery_of_mithril_medium
-			add_permanent_province_modifier = {
-				name = sedadhum_discovery_of_mithril_large
-				duration = -1
-			}
+			#add_permanent_province_modifier = {
+			#	name = sedadhum_discovery_of_mithril_large
+			#	duration = -1
+			#}
 		}
 	}
 }

@@ -155,12 +155,12 @@ ibevar_temple_of_munas = {
 			global_tax_income = 75
 		}
 		on_upgraded = {
-			owner = {
-				add_country_modifier = {
-					name = ibevar_temple_of_munas_boon
-					duration = 7300
-				}
-			}
+			#owner = {
+				#add_country_modifier = {
+				#	name = ibevar_temple_of_munas_boon
+				#	duration = 7300
+				#}
+			#}
 		}
 	}
 }

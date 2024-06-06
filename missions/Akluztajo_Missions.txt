@@ -107,7 +107,7 @@ required_missions = {Z87_failed_state}
 	manpower = 15
 }
 effect = {
-country_event = { id = Akluztajo.3}
+country_event = { id = flavor_akluztajo.3}
 }
 }
 Z87_exterminate_greentide = {
@@ -191,7 +191,7 @@ trigger = {
 is_year = 1465
 }
 effect = {
-country_event = { id = Akluztajo.2} 
+country_event = { id = flavor_akluztajo.2} 
 }
 }
 

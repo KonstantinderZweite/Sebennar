@@ -47,8 +47,8 @@ add_army_tradition = 60
 		dip = 2
 		mil = 5
 	}
-	add_heir_personality = immortal_personality
-	set_heir_flag = set_immortality
+	
+	set_heir_flag = long_lived_ruler
 	add_country_modifier = {
 		name = jaddari_masnsih_culture_modifier
 		duration = -1

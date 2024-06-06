@@ -395,10 +395,10 @@ guhe_the_cheng_of_guhe = {
 		on_upgraded = {
 			change_trade_goods = precursor_relics
 			set_province_flag = permanent_precursor_relics
-			add_permanent_province_modifier = {
-				name = guhe_discovery_of_precursor_relics
-				duration = -1
-			}
+			#add_permanent_province_modifier = {
+			#	name = guhe_discovery_of_precursor_relics
+			#	duration = -1
+			#}
 		}
 	}
 }

@@ -45,5 +45,5 @@ capital = 608
 		dip = 3
 		mil = 2
 	}
-	add_queen_personality = immortal_personality
+	set_consort_flag = long_lived_ruler
 }
