@@ -1281,10 +1281,6 @@ Expansion = {
 			trade_goods = copper
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = F23_commoner_tt
-				has_country_flag = F23_commoner_path
-			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				trade_goods = copper
 				value = 3
