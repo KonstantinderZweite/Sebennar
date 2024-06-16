@@ -211,36 +211,16 @@ Naval = {
 				name = F23_divenhal_dominance
 				duration = 10950
 			}
-			 west_damesear_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
+			 west_damesear_area = { 
 				add_permanent_claim = ROOT
 			}
 			east_damesear_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 			14 = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
 				add_permanent_claim = ROOT
 			}
 			376 = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
 				add_permanent_claim = ROOT
 			}
 		}
