@@ -113,6 +113,7 @@ country_decisions = {
 		}
 		
 		allow = {
+			tag = R62
 			adm_power = 50
 			hidden_trigger = {
 				NOT = { has_country_flag = command_school_curriculums_menu_open_flag }
@@ -211,6 +212,7 @@ country_decisions = {
 		}
 		
 		allow = {
+			tag = R62
 			hidden_trigger = { has_country_flag = command_enslaved_the_oracle_flag }
 			NOT = { has_country_modifier = magic_cooldown }
 			is_at_war = yes
@@ -385,6 +387,7 @@ country_decisions = {
 		}
 		allow = {
 			hidden_trigger = {
+			tag = R62			
 				has_enabled_estate_action = {
 					estate_action = SPECIAL_COMMISSIONS_COMMAND
 				}
@@ -461,6 +464,7 @@ country_decisions = {
 		}
 		allow = {
 			hidden_trigger = {
+				tag = R62
 				has_enabled_estate_action = {
 					estate_action = RECRUIT_MINISTER_WOLF_COMMAND
 				}
@@ -495,6 +499,7 @@ country_decisions = {
 		}
 		allow = {
 			hidden_trigger = {
+				tag = R62
 				has_enabled_estate_action = {
 					estate_action = GRANT_GENERALSHIP_LION_COMMAND
 				}
@@ -529,6 +534,7 @@ country_decisions = {
 		}
 		allow = {
 			hidden_trigger = {
+				tag = R62
 				has_enabled_estate_action = {
 					estate_action = REASSESS_TEACHINGS_TIGER_COMMAND
 				}
@@ -563,6 +569,7 @@ country_decisions = {
 		}
 		allow = {
 			hidden_trigger = {
+				tag = R62
 				has_enabled_estate_action = {
 					estate_action = INVITE_WUHYUN_TIGER_COMMAND
 				}
