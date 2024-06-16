@@ -100,4 +100,61 @@ country_decisions = {
 			factor = 0
 		}
 	}
+	seb_fort_exceptions = {
+	
+	potential = {
+	ai = no
+	has_country_flag = Qol_flag
+	NOT = { has_country_flag = Qol_general_flag }
+	}
+	provinces_to_highlight = {
+	OR = {
+						province_group = white_walls
+                        province_group = wall_of_yanshen
+                        province_id = 4396
+                        province_id = 4600
+                        province_id = 4489
+                        province_id = 4470
+                        province_id = 4500
+                        province_id = 4620
+                        province_id = 4364
+                        province_id = 4444
+                        province_id = 4548
+                        province_id = 4361
+                        province_id = 4533
+                        province_id = 4622
+                        province_id = 4625
+                        province_id = 4626
+                        province_id = 4816
+                        province_id = 4173
+                        province_id = 4174
+                        province_id = 4176
+                        province_id = 854
+                        province_id = 855
+                        province_id = 831
+                        province_id = 832
+                        province_id = 833
+                        province_id = 14
+                        province_id = 11
+                        province_id = 39
+                        province_id = 13
+                        province_id = 46
+                        province_id = 51
+                        province_id = 379
+                        province_id = 4122
+                        province_id = 4128
+                        province_id = 168
+                        province_id = 2
+                        province_id = 4149
+                        province_id = 276
+                        province_id = 4119
+						}
+	}
+	allow = {
+	
+	}
+	effect = {
+	
+	}
+}
 }

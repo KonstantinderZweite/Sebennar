@@ -353,11 +353,16 @@ Z87_religious_unity
 }
 trigger ={ 
 treasury = 5000
-ruler_has_mage_personality = yes
+OR ={
 custom_trigger_tooltip = {
 tooltip = tooltip_has_divination_2
 has_ruler_flag = divination_2
 					}
+custom_trigger_tooltip = {
+			tooltip = artifice_requires_artificery_only_mode_tt
+			has_country_flag = magic_artificery_artificery_only
+		}
+}
 NOT = { great_power_rank = 8 }
 monthly_income = 200
 NOT = {subsidised_percent_amount = { 

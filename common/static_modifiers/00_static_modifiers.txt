@@ -484,6 +484,9 @@ prosperity = {
 	local_development_cost = -0.05
 	trade_goods_size_modifier = 0.15
 	local_autonomy = -0.05
+	
+	#ANBENNAR
+	
 }
 
 slaves_raided = {
@@ -894,6 +897,7 @@ mercantilism = {
 
 	tec_mechanists_influence = 0.1
 	nl_trade_barons_influence = 0.1 # Does this make sense for the free trade dudes lol?
+	
 }
 
 army_tradition = {
@@ -1327,6 +1331,10 @@ religious_unity = {
 	church_loyalty_modifier = 0.05
 	brahmins_hindu_loyalty_modifier = 0.05
 	yearly_harmony = 1
+	
+	#Anbennar
+	pen_clodhoppers_influence = 0.05
+	
 }
 
 inverse_religious_unity = {
@@ -1512,6 +1520,7 @@ land_forcelimit = {
 #100 Naval Forcelimit = 1
 naval_forcelimit = {
     free_navy_leader_pool = 1.25 #80 Naval Forcelimit -> +1 Free Leader
+	
 }
 
 trade_company_strong = {
@@ -1575,6 +1584,8 @@ march_subject = {
 
 vassal_subject = {
 	land_forcelimit = 1
+	
+	
 }
 
 daimyo_subject = {
@@ -2606,6 +2617,9 @@ average_global_autonomy = { #100% autonomy => 100% modifier #1.35
 
 reverse_average_global_autonomy = { #100% autonomy => 0% modifier #1.35
 	monthly_council_consensus = 0.2
+	
+	
+	
 }
 #Irdaeos Worship Schools
 filustkhuga_scholar_modifier = {

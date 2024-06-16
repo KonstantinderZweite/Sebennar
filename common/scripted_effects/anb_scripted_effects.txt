@@ -6148,3 +6148,4 @@ create_flagship_with_modifications = {
 		clr_country_flag = forbid_flagship_modification_flag_hull_sheating
 	}
 }
+

@@ -72,3 +72,40 @@ country_event = {
 		override_country_name = ORDER_OF_ST_ALDRESIA
 	}
 }
+#Start Event - Imperial Bodyguard Vassal Choice
+country_event = { #Lothane Wex demands Subjugation from Orda Aldresia
+	id = flavor_orda_aldresia.2
+	title = flavor_orda_aldresia.2.t
+	desc = flavor_orda_aldresia.2.d
+	picture = WAR_OF_THE_ROSES_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = A77
+		NOT = { is_year = 1445 }
+	}
+
+	option = { #become imperial bodyguard
+		name = flavor_orda_aldresia.2.a
+		ai_chance = {
+			factor = 1
+		}
+		custom_tooltip = flavor_orda_aldresia.2.a.tt
+		add_country_modifier = {
+			name = memory_of_skylance
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = sentinels_of_the_usurper
+			duration = 3650
+		}
+		emperor = {
+			add_country_modifier = {
+				name = supporting_orda_aldresia
+				duration = -1
+			}
+		}
+	}
+}

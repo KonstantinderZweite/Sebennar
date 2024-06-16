@@ -1350,8 +1350,8 @@ orlazam_food_silos = {
 			owner = {
 				#add_country_modifier = {
 				#	name = orlazam_food_silos_shrimp_fried_rice
-				##	duration = 7300
-				}
+				# 	duration = 7300
+				#}
 			}
 		}
 	}

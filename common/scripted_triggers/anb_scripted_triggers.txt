@@ -1639,6 +1639,7 @@ ruler_is_immortal = {
 			has_ruler_flag = is_a_exposed_homunculus
 			ruler_culture = homunculi
 			has_country_modifier = varamhar_blessed_of_surael
+			has_country_modifier = Z87_dark_fey_blessing
 			has_ruler_flag = is_holi
 			has_ruler_flag = is_sado
 		}

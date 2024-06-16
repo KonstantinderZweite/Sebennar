@@ -1565,3 +1565,28 @@ kalyin_conversion_2 = {
 		}
 	}
 }
+kalsyto_revolution_siege = {
+	FROM = { 
+		set_revolution_in_province = yes
+		owner = {
+			if = {
+				limit = {
+					all_owned_province = {
+						OR = {
+							has_revolution_in_province = yes 
+							NOT = { same_continent = capital }
+						}
+					}
+					NOT = { tag = J33 }
+					kalsyto_not_CDS = yes
+				}
+				if = {
+					limit = { NOT = { government = republic } }
+					change_government = republic
+					change_government_reform_progress = 200
+				}
+				add_government_reform = revolutionary_republic_reform
+			}
+		}
+	}
+}
