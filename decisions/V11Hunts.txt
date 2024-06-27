@@ -2,16 +2,18 @@ country_decisions = {
 dragonnel_death_hunt = {
 		major = yes
 		potential = {
-			has_regency = no
+			tag = V11
 			NOT = { has_country_flag = Death_win }
 			mission_completed = V11_dragonnel_hunts
+			has_regency = no
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		allow = {
-		not = { has_country_flag = v11_hunt }
-			}
+			tag = V11
+			not = { has_country_flag = v11_hunt }
+		}
 		effect = {
 			set_country_flag = death_battle
 			set_country_flag = v11_hunt
@@ -25,16 +27,18 @@ dragonnel_death_hunt = {
 dragonnel_fire_hunt = {
 		major = yes
 		potential = {
-			has_regency = no
+			tag = V11
 			NOT = { has_country_flag = Fire_win }
 			mission_completed = V11_dragonnel_hunts
+			has_regency = no
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		allow = {
-		not = { has_country_flag = v11_hunt }
-			}
+			tag = V11
+			not = { has_country_flag = v11_hunt }
+		}
 		effect = {
 		set_country_flag = fire_battle
 		set_country_flag = v11_hunt
@@ -46,16 +50,18 @@ dragonnel_fire_hunt = {
 dragonnel_pyschodelic_hunt = {
 		major = yes
 		potential = {
-			has_regency = no
+			tag = V11
 			NOT = { has_country_flag = Pyschodelic_win }
 			mission_completed = V11_dragonnel_hunts
+			has_regency = no
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		allow = {
-		not = { has_country_flag = v11_hunt }
-			}
+			tag = V11
+			not = { has_country_flag = v11_hunt }
+		}
 		effect = {
 		set_country_flag = psychodelic_battle
 			set_country_flag = v11_hunt
@@ -67,16 +73,18 @@ dragonnel_pyschodelic_hunt = {
 dragonnel_water_hunt = {
 		major = yes
 		potential = {
-			has_regency = no
+			tag = V11
 			NOT = { has_country_flag = Water_win }
 			mission_completed = V11_dragonnel_hunts
+			has_regency = no
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		allow = {
-		not = { has_country_flag = v11_hunt }
-			}
+			tag = V11
+			not = { has_country_flag = v11_hunt }
+		}
 		effect = {
 		set_country_flag = water_battle
 			set_country_flag = v11_hunt
@@ -88,16 +96,18 @@ dragonnel_water_hunt = {
 dragonnel_earth_hunt = {
 		major = yes
 		potential = {
-			has_regency = no
+			tag = V11
 			NOT = { has_country_flag = Earth_win }
 			mission_completed = V11_dragonnel_hunts
+			has_regency = no
 		}
 		ai_will_do = {
 			factor = 0
 		}
 		allow = {
-		not = { has_country_flag = v11_hunt }
-			}
+			tag = V11
+			not = { has_country_flag = v11_hunt }
+		}
 		effect = {
 		set_country_flag = earth_battle
 		set_country_flag = v11_hunt
@@ -106,7 +116,6 @@ dragonnel_earth_hunt = {
 			}		
 		}
 	}
-
 
 
 }

@@ -1,5 +1,4 @@
 namespace = flavour_spiderwretch
-
 #Mission Events
 country_event = { #Riverpath human spider exchange
 	id = flavour_spiderwretch.1
@@ -2482,7 +2481,7 @@ country_event = {
 			name = spiderwretch_yarikhoi_scholars
 			duration = 3650
 		}
-		damazgubli_area = {
+		caubheameas_area = {
 			type = all
 			add_human_minority_size_effect = yes
 		}
@@ -2979,7 +2978,7 @@ country_event = {
 
 country_event = {
 	id = flavour_spiderwretch.200
-	name = flavour_spiderwretch_ligthland_claimer_lost.t
+	title = flavour_spiderwretch_ligthland_claimer_lost.t
 	desc = flavour_spiderwretch_ligthland_claimer_lost.desc
 	picture = CIVIL_WAR_eventPicture
 

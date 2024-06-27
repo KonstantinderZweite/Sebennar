@@ -9,6 +9,7 @@ critical_events = {
 			factor = 0
 		}
 		allow = {
+			always = no
 			custom_trigger_tooltip = {
 				tooltip = Radical
 				NOT = { has_country_flag = radical_mercantilist_reforms }
@@ -25,7 +26,6 @@ critical_events = {
 				tooltip = Captain
 				NOT = { has_country_flag = grand_captain }
 			}
-			always = no
 		}
 		effect = {
 		}
