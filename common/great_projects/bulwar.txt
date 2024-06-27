@@ -615,7 +615,7 @@ sun_dial = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			warscore_cost_vs_other_religion = -0.1
+			warscore_cost_vs_other_religion = -0.075
 			prestige_per_development_from_conversion = 0.3
 			fire_damage = 0.05
 		}

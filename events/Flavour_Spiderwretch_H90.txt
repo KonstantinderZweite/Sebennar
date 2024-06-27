@@ -839,7 +839,7 @@ country_event = {
 		name = flavour_spiderwretch_silky_road.a1
 		trigger = {
 			NOT = {
-				has_country_f?ag = spiderwretch_silky_road_silkstone_option
+				has_country_flag = spiderwretch_silky_road_silkstone_option
 			}
 		}
 		ai_chance = { factor = 33 }

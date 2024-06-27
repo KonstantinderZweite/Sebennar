@@ -43,5 +43,5 @@ ebonsteel_defensive_focus = {
 	is_carolean_modifier = yes
 	morale_damage = 0.15
 	shock_damage_received = -0.2
-	fire_damage_received = - 0.05
+	fire_damage_received = -0.05
 }
