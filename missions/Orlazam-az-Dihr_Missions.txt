@@ -534,9 +534,15 @@ ramsteel_2_reclaim_the_range = {
 		}
 		
 		trigger = {
+			OR = {
 			far_moitsa_area = {
 				is_core = ROOT
 				owned_by = ROOT
+			}
+			if = {
+				limit = { has_global_flag = mp_regions_deleted }
+				always = yes
+			}
 			}
 		}
 		
@@ -1304,7 +1310,7 @@ ramsteel_4_ramsteel_production = {
 
 		trigger = {
 			OR = {
-				4236 = { #Mithradhûm
+				4236 = { #Mithradhï¿½m
 					is_core = ROOT
 					owned_by = ROOT
 				}
