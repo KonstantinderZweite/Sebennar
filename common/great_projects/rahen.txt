@@ -27,7 +27,6 @@ temple_mindanan = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -46,7 +45,6 @@ temple_mindanan = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -156,7 +154,6 @@ dye_market = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -173,7 +170,6 @@ dye_market = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -286,7 +282,6 @@ dhujati_headquarters = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -303,7 +298,6 @@ dhujati_headquarters = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -414,7 +408,6 @@ sarnihanpur_library = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -431,7 +424,6 @@ sarnihanpur_library = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -554,7 +546,6 @@ khamayodi_camp = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -571,7 +562,6 @@ khamayodi_camp = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -688,7 +678,6 @@ sheramvi_foundry = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -705,7 +694,6 @@ sheramvi_foundry = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -822,7 +810,6 @@ sardhasi_fields = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -839,7 +826,6 @@ sardhasi_fields = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -954,7 +940,6 @@ great_market_sramaya = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -971,7 +956,6 @@ great_market_sramaya = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -1100,7 +1084,6 @@ brass_palace = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}
@@ -1117,7 +1100,6 @@ brass_palace = {
 						culture_group = south_raheni
 						culture_group = middle_raheni
 						culture_group = upper_raheni
-						culture_group = southern_raheni
 						culture_group = hobgoblin
 						culture_group = wuhyun
 					}

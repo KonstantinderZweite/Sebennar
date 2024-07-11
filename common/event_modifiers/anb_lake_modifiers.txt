@@ -1771,3 +1771,6 @@ kalsyto_citizen_proclaim_superiority_mod = {
 kalsyto_CDS_cooldown = { }
 J33_selected = { }
 
+J33_concert_war = {
+	war_exhaustion_cost = -0.10
+}

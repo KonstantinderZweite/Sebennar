@@ -3728,6 +3728,10 @@ special_life_extension = {
 		always = yes
 	}
 	else_if = {
+		limit = { has_country_modifier = exceptional_willpower_75 NOT = { ruler_age = 75 } }
+		always = yes
+	}
+	else_if = {
 		limit = { has_country_modifier = gemradcurt_icey_determination NOT = { ruler_age = 100 } }
 		always = yes
 	}

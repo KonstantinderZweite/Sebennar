@@ -360,3 +360,6 @@
 
  ironwood_trees:0 "Ironwood Trees"
  ironwood_trees_desc:0 "The jungles of Dao Nako are home to one of the most peculiar natural phenomenons: organic iron. These "trees" sprout and grow like any other tree, but any attempts to grow them outside of Fangaula have failed."
+ 
+ exceptional_willpower_75:0 "Exceptional Willpower"
+ exceptional_willpower_75_desc: "Our ruler is driven to see their ambitions fulfilled.\n\n§T(This allows your ruler to live an average of 65 years, if they are not made a general)§!"

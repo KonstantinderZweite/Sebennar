@@ -27683,3 +27683,9 @@ beggaston_eternal_revolution = {
 beggaston_revolt_timer = {
 	#intentionally empty
 }
+memory_of_skylance = {
+	liberty_desire = 75
+}
+sentinels_of_the_usurper = {
+	land_morale = -0.1
+}

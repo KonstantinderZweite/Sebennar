@@ -243,6 +243,7 @@
  allow_all_state_edicts_title:0 "Allow all state edicts"
  allow_all_state_edicts_desc:0 "Allow all state edicts."
  allow_all_state_edicts_tooltip:0 " Has not allowed all state edicts."
-
+ destroy_temples_title:0 "Destroy All Temples"
+ destroy_temples_desc:0 "Destroys all temples"
  #krak
  I02_warning_tt:0 "This one triggers kraks custom disaster."

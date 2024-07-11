@@ -157,4 +157,26 @@ country_decisions = {
 	
 	}
 }
+destroy_temples = {
+		major = yes
+		potential = {
+			ai = no
+			has_country_flag = Qol_flag
+	NOT = { has_country_flag = Qol_general_flag }
+		}
+		provinces_to_highlight = {
+		
+		}
+		
+		allow = {
+			ai = no
+		}
+		
+		effect = {
+			every_owned_province = {
+			remove_building = temple
+			}
+		}
+	
+	}
 }

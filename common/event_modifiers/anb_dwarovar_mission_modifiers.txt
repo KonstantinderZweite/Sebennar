@@ -7445,7 +7445,10 @@ spiderwretch_caravan_negotiated_bad = {
 spiderwretch_caravan_bad_trade = {
 	trade_efficiency = -0.1
 }
-
+spiderwretch_ogre_engineers = {
+	fort_maintenance_modifier = -0.1
+	defensiveness = 0.1
+}
 spiderwretch_skilled_garrisons_and_builders = {
 	defensiveness = 0.3
 	build_cost = -0.1
