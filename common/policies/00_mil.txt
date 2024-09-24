@@ -698,9 +698,9 @@ guerilla_warfare = {
 		full_idea_group = quantity_ideas
 	}	
 	
-	hostile_attrition = 1
-	global_garrison_growth = 0.1
-	
+	max_hostile_attrition = 0.75
+	global_regiment_recruit_speed = -0.20
+	regiment_manpower_usage = -0.05
 	ai_will_do = {
 		factor = 0.8
 	}
@@ -1281,8 +1281,9 @@ mobile_siege_engines_act = {
 		full_idea_group = offensive_ideas 
 	}
 	
-	movement_speed = 0.1
-	artillery_levels_available_vs_fort = 2
+	artillery_power = 0.05
+	artillery_fire = 0.2
+	artillery_shock = 0.2
 
 	effect = {}
 	removed_effect = {}
@@ -1304,7 +1305,7 @@ bolstered_defence_act = {
 		full_idea_group = defensive_ideas 
 	}
 	
-	land_morale = 0.05
+	land_morale = 0.075
 	garrison_size = 0.25
 
 	effect = {}
@@ -1327,7 +1328,7 @@ handpicked_recruits_act = {
 		full_idea_group = quality_ideas 
 	}
 	
-	drill_decay_modifier = -0.15
+	drill_decay_modifier = -0.25
 	yearly_army_professionalism = 0.0075
 
 	effect = {}
@@ -1353,7 +1354,7 @@ mass_conscription_act = {
 	
 	reinforce_speed = 0.2
 	reinforce_cost_modifier = -0.2
-
+	regiment_manpower_usage = -0.05
 	effect = {}
 	removed_effect = {}
 	ai_will_do = {

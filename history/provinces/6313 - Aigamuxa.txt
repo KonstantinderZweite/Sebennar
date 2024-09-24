@@ -1,7 +1,8 @@
 capital = "Aigamuxa"
-owner = L14
-controller = L14
-add_core = L14
+
+owner = L17
+controller = L17
+add_core = L17
 culture = taafi
 religion = fangaulan_pantheon
 

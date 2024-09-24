@@ -19,11 +19,3 @@ trade_goods = iron
 capital = ""
 
 is_city = yes
-
-
-
-
-
-
-
-

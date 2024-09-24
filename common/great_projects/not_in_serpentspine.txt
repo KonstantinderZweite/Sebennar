@@ -607,6 +607,7 @@ silverforge_strongbellow_academy = {
 						culture = roilsardi
 						culture = castanorian
 						culture_group = goblin
+						culture_group = dwarven
 					}
 			}
 			province_is_or_accepts_culture = yes

@@ -1,6 +1,6 @@
-owner = L14
-controller = L14
-add_core = L14
+owner = L19
+controller = L19
+add_core = L19
 culture = kaino
 religion = fangaulan_pantheon
 

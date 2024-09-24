@@ -5,7 +5,7 @@ covenant_influence_edict = {
 	}
 	
 	allow = {
-		NOT = { has_country_flag = disable_all_state_edicts_bool }
+		always = yes
 	}
 	
 	modifier = {

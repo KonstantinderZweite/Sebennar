@@ -799,4 +799,233 @@ colonial_expansion_g = {
 	global_colonial_growth = 40
 	trade_steering = 0.1
 }
-
+#Goblin Trading Company
+z1z_successful_wars = {
+	land_morale = 0.1
+}
+z1z_extremely_successful_in_escann = {
+	province_warscore_cost = -0.1
+}
+z1z_conquerors_of_escann_modifier = {
+	land_morale = 0.1
+}
+z1z_building_up_castonath = {
+	build_cost = -0.2
+}
+z1z_our_troops_supplied = {
+	land_attrition = -0.1
+}
+z1z_enough_iron_for_a_surplus = {
+	global_regiment_cost = -0.1
+}
+z1z_first_produced_tanks = {
+	cavalry_fire = 0.25
+}
+z1z_cooperation_within_the_company = {
+	global_tax_modifier = 0.1
+}
+z1z_starting_the_wood_furnaces = {
+	production_efficiency = 0.025
+}
+z1z_turning_wood_into_coal = {
+	production_efficiency = 0.05
+}
+z1z_perfecting_coal_production = {
+	production_efficiency = 0.1
+}
+z1z_building_up_the_caves = {
+	development_cost = -0.1
+}
+z1z_cheaper_supply_routes = {
+	cavalry_cost = -0.1
+}
+z1z_independant_armies_proven = {
+	mercenary_cost = -0.1
+}
+z1z_mages_administer_caves = {
+	development_cost = -0.1
+}
+z1z_goblin_administering_the_caves = {
+	cavalry_cost = -0.1
+}
+z1z_food_readily_available = {
+	global_regiment_cost = -0.05
+}
+z1z_massive_iron_deposits_found = {
+	cavalry_cost = -0.05
+}
+z1z_cutting_down_the_feywood = {
+	development_cost = -0.1
+}
+z1z_indusrializing_the_feywood = {
+	production_efficiency = 0.1
+}
+z1z_initial_fey_pact = {
+	production_efficiency = -0.2
+	land_morale = -0.1
+}
+z1z_building_up_the_manufactories = {
+	build_cost = -0.1
+	build_time = -0.1
+}
+z1z_fey_enchanted_cannons = {
+	fire_damage = 0.1
+}
+z1z_recently_connected_fey_to_tanks = {
+	cavalry_cost = 0.2
+}	
+z1z_fighting_like_the_wood_elves = {
+	movement_speed = 0.1
+}
+z1z_fey_enchanted_engines = {
+	movement_speed = 0.1
+}
+z1z_fighting_like_fey_orcs = {
+	land_morale = 0.1
+}
+z1z_fey_enchanted_chassis = {
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+}
+z1z_fey_enchanted_tracks = {
+	land_attrition = -0.1
+}
+z1z_preparing_the_fires_of_industry = {
+	development_cost = -0.1
+}
+z1z_ancient_metalworking_rediscovered = {
+	merc_maintenance_modifier = -0.1
+}
+z1z_cheaper_produciton = {
+	cavalry_cost = -0.1
+}
+z1z_goblinsteel_cannon_implemented = {
+	is_hussars_modifier = yes
+	fire_damage = 0.15
+	cavalry_cost = 0.1
+}
+z1z_goblinsteel_engine_implemented = {
+	is_hussars_modifier = yes
+	movement_speed = 0.15
+	cavalry_cost = 0.1
+}
+z1z_goblinsteel_mithril_production_methods_simplified = {
+	is_hussars_modifier = yes
+	cavalry_cost = -0.1
+	fire_damage_received = -0.05
+	shock_damage_received = -0.05
+}
+z1z_goblinsteel_chassis_implemented = {
+	is_hussars_modifier = yes
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+	cavalry_cost = 0.1
+}
+z1z_goblinsteel_fey_wood_production_methods_simplified = {
+	is_hussars_modifier = yes
+	cavalry_cost = -0.1
+	cavalry_fire = 0.25
+}
+z1z_goblinsteel_tracks_implemented = {
+	is_hussars_modifier = yes
+	cavalry_cost = 0.1
+	land_attrition = -0.2
+}
+z1z_effective_steel_production = {
+	local_production_efficiency = 0.2
+}
+z1z_refortified_walls = {
+	local_defensiveness = 0.2
+}
+z1z_strangled_trade = {
+	province_trade_power_modifier = 0.1
+}
+z1z_hard_working_orcs = {
+	local_production_efficiency = 0.1
+}
+z1z_major_manufactory = {
+	local_production_efficiency = 0.1
+	local_regiment_cost = -0.25
+	regiment_recruit_speed = -0.25
+}
+z1z_defending_the_caves = {
+	local_defensiveness = 0.1
+	local_hostile_attrition = 1
+}
+z1z_dwarven_slave_camps = {
+	local_production_efficiency = 0.1
+	local_unrest = 2
+}
+z1z_massive_food_surplus = {
+	local_manpower_modifier = 1
+}
+z1z_expansive_food_surplus = {
+	local_manpower_modifier = 0.5
+}
+z1z_large_food_surplus = {
+	local_manpower_modifier = 0.25
+}
+z1z_food_surplus = {
+	local_manpower_modifier = 0.125
+}
+z1z_small_food_surplus = {
+	local_manpower_modifier = 0.075
+}
+z1z_goblins_too_scared_to_inhabit = {
+	local_development_cost = 0.3
+}
+z1z_northern_bulwarks = {
+	local_defensiveness = 0.3
+}
+z1z_woodland_grove_defenses = {
+	local_hostile_attrition = 2
+	max_attrition = 2
+}
+z1z_safe_production = {
+	local_production_efficiency = 0.2
+	local_development_cost = -0.1
+}
+z1z_small_workshops = {
+	local_production_efficiency = 0.05
+}
+z1z_marrhold_capital = {
+	cavalry_cost = -0.05
+}
+z1z_steelhyl_capital = {
+	land_morale = 0.05
+}
+z1z_upper_castonath_capital = {
+	production_efficiency = 0.05
+}
+z1z_south_castonath_capital = {
+	development_cost = -0.05
+}
+z1z_lower_castonath_capital = {
+	manpower_recovery_speed = 0.05
+}
+z1z_goblinsblade_forged = {
+	land_morale = 0.1
+	discipline = 0.05
+}
+z1z_western_pacts = {
+	global_unrest = 2
+}
+z1z_eastern_pacts = {
+	manpower_recovery_speed = -0.2
+}
+z1z_goblinsblade_reforged = {
+	land_morale = 0.1
+	discipline = 0.05
+}
+z1z_fey_playing_pranks = {
+	global_unrest = 2
+}
+z1z_tanks_overwatching_province = {
+	local_build_cost = -0.5
+	local_build_time = -0.2
+	local_production_efficiency = 0.5
+	local_manpower_modifier = 0.5
+}
+z1z_mages_working_with_fey = {
+	amount_of_hussars = 4
+}

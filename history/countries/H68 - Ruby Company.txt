@@ -17,7 +17,7 @@ historical_friend = A20 #Rubyhold
 
 1404.3.7 = {
 	monarch = {
-		name = "Kï¿½rgï¿½m"
+		name = "Kûrgûm"
 		dynasty = "Gemseeker"
 		birth_date = 1352.8.8
 		adm = 4

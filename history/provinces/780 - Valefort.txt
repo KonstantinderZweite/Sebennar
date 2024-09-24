@@ -3,6 +3,7 @@
 culture = farrani
 religion = regent_court
 capital = ""
+
 hre = no
 
 base_tax = 1

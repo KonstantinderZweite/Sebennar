@@ -1,5 +1,5 @@
 
-#210 - Navarre | 
+#210 - Navarre | 2
 
 owner = A70
 controller = A70
@@ -15,7 +15,7 @@ base_manpower = 4
 
 trade_goods = livestock
 
-capital = ""
+capital = "Aldegarde"
 
 is_city = yes
 

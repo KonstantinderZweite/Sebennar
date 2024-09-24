@@ -1,5 +1,5 @@
 
-#216 - Salamanca | 
+#216 - Salamanca | 7
 
 owner = A23
 controller = A23
@@ -24,7 +24,7 @@ fort_15th = yes
 
 
 
-
+set_province_flag = unsuppressed_infernal_cult
 
 
 

@@ -1,8 +1,9 @@
 
 # No previous file for Banten
-owner = L67
-controller = L67
-add_core = L67
+owner = S45
+controller = S45
+add_core = S45
+add_core = S65
 culture = talilibeti
 religion = sky_domain
 

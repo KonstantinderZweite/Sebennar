@@ -23,8 +23,8 @@ capital = 608
 		dip = 1
 		mil = 4
 	}
-	set_ruler_flag = long_lived_ruler
 	
+	set_ruler_flag = long_lived_ruler
 	add_ruler_personality = mage_personality
 	set_ruler_flag = evocation_1
 	set_ruler_flag = evocation_2
@@ -32,7 +32,9 @@ capital = 608
 	set_ruler_flag = conjuration_1
 	set_ruler_flag = divination_1
 	set_ruler_flag = transmutation_1
+	set_ruler_flag = initialized_magic_flags
 	add_ruler_personality = scholar_personality
+	add_ruler_personality = well_advised_personality
 
 	queen = {
 		country_of_origin = F42

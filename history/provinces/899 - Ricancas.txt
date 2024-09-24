@@ -1,5 +1,5 @@
 
-#899 - Osage
+#899 - Osage 2
 
 owner = A45
 controller = A45
@@ -29,6 +29,6 @@ is_city = yes
 
 
 add_permanent_province_modifier = {
-	name = half_elven_minority_coexisting_small
+	name = half_elven_minority_integrated_small
 	duration = -1
 }

@@ -1,5 +1,5 @@
 
-#Eastern and Northern Småland - Includes parts under Östgötalag
+#Eastern and Northern Smï¿½land - Includes parts under ï¿½stgï¿½talag -3
 
 owner = A85
 controller = A85

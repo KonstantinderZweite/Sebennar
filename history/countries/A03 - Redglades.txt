@@ -24,8 +24,8 @@ historical_friend = A01 #Lorent
 		mil = 1
 		female = yes
 	}
-	set_ruler_flag = long_lived_ruler
+	
 	add_ruler_personality = calm_personality
 	add_ruler_personality = careful_personality
-	
+	set_ruler_flag = long_lived_ruler
 }

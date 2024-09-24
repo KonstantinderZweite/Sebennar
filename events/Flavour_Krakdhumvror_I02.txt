@@ -211,6 +211,7 @@ country_event = {
 			remove_claim = ROOT
 		}
 		dagrinrod_7_9_area = { remove_claim = ROOT }
+		country_event = { id = flavor_krak.200 }
 		hidden_effect = {
 			if = {
 				limit = { has_country_flag = krak_unsteady_road_happened }
@@ -1331,9 +1332,6 @@ country_event = {
 			religion = ROOT
 		}
 		hidden_effect = { set_ruler_flag = long_lived_ruler }
-		add_ruler_personality = lawgiver_personality
-		add_ruler_personality = reformist_personality
-		add_ruler_personality =	righteous_personality
 		ai_chance = { factor = 5 }
 	}
 	option = {
@@ -1356,9 +1354,6 @@ country_event = {
 			religion = ROOT
 		}
 		hidden_effect = { set_ruler_flag = long_lived_ruler }
-		add_ruler_personality = lawgiver_personality
-		add_ruler_personality = reformist_personality
-		add_ruler_personality =	righteous_personality
 		ai_chance = { factor = 5 }
 	}
 

@@ -24,6 +24,7 @@ verkalgulan_government_missions = {
 			add_dip_power = -100
 			add_mil_power = -100
 			add_corruption = -10
+			add_republican_tradition = 10
 			capital_scope = {
 				spawn_rebels = {
 					type = noble_rebels

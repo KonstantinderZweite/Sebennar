@@ -1,5 +1,5 @@
 
-#413 - Sorncell
+#413 - Sorncell -3
 
 owner = A56
 controller = A56
@@ -31,6 +31,6 @@ is_city = yes
 
 
 add_permanent_province_modifier = {
-	name = half_elven_minority_coexisting_small
+	name = half_elven_minority_integrated_small
 	duration = -1
 }

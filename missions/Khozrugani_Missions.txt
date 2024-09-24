@@ -1396,7 +1396,6 @@ khozrugan_army_tree = {
 			}
 		}
 		trigger = {
-			NOT = { has_country_modifier = khozrugan_worg_cavalry}
 			army_size = 100
 			num_of_owned_provinces_with = {
 				value = 20

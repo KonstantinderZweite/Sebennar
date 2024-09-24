@@ -1030,7 +1030,26 @@ country_event = {
 	mean_time_to_happen = {
 		months = 3
 	}
-	
+		
+	option = {
+		name = devotion_events.21.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_estate = estate_church
+				NOT = {
+					estate_loyalty = {
+						estate = estate_church
+						loyalty = 40
+					}
+				}
+			}
+		}
+		reduce_estate_church_loyalty_effect = yes
+		change_government_to_monarchy = yes
+		kill_ruler = yes
+	}
 	option = {
 		name = devotion_events.21.b
 		ai_chance = {

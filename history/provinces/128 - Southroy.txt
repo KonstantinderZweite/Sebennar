@@ -1,10 +1,10 @@
 
-#128 - Kärnten
+#128 - Kï¿½rnten
 
 owner = A01
 controller = A01
 add_core = A01
-culture = low_lorentish
+culture = reverian
 religion = regent_court
 hre = no
 base_tax = 2

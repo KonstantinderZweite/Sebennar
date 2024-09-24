@@ -9,7 +9,7 @@ color = { 203  164  103 }
 historical_idea_groups = {	
 	
 	trade_ideas		
-	plutocracy_ideas	
+	expansion_ideas	
 	economic_ideas
 	quality_ideas	
 	maritime_ideas	

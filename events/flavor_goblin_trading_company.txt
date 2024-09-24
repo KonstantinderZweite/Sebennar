@@ -1,0 +1,501 @@
+namespace = flavor_goblin_trading_company
+
+country_event = {
+	id = flavor_goblin_trading_company.1
+	title = flavor_goblin_trading_company.1.t
+	desc = flavor_goblin_trading_company.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.1.a
+		add_country_modifier = {
+			name = z1z_marrhold_capital
+			duration = -1
+		}
+		ROOT = {
+			set_capital = 4097
+		}
+	}
+	option = {
+		name = flavor_goblin_trading_company.1.b
+		add_country_modifier = {
+			name = z1z_steelhyl_capital
+			duration = -1
+		}
+		ROOT = {
+			set_capital = 860
+		}
+	}
+	option = {
+		name = flavor_goblin_trading_company.1.c
+		add_country_modifier = {
+			name = z1z_upper_castonath_capital
+			duration = -1
+		}
+		ROOT = {
+			set_capital = 833
+		}
+	}
+	option = {
+		name = flavor_goblin_trading_company.1.e
+		add_country_modifier = {
+			name = z1z_lower_castonath_capital
+			duration = -1
+		}
+		ROOT = {
+			set_capital = 832
+		}
+	}
+	option = {
+		name = flavor_goblin_trading_company.1.f
+		add_country_modifier = {
+			name = z1z_south_castonath_capital
+			duration = -1
+		}
+		ROOT = {
+			set_capital = 831
+		}	
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.2
+	title = flavor_goblin_trading_company.2.t
+	desc = flavor_goblin_trading_company.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.2.a
+		country_event = { id = goblinic_shamanism_flavor.3 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.b
+		country_event = { id = goblinic_shamanism_flavor.401 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.c
+		country_event = { id = goblinic_shamanism_flavor.402 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.e
+		country_event = { id = goblinic_shamanism_flavor.403 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.f
+		country_event = { id = goblinic_shamanism_flavor.404 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.g
+		country_event = { id = goblinic_shamanism_flavor.405 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.h
+		country_event = { id = goblinic_shamanism_flavor.406 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.i
+		country_event = { id = goblinic_shamanism_flavor.408 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.j
+		country_event = { id = goblinic_shamanism_flavor.410 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.k
+		country_event = { id = goblinic_shamanism_flavor.411 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.l
+		country_event = { id = goblinic_shamanism_flavor.412 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.m
+		country_event = { id = goblinic_shamanism_flavor.413 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.n
+		country_event = { id = goblinic_shamanism_flavor.20 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.o
+		country_event = { id = goblinic_shamanism_flavor.21 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.p
+		country_event = { id = goblinic_shamanism_flavor.22 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.q
+		country_event = { id = goblinic_shamanism_flavor.26 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.r
+		country_event = { id = goblinic_shamanism_flavor.27 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.s
+		country_event = { id = goblinic_shamanism_flavor.28 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.u
+		country_event = { id = goblinic_shamanism_flavor.29 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.v
+		country_event = { id = goblinic_shamanism_flavor.416 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.w
+		country_event = { id = goblinic_shamanism_flavor.417 }
+	}
+	option = {
+		name = flavor_goblin_trading_company.2.x
+		country_event = { id = goblinic_shamanism_flavor.31 }
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.3
+	title = flavor_goblin_trading_company.3.t
+	desc = flavor_goblin_trading_company.3.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.3.a
+		add_country_modifier = {
+			name = z1z_goblinsblade_forged
+			duration = -1
+		}
+		hidden_effect = {
+			country_event = {
+				id = flavor_goblin_trading_company.11
+				days = 1825
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.4
+	title = flavor_goblin_trading_company.4.t
+	desc = flavor_goblin_trading_company.4.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.4.a
+		set_country_flag = z1z_woodland_route_2
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.5
+	title = flavor_goblin_trading_company.5.t
+	desc = flavor_goblin_trading_company.5.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.5.a
+		set_country_flag = z1z_mercenary_capstone
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = flavor_goblin_trading_company.5.b
+		set_country_flag = z1z_centralized_capstone
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.6
+	title = flavor_goblin_trading_company.6.t
+	desc = flavor_goblin_trading_company.6.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.6.a
+		set_country_flag = z1z_mithril_route_2
+		swap_non_generic_missions = yes
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.7
+	title = flavor_goblin_trading_company.7.t
+	desc = flavor_goblin_trading_company.7.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.7.a
+		add_country_modifier = {
+			name = z1z_western_pacts
+			duration = 3650
+		}
+	}
+}
+country_event = {
+	id = flavor_goblin_trading_company.8
+	title = flavor_goblin_trading_company.8.t
+	desc = flavor_goblin_trading_company.8.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.8.a
+		add_country_modifier = {
+			name = z1z_eastern_pacts
+			duration = 3650
+		}
+	}
+}
+country_event = {
+	id = flavor_goblin_trading_company.9
+	title = flavor_goblin_trading_company.9.t
+	desc = flavor_goblin_trading_company.9.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.9.a
+		set_country_flag = z1z_mercenary_capstone
+		swap_non_generic_missions = yes
+	}
+	option = {
+		name = flavor_goblin_trading_company.9.b
+		set_country_flag = z1z_centralized_capstone
+		swap_non_generic_missions = yes
+	}
+}
+country_event = {
+	id = flavor_goblin_trading_company.10
+	title = flavor_goblin_trading_company.10.t
+	desc = flavor_goblin_trading_company.10.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.10.a
+		add_country_modifier = {
+			name = z1z_goblinsblade_reforged
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.11
+	title = flavor_goblin_trading_company.11.t
+	desc = flavor_goblin_trading_company.11.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.11.a
+		set_country_flag = z1z_mithril_route_1
+		swap_non_generic_missions = yes
+		remove_country_modifier = z1z_goblinsblade_forged
+		add_prestige = -50
+	}
+	option = {
+		name = flavor_goblin_trading_company.11.b
+		set_country_flag = z1z_woodland_route_1
+		swap_non_generic_missions = yes
+		remove_country_modifier = z1z_goblinsblade_forged
+		add_prestige = -50
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.12
+	title = flavor_goblin_trading_company.12.t
+	desc = flavor_goblin_trading_company.12.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.12.a
+		every_core_province = {
+			limit = {
+				region = west_deepwoods_region
+				owned_by = ROOT
+			}
+			spawn_rebels = {
+				type = fey_animals_rebel
+				size = 1
+			}
+		}
+		every_core_province = {
+			limit = {
+				region = east_deepwoods_region
+				owned_by = ROOT
+			}
+			spawn_rebels = {
+				type = fey_animals_rebel
+				size = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.13
+	title = flavor_goblin_trading_company.13.t
+	desc = flavor_goblin_trading_company.13.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.13.a
+		set_country_flag = z1z_fey_revolt_complete_flag
+	}
+}
+
+
+country_event = {
+	id = flavor_goblin_trading_company.14
+	title = flavor_goblin_trading_company.14.t
+	desc = flavor_goblin_trading_company.14.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.14.a
+		set_country_flag = z1z_archfey_push
+		3012 = {
+			spawn_rebels = {
+				type = archfey_servants_rebel
+				size = 2
+			}
+		}
+		7000 = {
+			spawn_rebels = {
+				type = archfey_servants_rebel
+				size = 2
+			}
+		}
+		3020 = {
+			spawn_rebels = {
+				type = archfey_servants_rebel
+				size = 2
+			}
+		}
+		3017 = {
+			spawn_rebels = {
+				type = archfey_servants_rebel
+				size = 2
+			}
+		}
+		3024 = {
+			spawn_rebels = {
+				type = archfey_servants_rebel
+				size = 2
+			}
+		}
+		3033 = {
+			spawn_rebels = {
+				type = archfey_servants_rebel
+				size = 2
+			}
+		}
+		3012 = {
+			spawn_rebels = {
+				type = archfey_servants_rebel
+				size = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.15
+	title = flavor_goblin_trading_company.15.t
+	desc = flavor_goblin_trading_company.15.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.15.a
+		add_yearly_manpower = -2
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.16
+	title = flavor_goblin_trading_company.16.t
+	desc = flavor_goblin_trading_company.16.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.16.a
+		add_country_modifier = {
+			name = z1z_fey_playing_pranks
+			duration = 1825
+		}
+	}
+}
+
+country_event = {
+	id = flavor_goblin_trading_company.17
+	title = flavor_goblin_trading_company.17.t
+	desc = flavor_goblin_trading_company.17.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblin_trading_company.17.a
+		random_province = {
+			limit = {
+				OR = {
+					region = east_deepwoods_region
+					region = west_deepwoods_region
+				}
+			}
+			spawn_rebels = {
+				type = fey_animals
+				size = 3
+			}
+		}
+	}
+}
+country_event = {
+	id = flavor_goblin_trading_company.18
+	title = "tankstuff"
+	desc = "tankstuff"
+	picture = BATTLE_eventPicture
+	
+	
+	hidden = yes
+
+	option = {
+		add_province_modifier = {
+			name = z1z_tanks_overwatching_province
+			duration = 32
+		}
+	}
+}

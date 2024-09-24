@@ -1,5 +1,5 @@
 
-#100 - Gelre | 
+#100 - Gelre | 2
 
 owner = A09
 controller = A09
@@ -22,6 +22,6 @@ is_city = yes
 
 
 add_permanent_province_modifier = {
-	name = half_elven_minority_coexisting_large
+	name = half_elven_minority_integrated_large
 	duration = -1
 }

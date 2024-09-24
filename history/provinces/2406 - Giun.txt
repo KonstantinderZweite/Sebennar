@@ -2,8 +2,8 @@
 # No previous file for Ingil
 
 
-culture = quchamar
-religion = animism
+culture = chaqanel
+religion = rioqay_diu
 capital = ""
 
 hre = no

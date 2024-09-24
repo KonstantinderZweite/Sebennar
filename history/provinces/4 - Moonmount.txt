@@ -1,5 +1,5 @@
 
-#Bergslagen, contains Falun, Västerås etc.
+#Bergslagen, contains Falun, Vï¿½sterï¿½s etc. -3
 #lol
 
 owner = A41

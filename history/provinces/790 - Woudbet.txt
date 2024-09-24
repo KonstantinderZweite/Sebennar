@@ -5,6 +5,7 @@ religion = great_dookan
 capital = ""
 trade_goods = unknown
 
+
 hre = no
 
 base_tax = 3

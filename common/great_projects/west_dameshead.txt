@@ -157,8 +157,8 @@ neckcliffe_the_imperial_dockyard = {
 					name = "Reinhard von Lohengramm"
 					trait = naval_gunner_personality
 					fire = 5
-					shock = 7
-					manuever = 8
+					shock = 6
+					manuever = 6
 					siege = 1
 				}
 			}

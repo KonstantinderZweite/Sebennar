@@ -1,5 +1,5 @@
 
-# No previous file for Leslinpár
+# No previous file for Leslinpï¿½r
 owner = A92
 controller = A92
 add_core = A92

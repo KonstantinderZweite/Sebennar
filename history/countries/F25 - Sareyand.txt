@@ -23,8 +23,8 @@ capital = 625
 		dip = 5
 		mil = 5
 	}
-	set_ruler_flag = long_lived_ruler
 	
+	set_ruler_flag = long_lived_ruler
 }
 
 1310.10.10 = {

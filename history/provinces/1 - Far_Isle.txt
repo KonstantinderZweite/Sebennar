@@ -1,5 +1,5 @@
 
-#Uppland, contains Stockholm, Uppsala & Nykï¿½ping.
+#Uppland, contains Stockholm, Uppsala & Nyköping.
 #lol
 
 owner = A21

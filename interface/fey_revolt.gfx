@@ -1,0 +1,8 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_z1z_fey_revolt"
+		texturefile = "gfx//interface//disasters//z1z_fey_revolt.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

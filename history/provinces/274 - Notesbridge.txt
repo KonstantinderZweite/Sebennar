@@ -1,5 +1,5 @@
 
-# No previous file for Pskov
+# No previous file for Pskov -3
 owner = A90
 controller = A90
 add_core = A90
@@ -21,7 +21,7 @@ is_city = yes
 
 
 add_permanent_province_modifier = {
-	name = half_elven_minority_coexisting_small
+	name = half_elven_minority_integrated_small
 	duration = -1
 }
 

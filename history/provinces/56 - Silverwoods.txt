@@ -1,5 +1,5 @@
 
-# No previous file for Osnabrück
+# No previous file for Osnabrï¿½ck
 owner = A31
 controller = A31
 add_core = A31
@@ -14,7 +14,7 @@ base_manpower = 3
 
 trade_goods = grain
 
-capital = ""
+capital = "Arca Airge"
 
 is_city = yes
 fort_15th = yes

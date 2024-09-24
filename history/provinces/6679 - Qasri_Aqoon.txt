@@ -1,8 +1,8 @@
 # No previous file for Nakhchivan
 
-owner = S20
-controller = S20
-add_core = S20
+owner = S17
+controller = S17
+add_core = S17
 culture = suhratbi
 religion = rinta_seekers
 capital = ""
@@ -10,8 +10,8 @@ capital = ""
 hre = no
 
 
-base_tax = 1
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 9
+base_manpower = 5
 
 trade_goods = paper

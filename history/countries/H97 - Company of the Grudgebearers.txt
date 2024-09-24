@@ -17,7 +17,7 @@ capital = 4078 #Hehodovar
 
 1442.3.17 = {
 	monarch = {
-		name = "Kildï¿½m"
+		name = "Kildûm"
 		dynasty = "Grudge-Ender"
 		birth_date = 1420.11.4
 		adm = 2

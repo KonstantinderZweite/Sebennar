@@ -75,7 +75,7 @@ country_event = {
 		trigger = { has_country_flag = house_2 }
 		define_ruler = {
 			min_age = 121
-			dynasty = "Cenï¿½g"
+			dynasty = "Cenág"
 			claim = 90
 			max_random_adm = 6
 			max_random_dip = 6
@@ -271,7 +271,7 @@ country_event = {
 		trigger = { has_country_flag = house_9 }
 		define_ruler = {
 			min_age = 121
-			dynasty = "Ghï¿½l"
+			dynasty = "Ghùl"
 			claim = 90
 			change_adm = 1
 			change_dip = 1
@@ -561,7 +561,7 @@ country_event = {
 			fire = 1
 			manuever = 4
 			siege = 0
-			name = "Vucras Siubï¿½lrn"
+			name = "Vucras Siubálrn"
 		}
 		hidden_effect = {
 			# discover relevant provinces
@@ -636,18 +636,13 @@ country_event = {
 	}
 	
 	trigger = {
-		OR = {		
-			tag = I45
-			was_tag = I45
-			tag = Z87
-			was_tag = Z87
-		}
 		OR = {
 			6242 = { has_discovered = root }
 			6243 = { has_discovered = root }
 			6244 = { has_discovered = root }
 			6245 = { has_discovered = root }
 		}
+		tag = I45
 	}
 
 	option = {
@@ -690,6 +685,7 @@ country_event = {
 
 	trigger = {
 		6257 = { has_discovered = root }
+		tag = I45
 	}
 
 	option = {
@@ -713,6 +709,7 @@ country_event = {
 	
 	trigger = {
 		6253 = { has_discovered = root }
+		tag = I45
 	}
 	
 	option = {
@@ -736,6 +733,7 @@ country_event = {
 	
 	trigger = {
 		6250 = { has_discovered = root }
+		tag = I45
 	}
 	
 	option = {
@@ -756,6 +754,7 @@ country_event = {
 	
 	trigger = {
 		6247 = { has_discovered = root }
+		tag = I45
 	}
 	mean_time_to_happen = {
 		days = 1

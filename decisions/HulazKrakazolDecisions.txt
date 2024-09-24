@@ -15,6 +15,7 @@ country_decisions = {
 			NOT = { has_country_modifier = krakazol_slaying_quest }
 			is_at_war = no
 			hidden_trigger = { NOT = { has_country_flag = krakazol_drinking_menu_open } }
+
 			if = { #so PTM doesn't get stuck
 				limit = { NOT = { months_of_ruling = 1 } }
 				months_of_ruling = 1

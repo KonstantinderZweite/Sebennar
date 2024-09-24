@@ -1,5 +1,5 @@
 
-#26 - Halland | 
+#26 - Halland | -3
 
 owner = A22
 controller = A22

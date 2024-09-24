@@ -1,0 +1,153 @@
+z1z_all_terrain_tanks = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.8
+    artillery_weight = 0.2
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_all_terrain_tanks }
+	}
+	modifier = {
+		movement_speed = 0.15
+	}
+}
+z1z_driller_tanks = {
+	regiments_per_development = 0.045
+	cavalry_weight = 1
+    artillery_weight = 0
+	home_province = 4097
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_driller_tanks }
+	}
+	modifier = {
+		cavalry_fire = -1.5
+		cavalry_shock = 2
+		shock_damage_received = -0.15
+		fire_damage_received = -0.15
+	}
+}
+z1z_mountain_tanks = {
+	regiments_per_development = 0.04
+	cavalry_weight = 0.95
+    artillery_weight = 0.05
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_mountain_tanks }
+	}
+	modifier = {
+		fire_damage = 0.05
+	}
+}
+z1z_mithril_enhanced_tanks = {
+	regiments_per_development = 0.035
+	cost_modifier = 1.6
+	cavalry_weight = 0.75
+    artillery_weight = 0.25
+	home_province = 4236
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_mithril_enhanced_tanks }
+	}
+	modifier = {
+		shock_damage_received = -0.35
+		fire_damage_received = -0.35
+		reinforce_speed = -0.5
+	}
+}
+z1z_ice_iron_tanks = {
+	regiments_per_development = 0.04
+	cost_modifier = 1.2
+	cavalry_weight = 0.9
+    artillery_weight = 0.1
+	home_province = 4236
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_ice_iron_tanks }
+	}
+	modifier = {
+		shock_damage_received = -0.175
+		fire_damage_received = -0.175
+		reinforce_speed = -0.15
+	}
+}
+z1z_golem_tank_division = {
+	regiments_per_development = 0.055
+	cavalry_weight = 0.9
+    artillery_weight = 0.1
+	home_province = 2863
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_golem_tank_division }
+	}
+	modifier = {
+		cavalry_shock = 0.5
+		shock_damage = 0.2
+	}
+}
+z1z_slave_tank_division = {
+	regiments_per_development = 0.08
+	cost_modifier = 0.4
+	cavalry_weight = 1
+    artillery_weight = 0
+	home_province = 2868
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_slave_tank_division }
+	}
+	modifier = {
+		fire_damage = -0.2
+		fire_damage_received = 0.4
+		shock_damage_received = 0.4
+		reinforce_speed = 0.3
+	}
+}
+z1z_dagrite_tank_divison = {
+	regiments_per_development = 0.047
+	cost_modifier = 1.1
+	cavalry_weight = 1
+    artillery_weight = 0
+	home_province = 2931
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_dagrite_tank_divison }
+	}
+	modifier = {
+		fire_damage_received = 0.1
+		shock_damage_received = 0.1
+		reinforce_speed = 5
+		recover_army_morale_speed = 5
+	}
+}
+z1z_systems_tank_division = {
+	regiments_per_development = 0.01
+	cost_modifier = 1.5
+	cavalry_weight = 1
+    artillery_weight = 0
+	home_province = 4119
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_systems_tank_division }
+	}
+	modifier = {
+	
+	}
+}
+z1z_ramsteel_tank_division = {
+	regiments_per_development = 0.038
+	cost_modifier = 1.1
+	cavalry_weight = 1
+    artillery_weight = 0
+	home_province = 4147
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_ramsteel_tank_division }
+	}
+	modifier = {
+		fire_damage_received = -0.125
+		shock_damage_received = -0.125
+		reinforce_speed = -0.05
+	}
+}
+z1z_science_tank_division = {
+	regiments_per_development = 0.031
+	cost_modifier = 1.4
+	cavalry_weight = 0.65
+    artillery_weight = 0.35
+	home_province = 4020
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z1z_science_tank_division }
+	}
+	modifier = {
+		fire_damage = 0.35
+	}
+}

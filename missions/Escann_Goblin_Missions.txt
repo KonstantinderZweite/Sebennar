@@ -10,6 +10,7 @@ EscannGob0 = {
 				tag = U11
 				tag = U12
 				tag = Z87
+				tag = Z1Z
 			}
 		}
 		capital_scope = {
@@ -147,6 +148,7 @@ EscannGob1 = {
 				tag = U11
 				tag = U12
 				tag = Z87
+				tag = Z1Z
 			}
 		}
 		capital_scope = {
@@ -310,6 +312,7 @@ EscannGob2 = {
 				tag = U11
 				tag = U12
 				tag = Z87
+				tag = Z1Z
 			}
 		}
 		capital_scope = {
@@ -341,7 +344,7 @@ EscannGob2 = {
 		effect = {
 			add_country_modifier = {
 				name = "goblin_force_to_defend"
-				duration = 5475
+				duration = 16425
 			}
 		}
 	}
@@ -519,6 +522,7 @@ EscannGob3 = {
 				tag = U11
 				tag = U12
 				tag = Z87
+				tag = Z1Z
 			}
 		}
 		capital_scope = {
@@ -638,6 +642,8 @@ EscannGob4 = {
 			OR = {
 				tag = U11
 				tag = U12
+				tag = Z1Z
+				tag = Z87
 			}
 		}
 		capital_scope = {
