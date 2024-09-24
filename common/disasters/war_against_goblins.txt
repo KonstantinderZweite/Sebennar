@@ -1,0 +1,353 @@
+war_against_goblins = {
+	potential = {
+		tag = Z8Z
+		NOT = { has_country_flag = war_against_goblins_complete_flag }		
+		has_any_disaster = no
+	}
+	
+	can_start = {
+		always = yes
+	}
+	
+	can_stop = {
+		always = no
+	}
+	
+	progress = {
+		modifier = {
+			factor = 10
+		}
+	}
+	
+	can_end = {
+		
+		#elves in country
+		if = {
+			limit = { any_owned_province = { has_province_modifier = elven_minority_oppressed_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = elves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = elven_minority_oppressed_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = elven_minority_coexisting_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = elves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = elven_minority_coexisting_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = elven_minority_integrated_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = elves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = elven_minority_integrated_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = elven_minority_oppressed_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = elves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = elven_minority_oppressed_large } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = elven_minority_coexisting_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = elves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = elven_minority_coexisting_large } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = elven_minority_integrated_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = elves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = elven_minority_integrated_large } }
+					ai = yes
+				}
+			}
+		}
+			
+		#humans in country
+		if = {
+			limit = { any_owned_province = { has_province_modifier = human_minority_oppressed_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = humans_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = human_minority_oppressed_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = human_minority_coexisting_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = humans_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = human_minority_coexisting_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = human_minority_integrated_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = humans_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = human_minority_integrated_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = human_minority_oppressed_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = humans_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = human_minority_oppressed_large } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = human_minority_coexisting_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = humans_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = human_minority_coexisting_large } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = human_minority_integrated_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = humans_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = human_minority_integrated_large } }
+					ai = yes
+				}
+			}
+		}
+		
+		#dwarves in country
+		if = {
+			limit = { any_owned_province = { has_province_modifier = dwarven_minority_oppressed_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = dwarves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = dwarven_minority_oppressed_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = dwarven_minority_integrated_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = dwarves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = dwarven_minority_integrated_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = dwarven_minority_coexisting_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = dwarves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = dwarven_minority_coexisting_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = dwarven_minority_oppressed_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = dwarves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = dwarven_minority_oppressed_large } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = dwarven_minority_coexisting_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = dwarves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = dwarven_minority_coexisting_large } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = dwarven_minority_integrated_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = dwarves_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = dwarven_minority_integrated_large } }
+					ai = yes
+				}
+			}
+		}
+		
+		#harpies in country
+		if = {
+			limit = { any_owned_province = { has_province_modifier = harpy_minority_oppressed_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = harpies_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = harpy_minority_oppressed_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = harpy_minority_coexisting_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = harpies_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = harpy_minority_coexisting_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = harpy_minority_integrated_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = harpies_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = harpy_minority_integrated_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = harpy_minority_oppressed_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = harpies_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = harpy_minority_oppressed_large } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = harpy_minority_coexisting_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = harpies_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = harpy_minority_coexisting_large } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = harpy_minority_integrated_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = harpies_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = harpy_minority_integrated_large } }
+					ai = yes
+				}
+			}
+		}
+		
+		#gnolls in country
+		if = {
+			limit = { any_owned_province = { has_province_modifier = gnollish_minority_oppressed_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = gnolls_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = gnollish_minority_oppressed_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = gnollish_minority_coexisting_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = gnolls_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = gnollish_minority_coexisting_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = gnollish_minority_integrated_small } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = gnolls_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = gnollish_minority_integrated_small } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = gnollish_minority_oppressed_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = gnolls_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = gnollish_minority_oppressed_large } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = gnollish_minority_coexisting_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = gnolls_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = gnollish_minority_coexisting_large } }
+					ai = yes
+				}
+			}
+		}
+		if = {
+			limit = { any_owned_province = { has_province_modifier = gnollish_minority_integrated_large } } #Destroy all old gate
+			custom_trigger_tooltip = {
+				tooltip = gnolls_in_country_tooltip
+				OR = {
+					all_owned_province = { NOT = { has_province_modifier = gnollish_minority_integrated_large } }
+					ai = yes
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		tolerance_heathen = -70
+	}
+	
+	on_start = flavor_goblinclan.1
+	on_end = flavor_goblinclan.2
+	
+	on_monthly = {
+		events = {}
+		random_events = {
+			900 = 0
+			100 = flavor_goblinclan.8
+			85 = flavor_goblinclan.7
+			50 = flavor_goblinclan.11 
+			20 = flavor_goblinclan.3
+			20 = flavor_goblinclan.4
+		}
+	}
+}

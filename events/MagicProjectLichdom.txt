@@ -1139,6 +1139,15 @@ country_event = {
 		set_ruler_flag = new_lich_setup
 		clr_country_flag = interregnum
 
+		hidden_effect = { # get witch king back if we had it
+			if = {
+				limit = { has_country_flag = witch_king_flag }
+				add_ruler_modifier = {
+					name = witch_king_modifier
+					duration = -1
+				}
+			}
+		}
 		hidden_effect = { country_event = { id = magic_project_lichdom.13 } }
 	}
 	
@@ -1231,7 +1240,10 @@ country_event = {
 		clr_country_flag = lich_ruler_female
 		clr_country_flag = lich_ruler_male
 		clr_country_flag = exposed_lich_ruler
-		ruler_clear_saved_spell_schools = yes
+		if = {
+			limit = { NOT = { has_government_attribute = inherits_magic } }
+			ruler_clear_saved_spell_schools = yes
+		}
 	}
 	
 	option = {
@@ -1272,6 +1284,7 @@ country_event = {
 		#NOT = { has_ruler_flag = is_a_secret_lich }	#removed for now as we dont have any lich-outing events
 		NOT = { has_ruler_flag = denied_magocracy }
 		NOT = { has_country_flag = b38_entef_ruler }
+		NOT = { is_subject_of_type = personal_union }
 	}
 	
 	mean_time_to_happen = {

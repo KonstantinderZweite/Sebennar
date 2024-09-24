@@ -1,5 +1,5 @@
 
-#253 - Western Isles
+#253 - Western Isles 2
 
 owner = A36
 controller = A36
@@ -19,7 +19,8 @@ capital = ""
 
 is_city = yes
 
-center_of_trade = 1
+
+
 
 
 

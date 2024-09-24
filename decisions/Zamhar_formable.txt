@@ -1,0 +1,90 @@
+country_decisions = {
+	zamhar_nation = {
+		major = yes
+		potential = {
+			primary_culture = undergrowth_goblin
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			is_colonial_nation = no
+			normal_or_historical_nations = yes
+		}
+		allow = {
+			hidden_trigger = {
+				primary_culture = undergrowth_goblin
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			NOT = { is_year = 1446 }
+			NOT = { exists = Z2Z }
+			4350 = {
+				infantry_in_province = 15
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			country_event = {
+				id = flavor_zamhar.1
+				days = 5
+			}
+			4350 = {
+				kill_units = {
+					who = controller
+					type = infantry
+					amount = 15
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	z2z_raiding_season = {
+		potential = {
+			NOT = { has_country_modifier = z2z_recently_scouted }
+			tag = Z2Z
+			mission_completed = z2z_picking_the_targets_for_learning
+			NOT = {
+				check_variable = {
+					which = z2z_battles_won
+					value = 60
+				}
+			}
+			NOT = {
+				check_variable = {
+					which = z2z_sieges_won
+					value = 20
+				}
+			}
+		}
+		
+		allow = {
+			NOT = { has_country_modifier = z2z_recently_scouted }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z2z_recently_scouted
+				duration = 3650
+			}
+			every_known_country = {
+				limit = {
+					OR = {
+						capital_scope = { region = rakhadesh_region }
+						capital_scope = { region = shamakhad_region }
+					}
+				}
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = z2z_learning_raids
+					months = 120
+				}
+			}
+		}
+	}
+}

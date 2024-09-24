@@ -3124,7 +3124,7 @@ superiority_adventurer_reclaim_escann = {
 
 		allowed_provinces = {
 			always = yes
-		}
+			}
 
 		peace_options = {
 			po_demand_provinces
@@ -3134,16 +3134,16 @@ superiority_adventurer_reclaim_escann = {
 		
 		prov_desc = ALL_PROVS
 	}
-	
+
 	defender = {
 		badboy_factor = 1.0
 		prestige_factor = 1.25
 		peace_cost_factor = 1	
-
+		
 		allowed_provinces = {
 			always = yes
 		}
-
+		
 		peace_options = {
 			po_demand_provinces
 			#po_become_vassal
@@ -3152,7 +3152,7 @@ superiority_adventurer_reclaim_escann = {
 		
 		prov_desc = ALL_PROVS
 	}
-	
+
 	war_name = ADVENTURER_CLAIM_ESCANN
 }
 
@@ -5509,6 +5509,7 @@ take_province_rending = {
 			po_demand_provinces
 			po_become_vassal
 			po_gold
+			po_hokuma_war
 		}
 		
 		prov_desc = ALL_PROVS
@@ -5579,7 +5580,10 @@ kamrayavals_war_wg = {
 		peace_options = {
 			po_kamrayakvals_war
 		}
-		
+
+		allowed_provinces_are_eligible = yes
+		deny_annex = yes
+
 		prov_desc = ALL_PROVS
 	}
 	
@@ -5591,13 +5595,51 @@ kamrayavals_war_wg = {
 		allowed_provinces = {
 			always = no
 		}
-		
 		peace_options = {
 			po_kamrayakvals_war
 		}
+
+		allowed_provinces_are_eligible = yes
+		deny_annex = yes
 		
 		prov_desc = ALL_PROVS
 	}	
 	
 	war_name = KAMRAYAKVALS_WAR_WAR_NAME	
+}
+
+z2z_learning = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 0
+		prestige_factor = 0
+		peace_cost_factor = 0	
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_gold
+			po_humiliate
+		}
+		
+		deny_annex = yes
+
+		country_desc = ALL_NATIVES
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		peace_options = {
+			po_demand_provinces
+		}
+	}	
+	
+	war_name = LEARNING_WAR_NAME	
 }

@@ -237,7 +237,8 @@ venail_3 = {
 		position = 1
 		
 		trigger = {
-			has_idea = quest_for_the_new_world
+			has_idea_group = expansion_ideas
+			expansion_ideas = 1
 		}
 		
 		effect = {

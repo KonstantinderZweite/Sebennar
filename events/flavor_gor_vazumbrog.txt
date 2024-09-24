@@ -1,0 +1,1406 @@
+namespace = flavor_gor_vazumbrog
+
+country_event = {
+	id = flavor_gor_vazumbrog.1
+	title = flavor_gor_vazumbrog.1.t
+	desc = flavor_gor_vazumbrog.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.1.a
+		4217 = {
+			add_province_modifier = { 
+				name = I14_death_smog
+				duration = -1 
+			}
+		}
+		set_country_flag = I14_found_a_problem
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.2
+	title = flavor_gor_vazumbrog.2.t
+	desc = flavor_gor_vazumbrog.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.2.a
+		4217 = {
+			remove_province_modifier = I14_death_smog
+		}
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.3
+	title = flavor_gor_vazumbrog.3.t
+	desc = flavor_gor_vazumbrog.3.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.3.a
+		4217 = {
+			add_province_modifier = { 
+				name = I14_death_smog
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = flavor_gor_vazumbrog.4
+	title = flavor_gor_vazumbrog.4.t
+	desc = flavor_gor_vazumbrog.4.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.4.a
+		4217 = {
+			remove_province_modifier = I14_death_smog
+		}
+	}
+}
+country_event = {
+	id = flavor_gor_vazumbrog.5
+	title = flavor_gor_vazumbrog.5.t
+	desc = flavor_gor_vazumbrog.5.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.5.a
+		4217 = {
+			spawn_rebels = {
+				size = 2
+				type = drake_rebel
+			}
+			spawn_rebels = {
+				size = 2
+				type = drake_rebel
+			}
+			spawn_rebels = {
+				size = 2
+				type = drake_rebel
+			}
+			spawn_rebels = {
+				size = 2
+				type = drake_rebel
+			}
+			spawn_rebels = {
+				size = 2
+				type = drake_rebel
+			}
+			spawn_rebels = {
+				size = 2
+				type = drake_rebel
+			}
+			spawn_rebels = {
+				size = 2
+				type = drake_rebel
+			}
+			spawn_rebels = {
+				size = 2
+				type = drake_rebel
+			}
+		}
+	}
+}
+country_event = {
+	id = flavor_gor_vazumbrog.6
+	title = flavor_gor_vazumbrog.6.t
+	desc = flavor_gor_vazumbrog.6.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.6.a
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.7
+	title = flavor_gor_vazumbrog.7.t
+	desc = flavor_gor_vazumbrog.7.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.7.a
+		add_country_modifier = {
+			name = I14_skycleaver_found
+			duration = -1
+		}
+	}
+}
+
+
+
+
+
+
+
+#inventions for gor vazumbrog base
+country_event = {
+	id = flavor_gor_vazumbrog.21
+	title = flavor_gor_vazumbrog.21.t
+	desc = flavor_gor_vazumbrog.21.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.21.a
+		add_country_modifier = {
+			name = I14_researching_relics
+			duration = 7300
+		}
+		random_list = {
+            1 = { 
+				trigger = {
+					NOT = { has_country_flag = piercing_swords }
+				}
+				country_event = { id = flavor_gor_vazumbrog.22 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = tesla_tower }
+				}
+				country_event = { id = flavor_gor_vazumbrog.26 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = runic_icon }
+				}
+				country_event = { id = flavor_gor_vazumbrog.30 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = railgun }
+				}
+				country_event = { id = flavor_gor_vazumbrog.34 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = stone_restructerizer }
+				}
+				country_event = { id = flavor_gor_vazumbrog.38 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = deflector_shields }
+				}
+				country_event = { id = flavor_gor_vazumbrog.42 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = auto_reloader }
+				}
+				country_event = { id = flavor_gor_vazumbrog.46 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = brain_chip }
+				}
+				country_event = { id = flavor_gor_vazumbrog.50 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = legs }
+				}
+				country_event = { id = flavor_gor_vazumbrog.54 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = magic_flow }
+				}
+				country_event = { id = flavor_gor_vazumbrog.58 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = rage_needles }
+				}
+				country_event = { id = flavor_gor_vazumbrog.62 days = 7300 } 
+				set_country_flag = first_relic
+			}
+			1 = { 
+				trigger = {
+					NOT = { has_country_flag = runic_axes }
+				}
+				country_event = { id = flavor_gor_vazumbrog.66 days = 7300 } 
+				set_country_flag = first_relic
+			}
+        }
+	}
+}
+#swords that cut through armor but can also cut through the users hands
+
+country_event = {
+	id = flavor_gor_vazumbrog.22
+	title = flavor_gor_vazumbrog.22.t
+	desc = flavor_gor_vazumbrog.22.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.22.a
+		set_country_flag = piercing_swords
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.23
+	title = flavor_gor_vazumbrog.23.t
+	desc = flavor_gor_vazumbrog.23.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.23.a
+		random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.24 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.25 days = 10 } }
+		}
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.24
+	title = flavor_gor_vazumbrog.24.t
+	desc = flavor_gor_vazumbrog.24.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.24.a
+		add_country_modifier = {
+			name = I14_successful_piercing_blades
+			duration = 3650
+		}		
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.25
+	title = flavor_gor_vazumbrog.25.t
+	desc = flavor_gor_vazumbrog.25.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.25.a
+		add_yearly_manpower = -2
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+	}
+}
+
+#tesla towers that electricute enemies and allies alike
+
+country_event = {
+	id = flavor_gor_vazumbrog.26
+	title = flavor_gor_vazumbrog.26.t
+	desc = flavor_gor_vazumbrog.26.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.22.a
+		set_country_flag = tesla_tower
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.27
+	title = flavor_gor_vazumbrog.27.t
+	desc = flavor_gor_vazumbrog.27.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.27.a
+		random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.28 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.29 days = 10 } }
+		}
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.28
+	title = flavor_gor_vazumbrog.28.t
+	desc = flavor_gor_vazumbrog.28.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.28.a
+		add_country_modifier = {
+			name = I14_successful_tesla_tower
+		}	
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.29
+	title = flavor_gor_vazumbrog.29.t
+	desc = flavor_gor_vazumbrog.29.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.29.a
+		add_country_modifier = {
+			name = I14_unsuccessful_tesla_tower
+			duration = 3650
+		}	
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+	}
+}
+#religious conversion that defenitely wont convert you to runefather worship
+
+country_event = {
+	id = flavor_gor_vazumbrog.30
+	title = flavor_gor_vazumbrog.30.t
+	desc = flavor_gor_vazumbrog.30.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.22.a
+		set_country_flag = runic_icon
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.31
+	title = flavor_gor_vazumbrog.31.t
+	desc = flavor_gor_vazumbrog.31.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.31.a
+		random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.32 days = 10
+					}
+				}
+			1 = {
+					trigger = {
+						has_country_flag = I14_next_relic_fails
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.33 days = 10
+					}
+				}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.32
+	title = flavor_gor_vazumbrog.32.t
+	desc = flavor_gor_vazumbrog.32.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.32.a
+		add_country_modifier = {
+			name = I14_successful_runic_icon
+			duration = 3650
+		}	
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.33
+	title = flavor_gor_vazumbrog.33.t
+	desc = flavor_gor_vazumbrog.33.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.33.a
+		change_religion = runefather_worship
+		set_heir_religion = runefather_worship
+		set_consort_religion = runefather_worship
+		set_ruler_religion = runefather_worship
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+	}
+}
+
+#railgun cannons that can increase the costs of arty
+
+country_event = {
+	id = flavor_gor_vazumbrog.34
+	title = flavor_gor_vazumbrog.34.t
+	desc = flavor_gor_vazumbrog.34.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.22.a
+		set_country_flag = railgun
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.35
+	title = flavor_gor_vazumbrog.35.t
+	desc = flavor_gor_vazumbrog.35.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.35.a
+		random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.36 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.37 days = 10 } }
+		}
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.36
+	title = flavor_gor_vazumbrog.36.t
+	desc = flavor_gor_vazumbrog.36.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.36.a
+		add_country_modifier = {
+			name = I14_successful_railgun
+			duration = 3650
+		}	
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.37
+	title = flavor_gor_vazumbrog.37.t
+	desc = flavor_gor_vazumbrog.37.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.37.a
+		add_country_modifier = {
+			name = I14_unsuccessful_railgun
+			duration = 3650
+		}	
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+	}
+}
+
+#faster construction decreases the dev cost of holds but if fails the hold loses a level
+
+country_event = {
+	id = flavor_gor_vazumbrog.38
+	title = flavor_gor_vazumbrog.38.t
+	desc = flavor_gor_vazumbrog.38.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.22.a
+		set_country_flag = stone_restructerizer
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.39
+	title = flavor_gor_vazumbrog.39.t
+	desc = flavor_gor_vazumbrog.39.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.39.a
+		random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.40 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.41 days = 10 } }
+		}
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.40
+	title = flavor_gor_vazumbrog.40.t
+	desc = flavor_gor_vazumbrog.40.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.40.a
+		every_owned_province = {
+			limit = {
+				OR = {
+					has_terrain = dwarven_hold
+					has_terrain = dwarven_hold_surface
+				}
+			}
+			add_province_modifier = {
+				name = I14_successful_stone_restructerizer
+				duration = 3650
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.41
+	title = flavor_gor_vazumbrog.41.t
+	desc = flavor_gor_vazumbrog.41.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.41.a
+		capital_scope = {
+			remove_province_modifier = dig_1
+			remove_province_modifier = dig_2
+			remove_province_modifier = dig_3
+			remove_province_modifier = dig_4
+			remove_province_modifier = dig_5
+			remove_province_modifier = dig_6
+			remove_province_modifier = dig_7
+			remove_province_modifier = dig_8
+			remove_province_modifier = dig_9
+			remove_province_modifier = dig_10
+			remove_province_modifier = dig_11
+			add_permanent_province_modifier = {
+				name = damaged_hold
+				duration = -1
+			}
+			add_base_production = -3
+			add_base_manpower = -3
+			add_base_tax = -3
+		}
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+	}
+}
+
+#deflector shields that can slow down troops
+
+country_event = {
+	id = flavor_gor_vazumbrog.42
+	title = flavor_gor_vazumbrog.42.t
+	desc = flavor_gor_vazumbrog.42.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.22.a
+		set_country_flag = deflector_shields
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.43
+	title = flavor_gor_vazumbrog.43.t
+	desc = flavor_gor_vazumbrog.43.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.43.a
+		random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.44 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.45 days = 10 } }
+		}
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.44
+	title = flavor_gor_vazumbrog.44.t
+	desc = flavor_gor_vazumbrog.44.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.44.a
+		add_country_modifier = {
+			name = I14_successful_deflector_shields
+			duration = 3650
+		}	
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.45
+	title = flavor_gor_vazumbrog.45.t
+	desc = flavor_gor_vazumbrog.45.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.45.a
+		add_country_modifier = {
+			name = I14_unsuccessful_deflector_shields
+			duration = 3650
+		}	
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+	}
+}
+
+#auto reloader increases fire damage but can interrupt melee combat
+
+country_event = {
+    id = flavor_gor_vazumbrog.46
+    title = flavor_gor_vazumbrog.46.t
+    desc = flavor_gor_vazumbrog.46.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.22.a
+        set_country_flag = auto_reloader
+    }
+}
+
+country_event = {
+    id = flavor_gor_vazumbrog.47
+    title = flavor_gor_vazumbrog.47.t
+    desc = flavor_gor_vazumbrog.47.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.47.a
+        random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.48 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.49 days = 10 } }
+		}
+    }
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.48
+	title = flavor_gor_vazumbrog.48.t
+	desc = flavor_gor_vazumbrog.48.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.48.a
+		add_country_modifier = {
+			name = I14_successful_auto_reloader
+			duration = 3650
+		}	
+	}
+}
+
+country_event = {
+	id = flavor_gor_vazumbrog.49
+	title = flavor_gor_vazumbrog.49.t
+	desc = flavor_gor_vazumbrog.49.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_gor_vazumbrog.49.a
+		add_country_modifier = {
+			name = I14_unsuccessful_auto_reloader
+			duration = 3650
+		}	
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+	}
+}
+
+#brain chip that increases discipline but can also increase morale damage taken
+
+country_event = {
+    id = flavor_gor_vazumbrog.50
+    title = flavor_gor_vazumbrog.50.t
+    desc = flavor_gor_vazumbrog.50.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.22.a
+        set_country_flag = brain_chip
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.51
+    title = flavor_gor_vazumbrog.51.t
+    desc = flavor_gor_vazumbrog.51.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.51.a
+        random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.52 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.53 days = 10 } }
+		}
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.52
+    title = flavor_gor_vazumbrog.52.t
+    desc = flavor_gor_vazumbrog.52.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.52.a
+        add_country_modifier = {
+            name = I14_successful_brain_chip
+			duration = 3650
+        }    
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.53
+    title = flavor_gor_vazumbrog.53.t
+    desc = flavor_gor_vazumbrog.53.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.53.a
+        add_country_modifier = {
+            name = I14_unsuccessful_brain_chip
+			duration = 3650
+        }  
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+    }
+}
+
+#legs that can increase speed but can also increase troop costs
+
+country_event = {
+    id = flavor_gor_vazumbrog.54
+    title = flavor_gor_vazumbrog.54.t
+    desc = flavor_gor_vazumbrog.54.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.22.a
+        set_country_flag = legs
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.55
+    title = flavor_gor_vazumbrog.55.t
+    desc = flavor_gor_vazumbrog.55.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.55.a
+        random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.56 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.57 days = 10 } }
+		}
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.56
+    title = flavor_gor_vazumbrog.56.t
+    desc = flavor_gor_vazumbrog.56.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.56.a
+        add_country_modifier = {
+            name = I14_successful_legs
+			duration = 3650
+        }    
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.57
+    title = flavor_gor_vazumbrog.57.t
+    desc = flavor_gor_vazumbrog.57.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.57.a
+        add_country_modifier = {
+            name = I14_unsuccessful_legs
+			duration = 3650
+        }    
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+    }
+}
+
+#increased magic flow to make more golems but can backfire and weaken the golems
+
+country_event = {
+    id = flavor_gor_vazumbrog.58
+    title = flavor_gor_vazumbrog.58.t
+    desc = flavor_gor_vazumbrog.58.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.22.a
+        set_country_flag = magic_flow
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.59
+    title = flavor_gor_vazumbrog.59.t
+    desc = flavor_gor_vazumbrog.59.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.59.a
+        random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.60 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.61 days = 10 } }
+		}
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.60
+    title = flavor_gor_vazumbrog.60.t
+    desc = flavor_gor_vazumbrog.60.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.60.a
+        add_country_modifier = {
+            name = I14_successful_magic_flow
+			duration = 3650
+        }    
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.61
+    title = flavor_gor_vazumbrog.61.t
+    desc = flavor_gor_vazumbrog.61.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.61.a
+        add_country_modifier = {
+            name = I14_unsuccessful_magic_flow
+			duration = 3650
+        } 
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}		
+    }
+}
+
+#rage needles increase morale but can decrease discipline
+
+country_event = {
+    id = flavor_gor_vazumbrog.62
+    title = flavor_gor_vazumbrog.62.t
+    desc = flavor_gor_vazumbrog.62.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.22.a
+        set_country_flag = rage_needles
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.63
+    title = flavor_gor_vazumbrog.63.t
+    desc = flavor_gor_vazumbrog.63.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.63.a
+        random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.64 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.65 days = 10 } }
+		}
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.64
+    title = flavor_gor_vazumbrog.64.t
+    desc = flavor_gor_vazumbrog.64.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.64.a
+        add_country_modifier = {
+            name = I14_successful_rage_needles
+			duration = 3650
+        }    
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.65
+    title = flavor_gor_vazumbrog.65.t
+    desc = flavor_gor_vazumbrog.65.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.65.a
+        add_country_modifier = {
+            name = I14_unsuccessful_rage_needles
+			duration = 3650
+        }   
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+    }
+}
+
+#runic axes can bash through any defenses but can increase damage taken
+
+country_event = {
+    id = flavor_gor_vazumbrog.66
+    title = flavor_gor_vazumbrog.66.t
+    desc = flavor_gor_vazumbrog.66.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.22.a
+        set_country_flag = runic_axes
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.67
+    title = flavor_gor_vazumbrog.67.t
+    desc = flavor_gor_vazumbrog.67.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.67.a
+        random_list = {
+			3 = {
+					trigger = {
+						OR = {
+							AND = {
+								has_country_flag = I14_next_relic_fails
+								has_country_flag = I14_next_relic_already_failed
+							}
+							NOT = {
+								has_country_flag = I14_next_relic_fails
+							}
+						}
+					}
+					country_event = {
+						id = flavor_gor_vazumbrog.68 days = 10
+					}
+				}
+			1 = { country_event = { id = flavor_gor_vazumbrog.69 days = 10 } }
+		}
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.68
+    title = flavor_gor_vazumbrog.68.t
+    desc = flavor_gor_vazumbrog.68.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.68.a
+        add_country_modifier = {
+            name = I14_successful_runic_axes
+			duration = 3650
+        }    
+    }
+}
+country_event = {
+    id = flavor_gor_vazumbrog.69
+    title = flavor_gor_vazumbrog.69.t
+    desc = flavor_gor_vazumbrog.69.d
+    picture = GOOD_WITH_MONARCH_eventPicture
+
+    is_triggered_only = yes
+
+    option = {
+        name = flavor_gor_vazumbrog.69.a
+        add_country_modifier = {
+            name = I14_unsuccessful_runic_axes
+			duration = 3650
+        }
+		if = {
+			limit = {
+				has_country_flag = I14_next_relic_fails
+				NOT  = { has_country_flag = I14_next_relic_already_failed }
+			}
+			set_country_flag = I14_next_relic_already_failed
+		}
+		else = {
+			limit = {
+				NOT = { has_country_flag = failed_relic }
+			}
+			set_country_flag = failed_relic
+		}
+    }
+}

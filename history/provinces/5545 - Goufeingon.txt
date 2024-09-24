@@ -1,14 +1,14 @@
 
 # No previous file for Banten
-owner = S30
-controller = S30
-add_core = S30
+owner = L63
+controller = L63
+add_core = L63
 culture = antmvura
 religion = righteous_path
 
 hre = no
 
-base_tax = 3
+base_tax = 4
 base_production = 4
 base_manpower = 3
 

@@ -1,0 +1,5960 @@
+goblin_trading_company_center = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+	}
+	z1z_getting_a_supply_started = {
+		icon = mission_trade_company_region_abroad
+		position = 1
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+					has_terrain = hills
+				}
+				value = 1
+			}
+			iron = 1
+		}
+		
+		effect = {
+			add_treasury = 100
+		}
+	}
+	
+	z1z_showing_dominance_over_orcs = {
+		icon = mission_orc_chillin
+		position = 2
+		
+		required_missions = {
+			z1z_getting_a_supply_started
+		}
+		
+		trigger = {
+			check_variable = {
+				which = z1z_wars_won
+				value = 3
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_successful_wars
+				duration = 1825
+			}
+		}
+	}
+	
+	z1z_producing_materials_for_everyday_needs = {
+		icon = mission_market
+		position = 3
+		
+		required_missions = {
+			z1z_showing_dominance_over_orcs
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = workshop
+				value = 10
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+		}	
+	}
+	
+	z1z_finding_a_new_home = {
+		icon = mission_unite_home_region
+		position = 4
+		
+		required_missions = {
+			z1z_producing_materials_for_everyday_needs
+		}
+		
+		provinces_to_highlight = {
+			all_province = {
+				trade_goods = iron
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = iron
+				value = 1
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					owns_core_province = 4097
+					owns_core_province = 860
+				}
+				add_country_modifier = {
+					name = z1z_extremely_successful_in_escann
+					duration = -1
+				}
+				ROOT = {
+					set_capital = 4097
+				}
+			}
+			else_if = {
+				limit = {
+					owns_core_province = 4097
+				}
+				ROOT = {
+					set_capital = 4097
+				}
+			}
+			else_if = {
+				limit = {
+					owns_core_province = 860
+				}
+				ROOT = {
+					set_capital = 860
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						trade_goods = iron
+					}
+					swap_non_generic_missions = yes
+					ROOT = {
+						set_capital = THIS
+					}
+				}
+			}
+		}
+	}
+	
+	z1z_conquerors_of_escann = {
+		icon = mission_warrior_gold
+		position = 5
+		
+		required_missions = {
+			z1z_finding_a_new_home
+			z1z_colonizing_the_forests
+			z1z_expanding_our_control_in_escann
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				superregion = escann_superregion
+				value = 40
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_conquerors_of_escann_modifier
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_removing_the_old_patricians = {
+		icon = mission_assassination
+		position = 6
+		
+		required_missions = {
+			z1z_conquerors_of_escann
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				province_id = 833
+				province_id = 831
+				province_id = 832
+			}
+		}
+		
+		trigger = {
+			831 = {
+				NOT = { has_province_modifier = castonath_patrician_influence_full }
+				NOT = { has_province_modifier = castonath_patrician_influence_significant }
+				NOT = { has_province_modifier = castonath_patrician_influence_considerable }
+				NOT = { has_province_modifier = castonath_patrician_influence_some }
+			}
+			832 = {
+				NOT = { has_province_modifier = castonath_patrician_influence_full }
+				NOT = { has_province_modifier = castonath_patrician_influence_significant }
+				NOT = { has_province_modifier = castonath_patrician_influence_considerable }
+				NOT = { has_province_modifier = castonath_patrician_influence_some }
+			}
+			833 = {
+				NOT = { has_province_modifier = castonath_patrician_influence_full }
+				NOT = { has_province_modifier = castonath_patrician_influence_significant }
+				NOT = { has_province_modifier = castonath_patrician_influence_considerable }
+				NOT = { has_province_modifier = castonath_patrician_influence_some }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_building_up_castonath
+				duration = 7300
+			}
+		}
+	}
+	
+	z1z_deciding_our_permenant_residence = {
+		icon = mission_castle_construction
+		position = 7
+		
+		required_missions = {
+			z1z_removing_the_old_patricians
+			z1z_slave_camps_starting_production
+			z1z_manufactories_producing_more_iron
+			z1z_searching_for_more_iron_deposits
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = inner_castanor_region
+				value = 30
+			}
+			num_of_owned_provinces_with = {
+				region = south_castanor_region
+				value = 30
+			}
+		}
+		
+		effect = {
+			country_event = { 
+				id = flavor_goblin_trading_company.1
+			}
+		}
+	}
+	
+	z1z_forging_of_goblins_blade = {
+		icon = mission_forge
+		position = 8
+		
+		required_missions = {
+			z1z_deciding_our_permenant_residence
+		}
+		
+		trigger = {
+			total_development = 500
+		}
+		effect = {
+			country_event = { 
+				id = flavor_goblin_trading_company.3
+			}
+		}
+	}
+}
+
+goblin_trading_company_leftmost = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+	}
+	
+	z1z_iron_deposits_needed = {
+		icon = mission_iron_and_copper
+		position = 3
+		
+		trigger = {
+			iron = 5
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_our_troops_supplied
+				duration = 9125
+			}
+		}
+	}
+	
+	z1z_increase_iron_production = {
+		icon = public_works
+		position = 4
+		
+		required_missions = {
+			z1z_iron_deposits_needed
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = workshop
+				trade_goods = iron
+				value = 8
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_enough_iron_for_a_surplus
+				duration = 7300
+			}
+		}
+	}
+	
+	z1z_collecting_materials_together = {
+		icon = mission_tree_fishing
+		position = 5
+		
+		required_missions = {
+			z1z_increase_iron_production
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+					has_terrain = hills
+				}
+				trade_goods = iron
+				value = 5
+			}
+		}
+		
+		effect = {
+			every_core_province = {
+				limit = {
+					OR = {
+						has_terrain = woods
+						has_terrain = forest
+						has_terrain = hills
+					}
+					trade_goods = iron
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = z1z_effective_steel_production
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_manufactories_producing_more_iron = {
+		icon = mission_have_manufactories
+		position = 6
+		
+		required_missions = {
+			z1z_collecting_materials_together
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_manufactory_trigger = yes
+				trade_goods = iron
+				value = 12
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_first_produced_tanks
+				duration = -1
+			}
+		}
+	}
+}
+
+goblin_trading_company_rightmost = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+	}
+	
+	z1z_tearing_down_their_temples = {
+		icon = mission_burning_parthenon
+		position = 2
+		
+		provinces_to_highlight = {
+			all_owned_province = {
+				NOT = { has_building = temple }
+			}
+		}
+		
+		trigger = {
+			all_owned_province = {
+				NOT = { has_building = temple }
+			}
+		}
+		effect = {
+			swap_non_generic_missions = yes
+			random_owned_province = {
+				add_base_production = 1
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}
+			random_owned_province = {
+				add_base_production = 1
+			}
+		}
+	}
+	
+	z1z_all_under_one_religion = {
+		icon = a_center_of_religion
+		position = 3
+		
+		
+		required_missions = {
+			z1z_tearing_down_their_temples
+		}
+		trigger = {
+			religious_unity = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_cooperation_within_the_company
+				duration = -1
+			}
+		}
+	}
+	
+	z1z_a_goblin_state_for_goblins = {
+		icon = mission_dapper_goblin
+		position = 4
+		
+		required_missions = {
+			z1z_all_under_one_religion
+		}
+		trigger = {
+			all_owned_province = {
+				culture = common_goblin
+			}
+		}
+		effect = {
+			add_yearly_manpower = 2
+		}
+	}
+	
+	z1z_understanding_others_religions = {
+		icon = mission_book_of_royal_degrees
+		position = 5
+		
+		required_missions = {
+			z1z_a_goblin_state_for_goblins
+		}
+		
+		trigger = {
+			has_unlocked_cult = cannorian_cult
+			has_unlocked_cult = ancestor_worship_cult
+			has_unlocked_cult = orcish_cult
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_goblin_trading_company.2
+			}
+		}
+	}
+}
+
+goblin_trading_company_right = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+	}
+	
+	z1z_wood_to_burn = {
+		icon = mission_alone_in_the_wood
+		position = 3
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+					has_terrain = hills
+				}
+				value = 5
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_starting_the_wood_furnaces
+				duration = -1
+			}
+		}
+	}
+	
+	z1z_colonizing_the_forests = {
+		icon = mission_rb_colonise_canada
+		position = 4
+		
+		required_missions = {
+			z1z_wood_to_burn
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+					has_terrain = hills
+				}
+				culture = common_goblin
+				value = 10
+			}
+		}
+		
+		effect = {
+			remove_country_modifier = z1z_starting_the_wood_furnaces
+			add_country_modifier = {
+				name = z1z_turning_wood_into_coal
+				duration = -1
+			}
+		}
+	}
+	
+	z1z_increasing_production_of_wooded_provinces = {
+		icon = austria_prospers
+		position = 5
+		
+		required_missions = {
+			z1z_colonizing_the_forests
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+					has_terrain = hills
+				}
+				base_production = 10
+				value = 10
+			}
+		}
+		effect = {
+			remove_country_modifier = z1z_turning_wood_into_coal
+			add_country_modifier = {
+				name = z1z_perfecting_coal_production
+				duration = -1
+			}
+		}
+	}
+	
+	z1z_searching_for_more_iron_deposits = {
+		icon = balance_the_estates
+		position = 6
+		
+		required_missions = {
+			z1z_increasing_production_of_wooded_provinces
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_terrain = woods
+					has_terrain = forest
+					has_terrain = hills
+				}
+				base_production = 12
+				has_building = workshop
+				value = 10
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = woods
+						has_terrain = forest
+						has_terrain = hills
+					}
+					NOT = { trade_goods = iron}
+				}
+				change_trade_goods = iron
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = woods
+						has_terrain = forest
+						has_terrain = hills
+					}
+					NOT = { trade_goods = iron}
+				}
+				change_trade_goods = iron
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = woods
+						has_terrain = forest
+						has_terrain = hills
+					}
+					NOT = { trade_goods = iron}
+				}
+				change_trade_goods = iron
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = woods
+						has_terrain = forest
+						has_terrain = hills
+					}
+					NOT = { trade_goods = iron}
+				}
+				change_trade_goods = iron
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_terrain = woods
+						has_terrain = forest
+						has_terrain = hills
+					}
+					NOT = { trade_goods = iron}
+				}
+				change_trade_goods = iron
+			}
+		}
+	}
+}
+
+goblin_trading_company_left = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+	}
+	
+	z1z_defending_the_walls = {
+		icon = mission_great_wall
+		position = 3
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_province_modifier = white_walls_of_castanor
+				fort_level = 2
+				value = 3
+			}
+		}
+		
+		effect = {
+			every_core_province = {
+				limit = {
+					has_province_modifier = white_walls_of_castanor
+					fort_level = 2
+				}
+				add_province_modifier = {
+					name = z1z_refortified_walls
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_expanding_our_control_in_escann = {
+		icon = mam_harness_spice_trade
+		position = 4
+		
+		required_missions = {
+			z1z_defending_the_walls
+		}
+		
+		provinces_to_highlight = {
+			all_province ={
+				region = escann_superregion
+				province_has_center_of_trade_of_level = 1
+				NOT = { owned_by = ROOT }
+			}
+		}	
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				province_has_center_of_trade_of_level = 2
+				superregion = escann_superregion
+				value = 6
+			}
+		}
+		effect = {
+			every_core_province = {
+				limit = {
+					province_has_center_of_trade_of_level = 2
+					superregion = escann_superregion
+				}
+				add_province_modifier = {
+					name = z1z_strangled_trade
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_ensuring_large_slave_supplies = {
+		icon = mission_restore_trade_superiority
+		position = 5
+		
+		required_missions = {
+			z1z_expanding_our_control_in_escann
+			z1z_increase_iron_production
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_province_modifier = orcish_minority_oppressed_small
+					has_province_modifier = orcish_minority_coexisting_small
+					has_province_modifier = orcish_minority_integrated_small
+					has_province_modifier = orcish_minority_oppressed_large
+					has_province_modifier = orcish_minority_coexisting_large
+					has_province_modifier = orcish_minority_integrated_large
+				}
+				value = 10
+			}
+		}
+		effect = {
+			add_years_of_income = 3
+		}
+	}
+	
+	z1z_slave_camps_starting_production = {
+		icon = mission_guilds_of_barcelona
+		position = 6
+		
+		required_missions = {
+			z1z_ensuring_large_slave_supplies
+		}
+		
+		provinces_to_highlight = {
+			all_owned_province = {
+				OR = {
+					has_province_modifier = orcish_minority_oppressed_small
+					has_province_modifier = orcish_minority_coexisting_small
+					has_province_modifier = orcish_minority_integrated_small
+					has_province_modifier = orcish_minority_oppressed_large
+					has_province_modifier = orcish_minority_coexisting_large
+					has_province_modifier = orcish_minority_integrated_large
+				}
+				has_manufactory_trigger = no
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_province_modifier = orcish_minority_oppressed_small
+					has_province_modifier = orcish_minority_coexisting_small
+					has_province_modifier = orcish_minority_integrated_small
+					has_province_modifier = orcish_minority_oppressed_large
+					has_province_modifier = orcish_minority_coexisting_large
+					has_province_modifier = orcish_minority_integrated_large
+				}
+				has_manufactory_trigger = yes
+				value = 10
+			}
+		}
+		
+		effect = {
+			every_core_province = {
+				limit = {
+						OR = {
+						has_province_modifier = orcish_minority_oppressed_small
+						has_province_modifier = orcish_minority_coexisting_small
+						has_province_modifier = orcish_minority_integrated_small
+						has_province_modifier = orcish_minority_oppressed_large
+						has_province_modifier = orcish_minority_coexisting_large
+						has_province_modifier = orcish_minority_integrated_large
+					}
+				}
+				add_province_modifier = {
+					name = z1z_hard_working_orcs
+					duration = 14600
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+goblin_trading_company_center_mithril_1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mithril_route_1
+	}
+	
+	z1z_an_entrenceway_into_the_mountains_1 = {
+		position = 9
+		icon = mch_bypass_great_wall
+		
+		required_missions = {
+			z1z_forging_of_goblins_blade
+		}
+		
+		provinces_to_highlight = {
+			province_id = 2863
+		}
+		
+		trigger = {
+			2863 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		
+		effect = {
+			dwarovrod_1_3_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dwarovrod_4_6_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_the_road_to_haraz_orldhum_1 = {
+		position = 10
+		icon = mission_the_grand_trunk_road_dlh
+		
+		required_missions = {
+			z1z_an_entrenceway_into_the_mountains_1
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = dwarovrod_1_3_area
+				area = dwarovrod_4_6_area
+			}
+		}
+		
+		trigger = {
+			dwarovrod_1_3_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT 
+			}
+			dwarovrod_4_6_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT 
+			}
+		}
+		
+		effect = {
+			2868 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_the_gates_of_haraz_orldhum_1 = {
+		position = 11
+		icon = mission_dwarf
+		
+		required_missions = {
+			z1z_the_road_to_haraz_orldhum_1
+		}
+		
+		provinces_to_highlight = {
+			province_id = 2868
+		}
+		
+		trigger = {
+			2868 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		
+		effect = {
+			dwarovrod_7_9_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2873 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_following_the_road_to_mithradhum_1 = {
+		position = 12
+		icon = mission_burning_separation
+		
+		required_missions = {
+			z1z_the_gates_of_haraz_orldhum_1
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = dwarovrod_7_9_area
+				province_id = 2873
+			}
+		}
+		
+		trigger = {
+			dwarovrod_7_9_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT 
+			}
+			2873 = {
+				owned_by = ROOT
+				is_core = ROOT 
+			}
+		}
+		
+		effect = {
+			4236 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_a_mithril_hold_1 = {
+		position = 13
+		icon = mission_mithril_cannons
+		
+		required_missions = {
+			z1z_following_the_road_to_mithradhum_1
+		}
+		
+		provinces_to_highlight = {
+			province_id = 4236
+		}
+		
+		trigger = {
+			4236 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+				has_manufactory_trigger = yes
+				base_production = 30
+			}
+		}
+		
+		effect = {
+			add_province_modifier = {
+				name = z1z_major_manufactory
+				duration = -1
+			}
+		}
+	}	
+	z1z_mithril_production_completed_1 = {
+		position = 16
+		icon = mission_crowning
+		
+		required_missions = {
+			z1z_a_mithril_hold_1
+		}
+		
+		trigger = {
+			OR = {
+				4236 = {
+					base_production = 40
+					owned_by = ROOT
+					is_core = ROOT
+					NOT = {
+						has_province_modifier = ruined_hold
+						has_province_modifier = partially_ruined_hold
+						has_province_modifier = damaged_hold
+						has_province_modifier = infested_hold
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					value = 3
+					base_production = 10
+					NOT = {
+						province_id = 4236
+					}
+				}
+			}
+		}
+		
+		effect = {
+			country_event = { 
+				id = flavor_goblin_trading_company.4
+			}
+		}
+	}
+}
+
+goblin_trading_company_leftmost_mithril_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mithril_route_1
+	}
+	
+	z1z_exploring_the_caves_1 = {
+		position = 10
+		icon = mission_crystal_cave
+		
+		required_missions = {
+			z1z_an_entrenceway_into_the_mountains_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_terrain = cavern    
+				value = 15
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_building_up_the_caves
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_defending_our_territory_1 = {
+		position = 11
+		icon = mission_mountain_castle
+		
+		required_missions = {
+			z1z_exploring_the_caves_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_terrain = cavern    
+				fort_level = 2
+				value = 15
+			}
+		}
+		
+		effect = {
+			every_core_province = {
+				limit = {
+					fort_level = 2
+					has_terrain = cavern
+				}
+				add_province_modifier = {
+					name = z1z_defending_the_caves
+					duration = 3650
+				}
+			}
+		}
+	}
+	
+	z1z_consolidating_our_control_1 = {
+		position = 12
+		icon = mission_writing_book
+		
+		required_missions = {
+			z1z_defending_our_territory_1
+			z1z_reintroducing_slavery_to_haraz_orldhum_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				superregion = west_serpentspine_superregion
+				value = 50
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_all_terrain_tanks
+				free_merc = yes
+			}
+		}
+	}
+	
+	z1z_finding_the_connection_1 = {
+		position = 13
+		icon = mission_forest_shrine
+		
+		required_missions = {
+			z1z_consolidating_our_control_1
+		}
+		
+		trigger = {
+			4065 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_driller_tanks
+				free_merc = yes
+			}
+		}
+	}
+	
+	z1z_rebuilding_the_tunnel_1 = {
+		position = 14
+		icon = mission_treasure_room
+		
+		required_missions = {
+			z1z_extra_resources_to_sell_1
+			z1z_finding_the_connection_1
+		}
+		
+		trigger = {
+			4097 = { 
+				has_great_project = { 
+					type = marrhold_dwarovar_tunnel 
+					tier = 1
+				} 
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_cheaper_supply_routes
+				duration = -1
+			}
+		}
+	}
+}
+
+goblin_trading_company_left_mithril_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mithril_route_1
+	}
+	
+	z1z_reintroducing_slavery_to_haraz_orldhum_1 = {
+		position = 11
+		icon = mission_mechanical_mining
+		
+		required_missions = {
+			z1z_the_road_to_haraz_orldhum_1
+		}
+		
+		trigger = {
+			2868 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_manufactory_trigger = yes
+				base_production = 30
+			}
+		}
+		effect = {
+			2868 = {
+				add_province_modifier = {
+					name = z1z_dwarven_slave_camps
+					duration = -1
+				}	
+			}
+		}
+	}
+	
+	z1z_setting_workcamps_for_the_dwarves_1 = {
+		position = 12
+		icon = mission_the_surge
+		
+		required_missions = {
+			z1z_reintroducing_slavery_to_haraz_orldhum_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				superregion = west_serpentspine_superregion
+				value = 20
+				base_production = 10
+				NOT = {
+					trade_goods = iron
+					trade_goods = mithril
+				}
+			}
+		}	
+		
+		effect = {
+			every_core_province = {
+				limit = {
+					superregion = west_serpentspine_superregion
+					base_production = 10
+					NOT = {
+						trade_goods = iron
+						trade_goods = mithril
+					}
+				}
+				add_province_modifier = {
+					name = z1z_dwarven_slave_camps
+					duration = -1
+				}	
+			}
+		}
+	}
+	
+	z1z_extra_resources_to_sell_1 = {
+		position = 13
+		icon = mission_potion
+		
+		required_missions = {
+			z1z_setting_workcamps_for_the_dwarves_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_province_modifier = z1z_dwarven_slave_camps
+				value = 20
+				base_production = 15
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 2
+		}
+	}
+	
+	z1z_building_up_a_stockpile_1 = {
+		position = 14
+		icon = mission_ynnic_knights
+		
+		required_missions = {
+			z1z_extra_resources_to_sell_1
+			z1z_a_mithril_hold_1
+		}
+		
+		trigger = {
+			num_of_cavalry = 100
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_mountain_tanks
+				free_merc = yes
+			}
+		}
+	}
+	
+	z1z_handing_out_tanks_to_private_institutions_1 = {
+		position = 15
+		icon = mission_sunset_alternative
+		
+		required_missions = {
+			z1z_building_up_a_stockpile_1
+		}
+		
+		trigger = {
+			4236 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 50
+				}
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_mithril_enhanced_tanks
+				free_merc = yes
+			}
+			4236 = {
+				kill_units = {
+					who = owner
+					type = cavalry
+					amount = 50
+				}
+			}
+		}
+	}
+	
+	z1z_testing_out_the_new_products_1 = {
+		position = 16
+		icon = mission_hundred_years_war
+		
+		required_missions = {
+			z1z_handing_out_tanks_to_private_institutions_1
+		}
+		
+		trigger = {
+			is_at_war = yes
+			war_score = 80
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_independant_armies_proven
+				duration = -1
+			}
+		}
+	}
+}
+
+goblin_trading_company_right_mithril_1 = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mithril_route_1
+	}
+	
+	z1z_the_ancient_dwarven_capital_1 = {
+		position = 11
+		icon = spa_new_capital
+		
+		required_missions = {
+			z1z_the_road_to_haraz_orldhum_1
+		}
+		
+		trigger = {
+			amldihr_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}			
+			4119 = {
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+				OR = {
+					has_building = mage_tower
+					has_building = courthouse
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_building = mage_tower
+				}
+				add_country_modifier = {
+					name = z1z_mages_administer_caves
+					duration = -1
+				}
+			}
+			else_if = {
+				add_country_modifier = {
+					name = z1z_goblin_administering_the_caves
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_food_for_an_empire_1 = {
+		position = 12
+		icon = mission_iroquois_food_surplus
+		
+		required_missions = {
+			z1z_the_ancient_dwarven_capital_1
+		}
+		
+		trigger = {
+			royal_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			assembly_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			castle_hill_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			common_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_food_readily_available
+				duration = 7300
+			}
+		}
+	}
+	
+	z1z_establishing_a_hold_for_food_1 = {
+		position = 13
+		icon = mission_the_grand_bazaar
+		
+		required_missions = {
+			z1z_food_for_an_empire_1
+		}
+		
+		trigger = {
+			4147 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					4147 = {
+						has_manufactory_trigger = yes
+						OR = {
+							has_building = workshop
+							has_building = counting_house
+						}
+						OR = {
+							has_building = barracks
+							has_building = training_fields
+						}
+						has_great_project = {
+							type = orlazam_food_silos
+							tier = 3
+						}
+					}
+				}
+				4147 = {
+					add_province_modifier = {
+						name = z1z_massive_food_surplus
+						duration = -1
+					}	
+				}
+			}
+			else_if = {
+				limit = {
+					4147 = {
+						has_manufactory_trigger = yes
+						OR = {
+							has_building = workshop
+							has_building = counting_house
+						}
+						OR = {
+							has_building = barracks
+							has_building = training_fields
+						}
+						has_great_project = {
+							type = orlazam_food_silos
+							tier = 1
+						}
+					}
+				}
+				4147 = {
+					add_province_modifier = {
+						name = z1z_expansive_food_surplus
+						duration = -1
+					}	
+				}
+			}
+			else_if = {
+				limit = {
+					4147 = {
+						has_manufactory_trigger = yes
+						OR = {
+							has_building = workshop
+							has_building = counting_house
+						}
+						OR = {
+							has_building = barracks
+							has_building = training_fields
+						}
+					}
+				}
+				4147 = {
+					add_province_modifier = {
+						name = z1z_large_food_surplus
+						duration = -1
+					}	
+				}
+			}
+			else_if = {
+				limit = {
+					4147 = {
+						OR = {
+							has_building = workshop
+							has_building = counting_house
+						}
+						OR = {
+							has_building = barracks
+							has_building = training_fields
+						}
+					}
+				}
+				4147 = {
+					add_province_modifier = {
+						name = z1z_food_surplus
+						duration = -1
+					}	
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = z1z_small_food_surplus
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_fields_restored_1 = {
+		position = 14
+		icon = mission_a_million_rice_fields
+		
+		required_missions = {
+			z1z_establishing_a_hold_for_food_1
+		}
+		
+		trigger = {
+			royal_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = { has_province_modifier = flooded_province }
+			}
+			assembly_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = { has_province_modifier = flooded_province }
+			}
+			castle_hill_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = { has_province_modifier = flooded_province }
+			}
+			common_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = { has_province_modifier = flooded_province }
+			}
+		}	
+		effect = {
+			royal_terrace_area = {
+				type = all
+				add_orcish_minority_size_effect = yes
+			}
+			assembly_terrace_area = {
+				type = all
+				add_orcish_minority_size_effect = yes
+			}
+			castle_hill_area = {
+				type = all
+				add_orcish_minority_size_effect = yes
+			}
+			common_terrace_area = {
+				type = all
+				add_orcish_minority_size_effect = yes
+			}
+		}
+	}
+}
+
+goblin_trading_company_rightmost_mithril_1 = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mithril_route_1
+	}
+	
+	z1z_a_mysterious_hold_1 = {
+		position = 12
+		icon = mission_tear_down_spanish_strongholds
+		
+		required_missions = {
+			z1z_the_ancient_dwarven_capital_1
+		}
+		
+		trigger = {
+			4020 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		
+		effect = {
+			4020 = {
+				add_province_modifier = {
+					name = z1z_goblins_too_scared_to_inhabit
+					duration = 7300
+				}
+			}
+		}
+	}
+	
+	z1z_the_isolated_hold_found_1 = {
+		position = 13
+		icon = mission_underground_cave
+		
+		required_missions = {
+			z1z_a_mysterious_hold_1
+		}
+		
+		trigger = {
+			4208 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_massive_iron_deposits_found
+				duration = 9125
+			}
+		}
+	}
+	
+	z1z_defending_the_plains_1 = {
+		position = 14
+		icon = mission_marwari_horses
+		
+		required_missions = {
+			z1z_the_isolated_hold_found_1
+		}
+		
+		trigger = {
+			OR = {
+				4198 = {
+					owned_by = ROOT
+					is_core = ROOT
+					fort_level = 4
+				}
+				4201 = {
+					owned_by = ROOT
+					is_core = ROOT
+					fort_level = 4
+				}
+			}
+			OR = {
+				4203 = {
+					owned_by = ROOT
+					is_core = ROOT
+					fort_level = 4
+				}
+				4020 = {
+					owned_by = ROOT
+					is_core = ROOT
+					fort_level = 4
+				}
+			}
+		}
+		
+		effect = {
+			far_moitsa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			skurkha_kyard_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_a_western_stronghold_1 = {
+		position = 15
+		icon = mission_horse_siege
+		
+		required_missions = {
+			z1z_defending_the_plains_1
+			z1z_fields_restored_1
+		}
+		
+		trigger = {
+			hidden_respite_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				any_province_in_state = {
+					fort_level = 4
+				}
+			}
+			middle_logr_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				any_province_in_state = {
+					fort_level = 4
+				}
+			}
+			hjyrtsikki_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				any_province_in_state = {
+					fort_level = 4
+				}
+			}
+		}
+		effect = {
+			every_core_province = {
+				limit = {
+					region = northern_pass_region
+					fort_level = 4
+				}
+				add_province_modifier = {
+					name = z1z_northern_bulwarks
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_ice_magic_in_iron_1 = {
+		position = 16
+		icon = mission_armor_choice
+		
+		required_missions = {
+			z1z_a_western_stronghold_1
+		}
+		
+		trigger = {
+			4208 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+				base_production = 40
+				has_building = weapons
+				has_building = mage_tower
+			}
+			NOT = { has_country_modifier = z1z_massive_iron_deposits_found }
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_ice_iron_tanks
+				free_merc = yes
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+goblin_trading_company_center_deepwoods_1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_woodland_route_1
+	}
+	
+	z1z_a_way_into_the_deepwoods_1 = {
+		position = 9
+		icon = mission_forest_pilgrim
+		
+		required_missions = {
+			z1z_forging_of_goblins_blade
+		}
+		
+		provinces_to_highlight = {
+			province_id = 3054
+			province_id = 3068
+		}
+		
+		trigger = {
+			OR = {
+				3054 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				3068 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			prehnryn_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			clirypriah_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ciranmyna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_a_kingdom_ripe_for_the_taking_1 = {
+		position = 10
+		icon = mission_burning_castle
+		
+		required_missions = {
+			z1z_a_way_into_the_deepwoods_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = west_deepwoods_region
+				value = 9
+			}
+		}
+		
+		effect = {
+			drennen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			faedayr_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dennesayrn_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			fealmyraeth_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			coryllann_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_the_first_fey_touched_wood_1 = {
+		position = 11
+		icon = mission_magical_forest
+		
+		required_missions = {
+			z1z_a_kingdom_ripe_for_the_taking_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood
+				value = 5
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_cutting_down_the_feywood
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_to_the_heart_of_the_deepwoods_1 = {
+		position = 12
+		icon = mission_alone_in_the_wood
+		
+		required_missions = {
+			z1z_the_first_fey_touched_wood_1
+		}
+		
+		trigger = {
+			drennen_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			faedayr_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			fealmyraeth_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			coryllann_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			dennesayrn_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_indusrializing_the_feywood
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_making_an_initial_pact_1 = {
+		position = 13
+		icon = mission_swear_fealty_knight
+		
+		required_missions = {
+			z1z_to_the_heart_of_the_deepwoods_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood
+				base_production = 10
+				value = 10
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_initial_fey_pact
+				duration = 1825
+			}
+		}
+	}
+	
+	z1z_preparing_the_change_from_wood_to_feywood_1 = {
+		position = 14
+		icon = mission_science
+		
+		required_missions = {
+			z1z_making_an_initial_pact_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood
+				base_production = 10
+				has_manufactory_trigger = yes
+				value = 12
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_building_up_the_manufactories
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_completing_the_feywood_supply_1 = {
+		position = 15
+		icon = mission_writing_book
+		
+		required_missions = {
+			z1z_preparing_the_change_from_wood_to_feywood_1
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z1z_initial_fey_pact }
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_goblin_trading_company.6
+			}
+		}
+	}
+}
+
+goblin_trading_company_leftmost_deepwoods_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_woodland_route_1
+	}
+	
+	z1z_defending_the_western_flank_1 = {
+		position = 12
+		icon = mission_green_village
+		
+		required_missions = {
+			z1z_leftside_flank_secured_1
+		}
+		
+		trigger = {
+			3048 = {
+				fort_level = 4
+			}
+			3071 = {
+				fort_level = 4
+			}
+			7029 = {
+				fort_level = 4
+			}
+		}
+		
+		effect = {
+			3048 = {
+				add_province_modifier = {
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+			3071 = {
+				add_province_modifier = {
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+			7029 = {
+				add_province_modifier = { 
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_preparing_forward_outposts_1 = {
+		position = 13
+		icon = mission_jungle_pilgrim
+		
+		required_missions = {
+			z1z_defending_the_western_flank_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = west_deepwoods_region
+				has_building = ramparts
+				fort_level = 4
+				value = 3
+			}
+		}
+		
+		effect = {
+			west_deepwoods_region = {
+				limit = {
+					owned_by = ROOT
+					trade_goods = tropical_wood
+				}
+				add_province_modifier = {
+					name = z1z_safe_production
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_connecting_fey_to_cannons_1 = {
+		position = 15
+		icon = mission_ramsteel_gunpowder
+		
+		required_missions = {
+			z1z_western_deepwoods_pacts_set_1
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z1z_recently_connected_fey_to_tanks }
+			has_country_flag = z1z_fey_revolt_complete_flag
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fey_enchanted_cannons
+				duration = -1
+			}
+			add_country_modifier = {
+				name = z1z_recently_connected_fey_to_tanks
+				duration = 3650
+			}
+		}
+	}
+}
+
+goblin_trading_company_left_deepwoods_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_woodland_route_1
+	}
+	
+	z1z_securing_our_left_flank_1 = {
+		position = 10
+		icon = mission_assemble_an_army_and_factory_smoke
+		
+		required_missions = {
+			z1z_a_way_into_the_deepwoods_1
+		}
+		
+		trigger = {
+			sawelear_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			sawallar_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			volnudu_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			
+		}
+		
+		effect = {
+			cenag_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lebkadu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ciranhofonn_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+		}
+	}
+	
+	z1z_leftside_flank_secured_1 = {
+		position = 11
+		icon = mission_misty_forest
+		
+		required_missions = {
+			z1z_securing_our_left_flank_1
+		}
+		
+		trigger = {
+			cenag_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			lebkadu_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			ciranhofonn_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fighting_like_the_wood_elves
+				duration = 9125
+			}
+		}
+	}
+	
+	z1z_western_deepwoods_pacts_set_1 = {
+		position = 14
+		icon = mission_necromancy
+		
+		required_missions = {
+			z1z_preparing_forward_outposts_1
+			z1z_making_an_initial_pact_1
+		}
+		
+		trigger = {
+			OR = {
+				3006 = {
+					num_of_units_in_province = {
+						type = cavalry
+						amount = 50
+					}
+				}
+				7000 = {
+					num_of_units_in_province = {
+						type = cavalry
+						amount = 50
+					}
+				}
+			}
+			7003 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 50
+				}
+			}
+			7001 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 50
+				}
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_goblin_trading_company.7
+			}
+		}
+	}
+	
+	z1z_connecting_fey_to_engines_1 = {
+		position = 15
+		icon = mission_crystal_focus
+		
+		required_missions = {
+			z1z_western_deepwoods_pacts_set_1
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z1z_recently_connected_fey_to_tanks }
+			has_country_flag = z1z_fey_revolt_complete_flag
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fey_enchanted_engines
+				duration = -1
+			}
+			add_country_modifier = {
+				name = z1z_recently_connected_fey_to_tanks
+				duration = 3650
+			}
+		}
+	}
+	
+}
+
+goblin_trading_company_right_deepwoods_1 = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_woodland_route_1
+	}
+	
+	z1z_heading_towards_the_mountain_1 = {
+		position = 10
+		icon = mission_secret_of_the_veil
+		
+		required_missions = {
+			z1z_a_way_into_the_deepwoods_1
+		}
+		
+		trigger = {
+			scothaear_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			scothalar_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			krazho_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			yfelorr_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			criodharka_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			dywyael_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}  
+			ghul_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			arsydpydru_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lonfarch_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ayeth_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gozyest_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_full_mountainside_control_1 = {
+		position = 11
+		icon = mission_verdant_secret
+		
+		required_missions = {
+			z1z_heading_towards_the_mountain_1
+		}
+		
+		trigger = {
+			ghul_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			dywyael_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			arsydpydru_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			lonfarch_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			ayeth_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			gozyest_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fighting_like_fey_orcs
+				duration = 9125
+			}
+		}
+	}
+	
+	z1z_eastern_deepwoods_pacts_1 = {
+		position = 14
+		icon = mission_stormy_seas
+		
+		required_missions = {
+			z1z_making_an_initial_pact_1
+			z1z_implementing_production_facilities_1
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = east_deepwoods_region
+				trade_goods = tropical_wood
+				base_production = 10
+				has_manufactory_trigger = yes
+				value = 12
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_goblin_trading_company.8
+			}
+		}
+	}
+	
+	z1z_connecting_fey_to_chassis_1 = {
+		position = 15
+		icon = mission_machine
+		
+		required_missions = {
+			z1z_eastern_deepwoods_pacts_1
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z1z_recently_connected_fey_to_tanks }
+			has_country_flag = z1z_fey_revolt_complete_flag
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fey_enchanted_chassis
+				duration = -1
+			}
+			add_country_modifier = {
+				name = z1z_recently_connected_fey_to_tanks
+				duration = 3650
+			}
+		}
+	}
+	
+}
+
+goblin_trading_company_rightmost_deepwoods_1 = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_woodland_route_1
+	}
+	
+	z1z_defending_the_eastern_flank_1 = {
+		position = 12
+		icon = mission_alone_in_the_forest
+		
+		required_missions = {
+			z1z_full_mountainside_control_1
+		}
+		
+		trigger = {
+			3069 = {
+				fort_level = 4
+			}	
+			3070 = {
+				fort_level = 4
+			}
+			3064 = {
+				fort_level = 4
+			}
+		}
+		
+		effect = {
+			3069 = {
+				add_province_modifier = {
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+			3070 = {
+				add_province_modifier = {
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+			3064 = {
+				add_province_modifier = {
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_implementing_production_facilities_1 = {
+		position = 13
+		icon = mission_early_game_buildings
+		
+		required_missions = {
+			z1z_defending_the_eastern_flank_1
+		}
+		
+		provinces_to_highlight = {
+			all_province = {
+				region = east_deepwoods_region 
+				OR = {
+					NOT = { base_production = 5 }
+					NOT = { has_building = workshop }
+				}
+				trade_goods = tropical_wood
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood
+				region = east_deepwoods_region
+				has_building = workshop
+				base_production = 5                     
+				value = 21
+			}
+		}
+		
+		effect = {
+			east_deepwoods_region = {
+				limit = {
+					owned_by = ROOT
+					trade_goods = tropical_wood
+				}
+				add_province_modifier = {
+					name = z1z_safe_production
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_connecting_fey_to_tracks_1 = {
+		position = 15
+		icon = mission_rail
+		
+		required_missions = {
+			z1z_eastern_deepwoods_pacts_1
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z1z_recently_connected_fey_to_tanks }
+			has_country_flag = z1z_fey_revolt_complete_flag
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fey_enchanted_tracks
+				duration = -1
+			}
+			add_country_modifier = {
+				name = z1z_recently_connected_fey_to_tanks
+				duration = 3650
+			}
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+goblin_trading_company_center_mithril_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mithril_route_2
+	}
+	
+	z1z_an_entrenceway_into_the_mountains = {
+		position = 16
+		icon = mch_bypass_great_wall
+		
+		required_missions = {
+			z1z_completing_the_feywood_supply_1
+		}
+		
+		provinces_to_highlight = {
+			province_id = 2863
+		}
+		
+		trigger = {
+			2863 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		
+		effect = {
+			dwarovrod_1_3_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dwarovrod_4_6_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_the_road_to_haraz_orldhum = {
+		position = 17
+		icon = mission_the_grand_trunk_road_dlh
+		
+		required_missions = {
+			z1z_an_entrenceway_into_the_mountains
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = dwarovrod_1_3_area
+				area = dwarovrod_4_6_area
+			}
+		}
+		
+		trigger = {
+			dwarovrod_1_3_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT 
+			}
+			dwarovrod_4_6_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT 
+			}
+		}
+		
+		effect = {
+			2868 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_the_gates_of_haraz_orldhum = {
+		position = 18
+		icon = mission_dwarf
+		
+		required_missions = {
+			z1z_the_road_to_haraz_orldhum
+		}
+		
+		provinces_to_highlight = {
+			province_id = 2868
+		}
+		
+		trigger = {
+			2868 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		
+		effect = {
+			dwarovrod_7_9_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			2873 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_following_the_road_to_mithradhum = {
+		position = 19
+		icon = mission_burning_separation
+		
+		required_missions = {
+			z1z_the_gates_of_haraz_orldhum
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = dwarovrod_7_9_area
+				province_id = 2873
+			}
+		}
+		
+		trigger = {
+			dwarovrod_7_9_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT 
+			}
+			2873 = {
+				owned_by = ROOT
+				is_core = ROOT 
+			}
+		}
+		
+		effect = {
+			4236 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_a_mithril_hold = {
+		position = 20
+		icon = mission_mithril_cannons
+		
+		required_missions = {
+			z1z_following_the_road_to_mithradhum
+		}
+		
+		provinces_to_highlight = {
+			province_id = 4236
+		}
+		
+		trigger = {
+			4236 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+				has_manufactory_trigger = yes
+				base_production = 30
+			}
+		}
+		
+		effect = {
+			add_province_modifier = {
+				name = z1z_major_manufactory
+				duration = -1
+			}
+		}
+	}	
+	z1z_mithril_production_completed = {
+		position = 23
+		icon = mission_crowning
+		
+		required_missions = {
+			z1z_a_mithril_hold
+		}
+		
+		trigger = {
+			OR = {
+				4236 = {
+					base_production = 40
+					owned_by = ROOT
+					is_core = ROOT
+					NOT = {
+						has_province_modifier = ruined_hold
+						has_province_modifier = partially_ruined_hold
+						has_province_modifier = damaged_hold
+						has_province_modifier = infested_hold
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					value = 3
+					base_production = 10
+					NOT = {
+						province_id = 4236
+					}
+				}
+			}
+		}
+		
+		effect = {
+			country_event = { 
+				id = flavor_goblin_trading_company.5
+			}
+		}
+	}
+}
+
+goblin_trading_company_leftmost_mithril_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mithril_route_2
+	}
+	
+	z1z_exploring_the_caves = {
+		position = 17
+		icon = mission_crystal_cave
+		
+		required_missions = {
+			z1z_an_entrenceway_into_the_mountains
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_terrain = cavern    
+				value = 15
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_building_up_the_caves
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_defending_our_territory = {
+		position = 18
+		icon = mission_mountain_castle
+		
+		required_missions = {
+			z1z_exploring_the_caves
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_terrain = cavern    
+				fort_level = 2
+				value = 15
+			}
+		}
+		
+		effect = {
+			every_core_province = {
+				limit = {
+					OR = {
+						fort_level = 2
+						has_terrain = cavern
+					}
+				}
+				add_province_modifier = {
+					name = z1z_defending_the_caves
+					duration = 3650
+				}
+			}
+		}
+	}
+	
+	z1z_consolidating_our_control = {
+		position = 19
+		icon = mission_writing_book
+		
+		required_missions = {
+			z1z_defending_our_territory
+			z1z_reintroducing_slavery_to_haraz_orldhum
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				superregion = west_serpentspine_superregion
+				value = 50
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_all_terrain_tanks
+				free_merc = yes
+			}
+		}
+	}
+	
+	z1z_finding_the_connection = {
+		position = 20
+		icon = mission_forest_shrine
+		
+		required_missions = {
+			z1z_consolidating_our_control
+		}
+		
+		trigger = {
+			4065 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_driller_tanks
+				free_merc = yes
+			}
+		}
+	}
+	
+	z1z_rebuilding_the_tunnel = {
+		position = 21
+		icon = mission_treasure_room
+		
+		required_missions = {
+			z1z_extra_resources_to_sell
+			z1z_finding_the_connection
+		}
+		
+		trigger = {
+			4097 = { 
+				has_great_project = { 
+					type = marrhold_dwarovar_tunnel 
+					tier = 1
+				} 
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_cheaper_supply_routes
+				duration = -1
+			}
+		}
+	}
+}
+
+goblin_trading_company_left_mithril_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mithril_route_2
+	}
+	
+	z1z_reintroducing_slavery_to_haraz_orldhum = {
+		position = 18
+		icon = mission_mechanical_mining
+		
+		required_missions = {
+			z1z_the_road_to_haraz_orldhum
+		}
+		
+		trigger = {
+			2868 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_manufactory_trigger = yes
+				base_production = 30
+			}
+		}
+		effect = {
+			2868 = {
+				add_province_modifier = {
+					name = z1z_dwarven_slave_camps
+					duration = -1
+				}	
+				if = {
+					limit = {
+						NOT = { trade_goods = mithril }
+					}
+					change_trade_goods = iron
+				}
+			}
+		}
+	}
+	
+	z1z_setting_workcamps_for_the_dwarves = {
+		position = 19
+		icon = mission_the_surge
+		
+		required_missions = {
+			z1z_reintroducing_slavery_to_haraz_orldhum
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				superregion = west_serpentspine_superregion
+				value = 20
+				base_production = 10
+				NOT = {
+					trade_goods = iron
+					trade_goods = mithril
+				}
+			}
+		}	
+		
+		effect = {
+			every_core_province = {
+				limit = {
+					superregion = west_serpentspine_superregion
+					base_production = 10
+					NOT = {
+						trade_goods = iron
+						trade_goods = mithril
+					}
+				}
+				add_province_modifier = {
+					name = z1z_dwarven_slave_camps
+					duration = -1
+				}	
+			}
+		}
+	}
+	
+	z1z_extra_resources_to_sell = {
+		position = 20
+		icon = mission_potion
+		
+		required_missions = {
+			z1z_setting_workcamps_for_the_dwarves
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_province_modifier = z1z_dwarven_slave_camps
+				value = 20
+				base_production = 15
+			}
+		}
+		
+		effect = {
+			add_years_of_income = 2
+		}
+	}
+	
+	z1z_building_up_a_stockpile = {
+		position = 21
+		icon = mission_ynnic_knights
+		
+		required_missions = {
+			z1z_extra_resources_to_sell
+			z1z_a_mithril_hold
+		}
+		
+		trigger = {
+			num_of_cavalry = 100
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_mountain_tanks
+				free_merc = yes
+			}
+		}
+	}
+	
+	z1z_handing_out_tanks_to_private_institutions = {
+		position = 22
+		icon = mission_sunset_alternative
+		
+		required_missions = {
+			z1z_building_up_a_stockpile
+		}
+		
+		trigger = {
+			4236 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 50
+				}
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_mithril_enhanced_tanks
+				free_merc = yes
+			}
+			4236 = {
+				kill_units = {
+					who = owner
+					type = cavalry
+					amount = 50
+				}
+			}
+		}
+	}
+	
+	z1z_testing_out_the_new_products = {
+		position = 23
+		icon = mission_hundred_years_war
+		
+		required_missions = {
+			z1z_handing_out_tanks_to_private_institutions
+		}
+		
+		trigger = {
+			is_at_war = yes
+			war_score = 80
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_independant_armies_proven
+				duration = -1
+			}
+		}
+	}
+}
+
+goblin_trading_company_right_mithril_2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mithril_route_2
+	}
+	
+	z1z_the_ancient_dwarven_capital = {
+		position = 18
+		icon = spa_new_capital
+		
+		required_missions = {
+			z1z_the_road_to_haraz_orldhum
+		}
+		
+		trigger = {
+			amldihr_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}			
+			4119 = {
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+				OR = {
+					has_building = mage_tower
+					has_building = courthouse
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_building = mage_tower
+				}
+				add_country_modifier = {
+					name = z1z_mages_administer_caves
+					duration = -1
+				}
+			}
+			else_if = {
+				add_country_modifier = {
+					name = z1z_goblin_administering_the_caves
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_food_for_an_empire = {
+		position = 19
+		icon = mission_iroquois_food_surplus
+		
+		required_missions = {
+			z1z_the_ancient_dwarven_capital
+		}
+		
+		trigger = {
+			royal_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			assembly_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			castle_hill_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			common_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_food_readily_available
+				duration = 7300
+			}
+		}
+	}
+	
+	z1z_establishing_a_hold_for_food = {
+		position = 20
+		icon = mission_the_grand_bazaar
+		
+		required_missions = {
+			z1z_food_for_an_empire
+		}
+		
+		trigger = {
+			4147 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					4147 = {
+						has_manufactory_trigger = yes
+						OR = {
+							has_building = workshop
+							has_building = counting_house
+						}
+						OR = {
+							has_building = barracks
+							has_building = training_fields
+						}
+						has_great_project = {
+							type = orlazam_food_silos
+							tier = 3
+						}
+					}
+				}
+				4147 = {
+					add_province_modifier = {
+						name = z1z_massive_food_surplus
+						duration = -1
+					}	
+				}
+			}
+			else_if = {
+				limit = {
+					4147 = {
+						has_manufactory_trigger = yes
+						OR = {
+							has_building = workshop
+							has_building = counting_house
+						}
+						OR = {
+							has_building = barracks
+							has_building = training_fields
+						}
+						has_great_project = {
+							type = orlazam_food_silos
+							tier = 1
+						}
+					}
+				}
+				4147 = {
+					add_province_modifier = {
+						name = z1z_expansive_food_surplus
+						duration = -1
+					}	
+				}
+			}
+			else_if = {
+				limit = {
+					4147 = {
+						has_manufactory_trigger = yes
+						OR = {
+							has_building = workshop
+							has_building = counting_house
+						}
+						OR = {
+							has_building = barracks
+							has_building = training_fields
+						}
+					}
+				}
+				4147 = {
+					add_province_modifier = {
+						name = z1z_large_food_surplus
+						duration = -1
+					}	
+				}
+			}
+			else_if = {
+				limit = {
+					4147 = {
+						OR = {
+							has_building = workshop
+							has_building = counting_house
+						}
+						OR = {
+							has_building = barracks
+							has_building = training_fields
+						}
+					}
+				}
+				4147 = {
+					add_province_modifier = {
+						name = z1z_food_surplus
+						duration = -1
+					}	
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = z1z_small_food_surplus
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_fields_restored = {
+		position = 21
+		icon = mission_a_million_rice_fields
+		
+		required_missions = {
+			z1z_establishing_a_hold_for_food
+		}
+		
+		trigger = {
+			royal_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = { has_province_modifier = flooded_province }
+			}
+			assembly_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = { has_province_modifier = flooded_province }
+			}
+			castle_hill_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = { has_province_modifier = flooded_province }
+			}
+			common_terrace_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = { has_province_modifier = flooded_province }
+			}
+		}	
+		effect = {
+			royal_terrace_area = {
+				type = all
+				add_orcish_minority_size_effect = yes
+			}
+			assembly_terrace_area = {
+				type = all
+				add_orcish_minority_size_effect = yes
+			}
+			castle_hill_area = {
+				type = all
+				add_orcish_minority_size_effect = yes
+			}
+			common_terrace_area = {
+				type = all
+				add_orcish_minority_size_effect = yes
+			}
+		}
+	}
+}
+
+goblin_trading_company_rightmost_mithril_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mithril_route_2
+	}
+	
+	z1z_a_mysterious_hold = {
+		position = 19
+		icon = mission_tear_down_spanish_strongholds
+		
+		required_missions = {
+			z1z_the_ancient_dwarven_capital
+		}
+		
+		trigger = {
+			4020 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		
+		effect = {
+			4020 = {
+				add_province_modifier = {
+					name = z1z_goblins_too_scared_to_inhabit
+					duration = 7300
+				}
+			}
+		}
+	}
+	
+	z1z_the_isolated_hold_found = {
+		position = 20
+		icon = mission_underground_cave
+		
+		required_missions = {
+			z1z_a_mysterious_hold
+		}
+		
+		trigger = {
+			4208 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = z1z_massive_iron_deposits_found
+				duration = 9125
+			}
+		}
+	}
+	
+	z1z_defending_the_plains = {
+		position = 21
+		icon = mission_marwari_horses
+		
+		required_missions = {
+			z1z_the_isolated_hold_found
+		}
+		
+		trigger = {
+			OR = {
+				4198 = {
+					owned_by = ROOT
+					is_core = ROOT
+					fort_level = 4
+				}
+				4201 = {
+					owned_by = ROOT
+					is_core = ROOT
+					fort_level = 4
+				}
+			}
+			OR = {
+				4203 = {
+					owned_by = ROOT
+					is_core = ROOT
+					fort_level = 4
+				}
+				4020 = {
+					owned_by = ROOT
+					is_core = ROOT
+					fort_level = 4
+				}
+			}
+		}
+		
+		effect = {
+			far_moitsa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			skurkha_kyard_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_a_western_stronghold = {
+		position = 22
+		icon = mission_horse_siege
+		
+		required_missions = {
+			z1z_defending_the_plains
+			z1z_fields_restored
+		}
+		
+		trigger = {
+			hidden_respite_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				any_province_in_state = {
+					fort_level = 4
+				}
+			}
+			middle_logr_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				any_province_in_state = {
+					fort_level = 4
+				}
+			}
+			hjyrtsikki_area = {
+				owned_by = ROOT
+				is_core = ROOT
+				any_province_in_state = {
+					fort_level = 4
+				}
+			}
+		}
+		effect = {
+			every_core_province = {
+				limit = {
+					region = northern_pass_region
+					fort_level = 4
+				}
+				add_province_modifier = {
+					name = z1z_northern_bulwarks
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_ice_magic_in_iron = {
+		position = 23
+		icon = mission_armor_choice
+		
+		required_missions = {
+			z1z_a_western_stronghold
+		}
+		
+		trigger = {
+			4208 = {
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+				base_production = 40
+				has_building = weapons
+				has_building = mage_tower
+			}
+			NOT = { has_country_modifier = z1z_massive_iron_deposits_found }
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_ice_iron_tanks
+				free_merc = yes
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+goblin_trading_company_center_deepwoods_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_woodland_route_2
+	}
+	
+	z1z_a_way_into_the_deepwoods = {
+		position = 17
+		icon = mission_forest_pilgrim
+		
+		required_missions = {
+			z1z_mithril_production_completed_1
+		}
+		
+		provinces_to_highlight = {
+			province_id = 3054
+			province_id = 3068
+		}
+		
+		trigger = {
+			OR = {
+				3054 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				3068 = {
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			prehnryn_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			clirypriah_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ciranmyna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_a_kingdom_ripe_for_the_taking = {
+		position = 18
+		icon = mission_burning_castle
+		
+		required_missions = {
+			z1z_a_way_into_the_deepwoods
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = west_deepwoods_region
+				value = 9
+			}
+		}
+		
+		effect = {
+			drennen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			faedayr_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dennesayrn_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			fealmyraeth_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			coryllann_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_the_first_fey_touched_wood = {
+		position = 17
+		icon = mission_magical_forest
+		
+		required_missions = {
+			z1z_a_kingdom_ripe_for_the_taking
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood
+				value = 5
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_cutting_down_the_feywood
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_to_the_heart_of_the_deepwoods = {
+		position = 19
+		icon = mission_alone_in_the_wood
+		
+		required_missions = {
+			z1z_the_first_fey_touched_wood
+		}
+		
+		trigger = {
+			drennen_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			faedayr_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			fealmyraeth_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			coryllann_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			dennesayrn_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_indusrializing_the_feywood
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_making_an_initial_pact = {
+		position = 20
+		icon = mission_swear_fealty_knight
+		
+		required_missions = {
+			z1z_to_the_heart_of_the_deepwoods
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood
+				base_production = 10
+				value = 10
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_initial_fey_pact
+				duration = 1825
+			}
+		}
+	}
+	
+	z1z_preparing_the_change_from_wood_to_feywood = {
+		position = 21
+		icon = mission_science
+		
+		required_missions = {
+			z1z_making_an_initial_pact
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood
+				base_production = 10
+				has_manufactory_trigger = yes
+				value = 12
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_building_up_the_manufactories
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_completing_the_feywood_supply = {
+		position = 22
+		icon = mission_writing_book
+		
+		required_missions = {
+			z1z_preparing_the_change_from_wood_to_feywood
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z1z_initial_fey_pact }
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_goblin_trading_company.9
+			}
+		}
+	}
+}
+
+goblin_trading_company_leftmost_deepwoods_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_woodland_route_2
+	}
+	
+	z1z_defending_the_western_flank = {
+		position = 20
+		icon = mission_green_village
+		
+		required_missions = {
+			z1z_leftside_flank_secured
+		}
+		
+		trigger = {
+			3048 = {
+				fort_level = 4
+			}
+			3071 = {
+				fort_level = 4
+			}
+			7029 = {
+				fort_level = 4
+			}
+		}
+		
+		effect = {
+			3048 = {
+				add_province_modifier = {
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+			3071 = {
+				add_province_modifier = {
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+			7029 = {
+				add_province_modifier = { 
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_preparing_forward_outposts = {
+		position = 21
+		icon = mission_jungle_pilgrim
+		
+		required_missions = {
+			z1z_defending_the_western_flank
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = west_deepwoods_region
+				has_building = ramparts
+				fort_level = 4
+				value = 3
+			}
+		}
+		
+		effect = {
+			west_deepwoods_region = {
+				limit = {
+					owned_by = ROOT
+					trade_goods = tropical_wood
+				}
+				add_province_modifier = {
+					name = z1z_safe_production
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_connecting_fey_to_cannons = {
+		position = 23
+		icon = mission_ramsteel_gunpowder
+		
+		required_missions = {
+			z1z_western_deepwoods_pacts_set
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z1z_recently_connected_fey_to_tanks }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fey_enchanted_cannons
+				duration = -1
+			}
+			add_country_modifier = {
+				name = z1z_recently_connected_fey_to_tanks
+				duration = 3650
+			}
+		}
+	}
+}
+
+goblin_trading_company_left_deepwoods_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_woodland_route_2
+	}
+	
+	z1z_securing_our_left_flank = {
+		position = 18
+		icon = mission_assemble_an_army_and_factory_smoke
+		
+		required_missions = {
+			z1z_a_way_into_the_deepwoods
+		}
+		
+		trigger = {
+			sawelear_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			sawallar_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			volnudu_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			
+		}
+		
+		effect = {
+			cenag_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lebkadu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ciranhofonn_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			} 
+		}
+	}
+	
+	z1z_leftside_flank_secured = {
+		position = 19
+		icon = mission_misty_forest
+		
+		required_missions = {
+			z1z_securing_our_left_flank
+		}
+		
+		trigger = {
+			cenag_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			lebkadu_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			ciranhofonn_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fighting_like_the_wood_elves
+				duration = 9125
+			}
+		}
+	}
+	
+	z1z_western_deepwoods_pacts_set = {
+		position = 22
+		icon = mission_necromancy
+		
+		required_missions = {
+			z1z_preparing_forward_outposts
+			z1z_making_an_initial_pact
+		}
+		
+		trigger = {
+			OR = {
+				3006 = {
+					num_of_units_in_province = {
+						type = cavalry
+						amount = 50
+					}
+				}
+				7000 = {
+					num_of_units_in_province = {
+						type = cavalry
+						amount = 50
+					}
+				}
+			}
+			7003 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 50
+				}
+			}
+			7001 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 50
+				}
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_goblin_trading_company.7
+			}
+		}
+	}
+	
+	z1z_connecting_fey_to_engines = {
+		position = 23
+		icon = mission_crystal_focus
+		
+		required_missions = {
+			z1z_western_deepwoods_pacts_set
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z1z_recently_connected_fey_to_tanks }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fey_enchanted_engines
+				duration = -1
+			}
+			add_country_modifier = {
+				name = z1z_recently_connected_fey_to_tanks
+				duration = 3650
+			}
+		}
+	}
+	
+}
+
+goblin_trading_company_right_deepwoods_2 = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_woodland_route_2
+	}
+	
+	z1z_heading_towards_the_mountain = {
+		position = 18
+		icon = mission_secret_of_the_veil
+		
+		required_missions = {
+			z1z_a_way_into_the_deepwoods
+		}
+		
+		trigger = {
+			scothaear_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			scothalar_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			krazho_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			yfelorr_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			criodharka_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			dywyael_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}  
+			ghul_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			arsydpydru_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lonfarch_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ayeth_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gozyest_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	z1z_full_mountainside_control = {
+		position = 19
+		icon = mission_verdant_secret
+		
+		required_missions = {
+			z1z_heading_towards_the_mountain
+		}
+		
+		trigger = {
+			ghul_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			dywyael_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			arsydpydru_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			lonfarch_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			ayeth_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+			gozyest_area = {
+				type = all
+				is_core = ROOT
+				owned_by = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fighting_like_fey_orcs
+				duration = 9125
+			}
+		}
+	}
+	
+	z1z_eastern_deepwoods_pacts = {
+		position = 22
+		icon = mission_stormy_seas
+		
+		required_missions = {
+			z1z_making_an_initial_pact
+			z1z_implementing_production_facilities
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood
+				base_production = 10
+				has_manufactory_trigger = yes
+				value = 12
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_goblin_trading_company.8
+			}
+		}
+	}
+	
+	z1z_connecting_fey_to_chassis = {
+		position = 23
+		icon = mission_machine
+		
+		required_missions = {
+			z1z_eastern_deepwoods_pacts
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z1z_recently_connected_fey_to_tanks }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fey_enchanted_chassis
+				duration = -1
+			}
+			add_country_modifier = {
+				name = z1z_recently_connected_fey_to_tanks
+				duration = 3650
+			}
+		}
+	}
+	
+}
+
+goblin_trading_company_rightmost_deepwoods_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_woodland_route_2
+	}
+	
+	z1z_defending_the_eastern_flank = {
+		position = 20
+		icon = mission_alone_in_the_forest
+		
+		required_missions = {
+			z1z_full_mountainside_control
+		}
+		
+		trigger = {
+			3069 = {
+				fort_level = 4
+			}	
+			3070 = {
+				fort_level = 4
+			}
+			3064 = {
+				fort_level = 4
+			}
+		}
+		
+		effect = {
+			3069 = {
+				add_province_modifier = {
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+			3070 = {
+				add_province_modifier = {
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+			3064 = {
+				add_province_modifier = {
+					name = z1z_woodland_grove_defenses
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_implementing_production_facilities = {
+		position = 21
+		icon = mission_early_game_buildings
+		
+		required_missions = {
+			z1z_defending_the_eastern_flank
+		}
+		provinces_to_highlight = {
+			all_province = {
+				region = east_deepwoods_region 
+				OR = {
+					NOT = { base_production = 5 }
+					NOT = { has_building = workshop }
+				}
+				trade_goods = tropical_wood
+			}
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood
+				region = east_deepwoods_region
+				has_building = workshop
+				base_production = 5                     
+				value = 21
+			}
+		}
+		
+		effect = {
+			east_deepwoods_region = {
+				limit = {
+					owned_by = ROOT
+					trade_goods = tropical_wood
+				}
+				add_province_modifier = {
+					name = z1z_safe_production
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_connecting_fey_to_tracks = {
+		position = 23
+		icon = mission_rail
+		
+		required_missions = {
+			z1z_eastern_deepwoods_pacts
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z1z_recently_connected_fey_to_tanks }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_fey_enchanted_tracks
+				duration = -1
+			}
+			add_country_modifier = {
+				name = z1z_recently_connected_fey_to_tanks
+				duration = 3650
+			}
+		}
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+goblin_trading_company_mercenary_capstone = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mercenary_capstone
+	}
+	
+	z1z_starting_the_petition = {
+		position = 24
+		icon = mission_new_dawn
+		
+		trigger = {
+			4119 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_manufactory_trigger = yes
+				has_building = courthouse
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+			2863 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_manufactory_trigger = yes
+				has_building = courthouse
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+			2873 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_manufactory_trigger = yes
+				has_building = courthouse
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+			2931 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_manufactory_trigger = yes
+				has_building = courthouse
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+			4147 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_manufactory_trigger = yes
+				has_building = courthouse
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+			4020 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_manufactory_trigger = yes
+				has_building = courthouse
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_preparing_the_fires_of_industry
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_building_up_holds_for_specialization = {
+		position = 25
+		icon = mission_manifest_destiny
+		
+		required_missions = {
+			z1z_starting_the_petition
+		}
+		
+		trigger = {
+			4119 = {
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 25
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+			2863 = {
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 25
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+			2873 = {
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 25
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+			2931 = {
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 25
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+			4147 = {
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 25
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+			4020 = {
+				owned_by = ROOT
+				is_core = ROOT
+				base_production = 25
+				NOT = {
+					has_province_modifier = ruined_hold
+					has_province_modifier = partially_ruined_hold
+					has_province_modifier = damaged_hold
+					has_province_modifier = infested_hold
+				}
+			}
+		}
+		
+		effect = {
+			4119 = {
+				add_province_modifier = {
+					name = z1z_small_workshops
+					duration = -1
+				}
+			}
+			2863 = {
+				add_province_modifier = {
+					name = z1z_small_workshops
+					duration = -1
+				}
+			}
+			2868 = {
+				add_province_modifier = {
+					name = z1z_small_workshops
+					duration = -1
+				}
+			}
+			2931 = {
+				add_province_modifier = {
+					name = z1z_small_workshops
+					duration = -1
+				}
+			}
+			4147 = {
+				add_province_modifier = {
+					name = z1z_small_workshops
+					duration = -1
+				}
+			}
+			4020 = {
+				add_province_modifier = {
+					name = z1z_small_workshops
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	z1z_learning_old_metal_forging = {
+		position = 26
+		icon = mission_armoury
+		
+		required_missions = {
+			z1z_building_up_holds_for_specialization
+		}
+		
+		trigger = {
+			innovativeness = 80
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_ancient_metalworking_rediscovered
+				duration = -1
+			}
+		}
+	}
+	
+	z1z_reforging_goblinsblade_1 = {
+		position = 27
+		icon = mission_smith
+		
+		required_missions = {
+			z1z_learning_old_metal_forging
+		}
+		
+		trigger = {
+			current_income_balance = 300
+			army_size_percentage = 1
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_goblin_trading_company.10
+			}
+		}
+	}
+}
+
+goblin_trading_company_leftmost_company_route = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mercenary_capstone
+	}
+	
+	z1z_khugdihr_golem_tanks = {
+		icon = mission_magy
+		position = 26
+		
+		required_missions = {
+			z1z_building_up_holds_for_specialization
+		}
+		
+		trigger = {
+			2863 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_golem_tank_division
+				free_merc = yes
+			}
+			2863 = {
+				remove_province_modifier = z1z_small_workshops
+				add_province_modifier = {
+					name = z1z_major_manufactory 
+					duration = -1
+				}
+			}
+			2863 = {
+				kill_units = {
+					who = owner
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+	}
+}
+
+goblin_trading_company_left_company_route = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mercenary_capstone
+	}
+	
+	z1z_orlaz_slave_tanks = {
+		icon = mission_divine_legion
+		position = 26
+		
+		required_missions = {
+			z1z_building_up_holds_for_specialization
+		}
+		
+		trigger = {
+			2868 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_slave_tank_division
+				free_merc = yes
+			}
+			2868 = {
+				remove_province_modifier = z1z_small_workshops
+				add_province_modifier = {
+					name = z1z_major_manufactory 
+					duration = -1
+				}
+			}
+			2868 = {
+				kill_units = {
+					who = owner
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+	}
+	
+	z1z_repair_tanks = {
+		icon = mission_well_of_majesty
+		position = 27
+		
+		required_missions = {
+			z1z_learning_old_metal_forging
+		}
+		
+		trigger = {
+			2931 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_dagrite_tank_divison
+				free_merc = yes
+			}
+			2931 = {
+				remove_province_modifier = z1z_small_workshops
+				add_province_modifier = {
+					name = z1z_major_manufactory 
+					duration = -1
+				}
+			}
+			2931 = {
+				kill_units = {
+					who = owner
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+	}
+}
+
+goblin_trading_company_right_company_route = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mercenary_capstone
+	}
+	
+	z1z_bureaucratic_tanks = {
+		icon = mission_gujarati_textiles
+		position = 26
+		
+		required_missions = {
+			z1z_building_up_holds_for_specialization
+		}
+		
+		trigger = {
+			4119 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_systems_tank_division
+				free_merc = yes
+			}
+			4119 = {
+				remove_province_modifier = z1z_small_workshops
+				add_province_modifier = {
+					name = z1z_major_manufactory 
+					duration = -1
+				}
+			}
+			4119 = {
+				kill_units = {
+					who = owner
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+	}
+	
+	z1z_ramsteel_tanks = {
+		icon = mission_ramsteel_crest
+		position = 27
+		
+		required_missions = {
+			z1z_learning_old_metal_forging
+		}
+		
+		trigger = {	
+			4147 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_ramsteel_tank_division
+				free_merc = yes
+			}
+			4147 = {
+				remove_province_modifier = z1z_small_workshops
+				add_province_modifier = {
+					name = z1z_major_manufactory 
+					duration = -1
+				}
+			}
+			4147 = {
+				kill_units = {
+					who = owner
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+	}
+}
+
+goblin_trading_company_rightmost_company_route = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_mercenary_capstone
+	}
+	
+	z1z_science_tanks = {
+		icon = mission_holy_star
+		position = 26
+		
+		required_missions = {
+			z1z_building_up_holds_for_specialization
+		}
+		
+		trigger = {
+			4020 = {
+				num_of_units_in_province = {
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z1z_science_tank_division
+				free_merc = yes
+			}
+			4020 = {
+				remove_province_modifier = z1z_small_workshops
+				add_province_modifier = {
+					name = z1z_major_manufactory 
+					duration = -1
+				}
+			}
+			4020 = {
+				kill_units = {
+					who = owner
+					type = cavalry
+					amount = 150
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+goblin_trading_company_center_centralized_route = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_centralized_capstone
+	}
+	z1z_one_final_agreement = {
+		icon = mission_vrorenmarch_kingdom
+		position = 24
+		
+		trigger = {
+			num_of_cavalry = 300
+		}
+		
+		effect = {
+			enable_mythical_cavalry = { mount = goblinsteel_tank }
+		}
+	}
+	
+	z1z_working_the_mages_in_the_deepwoods = {
+		icon = mission_star_ascendency
+		position = 25
+		
+		
+		required_missions = {
+			z1z_one_final_agreement
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = mage_tower 
+				amount = 20
+				base_production = 10
+				trade_goods = tropical_wood
+			}
+		}
+		
+		effect = {
+			every_core_province = {
+				limit = {
+					has_building = mage_tower
+					trade_goods = tropical_wood
+				}
+				add_province_modifier = {
+					name = z1z_mages_working_with_fey
+					duration = -1
+				}
+			}
+			
+		}
+	}
+	
+	z1z_increasing_production_numbers = {
+		icon = mission_arca_ore
+		position = 25
+		
+		
+		required_missions = {
+			z1z_working_the_mages_in_the_deepwoods
+		}
+		
+		trigger = {
+			num_of_hussars = 50
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_cheaper_produciton
+				duration = 3650
+			}
+		}
+	}
+	
+	z1z_reforging_goblinsblade = {
+		icon = mission_smith
+		position = 25
+		
+		
+		required_missions = {
+			z1z_increasing_production_numbers
+		}
+		
+		trigger = {
+			num_of_hussars = 100
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_goblin_trading_company.10
+			}
+		}
+	}
+}
+
+goblin_trading_company_leftmost_centralized_route = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_centralized_capstone
+	}
+	z1z_goblinsteel_cannons = {
+		icon = mission_magisterium_fold_two
+		position = 26
+		
+		required_missions = {
+			z1z_working_the_mages_in_the_deepwoods
+		}
+		
+		trigger = {
+			if = {
+				limit = {
+					NOT = {
+						mission_completed = z1z_goblinsteel_engines
+						mission_completed = z1z_goblinsteel_chassis
+						mission_completed = z1z_goblinsteel_tracks
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							mission_completed = z1z_goblinsteel_engines
+							NOT = {
+								mission_completed = z1z_goblinsteel_chassis
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_chassis
+							NOT = {
+								mission_completed = z1z_goblinsteel_engines
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_tracks
+							NOT = {
+								mission_completed = z1z_goblinsteel_chassis
+								mission_completed = z1z_goblinsteel_engines
+							}
+						}
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 2
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 2
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							mission_completed = z1z_goblinsteel_engines
+							mission_completed = z1z_goblinsteel_chassis
+							NOT = {
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_chassis
+							mission_completed = z1z_goblinsteel_tracks
+							NOT = {
+								mission_completed = z1z_goblinsteel_engines
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_chassis
+							mission_completed = z1z_goblinsteel_engines
+							NOT = {
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 3
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 3
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 4
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 4
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_goblinsteel_cannon_implemented
+				duration = -1
+			}
+		}
+	}
+}
+
+goblin_trading_company_left_centralized_route = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_centralized_capstone
+	}
+	z1z_goblinsteel_engines = {
+		icon = mission_magisterium_fold_three
+		position = 26
+		
+		required_missions = {
+			z1z_working_the_mages_in_the_deepwoods
+		}
+		
+		trigger = {
+			if = {
+				limit = {
+					NOT = {
+						mission_completed = z1z_goblinsteel_cannons
+						mission_completed = z1z_goblinsteel_chassis
+						mission_completed = z1z_goblinsteel_tracks
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							mission_completed = z1z_goblinsteel_cannons
+							NOT = {
+								mission_completed = z1z_goblinsteel_chassis
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_chassis
+							NOT = {
+								mission_completed = z1z_goblinsteel_cannons
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_tracks
+							NOT = {
+								mission_completed = z1z_goblinsteel_chassis
+								mission_completed = z1z_goblinsteel_cannons
+							}
+						}
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 2
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 2
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							mission_completed = z1z_goblinsteel_cannons
+							mission_completed = z1z_goblinsteel_tracks
+							NOT = {
+								mission_completed = z1z_goblinsteel_chassis
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_chassis
+							mission_completed = z1z_goblinsteel_tracks
+							NOT = {
+								mission_completed = z1z_goblinsteel_cannons
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_chassis
+							mission_completed = z1z_goblinsteel_cannons
+							NOT = {
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 3
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 3
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 4
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 4
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_goblinsteel_engine_implemented
+				duration = -1
+			}
+		}
+	}
+	
+	z1z_heavy_mithril_mining_innovations = {
+		icon = mission_frozen_star
+		position = 27
+		
+		required_missions = {
+			z1z_increasing_production_numbers
+		}
+		
+		trigger = {
+			innovativeness = 80
+			num_of_owned_provinces_with = {
+				trade_goods = mithril
+				value = 3
+				base_production = 20
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_goblinsteel_mithril_production_methods_simplified
+				duration = -1
+			}
+		}
+	}
+}
+
+goblin_trading_company_right_centralized_route = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_centralized_capstone
+	}
+	z1z_goblinsteel_chassis = {
+		icon = mission_magisterium_fold_four
+		position = 26
+		
+		required_missions = {
+			z1z_working_the_mages_in_the_deepwoods
+		}
+		
+		trigger = {
+			if = {
+				limit = {
+					NOT = {
+						mission_completed = z1z_goblinsteel_engines
+						mission_completed = z1z_goblinsteel_cannons
+						mission_completed = z1z_goblinsteel_tracks
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							mission_completed = z1z_goblinsteel_engines
+							NOT = {
+								mission_completed = z1z_goblinsteel_cannons
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_cannons
+							NOT = {
+								mission_completed = z1z_goblinsteel_engines
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_tracks
+							NOT = {
+								mission_completed = z1z_goblinsteel_cannons
+								mission_completed = z1z_goblinsteel_engines
+							}
+						}
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 2
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 2
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							mission_completed = z1z_goblinsteel_engines
+							mission_completed = z1z_goblinsteel_cannons
+							NOT = {
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_cannons
+							mission_completed = z1z_goblinsteel_tracks
+							NOT = {
+								mission_completed = z1z_goblinsteel_engines
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_cannons
+							mission_completed = z1z_goblinsteel_engines
+							NOT = {
+								mission_completed = z1z_goblinsteel_tracks
+							}
+						}
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 3
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 3
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 4
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 4
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_goblinsteel_chassis_implemented
+				duration = -1
+			}
+		}
+	}
+	
+	z1z_heavy_feywood_cutting_innovations = {
+		icon = mission_burning_man
+		position = 27
+		
+		required_missions = {
+			z1z_increasing_production_numbers
+		}
+		
+		trigger = {
+			innovativeness = 80
+			num_of_owned_provinces_with = {
+				trade_goods = tropical_wood 
+				value = 5
+				base_production = 25
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_goblinsteel_fey_wood_production_methods_simplified
+				duration = -1
+			}
+		}
+	}
+}
+
+goblin_trading_company_rightmost_centralized_route = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z1Z
+		has_country_flag = z1z_centralized_capstone
+	}
+	z1z_goblinsteel_tracks = {
+		icon = mission_magisterium_fold_six
+		position = 26
+		
+		required_missions = {
+			z1z_working_the_mages_in_the_deepwoods
+		}
+		
+		trigger = {
+			if = {
+				limit = {
+					NOT = {
+						mission_completed = z1z_goblinsteel_engines
+						mission_completed = z1z_goblinsteel_chassis
+						mission_completed = z1z_goblinsteel_cannons
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 1
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 1
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							mission_completed = z1z_goblinsteel_engines
+							NOT = {
+								mission_completed = z1z_goblinsteel_chassis
+								mission_completed = z1z_goblinsteel_cannons
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_chassis
+							NOT = {
+								mission_completed = z1z_goblinsteel_engines
+								mission_completed = z1z_goblinsteel_cannons
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_cannons
+							NOT = {
+								mission_completed = z1z_goblinsteel_chassis
+								mission_completed = z1z_goblinsteel_engines
+							}
+						}
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 2
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 2
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						AND = {
+							mission_completed = z1z_goblinsteel_engines
+							mission_completed = z1z_goblinsteel_chassis
+							NOT = {
+								mission_completed = z1z_goblinsteel_cannons
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_chassis
+							mission_completed = z1z_goblinsteel_cannons
+							NOT = {
+								mission_completed = z1z_goblinsteel_engines
+							}
+						}
+						AND = {
+							mission_completed = z1z_goblinsteel_chassis
+							mission_completed = z1z_goblinsteel_engines
+							NOT = {
+								mission_completed = z1z_goblinsteel_cannons
+							}
+						}
+					}
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 3
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 3
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					trade_goods = mithril
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 4
+				}
+				num_of_owned_provinces_with = {
+					trade_goods = tropical_wood
+					base_production = 15
+					has_manufactory_trigger = yes
+					value = 4
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z1z_goblinsteel_tracks_implemented
+				duration = -1
+			}
+		}
+	}
+}

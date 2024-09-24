@@ -6884,7 +6884,7 @@ country_event = {
 # Naval Ideas
 #######################################
 
- # Hardened Oak On Our Ships
+# Hardened Oak On Our Ships
 # country_event = {
 	# id = ideagroups.1700
 	# title = ideagroups.1700.t
@@ -6912,7 +6912,7 @@ country_event = {
 	# }
 # }
 
- # An Admiral Worth His Title
+# An Admiral Worth His Title
 # country_event = {
 	# id = ideagroups.1701
 	# title = ideagroups.1701.t
@@ -6943,7 +6943,7 @@ country_event = {
 	# }
 # }
 
- # Improved Training
+# Improved Training
 # country_event = {
 	# id = ideagroups.1702
 	# title = ideagroups.1702.t
@@ -6982,7 +6982,7 @@ country_event = {
 	# }
 # }
 
- # Tactical Innovation
+# Tactical Innovation
 # country_event = {
 	# id = ideagroups.1703
 	# title = ideagroups.1703.t
@@ -7018,7 +7018,7 @@ country_event = {
 		# }
 	# }
 # }
- # Smugglers Caught
+# Smugglers Caught
 # country_event = {
 	# id = ideagroups.1704
 	# title = ideagroups.1704.t
@@ -7054,7 +7054,7 @@ country_event = {
 	# }
 # }
 
- # A Royal Guest
+# A Royal Guest
 # country_event = {
 	# id = ideagroups.1705
 	# title = ideagroups.1705.t
@@ -7078,7 +7078,7 @@ country_event = {
 	# }
 # }
 
- # A Patriotic Donation
+# A Patriotic Donation
 # country_event = {
 	# id = ideagroups.1706
 	# title = ideagroups.1706.t
@@ -7110,7 +7110,7 @@ country_event = {
 	# }
 # }
 
- # Disaster at Sea
+# Disaster at Sea
 # country_event = {
 	# id = ideagroups.1707
 	# title = ideagroups.1707.t
@@ -7143,7 +7143,7 @@ country_event = {
 	# }
 # }
 
- # Missed Recruiting Target
+# Missed Recruiting Target
 # country_event = {
 	# id = ideagroups.1708
 	# title = ideagroups.1708.t
@@ -7167,7 +7167,7 @@ country_event = {
 	# }
 # }
 
- # Rotting Wood
+# Rotting Wood
 # country_event = {
 	# id = ideagroups.1709
 	# title = ideagroups.1709.t
@@ -7207,7 +7207,7 @@ country_event = {
 	# }
 # }
 
- # Shipyard Fire
+# Shipyard Fire
 # country_event = {
 	# id = ideagroups.1710
 	# title = ideagroups.1710.t
@@ -8189,105 +8189,105 @@ country_event = {
 }
 
 # Ancestral Temple
-country_event = {
-	id = ideagroups.1923 
-	title = ideagroups.1923.t
-	desc = ideagroups.1923.d
-	picture = PRAYING_eventPicture
-	is_triggered_only = yes
-	goto = ancestral_temple_province_target
-
-	trigger = {
-		has_idea_group = horde_gov_ideas
-		any_owned_province = {
-			religion_group = pagan
-			NOT = { has_province_modifier = "ancestral_temple" }
-		}
-	}
-	immediate = {
-		hidden_effect = { 
-			random_owned_province = {
-				limit = {
-					religion_group = pagan
-					NOT = { has_province_modifier = "ancestral_temple" }
-					is_capital = no
-				}
-				save_event_target_as = ancestral_temple_province_target
-			}
-		}
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	option = {
-		name = ideagroups.1923.a
-		event_target:ancestral_temple_province_target = { 
-			add_province_modifier = {
-				name = "ancestral_temple"
-				duration = 3650
-			}
-		}
-		add_prestige = 5
-	}
-}
+#country_event = {
+#	id = ideagroups.1923 
+#	title = ideagroups.1923.t
+#	desc = ideagroups.1923.d
+#	picture = PRAYING_eventPicture
+#	is_triggered_only = yes
+#	goto = ancestral_temple_province_target
+#
+#	trigger = {
+#		has_idea_group = horde_gov_ideas
+#		any_owned_province = {
+#			religion_group = pagan
+#			NOT = { has_province_modifier = "ancestral_temple" }
+#		}
+#	}
+#	immediate = {
+#		hidden_effect = { 
+#			random_owned_province = {
+#				limit = {
+#					religion_group = pagan
+#					NOT = { has_province_modifier = "ancestral_temple" }
+#					is_capital = no
+#				}
+#				save_event_target_as = ancestral_temple_province_target
+#			}
+#		}
+#	}
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	option = {
+#		name = ideagroups.1923.a
+#		event_target:ancestral_temple_province_target = { 
+#			add_province_modifier = {
+#				name = "ancestral_temple"
+#				duration = 3650
+#			}
+#		}
+#		add_prestige = 5
+#	}
+#}
 
 # Blue Dragon
-country_event = {
-	id = ideagroups.1924
-	title = ideagroups.1924.t
-	desc = ideagroups.1924.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
-	is_triggered_only = yes
-	
-	trigger = {
-		has_idea_group = horde_gov_ideas
-		NOT = { has_country_modifier = "blue_dragon" }
-		NOT = { has_country_modifier = "white_tiger" }
-		is_at_war = yes
-		any_owned_province = {
-			religion_group = pagan
-		}
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	option = {
-		name = ideagroups.1924.a
-		add_country_modifier = {
-			name = "blue_dragon"
-			duration = 3650
-		}
-	}
-}
+#country_event = {
+#	id = ideagroups.1924
+#	title = ideagroups.1924.t
+#	desc = ideagroups.1924.d
+#	picture = HORDE_ON_HORSEBACK_eventPicture
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		has_idea_group = horde_gov_ideas
+#		NOT = { has_country_modifier = "blue_dragon" }
+#		NOT = { has_country_modifier = "white_tiger" }
+#		is_at_war = yes
+#		any_owned_province = {
+#			religion_group = pagan
+#		}
+#	}
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	option = {
+#		name = ideagroups.1924.a
+#		add_country_modifier = {
+#			name = "blue_dragon"
+#			duration = 3650
+#		}
+#	}
+#}
 
 # White Tiger
-country_event = {
-	id = ideagroups.1925
-	title = ideagroups.1925.t
-	desc = ideagroups.1925.d
-	picture = HORDE_ON_HORSEBACK_eventPicture
-	is_triggered_only = yes
-	
-	trigger = {
-		has_idea_group = horde_gov_ideas
-		NOT = { has_country_modifier = "blue_dragon" }
-		NOT = { has_country_modifier = "white_tiger" }
-		is_at_war = no
-		any_owned_province = {
-			religion_group = pagan
-		}
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
-	option = {
-		name = ideagroups.1925.a
-		add_country_modifier = {
-			name = "white_tiger"
-			duration = 3650
-		}
-	}
-}
+#country_event = {
+#	id = ideagroups.1925
+#	title = ideagroups.1925.t
+#	desc = ideagroups.1925.d
+#	picture = HORDE_ON_HORSEBACK_eventPicture
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		has_idea_group = horde_gov_ideas
+#		NOT = { has_country_modifier = "blue_dragon" }
+#		NOT = { has_country_modifier = "white_tiger" }
+#		is_at_war = no
+#		any_owned_province = {
+#			religion_group = pagan
+#		}
+#	}
+#	mean_time_to_happen = {
+#		days = 1
+#	}
+#	option = {
+#		name = ideagroups.1925.a
+#		add_country_modifier = {
+#			name = "white_tiger"
+#			duration = 3650
+#		}
+#	}
+#}
 
 # The Silence of the Lambs
 country_event = {

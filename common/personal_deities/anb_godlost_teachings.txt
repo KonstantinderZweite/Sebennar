@@ -329,6 +329,11 @@ nationalist_teachings = {
 			factor = 2
 			ruler_culture = wolf_command
 		}
+		modifier = {
+			factor = 100
+			mission_completed = R62_philosophy_of_state_and_blood
+			NOT = { mission_completed = R62_the_ten_reforms }
+		}
 	}
 }
 

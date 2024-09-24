@@ -1399,3 +1399,112 @@ dookan_order = {
     }
     localization = holy_order
 }
+#gor vazumbrog
+dauvek_veker_order = {
+    icon = GFX_holy_order_passionates
+    trigger = {
+		tag = I14
+		has_country_flag = I14_enable_holy_orders
+	}
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+        add_base_manpower = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_manpower = 1 } }
+                set_base_manpower = 1
+            }
+        }
+    }
+    modifier = {
+        local_garrison_damage = 0.5
+		local_assault_fort_ability = -0.2
+		local_unrest = -2
+    }
+    ai_priority = {
+        factor = 2
+        modifier = {
+            factor = 2.0
+            unrest = 5
+        }
+    }
+    localization = holy_order
+}
+craftsmen_order = {
+    icon = GFX_holy_order_judges
+    trigger = {
+		tag = I14
+		has_country_flag = I14_enable_holy_orders
+	}
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+        add_base_manpower = 1
+		if = {
+			limit = {
+				trade_goods = iron
+			}
+			add_base_production = 1
+		}
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_manpower = 1 } }
+                set_base_manpower = 1
+            }
+        }
+    }
+    modifier = {
+        local_regiment_cost = -0.25
+		local_production_efficiency	= 0.1
+		local_defensiveness = 0.1
+    }
+    ai_priority = {
+        factor = 2
+        modifier = {
+            factor = 2.0
+            unrest = 5
+        }
+    }
+    localization = holy_order
+}
+holy_monks_order = {
+    icon = GFX_holy_order_grudgeknights
+    trigger = {
+		tag = I14
+		has_country_flag = I14_enable_holy_orders
+	}
+    cost = 50
+    cost_type = mil_power
+    per_province_effect = {
+        add_base_manpower = 1
+    }
+    per_province_abandon_effect = {
+        add_base_manpower = -1
+        hidden_effect = {
+            if = {
+                limit = { NOT = { base_manpower = 1 } }
+                set_base_manpower = 1
+            }
+        }
+    }
+    modifier = {
+        local_manpower_modifier = 0.25
+		supply_limit_modifier = 0.2
+		local_build_cost = -0.2
+    }
+    ai_priority = {
+        factor = 2
+        modifier = {
+            factor = 2.0
+            unrest = 5
+        }
+    }
+    localization = holy_order
+}

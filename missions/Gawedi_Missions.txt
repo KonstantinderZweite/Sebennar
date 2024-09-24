@@ -9,75 +9,17 @@ gawed_column_1 = {
 	}
 	has_country_shield = yes
 	
-	A13_eagle_crest = {
-		icon = mission_green_village
-		position = 1
-		
-		provinces_to_highlight = {
-			OR = {
-				area = dragonhills_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			dragonhills_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			lorentish_approach_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			uelaire_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			norley_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
 	gawed_wars_of_dominion = {
 		icon = mission_unite_home_region
-		required_missions = { A13_eagle_crest }
-		position = 2
-		
-		provinces_to_highlight = {
-			OR = {
-				area = lorentish_approach_area
-				area = uelaire_area
-				area = norley_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
+		required_missions = { }
+		position = 1
 		
 		trigger = {
-			lorentish_approach_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			uelaire_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			norley_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			if = {
+				limit = {
+					exists = A01
+				}
+				war_with = A01
 			}
 		}
 		
@@ -89,12 +31,16 @@ gawed_column_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			gnomish_pass_area = {
+			reaver_coast_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 7300 #20 years
 			}
 		}
 	}
@@ -102,32 +48,15 @@ gawed_column_1 = {
 	gawed_halfling_suzerainty = {
 		icon = mission_monarch_in_throne_room
 		required_missions = { gawed_wars_of_dominion }
-		position = 3
+		position = 2
 		
 		provinces_to_highlight = {
-			OR = {
-				area = viswall_area
-				area = the_borders_area
-				area = pearpoint_area
-				area = applefields_area
-			}
+			region = small_country_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			viswall_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			the_borders_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			pearpoint_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			applefields_area = {
+			small_country_region = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -136,7 +65,7 @@ gawed_column_1 = {
 		effect = {
 			small_country_region = {
 				add_province_modifier = {
-					name = A13_faster_integration
+					name = "faster_integration"
 					duration = 7300 #20 years
 				}
 			}
@@ -167,11 +96,12 @@ gawed_column_1 = {
 	gawed_consolidate_our_hold = {
 		icon = consolidate_switzerland
 		required_missions = { gawed_halfling_suzerainty }
-		position = 4
+		position = 3
 		
 		provinces_to_highlight = {
 			OR = {
 				area = beepeck_area
+				area = exwes_area
 				area = iochand_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -179,6 +109,10 @@ gawed_column_1 = {
 		
 		trigger = {
 			beepeck_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			exwes_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -196,36 +130,6 @@ gawed_column_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			roysfort_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	A13_push_south = {
-		icon = mission_merchant_trip
-		required_missions = { gawed_consolidate_our_hold }
-		position = 5
-		
-		provinces_to_highlight = {
-			OR = {
-				area = roysfort_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			roysfort_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
 			redglades_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -238,8 +142,8 @@ gawed_column_1 = {
 	
 	gawed_burning_the_redglades = {
 		icon = mission_burning_man
-		required_missions = { A13_push_south }
-		position = 6
+		required_missions = { gawed_consolidate_our_hold }
+		position = 4
 		
 		provinces_to_highlight = {
 			area = redglades_area
@@ -277,131 +181,56 @@ gawed_column_1 = {
 		}
 	}
 	
-	gawed_rediscovery_of_aelantir = {
-		icon = mission_sea_battles
-		required_missions = {  }
-		position = 7
+	gawed_sack_of_lorentaine = {
+		icon = mission_burning_castle
+		required_missions = { gawed_burning_the_redglades }
+		position = 6
 		
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = aelantir_discovery.tooltip
-				OR = {
-					colonial_endralliande = {
-						has_discovered = ROOT
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = ionnidar_area
+						area = upper_bloodwine_area
 					}
-					colonial_dalaire = {
-						has_discovered = ROOT
-					}
+					NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				}
+				AND = {
+					province_id = 67
+					NOT = { owned_by = ROOT }
 				}
 			}
 		}
 		
-		effect = {
-			add_country_modifier = {
-				name = "lorent_rediscovery_of_aelantir"
-				duration = 7300 #20 years
-			}
-		}
-	}
-	
-	gawed_colonise_dalaire = {
-		icon = mission_dominate_home_trade_node
-		required_missions = { gawed_rediscovery_of_aelantir }
-		position = 8
-		
-		provinces_to_highlight = {
-			colonial_region = colonial_dalaire
-			OR = {
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { is_city = yes }
-			}
-			has_discovered = ROOT
-		}
-		
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				colonial_region = colonial_dalaire
-				is_city = yes
+			ionnidar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_bloodwine_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			67 = { #Lorentaine
+				owned_by = ROOT
 			}
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = "colonial_enthusiasm"
-				duration = 7300 #20 years
+			67 = { #Lorentaine
+				add_base_tax = -3
+				add_base_production = -3
+				add_base_manpower = -3
+				add_devastation = 100
 			}
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			add_mil_power = 100
 		}
 	}
-	
-	gawed_colonise_the_broken_sea = {
-		icon = mission_protect_white_sea_trade
-		required_missions = { gawed_colonise_dalaire }
-		position = 9
-		
-		provinces_to_highlight = {
-			colonial_region = colonial_broken_sea
-			OR = {
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { is_city = yes }
-			}
-			has_discovered = ROOT
-		}
-		
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				colonial_region = colonial_broken_sea
-				is_city = yes
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = "colonial_enthusiasm"
-				duration = 7300 #20 years
-			}
-		}
-	}
-	
-	gawed_expansion_into_ynn = {
-		icon = mission_iberian_conquistador
-		required_missions = { gawed_colonise_the_broken_sea }
-		position = 10
-		
-		provinces_to_highlight = {
-			OR = {
-				colonial_region = colonial_upper_ynn
-				colonial_region = colonial_lower_ynn
-				colonial_region = colonial_expanse
-			}
-			OR = {
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { is_city = yes }
-			}
-			has_discovered = ROOT
-		}
-		
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5
-				OR = {
-					colonial_region = colonial_upper_ynn
-					colonial_region = colonial_lower_ynn
-					colonial_region = colonial_expanse
-				}
-				is_city = yes
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = "lorent_colonial_taxation"
-				duration = 7300 #20 years
-			}
-		}
-	}
-	
 	
 	# gawed_gawedi_wars_of_religion = {
 		# icon = influence_the_church
@@ -447,27 +276,6 @@ gawed_column_2 = {
 				add_permanent_claim = ROOT
 			}
 			floodmarches_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			westmoor_proper_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			moorhills_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			beronmoor_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -665,10 +473,6 @@ gawed_column_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = {
-				name = A13_damescrown_loan
-				duration = 7300
-			}
 		}
 	}
 	
@@ -702,6 +506,9 @@ gawed_column_2 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			352 = { #Ibevar
+				owned_by = ROOT
+			}
 		}
 		
 		effect = {
@@ -723,7 +530,7 @@ gawed_column_2 = {
 	gawed_end_elven_domination = {
 		icon = give_him_back_his_legions
 		required_missions = {
-			gawed_burning_the_redglades
+			gawed_sack_of_lorentaine
 			gawed_fall_of_the_elfrealm
 			gawed_dismantle_the_empire
 		}
@@ -744,7 +551,7 @@ gawed_column_2 = {
 					western_cannor_superregion = {
 						owner = {
 							culture_group = elven
-							government_rank = 3
+							government_rank = 2
 						}
 					}
 				}
@@ -753,7 +560,7 @@ gawed_column_2 = {
 		
 		effect = {
 			add_country_modifier = {
-				name = A13_end_elven_dominance
+				name = "gawed_ended_elven_domination"
 				duration = -1
 			}
 		}
@@ -783,64 +590,6 @@ gawed_column_3 = {
 	}
 	has_country_shield = yes
 		
-	A13_core_land = {
-		icon = avoid_fragmentation
-		position = 1
-		
-		provinces_to_highlight = {
-			OR = {
-				province_id = 341
-				province_id = 223
-				province_id = 225
-				province_id = 226
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			341 = {
-				owned_by = ROOT
-			}
-			223 = {
-				owned_by = ROOT
-			}
-			225 = {
-				owned_by = ROOT
-			}
-			226 = {
-				owned_by = ROOT
-			}
-		}
-		
-		effect = {
-			add_country_modifier = {
-				name = army_recovery
-				duration = 9125 #25 years
-			}
-			northern_greatwoods_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			dinesck_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			west_chillsbay_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
 	gawed_pacify_the_kobolds = {
 		icon = mission_recruit_streltsy
 		required_missions = { gawed_integrate_westmoors }
@@ -848,53 +597,40 @@ gawed_column_3 = {
 
 		provinces_to_highlight = {
 			OR = {
-				area = gnomish_pass_area
-				area = coddorran_heights_area
+				AND = {
+					area = gnomish_pass_area
+					owner = { culture_group = kobold }
+				}
+				AND = {
+					OR = {
+						area = coddorran_heights_area
+					}
+					OR = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						NOT = { is_core = ROOT }
+					}
+				}
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			# Just need it not owned by Kobolds so you can side with gnomes
 			gnomish_pass_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				NOT = { owner = { culture_group = kobold } }
 			}
 			coddorran_heights_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
+				is_core = ROOT
 			}
 		}
 		effect = {
-			dragonspine_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			dragonpoint_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			dragondowns_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			183 = { #Foddimadd
-				if = {
-					limit = {
-						NOT = {
-							owned_by = ROOT
-							is_core = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
+			add_mil_power = 50
+			
+			# Remove the greenscales
+			coddorran_heights_area = {
+				change_culture = moorman
+				change_religion = regent_court
 			}
 		}
 	}
@@ -929,10 +665,6 @@ gawed_column_3 = {
 					name = "gawed_vertesk_arsenal"
 					duration = -1
 				}
-			}
-			add_country_modifier = {
-				name = A13_trade_gateway
-				duration = -1
 			}
 		}
 	}
@@ -996,6 +728,7 @@ gawed_column_3 = {
 		}
 		
 		trigger = {
+			eoa_is_dismantled = yes
 			8 = { #Anbenncost
 				controlled_by = ROOT
 			}
@@ -1254,27 +987,12 @@ gawed_column_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			gawed_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			alenvord_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	
 	gawed_dominate_alenic_cities = {
 		icon = mission_kowtow
-		required_missions = { gawed_integrate_westmoors
-					A13_core_land }
+		required_missions = { gawed_integrate_westmoors }
 		position = 2
 		
 		provinces_to_highlight = {
@@ -1291,13 +1009,9 @@ gawed_column_4 = {
 			
 		effect = {
 			add_country_modifier = {
-				name = A13_northern_expansion
-				duration = 9125 #25 years
+				name = "gawed_gawedi_naval_expansion"
+				duration = 7300 #20 years
 			}
-			add_dip_power = 100
-			add_adm_power = 100
-			add_mil_power = 100
-			country_event = { id = flavor_gawed.103 }
 		}
 	}
 	
@@ -1329,14 +1043,14 @@ gawed_column_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			revrland_area = {
+			varheim_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			varheim_area = {
+			revrland_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -1345,6 +1059,7 @@ gawed_column_4 = {
 			}
 		}
 	}
+	
 	gawed_control_the_frozen_pass = {
 		icon = mission_seize_north_sea_trade
 		required_missions = { gawed_construct_a_navy }
@@ -1354,8 +1069,8 @@ gawed_column_4 = {
 			OR = {
 				area = frostbridges_area
 				area = bjarnland_area
-				area = revrland_area
 				area = varheim_area
+				area = revrland_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -1369,32 +1084,17 @@ gawed_column_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			revrland_area = {
+			varheim_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			varheim_area = {
+			revrland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		
 		effect = {
-			define_advisor = {
-			
-				type = commandant
-				skill = 3
-				cost_multiplier = 0.25
-				culture = west_dalr
-				name = "Baverick Javuel"
-			}
-			ismark_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			blodfjell_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -1403,6 +1103,13 @@ gawed_column_4 = {
 				add_permanent_claim = ROOT
 			}
 			sidaett_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ismark_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -1460,7 +1167,7 @@ gawed_column_4 = {
 	}
 	
 	gawed_the_gawedi_empire = {
-		icon = mission_sweat_fealty
+		icon = mission_approach_throne
 		required_missions = {  }
 		position = 7
 		
@@ -1483,15 +1190,15 @@ gawed_column_4 = {
 		trigger = {
 			if = {
 				limit = { has_dlc = "Common Sense" }
-				total_development = 500
+				government_rank = 3
 			}
 			else = {
-				total_development = 500
+				total_development = 1000
 			}
-			treasury = 500
+			treasury = 250
 			221 = { #Gaweton
 				owned_by = ROOT
-				num_free_building_slots = 2
+				num_free_building_slots = 1
 				OR = {
 					has_production_building_trigger = yes
 					trade_goods = gold
@@ -1506,11 +1213,6 @@ gawed_column_4 = {
 				change_trade_goods = paper
 				add_building_construction = {
 					building = university
-					speed = 1
-					cost = 0.5
-				}
-				add_building_construction = {
-					building = mills
 					speed = 1
 					cost = 0.5
 				}
@@ -1539,7 +1241,7 @@ gawed_column_4 = {
 		
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 15
+				value = 25
 				has_manufactory_trigger = yes
 			}
 			alen_river_cities = {
@@ -1551,8 +1253,8 @@ gawed_column_4 = {
 		
 		effect = {
 			add_country_modifier = {
-				name = A13_industrialization
-				duration = -1 
+				name = "proto_industrialization"
+				duration = 7300 #20 years
 			}
 		}
 	}
@@ -1596,9 +1298,8 @@ gawed_column_4 = {
 		
 		effect = {
 			alen_river_cities = {
-				add_base_tax = 3
-				add_base_production = 3
-				add_base_manpower = 3
+				add_base_tax = 1
+				add_base_production = 1
 			}
 		}
 	}
@@ -1623,19 +1324,18 @@ gawed_column_5 = {
 				AND = {
 					OR = {
 						province_id = 228
-						province_id = 240
-						province_id = 217
+						province_id = 242
+						province_id = 343
 					}
 					OR = {
 						NOT = { owned_by = ROOT }
-						NOT = { base_manpower = 5 }
+						NOT = { base_manpower = 3 }
 					}
 				}
 				AND = {
 					OR = {
 						province_id = 228
-						province_id = 217
-						province_id = 240
+						province_id = 343
 					}
 					NOT = { has_fort_building_trigger = yes }
 				}
@@ -1646,35 +1346,35 @@ gawed_column_5 = {
 			228 = {
 				owned_by = ROOT
 				has_fort_building_trigger = yes
-				base_manpower = 5
+				base_manpower = 3
 			}
-			240 = {
+			242 = {
 				owned_by = ROOT
-				base_manpower = 5
+				base_manpower = 3
 			}
-			217 = {
+			343 = {
 				owned_by = ROOT
 				has_fort_building_trigger = yes
-				base_manpower = 5
+				base_manpower = 3
 			}
 		}
 		
 		effect = {
 			228 = {
 				add_permanent_province_modifier = {
-					name = A13_bulwark_fortifications
+					name = bulwark_fortifications
 					duration = -1
 				}
 			}
-			240 = {
+			242 = {
 				add_permanent_province_modifier = {
-					name = A13_bulwark_fortifications
+					name = bulwark_fortifications
 					duration = -1
 				}
 			}
-			217 = {
+			343 = {
 				add_permanent_province_modifier = {
-					name = A13_bulwark_fortifications
+					name = bulwark_fortifications
 					duration = -1
 				}
 			}
@@ -1741,243 +1441,131 @@ gawed_column_5 = {
 				add_base_production = 2
 				add_base_manpower = 1
 			}
-			define_advisor = {
-			
-				type = trader
-				skill = 2
-				cost_multiplier = 0.50
-				culture = moorman
-				name = "Belac Brevon"
-			}
 		}
 	}
 	
-	A13_prepare_the_strike = {
-		icon = mission_duel_snow
-		required_missions = { gawed_dominate_alenic_cities }
+	gawed_rediscovery_of_aelantir = {
+		icon = mission_sea_battles
+		required_missions = { gawed_revitalize_western_ports }
 		position = 3
 		
-		provinces_to_highlight = {
-			
-		}
-		
 		trigger = {
-			army_size = 50
-			num_of_generals = 2
+			custom_trigger_tooltip = {
+				tooltip = aelantir_discovery.tooltip
+				OR = {
+					colonial_endralliande = {
+						has_discovered = ROOT
+					}
+					colonial_dalaire = {
+						has_discovered = ROOT
+					}
+				}
+			}
 		}
 		
 		effect = {
-			east_chillsbay_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			wudhal_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			sondaar_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			cedesck_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			vrorenmarch_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			vrorenwall_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
+			add_country_modifier = {
+				name = "lorent_rediscovery_of_aelantir"
+				duration = 7300 #20 years
 			}
 		}
 	}
 	
-	A13_banish_greyorc = {
-		icon = mission_swear_fealty_knight
-		required_missions = { A13_prepare_the_strike }
+	gawed_colonise_dalaire = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { gawed_rediscovery_of_aelantir }
 		position = 4
 		
 		provinces_to_highlight = {
+			colonial_region = colonial_dalaire
 			OR = {
-				area = east_chillsbay_area
-				area = wudhal_area
-				area = sondaar_area
-				area = cedesck_area
-				area = vrorenmarch_area
-				area = vrorenwall_area
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				NOT = { is_city = yes }
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
 		}
 		
 		trigger = {
-			east_chillsbay_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			wudhal_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			sondaar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cedesck_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			vrorenmarch_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			vrorenwall_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_dalaire
+				is_city = yes
 			}
 		}
+		
 		effect = {
-			country_event = { id = flavor_gawed.104 }
 			add_country_modifier = {
-				name = A13_orc_dominion
-				duration = -1
-			}
-			esfjall_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			naugsvol_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
-			}
-			nyrford_area = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-				}
-				add_permanent_claim = ROOT
+				name = "colonial_enthusiasm"
+				duration = 7300 #20 years
 			}
 		}
 	}
-
-	A13_consolidate_eastern_reach = {
-		icon = mission_rb_colonise_canada
-		required_missions = { A13_banish_greyorc }
+	
+	gawed_colonise_the_broken_sea = {
+		icon = mission_protect_white_sea_trade
+		required_missions = { gawed_colonise_dalaire }
 		position = 5
 		
 		provinces_to_highlight = {
+			colonial_region = colonial_broken_sea
 			OR = {
-				province_id = 975
-				province_id = 987
-				area = esfjall_area
-				area = naugsvol_area
-				area = nyrford_area
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				NOT = { is_city = yes }
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
 		}
 		
 		trigger = {
-			own = 975
-			own = 987
-			esfjall_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			naugsvol_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			nyrford_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			740 = { is_strongest_trade_power = ROOT }
-			740 = {
-				trade_share = {
-					country = A13
-					share = 80
-				}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_broken_sea
+				is_city = yes
 			}
 		}
 		
 		effect = {
-			gerudian_frontier_region = {
-				limit = {
-					NOT = {
-						owned_by = ROOT
-				}
-				add_permanent_claim = ROOT
-				}
-			}
 			add_country_modifier = {
-				name = A13_colonize_frontier
-				duration = 18250
+				name = "colonial_enthusiasm"
+				duration = 7300 #20 years
 			}
 		}
 	}
-	A13_alenic_triumph = {
-		icon = mission_rb_conquer_the_highlands
-		required_missions = { A13_consolidate_eastern_reach
-		gawed_advance_up_the_valley	}
+	
+	gawed_expansion_into_ynn = {
+		icon = mission_iberian_conquistador
+		required_missions = { gawed_colonise_the_broken_sea }
 		position = 6
 		
 		provinces_to_highlight = {
-				superregion = gerudia_superregion
+			OR = {
+				colonial_region = colonial_upper_ynn
+				colonial_region = colonial_lower_ynn
+				colonial_region = colonial_expanse
+			}
+			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+				NOT = { is_city = yes }
+			}
+			has_discovered = ROOT
 		}
 		
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 70
-				superregion = gerudia_superregion
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				OR = {
+					colonial_region = colonial_upper_ynn
+					colonial_region = colonial_lower_ynn
+					colonial_region = colonial_expanse
+				}
+				is_city = yes
 			}
 		}
 		
 		effect = {
-			country_event = { id = flavor_gawed.105 }
+			add_country_modifier = {
+				name = "lorent_colonial_taxation"
+				duration = 7300 #20 years
+			}
 		}
 	}
 	
@@ -2096,21 +1684,11 @@ gawed_column_5 = {
 						}
 					}
 				}
-				AND = {
-					province_id = 223 #Alenvord
-					NOT = {
-						AND = {
-							has_trade_building_trigger = yes
-							owned_by = ROOT
-							num_free_building_slots = 1
-						}
-					}
-				}
 			}
 		}
 		
 		trigger = {
-			treasury = 500
+			treasury = 250
 			custom_trigger_tooltip = {
 				tooltip = gawed_greatwood_trigger_tooltip
 				alenvord_area = {
@@ -2157,11 +1735,6 @@ gawed_column_5 = {
 				num_free_building_slots = 1
 				has_trade_building_trigger = yes
 			}
-			223 = { 
-				owned_by = ROOT
-				num_free_building_slots = 1
-				has_trade_building_trigger = yes
-			}
 		}
 
 		effect = {
@@ -2180,30 +1753,17 @@ gawed_column_5 = {
 					add_base_production = 1
 				}
 			}
-			custom_tooltip = A13_hunting_tt
-			every_owned_province = {
+			223 = { #Drakesford
 				if = {
-					limit = {
-						trade_goods = fur
-					}
-					add_province_modifier = { 
-						name = A13_fur_bonus
-						duration = -1
-						hidden = yes
-					}
+					limit = { trade_goods = fur }
+					add_base_production = 1
 				}
+				change_trade_goods = cloth
 			}
 			225 = { #Alenvord
 				add_building_construction = {
 					building = tradecompany
-					speed = 0.5
-					cost = 0.5
-				}
-			}
-			223 = { 
-				add_building_construction = {
-					building = tradecompany
-					speed = 0.5
+					speed = 1
 					cost = 0.5
 				}
 			}

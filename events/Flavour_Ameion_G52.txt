@@ -2142,6 +2142,13 @@ country_event = {
 					}
 					add_idea_group = maritime_ideas
 				}
+				if = {
+					limit = {
+						NOT = { has_idea_group = naval_ideas } 
+						NOT = { num_of_idea_groups_chosen = { amount = 8 } }
+					}
+					add_idea_group = naval_ideas
+				}
 			}
 		}
 		hidden_effect = {

@@ -72,7 +72,7 @@ saloren_prep = {
 				}
 				define_advisor = {
 					type = statesman
-					name = "Kylian síl na Loop"
+					name = "Kylian sï¿½l na Loop"
 					skill = 2
 					discount = yes
 					culture = roilsardi

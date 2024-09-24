@@ -1,7 +1,7 @@
 
-#10 - Osterbotten | Eilísin
+#10 - Osterbotten | Eilï¿½sin
 
-owner = A15 #Duchy of Eilísin
+owner = A15 #Duchy of Eilï¿½sin
 controller = A15
 add_core = A15
 culture = west_damerian

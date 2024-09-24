@@ -1,5 +1,5 @@
 
-#371 - Akureyri
+#371 - Akureyri 2
 
 owner = A29
 controller = A29

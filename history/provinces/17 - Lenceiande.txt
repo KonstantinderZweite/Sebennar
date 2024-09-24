@@ -1,5 +1,5 @@
 
-#Akershus, incl. Oslo (Christiania), Tönsberg
+#Akershus, incl. Oslo (Christiania), Tï¿½nsberg 2
  
 owner = A04
 controller = A04

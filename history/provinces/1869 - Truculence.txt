@@ -1,9 +1,9 @@
 
-# No previous file for Zï¿½rich
+# No previous file for Zürich
 culture = boek
 religion = dotimism
 capital = ""
-
+tribal_owner = G08
 
 hre = no
 

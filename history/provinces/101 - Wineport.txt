@@ -1,5 +1,5 @@
 
-#101 - Liguria
+#101 - Liguria 5
 
 owner = A16
 controller = A16
@@ -18,7 +18,7 @@ fort_15th = yes
 
 
 
-
+set_province_flag = unsuppressed_infernal_cult
 
 
 

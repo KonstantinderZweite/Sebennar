@@ -1,8 +1,9 @@
 
-# No previous file for Mandan
+# No previous file for Mandan 2
 owner = A37
 controller = A37
 add_core = A37
+add_core = B86
 culture = esmari
 religion = regent_court
 

@@ -1,5 +1,5 @@
 
-#Värmland | Varivar
+#Vï¿½rmland | Varivar -3
 
 owner = Z42
 controller = Z42

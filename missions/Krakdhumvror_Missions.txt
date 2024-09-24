@@ -153,7 +153,7 @@ krakdhumvror_1b = {
 	}
 
 	krak_mapping_dwarovar = {
-		icon = mission_colonize_the_caribbean
+		icon = mission_west_serpentspine_map
 		position = 9
 		required_missions = { 
 			krak_basic_logistics
@@ -669,7 +669,7 @@ krakdhumvror_2 = {
 		effect = {
 			amldihr_area = {
 				discover_country = ROOT
-				add_permanent_claim = ROOT
+				add_claim = ROOT
 			}
 			add_country_modifier = { name = krak_colonial_rush duration = 7300 }
 			hidden_effect = { country_event = { id = flavor_krak.6 days = 547 random = 1460 } } #1.5 to 4 years
@@ -730,14 +730,11 @@ krakdhumvror_2b = {
 			6214 = {
 				religion = ROOT
 				culture = quartz_dwarf
-				custom_trigger_tooltip = {
-					tooltip = krak_frozen_wastes_tooltip
-					has_province_modifier = dwarven_majority_primary
-					has_orcish_minority_trigger = no
-					has_goblin_minority_trigger = no
-					has_troll_minority_trigger = no
-					has_half_orcish_minority_trigger = no
+				if = {
+					limit = { NOT = { has_dlc = "Leviathan" } }
+					development = 15
 				}
+				else = { num_of_times_expanded_infrastructure = 1  }
 			}
 		}
 		
@@ -746,7 +743,6 @@ krakdhumvror_2b = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
-				add_devastation = -25
 				add_province_modifier = { name = krak_building_cost duration = 3650 }
 			}
 		}
@@ -779,6 +775,7 @@ krakdhumvror_2b = {
 			add_dip_power = -50
 			add_mil_power = -50
 			hjyrtsikki_area = { add_permanent_province_modifier = { name = krak_arctic_development duration = -1 } }
+			fyllstyn_area = { add_permanent_province_modifier = { name = krak_arctic_development duration = -1 } }
 		}
 	}
 
@@ -1190,6 +1187,7 @@ krakdhumvror_3 = {
 							province_id = 4174
 							province_id = 4176
 							province_id = 6173
+							province_id = 6286
 						}
 					}
 				}
@@ -1220,6 +1218,7 @@ krakdhumvror_3 = {
 			4174 = { has_fort_building_trigger = yes }
 			4176 = { has_fort_building_trigger = yes }
 			6173 = { has_fort_building_trigger = yes }
+			6286 = { has_fort_building_trigger = yes }
 		}
 		
 		effect = {
@@ -1415,7 +1414,10 @@ krakdhumvror_3b = {
 		}
 		
 		provinces_to_highlight = {
-			area = hjyrtsikki_area
+			OR = {
+				area = hjyrtsikki_area
+				area = fyllstyn_area
+			}
 			OR = {
 				OR = {
 					NOT = { has_production_building_trigger = yes }
@@ -1437,14 +1439,28 @@ krakdhumvror_3b = {
 				}
 				development = 10
 			}
+			fyllstyn_area = {
+				type = all
+				OR = {
+					has_production_building_trigger = yes
+					trade_goods = gold
+				}
+				development = 10
+			}
 		}
 		
 		effect = {
 			add_treasury = -300
 			add_dip_power = -100
 			hjyrtsikki_area = { add_permanent_province_modifier = { name = krak_hunting_camps duration = -1 } }
+			fyllstyn_area = { add_permanent_province_modifier = { name = krak_hunting_camps duration = -1 } }
 			every_owned_province = { #better tooltip than using area scope for this one
-				limit = { area = hjyrtsikki_area }
+				limit = { 
+					OR = {
+						area = hjyrtsikki_area 
+						area = fyllstyn_area
+					}
+				}
 				if = {
 					limit = {
 						NOT = {
@@ -1997,6 +2013,8 @@ krakdhumvror_4b = {
 			region = northern_pass_region
 			NOT = { development = 5 }
 			NOT = { area = lonely_mountains_area }
+			NOT = { area = hjyrtsikki_area }
+			NOT = { area = fyllstyn_area }
 		}
 		
 		trigger = {
@@ -2006,6 +2024,7 @@ krakdhumvror_4b = {
 					development = 5
 					area = lonely_mountains_area
 					area = hjyrtsikki_area
+					area = fyllstyn_area
 				}
 			}
 		}
@@ -2018,6 +2037,7 @@ krakdhumvror_4b = {
 							region = northern_pass_region
 							NOT = { area = lonely_mountains_area }
 							NOT = { area = hjyrtsikki_area }
+							NOT = { area = fyllstyn_area }
 							OR = {
 								trade_goods = grain
 								trade_goods = livestock
@@ -2031,6 +2051,7 @@ krakdhumvror_4b = {
 						region = northern_pass_region
 						NOT = { area = lonely_mountains_area }
 						NOT = { area = hjyrtsikki_area }
+						NOT = { area = fyllstyn_area }
 					}
 					add_base_production = 2
 				}
@@ -2039,6 +2060,7 @@ krakdhumvror_4b = {
 						region = northern_pass_region
 						NOT = { area = lonely_mountains_area }
 						NOT = { area = hjyrtsikki_area }
+						NOT = { area = fyllstyn_area }
 					}
 					add_base_production = 2
 				}
@@ -2047,6 +2069,7 @@ krakdhumvror_4b = {
 						region = northern_pass_region
 						NOT = { area = lonely_mountains_area }
 						NOT = { area = hjyrtsikki_area }
+						NOT = { area = fyllstyn_area }
 					}
 					add_base_production = 2
 				}
@@ -2059,6 +2082,7 @@ krakdhumvror_4b = {
 							region = northern_pass_region
 							NOT = { area = lonely_mountains_area }
 							NOT = { area = hjyrtsikki_area }
+							NOT = { area = fyllstyn_area }
 							OR = {
 								trade_goods = grain
 								trade_goods = livestock
@@ -2153,8 +2177,8 @@ krakdhumvror_4b = {
 		
 		effect = {
 			add_country_modifier = { name = krak_twin_trade duration = 10950 }
-			4182 = { change_province_name = "Seldizâd" rename_capital = "Seldizâd" }
-			4202 = { change_province_name = "Skordhûmad" rename_capital = "Skordhûmad" }
+			4182 = { change_province_name = "Seldizï¿½d" rename_capital = "Seldizï¿½d" }
+			4202 = { change_province_name = "Skordhï¿½mad" rename_capital = "Skordhï¿½mad" }
 		}
 	}
 
@@ -2250,6 +2274,7 @@ krakdhumvror_4b = {
 					region = northern_pass_region
 					NOT = { area = lonely_mountains_area }
 					NOT = { area = hjyrtsikki_area }
+					NOT = { area = fyllstyn_area }
 					NOT = { province_id = 4202 } #tanning
 					has_terrain = forest
 					OR = {
@@ -2277,6 +2302,7 @@ krakdhumvror_4b = {
 				region = northern_pass_region
 				NOT = { area = lonely_mountains_area }
 				NOT = { area = hjyrtsikki_area }
+				NOT = { area = fyllstyn_area }
 				NOT = { province_id = 4202 }
 				has_terrain = forest
 				base_tax = 2
@@ -2302,6 +2328,7 @@ krakdhumvror_4b = {
 							has_terrain = forest
 							NOT = { area = lonely_mountains_area }
 							NOT = { area = hjyrtsikki_area }
+							NOT = { area = fyllstyn_area }
 							NOT = { province_id = 4202 }
 							base_tax = 2
 							base_production = 2
@@ -2416,8 +2443,8 @@ krakdhumvror_4b = {
 					province_id = 678
 					NOT = { has_fort_building_trigger = yes }
 				}
-				province_id = 677 #ferone
-				province_id = 675 #uemerna
+				province_id = 677 #Ijenmyfor
+				province_id = 675 #Qarvetarqan
 			}
 		}
 		
@@ -2426,15 +2453,11 @@ krakdhumvror_4b = {
 				type = all
 				owned_by = ROOT
 				culture = quartz_dwarf
-				custom_trigger_tooltip = {
-					tooltip = krak_clip_wings_tooltip
-					NOT = { has_harpy_minority_trigger = yes }
-				}
 			}
 			676 = {	#firanyalen
 				has_fort_building_trigger = yes
 			}
-			678 = { #hystara
+			678 = { #Kotierontol
 				has_fort_building_trigger = yes
 			}
 		}
@@ -2625,7 +2648,7 @@ krakdhumvror_5 = {
 			dead_end_tunnel_area = { add_permanent_province_modifier = { name = krak_anvil_mines duration = -1 } }
 			4209 = { change_province_name = "Uristov" rename_capital = "Uristov" }
 			4210 = { change_province_name = "Garlimstunad" rename_capital = "Garlimstunad" }
-			4211 = { change_province_name = "Sedadhûm" rename_capital = "Sedadhûm" }
+			4211 = { change_province_name = "Sedadhï¿½m" rename_capital = "Sedadhï¿½m" }
 			hidden_effect = { country_event = { id = flavor_krak.5 days = 365 random = 730 } }
 		}
 	}

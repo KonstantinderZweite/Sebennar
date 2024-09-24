@@ -1,0 +1,104 @@
+night_of_long_knives_deep = {
+	sprite = "GFX_invoke_warrior_heritage"
+	cost = 200
+
+	effect = {
+		add_corruption = -2
+	}
+}
+a_cull_of_the_powerful_deep = {
+	sprite = "GFX_look_for_omens"
+	cost = 200
+
+	effect = {
+		hidden_effect = {
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = deep_culled_desc
+				influence = -20
+				duration = 3650
+			}
+			add_estate_influence_modifier = {
+				estate = estate_artificers
+				desc = deep_culled_desc
+				influence = -20
+				duration = 3650
+			}
+			add_estate_influence_modifier = {
+				estate = estate_mages
+				desc = deep_culled_desc
+				influence = -20
+				duration = 3650
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = deep_culled_desc
+				influence = -20
+				duration = 3650
+			}
+			add_estate_influence_modifier = {
+				estate = estate_adventurers
+				desc = deep_culled_desc
+				influence = -20
+				duration = 3650
+			}
+			add_estate_influence_modifier = {
+				estate = estate_burghers
+				desc = deep_culled_desc
+				influence = -20
+				duration = 3650
+			}
+		}
+		custom_tooltip = cull_of_the_powerful_deep_tt
+	}
+}
+extend_service_to_children_deep = {
+	sprite = "GFX_anoint_slave_herd_great"
+	cost = 200
+
+	effect = {
+		add_yearly_manpower = 2
+	}
+}
+artificers_properly_bought_off_deep = {
+	sprite = "GFX_ask_for_dookan_guidance"
+	cost = 200
+
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = z2z_artificers_properly_bought_off
+				duration = 15
+			}
+		}
+		custom_tooltip = artificers_properly_bought_off_deep_tt
+	}
+}
+building_standards_dropped_deep = {
+	sprite = "GFX_shake_the_earth_great"
+	cost = 200
+
+	effect = {
+		hidden_effect ={
+			add_country_modifier = {
+				name = z2z_building_standards_dropped
+				duration = 365
+			}
+		}
+		custom_tooltip = building_standards_dropped_deep_tt
+	}
+}
+blood_is_cheap_deep = {
+	sprite = "GFX_blood_is_cheap"
+	cost = 200
+
+	effect = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = z2z_blood_is_cheap
+				duration = 365
+			}
+		}
+		custom_tooltip = blood_is_cheap_deep_tt
+	}
+}

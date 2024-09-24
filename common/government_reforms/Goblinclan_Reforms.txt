@@ -1,0 +1,59 @@
+council_of_the_technocrats = {
+	icon = "royal_court"
+	allow_normal_conversion = no
+	reform_levels = 1
+	lock_level_when_selected = yes
+	modifiers = {
+		global_autonomy = 0.1
+		artificers_loyalty_modifier = 0.05
+		artificers_influence_modifier = 0.1
+		min_autonomy = 20
+	}
+}
+
+council_of_the_technocrats_enhanced = {
+	icon = "royal_court"
+	allow_normal_conversion = no
+	reform_levels = 1
+	lock_level_when_selected = yes
+	modifiers = {
+		artificers_loyalty_modifier = 0.05
+		artificers_influence_modifier = 0.1
+	}
+}
+
+advisors_of_a_particular_skill = {
+	icon = "black_army_reform"
+	allow_normal_conversion = no
+	reform_levels = 2
+	lock_level_when_selected = yes
+	allow = {
+		always = no
+	}
+	modifiers = {
+		manpower_in_culture_group_provinces = 0.1
+		tolerance_heathen = -40
+	}
+	effect = {
+		add_country_modifier = {
+			name = goblinclan_corrupt_advisors
+			duration = -1
+		}
+	}
+}
+
+advisors_of_a_particular_skill_enhanced = {
+	icon = "black_army_reform"
+	allow_normal_conversion = no
+	reform_levels = 2
+	lock_level_when_selected = yes
+	allow = {
+		always = no
+	}
+	modifiers = {
+		manpower_in_culture_group_provinces = 0.2
+	}
+	effect = {
+		remove_country_modifier = goblinclan_corrupt_advisors
+	}
+}

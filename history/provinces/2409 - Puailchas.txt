@@ -1,8 +1,8 @@
 
 # No previous file for Bahmut
 
-culture = quchamar
-religion = animism
+culture = chamullach
+religion = rioqay_diu
 capital = ""
 
 hre = no

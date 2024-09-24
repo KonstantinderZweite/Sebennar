@@ -3,8 +3,8 @@
 # If adding new dieties, make sure they are uniquely named.
 
 kazraiel = {
-	land_morale = 0.20
-	ae_impact = 0.25
+	land_morale = 0.10
+	harsh_treatment_cost = -0.25
 	
 	potential = {
 		religion = infernal_court
@@ -34,8 +34,8 @@ kazraiel = {
 }
 
 mesner = {
-	global_unrest = -4
-	production_efficiency = -0.2
+	global_unrest = -2
+	hostile_attrition = 1
 	
 	potential = {
 		religion = infernal_court
@@ -96,8 +96,8 @@ ildran = {
 }
 
 hedine = {
-	global_missionary_strength = 0.05
-	diplomatic_reputation = -2
+	diplomatic_reputation = 2
+	diplomatic_upkeep = 1
 	
 	potential = {
 		religion = infernal_court

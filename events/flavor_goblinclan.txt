@@ -1,0 +1,313 @@
+namespace = flavor_goblinclan
+
+country_event = {
+	id = flavor_goblinclan.1
+	title = flavor_goblinclan.1.t
+	desc = flavor_goblinclan.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblinclan.1.a
+		add_stability = -2
+		536 = {
+			spawn_rebels = {
+				type = separatist_rebels
+				culture = bahari
+				size = 2
+			}
+		}
+		remove_accepted_culture = bahari
+		remove_accepted_culture = copper_dwarf
+		remove_accepted_culture = ilatani
+		remove_accepted_culture = ourdi
+		remove_accepted_culture = sun_elf
+		remove_accepted_culture = firanyan_harpy
+		remove_accepted_culture = gelkar
+		remove_accepted_culture = brasanni
+		remove_accepted_culture = zanite
+		largest_decrease_of_human_tolerance_effect = yes
+		largest_decrease_of_human_tolerance_effect = yes
+		largest_decrease_of_human_tolerance_effect = yes
+		largest_decrease_of_harpy_tolerance_effect = yes
+		largest_decrease_of_harpy_tolerance_effect = yes
+		largest_decrease_of_harpy_tolerance_effect = yes
+		largest_decrease_of_dwarven_tolerance_effect = yes
+		largest_decrease_of_dwarven_tolerance_effect = yes
+		largest_decrease_of_dwarven_tolerance_effect = yes
+		largest_decrease_of_elven_tolerance_effect = yes
+		largest_decrease_of_elven_tolerance_effect = yes
+		largest_decrease_of_elven_tolerance_effect = yes
+		largest_decrease_of_gnollish_tolerance_effect = yes
+		largest_decrease_of_gnollish_tolerance_effect = yes
+		largest_decrease_of_gnollish_tolerance_effect = yes
+	}
+}
+
+country_event = {
+	id = flavor_goblinclan.2
+	title = flavor_goblinclan.2.t
+	desc = flavor_goblinclan.2.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblinclan.2.a
+		add_stability = 1
+		remove_country_modifier = goblinclan_an_exhausted_army
+		set_country_flag = war_against_goblins_complete_flag
+		country_event = { id = flavor_goblinclan.12 }
+	}
+}
+
+country_event = {
+	id = flavor_goblinclan.3
+	title = flavor_goblinclan.3.t
+	desc = flavor_goblinclan.3.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblinclan.3.a
+		add_stability = -1
+	}
+}
+
+country_event = {
+	id = flavor_goblinclan.4
+	title = flavor_goblinclan.4.t
+	desc = flavor_goblinclan.4.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_goblinclan.4.a
+		add_country_modifier = {
+			name = goblinclan_an_exhausted_army
+			duration = -1
+			desc = goblinclan_an_exhausted_army_desc
+		}
+		add_manpower = -18
+	}
+}
+
+country_event = {
+	id = flavor_goblinclan.5
+	title = flavor_goblinclan.5.t
+	desc = flavor_goblinclan.5.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_goblinclan.5.a
+		add_country_modifier = {
+			name = "goblinclan_human_assisted_farming"
+			duration = 7300
+		}
+	}
+	option = {
+		name = flavor_goblinclan.5.b
+		add_mil_power = 200
+	}
+}
+
+country_event = {
+	id = flavor_goblinclan.6
+	title = flavor_goblinclan.6.t
+	desc = flavor_goblinclan.6.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_goblinclan.6.a
+		add_country_modifier = {
+			name = "goblinclan_goblins_flock_to_the_banners"
+			duration = -1
+		}
+	}
+	option = {
+		name = flavor_goblinclan.6.b
+		add_country_modifier = {
+			name = "goblinclan_we_only_need_the_best"
+			duration = -1
+		}
+	}
+}
+country_event = {
+	id = flavor_goblinclan.7
+	title = flavor_goblinclan.7.t
+	desc = flavor_goblinclan.7.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_goblinclan.7.a
+		country_event = { id = flavor_goblinclan.9 }
+	}
+	option = {
+		name = flavor_goblinclan.7.b
+		country_event = { id = flavor_goblinclan.10 }
+	}
+}
+country_event = {
+	id = flavor_goblinclan.8
+	title = flavor_goblinclan.8.t
+	desc = flavor_goblinclan.8.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_goblinclan.8.a
+		random_owned_province = {
+			limit = {
+				OR = {
+					has_province_modifier = human_minority_oppressed_small
+					has_province_modifier = human_minority_oppressed_large
+					has_province_modifier = elven_minority_oppressed_small
+					has_province_modifier = elven_minority_oppressed_large
+					has_province_modifier = dwarven_minority_oppressed_small
+					has_province_modifier = dwarven_minority_oppressed_large
+					has_province_modifier = harpy_minority_oppressed_small
+					has_province_modifier = harpy_minority_oppressed_large
+					has_province_modifier = gnollish_minority_oppressed_small
+					has_province_modifier = gnollish_minority_oppressed_large
+				}
+			}
+			create_revolt = 1
+		}
+	}
+}
+country_event = {
+	id = flavor_goblinclan.9
+	title = flavor_goblinclan.9.t
+	desc = flavor_goblinclan.9.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_goblinclan.9.a
+		random_list = {
+			1 = {
+				507 = {
+					create_revolt = 1
+				}
+			}
+			1 = {
+				512 = {
+					create_revolt = 1
+				}
+			}
+			1 = {
+				518 = {
+					create_revolt = 1
+				}
+			}
+			1 = {
+				521 = {
+					create_revolt = 1
+				}
+			}
+			1 = {
+				523 = {
+					create_revolt = 1
+				}
+			}
+			1 = {
+				525 = {
+					create_revolt = 1
+				}
+			}
+			1 = {
+				528 = {
+					create_revolt = 1
+				}
+			}
+			1 = {
+				535 = {
+					create_revolt = 1
+				}
+			}
+			1 = {
+				541 = {
+					create_revolt = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_goblinclan.10
+	title = flavor_goblinclan.10.t
+	desc = flavor_goblinclan.10.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_goblinclan.10.a
+		random_list = {
+			1 = {
+				510 = {
+					create_revolt = 2
+				}
+			}
+			1 = {
+				522 = {
+					create_revolt = 2
+				}
+			}
+			1 = {
+				526 = {
+					create_revolt = 2
+				}
+			}
+			1 = {
+				536 = {
+					create_revolt = 2
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_goblinclan.11
+	title = flavor_goblinclan.11.t
+	desc = flavor_goblinclan.11.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_goblinclan.11.a
+		add_manpower = 15
+	}
+}
+
+country_event = {
+	id = flavor_goblinclan.12
+	title = flavor_goblinclan.12.t
+	desc = flavor_goblinclan.12.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_goblinclan.12.a
+		add_government_reform = advisors_of_a_particular_skill
+		add_country_modifier = {
+			name = "goblinclan_ruined_trade"
+			duration = -1
+		}
+	}
+}

@@ -1,6 +1,6 @@
-owner = L10
-controller = L10
-add_core = L10
+owner = L03
+controller = L03
+add_core = L03
 culture = ikilshebe
 religion = noukahi_pantheon
 

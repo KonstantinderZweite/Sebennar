@@ -1,0 +1,57 @@
+on_conquest = {
+	if = {
+		limit = {
+			owner = {
+				tag = I14
+			}
+			province_id = 4247
+		}
+		I14 = {
+			set_country_flag = unlocked_golems_hidden_cannon
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				tag = I14
+			}
+			province_id = 4284
+		}
+		I14 = {
+			set_country_flag = unlocked_golems_hidden_nonthinking
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				tag = I14
+			}
+			province_id = 4236
+		}
+		I14 = {
+			set_country_flag = unlocked_golems_hidden_mithril
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				tag = I14
+			}
+			province_id = 526
+		}
+		I14 = {
+			set_country_flag = unlocked_golems_hidden_water
+		}
+	}
+	if = {
+		limit = {
+			owner = {
+				tag = I14
+			}
+			province_id = 4147
+		}
+		I14 = {
+			set_country_flag = unlocked_golems_hidden_ram
+		}
+	}
+}

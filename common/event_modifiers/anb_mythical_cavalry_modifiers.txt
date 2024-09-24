@@ -56,6 +56,13 @@ mythical_cavalry_zamukaras = {
 	shock_damage_received = -0.3
 	reinforce_speed = -0.25
 }
+mythical_cavalry_goblinsteel_tank = {
+	is_hussars_modifier = yes
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+	reinforce_speed = -0.25
+	cavalry_cost = 0.20
+}
 
 
 

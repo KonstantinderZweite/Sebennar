@@ -23,11 +23,12 @@ country_decisions = {
 			}
 		}
 		allow = {
+			hidden_trigger = {
+				primary_culture = wood_elf
+			}
 			NOT = { exists = I45 }
 			NOT = { num_of_cities = 45 }
 			is_at_war = no
-			is_nomad = no
-			is_free_or_tributary_trigger = yes
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 30
 				superregion = deepwoods_superregion
@@ -40,7 +41,7 @@ country_decisions = {
 			tag = I33
 			tag = I30
 			is_playing_custom_nation = yes
-			}	
+			}
 		}
 		effect = {
 			change_tag = I45

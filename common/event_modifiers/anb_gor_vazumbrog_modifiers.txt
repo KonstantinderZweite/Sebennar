@@ -1,0 +1,312 @@
+golem_left_arm_fist = {
+	is_rajput_modifier = yes
+	shock_damage = 0.05
+}
+golem_left_arm_shield = {
+	is_rajput_modifier = yes
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+}
+golem_left_arm_spear = {
+	is_rajput_modifier = yes
+	shock_damage = 0.1
+	special_unit_cost_modifier = 0.05
+}
+golem_left_arm_poleaxe = {
+	is_rajput_modifier = yes
+	shock_damage = 0.2
+	special_unit_cost_modifier = 0.1
+}
+golem_left_arm_crossbow = {
+	is_rajput_modifier = yes
+	fire_damage = 0.05
+	special_unit_cost_modifier = 0.05
+}
+golem_left_arm_musket = {
+	is_rajput_modifier = yes
+	fire_damage = 0.1
+	special_unit_cost_modifier = 0.1
+}
+golem_left_arm_cannon = {
+	is_rajput_modifier = yes
+	fire_damage = 0.2
+	special_unit_cost_modifier = 0.15
+}
+golem_right_arm_fist = {
+	is_rajput_modifier = yes
+	shock_damage = 0.05
+}
+golem_right_arm_shield = {
+	is_rajput_modifier = yes
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+}
+golem_right_arm_spear = {
+	is_rajput_modifier = yes
+	shock_damage = 0.1
+	special_unit_cost_modifier = 0.05
+}
+golem_right_arm_poleaxe = {
+	is_rajput_modifier = yes
+	shock_damage = 0.2
+	special_unit_cost_modifier = 0.1
+}
+golem_right_arm_crossbow = {
+	is_rajput_modifier = yes
+	fire_damage = 0.05
+	special_unit_cost_modifier = 0.05
+}
+golem_right_arm_musket = {
+	is_rajput_modifier = yes
+	fire_damage = 0.1
+	special_unit_cost_modifier = 0.1
+}
+golem_right_arm_cannon = {
+	is_rajput_modifier = yes
+	fire_damage = 0.2
+	special_unit_cost_modifier = 0.15
+}
+golem_head_basic = {
+	
+}
+golem_head_quick_reaction = {
+	is_rajput_modifier = yes
+	infantry_shock = 0.15
+	special_unit_cost_modifier = 0.1
+}
+golem_head_laser_eye = {
+	is_rajput_modifier = yes
+	infantry_fire = 0.15
+	special_unit_cost_modifier = 0.1
+}
+golem_head_fearless_mind = {
+	is_rajput_modifier = yes
+	morale_damage_received = -0.1
+	special_unit_cost_modifier = 0.05
+}
+golem_head_nonthinking = {
+	is_rajput_modifier = yes
+	morale_damage_received = -0.5
+	special_unit_cost_modifier = 0.15
+}
+golem_legs_basic = { 
+
+}
+golem_legs_dwarven = {
+	is_rajput_modifier = yes
+	fire_damage_received = -0.05
+	shock_damage_received = -0.05
+	special_unit_cost_modifier = 0.05
+}
+golem_legs_ram = {
+	is_rajput_modifier = yes
+	shock_damage = 0.2
+	special_unit_cost_modifier = 0.15
+}
+golem_legs_tripedal = {
+	is_rajput_modifier = yes
+	shock_damage = 0.1
+	special_unit_cost_modifier = 0.1
+}
+golem_legs_stationary = {
+	is_rajput_modifier = yes
+	fire_damage_received = 0.1
+	shock_damage_received = 0.1
+	special_unit_cost_modifier = -0.2
+}
+golem_core_basic = {
+	special_unit_forcelimit = 0.1
+}
+golem_core_dirt_p2 = {
+	special_unit_forcelimit = 0.2
+}
+golem_core_dirt = {
+	is_rajput_modifier = yes
+	fire_damage_received = 0.1
+	shock_damage_received = 0.1
+}
+golem_core_mud_p2 = {
+	special_unit_forcelimit = 0.3
+}
+golem_core_mud = {
+	is_rajput_modifier = yes
+	fire_damage_received = 0.05
+	shock_damage_received = 0.05
+}
+golem_core_iron_p2 = {
+	special_unit_forcelimit = -0.1	
+}
+golem_core_iron = {
+	is_rajput_modifier = yes
+	fire_damage_received = -0.05
+	shock_damage_received = -0.05
+}
+golem_core_steel_p2 = {
+	special_unit_forcelimit = -0.2
+}
+golem_core_steel = {
+	is_rajput_modifier = yes
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+}
+golem_core_water_p2 = {
+	special_unit_forcelimit = 0.4
+}
+golem_core_water = {
+	is_rajput_modifier = yes
+	fire_damage_received = -0.2
+	shock_damage_received = 0.1
+	reinforce_cost_modifier = -0.15	
+}
+golem_core_mithril_p2 = {
+	special_unit_forcelimit = -0.4
+}
+golem_core_mithril = {
+	is_rajput_modifier = yes
+	fire_damage_received = -0.2
+	shock_damage_received = -0.2
+	reinforce_cost_modifier = 0.15
+}
+
+I14_rebuilding_the_vaulthold = {
+	great_project_upgrade_cost = -0.25
+	great_project_upgrade_time = -0.2
+}
+
+I14_warrior_monks_flock_to_the_banners = {
+	manpower_recovery_speed = 0.10
+}
+I14_warrior_monks_resurgent = {
+	manpower_recovery_speed = 0.15
+}
+I14_a_holy_state = {
+	global_tax_modifier = 0.1
+}
+I14_titanium_walls = {
+	local_defensiveness = 0.1
+}
+I14_runic_golem_protection = {
+	is_rajput_modifier = yes
+	shock_damage_received = -0.1
+}
+I14_hul_jorkad_favoured = {
+	fort_maintenance_modifier = -0.1
+}
+I14_hul_jorkad_favoured2 = {
+	development_cost = -0.1
+}
+I14_learning_about_our_past = {
+	technology_cost = -0.1
+}
+I14_hehodovar_favoured = {
+	idea_cost = -0.1
+}
+I14_hehodovar_favoured2 = {
+	build_cost = -0.1
+	build_time = -0.1
+}
+I14_expanding_from_the_city = {
+	global_colonial_growth = 40
+	may_explore = yes
+}
+I14_gathering_an_army = {
+	manpower_recovery_speed = 0.2
+}
+I14_skycleaver_found = {
+	land_morale = 0.15
+	country_military_power = 1
+}
+I14_death_smog = {
+	local_development_cost = 10000
+}
+I14_mercenary_morale = {
+	is_mercenary_modifier = yes
+	land_morale = 0.1
+}
+I14_mercenary_discipline = {
+	is_mercenary_modifier = yes
+	discipline = 0.05
+}
+I14_mercenary_shock = {
+	is_mercenary_modifier = yes
+	shock_damage = 0.1
+}
+I14_mercenary_fire = {
+	is_mercenary_modifier = yes
+	fire_damage = 0.1
+}
+I14_rebuilding_the_whole_kingdom = {
+	build_cost = -0.1
+	build_time = -0.1
+}
+
+I14_successful_piercing_blades = {
+	infantry_shock = 0.1
+}
+I14_successful_tesla_tower = {
+	morale_damage = 0.1
+}
+I14_unsuccessful_tesla_tower = {
+	reserves_organisation = -0.05
+}
+I14_successful_runic_icon = {
+	global_missionary_strength = 0.03
+}
+I14_successful_railgun = {
+	artillery_power = 0.1
+}
+I14_unsuccessful_railgun = {
+	artillery_cost = 0.15
+}
+I14_successful_stone_restructerizer = {
+	development_cost = -0.4
+}
+I14_successful_deflector_shields = {
+	shock_damage_received = -0.05
+	fire_damage_received = -0.05
+}
+I14_unsuccessful_deflector_shields = {
+	movement_speed = -0.1
+}
+I14_successful_auto_reloader = {
+	infantry_fire = 0.1
+}
+I14_unsuccessful_auto_reloader = {
+	infantry_shock = -0.15
+}
+I14_successful_brain_chip = {
+	discipline = 0.05
+}
+I14_unsuccessful_brain_chip = {
+	morale_damage_received = 0.1
+}
+I14_successful_legs = {
+	movement_speed = 0.1
+}
+I14_unsuccessful_legs = {
+	infantry_cost = 0.15
+}
+I14_successful_magic_flow = {
+	allowed_rajput_fraction = 0.1
+}
+I14_unsuccessful_magic_flow = {
+	is_rajput_modifier = yes
+	shock_damage_received = 0.1
+	fire_damage_received = 0.1
+}
+I14_successful_rage_needles = {
+	land_morale = 0.1
+}
+I14_unsuccessful_rage_needles = {
+	discipline = -0.075
+}
+I14_successful_runic_axes = {
+	siege_ability = 0.1
+}
+I14_unsuccessful_runic_axes = {
+	shock_damage_received = 0.075
+	fire_damage_received = 0.075
+}
+I14_researching_relics = {
+	prestige = -1
+}

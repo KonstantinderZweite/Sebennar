@@ -1,5 +1,5 @@
 
-#41 - Konigsberg | New Pearlywine
+#41 - Konigsberg | New Pearlywine -3
 
 owner = A11
 controller = A11
@@ -26,6 +26,6 @@ is_city = yes
 
 
 add_permanent_province_modifier = {
-	name = half_elven_minority_coexisting_small
+	name = half_elven_minority_integrated_small
 	duration = -1
 }

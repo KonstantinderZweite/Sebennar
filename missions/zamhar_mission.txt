@@ -1,0 +1,1636 @@
+z2z_center = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z2Z
+	}
+	z2z_more_caves_to_explore = {
+		icon = mission_underground_cave
+		position = 2
+		
+		required_missions = {
+			z2z_a_new_land
+			z2z_setting_up_a_new_base
+		}
+		
+		provinces_to_highlight = {
+			area = dwarovrod_66_68_area
+		}
+		
+		trigger = {
+			dwarovrod_66_68_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			#allow conquestidors
+			add_country_modifier = {
+				name = z2z_exploring_the_south
+				duration = 3650
+			}
+		}
+	}
+	z2z_a_supposed_dead_end = {
+		icon = form_the_swiss_guard
+		position = 3
+		
+		required_missions = {
+			z2z_more_caves_to_explore
+		}
+		
+		provinces_to_highlight = {
+			area = dwarovrod_63_65_area
+		}
+		
+		trigger = {
+			dwarovrod_63_65_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			#extra colonist
+			add_country_modifier = {
+				name = z2z_exploring_all_dead_ends
+				duration = 7300
+			}
+		}
+	}
+	z2z_more_goblins_in_the_caves = {
+		icon = mission_city_prosperity
+		position = 4
+		
+		required_missions = {
+			z2z_a_supposed_dead_end
+		}
+		
+		trigger = {
+			NOT = { exists = R65 }
+		}
+		
+		effect = {
+			#event about how the blackstep goblins should face the same extermination as the jade goblins as they are not worthy of the goblincities
+			country_event = { id = flavor_zamhar.2 }
+		}
+	}
+	z2z_fixing_the_system = {
+		icon = public_works
+		position = 5
+		
+		required_missions = {
+			z2z_more_goblins_in_the_caves
+			z2z_new_training_grounds
+			z2z_keeping_the_hobgoblins_out
+			z2z_holds_rebuilt
+			z2z_administration_expanded
+		}
+		
+		trigger = {
+			treasury = 300
+			adm_power = 200
+			dip_power = 200
+			mil_power = 200
+		}
+		
+		effect = {
+			#about picking which direction things should be fixed
+			country_event = { id = flavor_zamhar.3 }
+		}
+	}
+	z2z_scouting_for_knowledge = {
+		icon = mission_book_of_royal_degrees
+		position = 6
+		
+		required_missions = {
+			z2z_fixing_the_system
+		}
+		
+		trigger = {
+			OR = {
+				has_spy_network_in = {
+					who = H74
+					value = 30
+				}
+				NOT = { exists = H74 }
+			}
+			OR = {
+				has_spy_network_in = {
+					who = R51
+					value = 30
+				}
+				NOT = { exists = R51 }
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z2z_a_need_for_knowledge
+				duration = 1825
+			}
+		}
+	}
+	z2z_effectiveness_of_ranged_weaponry_understood = {
+		icon = mission_cannons_firing
+		position = 10
+		
+		required_missions = {
+			z2z_cannons_proven_effective
+		}
+		
+		trigger = {
+			OR = {
+				has_country_modifier = z2z_army_status_1
+				has_country_modifier = z2z_army_status_2
+			}
+			4247 = {
+				has_great_project = {
+					type = ovdal_kanzad_cannon_foundry
+					tier = 1
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z2z_kanzadi_cannons_utilized
+				duration = -1
+			}
+		}
+	}
+	z2z_testing_new_systems = {
+		icon = mission_potion
+		position = 11
+		
+		required_missions = {
+			z2z_effectiveness_of_ranged_weaponry_understood
+			z2z_drinking_problems_away
+			z2z_damestear_deposit_secured
+			z2z_magic_importance_reflected
+			z2z_native_holy_grounds
+		}
+		
+		trigger = {
+			OR = {
+				has_country_modifier = z2z_army_status_1
+				has_country_modifier = z2z_army_status_2
+			}
+			OR = {
+				has_country_modifier = z2z_government_status_1
+				has_country_modifier = z2z_government_status_2
+			}
+			reform_level = 6
+		}
+		
+		effect = {
+			country_event = { id = flavor_zamhar.4 }
+		}
+	}
+	z2z_caves_well_defended = {
+		icon = mission_mountain_castle
+		position = 12
+		
+		required_missions = {
+			z2z_testing_new_systems
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				province_has_current_tech_fort_trigger = yes
+				has_terrain = cavern
+				value = 16
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+				limit = {
+					has_terrain = cavern
+					province_has_current_tech_fort_trigger = yes
+				}
+				add_province_modifier = {
+					name = z2z_better_than_a_city_wall
+					duration = -1
+				}
+			}
+		}
+	}
+	z2z_a_new_type_of_goblin_empire = {
+		icon = mission_white_tower
+		position = 17
+		
+		required_missions = {
+			z2z_a_proper_government
+		}
+		
+		trigger = {
+			OR = {
+				mission_completed = z2z_mages_integrated_into_army
+				mission_completed = z2z_artificer_weaponry_commonplace
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_zamhar.5 }
+		}
+	}
+}
+
+z2z_leftmost = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z2Z
+	}
+	z2z_a_new_land = {
+		icon = mission_sunset
+		position = 1
+		
+		trigger = {
+			army_size_percentage = 1.2
+		}
+		
+		effect = {
+			dwarovrod_71_74_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			gronstunad_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dwarovrod_75_78_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			goblinwarrens_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			jadeforges_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			the_back_tunnels_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			the_flank_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	z2z_old_enemies_new_territory = {
+		icon = mission_dwarf
+		position = 2
+		
+		required_missions = {
+			z2z_a_new_land
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = dwarovrod_71_74_area
+				area = gronstunad_area
+				province_id = 4314
+				province_id = 4315
+				province_id = 4316
+			}
+		}
+		
+		trigger = {
+			dwarovrod_71_74_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			gronstunad_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			4314 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			4315 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			4316 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			jade_mines_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	z2z_new_training_grounds = {
+		icon = jap_train_samurai
+		position = 4
+		
+		required_missions = {
+			z2z_all_caves_owned_by_deep_goblins
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = barracks
+				value = 10
+			}
+		}
+		
+		effect = {
+			add_yearly_manpower = 2
+		}
+	}
+	z2z_drinking_problems_away = {
+		icon = mission_market
+		position = 10
+		
+		required_missions = {
+			z2z_cannons_proven_effective
+		}
+		
+		trigger = {
+			4266 = {
+				has_great_project = {
+					type = hul_as_krakazol_breweries
+					tier = 1
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z2z_one_way_of_control
+				duration = -1
+			}
+		}
+	}
+	z2z_building_an_army = {
+		icon = mission_feast
+		position = 13
+		
+		required_missions = {
+			z2z_the_great_cities_restored
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+				OR = {
+					has_building = regimental_camp
+					has_building = conscription_center
+				}
+				base_manpower = 10
+				value = 15
+			}
+			army_size_percentage = 1
+		}
+		
+		effect = {
+			middle_dwarovar_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	z2z_new_deepcity_revived = {
+		icon = byz_city_of_worlds_desire
+		position = 14
+		
+		required_missions = {
+			z2z_building_an_army
+			z2z_economies_to_properly_build_a_country
+		}
+		
+		trigger = {
+			4350 = {
+				has_province_modifier = dig_6
+			}
+		}
+		
+		effect = {
+			#renaming the city for different effects
+			country_event = { id = flavor_zamhar.6 }
+		}
+	}
+	z2z_dwarven_armies_dwarfed = {
+		icon = mission_assemble_an_army
+		position = 15
+		
+		required_missions = {
+			z2z_new_deepcity_revived
+		}
+		
+		trigger = {
+			all_known_country = {
+				OR = {
+					AND = {
+						capital_scope = { continent = serpentspine }
+						has_country_modifier = dwarven_military
+						NOT = { army_size = ROOT }
+					}
+					NOT = { capital_scope = { continent = serpentspine } }
+					NOT = { has_country_modifier = dwarven_military }
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = z2z_army_status_1
+				}
+				remove_country_modifier = z2z_army_status_1
+				add_country_modifier = {
+					name = z2z_army_status_2
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_army_status_2
+				}
+				remove_country_modifier = z2z_army_status_2
+				add_country_modifier = {
+					name = z2z_army_status_3
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_army_status_3
+				}
+				remove_country_modifier = z2z_army_status_3
+				add_country_modifier = {
+					name = z2z_army_status_4
+					duration = -1
+				}
+			}
+			else = {
+				remove_country_modifier = z2z_army_status_0
+				add_country_modifier = {
+					name = z2z_army_status_1
+					duration = -1
+				}
+			}
+		}
+	}
+	z2z_a_proper_government = {
+		icon = mission_hanseatic_city
+		position = 16
+		
+		required_missions = {
+			z2z_dwarven_armies_dwarfed
+			z2z_dwarven_economies_dwarfed
+		}
+		
+		trigger = {
+			all_owned_province = {
+				OR = {
+					AND = {
+						development = 40
+						has_building = town_hall
+						has_manufactory_trigger = yes
+						province_has_current_tech_fort_trigger = yes
+						OR = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+						} 
+					}
+					AND = {
+						NOT = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+						}
+					}
+				}
+			}
+			NOT = { corruption = 0.01 }
+			treasury = 1000
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = z2z_government_status_1
+				}
+				remove_country_modifier = z2z_government_status_1
+				add_country_modifier = {
+					name = z2z_government_status_2
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_government_status_2
+				}
+				remove_country_modifier = z2z_government_status_2
+				add_country_modifier = {
+					name = z2z_government_status_3
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_government_status_3
+				}
+				remove_country_modifier = z2z_government_status_3
+				add_country_modifier = {
+					name = z2z_government_status_4
+					duration = -1
+				}
+			}
+			else = {
+				remove_country_modifier = z2z_government_status_0
+				add_country_modifier = {
+					name = z2z_government_status_1
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+z2z_left = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z2Z
+	}
+	z2z_all_caves_owned_by_deep_goblins = {
+		icon = mission_crystal_cave
+		position = 3
+		
+		required_missions = {
+			z2z_old_enemies_new_territory
+			z2z_more_caves_to_explore
+		}
+		
+		provinces_to_highlight = {
+			region = jade_mines_region
+		}
+		
+		trigger = {
+			jade_mines_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z2z_builing_up_our_cities
+				duration = 7300
+			}
+		}
+	}
+	z2z_keeping_the_hobgoblins_out = {
+		icon = mission_beautiful_hobgoblin_stache
+		position = 4
+		
+		required_missions = {
+			z2z_all_caves_owned_by_deep_goblins
+		}
+		
+		trigger = {
+			OR = {
+				AND = {
+					4345 = {
+						owned_by = ROOT
+						province_has_current_tech_fort_trigger = yes
+					}
+					4360 = {
+						owned_by = ROOT
+						province_has_current_tech_fort_trigger = yes
+					}
+					4352 = {
+						owned_by = ROOT
+						province_has_current_tech_fort_trigger = yes
+					}
+				}
+				NOT = { exists = R62 }
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					exists = R62
+				}
+				shamakhad_region = {
+					limit = {
+					NOT = { is_core = ROOT }
+					is_core = R62
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+				}
+			}
+			else = {
+				every_known_country = {
+					limit = {
+						capital_scope = { region = shamakhad_region }
+					}
+					reverse_add_casus_belli = {
+						target = ROOT
+						type = z2z_learning_raids
+						months = 60
+					}
+				}
+				
+			}
+		}
+	}
+	z2z_claiming_control_of_nearby_holds = {
+		icon = mission_asian_city
+		position = 7
+		
+		required_missions = {
+			z2z_scouting_for_knowledge
+		}
+		
+		provinces_to_highlight = {
+			province_id = 4266
+		}
+		
+		trigger = {
+			4266 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			4266 = {
+				add_province_modifier = {
+					name = z2z_rebuilding_hold
+					duration = 730
+				}
+			}
+		}
+	}
+	z2z_undead_hordes_dealt_with = {
+		icon = mission_misty_forest
+		position = 8
+		
+		required_missions = {
+			z2z_claiming_control_of_nearby_holds
+		}
+		
+		provinces_to_highlight = {
+			province_id = 4284
+		}
+		
+		trigger = {
+			4284 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = H74 }
+		}
+		
+		effect = {
+			4284 = {
+				add_province_modifier = {
+					name = z2z_rebuilding_hold
+					duration = 730
+				}
+			}
+		}
+	}
+	z2z_cannons_proven_effective = {
+		icon = mission_mithril_cannons
+		position = 9
+		
+		required_missions = {
+			z2z_undead_hordes_dealt_with
+		}
+		
+		trigger = {
+			4247 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			NOT = { exists = H79 }
+		}
+		
+		effect = {
+			4247 = {
+				add_province_modifier = {
+					name = z2z_rebuilding_hold
+					duration = 730
+				}
+			}
+		}
+	}
+	z2z_damestear_deposit_secured = {
+		icon = mission_the_dame_tears
+		position = 10
+		
+		required_missions = {
+			z2z_cannons_proven_effective
+		}
+		
+		trigger = {
+			4323 = {
+				has_great_project = {
+					type = verkal_dromak_mage_academy
+					tier = 3
+				}
+			}
+		}
+		
+		effect = {
+			4323 = {
+				add_province_modifier = {
+					name = z2z_mages_and_artificers_vie_for_dominance
+					duration = -1
+				}
+			}
+		}
+	}
+	z2z_the_great_cities_restored = {
+		icon = defend_the_city
+		position = 12
+		
+		required_missions = {
+			z2z_testing_new_systems
+		}
+		
+		trigger = {
+			all_owned_province = {
+				OR = {
+					AND = {
+						NOT = {
+							has_province_modifier = ruined_hold
+							has_province_modifier = partially_ruined_hold
+							has_province_modifier = damaged_hold
+							has_province_modifier = infested_hold
+						}
+						development = 20
+						OR = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+						} 
+					}
+					AND = {
+						NOT = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z2z_dwarovar_rebuilding_effort
+				duration = 1825
+			}
+		}
+	}
+	z2z_economies_to_properly_build_a_country = {
+		icon = mission_african_gold
+		position = 13
+		
+		required_missions = {
+			z2z_the_great_cities_restored
+		}
+		
+		trigger = {
+			all_owned_province = {
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+					trade_goods = gold
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z2z_all_should_be_in_zamhar
+				duration = -1
+			}
+		}
+	}
+	z2z_dwarven_economies_dwarfed = {
+		icon = mission_warrior_gold
+		position = 15
+		
+		required_missions = {
+			z2z_new_deepcity_revived
+		}
+		
+		trigger = {
+			all_known_country = {
+				OR = {
+					AND = {
+						capital_scope = { continent = serpentspine }
+						has_country_modifier = dwarven_military
+						NOT = { monthly_income = ROOT }
+					}
+					NOT = { capital_scope = { continent = serpentspine } }
+					NOT = { has_country_modifier = dwarven_military }
+				}
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = z2z_government_status_1
+				}
+				remove_country_modifier = z2z_government_status_1
+				add_country_modifier = {
+					name = z2z_government_status_2
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_government_status_2
+				}
+				remove_country_modifier = z2z_government_status_2
+				add_country_modifier = {
+					name = z2z_government_status_3
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_government_status_3
+				}
+				remove_country_modifier = z2z_government_status_3
+				add_country_modifier = {
+					name = z2z_government_status_4
+					duration = -1
+				}
+			}
+			else = {
+				remove_country_modifier = z2z_government_status_0
+				add_country_modifier = {
+					name = z2z_government_status_1
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+z2z_right = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z2Z
+	}
+	z2z_learning_about_those_that_we_conquer = {
+		icon = mission_writing_book
+		position = 3
+		
+		required_missions = {
+			z2z_more_caves_to_explore
+			z2z_deepening_the_hold
+		}
+		
+		trigger = {
+			4350 = {
+				feudalism = 100
+			}
+		}
+		
+		effect = {
+			#tech cost reduction?
+			add_country_modifier = {
+				name = z2z_catching_up_with_technology
+				duration = 3650
+			}
+		}
+	}
+	z2z_holds_rebuilt = {
+		icon = mission_early_game_buildings
+		position = 4
+		
+		required_missions = {
+			z2z_learning_about_those_that_we_conquer
+		}
+		
+		trigger = {
+			jade_mines_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			all_owned_province = {
+				OR = {
+					AND = {
+						NOT = {
+							has_province_modifier = ruined_hold
+							has_province_modifier = partially_ruined_hold
+							has_province_modifier = damaged_hold
+							has_province_modifier = infested_hold
+						}
+						OR = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+						} 
+					}
+					AND = {
+						NOT = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_zamhar.8 }
+		}
+	}
+	z2z_picking_the_targets_for_learning = {
+		icon = contracts_of_correspondence
+		position = 7
+		
+		required_missions = {
+			z2z_scouting_for_knowledge
+		}
+		
+		trigger = {
+			4397 = {
+				owner = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 30
+					}
+				}
+			}
+			4434 = {
+				owner = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 30
+					}
+				}
+			}
+			4411 = {
+				owner = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 30
+					}
+				}
+			}
+			4460 = {
+				owner = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 30
+					}
+				}
+			}
+		}
+		
+		effect = {
+			every_known_country = {
+				limit = {
+					OR = {
+						capital_scope = { region = rakhadesh_region }
+						capital_scope = { region = shamakhad_region }
+					}
+				}
+				reverse_add_casus_belli = {
+					target = ROOT
+					type = z2z_learning_raids
+					months = 120
+				}
+			}
+		}
+	}
+	z2z_expanding_our_knowledge_of_military_doctrine = {
+		icon = mission_modern_knight_army
+		position = 8
+		
+		required_missions = {
+			z2z_picking_the_targets_for_learning
+		}
+		
+		trigger = {
+			check_variable = {
+				which = z2z_battles_won
+				value = 120
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = z2z_army_status_1
+				}
+				remove_country_modifier = z2z_army_status_1
+				add_country_modifier = {
+					name = z2z_army_status_2
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_army_status_2
+				}
+				remove_country_modifier = z2z_army_status_2
+				add_country_modifier = {
+					name = z2z_army_status_3
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_army_status_3
+				}
+				remove_country_modifier = z2z_army_status_3
+				add_country_modifier = {
+					name = z2z_army_status_4
+					duration = -1
+				}
+			}
+			else = {
+				remove_country_modifier = z2z_army_status_0
+				add_country_modifier = {
+					name = z2z_army_status_1
+					duration = -1
+				}
+			}
+		}
+	}
+	z2z_magic_importance_reflected = {
+		icon = mission_magic_tower
+		position = 10
+		
+		required_missions = {
+			z2z_cannons_proven_effective
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = mage_tower
+				value = 3
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_zamhar.9 }
+		}
+	}
+	z2z_usefulness_of_mages_questioned = {
+		icon = mission_burning_witch
+		position = 12
+		
+		required_missions = {
+			z2z_testing_new_systems
+		}
+		
+		trigger = {
+			OR = {
+				NOT = {
+					estate_influence = {
+						estate = estate_mages
+						influence = 5
+					}
+				}
+				has_country_modifier = z2z_mages_using_dwarven_runes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_zamhar.10 }
+			4323 = {
+				remove_province_modifier = z2z_mages_and_artificers_vie_for_dominance
+			}
+		}
+	}
+}
+	
+z2z_rightmost = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z2Z
+	}
+	z2z_setting_up_a_new_base = {
+		icon = per_build_the_fire_temples
+		position = 1
+		
+		trigger = {
+			4350 = {
+				has_building = workshop
+				has_building = temple
+				has_building = barracks
+				has_building = marketplace
+			}
+		}
+		
+		effect = {
+			4350 = {
+				add_province_modifier = {
+					name = z2z_how_deep_does_it_go
+					duration = 1825
+				}
+			}
+		}
+	}
+	z2z_deepening_the_hold = {
+		icon = mission_rb_build_furnaces
+		position = 2
+		
+		required_missions = {
+			z2z_setting_up_a_new_base
+		}
+		
+		trigger = {
+			4350 = {
+				has_province_modifier = dig_2
+			}
+		}
+		
+		effect = {
+			4350 = {
+				add_province_modifier = {
+					name = z2z_a_new_deepcity
+					duration = -1
+				}
+			}
+		}
+	}
+	z2z_administration_expanded = {
+		icon = mission_brahmin_administrators
+		position = 4
+		
+		required_missions = {
+			z2z_learning_about_those_that_we_conquer
+		}
+		
+		trigger = {
+			4350 = {
+				has_building = courthouse
+			}
+		}
+		
+		effect = {
+			define_advisor = {
+				type = philosopher
+				skill = 3
+				cost_multiplier = 0.5
+				age = 21
+			}
+		}
+	}
+	z2z_expanding_our_knowledge_of_administration = {
+		icon = mission_muslim_administrators
+		position = 8
+		
+		required_missions = {
+			z2z_picking_the_targets_for_learning
+		}
+		
+		trigger = {
+			check_variable = {
+				which = z2z_sieges_won
+				value = 40
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = z2z_government_status_1
+				}
+				remove_country_modifier = z2z_government_status_1
+				add_country_modifier = {
+					name = z2z_government_status_2
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_government_status_2
+				}
+				remove_country_modifier = z2z_government_status_2
+				add_country_modifier = {
+					name = z2z_government_status_3
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_government_status_3
+				}
+				remove_country_modifier = z2z_government_status_3
+				add_country_modifier = {
+					name = z2z_government_status_4
+					duration = -1
+				}
+			}
+			else = {
+				remove_country_modifier = z2z_government_status_0
+				add_country_modifier = {
+					name = z2z_government_status_1
+					duration = -1
+				}
+			}
+		}
+	}
+	z2z_native_holy_grounds = {
+		icon = the_holy_league
+		position = 10
+		
+		required_missions = {
+			z2z_cannons_proven_effective
+		}
+		
+		trigger = {
+			4269 = {
+				has_great_project = {
+					type = earthseed
+					tier = 1
+				}
+				culture = deep_goblin
+				religion = vaivar_drasyn
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z2z_a_safe_haven
+				duration = -1
+			}	
+		}
+	}
+	
+	z2z_blindness_fixed = {
+		icon = mission_frozen_star
+		position = 12
+		
+		required_missions = {
+			z2z_testing_new_systems
+		}
+		trigger = {
+			4238 = {
+				owner = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 80
+					}
+				}
+			}
+		}
+		effect = {
+			remove_country_modifier = z2z_blind_goblins
+		}
+	}
+}
+z2z_right_hidden = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z2Z
+		has_country_flag = z2z_mages_accepted
+	}
+	z2z_mages_accepted = {
+		icon = mission_empowerment
+		position = 13
+		
+		required_missions = {
+			z2z_usefulness_of_mages_questioned
+		}
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = mage_tower
+				value = 8
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = z2z_mages_using_dwarven_runes
+				}
+				remove_country_modifier = z2z_mages_using_dwarven_runes
+				add_country_modifier = {
+					name = z2z_mages_using_enhanced_dwarven_runes
+					duration = -1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = z2z_mages_using_dwarven_runes
+					duration = -1
+				}
+			}
+		}
+	}
+	z2z_mage_auxilleries_in_army = {
+		icon = mission_transmutation
+		position = 14
+		
+		required_missions = {
+			z2z_mages_accepted
+		}
+		
+		trigger = {
+			has_estate_privilege = estate_mages_battlemage_academies
+			estate_loyalty = {
+				estate = estate_mages
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_mages
+				influence = 50
+			}
+		}
+		
+		effect = {
+			remove_estate_privilege = estate_mages_battlemage_academies
+			set_estate_privilege = estate_mages_intertwined_with_army
+			set_country_flag = z2z_mages_in_army
+		}
+	}
+	z2z_mages_working_hand_in_hand_with_artificers = {
+		icon = mission_magy
+		position = 15
+		
+		required_missions = {
+			z2z_mage_auxilleries_in_army
+		}
+		
+		trigger = {
+			4323 = {
+				has_building = mage_tower
+				has_building = tradecompany
+				has_building = state_house
+				has_province_modifier = dig_6
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_zamhar.11 }
+		}
+	}
+	z2z_mages_integrated_into_army = {
+		icon = mission_well_of_majesty
+		position = 16
+		
+		required_missions = {
+			z2z_mages_working_hand_in_hand_with_artificers
+		}
+		
+		trigger = {
+			NOT = { has_country_modifier = z2z_mages_working_with_artificers }
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = z2z_army_status_1
+				}
+				remove_country_modifier = z2z_army_status_1
+				add_country_modifier = {
+					name = z2z_army_status_2
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_army_status_2
+				}
+				remove_country_modifier = z2z_army_status_2
+				add_country_modifier = {
+					name = z2z_army_status_3
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_army_status_3
+				}
+				remove_country_modifier = z2z_army_status_3
+				add_country_modifier = {
+					name = z2z_army_status_4
+					duration = -1
+				}
+			}
+			else = {
+				remove_country_modifier = z2z_army_status_0
+				add_country_modifier = {
+					name = z2z_army_status_1
+					duration = -1
+				}
+			}
+		}
+	}
+}
+z2z_rightmost_hidden = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z2Z
+		has_country_flag = z2z_mages_removed
+	}
+	z2z_mages_expelled = {
+		icon = mission_the_ascension
+		position = 13
+		
+		required_missions = {
+			z2z_usefulness_of_mages_questioned
+		}
+		
+		trigger = {
+			production_income_percentage = 0.6
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = z2z_mages_using_dwarven_runes
+				}
+				remove_country_modifier = z2z_mages_using_dwarven_runes
+				add_country_modifier = {
+					name = z2z_artificers_handling_weapon_production
+					duration = -1
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = z2z_artificers_handling_weapon_production
+					duration = -1
+				}
+			}
+		}
+	}
+	z2z_replacing_mages_with_artificers = {
+		icon = mission_missive
+		position = 14
+		
+		required_missions = {
+			z2z_mages_expelled
+		}
+		
+		trigger = {
+			all_owned_province = {
+				OR = {
+					AND = {
+						has_manufactory_trigger = yes
+						OR = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+						} 
+					}
+					AND = {
+						NOT = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+						}
+					}
+				}
+			}
+		}
+		
+		effect = {
+			remove_country_modifier = z2z_stigma_of_artificery_not_for_army
+		}
+	}
+	z2z_artificers_weaponry_expanded = {
+		icon = mission_geainne
+		position = 15
+		
+		required_missions = {
+			z2z_replacing_mages_with_artificers
+		}
+		
+		trigger = {
+			num_of_estate_privileges = {
+				estate = estate_artificers
+				value = 12
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z2z_expanded_weapon_production
+				duration = -1
+			}
+		}
+	}
+	z2z_artificer_weaponry_commonplace = {
+		icon = mission_runeforged_cannons
+		position = 16
+		
+		required_missions = {
+			z2z_artificers_weaponry_expanded
+		}
+		
+		trigger = {
+			num_of_rajput = 80
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_modifier = z2z_army_status_1
+				}
+				remove_country_modifier = z2z_army_status_1
+				add_country_modifier = {
+					name = z2z_army_status_2
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_army_status_2
+				}
+				remove_country_modifier = z2z_army_status_2
+				add_country_modifier = {
+					name = z2z_army_status_3
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_modifier = z2z_army_status_3
+				}
+				remove_country_modifier = z2z_army_status_3
+				add_country_modifier = {
+					name = z2z_army_status_4
+					duration = -1
+				}
+			}
+			else = {
+				remove_country_modifier = z2z_army_status_0
+				add_country_modifier = {
+					name = z2z_army_status_1
+					duration = -1
+				}
+			}
+		}
+	}
+}

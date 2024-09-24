@@ -326,6 +326,7 @@ country_event = {
 		name = artifice_research.3.m11
 		trigger = {
 			has_country_flag = research_artifice_invention_portable_turrets
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_portable_turrets
@@ -342,6 +343,7 @@ country_event = {
 		name = artifice_research.3.m12
 		trigger = {
 			has_country_flag = research_artifice_invention_sparkdrive_rifles
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_sparkdrive_rifles
@@ -358,6 +360,7 @@ country_event = {
 		name = artifice_research.3.m13
 		trigger = {
 			has_country_flag = research_artifice_invention_vorpal_bullets
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_vorpal_bullets
@@ -374,6 +377,7 @@ country_event = {
 		name = artifice_research.3.m14
 		trigger = {
 			has_country_flag = research_artifice_invention_magic_missile_deployer
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_magic_missile_deployer
@@ -550,6 +554,7 @@ country_event = {
 		name = artifice_research.3.m116
 		trigger = {
 			has_country_flag = research_artifice_invention_commercial_sky_galleons
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_commercial_sky_galleons
@@ -566,6 +571,7 @@ country_event = {
 		name = artifice_research.3.m117
 		trigger = {
 			has_country_flag = research_artifice_invention_artificer_exo_arms
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_artificer_exo_arms
@@ -876,6 +882,7 @@ country_event = {
 		name = artifice_research.3.m21
 		trigger = {
 			has_country_flag = research_artifice_invention_wandlocks
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_wandlocks
@@ -892,6 +899,7 @@ country_event = {
 		name = artifice_research.3.m22
 		trigger = {
 			has_country_flag = research_artifice_invention_balloonboost_packs
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_balloonboost_packs
@@ -908,6 +916,7 @@ country_event = {
 		name = artifice_research.3.m23
 		trigger = {
 			has_country_flag = research_artifice_invention_prototype_tanks
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_prototype_tanks
@@ -924,6 +933,7 @@ country_event = {
 		name = artifice_research.3.m24
 		trigger = {
 			has_country_flag = research_artifice_invention_war_golems
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_war_golems
@@ -940,6 +950,7 @@ country_event = {
 		name = artifice_research.3.m25
 		trigger = {
 			has_country_flag = research_artifice_invention_arcane_blaster
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_arcane_blaster
@@ -1084,6 +1095,7 @@ country_event = {
 		name = artifice_research.3.m214
 		trigger = {
 			has_country_flag = research_artifice_invention_gyrocopters
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_gyrocopters
@@ -1407,6 +1419,7 @@ country_event = {
 		name = artifice_research.3.m31
 		trigger = {
 			has_country_flag = research_artifice_invention_black_damestear_bullets
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_black_damestear_bullets
@@ -1423,6 +1436,7 @@ country_event = {
 		name = artifice_research.3.m32
 		trigger = {
 			has_country_flag = research_artifice_invention_artillery_autoloader
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_artillery_autoloader
@@ -1439,6 +1453,7 @@ country_event = {
 		name = artifice_research.3.m33
 		trigger = {
 			has_country_flag = research_artifice_invention_mechanim_soldiers
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_mechanim_soldiers
@@ -1455,6 +1470,7 @@ country_event = {
 		name = artifice_research.3.m34
 		trigger = {
 			has_country_flag = research_artifice_invention_personal_mageshields
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_personal_mageshields
@@ -1471,6 +1487,7 @@ country_event = {
 		name = artifice_research.3.m35
 		trigger = {
 			has_country_flag = research_artifice_invention_military_sky_galleons
+			NOT = { tag = I14 }
 		}
 		hidden_effect = {
 			set_country_flag = researching_artifice_invention_military_sky_galleons

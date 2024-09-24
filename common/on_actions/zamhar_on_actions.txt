@@ -1,0 +1,35 @@
+on_battle_won_country = {
+	if = {
+		limit = {
+			is_in_war = {
+				attacker_leader = Z2Z
+				casus_belli = z2z_learning_raids
+			}
+			land_units_lost = 10
+			tag = Z2Z
+		}
+		change_variable = {
+			which = z2z_battles_won
+			value = 1
+		}
+	}
+}
+
+on_siege_won_country = {
+	if = {
+		limit = {
+			is_in_war = {
+				attacker_leader = Z2Z
+				casus_belli = z2z_learning_raids
+			}
+			tag = Z2Z
+			FROM = {
+				fort_level = 1
+			}
+		}
+		change_variable = {
+			which = z2z_sieges_won
+			value = 1
+		}
+	}
+}

@@ -1,0 +1,50 @@
+z1z_fey_revolt = {
+	potential = {
+		tag = Z1Z
+		NOT = { has_country_flag = z1z_fey_revolt_complete_flag }		
+		has_any_disaster = no
+	}
+	
+	can_start = {
+		OR = {
+			mission_completed = z1z_western_deepwoods_pacts_set
+			mission_completed = z1z_western_deepwoods_pacts_set_1
+		}
+		OR = {
+			mission_completed = z1z_eastern_deepwoods_pacts
+			mission_completed = z1z_eastern_deepwoods_pacts_1
+		}
+	}
+	
+	can_stop = {
+		always = no
+	}
+	
+	progress = {
+		modifier = {
+			factor = 10
+		}
+	}
+	
+	can_end = {
+		has_country_flag = z1z_archfey_push
+		num_of_revolts = 0
+	}
+	modifier = {
+		global_unrest = 3
+	}
+	
+	on_start = flavor_goblin_trading_company.12
+	on_end = flavor_goblin_trading_company.13
+	
+	on_monthly = {
+		events = {}
+		random_events = {
+			900 = 0
+			100 = flavor_goblin_trading_company.14
+			85 = flavor_goblin_trading_company.15
+			50 = flavor_goblin_trading_company.16 
+			20 = flavor_goblin_trading_company.17
+		}
+	}
+}

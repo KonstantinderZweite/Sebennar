@@ -1,0 +1,491 @@
+namespace = flavor_zamhar
+
+country_event = {
+	id = flavor_zamhar.1
+	title = flavor_zamhar.1.t
+	desc = flavor_zamhar.1.d
+	picture = GOBLIN_AMBUSH_eventPicture
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = flavor_zamhar.1.a
+		change_tag = Z2Z
+		remove_non_electors_emperors_from_empire_effect = yes
+		change_technology_group = tech_deep_goblin
+		change_unit_type = tech_deep_goblin
+		change_religion = vaivar_drasyn
+		if = {
+			limit = { government_rank = 1 }
+			set_government_rank = 2
+		}
+		add_prestige = 25
+		if = {
+			limit = { has_custom_ideas = no }
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+		override_country_name = Zamhar
+		change_primary_culture = deep_goblin
+		swap_non_generic_missions = yes
+		artifice_magic_switch_to_mixed_mode = yes
+		change_government = monarchy
+		
+		define_general = {
+			fire = 3
+			shock = 10
+			manuever = 4
+			siege = 5
+			name = Grymbr
+		}
+		
+		hidden_effect = {
+			4350 = {
+				infantry = Z2Z
+				infantry = Z2Z
+				infantry = Z2Z
+				infantry = Z2Z
+				infantry = Z2Z
+				infantry = Z2Z
+				infantry = Z2Z
+				infantry = Z2Z
+			}
+			set_variable = {
+				which = z2z_battles_won
+				value = 0
+			}
+			set_variable = {
+				which = z2z_sieges_won
+				value = 0
+			}	
+		}
+		kill_heir = {}
+		add_country_modifier = {
+			name = z2z_blind_goblins
+			duration = -1
+		}
+		add_country_modifier = {
+			name = z2z_army_status_0
+			duration = -1
+		}
+		add_country_modifier = {
+			name = z2z_government_status_0
+			duration = -1
+		}
+		add_country_modifier = {
+			name = z2z_stigma_of_artificery_not_for_army
+			duration = -1
+		}
+		
+		hidden_effect = {
+			define_ruler = {
+				name = "Zyt"
+				dynasty = "Zamhar"
+				culture = deep_goblin
+				adm = 4
+				dip = 3
+				mil = 6
+				age = 18
+				claim = 50
+			}
+			every_owned_province = {
+				change_culture = deep_goblin
+				change_religion = vaivar_drasyn
+			}
+		}
+	}
+	
+	
+}
+
+country_event = {
+	id = flavor_zamhar.2
+	title = flavor_zamhar.2.t
+	desc = flavor_zamhar.2.d
+	picture = LOOMING_DEATH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_zamhar.2.a
+		every_owned_province = {
+			limit = {
+				culture = undergrowth_goblin
+				development = 4
+			}
+			change_culture = deep_goblin
+			change_religion = vaivar_drasyn
+		}
+	}
+	option = {
+		name = flavor_zamhar.2.b
+		trigger = {
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+			treasury = 50
+		}
+		every_owned_province = {
+			limit = {
+				culture = undergrowth_goblin
+			}
+			change_culture = deep_goblin
+			change_religion = vaivar_drasyn
+		}
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_treasury = -50
+	}
+}
+
+country_event = {
+	id = flavor_zamhar.3
+	title = flavor_zamhar.3.t
+	desc = flavor_zamhar.3.d
+	picture = FAR_AND_WIDE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_zamhar.3.a
+		set_country_flag = z2z_military_picked
+		if = {
+			limit = {
+				has_country_modifier = z2z_army_status_1
+			}
+			remove_country_modifier = z2z_army_status_1
+			add_country_modifier = {
+				name = z2z_army_status_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = z2z_army_status_2
+			}
+			remove_country_modifier = z2z_army_status_2
+			add_country_modifier = {
+				name = z2z_army_status_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = z2z_army_status_3
+			}
+			remove_country_modifier = z2z_army_status_3
+			add_country_modifier = {
+				name = z2z_army_status_4
+				duration = -1
+			}
+		}
+		else = {
+			remove_country_modifier = z2z_army_status_0
+			add_country_modifier = {
+				name = z2z_army_status_1
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = flavor_zamhar.3.b
+		set_country_flag = z2z_government_picked
+		if = {
+			limit = {
+				has_country_modifier = z2z_government_status_1
+			}
+			remove_country_modifier = z2z_government_status_1
+			add_country_modifier = {
+				name = z2z_government_status_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = z2z_government_status_2
+			}
+			remove_country_modifier = z2z_government_status_2
+			add_country_modifier = {
+				name = z2z_government_status_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = z2z_government_status_3
+			}
+			remove_country_modifier = z2z_government_status_3
+			add_country_modifier = {
+				name = z2z_government_status_4
+				duration = -1
+			}
+		}
+		else = {
+			remove_country_modifier = z2z_government_status_0
+			add_country_modifier = {
+				name = z2z_government_status_1
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_zamhar.4
+	title = flavor_zamhar.4.t
+	desc = flavor_zamhar.4.d
+	picture = FAR_AND_WIDE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_zamhar.4.a
+		trigger = {
+			has_country_flag = z2z_government_picked
+		}
+		if = {
+			limit = {
+				has_country_modifier = z2z_army_status_1
+			}
+			remove_country_modifier = z2z_army_status_1
+			add_country_modifier = {
+				name = z2z_army_status_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = z2z_army_status_2
+			}
+			remove_country_modifier = z2z_army_status_2
+			add_country_modifier = {
+				name = z2z_army_status_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = z2z_army_status_3
+			}
+			remove_country_modifier = z2z_army_status_3
+			add_country_modifier = {
+				name = z2z_army_status_4
+				duration = -1
+			}
+		}
+		else = {
+			remove_country_modifier = z2z_army_status_0
+			add_country_modifier = {
+				name = z2z_army_status_1
+				duration = -1
+			}
+		}
+	}
+	option = {
+		name = flavor_zamhar.4.b
+		trigger = {
+			has_country_flag = z2z_military_picked
+		}
+		if = {
+			limit = {
+				has_country_modifier = z2z_government_status_1
+			}
+			remove_country_modifier = z2z_government_status_1
+			add_country_modifier = {
+				name = z2z_government_status_2
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = z2z_government_status_2
+			}
+			remove_country_modifier = z2z_government_status_2
+			add_country_modifier = {
+				name = z2z_government_status_3
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_modifier = z2z_government_status_3
+			}
+			remove_country_modifier = z2z_government_status_3
+			add_country_modifier = {
+				name = z2z_government_status_4
+				duration = -1
+			}
+		}
+		else = {
+			remove_country_modifier = z2z_government_status_0
+			add_country_modifier = {
+				name = z2z_government_status_1
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_zamhar.5
+	title = flavor_zamhar.5.t
+	desc = flavor_zamhar.5.d
+	picture = BIG_STAR_IN_SKY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_zamhar.5.a
+		add_country_modifier = {
+			name = z2z_a_new_type_of_goblin_empire
+			duration = -1
+		}
+	}
+}	
+
+country_event = {
+	id = flavor_zamhar.6
+	title = flavor_zamhar.6.t
+	desc = flavor_zamhar.6.d
+	picture = SAMARTAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_zamhar.6.a
+		4350 = {
+			add_province_modifier = {
+				name = z2z_zamhar
+				duration = -1
+			}
+			change_province_name = Zamhar
+		}
+	}
+	option = {
+		name = flavor_zamhar.6.b
+		4350 = {
+			add_province_modifier = {
+				name = z2z_lyxnyr
+				duration = -1
+			}
+			change_province_name = Lyxnyr
+		}
+	}
+	option = {
+		name = flavor_zamhar.6.c
+		4350 = {
+			change_province_name = Nixzar
+		}
+		add_country_modifier = {
+			name = z2z_nixzar
+			duration = -1
+		}
+	}
+	option = {
+		name = flavor_zamhar.6.e
+		4350 = {
+			add_province_modifier = {
+				name = z2z_keep_old_name
+				duration = -1
+			}
+		}
+	}
+}
+country_event = {
+	id = flavor_zamhar.8
+	title = flavor_zamhar.8.t
+	desc = flavor_zamhar.8.d
+	picture = SAMARTAL_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_zamhar.8.a
+		4311 = {
+			add_province_modifier = {
+				name = z2z_dwarven_stuff_destroyed
+				duration = -1
+			}
+			change_culture = deep_goblin
+			change_religion = vaivar_drasyn
+		}
+	}
+}
+
+country_event = {
+	id = flavor_zamhar.9
+	title = flavor_zamhar.9.t
+	desc = flavor_zamhar.9.d
+	picture = SPELL_LIST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_zamhar.9.a
+		add_estate_influence_modifier = {
+			estate = estate_mages
+			influence = -30
+			duration = -1
+		}
+	}
+	option = {
+		name = flavor_zamhar.9.b
+		trigger = {
+			treasury = 1000
+		}
+		add_country_modifier = {
+			name = z2z_mages_using_dwarven_runes
+			duration = -1
+		}
+		add_treasury = -1000
+	}
+}
+
+country_event = {
+	id = flavor_zamhar.10
+	title = flavor_zamhar.10.t
+	desc = flavor_zamhar.10.d
+	picture = SPELL_LIST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_zamhar.10.a
+		set_country_flag = z2z_mages_accepted
+		swap_non_generic_missions = yes
+	}
+	
+	option = {
+		name = flavor_zamhar.10.b
+		set_country_flag = z2z_mages_removed
+		swap_non_generic_missions = yes
+		artifice_magic_switch_to_artificery_only_mode = yes
+	}
+}
+
+country_event = {
+	id = flavor_zamhar.11
+	title = flavor_zamhar.11.t
+	desc = flavor_zamhar.11.d
+	picture = SPELL_LIST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = flavor_zamhar.11.a
+		immediate = {
+			add_country_modifier = {
+				name = z2z_mages_working_with_artificers
+				duration = 3650
+			}
+		}
+		add_country_modifier = {
+			name = z2z_artificers_enhancing_mage_output
+			duration = -1
+		}
+	}
+}

@@ -7,6 +7,9 @@ primary_culture = wood_elf
 religion = fey_court
 technology_group = tech_wood_elf
 capital = 3004
+
+1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
 1338.3.10 = {
 	monarch = {
 		name = "Cinrthir"
@@ -32,9 +35,10 @@ capital = 3004
 		dip = 6
 		mil = 3
 	}
+	
 	set_consort_flag = long_lived_ruler
-	}
-	1438.3.10 = {
+}
+1438.3.10 = {
 
 	heir = {
 		name = "Farwen"
@@ -48,6 +52,7 @@ capital = 3004
 		dip = 6
 		mil = 4
 	}
+	
 	add_heir_personality = scholar_personality
 	set_heir_flag = long_lived_ruler
 }

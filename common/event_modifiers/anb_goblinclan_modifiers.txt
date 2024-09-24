@@ -1,0 +1,108 @@
+goblinclan_an_exhausted_army = {
+	land_morale = -0.1
+}
+goblinclan_corrupt_advisors = {
+	all_power_cost = 0.1
+}
+goblinclan_finally_a_war_won = {
+	land_morale = 0.1
+}
+goblinclan_a_demonic_party = {
+	land_morale = 0.1
+	global_monthly_devastation = 0.1
+}
+goblinclan_harpy_eggs_for_breakfast = {
+	development_cost = -0.2
+}
+goblinclan_bad_trading_deals = {
+	trade_efficiency = -0.3
+}
+goblinclan_poor_trading_deals = (
+	trade_efficiency = -0.2
+}
+goblinclan_a_bit_of_trade = {
+	trade_efficiency = -0.1
+}
+goblinclan_fixing_the_trade_situation = (
+	trade_efficiency = 0.1
+}
+goblinclan_reclaiming_our_old_homes = {
+	colonists = 1
+}
+goblinclan_testing_a_theory = {
+	development_cost = -0.3
+}
+goblinclan_successful_artillery_test = {
+	siege_ability = 0.1
+}
+goblinclan_successful_artillery_generals = {
+	leader_siege = 1
+}
+goblinclan_the_start_to_a_booming_economy = {
+	development_cost = -0.1
+}
+goblinclan_the_greater_bulwark = {
+	local_defensiveness = 0.1
+	max_hostile_attrition = 1
+}
+goblinclan_ocean_target_practice = {
+	artillery_power = 0.1
+}
+goblinclan_large_dwarven_reinforced_walls = {
+	local_defensiveness = 0.2
+}
+goblinclan_small_dwarven_reinforced_walls = {
+	local_defensiveness = 0.1
+}
+goblinclan_large_harpies_ambush_hills = {
+	max_hostile_attrition = 1
+}
+goblinclan_small_harpies_ambush_hills = {
+	max_hostile_attrition = 0.5
+}
+goblinclan_large_gnollish_trade_control = {
+	trade_goods_size_modifier = 0.2
+}
+goblinclan_small_gnollish_trade_control = {
+	trade_goods_size_modifier = 0.1
+}
+goblinclan_large_human_slave_network = {
+	local_manpower_modifier = 0.2
+}
+goblinclan_small_human_slave_network = {
+	local_manpower_modifier = 0.1
+}
+goblinclan_large_elven_manufactoring_camp = {
+	local_production_efficiency = 0.1
+}
+goblinclan_small_elven_manufactoring_camp = {
+	local_production_efficiency = 0.05
+}
+goblinclan_small_gnomish_workshop = {
+	allowed_rajput_fraction = 0.01
+}
+goblinclan_large_gnomish_workshop = {
+	allowed_rajput_fraction = 0.02
+}
+goblinclan_a_booming_economy = {
+	production_efficiency = 0.05
+}
+
+goblinclan_a_faith_strengthened = {
+	global_tax_modifier = 0.1
+}
+goblinclan_building_spree = {
+	build_cost = -0.1
+}
+goblinclan_human_assisted_farming = {
+	manpower_recovery_speed = 0.2
+}
+goblinclan_goblins_flock_to_the_banners = {
+	manpower_recovery_speed = 0.10
+}
+goblinclan_we_only_need_the_best = {
+	discipline = 0.025
+}
+goblinclan_ruined_trade = {
+	trade_efficiency = -0.4
+}

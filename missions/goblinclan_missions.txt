@@ -1,0 +1,2124 @@
+goblinclan_center = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z8Z
+	}
+	Z8Z_An_End_To_Inner_Turmoil = {
+		icon = mission_noble_council
+		position = 1
+		trigger = {
+			has_country_flag = war_against_goblins_complete_flag
+		}
+		
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+	Z8Z_consolidate_the_north = {
+		icon = mission_mountain_castle
+		position = 2
+		required_missions = {
+			Z8Z_An_End_To_Inner_Turmoil
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = azka_evran_area
+				area = ur_monkande_area
+				area = bahar_szel_uak_area
+				area = kuzak_area
+				area = siffiraeri_area
+				area = gelkalis_area
+				area = lawassar_area
+			}
+		}
+		trigger = {
+			azka_evran_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			ur_monkande_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			bahar_szel_uak_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			kuzak_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			siffiraeri_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			gelkalis_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			gelkalis_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			birsartenslib_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			imuluses_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kuz_mountains_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "goblinclan_finally_a_war_won"
+				duration = 3650
+			}
+		}
+	}
+	
+	Z8Z_control_over_the_coast = {
+		icon = mission_viking
+		position = 3
+		required_missions = {
+			Z8Z_consolidate_the_north
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = birsartenslib_area
+				area = imuluses_area
+				area = kuz_mountains_area
+			}
+		}
+		trigger = {
+			birsartenslib_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			imuluses_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			kuz_mountains_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			anzarzax_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			anzabad_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kumarkand_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			irrliam_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			zansap_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			medurubar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_brasan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_brasan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bulwar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	Z8Z_the_heart_of_bulwar = {
+		icon = mission_sun_temple
+		position = 4
+		required_missions = {
+			Z8Z_control_over_the_coast
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = anzarzax_area
+				area = anzabad_area
+				area = kumarkand_area
+				area = irrliam_area
+				area = zansap_area
+				area = medurubar_area
+				area = upper_brasan_area
+				area = lower_brasan_area
+				area = bulwar_area
+			}
+		}
+		trigger = {
+			anzarzax_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			anzabad_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			kumarkand_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			irrliam_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			zansap_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			medurubar_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			upper_brasan_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			lower_brasan_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			bulwar_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			outer_drolas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			inner_drolas_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			masusopot_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sur_mountains_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			elizna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ibtat_axast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			traz_buranun_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			harklum_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_naza_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sareyand_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			avamezan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_naza_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_naza_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Z8Z_elizna_interference_stopped = {
+		icon = mission_greentide
+		position = 5
+		required_missions = {
+			Z8Z_the_heart_of_bulwar
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = inner_drolas_area
+				area = outer_drolas_area
+				area = sur_mountains_area
+				area = masusopot_area
+				area = ibtat_axast_area
+				area = elizna_area
+			}
+		}
+		trigger = {
+			inner_drolas_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			outer_drolas_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			sur_mountains_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			masusopot_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			ibtat_axast_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			elizna_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			jixobix_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			grixekyr_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			garpix_tluukt_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_krahway_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			garpix_zokka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			grixek_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			xhurgrum_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_suran_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			panuses_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eduz_vacyn_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	Z8Z_animals_with_a_similar_goal = {
+		icon = mission_whisper
+		position = 6
+		required_missions = {
+			Z8Z_elizna_interference_stopped
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = jixobix_area
+				area = grixekyr_area
+				area = garpix_tluukt_area
+				area = eastern_krahway_area
+				area = garpix_zokka_area
+				area = grixek_area
+				area = xhurgrum_area
+				area = upper_suran_area
+				area = panuses_area
+				area = eduz_vacyn_area
+			}
+		}
+		trigger = {
+			jixobix_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			grixekyr_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			garpix_tluukt_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			garpix_zokka_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			eastern_krahway_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			grixek_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			xhurgrum_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			upper_suran_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			panuses_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			eduz_vacyn_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			custom_tooltip = Z8Z_animals_with_a_similar_goal_mission_desc
+			hidden_effect = {
+				if = {
+					limit = {
+						ROOT = {  NOT = { has_unlocked_cult = gnollish_cult } }
+					}
+					ROOT = {
+						country_event = { id = goblinic_shamanism_flavor.403 }
+					}
+				}
+				else = {
+					set_country_flag = allowing_a_party
+				}
+			set_country_flag = gnolls_roam_free
+			}
+		}
+	}
+	Z8Z_the_eastern_campaign = {
+		icon = mission_feast
+		position = 7
+		required_missions = {
+			Z8Z_animals_with_a_similar_goal
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = harklum_area
+				area = traz_buranun_area
+				area = south_naza_area
+				area = east_naza_area
+				area = north_naza_area
+				area = sareyand_area
+				area = avamezan_area
+			}
+		}
+		trigger = {
+			harklum_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			traz_buranun_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			south_naza_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			north_naza_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			east_naza_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			sareyand_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			avamezan_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			kharfiraeri_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			nansalen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			misharallen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			firanyalen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Z8Z_finishing_the_job = {
+		icon = mission_harpy_diplomats
+		position = 8
+		required_missions = {
+			Z8Z_the_eastern_campaign
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = kharfiraeri_area
+				area = nansalen_area
+				area = misharallen_area
+				area = firanyalen_area
+			}
+		}
+		trigger = {
+			kharfiraeri_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			nansalen_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			misharallen_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			firanyalen_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "goblinclan_harpy_eggs_for_breakfast"
+				duration = 7300
+			}
+			set_country_flag = harpies_roam_free
+			custom_tooltip = Z8Z_finishing_the_job_mission_desc
+
+		}
+	}
+	
+	Z8Z_practicing_cannons_against_fortresses = {
+		icon = fortress_of_belgrade
+		position = 10
+		required_missions = {
+			Z8Z_developing_a_nations_lands
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 522
+				province_id = 510
+			}
+		}
+		trigger = {
+			OR = {
+				510 = {
+					has_great_project = {
+						type = bal_ouord
+						tier = 1
+					}
+				}
+				522 = {
+					has_great_project = {
+						type = fortress_azka_szel
+						tier = 1
+					}
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						510 = {
+							has_great_project = {
+								type = bal_ouord
+								tier = 1
+							}
+						}
+						522 = {
+							has_great_project = {
+								type = fortress_azka_szel
+								tier = 1
+							}
+						}
+					}
+				}
+				add_country_modifier = {
+					name = "goblinclan_successful_artillery_test"
+					duration = -1
+				}
+				add_country_modifier = {
+					name = "goblinclan_successful_artillery_generals"
+					duration = -1
+				}
+			}
+			else_if = {
+				limit = {
+					510 = {
+						has_great_project = {
+							type = bal_ouord
+							tier = 1
+						}
+					}
+				}
+				add_country_modifier = {
+					name = "goblinclan_successful_artillery_generals"
+					duration = 7300
+				}
+			}
+			else = {
+				limit = {
+					522 = {
+						has_great_project = {
+							type = fortress_azka_szel
+							tier = 1
+						}
+					}
+				}
+				add_country_modifier = {
+					name = "goblinclan_successful_artillery_test"
+					duration = 7300
+				}
+			}
+		}
+	}
+	Z8Z_households_for_the_soldiers = {
+		icon = mission_great_trading_houses
+		position = 11
+		required_missions = {
+			Z8Z_grain_to_feed_our_soldiers
+		}
+		provinces_to_highlight = {
+			AND = {
+				OR = {
+					trade_goods = grain
+					trade_goods = fish
+					trade_goods = livestock
+					trade_goods = wine
+				}
+				owned_by = ROOT
+				NOT = { has_building = soldier_households }
+			}
+		}
+		trigger = {
+			all_owned_province = {
+				OR = {
+					AND = {
+						NOT = { trade_goods = grain }
+						NOT = { trade_goods = fish }
+						NOT = { trade_goods = livestock }
+						NOT = { trade_goods = wine }
+					}
+					AND = {
+						has_building = soldier_households
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = flavor_goblinclan.6
+			}
+		}
+	}
+	Z8Z_eranils_oddities_explored = {
+		icon = mission_market
+		position = 12
+		required_missions = {
+			Z8Z_pesky_remnants_removed
+		}
+		trigger = {
+			599 = {
+				has_great_project = {
+					type = eranils_oddities
+					tier = 3
+				}
+			}
+		}	
+		effect = {
+			mission_reward_artifice_points_5 = yes
+			mission_reward_artifice_points_5 = yes
+		}
+	}
+	
+	Z8Z_accepting_of_people = {
+		icon = mission_monarch_diplomacy
+		position = 14
+		trigger = {
+			AND = {
+				has_country_flag = gnolls_roam_free
+				has_country_flag = gnomes_roam_free
+				has_country_flag = elves_roam_free
+				has_country_flag = humans_roam_free
+				has_country_flag = harpies_roam_free
+				has_country_flag = dwarves_roam_free
+			}
+		}
+		effect = {
+			add_government_reform = advisors_of_a_particular_skill_enhanced
+		}
+	}
+	
+	Z8Z_a_fixed_government = {
+		icon = mission_princess_writing
+		position = 15
+		required_missions = {
+			Z8Z_accepting_of_people
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			OR = {
+				NOT = { has_province_modifier = goblinclan_small_elven_manufactoring_camp }
+				NOT = { has_province_modifier = goblinclan_large_elven_manufactoring_camp }
+				NOT = { has_province_modifier = goblinclan_large_dwarven_reinforced_walls }
+				NOT = { has_province_modifier = goblinclan_small_dwarven_reinforced_walls }
+				NOT = { has_province_modifier = goblinclan_large_harpies_ambush_hills }
+				NOT = { has_province_modifier = goblinclan_small_harpies_ambush_hills }
+				NOT = { has_province_modifier = goblinclan_large_gnollish_trade_control }
+				NOT = { has_province_modifier = goblinclan_small_gnollish_trade_control }
+				NOT = { has_province_modifier = goblinclan_large_human_slave_network }
+				NOT = { has_province_modifier = goblinclan_small_human_slave_network }
+				NOT = { has_province_modifier = goblinclan_small_gnomish_workshop }
+				NOT = { has_province_modifier = goblinclan_large_gnomish_workshop }
+			}
+		}
+		trigger = {
+			bahar_region = {
+				type = all
+				owned_by = ROOT
+				OR = {
+					has_province_modifier = goblinclan_small_elven_manufactoring_camp
+					has_province_modifier = goblinclan_large_elven_manufactoring_camp
+					has_province_modifier = goblinclan_large_dwarven_reinforced_walls
+					has_province_modifier = goblinclan_small_dwarven_reinforced_walls
+					has_province_modifier = goblinclan_large_harpies_ambush_hills
+					has_province_modifier = goblinclan_small_harpies_ambush_hills
+					has_province_modifier = goblinclan_large_gnollish_trade_control
+					has_province_modifier = goblinclan_small_gnollish_trade_control
+					has_province_modifier = goblinclan_large_human_slave_network
+					has_province_modifier = goblinclan_small_human_slave_network
+					has_province_modifier = goblinclan_small_gnomish_workshop
+					has_province_modifier = goblinclan_large_gnomish_workshop
+				}
+			}
+			harpy_hills_region = {
+				type = all
+				owned_by = ROOT
+				OR = {
+					has_province_modifier = goblinclan_small_elven_manufactoring_camp
+					has_province_modifier = goblinclan_large_elven_manufactoring_camp
+					has_province_modifier = goblinclan_large_dwarven_reinforced_walls
+					has_province_modifier = goblinclan_small_dwarven_reinforced_walls
+					has_province_modifier = goblinclan_large_harpies_ambush_hills
+					has_province_modifier = goblinclan_small_harpies_ambush_hills
+					has_province_modifier = goblinclan_large_gnollish_trade_control
+					has_province_modifier = goblinclan_small_gnollish_trade_control
+					has_province_modifier = goblinclan_large_human_slave_network
+					has_province_modifier = goblinclan_small_human_slave_network
+					has_province_modifier = goblinclan_small_gnomish_workshop
+					has_province_modifier = goblinclan_large_gnomish_workshop
+				}
+			}
+			bulwar_proper_region = {
+				type = all
+				owned_by = ROOT
+				OR = {
+					has_province_modifier = goblinclan_small_elven_manufactoring_camp
+					has_province_modifier = goblinclan_large_elven_manufactoring_camp
+					has_province_modifier = goblinclan_large_dwarven_reinforced_walls
+					has_province_modifier = goblinclan_small_dwarven_reinforced_walls
+					has_province_modifier = goblinclan_large_harpies_ambush_hills
+					has_province_modifier = goblinclan_small_harpies_ambush_hills
+					has_province_modifier = goblinclan_large_gnollish_trade_control
+					has_province_modifier = goblinclan_small_gnollish_trade_control
+					has_province_modifier = goblinclan_large_human_slave_network
+					has_province_modifier = goblinclan_small_human_slave_network
+					has_province_modifier = goblinclan_small_gnomish_workshop
+					has_province_modifier = goblinclan_large_gnomish_workshop
+				}
+			}
+		}
+		effect = {
+			add_government_reform = council_of_the_technocrats_enhanced
+			remove_country_modifier = goblinclan_corrupt_advisors
+		}
+	}
+}
+
+goblinclan_left = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z8Z
+	}
+	Z8Z_develop_trading_with_islanders = {
+		icon = mission_ne_birch_bark_canoes
+		position = 2
+		required_missions = {
+			Z8Z_An_End_To_Inner_Turmoil
+		}
+		trigger = {
+			OR = {
+				A47 = {
+					has_opinion = {
+						who = ROOT
+						value = -199
+					}
+				}	
+				NOT = { exists = A47 }
+			}
+			has_country_modifier = racial_pop_human_purge
+		}
+		effect = {
+			remove_country_modifier = goblinclan_ruined_trade
+			add_country_modifier = {
+				name = "goblinclan_bad_trading_deals"
+				duration = -1
+			}
+		}
+	}
+	Z8Z_producing_something_worth_trading = {
+		icon = mission_indian_trade_company
+		position = 3
+		required_missions = {
+			Z8Z_develop_trading_with_islanders
+		}
+		trigger = {
+			production_income_percentage = 0.5
+		}
+		effect = {
+			add_country_modifier = {
+				name = "goblinclan_poor_trading_deals"
+				duration = -1
+			}
+			remove_country_modifier = goblinclan_bad_trading_deals
+			every_province = {
+				limit = {
+					AND = {
+						OR = {
+							trade_goods = copper
+							trade_goods = iron
+						}
+					owned_by = ROOT
+					}
+				}
+				add_base_production = 2
+			}
+		}
+	}
+	Z8Z_a_fleet_to_protect_what_little_trade_we_have = {
+		icon = mission_norwegian_ship
+		position = 4
+		required_missions = {
+			Z8Z_producing_something_worth_trading
+			Z8Z_control_over_the_coast
+		}
+		trigger = {
+			num_of_light_ship = 25
+		}
+		effect = {
+			remove_country_modifier = goblinclan_poor_trading_deals
+			add_country_modifier = {
+				name = "goblinclan_a_bit_of_trade"
+				duration = -1
+			}
+		}
+	}
+	Z8Z_control_over_trade_in_bulwar = {
+		icon = mission_arabian_sea_trade
+		position = 5
+		required_missions = {
+			Z8Z_a_fleet_to_protect_what_little_trade_we_have
+		}
+		trigger = {
+			536 = { is_strongest_trade_power = ROOT}
+			663 = { is_strongest_trade_power = ROOT}
+			595 = { is_strongest_trade_power = ROOT}
+		}
+		effect = {
+			remove_country_modifier = goblinclan_a_bit_of_trade
+			custom_tooltip = Z8Z_control_over_trade_in_bulwar_mission_desc
+		}
+	}
+	Z8Z_goblinclan_mastary_over_trade = {
+		icon = dominant_economy
+		position = 6
+		required_missions {
+			Z8Z_control_over_trade_in_bulwar
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				province_has_center_of_trade_of_level = 2
+				superregion = bulwar_superregion
+				value = 17
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "goblinclan_fixing_the_trade_situation"
+				duration = -1
+			}
+		}
+	}
+	Z8Z_an_annoying_island_claimed = {
+		icon = mission_invade_island
+		position = 7
+		required_missions = {
+			Z8Z_a_navy_for_offence
+		}
+		provinces_to_highlight = {
+			area = isle_of_tef_area
+		}
+		trigger = {
+			isle_of_tef_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			mission_reward_artifice_points_5 = yes
+			mission_reward_artifice_points_5 = yes
+		}
+	}
+	
+	Z8Z_developing_a_nations_lands = {
+		icon = mission_nomad
+		position = 9
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { development = 10 }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 30
+				development = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "goblinclan_the_start_to_a_booming_economy"
+				duration = -1
+			}
+		}
+	}
+	Z8Z_grain_to_feed_our_soldiers = {
+		icon = mission_big_house
+		position = 10
+		required_missions = {
+			Z8Z_developing_a_nations_lands
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			NOT = { base_manpower = 10 }
+			trade_goods = grain
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				base_manpower = 10
+				trade_goods = grain
+			}
+		}
+		effect = {
+			country_event = {
+				id = flavor_goblinclan.5
+			}
+		}
+	}
+	Z8Z_barracks_to_train_our_soldiers = {
+		icon = jap_train_samurai
+		position = 11
+		required_missions = {
+			Z8Z_grain_to_feed_our_soldiers
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			trade_goods = grain
+			NOT = { base_manpower = 10 }
+			AND = {
+				NOT = { has_building = barracks }
+				NOT = { has_building = training_fields }
+				NOT = { base_manpower = 10 }
+			}
+		}
+		trigger = {
+			all_owned_province = {
+				OR = {
+					AND = {
+						NOT = { trade_goods = grain }
+					}
+					AND = {
+						base_manpower = 10
+						OR = {
+							has_building = barracks
+							has_building = training_fields
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_country_flag = humans_roam_free
+			custom_tooltip = Z8Z_barracks_to_train_our_soldiers_mission_desc
+		}
+	}
+	Z8Z_a_place_for_work = {
+		icon = mission_arverynn_street
+		position = 12
+		required_missions = {
+			Z8Z_keeping_bulwar_heritage_strong
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_manufactory_trigger = yes
+				value = 20
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "goblinclan_a_booming_economy"
+				duration = 3650
+			}
+		}
+	}
+}
+
+goblinclan_right = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z8Z
+	}
+	Z8Z_an_expidition_party_to_explore_the_caves = {
+		icon = mission_armoury
+		position = 2
+		required_missions = {
+			Z8Z_An_End_To_Inner_Turmoil
+		}
+		trigger = {
+			manpower = 20
+			treasury = 150
+		}
+		effect = {
+			add_manpower = -20
+			add_treasury = -150
+			add_country_modifier = {
+				name = "goblinclan_reclaiming_our_old_homes"
+				duration = 54750
+			}
+		}
+	}
+	Z8Z_a_hold_reclaimed = {
+		icon = mission_mountain_castle
+		position = 3
+		required_missions = {
+			Z8Z_an_expidition_party_to_explore_the_caves
+		}
+		provinces_to_highlight = {
+			province_id = 2942
+		}
+		trigger = {
+			2942 = {
+				owned_by = ROOT
+				NOT = {
+						has_province_modifier = ruined_hold
+						has_province_modifier = partially_ruined_hold
+						has_province_modifier = damaged_hold
+				}
+			}
+		}
+		effect = {
+			shazstundihr_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_altar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			orlghelovar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_altar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			argrod_origin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Z8Z_our_corner_of_the_mountain = {
+		icon = mission_underground_cave
+		position = 4
+		required_missions = {
+			Z8Z_a_hold_reclaimed
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = shazstundihr_area
+				area = south_altar_area
+				area = orlghelovar_area
+				area = north_altar
+				area = angrod_origin_area
+			}
+		}
+		trigger = {
+			shazstundihr_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			south_altar_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			orlghelovar_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			north_altar_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			argrod_origin_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			arg_ordstun_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kings_caverns_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			stunad_skomdihr_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			argrod_6_8_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			thievesbane_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}	
+	}
+	Z8Z_securing_the_mountainside = {
+		icon = mission_door_trade
+		position = 5
+		required_missions = {
+			Z8Z_our_corner_of_the_mountain
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = arg_ordstun_area
+				area = kings_caverns_area
+				area = stunad_skomdihr_area
+				area = argrod_6_8_area
+				area = thievesbane_area
+			}
+		}
+		trigger = {
+			owns_core_province = 4093
+			2950 = {
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					AND = {
+						owned_by = H87
+						is_core = H87
+					}
+				}
+			}
+			2948 = {
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					AND = {
+						owned_by = H87
+						is_core = H87
+					}
+				}
+			}
+			2947 = {
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					AND = {
+						owned_by = H87
+						is_core = H87
+					}
+				}
+			}
+			kings_caverns_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by = H87
+				}
+				is_core = ROOT
+			}
+			stunad_skomdihr_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by = H87
+				}
+				is_core = ROOT
+			}
+			argrod_6_8_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by = H87
+				}
+				is_core = ROOT
+			}
+			thievesbane_area = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					owned_by = H87
+				}
+				is_core = ROOT
+			}
+		}
+		effect = {
+			526 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_testing_a_theory"
+					duration = -1
+				}
+			}
+		}
+	}
+	Z8Z_two_problems_one_stone = {
+		icon = mission_burning_castle
+		positIon = 6
+		required_missions = {
+			Z8Z_securing_the_mountainside
+		}
+		provinces_to_highlight = {
+			province_id = 526
+		}
+		trigger = {
+			526 = {
+				development = 40
+			}
+			treasury = 400
+		}
+		effect = {
+			526 = {
+				add_devastation = 100
+				set_base_manpower = 1
+				set_base_production = 1
+				set_base_tax = 1
+			}
+			add_treasury = -400
+			set_country_flag = dwarves_roam_free
+			custom_tooltip = Z8Z_two_problems_one_stone_mission_desc
+		}
+	}
+	Z8Z_joining_with_the_international_gommo = {
+		icon = mission_science
+		position = 10
+		trigger = {
+			has_estate_privilege = estate_artificers_organization_international_gommo
+		}
+		effect = {
+			add_estate_loyalty_modifier = {
+				estate = estate_artificers
+				loyalty = 10
+				duration = -1
+			}
+		}
+	}
+	Z8Z_pesky_remnants_removed = {
+		icon = mission_burning_man
+		position = 11
+		required_missions = {
+			Z8Z_joining_with_the_international_gommo
+		}
+		trigger = {
+			NOT = {
+				estate_influence = {
+					estate = estate_mages
+					influence = 21
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_mages
+						influence = 11
+					}
+				}
+				capital_scope = {
+					create_revolt = 3
+				}
+				capital_scope = {
+					create_revolt = 3
+				}
+			}
+			else = {
+				capital_scope = {
+					create_revolt = 3
+				}
+			}
+			artifice_magic_switch_to_artificery_only_mode = yes
+		}
+	}
+	Z8Z_a_proper_economic_policy = {
+		icon = mission_guarded_market
+		position = 12
+		required_missions = {
+			Z8Z_pesky_remnants_removed
+		}
+		trigger = {
+			production_income_percentage = 0.45
+		}
+		effect = {
+			add_treasury = 300 
+		}
+	}
+	Z8Z_a_people_willing_to_join_us = {
+		icon = mission_gnomish_ship
+		position = 13
+		required_missions = {
+			Z8Z_a_proper_economic_policy
+			Z8Z_eranils_oddities_explored
+			Z8Z_gathering_artificery_knowledge
+		}
+		trigger = {
+			estate_influence = {
+				estate = estate_artificers
+				influence = 50
+			}
+		}
+		effect = {
+			set_country_flag = gnomes_roam_free
+			custom_tooltip = Z8Z_a_people_willing_to_join_us_mission_desc
+		}
+	}
+}
+goblinclan_rightmost = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z8Z
+	}
+	Z8Z_fortify_the_west = {
+		icon = mission_magnificent_castle
+		position = 5
+		required_missions = {
+			Z8Z_our_corner_of_the_mountain
+		}
+		provinces_to_highlight = {
+			province_id = 510
+		}
+		trigger = {
+			510 = {
+				NOT = { has_province_modifier = ruined_castanorian_citadel }
+			}
+			treasury = 500
+		}
+		effect = {
+			510 = {
+				add_building_construction = {
+					building = ramparts
+					cost = 0
+					speed = 0.8
+				}
+			}
+			add_treasury = -500
+		}
+	}
+	Z8Z_the_northern_passes_into_the_heartland = {
+		icon = mission_guarded_market
+		position = 6
+		required_missions = {
+			Z8Z_fortify_the_west
+		}
+		provinces_to_highlight= {
+			OR = {
+				province_id = 510
+				province_id = 522
+				province_id = 526
+				province_id = 529
+				province_id = 534
+				province_id = 650
+				province_id = 4238
+				province_id = 2942
+				province_id = 2966
+			}
+			NOT = { province_has_current_tech_fort_trigger = yes }
+		}
+		trigger = {
+			AND = {
+				510 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				522 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				526 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				529 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				OR = {
+					650 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+					}
+					2966 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+					}
+				}
+				4238 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				OR = {
+					534 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+					}
+					2942 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+					}
+				}
+			}
+		}
+		effect = {
+			510 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			522 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			526 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			529 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			650 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			4238 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			if = {
+				limit = {
+					2942 = {
+						owned_by = ROOT
+						province_has_current_tech_fort_trigger = yes
+					}
+				}
+				2942 = {
+					add_permanent_province_modifier = {
+						name = "goblinclan_the_greater_bulwark"
+						duration = -1
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					534 = {
+						owned_by = ROOT
+						province_has_current_tech_fort_trigger = yes
+					}
+				}
+				534 = {
+					add_permanent_province_modifier = {
+						name = "goblinclan_the_greater_bulwark"
+						duration = -1
+					}
+				}
+			}
+			else = {
+			
+			}
+		}
+	}
+	Z8Z_defending_the_salahad_gate = {
+		icon = mission_face_off
+		position = 7
+		required_missions = {
+			Z8Z_the_northern_passes_into_the_heartland
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 680
+				province_id = 565
+				province_id = 683
+				province_id = 687
+			}
+			NOT = { province_has_current_tech_fort_trigger = yes }
+		}
+		trigger = {
+			AND = {
+				680 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				565 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				683 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				687 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+			}
+		}
+		effect = {
+			680 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			565 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			683 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			687 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+		}
+	}
+	
+	Z8Z_the_final_bulwark = {
+		icon = mission_desert_city
+		position = 8
+		required_missions = {
+			Z8Z_defending_the_salahad_gate
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 689
+				province_id = 632
+				province_id = 666
+				province_id = 669
+				province_id = 3263
+				province_id = 676
+			}
+			NOT = { province_has_current_tech_fort_trigger = yes }
+		}
+		trigger = {
+			AND = {
+				689 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				632 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				666 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				669 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				3263 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+				676 = {
+					owned_by = ROOT
+					province_has_current_tech_fort_trigger = yes
+				}
+			}
+		}
+		effect = {
+			689 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			632 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			666 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			669 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			3263 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+			676 = {
+				add_permanent_province_modifier = {
+					name = "goblinclan_the_greater_bulwark"
+					duration = -1
+				}
+			}
+		}
+	}
+	Z8Z_gathering_artificery_knowledge = {
+		icon = mission_runeforged_cannons
+		position = 12
+		required_missions = {
+			Z8Z_pesky_remnants_removed
+		}
+		trigger = {
+			num_of_estate_privileges = {
+				estate = estate_artificers
+				value = 8
+			}
+		}
+		effect = {
+			add_estate_loyalty_modifier = {
+				estate = estate_artificers
+				loyalty = 20
+				duration = -1
+			}
+			add_estate_influence_modifier = {
+				estate = estate_artificers
+				influence = 20
+				duration = -1
+			}
+		}
+	}
+}
+
+goblinclan_leftmost = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z8Z
+	}
+	Z8Z_batteries_to_defend_our_coast = {
+		icon = mission_cannons_firing
+		position = 5
+		required_missions = {
+			Z8Z_a_fleet_to_protect_what_little_trade_we_have
+		}
+		provinces_to_highlight = {
+			has_port = yes
+			OR = { 
+				NOT = { has_building = coastal_defence }
+				NOT = { has_building = naval_battery }
+			}
+			owned_by = ROOT
+		}
+		trigger = {
+			coastal_defence = 10
+		}
+		effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						OR = { 
+							NOT = { has_building = coastal_defence }
+							NOT = { has_building = naval_battery }
+						}
+					}
+					add_base_manpower = 2
+				}
+			}
+			custom_tooltip = Z8Z_batteries_to_defend_our_coast_mission_desc
+		}
+	}
+	Z8Z_a_navy_for_offence = {
+		icon = mission_norwegian_ship
+		position = 6
+		required_missions = {
+			Z8Z_batteries_to_defend_our_coast
+		}
+		trigger = {
+			OR = {
+				num_of_heavy_ship = 10
+				num_of_galley = 20
+			}
+			num_of_transport = 20
+		}
+		effect = {
+			isle_of_tef_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Z8Z_a_coast_defended = {
+		icon = mission_control_the_barbary_coast
+		position = 7
+		required_missions = {
+			Z8Z_a_navy_for_offence
+		}
+		provinces_to_highlight = {
+			AND = {
+				has_port = yes
+				AND = { 
+					NOT = { has_building = coastal_defence }
+					NOT = { has_building = naval_battery }
+				}
+				owned_by = ROOT
+			}
+		}	
+		trigger = {
+			all_owned_province = {
+				OR = {
+					has_port = no
+					OR = { 
+						has_building = coastal_defence
+						has_building = naval_battery
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "goblinclan_ocean_target_practice"
+				duration = -1
+			}
+		}
+	}
+	Z8Z_keeping_the_faith = {
+		icon = mission_hands_praying
+		position = 10
+		provinces_to_highlight = {
+			AND = {
+				base_tax = 8
+				NOT = { has_building = temple }
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				base_tax = 8
+				has_building = temple
+				value = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "goblinclan_a_faith_strengthened"
+				duration = 3650
+			}
+		}
+	}
+	Z8Z_keeping_bulwar_heritage_strong = {
+		icon = mission_early_game_buildings
+		position = 11 
+		required_missions = {
+			Z8Z_keeping_the_faith
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 536
+				province_id = 599
+				province_id = 601
+				province_id = 688
+				province_id = 565
+			}
+		}
+		trigger = {
+			AND = {
+				536 = {
+					has_great_project = {
+						type = aquatbar_great_library
+						tier = 2
+					}
+				}
+				599 = {
+					has_great_project = {
+						type = eranils_oddities
+						tier = 1
+					}
+				}
+				601 = {
+					has_great_project = {
+						type = hanging_gardens
+						tier = 1
+					}
+				}
+				565 = {
+					has_great_project = {
+						type = bazaar_brasan
+						tier = 1
+					}
+				}
+				565 = {
+					has_great_project = {
+						type = port_emperor
+						tier = 1	
+					}
+				}
+				688 = {
+					has_great_project = {
+						type = stone_palace
+						tier = 1
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "goblinclan_building_spree"
+				duration = 3650
+			}
+		}
+	}
+	Z8Z_a_glorious_project = {
+		icon = mission_magic_tower
+		position = 12
+		required_missions = {
+			Z8Z_keeping_bulwar_heritage_strong
+		}
+		trigger = {
+			any_owned_province = {
+				has_great_project = {
+					type = any
+					tier = 3
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+	Z8Z_allowing_elves_into_the_fold = {
+		icon = mission_three_elve
+		position = 13
+		required_missions = {
+			Z8Z_a_glorious_project
+			Z8Z_a_place_for_work
+		}
+		trigger = {
+			NOT = { has_country_modifier = goblinclan_a_booming_economy }
+		}
+		effect = {
+			set_country_flag = elves_roam_free
+			custom_tooltip = Z8Z_allowing_elves_into_the_fold_mission_desc
+		}
+	}
+}

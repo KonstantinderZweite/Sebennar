@@ -1,7 +1,8 @@
-owner = L80
-controller = L80
-add_core = L80
-culture = ashhama_lizardfolk
+owner = L85
+controller = L85
+add_core = L85
+add_core = L79
+culture = ashhana_lizardfolk
 religion = zaradyrra
 
 hre = no

@@ -153,7 +153,7 @@ monarch_names = {
 	"Isabel #0" = -1
 	"Isabella #0" = -1
 	"Isobel #0" = -1
-	"Kerstin #0" = -1
+	"Cela #0" = -1
 	"Laurenne #0" = -1
 	"Lianne #0" = -1
 	"Madal�in #0" = -1
@@ -198,7 +198,7 @@ leader_names = {
 	Silnara "sz�l Hapain�" "sz�l Lorbet" "sz�l Canno" "sz�l Lorin"	#Cannorians
 	
 	#Generic Anbennarian/Elvenized - bulwarized corruption
-	Auern R�zarn Winern Jerkostar Hylern Hylman Leonarn Liatharn Dostan Grey Sfern Alen Aranern Aistern Adenern E�narn Bladern Azkern Sanuran Reigharn Bulwarn Khetarn Surarn Akanarn Caorarn Arbern P�randern Airge Anben B�izda Cestirn Dh�arn Dhenern Silvarn Fwinern Duchaelarn S�th�rn Magairn P�rnern Verenv�tern Tenachern Dortem Tr�nv�tern Kiobisern C�wern Tr�d�rn Kr�carn K�carn K�ba�rn Thanasern Bocharn A�thrn �rthav�trn K�lodir Gwalv�tl Annce� Deab�lanne� Cu�sern Math�isern Hirn K�nndihe� Niod�gern Avusrael Laoch Ga�hern Bochoch Tenachv�tarn Su�r�ach K�frav�trn M�rgirn Gr�d�dhern Avus�llern F�l�v�tarn C�galern Datha� Iascirn E�nech Fl�rnarn Ri�ntenachirn D�ine� P�gu Adarv�t� Mielv�t� Melefv�t� Org�rn Afesg�rn Eresg�rn Airgeg�rn Eumh�g�rn B�anoch G�rd Alt�r� P�tse Seina F�hl Adach� Se�ththorim� C�stern S�lreian� Gal Teder Liath Deir Var Jer Cam Iruan Pash Bron Vulsin Ar�th Badh�l D�hr B�el C�w Agnel Ge�ria Oulh� Stamh 
+	Auern R�zarn Winern Jerkostar Hylern Hylman Leonarn Liatharn Dostan Grey Sfern Alen Aranern Aistern Adenern E�narn Bladern Azkern Sanuran Reigharn Bulwarn Khetarn Surarn Akasirn Caorarn Arbern P�randern Airge Anben B�izda Cestirn Dh�arn Dhenern Silvarn Fwinern Duchaelarn S�th�rn Magairn P�rnern Verenv�tern Tenachern Dortem Tr�nv�tern Kiobisern C�wern Tr�d�rn Kr�carn K�carn K�ba�rn Thanasern Bocharn A�thrn �rthav�trn K�lodir Gwalv�tl Annce� Deab�lanne� Cu�sern Math�isern Hirn K�nndihe� Niod�gern Avusrael Laoch Ga�hern Bochoch Tenachv�tarn Su�r�ach K�frav�trn M�rgirn Gr�d�dhern Avus�llern F�l�v�tarn C�galern Datha� Iascirn E�nech Fl�rnarn Ri�ntenachirn D�ine� P�gu Adarv�t� Mielv�t� Melefv�t� Org�rn Afesg�rn Eresg�rn Airgeg�rn Eumh�g�rn B�anoch G�rd Alt�r� P�tse Seina F�hl Adach� Se�ththorim� C�stern S�lreian� Gal Teder Liath Deir Var Jer Cam Iruan Pash Bron Vulsin Ar�th Badh�l D�hr B�el C�w Agnel Ge�ria Oulh� Stamh 
  	Rogpid Brad� Bre�k E�ne Melilar Bhak Derd�l Abhn Fin�ch Crodach Boge�n V�irse Liub�n �behr S�bal Ritach B�obar Kol�m L�nchs Zaulog Hare Hari
 }
 

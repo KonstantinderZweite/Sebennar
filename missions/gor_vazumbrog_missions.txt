@@ -1,0 +1,1218 @@
+gor_vazumbrog_center = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = I14
+	}
+	I14_a_hold_rebuilt = {
+		icon = mission_magnificent_castle
+		position = 1
+		trigger = {
+			4217 = {
+				owned_by = ROOT
+				has_dwarven_hold_3 = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "I14_expanding_from_the_city"
+				duration = 36500
+			}
+			country_event = { 
+				id = flavor_gor_vazumbrog.1
+				days = 1095
+				random = 365
+			}
+		}
+	}
+	I14_a_small_problem = {
+		icon = mission_ghost_town
+		position = 2
+		required_missions = {
+			I14_a_hold_rebuilt
+		}
+		trigger = {
+			has_country_flag = I14_found_a_problem
+		}
+		effect = {
+			jorkad_junction_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hehos_legacy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	I14_guarding_the_upper_levels = {
+		icon = mission_destroyed_city
+		position = 3
+		required_missions = {
+			I14_a_small_problem
+		}
+		provinces_to_highlight = {
+			province_id = 4217
+		}
+		trigger = {
+			4217 = {
+				has_building = barracks
+				base_manpower = 15
+			}
+		}
+		effect = {
+			add_manpower = 10
+		}
+	}
+	I14_upper_layers_clear = {
+		icon = mission_homeless_children
+		position = 4
+		
+		required_missions = {
+			I14_guarding_the_upper_levels
+			I14_hul_jorkad_reclaimed
+			I14_hehodovar_reclaimed
+		}
+		trigger = {
+			4217 = {
+				has_dwarven_hold_4 = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					mission_completed = I14_hul_jorkads_pipes_rebuilt
+					mission_completed = I14_the_school_reconstruction
+				}
+				custom_tooltip = I14_smog_already_removed_tt
+			}
+			country_event = { 
+				id = flavor_gor_vazumbrog.3
+				days = 60
+				random = 365
+			}
+		}
+	}
+	I14_golems_found_in_the_lower_levels = {
+		icon = mission_warrior_gold
+		position = 5
+		
+		required_missions = {
+			I14_upper_layers_clear
+		}
+		trigger = {
+			4217 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 20
+				}
+			}
+		}
+		effect = {
+			4217 = {
+				spawn_rebels = {
+					type = activated_golems_rebel
+					culture = titanium_dwarf
+					size = 2
+				}
+			}
+			add_treasury = 200
+		}
+	}
+	I14_learning_about_golems = {
+		icon = mission_monarch_diplomacy
+		position = 6
+		
+		required_missions = {
+			I14_golems_found_in_the_lower_levels
+		}
+		trigger = {
+			OR = {
+				2863 = {
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+				2863 = {
+					owner = {
+						has_spy_network_from = {
+							who = ROOT
+							value = 50
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_estate_influence_modifier = {
+				estate = estate_mages
+				desc = knowledge_of_golems
+				influence = 10
+				duration = -1
+			}
+		}
+	}
+	I14_hitting_the_lower_levels = {
+		icon = mission_forest_pilgrim
+		position = 7
+		
+		required_missions = {
+			I14_learning_about_golems
+			I14_hul_jorkads_pipes_rebuilt
+			I14_the_school_reconstruction
+		}
+		trigger = {
+			4217 = {
+				owned_by = ROOT
+				has_dwarven_hold_5 = yes
+			}
+		}
+		effect = {
+			4217 = {
+				spawn_rebels = {
+					type = activated_golems_rebel
+					culture = titanium_dwarf
+					size = 3
+				}
+			}
+		}
+	}
+	I14_the_first_vaults_secured = {
+		icon = mission_armor_choice
+		position = 8
+		required_missions = {
+			I14_hitting_the_lower_levels
+		}
+		trigger = {
+			4217 = {
+				has_great_project = {
+					type = gor_vazumbrog_the_vaulthold
+					tier = 1
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = first_vaults_secured_tt
+			hidden_effect = {
+				set_estate_privilege = estate_mages_organization_golem_crafters
+				set_country_flag = unlocked_golems
+				artifice_magic_switch_to_mixed_mode = yes
+				set_estate_privilege = estate_mages_golem_left_arm_fist
+				set_estate_privilege = estate_mages_golem_right_arm_shield
+				set_estate_privilege = estate_mages_golem_legs_basic
+				set_estate_privilege = estate_mages_golem_head_basic
+				set_estate_privilege = estate_mages_golem_core_basic
+			}
+		}
+	}
+	I14_the_key_to_the_vaults = {
+		icon = mission_approach_throne
+		position = 9
+		required_missions = {
+			I14_the_first_vaults_secured
+		}
+		trigger = {
+			OR = {
+				4119 = {
+					owned_by = ROOT
+				}
+				AND = {
+					4119 = {
+						owner = {
+							alliance_with = ROOT
+						}
+					}
+					treasury = 2000
+					dip_power = 200
+					adm_power = 200
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { 
+						4119 = {
+							owned_by = ROOT
+						}
+					}
+				}
+				4119 = {
+					owner = {
+						add_treasury = 2000
+					}
+				}
+				add_treasury = -2000
+				add_dip_power = -200
+				add_adm_power = -200
+			}
+			if = {
+				limit = {
+				2608 = {
+						has_great_project = {
+							type = gor_vazumbrog_the_vaulthold
+							tier = 3
+						}
+					}
+				}
+				add_country_modifier = {
+					name = I14_rebuilding_the_whole_kingdom
+					duration = 7300
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = I14_rebuilding_the_vaulthold
+					duration = 3650
+				}
+			}
+		}
+		
+	}
+	I14_a_hold_restored = {
+		icon = mission_mountain_castle
+		position = 10
+		required_missions = {
+			I14_the_key_to_the_vaults
+		}
+		trigger = {
+			4217 = {
+				fort_level = 5
+			}
+			treasury = 100
+		}
+		effect = {
+			add_treasury = -100
+			if = {
+				limit = {
+					4217 = {
+						fort_level = 5
+					}
+				}
+				add_building_construction = {
+					building = star_fort
+					speed = 1.5
+					cost = 0
+				}
+			}
+			else = {
+				add_building_construction = {
+					building = fortress
+					speed = 1.5
+					cost = 0
+				}
+			}
+		}
+	}
+	I14_the_vaults_prepared_to_open = {
+		icon = mission_blood_sacrifice
+		position = 11
+		required_missions = {
+			I14_a_hold_restored
+			I14_an_army_to_fight_the_drakes
+			I14_alliances_to_help_hunt_the_drakes
+		}
+		trigger = {
+			4217 = {
+				has_great_project = {
+					type = gor_vazumbrog_the_vaulthold
+					tier = 3
+				}
+			}
+		}
+		effect = {
+			country_event = { 
+				id = flavor_gor_vazumbrog.5
+			}
+		}
+	}
+	I14_rebuilding_the_warrior_monks = {
+		icon = mission_jungle_pilgrim
+		position = 12
+		required_missions = {
+			I14_the_three_holy_orders
+			I14_the_vaults_prepared_to_open
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				holy_order = holy_monks_order
+				value = 15
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = I14_warrior_monks_flock_to_the_banners
+				duration = -1
+			}
+		}
+	}
+	I14_warrior_monks_resurging = {
+		icon = mission_rice_farming
+		position = 14
+		required_missions = {
+			I14_rebuilding_the_warrior_monks
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				holy_order = holy_monks_order
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+				value = 15
+			}
+		}
+		effect = {
+			add_treasury = 200
+			add_mil_power = 50
+		}
+	}
+	I14_warrior_monks_places_of_worship = {
+		icon = mission_women_prayer
+		position = 15
+		required_missions = {
+			I14_warrior_monks_resurging
+		}
+		trigger = {
+			4284 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			remove_country_modifier = I14_warrior_monks_flock_to_the_banners
+			add_country_modifier = {
+				name = I14_warrior_monks_resurgent
+				duration = -1
+			}
+		}
+	}
+	I14_warrior_monks_enemies_dealt_with = {
+		icon = mission_stormy_seas
+		position = 16
+		required_missions = {
+			I14_warrior_monks_places_of_worship
+		}
+		trigger = {
+			OR = {
+				4311 = {
+					owner = {
+						defensive_war_with = ROOT
+					}
+					war_score = 95
+				}
+				4311 = {
+					owned_by = ROOT
+				}
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					holy_order = holy_monks_order
+				}
+			add_base_manpower = 1
+			}
+		}
+	}
+	I14_finding_the_skycleaver = {
+		icon = mission_approach_throne
+		position = 17
+		required_missions = {
+			I14_warrior_monks_enemies_dealt_with
+			I14_dauvek_drake_nest_cleared
+			I14_dauvek_veker_orcish_armies_removed
+			I14_golem_production_mastered
+		}
+		trigger = {
+			4217 = {
+				has_dwarven_hold_7 = yes 
+			}
+		}
+		effect = {
+			country_event = { 
+				id = flavor_gor_vazumbrog.7
+			}
+		}
+	}
+}
+
+gor_vazumbrog_left = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = I14
+	}
+	I14_producing_an_army = {
+		icon = mission_warrior_gold
+		position = 4
+		required_missions = {
+			I14_guarding_the_upper_levels
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+				value = 15
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = I14_gathering_an_army
+				duration = 7300
+			}
+		}
+	}
+	I14_learning_about_our_history = {
+		icon = mission_pray_light
+		position = 8
+		required_missions = {
+			I14_hitting_the_lower_levels
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+				value = 20
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = I14_a_holy_state
+				duration = -1
+			}
+		}
+	}
+	
+	I14_an_army_to_fight_the_drakes = {
+		icon = mission_beheading
+		position = 10
+		required_missions = {
+			I14_the_key_to_the_vaults
+		}
+		trigger = {
+			army_size = 100
+			army_size_percentage = 1
+		}
+		effect = {
+			add_mil_power = 100
+		}
+	}
+	I14_rebuilding_the_dauvek_veker = {
+		icon = mission_four_men
+		position = 12
+		required_missions = {
+			I14_the_three_holy_orders
+			I14_the_vaults_prepared_to_open
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				holy_order = dauvek_veker_order
+				value = 15
+			}
+		}
+		effect = {
+			unlock_merc_company = {
+				merc_company = gor_vazumbrog_dauvek_veker
+				free_merc = yes
+			}
+		}
+	}
+	I14_testing_the_dauvek_veker = {
+		icon = mission_dwarf_close_up
+		position = 13
+		required_missions = {
+			I14_rebuilding_the_dauvek_veker 
+		}
+		trigger = {
+			any_hired_mercenary_company = {
+				template = gor_vazumbrog_dauvek_veker
+				location = { province_id = 4217 }
+			}
+		}
+		effect = {
+			4217 = {
+				spawn_rebels = {
+					size = 3
+					type = dwarven_soldier_rebel
+				}
+				spawn_rebels = {
+					size = 3
+					type = dwarven_soldier_rebel
+				}
+			}
+		}
+	}
+	I14_dauvek_veker_victorious = {
+		icon = mission_fire_judgement
+		position = 14
+		required_missions = {
+			I14_testing_the_dauvek_veker
+		}
+		trigger = {
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = I14_mercenary_discipline
+				duration = -1
+			}
+		}
+	}
+	I14_dauvek_veker_fighting_ancient_enemies = {
+		icon = mission_orc_chillin
+		position = 15
+		required_missions = {
+			I14_dauvek_veker_victorious
+		}
+		trigger = {
+			any_hired_mercenary_company = {
+				template = gor_vazumbrog_dauvek_veker
+				location = { province_id = 4102 }
+			}
+		}
+		effect = {
+			4102 = {
+				spawn_rebels = {
+					size = 2
+					culture = black_orc
+					type = cave_orc_rebel
+				}
+				spawn_rebels = {
+					size = 2
+					culture = black_orc
+					type = cave_orc_rebel
+				}
+				spawn_rebels = {
+					size = 2
+					culture = black_orc
+					type = cave_orc_rebel
+				}
+				spawn_rebels = {
+					size = 2
+					culture = black_orc
+					type = cave_orc_rebel
+				}
+				spawn_rebels = {
+					size = 2
+					culture = black_orc
+					type = cave_orc_rebel
+				}
+				spawn_rebels = {
+					size = 2
+					culture = black_orc
+					type = cave_orc_rebel
+				}
+			}
+		}
+	}
+	I14_dauvek_veker_orcish_armies_removed = {
+		icon = mission_heated_battle
+		position = 14
+		required_missions = {
+			I14_dauvek_veker_fighting_ancient_enemies
+		}
+		trigger = {
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = I14_mercenary_morale
+				duration = -1
+			}
+		}
+	}
+}
+
+gor_vazumbrog_right = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = I14
+	}
+	I14_fortifying_the_caves = {
+		icon = mission_magnificent_castle
+		position = 3
+		required_missions = {
+			I14_a_small_problem
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				fort_level = 2
+				value = 4
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					fort_level = 2
+				}
+				add_province_modifier = {
+					name = I14_titanium_walls
+					duration = -1
+				}
+			}
+			
+		}
+	}
+	
+	I14_alliances_to_help_hunt_the_drakes = {
+		icon = mission_dual_diplomacy
+		position = 10
+		required_missions = {
+			I14_the_key_to_the_vaults
+		}
+		trigger = {
+			calc_true_if = {
+				all_known_country = {
+					capital_scope = { continent = serpentspine }
+					alliance_with = ROOT
+				}
+				amount = 2
+			}
+		}
+		effect = {
+			add_dip_power = 100
+		}
+	}
+	
+	I14_craftsmen_rebuilt = {
+		icon = mission_transmutation
+		position = 12
+		required_missions = {
+			I14_the_three_holy_orders
+			I14_the_vaults_prepared_to_open
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				holy_order = craftsmen_order
+				value = 15
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = I14_runic_golem_protection
+				duration = -1
+			}
+		} 
+	}
+	I14_craftsmen_learn_better_golem_techniques = {
+		icon = mission_smith
+		position = 14
+		required_missions = {
+			I14_craftsmen_rebuilt
+		}
+		trigger = {
+			num_of_rajput = 20
+		}
+		effect = {
+			custom_tooltip = I14_craftsmen_learn_better_golem_techniques_tt
+			set_country_flag = unlocked_golems_1
+		}
+	}
+	I14_increasing_production_of_golems = {
+		icon = mission_magical_forest
+		position = 15
+		required_missions = {
+			I14_craftsmen_learn_better_golem_techniques
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				holy_order = craftsmen_order
+				has_manufactory_trigger = yes
+				value = 15
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					holy_order = craftsmen_order
+					has_manufactory_trigger = yes
+				}
+			add_base_production = 1
+			}
+		}
+	}	
+	I14_golem_production_mastered = {
+		icon = mission_gnome_tinkering
+		position = 16
+		required_missions = {
+			I14_increasing_production_of_golems
+		}
+		provinces_to_highlight = {
+			all_owned_province = {
+				NOT = { 
+					AND = {
+						OR = {
+							has_terrain = dwarven_hold
+							has_terrain = dwarven_hold_surface
+						}
+						has_building = mage_tower
+					}
+				}
+			}
+		}
+		trigger = {
+			all_owned_province = {
+				AND = {
+					OR = {
+						has_terrain = dwarven_hold
+						has_terrain = dwarven_hold_surface
+					}
+					has_building = mage_tower
+				}
+			}
+		}	
+		effect = {
+			custom_tooltip = I14_golem_production_mastered_tt
+			set_country_flag = unlocked_golems_2
+		}
+	}
+}
+
+gor_vazumbrog_leftmost = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = I14
+	}
+	I14_hul_jorkad_reclaimed = {
+		position = 3
+		icon = mission_swear_fealty_knight
+		required_missions = {
+			I14_a_small_problem
+		}
+		provinces_to_highlight = {
+			province_id = 2963 
+		}
+		trigger = {
+			2963 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					mission_completed = I14_hehodovar_reclaimed
+				}
+				country_event = { 
+					id = flavor_gor_vazumbrog.2
+					days = 30
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = "I14_hul_jorkad_favoured"
+					duration = -1
+				}
+			}
+		}
+	}
+	I14_hul_jorkad_expanded = {
+		position = 5
+		icon = mission_feast
+		required_missions = {
+			I14_hul_jorkad_reclaimed
+		}
+		trigger = {
+			2963 = {
+				owned_by = ROOT
+				has_dwarven_hold_2 = yes
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					2963 = {
+						has_building = barracks
+					}
+				}
+				2963 = {
+					add_building_construction = {
+						building = training_fields
+						speed = 1
+						cost = 2
+					}
+				}
+			}
+			else = {
+				2963 = {
+					add_building_construction = {
+						building = barracks
+						speed = 0.5
+						cost = 0.5
+					}
+				}
+			}
+		}
+	}
+	I14_hul_jorkads_pipes_rebuilt = {
+		position = 6
+		icon = mission_fire_judgement
+		required_missions = {
+			I14_hul_jorkad_expanded
+		}
+		trigger = {
+			2963 = {
+				has_great_project = {
+					type = jorkad_aqueduct
+					tier = 1
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					mission_completed = I14_the_school_reconstruction 
+				}
+				country_event = { 
+					id = flavor_gor_vazumbrog.4
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = I14_hul_jorkad_favoured2
+					duration = -1
+				}
+			}
+		}	
+	}
+	I14_the_many_holy_orders_of_gor_vazumbrog = {
+		icon = mission_dark_book
+		position = 9
+		required_missions = {
+			I14_learning_about_our_history
+		}
+		trigger = {
+			OR = {
+				4128 = {
+					owner = {
+						alliance_with = ROOT
+					}
+					has_great_project = {
+						type = hall_of_the_ancestors
+						tier = 1
+					}
+				}
+				4128 = {
+					owned_by = ROOT
+					has_great_project = {
+						type = hall_of_the_ancestors
+						tier = 1
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = I14_learning_about_our_past
+				duration = 7300
+			}
+		}
+	}
+	I14_the_three_holy_orders = {
+		icon = mission_torch_fire
+		position = 11
+		required_missions = {
+			I14_the_many_holy_orders_of_gor_vazumbrog
+		}
+		trigger = {
+			has_global_modifier_value = {
+				which = discipline
+				value = 0.1
+			}
+			has_global_modifier_value = {
+				which = siege_ability
+				value = 0.4
+			}
+			max_manpower = 100
+		}
+		effect = {
+			custom_tooltip = I14_the_three_holy_orders_tt
+			set_country_flag = I14_enable_holy_orders
+		}
+	}
+	I14_hunting_the_deep_crowes = {
+		icon = mission_duel_snow
+		position = 13
+		required_missions = {
+			I14_rebuilding_the_dauvek_veker
+		}
+		trigger = {
+			any_hired_mercenary_company = {
+				template = gor_vazumbrog_dauvek_veker
+				location = { province_id = 4228 }
+			}
+		}
+		effect = {
+			4228 = {
+				spawn_rebels = {
+					size = 1
+					type = deep_crow_rebel
+				}
+				spawn_rebels = {
+					size = 1
+					type = deep_crow_rebel
+				}
+				spawn_rebels = {
+					size = 1
+					type = deep_crow_rebel
+				}
+				spawn_rebels = {
+					size = 1
+					type = deep_crow_rebel
+				}
+				spawn_rebels = {
+					size = 1
+					type = deep_crow_rebel
+				}spawn_rebels = {
+					size = 1
+					type = deep_crow_rebel
+				}
+				spawn_rebels = {
+					size = 1
+					type = deep_crow_rebel
+				}
+			}
+		}
+	}
+	I14_dauvek_veker_crowes_removed = {
+		icon = mission_assassination
+		position = 14
+		required_missions = {
+			I14_hunting_the_deep_crowes
+		}
+		trigger = {
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = I14_mercenary_fire
+				duration = -1
+			}
+		}
+	}
+	I14_finding_a_nest_of_drakes = {
+		icon = mission_destroyed_city
+		position = 15
+		required_missions = {
+			I14_dauvek_veker_crowes_removed
+		}
+		trigger = {
+			any_hired_mercenary_company = {
+				template = gor_vazumbrog_dauvek_veker
+				location = { province_id = 4217 }
+			}
+		}
+		effect = {
+			4217 = {
+				spawn_rebels = {
+					size = 2
+					type = drake_rebel
+				}
+				spawn_rebels = {
+					size = 2
+					type = drake_rebel
+				}
+				spawn_rebels = {
+					size = 2
+					type = drake_rebel
+				}
+				spawn_rebels = {
+					size = 2
+					type = drake_rebel
+				}
+				spawn_rebels = {
+					size = 2
+					type = drake_rebel
+				}
+			}
+		}
+	}
+	I14_dauvek_drake_nest_cleared = {
+		icon = mission_feast
+		position = 15
+		required_missions = {
+			I14_finding_a_nest_of_drakes
+		}
+		trigger = {
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+		}
+		effect = {
+			add_country_modifier = {
+				name = I14_mercenary_shock
+				duration = -1
+			}	
+		}
+	}
+}
+
+gor_vazumbrog_rightmost = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = I14
+	}
+	I14_hehodovar_reclaimed = {
+		position = 3
+		icon = mission_thinking_king
+		required_missions = {
+			I14_a_small_problem
+		}
+		provinces_to_highlight = {
+			province_id = 4078 
+		}
+		trigger = {
+			4078 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					mission_completed = I14_hul_jorkad_reclaimed
+				}
+				country_event = { 
+					id = flavor_gor_vazumbrog.2
+					days = 30
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = "I14_hehodovar_favoured"
+					duration = -1
+				}
+			}
+		}
+	}
+	I14_building_up_an_administrative_center = {
+		position = 5
+		icon = mission_candide_letter
+		required_missions = {
+			I14_hehodovar_reclaimed
+		}
+		provinces_to_highlight = {
+			province_id = 4078
+		}
+		trigger = {
+			4078 = {
+				has_building = courthouse
+			}
+		}
+		effect = {
+			4078 = {
+				add_building_construction = {
+					building = university
+					speed = 2
+					cost = 2
+				}
+			}
+		}
+	}
+	I14_the_school_reconstruction = {
+		position = 6
+		icon = mission_desert_city
+		required_missions = {
+			I14_building_up_an_administrative_center
+		}
+		provinces_to_highlight = {
+			province_id = 4078
+		}
+		trigger = {
+			4078 = {
+				has_great_project = {
+					type = hehodovar_school_of_architecture
+					tier = 1
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					mission_completed = I14_hul_jorkads_pipes_rebuilt
+				}
+				country_event = { 
+					id = flavor_gor_vazumbrog.4 
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = I14_hehodovar_favoured2
+					duration = -1
+				}
+			}
+		}
+	}
+	I14_what_is_inside = {
+		icon = mission_burning_separation
+		position = 12
+		required_missions = {
+			I14_the_vaults_prepared_to_open
+		}
+		trigger = {
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+		}
+		effect = {
+			country_event = { 
+				id = flavor_gor_vazumbrog.6
+			}
+			set_country_flag = I14_enable_relics
+		}
+	}
+	I14_the_first_relic = {
+		icon = mission_crystal_focus
+		position = 13
+		required_missions = {
+			I14_what_is_inside
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = I14_the_first_relic_tt
+				has_country_flag = first_relic
+			}
+		}
+		effect = {
+			change_innovativeness = 10
+		}
+	}
+	I14_the_first_failure = {
+		icon = mission_crystal_focus
+		position = 14
+		required_missions = {
+			I14_the_first_relic
+		}
+		trigger = {
+			has_country_flag = failed_relic
+		}
+		effect = {
+			set_country_flag = I14_next_relic_fails
+			custom_tooltip = I14_the_first_failure_tt
+		}
+	}
+}

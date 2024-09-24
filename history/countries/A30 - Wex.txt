@@ -10,13 +10,16 @@ capital = 306
 
 historical_rival = A13 #Gawed
 
-1000.1.1 = { set_estate_privilege = estate_mages_organization_magisterium }
+1000.1.1 = { 
+	set_estate_privilege = estate_mages_organization_magisterium 
+	set_country_flag = new_imperial_candidate_gain_magisterium
+}
 1000.1.1 = { set_country_flag = is_a_grand_duchy }
 
 1417.1.10 = {
 	monarch = {
 		name = "Lothane III"
-		dynasty = "síl Wex"
+		dynasty = "sï¿½l Wex"
 		birth_date = 1401.9.4
 		adm = 2
 		dip = 3
@@ -25,7 +28,7 @@ historical_rival = A13 #Gawed
 	add_ruler_personality = conqueror_personality
 	queen = {
 		country_of_origin = A01
-		name = "Eilísa"
+		name = "Eilï¿½sa"
 		dynasty = "Siloriel"
 		birth_date = 1413.4.1
 		death_date = 1492.6.8
@@ -43,7 +46,7 @@ historical_rival = A13 #Gawed
 	heir = {
 		name = "Caylen"
 		monarch_name = "Caylen II"
-		dynasty = "síl Wex"
+		dynasty = "sï¿½l Wex"
 		birth_date = 1444.11.10
 		death_date = 1480.1.1
 		claim = 95

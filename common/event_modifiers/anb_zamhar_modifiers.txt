@@ -1,0 +1,170 @@
+z2z_blind_goblins = {
+	fire_damage = -0.4
+}
+z2z_a_new_type_of_goblin_empire = {
+	land_morale = 0.2
+	shock_damage = 0.1
+}
+z2z_zamhar = {
+	local_manpower_modifier = 0.5
+}
+z2z_lyxnyr = {
+	local_build_time = -0.25
+	local_production_efficiency = 0.35
+}
+z2z_nixzar = {
+	technology_cost = -0.1
+}
+z2z_keep_old_name = {
+	local_development_cost = -0.4
+}
+z2z_dwarven_stuff_destroyed = {
+	local_manpower_modifier = 0.2
+}
+z2z_mages_using_dwarven_runes = {
+	shock_damage = 0.1
+}
+z2z_artificers_enhancing_mage_output = {
+	production_efficiency = 0.1
+	infantry_cost = -0.1
+}
+z2z_exploring_the_south = {
+	may_explore = yes
+}
+z2z_exploring_all_dead_ends = {
+	colonists = 1
+}
+z2z_a_need_for_knowledge = {
+	spy_offence = 0.3
+}
+z2z_kanzadi_cannons_utilized = {
+	artillery_power = 0.1
+}
+z2z_better_than_a_city_wall = {
+	local_defensiveness = 0.2
+}
+z2z_one_way_of_control = {
+	global_unrest = -2
+}
+z2z_army_status_0 = {
+	shock_damage = 0.1
+	fire_damage = -0.1
+	fire_damage_received = 0.2
+	shock_damage_received = 0.1
+	manpower_recovery_speed = 0.1
+}
+z2z_army_status_1 = {
+	shock_damage = 0.1
+	fire_damage = -0.1
+	fire_damage_received = 0.1
+	manpower_recovery_speed = 0.1
+}
+z2z_army_status_2 = {
+	shock_damage = 0.1
+	fire_damage = -0.05
+	fire_damage_received = 0.05
+	manpower_recovery_speed = 0.15
+}
+z2z_army_status_3 = {
+	shock_damage = 0.15
+	manpower_recovery_speed = 0.15
+}
+z2z_army_status_4 = {
+	shock_damage = 0.15
+	fire_damage = 0.1
+	manpower_recovery_speed = 0.15
+}
+z2z_government_status_0 = {
+	global_unrest = 2
+	num_accepted_cultures = -5
+	manpower_recovery_speed = -0.3
+	production_efficiency = -0.2
+	yearly_corruption = 1
+}
+z2z_government_status_1 = {
+	global_unrest = 2
+	num_accepted_cultures = -5
+	manpower_recovery_speed = -0.2
+	production_efficiency = -0.1
+	yearly_corruption = 0.7
+}
+z2z_government_status_2 = {
+	global_unrest = 2
+	num_accepted_cultures = -3
+	manpower_recovery_speed = -0.1
+	production_efficiency = -0.05
+	yearly_corruption = 0.4
+}
+z2z_government_status_3 = {
+	global_unrest = 1.5
+	production_efficiency = 0.05
+	num_accepted_cultures = -1
+}
+z2z_government_status_4 = {
+	global_unrest = 1
+	manpower_recovery_speed = 0.15
+	production_efficiency = 0.15
+	yearly_corruption = -0.3
+}
+z2z_builing_up_our_cities = {
+	development_cost = -0.15
+}
+z2z_rebuilding_hold = {
+	local_build_time = -0.2
+	local_development_cost = -0.1
+	local_build_cost = -0.2
+}
+z2z_mages_and_artificers_vie_for_dominance = {
+	local_unrest = 1
+	local_production_efficiency = -0.2
+}
+z2z_dwarovar_rebuilding_effort = {
+	build_cost = -0.1
+	build_time = -0.1
+	development_cost = -0.1
+}
+z2z_all_should_be_in_zamhar = {
+	governing_capacity_modifier = 0.2
+}
+z2z_catching_up_with_technology = {
+	technology_cost = -0.1
+}
+z2z_how_deep_does_it_go = {
+	development_cost = -0.2
+}
+z2z_a_new_deepcity = {
+	local_production_efficiency = 0.1
+	local_manpower_modifier = 0.1
+}
+z2z_mages_using_enhanced_dwarven_runes = {
+	shock_damage = 0.15
+}
+z2z_artificers_handling_weapon_production = {
+	fire_damage = 0.1
+}
+z2z_stigma_of_artificery_not_for_army = {
+	allowed_rajput_fraction = -1
+}
+z2z_expanded_weapon_production = {
+	allowed_rajput_fraction = 0.2
+}
+z2z_artificers_properly_bought_off = {
+	fire_damage = 0.2
+}
+z2z_building_standards_dropped = {
+	build_cost = -0.2
+	build_time = -0.2
+}
+z2z_blood_is_cheap = {
+	siege_ability = 0.2
+}
+z2z_mages_working_with_artificers = {
+	production_efficiency = -0.1
+	infantry_power = 0.1
+}
+z2z_recently_scouted = {
+	spy_offence = -0.1
+}
+z2z_a_safe_haven = {
+	infantry_cost = -0.1
+}

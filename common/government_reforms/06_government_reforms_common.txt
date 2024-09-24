@@ -1580,7 +1580,7 @@ strengthen_clergy_reform = {
 			is_revolutionary = no
 			NOT = { has_dlc = "Emperor" }
 		}
-		has_no_religion_specific_government_available = yes	#This way modders don't have to change this reform explicitly
+		#has_no_religion_specific_government_available = yes	#This way modders don't have to change this reform explicitly
 	}
 	modifiers = {
 		church_influence_modifier = 0.1
@@ -2595,6 +2595,7 @@ anbennar_T5_human_centaur = {
 	}
 	trigger = {
 		high_tolerance_centaur_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = centaur amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2620,6 +2621,7 @@ anbennar_T5_human_dwarven = {
 	}
 	trigger = {
 		high_tolerance_dwarven_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = dwarven amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2645,6 +2647,7 @@ anbennar_T5_human_elven = {
 	}
 	trigger = {
 		high_tolerance_elven_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = elven amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2671,6 +2674,7 @@ anbennar_T5_human_gnollish = {
 	}
 	trigger = {
 		high_tolerance_gnollish_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = gnollish amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2693,6 +2697,7 @@ anbennar_T5_human_gnomish = {
 	}
 	trigger = {
 		high_tolerance_gnomish_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = gnomish amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2729,6 +2734,7 @@ anbennar_T5_human_goblin = {
 	}
 	trigger = {
 		high_tolerance_goblin_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = goblin amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2752,6 +2758,7 @@ anbennar_T5_human_half_elven = {
 	}
 	trigger = {
 		high_tolerance_half_elven_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = half_elven amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2775,6 +2782,7 @@ anbennar_T5_human_half_orcish = {
 	}
 	trigger = {
 		high_tolerance_half_orcish_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = half_orcish amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2800,6 +2808,7 @@ anbennar_T5_human_halfling = {
 	}
 	trigger = {
 		high_tolerance_halfling_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = halfling amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2826,6 +2835,7 @@ anbennar_T5_human_harimari = {
 	}
 	trigger = {
 		high_tolerance_harimari_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = harimari amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2849,6 +2859,7 @@ anbennar_T5_human_harpy = {
 	}
 	trigger = {
 		high_tolerance_harpy_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = harpy amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2874,6 +2885,7 @@ anbennar_T5_human_hobgoblin = {
 	}
 	trigger = {
 		high_tolerance_hobgoblin_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = hobgoblin amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2922,6 +2934,7 @@ anbennar_T5_human_kobold = {
 	}
 	trigger = {
 		high_tolerance_kobold_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = kobold amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -2947,6 +2960,7 @@ anbennar_T5_human_lizardfolk = {
 	}
 	trigger = {
 		high_tolerance_lizardfolk_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = lizardfolk amount = 1 }
 		num_of_ports = 1
 	}
 	modifiers = {
@@ -3005,6 +3019,7 @@ anbennar_T5_human_ogre = {
 	}
 	trigger = {
 		high_tolerance_ogre_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = ogre amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -3029,6 +3044,7 @@ anbennar_T5_human_orcish = {
 	}
 	trigger = {
 		high_tolerance_orcish_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = orcish amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -3054,6 +3070,7 @@ anbennar_T5_human_ruinborn = {
 	}
 	trigger = {
 		high_tolerance_ruinborn_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = ruinborn amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -3079,6 +3096,7 @@ anbennar_T5_human_troll = {
 	}
 	trigger = {
 		high_tolerance_troll_race_trigger = yes
+		fast_owns_num_pops_of_race = { race = troll amount = 1 }
 	}
 	modifiers = {
 		#Positive
@@ -3125,6 +3143,24 @@ anbennar_T5_human_army_of_halann = {
 				high_tolerance_orcish_race_trigger = yes
 				high_tolerance_ruinborn_race_trigger = yes
 				high_tolerance_troll_race_trigger = yes
+				fast_owns_num_pops_of_race = { race = centaur amount = 1 }
+				fast_owns_num_pops_of_race = { race = dwarven amount = 1 }
+				fast_owns_num_pops_of_race = { race = elven amount = 1 }
+				fast_owns_num_pops_of_race = { race = gnollish amount = 1 }
+				fast_owns_num_pops_of_race = { race = gnomish amount = 1 }
+				fast_owns_num_pops_of_race = { race = goblin amount = 1 }
+				fast_owns_num_pops_of_race = { race = half_elven amount = 1 }
+				fast_owns_num_pops_of_race = { race = half_orcish amount = 1 }
+				fast_owns_num_pops_of_race = { race = halfling amount = 1 }
+				fast_owns_num_pops_of_race = { race = harimari amount = 1 }
+				fast_owns_num_pops_of_race = { race = harpy amount = 1 }
+				fast_owns_num_pops_of_race = { race = human amount = 1 }
+				fast_owns_num_pops_of_race = { race = hobgoblin amount = 1 }
+				fast_owns_num_pops_of_race = { race = lizardfolk amount = 1 }
+				fast_owns_num_pops_of_race = { race = ogre amount = 1 }
+				fast_owns_num_pops_of_race = { race = orcish amount = 1 }
+				fast_owns_num_pops_of_race = { race = ruinborn amount = 1 }
+				fast_owns_num_pops_of_race = { race = troll amount = 1 }
 			}
 		}
 	}
@@ -3267,7 +3303,7 @@ anbennar_T5_ruinborn_inf_quality = {
 			custom_trigger_tooltip = {
 				tooltip = T5_ruinborn_tt
 				OR = {
-					has_ynnic_ruinborn_accepted_culture = yes
+					has_amadian_ruinborn_accepted_culture = yes
 					has_kheionai_ruinborn_accepted_culture = yes
 				}
 			}
@@ -3373,6 +3409,7 @@ anbennar_T5_ruinborn_magic = {
 			culture_group = north_ruinborn_elf
 			culture_group = amadian_ruinborn_elf
 			culture_group = south_ruinborn_elf
+			culture_group = devandi_ruinborn_elf
 			culture_group = degenerated_elf #fallback failsave
 			custom_trigger_tooltip = {
 				tooltip = T5_ruinborn_tt
@@ -3428,7 +3465,7 @@ anbennar_T5_ruinborn_fire = {
 				tooltip = T5_ruinborn_tt
 				OR = {
 					has_devandi_ruinborn_accepted_culture = yes
-					has_amadian_ruinborn_accepted_culture = yes
+					has_ynnic_ruinborn_accepted_culture = yes
 				}
 			}
 		}
@@ -5693,10 +5730,6 @@ lockean_proviso_reform = {
 		NOT = { has_reform = hobgoblin_stratocracy_reform }
 	}
 	trigger = {
-		OR = { 
-			full_idea_group = economic_ideas
-			full_idea_group = infrastructure_ideas 
-		}
 		if = {
 			limit = {
 				is_revolutionary = yes
@@ -6108,11 +6141,22 @@ dwarovar_ensure_worker_rights = {
 	}
 
 	effect = {
+		hidden_effect = {
+			if = {
+				limit = { has_country_modifier = adequate_remuneration }
+				set_country_flag = had_adequate_remuneration
+			}
+			else_if = {
+				limit = { has_country_modifier = adequate_labour }
+				set_country_flag = had_adequate_labour
+			}
+		}
 		remove_country_modifier = adequate_remuneration
 		remove_country_modifier = adequate_labour
 	}
 	ai = { factor = 1 }
 }
+
 #Orldhum Replacement for 'Ensure Workers Rights'
 orldhum_perfected_exploitation = {
 	icon = "self_governing_colony_government"
@@ -6516,5 +6560,39 @@ xhazobkult_sacrifices = {
 
 	ai = {
 		factor = 500
+	}
+}
+
+madakas_markasi = {
+	icon = "holy_state_reform"
+	potential = { 
+		culture_group = akasi
+	}
+	trigger = { religion = mother_akasik }
+	modifiers = {
+		general_cost = 0.25
+		church_influence_modifier = 0.1
+		improve_relation_modifier = 0.15
+	}
+	custom_attributes = { increased_planetouched_commander_chance_high_affinity = yes }
+	ai = { 
+		factor = 1 
+	}
+}
+
+gods_attoners = {
+	icon = "soldiers_3"
+	potential = { 
+		culture_group = west_sarhaly
+		NOT = { culture = kaino }
+		NOT = { culture = jiromji }
+	}
+	modifiers = {
+		max_absolutism = +5
+		development_cost_in_primary_culture = -0.05
+	}
+	custom_attributes = { increased_planetouched_commander_chance_high_affinity = yes }
+	ai = { 
+		factor = 1 
 	}
 }

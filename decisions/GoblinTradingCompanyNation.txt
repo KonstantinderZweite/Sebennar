@@ -1,0 +1,61 @@
+country_decisions = {
+	goblin_trading_company_nation = {
+		major = yes
+		potential = {
+		NOT = { exists = Z1Z }
+			primary_culture = common_goblin
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			is_colonial_nation = no
+			normal_or_historical_nations = yes
+		}
+		allow = {
+			hidden_trigger = {
+				primary_culture = common_goblin
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			tag = B44
+			num_of_owned_provinces_with = {
+				value = 15
+				region = south_castanor_region
+			}
+			NOT = { exists = Z1Z }
+		}
+		effect = {
+			change_tag = Z1Z
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { government_rank = 1 }
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			override_country_name = goblin_trading_company
+			swap_non_generic_missions = yes
+			artifice_magic_switch_to_mixed_mode = yes
+			set_variable = {
+				which = z1z_wars_won
+				value = 0
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
+
+
+

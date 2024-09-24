@@ -1,5 +1,5 @@
 
-#260 - Lublin
+#260 - Lublin 8
 
 owner = A94
 controller = A94
@@ -27,6 +27,6 @@ fort_15th = yes
 
 
 add_permanent_province_modifier = {
-	name = half_elven_minority_coexisting_large
+	name = half_elven_minority_integrated_large
 	duration = -1
 }

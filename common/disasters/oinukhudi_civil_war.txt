@@ -24,7 +24,7 @@ oinukhudi_civil_war = {
 	
 	progress = {
 		modifier = { 
-			factor = 0.25
+			factor = 1
 			always = yes
 		}
 		modifier = {
@@ -93,7 +93,7 @@ oinukhudi_civil_war = {
 		manpower_recovery_speed = 0.25
 	}
 	
-	#on_start = oinukhudi.10
+	on_start = oinukhudi.10
 	on_end = oinukhudi.11
 	
 	on_monthly = {

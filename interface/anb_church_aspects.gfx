@@ -1,5 +1,9 @@
 spriteTypes = {
-
+	spriteType = {
+		name = "GFX_blood_is_cheap"
+		texturefile = "gfx/interface/church_aspects/blood_is_cheap.dds"
+		legacy_lazy_load=no
+	}
 	spriteType = {
 		name = "GFX_anoint_slave_herd_great"
 		texturefile = "gfx/interface/church_aspects/anoint_slave_herd_great.dds"

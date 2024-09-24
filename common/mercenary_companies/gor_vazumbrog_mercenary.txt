@@ -1,0 +1,31 @@
+gor_vazumbrog_dauvek_veker = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+    artillery_weight = 0.2
+	home_province = 4217 
+	trigger = {
+		has_unlocked_merc_company = { merc_company = gor_vazumbrog_dauvek_veker }
+		not = { mission_completed = I14_dauvek_drake_nest_cleared }
+		not = { mission_completed = I14_dauvek_veker_orcish_armies_removed }
+	}
+	modifier = {
+	
+	}
+}
+gor_vazumbrog_dauvek_veker_advanced = {
+	regiments_per_development = 0.05
+	cavalry_weight = 0
+    artillery_weight = 0.2
+	home_province = 4217 
+	trigger = {
+		has_unlocked_merc_company = { merc_company = gor_vazumbrog_dauvek_veker }
+		mission_completed = I14_dauvek_drake_nest_cleared 
+		mission_completed = I14_dauvek_veker_orcish_armies_removed
+	}
+	modifier = {
+		land_morale = 0.05
+		discipline = 0.025
+		shock_damage = 0.05
+		fire_damage = 0.05
+	}
+}

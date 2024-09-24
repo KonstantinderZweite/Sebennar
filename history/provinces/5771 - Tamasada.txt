@@ -1,6 +1,6 @@
-owner = L14
-controller = L14
-add_core = L14
+owner = L21
+controller = L21
+add_core = L21
 culture = tamajoba
 religion = fangaulan_pantheon
 

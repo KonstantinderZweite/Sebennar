@@ -1,0 +1,1866 @@
+country_decisions = {
+	goblinclan_nation = {
+		major = yes
+		potential = {
+			primary_culture = exodus_goblin
+			NOT = { has_country_flag = formed_goblinclan_flag }
+			NOT = { has_country_flag = formed_overclan_flag_flag }
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			is_colonial_nation = no
+			normal_or_historical_nations = yes
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 538 #Azka-Evran
+				province_id = 522 #Azka-Szel-Azka
+				province_id = 510 #Bal Ourd
+				province_id = 536 #Aqatbar
+				province_id = 516 #West End
+				province_id = 521 #Reuyel
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+			hidden_trigger = {
+				primary_culture = exodus_goblin
+			}
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				value = 25
+				OR = { 	
+					region = ourdia_region
+					region = bahar_region
+					region = harpy_hills_region
+				}
+			}
+			OR = { 
+				medium_tolerance_human_race_trigger = yes
+				high_tolerance_human_race_trigger = yes
+			}
+			OR = { 
+				medium_tolerance_elven_race_trigger = yes
+				high_tolerance_elven_race_trigger = yes
+			}
+			OR = { 
+				OR = { 
+					medium_tolerance_dwarven_race_trigger = yes
+					high_tolerance_dwarven_race_trigger = yes
+				}
+				OR = { 
+					medium_tolerance_harpy_race_trigger = yes
+					high_tolerance_harpy_race_trigger = yes
+				}
+			}
+			OR = { 
+				owns_core_province = 536 #Aqatbar
+				owns_core_province = 516 #West End
+				owns_core_province = 521 #Reuyel
+			}
+			OR = {
+				owns_core_province = 538 #Azka-Evran
+				owns_core_province = 522 #Azka-Szel-Azka
+				owns_core_province = 510 #Bal Ourd
+			}
+			OR = {
+				NOT = { government = tribal }
+				reform_level = 5
+			}
+		}
+		effect = {
+			set_capital = 536
+			change_government = monarchy
+			add_government_reform = council_of_the_technocrats
+			change_tag = Z8Z
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { government_rank = 1 }
+				set_government_rank = 2
+			}
+			bahar_region = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = Z8Z
+			}
+			ourdia_region = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = Z8Z
+			}
+			ur_monkande_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = Z8Z
+			}
+			kuzak_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = Z8Z
+			}
+			kuz_mountains_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = Z8Z
+			}
+			imuluses_area = {
+				limit = { NOT = { owned_by = ROOT } }
+				add_permanent_claim = Z8Z
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_goblinclan_flag
+			set_country_flag = formed_overclan_flag
+			override_country_name = goblin_clan
+			swap_non_generic_missions = yes
+			artifice_magic_switch_to_mixed_mode = yes
+		}
+		ai_will_do = {
+		factor = 0
+		}
+	}
+	
+	goblinclan_kill_non_goblins = {
+		color = { 161 43 32 }
+		major = yes
+		potential = {
+			has_disaster = war_against_goblins
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+						has_province_modifier = human_minority_oppressed_small
+						has_province_modifier = human_minority_oppressed_large
+						has_province_modifier = human_minority_coexisting_small
+						has_province_modifier = human_minority_coexisting_large
+						has_province_modifier = human_minority_integrated_small
+						has_province_modifier = human_minority_integrated_large
+						has_province_modifier = elven_minority_oppressed_small
+						has_province_modifier = elven_minority_oppressed_large
+						has_province_modifier = elven_minority_coexisting_small
+						has_province_modifier = elven_minority_coexisting_large
+						has_province_modifier = elven_minority_integrated_small
+						has_province_modifier = elven_minority_integrated_large
+						has_province_modifier = dwarven_minority_oppressed_small
+						has_province_modifier = dwarven_minority_oppressed_large
+						has_province_modifier = dwarven_minority_coexisting_small
+						has_province_modifier = dwarven_minority_coexisting_large
+						has_province_modifier = dwarven_minority_integrated_small
+						has_province_modifier = dwarven_minority_integrated_large
+						has_province_modifier = harpy_minority_oppressed_small
+						has_province_modifier = harpy_minority_oppressed_large
+						has_province_modifier = harpy_minority_coexisting_small
+						has_province_modifier = harpy_minority_coexisting_large
+						has_province_modifier = harpy_minority_integrated_small
+						has_province_modifier = harpy_minority_integrated_large
+						has_province_modifier = gnollish_minority_oppressed_small
+						has_province_modifier = gnollish_minority_oppressed_large
+						has_province_modifier = gnollish_minority_coexisting_small
+						has_province_modifier = gnollish_minority_coexisting_large
+						has_province_modifier = gnollish_minority_integrated_small
+						has_province_modifier = gnollish_minority_integrated_large
+						has_province_modifier = human_majority_oppressed
+						has_province_modifier = elven_majority_oppressed
+						has_province_modifier = dwarven_majority_oppressed
+						has_province_modifier = harpy_majority_oppressed
+						has_province_modifier = gnollish_majority_oppressed
+						has_province_modifier = human_majority_coexisting
+						has_province_modifier = elven_majority_coexisting
+						has_province_modifier = dwarven_majority_coexisting
+						has_province_modifier = harpy_majority_coexisting
+						has_province_modifier = gnollish_majority_coexisting
+						has_province_modifier = human_majority_integrated
+						has_province_modifier = elven_majority_integrated
+						has_province_modifier = dwarven_majority_integrated
+						has_province_modifier = harpy_majority_integrated
+						has_province_modifier = gnollish_majority_integrated
+				}
+			owned_by = ROOT
+		}
+		
+		allow = {
+			hidden_trigger = {
+				has_disaster = war_against_goblins
+			}
+			any_owned_province = {
+				OR = {
+						has_province_modifier = human_minority_oppressed_small
+						has_province_modifier = human_minority_oppressed_large
+						has_province_modifier = human_minority_coexisting_small
+						has_province_modifier = human_minority_coexisting_large
+						has_province_modifier = human_minority_integrated_small
+						has_province_modifier = human_minority_integrated_large
+						has_province_modifier = elven_minority_oppressed_small
+						has_province_modifier = elven_minority_oppressed_large
+						has_province_modifier = elven_minority_coexisting_small
+						has_province_modifier = elven_minority_coexisting_large
+						has_province_modifier = elven_minority_integrated_small
+						has_province_modifier = elven_minority_integrated_large
+						has_province_modifier = dwarven_minority_oppressed_small
+						has_province_modifier = dwarven_minority_oppressed_large
+						has_province_modifier = dwarven_minority_coexisting_small
+						has_province_modifier = dwarven_minority_coexisting_large
+						has_province_modifier = dwarven_minority_integrated_small
+						has_province_modifier = dwarven_minority_integrated_large
+						has_province_modifier = harpy_minority_oppressed_small
+						has_province_modifier = harpy_minority_oppressed_large
+						has_province_modifier = harpy_minority_coexisting_small
+						has_province_modifier = harpy_minority_coexisting_large
+						has_province_modifier = harpy_minority_integrated_small
+						has_province_modifier = harpy_minority_integrated_large
+						has_province_modifier = gnollish_minority_oppressed_small
+						has_province_modifier = gnollish_minority_oppressed_large
+						has_province_modifier = gnollish_minority_coexisting_small
+						has_province_modifier = gnollish_minority_coexisting_large
+						has_province_modifier = gnollish_minority_integrated_small
+						has_province_modifier = gnollish_minority_integrated_large
+						has_province_modifier = human_majority_oppressed
+						has_province_modifier = elven_majority_oppressed
+						has_province_modifier = dwarven_majority_oppressed
+						has_province_modifier = harpy_majority_oppressed
+						has_province_modifier = gnollish_majority_oppressed
+						has_province_modifier = human_majority_coexisting
+						has_province_modifier = elven_majority_coexisting
+						has_province_modifier = dwarven_majority_coexisting
+						has_province_modifier = harpy_majority_coexisting
+						has_province_modifier = gnollish_majority_coexisting
+						has_province_modifier = human_majority_integrated
+						has_province_modifier = elven_majority_integrated
+						has_province_modifier = dwarven_majority_integrated
+						has_province_modifier = harpy_majority_integrated
+						has_province_modifier = gnollish_majority_integrated
+					}
+				owned_by = ROOT
+				controlled_by = ROOT
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 10
+				}
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						has_province_modifier = human_minority_oppressed_small
+						has_province_modifier = human_minority_oppressed_large
+						has_province_modifier = human_minority_coexisting_small
+						has_province_modifier = human_minority_coexisting_large
+						has_province_modifier = human_minority_integrated_small
+						has_province_modifier = human_minority_integrated_large
+						has_province_modifier = elven_minority_oppressed_small
+						has_province_modifier = elven_minority_oppressed_large
+						has_province_modifier = elven_minority_coexisting_small
+						has_province_modifier = elven_minority_coexisting_large
+						has_province_modifier = elven_minority_integrated_small
+						has_province_modifier = elven_minority_integrated_large
+						has_province_modifier = dwarven_minority_oppressed_small
+						has_province_modifier = dwarven_minority_oppressed_large
+						has_province_modifier = dwarven_minority_coexisting_small
+						has_province_modifier = dwarven_minority_coexisting_large
+						has_province_modifier = dwarven_minority_integrated_small
+						has_province_modifier = dwarven_minority_integrated_large
+						has_province_modifier = harpy_minority_oppressed_small
+						has_province_modifier = harpy_minority_oppressed_large
+						has_province_modifier = harpy_minority_coexisting_small
+						has_province_modifier = harpy_minority_coexisting_large
+						has_province_modifier = harpy_minority_integrated_small
+						has_province_modifier = harpy_minority_integrated_large
+						has_province_modifier = gnollish_minority_oppressed_small
+						has_province_modifier = gnollish_minority_oppressed_large
+						has_province_modifier = gnollish_minority_coexisting_small
+						has_province_modifier = gnollish_minority_coexisting_large
+						has_province_modifier = gnollish_minority_integrated_small
+						has_province_modifier = gnollish_minority_integrated_large
+						has_province_modifier = human_majority_oppressed
+						has_province_modifier = elven_majority_oppressed
+						has_province_modifier = dwarven_majority_oppressed
+						has_province_modifier = harpy_majority_oppressed
+						has_province_modifier = gnollish_majority_oppressed
+						has_province_modifier = human_majority_coexisting
+						has_province_modifier = elven_majority_coexisting
+						has_province_modifier = dwarven_majority_coexisting
+						has_province_modifier = harpy_majority_coexisting
+						has_province_modifier = gnollish_majority_coexisting
+						has_province_modifier = human_majority_integrated
+						has_province_modifier = elven_majority_integrated
+						has_province_modifier = dwarven_majority_integrated
+						has_province_modifier = harpy_majority_integrated
+						has_province_modifier = gnollish_majority_integrated
+					}
+					owned_by = ROOT
+					controlled_by = ROOT
+					num_of_units_in_province = {
+						who = ROOT
+						amount = 10
+					}
+				}
+				if = {
+					limit = {
+						has_province_modifier = human_minority_oppressed_large
+					}
+					remove_province_modifier = human_minority_oppressed_large
+					add_province_modifier = {
+						name = human_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = bahari
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = elven_minority_oppressed_large
+					}
+					remove_province_modifier = elven_minority_oppressed_large
+					add_province_modifier = {
+						name = elven_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sun_elf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = dwarven_minority_oppressed_large
+					}
+					remove_province_modifier = dwarven_minority_oppressed_large
+					add_province_modifier = {
+						name = dwarven_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = copper_dwarf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = harpy_minority_oppressed_large
+					}
+					remove_province_modifier = harpy_minority_oppressed_large
+					add_province_modifier = {
+						name = harpy_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = firanyan_harpy
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = gnollish_minority_oppressed_large
+					}
+					remove_province_modifier = gnollish_minority_oppressed_large
+					add_province_modifier = {
+						name = gnollish_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sandfang_gnoll
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = human_minority_oppressed_small
+					}
+					remove_province_modifier = human_minority_oppressed_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = bahari
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {					
+						has_province_modifier = elven_minority_oppressed_small
+					}
+					remove_province_modifier = elven_minority_oppressed_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sun_elf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = dwarven_minority_oppressed_small
+					}
+					remove_province_modifier = dwarven_minority_oppressed_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = copper_dwarf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = harpy_minority_oppressed_small
+					}
+					remove_province_modifier = harpy_minority_oppressed_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = firanyan_harpy
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = gnollish_minority_oppressed_small
+					}
+					remove_province_modifier = gnollish_minority_oppressed_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sandfang_gnoll
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = human_majority_oppressed
+					}
+					remove_province_modifier = human_majority_oppressed
+					add_province_modifier = {
+						name = human_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = bahari
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = elven_majority_oppressed
+					}
+					remove_province_modifier = elven_majority_oppressed
+					add_province_modifier = {
+						name = elven_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sun_elf
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = gnollish_majority_oppressed
+					}
+					remove_province_modifier = gnollish_majority_oppressed
+					add_province_modifier = {
+						name = gnollish_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sandfang_gnoll
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = harpy_majority_oppressed
+					}
+					remove_province_modifier = harpy_majority_oppressed
+					add_province_modifier = {
+						name = harpy_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = firanyan_harpy
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = dwarven_majority_oppressed
+					}
+					remove_province_modifier = dwarven_majority_oppressed
+					add_province_modifier = {
+						name = dwarven_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = copper_dwarf
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = human_minority_coexisting_large
+					}
+					remove_province_modifier = human_minority_coexisting_large
+					add_province_modifier = {
+						name = human_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = bahari
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = elven_minority_coexisting_large
+					}
+					remove_province_modifier = elven_minority_coexisting_large
+					add_province_modifier = {
+						name = elven_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sun_elf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = dwarven_minority_coexisting_large
+					}
+					remove_province_modifier = dwarven_minority_coexisting_large
+					add_province_modifier = {
+						name = dwarven_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = copper_dwarf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = harpy_minority_coexisting_large
+					}
+					remove_province_modifier = harpy_minority_coexisting_large
+					add_province_modifier = {
+						name = harpy_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = firanyan_harpy
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = gnollish_minority_coexisting_large
+					}
+					remove_province_modifier = gnollish_minority_coexisting_large
+					add_province_modifier = {
+						name = gnollish_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sandfang_gnoll
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = human_minority_coexisting_small
+					}
+					remove_province_modifier = human_minority_coexisting_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = bahari
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {					
+						has_province_modifier = elven_minority_coexisting_small
+					}
+					remove_province_modifier = elven_minority_coexisting_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sun_elf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = dwarven_minority_coexisting_small
+					}
+					remove_province_modifier = dwarven_minority_coexisting_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = copper_dwarf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = harpy_minority_coexisting_small
+					}
+					remove_province_modifier = harpy_minority_coexisting_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = firanyan_harpy
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = gnollish_minority_coexisting_small
+					}
+					remove_province_modifier = gnollish_minority_coexisting_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sandfang_gnoll
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = human_majority_coexisting
+					}
+					remove_province_modifier = human_majority_coexisting
+					add_province_modifier = {
+						name = human_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = bahari
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = elven_majority_coexisting
+					}
+					remove_province_modifier = elven_majority_coexisting
+					add_province_modifier = {
+						name = elven_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sun_elf
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = gnollish_majority_coexisting
+					}
+					remove_province_modifier = gnollish_majority_coexisting
+					add_province_modifier = {
+						name = gnollish_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sandfang_gnoll
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = harpy_majority_coexisting
+					}
+					remove_province_modifier = harpy_majority_coexisting
+					add_province_modifier = {
+						name = harpy_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = firanyan_harpy
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = dwarven_majority_coexisting
+					}
+					remove_province_modifier = dwarven_majority_coexisting
+					add_province_modifier = {
+						name = dwarven_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = copper_dwarf
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = human_minority_integrated_large
+					}
+					remove_province_modifier = human_minority_integrated_large
+					add_province_modifier = {
+						name = human_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = bahari
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = elven_minority_integrated_large
+					}
+					remove_province_modifier = elven_minority_integrated_large
+					add_province_modifier = {
+						name = elven_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sun_elf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = dwarven_minority_integrated_large
+					}
+					remove_province_modifier = dwarven_minority_integrated_large
+					add_province_modifier = {
+						name = dwarven_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = copper_dwarf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = harpy_minority_integrated_large
+					}
+					remove_province_modifier = harpy_minority_integrated_large
+					add_province_modifier = {
+						name = harpy_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = firanyan_harpy
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = gnollish_minority_integrated_large
+					}
+					remove_province_modifier = gnollish_minority_integrated_large
+					add_province_modifier = {
+						name = gnollish_minority_oppressed_small
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sandfang_gnoll
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = human_minority_integrated_small
+					}
+					remove_province_modifier = human_minority_integrated_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = bahari
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {					
+						has_province_modifier = elven_minority_integrated_small
+					}
+					remove_province_modifier = elven_minority_integrated_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sun_elf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = dwarven_minority_integrated_small
+					}
+					remove_province_modifier = dwarven_minority_integrated_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = copper_dwarf
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = harpy_minority_integrated_small
+					}
+					remove_province_modifier = harpy_minority_integrated_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = firanyan_harpy
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = gnollish_minority_integrated_small
+					}
+					remove_province_modifier = gnollish_minority_integrated_small
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sandfang_gnoll
+						size = 1
+					}
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = human_majority_integrated
+					}
+					remove_province_modifier = human_majority_integrated
+					add_province_modifier = {
+						name = human_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = bahari
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = elven_majority_integrated
+					}
+					remove_province_modifier = elven_majority_integrated
+					add_province_modifier = {
+						name = elven_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sun_elf
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = gnollish_majority_integrated
+					}
+					remove_province_modifier = gnollish_majority_integrated
+					add_province_modifier = {
+						name = gnollish_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = sandfang_gnoll
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = harpy_majority_integrated
+					}
+					remove_province_modifier = harpy_majority_integrated
+					add_province_modifier = {
+						name = harpy_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = firanyan_harpy
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+				
+				else_if = {
+					limit = {
+						has_province_modifier = dwarven_majority_integrated
+					}
+					remove_province_modifier = dwarven_majority_integrated
+					add_province_modifier = {
+						name = dwarven_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblin_majority_primary
+						duration = -1
+					}
+					spawn_rebels = {
+						type = desperate_innocents_rebel
+						culture = copper_dwarf
+						size = 2
+					}
+					change_religion = goblinic_shamanism
+					change_culture = exodus_goblin
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 400
+		}
+	}
+	goblinclan_relocate_dwarves = {
+		major = yes
+		potential = {
+			has_country_flag = dwarves_roam_free 
+			tag = Z8Z
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = dwarven_minority_oppressed_large }
+					NOT = { has_province_modifier = dwarven_minority_integrated_large }
+					NOT = { has_province_modifier = dwarven_minority_coexisting_large }
+				}
+				fort_level = 1
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			AND = {
+				NOT = { has_province_modifier = dwarven_minority_oppressed_large }
+				NOT = { has_province_modifier = dwarven_minority_integrated_large }
+				NOT = { has_province_modifier = dwarven_minority_coexisting_large }
+			}
+			fort_level = 1
+			owned_by = ROOT
+		}
+		allow = {
+			hidden_trigger = {
+				has_country_flag = dwarves_roam_free 
+				tag = Z8Z
+			}
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = dwarven_minority_oppressed_large }
+					NOT = { has_province_modifier = dwarven_minority_integrated_large }
+					NOT = { has_province_modifier = dwarven_minority_coexisting_large }
+				}
+				fort_level = 1
+				owned_by = ROOT
+				controlled_by = ROOT
+				num_of_units_in_province = {
+						who = ROOT
+						amount = 30
+				}
+			}
+			if = {
+				treasury = 50
+			}
+		}
+		effect = {
+			add_treasury = -50
+			random_owned_province = {
+				limit = {
+					AND = {
+						NOT = { has_province_modifier = dwarven_minority_oppressed_large }
+						NOT = { has_province_modifier = dwarven_minority_integrated_large }
+						NOT = { has_province_modifier = dwarven_minority_coexisting_large }
+					}
+					fort_level = 1
+					owned_by = ROOT
+					num_of_units_in_province = {
+							who = ROOT
+							amount = 30
+					}
+				}
+				if = {
+					limit = {
+						has_province_modifier = dwarven_minority_oppressed_small
+					}
+					remove_province_modifier = dwarven_minority_oppressed_small
+					add_province_modifier = {
+						name = dwarven_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_dwarven_reinforced_walls
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_dwarven_reinforced_walls
+				}
+				if = {
+					limit = {
+						has_province_modifier = dwarven_minority_coexisting_small
+					}
+					remove_province_modifier = dwarven_minority_coexisting_small
+					add_province_modifier = {
+						name = dwarven_minority_coexisting_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_dwarven_reinforced_walls
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_dwarven_reinforced_walls
+				}
+				if = {
+					limit = {
+						has_province_modifier = dwarven_minority_integrated_small
+					}
+					remove_province_modifier = dwarven_minority_integrated_small
+					add_province_modifier = {
+						name = dwarven_minority_integrated_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_dwarven_reinforced_walls
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_dwarven_reinforced_walls
+				}
+				else = {
+					add_dwarven_minority_size_effect = yes
+					add_province_modifier = {
+						name = goblinclan_small_dwarven_reinforced_walls
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	
+	goblinclan_relocate_harpies = {
+		major = yes
+		potential = {
+			has_country_flag = harpies_roam_free 
+			tag = Z8Z
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = harpy_minority_oppressed_large }
+					NOT = { has_province_modifier = harpy_minority_integrated_large }
+					NOT = { has_province_modifier = harpy_minority_coexisting_large }
+				}
+				has_terrain = mountain
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			AND = {
+				NOT = { has_province_modifier = harpy_minority_oppressed_large }
+				NOT = { has_province_modifier = harpy_minority_integrated_large }
+				NOT = { has_province_modifier = harpy_minority_coexisting_large }
+			}
+			has_terrain = mountain
+			owned_by = ROOT
+		}
+		allow = {
+			hidden_trigger = {
+				has_country_flag = harpies_roam_free 
+				tag = Z8Z
+			}
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = harpy_minority_oppressed_large }
+					NOT = { has_province_modifier = harpy_minority_integrated_large }
+					NOT = { has_province_modifier = harpy_minority_coexisting_large }
+				}
+				has_terrain = mountain
+				owned_by = ROOT
+				controlled_by = ROOT
+				num_of_units_in_province = {
+						who = ROOT
+						amount = 30
+				}
+			}
+			if = {
+				treasury = 50
+			}
+		}
+		effect = {
+			add_treasury = -50
+			random_owned_province = {
+				limit = {
+					AND = {
+						NOT = { has_province_modifier = harpy_minority_oppressed_large }
+						NOT = { has_province_modifier = harpy_minority_integrated_large }
+						NOT = { has_province_modifier = harpy_minority_coexisting_large }
+					}
+					has_terrain = mountain
+					owned_by = ROOT
+					num_of_units_in_province = {
+							who = ROOT
+							amount = 30
+					}
+				}
+				if = {
+					limit = {
+						has_province_modifier = harpy_minority_oppressed_small
+					}
+					remove_province_modifier = harpy_minority_oppressed_small
+					add_province_modifier = {
+						name = harpy_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_harpies_ambush_hills
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_harpies_ambush_hills
+				}
+				if = {
+					limit = {
+						has_province_modifier = harpy_minority_coexisting_small
+					}
+					remove_province_modifier = harpy_minority_coexisting_small
+					add_province_modifier = {
+						name = harpy_minority_coexisting_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_harpies_ambush_hills
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_harpies_ambush_hills
+				}
+				if = {
+					limit = {
+						has_province_modifier = harpy_minority_integrated_small
+					}
+					remove_province_modifier = harpy_minority_integrated_small
+					add_province_modifier = {
+						name = harpy_minority_integrated_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_harpies_ambush_hills
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_harpies_ambush_hills
+				}
+				else = {
+					add_harpy_minority_size_effect = yes
+					add_province_modifier = {
+						name = goblinclan_small_harpies_ambush_hills
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	
+	goblinclan_relocate_gnolls = {
+		major = yes
+		potential = {
+			has_country_flag = gnolls_roam_free 
+			tag = Z8Z
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = gnollish_minority_oppressed_large }
+					NOT = { has_province_modifier = gnollish_minority_integrated_large }
+					NOT = { has_province_modifier = gnollish_minority_coexisting_large }
+				}
+				province_has_center_of_trade_of_level = 1
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			AND = {
+				NOT = { has_province_modifier = gnollish_minority_oppressed_large }
+				NOT = { has_province_modifier = gnollish_minority_integrated_large }
+				NOT = { has_province_modifier = gnollish_minority_coexisting_large }
+			}
+			province_has_center_of_trade_of_level = 1
+			owned_by = ROOT
+		}
+		allow = {
+			hidden_trigger = {
+				has_country_flag = gnolls_roam_free 
+				tag = Z8Z
+			}
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = gnollish_minority_oppressed_large }
+					NOT = { has_province_modifier = gnollish_minority_integrated_large }
+					NOT = { has_province_modifier = gnollish_minority_coexisting_large }
+				}
+				province_has_center_of_trade_of_level = 1
+				owned_by = ROOT
+				controlled_by = ROOT
+				num_of_units_in_province = {
+						who = ROOT
+						amount = 30
+				}
+			}
+			if = {
+				treasury = 50
+			}
+		}
+		effect = {
+			add_treasury = -50
+			random_owned_province = {
+				limit = {
+					AND = {
+						NOT = { has_province_modifier = gnollish_minority_oppressed_large }
+						NOT = { has_province_modifier = gnollish_minority_integrated_large }
+						NOT = { has_province_modifier = gnollish_minority_coexisting_large }
+					}
+					province_has_center_of_trade_of_level = 1
+					owned_by = ROOT
+					num_of_units_in_province = {
+							who = ROOT
+							amount = 30
+					}
+				}
+				if = {
+					limit = {
+						has_province_modifier = gnollish_minority_oppressed_small
+					}
+					remove_province_modifier = gnollish_minority_oppressed_small
+					add_province_modifier = {
+						name = gnollish_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_gnollish_trade_control
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_gnollish_trade_control
+				}
+				if = {
+					limit = {
+						has_province_modifier = gnollish_minority_coexisting_small
+					}
+					remove_province_modifier = gnollish_minority_coexisting_small
+					add_province_modifier = {
+						name = gnollish_minority_coexisting_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_gnollish_trade_control
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_gnollish_trade_control
+				}
+				if = {
+					limit = {
+						has_province_modifier = gnollish_minority_integrated_small
+					}
+					remove_province_modifier = gnollish_minority_integrated_small
+					add_province_modifier = {
+						name = gnollish_minority_integrated_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_gnollish_trade_control
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_gnollish_trade_control
+				}
+				else = {
+					add_gnollish_minority_size_effect = yes
+					add_province_modifier = {
+						name = goblinclan_small_gnollish_trade_control
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	
+	goblinclan_relocate_humans = {
+		major = yes
+		potential = {
+			has_country_flag = humans_roam_free 
+			tag = Z8Z
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = human_minority_oppressed_large }
+					NOT = { has_province_modifier = human_minority_integrated_large }
+					NOT = { has_province_modifier = human_minority_coexisting_large }
+				}
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = fish
+					trade_goods = naval_supplies
+				}
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			AND = {
+				NOT = { has_province_modifier = human_minority_oppressed_large }
+				NOT = { has_province_modifier = human_minority_integrated_large }
+				NOT = { has_province_modifier = human_minority_coexisting_large }
+			}
+			OR = {
+				trade_goods = grain
+				trade_goods = livestock
+				trade_goods = wine
+				trade_goods = fish
+				trade_goods = naval_supplies
+			}
+			owned_by = ROOT
+		}
+		allow = {
+			hidden_trigger = {
+				has_country_flag = gnolls_roam_free 
+				tag = Z8Z
+			}
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = human_minority_oppressed_large }
+					NOT = { has_province_modifier = human_minority_integrated_large }
+					NOT = { has_province_modifier = human_minority_coexisting_large }
+				}
+				OR = {
+					trade_goods = grain
+					trade_goods = livestock
+					trade_goods = wine
+					trade_goods = fish
+					trade_goods = naval_supplies
+				}
+				owned_by = ROOT
+				controlled_by = ROOT
+				num_of_units_in_province = {
+						who = ROOT
+						amount = 30
+				}
+			}
+			if = {
+				treasury = 50
+			}
+		}
+		effect = {
+			add_treasury = -50
+			random_owned_province = {
+				limit = {
+					AND = {
+						NOT = { has_province_modifier = human_minority_oppressed_large }
+						NOT = { has_province_modifier = human_minority_integrated_large }
+						NOT = { has_province_modifier = human_minority_coexisting_large }
+					}
+					OR = {
+						trade_goods = grain
+						trade_goods = livestock
+						trade_goods = wine
+						trade_goods = fish
+						trade_goods = naval_supplies
+					}
+					owned_by = ROOT
+					num_of_units_in_province = {
+							who = ROOT
+							amount = 30
+					}
+				}
+				if = {
+					limit = {
+						has_province_modifier = human_minority_oppressed_small
+					}
+					remove_province_modifier = human_minority_oppressed_small
+					add_province_modifier = {
+						name = human_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_human_slave_network
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_human_slave_network
+				}
+				if = {
+					limit = {
+						has_province_modifier = human_minority_coexisting_small
+					}
+					remove_province_modifier = human_minority_coexisting_small
+					add_province_modifier = {
+						name = human_minority_coexisting_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_human_slave_network
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_human_slave_network
+				}
+				if = {
+					limit = {
+						has_province_modifier = human_minority_integrated_small
+					}
+					remove_province_modifier = human_minority_integrated_small
+					add_province_modifier = {
+						name = human_minority_integrated_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_human_slave_network
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_human_slave_network
+				}
+				else = {
+					add_human_minority_size_effect = yes
+					add_province_modifier = {
+						name = goblinclan_small_human_slave_network
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	
+	goblinclan_relocate_elves = {
+		major = yes
+		potential = {
+			has_country_flag = elves_roam_free 
+			tag = Z8Z
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = elven_minority_oppressed_large }
+					NOT = { has_province_modifier = elven_minority_integrated_large }
+					NOT = { has_province_modifier = elven_minority_coexisting_large }
+				}
+				OR = {
+					trade_goods = gems
+					trade_goods = salt
+					trade_goods = cloth
+					trade_goods = glass
+					trade_goods = copper
+					trade_goods = iron
+					trade_goods = cotton
+					trade_goods = paper
+					trade_goods = spices
+					trade_goods = tea
+					trade_goods = sugar
+					trade_goods = silk
+					trade_goods = dyes
+					trade_goods = incense
+					trade_goods = coffee
+				}
+				owned_by = ROOT
+				
+			}
+		}
+		provinces_to_highlight = {
+			AND = {
+				NOT = { has_province_modifier = elven_minority_oppressed_large }
+				NOT = { has_province_modifier = elven_minority_integrated_large }
+				NOT = { has_province_modifier = elven_minority_coexisting_large }
+			}
+			OR = {
+				trade_goods = gems
+				trade_goods = salt
+				trade_goods = cloth
+				trade_goods = glass
+				trade_goods = copper
+				trade_goods = iron
+				trade_goods = cotton
+				trade_goods = paper
+				trade_goods = spices
+				trade_goods = tea
+				trade_goods = sugar
+				trade_goods = silk
+				trade_goods = dyes
+				trade_goods = incense
+				trade_goods = coffee
+			}
+			owned_by = ROOT
+		}
+		allow = {
+			hidden_trigger = {
+				has_country_flag = elves_roam_free 
+				tag = Z8Z
+			}
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = elven_minority_oppressed_large }
+					NOT = { has_province_modifier = elven_minority_integrated_large }
+					NOT = { has_province_modifier = elven_minority_coexisting_large }
+				}
+				OR = {
+					trade_goods = gems
+					trade_goods = salt
+					trade_goods = cloth
+					trade_goods = glass
+					trade_goods = copper
+					trade_goods = iron
+					trade_goods = cotton
+					trade_goods = paper
+					trade_goods = spices
+					trade_goods = tea
+					trade_goods = sugar
+					trade_goods = silk
+					trade_goods = dyes
+					trade_goods = incense
+					trade_goods = coffee
+				}
+				owned_by = ROOT
+				controlled_by = ROOT
+				num_of_units_in_province = {
+						who = ROOT
+						amount = 30
+				}
+			}
+			if = {
+				treasury = 50
+			}
+		}
+		effect = {
+			add_treasury = -50
+			random_owned_province = {
+				limit = {
+					AND = {
+						NOT = { has_province_modifier = elven_minority_oppressed_large }
+						NOT = { has_province_modifier = elven_minority_integrated_large }
+						NOT = { has_province_modifier = elven_minority_coexisting_large }
+					}
+					OR = {
+						trade_goods = gems
+						trade_goods = salt
+						trade_goods = cloth
+						trade_goods = glass
+						trade_goods = copper
+						trade_goods = iron
+						trade_goods = cotton
+						trade_goods = paper
+						trade_goods = spices
+						trade_goods = tea
+						trade_goods = sugar
+						trade_goods = silk
+						trade_goods = dyes
+						trade_goods = incense
+						trade_goods = coffee
+					}
+					owned_by = ROOT
+					num_of_units_in_province = {
+							who = ROOT
+							amount = 30
+					}
+				}
+				if = {
+					limit = {
+						has_province_modifier = elven_minority_oppressed_small
+					}
+					remove_province_modifier = elven_minority_oppressed_small
+					add_province_modifier = {
+						name = elven_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_elven_manufactoring_camp
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_elven_manufactoring_camp
+				}
+				if = {
+					limit = {
+						has_province_modifier = elven_minority_coexisting_small
+					}
+					remove_province_modifier = elven_minority_coexisting_small
+					add_province_modifier = {
+						name = elven_minority_coexisting_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_elven_manufactoring_camp
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_elven_manufactoring_camp
+				}
+				if = {
+					limit = {
+						has_province_modifier = elven_minority_integrated_small
+					}
+					remove_province_modifier = elven_minority_integrated_small
+					add_province_modifier = {
+						name = elven_minority_integrated_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_elven_manufactoring_camp
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_elven_manufactoring_camp
+				}
+				else = {
+					add_elven_minority_size_effect = yes
+					add_province_modifier = {
+						name = goblinclan_small_elven_manufactoring_camp
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	goblinclan_relocate_gnomes = {
+		major = yes
+		potential = {
+			has_country_flag = gnomes_roam_free 
+			tag = Z8Z
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = gnomish_minority_oppressed_large }
+					NOT = { has_province_modifier = gnomish_minority_integrated_large }
+					NOT = { has_province_modifier = gnomish_minority_coexisting_large }
+				}
+				development = 30
+				owned_by = ROOT
+			}
+		}
+		provinces_to_highlight = {
+			AND = {
+				NOT = { has_province_modifier = gnomish_minority_oppressed_large }
+				NOT = { has_province_modifier = gnomish_minority_integrated_large }
+				NOT = { has_province_modifier = gnomish_minority_coexisting_large }
+			}
+			development = 30
+			owned_by = ROOT
+		}
+		allow = {
+			hidden_trigger = {
+				has_country_flag = gnomes_roam_free 
+				tag = Z8Z
+			}
+			any_owned_province = {
+				AND = {
+					NOT = { has_province_modifier = gnomish_minority_oppressed_large }
+					NOT = { has_province_modifier = gnomish_minority_integrated_large }
+					NOT = { has_province_modifier = gnomish_minority_coexisting_large }
+				}
+				development = 30
+				owned_by = ROOT
+				controlled_by = ROOT
+				num_of_units_in_province = {
+						who = ROOT
+						amount = 30
+				}
+			}
+			if = {
+				treasury = 50
+			}
+		}
+		effect = {
+			add_treasury = -50
+			random_owned_province = {
+				limit = {
+					AND = {
+						NOT = { has_province_modifier = gnomish_minority_oppressed_large }
+						NOT = { has_province_modifier = gnomish_minority_integrated_large }
+						NOT = { has_province_modifier = gnomish_minority_coexisting_large }
+					}
+					development = 30
+					owned_by = ROOT
+					num_of_units_in_province = {
+							who = ROOT
+							amount = 30
+					}
+				}
+				if = {
+					limit = {
+						has_province_modifier = gnomish_minority_oppressed_small
+					}
+					remove_province_modifier = gnomish_minority_oppressed_small
+					add_province_modifier = {
+						name = gnomish_minority_oppressed_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_gnomish_workshop
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_gnomish_workshop
+				}
+				if = {
+					limit = {
+						has_province_modifier = gnomish_minority_coexisting_small
+					}
+					remove_province_modifier = gnomish_minority_coexisting_small
+					add_province_modifier = {
+						name = gnomish_minority_coexisting_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_gnomish_workshop
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_gnomish_workshop
+				}
+				if = {
+					limit = {
+						has_province_modifier = gnomish_minority_integrated_small
+					}
+					remove_province_modifier = gnomish_minority_integrated_small
+					add_province_modifier = {
+						name = gnomish_minority_integrated_large
+						duration = -1
+					}
+					add_province_modifier = {
+						name = goblinclan_large_gnomish_workshop
+						duration = -1
+					}
+					remove_province_modifier = goblinclan_small_gnomish_workshop
+				}
+				else = {
+					add_gnomish_minority_size_effect = yes
+					add_province_modifier = {
+						name = goblinclan_small_gnomish_workshop
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+
+

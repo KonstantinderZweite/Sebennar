@@ -243,33 +243,15 @@ skewered_drake_2 = {
 		}
 
 		trigger = {
-			OR = {
-			AND = {
 			M01 = { is_subject_of = ROOT }
 			greatcavern_area = { type = all owned_by = M01 }
 			num_of_owned_provinces_with = {
 				value = 8
 				has_production_building_trigger = yes
 			}
-			}
-			AND = {
-			greatcavern_area = { type = all owned_by = ROOT }
-			num_of_owned_provinces_with = {
-				value = 8
-				has_production_building_trigger = yes
-			}
-			}
-
-			}
 		}
 		
 		effect = {
-			if = {
-				limit = { M01 = { exist = NO } }
-				greatcavern_area = { add_base_manpower = 1 }
-				small_increase_of_troll_tolerance_effect = yes
-			}
-			else = {
 			M01 = {
 				custom_tooltip = skewered_drake_obedient_trolls_tooltip
 				every_owned_province = {
@@ -282,7 +264,6 @@ skewered_drake_2 = {
 			}
 			greatcavern_area = { add_base_manpower = 1 }
 			small_increase_of_troll_tolerance_effect = yes
-		}
 		}
 	}
 }
@@ -1493,7 +1474,7 @@ skewered_drake_3b = {
 		position = 14
 		required_missions = { 
 			skewered_drake_false_overlord
-			skewered_drake_cats_drakons
+			skewered_drake_cats_drakon
 			skewered_drake_return_roots
 		}
 		
@@ -1671,7 +1652,7 @@ skewered_drake_4b = {
 		}
 	}
 
-	skewered_drake_cats_drakons = {
+	skewered_drake_cats_drakon = {
 		icon = mission_harimar
 		position = 13
 		required_missions = { 

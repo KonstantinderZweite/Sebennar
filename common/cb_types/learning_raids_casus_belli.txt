@@ -1,0 +1,16 @@
+z2z_learning_raids = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 600
+	
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_become_vassal
+		po_subjugate_vassal
+	}
+	
+	war_goal = z2z_learning
+	
+	
+}

@@ -24,7 +24,9 @@ historical_rival = A26 # Bluescale
 		dip = 5
 		mil = 6
 	}
-	set_ruler_flag = long_lived_ruler
-	add_ruler_personality = tactical_genius_personality
 	
+	add_ruler_personality = tactical_genius_personality
+	add_ruler_personality = lawgiver_personality
+	add_ruler_personality = just_personality
+	set_ruler_flag = long_lived_ruler
 }

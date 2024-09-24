@@ -48,7 +48,7 @@ country_event = {
 		name = "flavor_elikhand.1.b"
 		ai_chance = { factor = 40 }	
 		define_heir = {
-			dynasty = "sï¿½l Elikhand"	#of the crossing
+			dynasty = "síl Elikhand"	#of the crossing
 			age = 16
 			male = yes
 			change_adm = 1
@@ -206,11 +206,14 @@ country_event = {
 			name = elikhand_slow
 			duration = 10950
 		}
-		every_owned_province = {
-			limit = { religion_group = khetist }
-			random = {
-				chance = 90
-				change_religion = dalcabba
+		custom_tooltip = flavor_elikhand.3.effect
+		hidden_effect = {
+			every_owned_province = {
+				limit = { religion_group = khetist }
+				random = {
+					chance = 90
+					change_religion = dalcabba
+				}
 			}
 		}
 	}
@@ -349,7 +352,7 @@ country_event = {
 		name = flavor_elikhand.5.g
 		ai_chance = { factor = 0 }
 		highlight = yes
-		trigger = { full_idea_group = maratime_ideas }
+		trigger = { full_idea_group = naval_ideas }
 		add_country_modifier = {
 			name = elikhand_naval
 			duration = -1

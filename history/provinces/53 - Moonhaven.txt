@@ -1,5 +1,5 @@
 
-#53 - Lüneburg
+#53 - Lï¿½neburg
 
 owner = A31
 controller = A31

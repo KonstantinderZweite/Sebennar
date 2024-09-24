@@ -1,0 +1,427 @@
+country_decisions = {
+	show_enable_relics = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_country_flag = enable_relic_flag }
+			has_country_flag = I14_enable_relics
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {			
+			custom_trigger_tooltip = {
+				tooltip = enable_relic_flag_tt
+				ai = no
+				NOT = { has_country_flag = enable_relic_flag	}
+			}
+			
+		}
+		effect = {
+			set_country_flag = enable_relic_flag
+		}
+	}
+
+	hide_enable_relics = {
+		major = yes
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {			
+			custom_trigger_tooltip = {
+				tooltip = disable_relic_flag_tt
+				ai = no
+				has_country_flag = enable_relic_flag
+			}
+			
+		}
+		effect = {
+			clr_country_flag = enable_relic_flag
+		}
+	}
+
+	enable_relic_research = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			NOT = { has_country_modifier = I14_researching_relics }
+			NOT = {
+				AND = {
+					has_country_flag = piercing_swords
+					has_country_flag = tesla_tower
+					has_country_flag = runic_icon
+					has_country_flag = railgun
+					has_country_flag = stone_restructerizer
+					has_country_flag = deflector_shields
+					has_country_flag = auto_reloader
+					has_country_flag = brain_chip
+					has_country_flag = legs
+					has_country_flag = magic_flow
+					has_country_flag = rage_needles
+					has_country_flag = runic_axes
+				}
+			}
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = research_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.21 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_piercing_swords = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = piercing_swords
+			NOT = { has_country_modifier = I14_successful_piercing_blades }
+			years_of_manpower = 2
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = piercing_swords_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.23 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_tesla_tower = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = tesla_tower
+			NOT = { has_country_modifier = I14_successful_tesla_tower }
+			NOT = { has_country_modifier = I14_unsuccessful_tesla_tower }
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = tesla_tower_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.27 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_runic_icon = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = runic_icon
+			NOT = { has_country_modifier = I14_successful_runic_icon }
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = runic_icon_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.31 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_railgun = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = railgun
+			NOT = { has_country_modifier = I14_successful_railgun }
+			NOT = { has_country_modifier = I14_unsuccessful_railgun }
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = railgun_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.35 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_stone_restructerizer = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = stone_restructerizer
+			NOT = { 4217 = { has_province_modifier = partially_ruined_hold } }
+			NOT = { 4217 = { has_province_modifier = damaged_hold } }
+			NOT = { 4217 = { has_province_modifier = hold_being_restored } }
+			NOT = { 4217 = { has_province_modifier = I14_successful_stone_restructerizer } }
+			capital = 4217
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = stone_restructerizer_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.39 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_deflector_shields = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = deflector_shields
+			NOT = { has_country_modifier = I14_successful_deflector_shields }
+			NOT = { has_country_modifier = I14_unsuccessful_deflector_shields }
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = deflector_shields_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.43 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_auto_reloader = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = auto_reloader
+			NOT = { has_country_modifier = I14_successful_auto_reloader }
+			NOT = { has_country_modifier = I14_unsuccessful_auto_reloader }
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = auto_reloader_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.47 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_brain_chip = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = brain_chip
+			NOT = { has_country_modifier = I14_successful_brain_chip }
+			NOT = { has_country_modifier = I14_unsuccessful_brain_chip }
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = brain_chip_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.51 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_legs = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = legs
+			NOT = { has_country_modifier = I14_successful_legs }
+			NOT = { has_country_modifier = I14_unsuccessful_legs }
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = legs_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.55 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_magic_flow = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = magic_flow
+			NOT = { has_country_modifier = I14_successful_magic_flow }
+			NOT = { has_country_modifier = I14_unsuccessful_magic_flow }
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = magic_flow_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.59 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_rage_needles = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = rage_needles
+			NOT = { has_country_modifier = I14_successful_rage_needles }
+			NOT = { has_country_modifier = I14_unsuccessful_rage_needles }
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = rage_needles_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.63 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	enable_runic_axes = {
+		
+		potential = {
+			ai = no
+			has_country_flag = enable_relic_flag
+			has_country_flag = runic_axes
+			NOT = { has_country_modifier = I14_successful_runic_axes }
+			NOT = { has_country_modifier = I14_unsuccessful_runic_axes }
+		}
+			
+		provinces_to_highlight = {  }
+		
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = runic_axes_tt
+				always = yes
+			}
+		}
+		
+		effect = {
+			country_event = { id = flavor_gor_vazumbrog.67 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

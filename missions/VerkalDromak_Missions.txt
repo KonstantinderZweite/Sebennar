@@ -84,6 +84,7 @@ verkaldromak_11 = {
 				}
 			}	
 			any_neighbor_country = {
+				NOT = { is_subject_of = ROOT }
 				culture_group = dwarven
 				has_opinion = {
 					who = ROOT
@@ -96,6 +97,7 @@ verkaldromak_11 = {
 			random_neighbor_country = {
 				limit = {
 					culture_group = dwarven
+					NOT = { is_subject_of = ROOT }
 				}
 				add_country_modifier = {
 					name = I25_friend_in_dwarovar

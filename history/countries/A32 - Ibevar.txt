@@ -20,9 +20,9 @@ capital = 352 #Ibevar
 		dip = 3
 		mil = 1
 	}
-	set_ruler_flag = long_lived_ruler
-	add_ruler_personality = careful_personality
 	
+	add_ruler_personality = careful_personality
+	set_ruler_flag = long_lived_ruler
 }
 
 1422.1.1 = { set_country_flag = lilac_wars_rose_party }

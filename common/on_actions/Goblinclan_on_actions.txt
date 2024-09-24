@@ -1,0 +1,118 @@
+on_monthly_pulse = {
+	if = {
+		limit = {
+			tag = Z8Z
+			has_country_modifier = goblinclan_corrupt_advisors
+		}
+		if = {
+			limit = {
+				has_adm_advisor = yes
+			}
+			add_corruption = 0.0054
+		}
+		else_if = {
+			limit = {
+				has_adm_advisor_2 = yes
+			}
+			add_corruption = 0.0108
+		}
+		else_if = {
+			limit = {
+				has_adm_advisor_3 = yes
+			}
+			add_corruption = 0.0166 
+		}
+		else_if = {
+			limit = {
+				has_adm_advisor_4 = yes
+			}
+			add_corruption = 0.0216
+		}
+		else_if = {
+			limit = {
+				has_adm_advisor_5 = yes
+			}
+			add_corruption = 0.02778
+		}
+		else = {
+		
+		}
+		
+		
+		
+		if = {
+			limit = {
+				has_dip_advisor = yes
+			}
+			add_corruption = 0.0054
+		}
+		else_if = {
+			limit = {
+				has_dip_advisor_2 = yes
+			}
+			add_corruption = 0.0108
+		}
+		else_if = {
+			limit = {
+				has_dip_advisor_3 = yes
+			}
+			add_corruption = 0.0166
+		}
+		else_if = {
+			limit = {
+				has_dip_advisor_4 = yes
+			}
+			add_corruption = 0.0216
+		}
+		else_if = {
+			limit = {
+				has_dip_advisor_5 = yes
+			}
+			add_corruption = 0.02778
+		}
+		
+		else = {
+		
+		}
+		
+		
+		if = {
+			limit = {
+				has_mil_advisor = yes
+			}
+			add_corruption = 0.0054
+		}
+
+		else_if = {
+			limit = {
+				has_mil_advisor_2 = yes
+			}
+			add_corruption = 0.0108
+		}
+		
+		else_if = {
+			limit = {
+				has_mil_advisor_3 = yes
+			}
+			add_corruption = 0.0166
+		}
+		else_if = {
+			limit = {
+				has_mil_advisor_4 = yes
+			}
+			add_corruption = 0.0216
+		}
+		else_if = {
+			limit = {
+				has_mil_advisor_5 = yes
+			}
+			add_corruption = 0.02778
+		}
+		else = {
+		
+		}
+	}
+	else = {
+	
+	}
+}
