@@ -1080,10 +1080,10 @@ undead_military = {				#Zombies and skeletons created with necromancy
 	
 	reserves_organisation = 4 		# 4 D Unbreakable
 	# morale_damage_received = -0.9 # 4 A Unbreakable
-	shock_damage_received = 0.40
+	shock_damage_received = 0.35
 	shock_damage = -0.45
 	fire_damage = -0.45
-	fire_damage_received = 0.40
+	fire_damage_received = 0.35
 	
 	war_exhaustion = -0.02	#negates attrition war exhaustion
 	

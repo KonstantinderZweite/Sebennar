@@ -235,7 +235,7 @@ gawed_column_1 = {
 	# gawed_gawedi_wars_of_religion = {
 		# icon = influence_the_church
 		# required_missions = {  }
-		# position = 9
+		# position = 11
 		
 		# trigger = {
 		
@@ -1163,6 +1163,13 @@ gawed_column_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			vaengrheim_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -1325,7 +1332,7 @@ gawed_column_5 = {
 					OR = {
 						province_id = 228
 						province_id = 242
-						province_id = 343
+						province_id = 217
 					}
 					OR = {
 						NOT = { owned_by = ROOT }
@@ -1335,7 +1342,7 @@ gawed_column_5 = {
 				AND = {
 					OR = {
 						province_id = 228
-						province_id = 343
+						province_id = 217
 					}
 					NOT = { has_fort_building_trigger = yes }
 				}
@@ -1524,16 +1531,22 @@ gawed_column_5 = {
 		}
 		
 		effect = {
-			add_country_modifier = {
-				name = "colonial_enthusiasm"
-				duration = 7300 #20 years
+			gerudian_frontier_region = {
+				limit = {
+					NOT = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
 	
-	gawed_expansion_into_ynn = {
-		icon = mission_iberian_conquistador
-		required_missions = { gawed_colonise_the_broken_sea }
+	A13_alenic_triumph = {
+		icon = mission_rb_conquer_the_highlands
+		required_missions = { A13_consolidate_eastern_reach
+		gawed_advance_up_the_valley	}
 		position = 6
 		
 		provinces_to_highlight = {

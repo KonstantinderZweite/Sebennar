@@ -4900,7 +4900,7 @@ union_of_states_reform = {
 	potential = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
 		NOT = { has_reform = golden_republic_reform }
-		NOT = { has_unlocked_government_reform = { government_reform = F23_trading_post_oversight } }
+		#NOT = { has_unlocked_government_reform = { government_reform = F23_trading_post_oversight } }
 	}
 	
 	modifiers = {
@@ -4914,7 +4914,7 @@ union_of_states_reform = {
 	}
 	trigger = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
-		hidden_trigger = { NOT = { has_unlocked_government_reform = { government_reform = F23_trading_post_oversight } } }
+		#hidden_trigger = { NOT = { has_unlocked_government_reform = { government_reform = F23_trading_post_oversight } } }
 	}
 	boost_income = yes
 	ai = {
@@ -5633,11 +5633,11 @@ dwarovar_cartel_backing = {
 	icon = "paper_money_map"
 	potential = { 
 		culture_group = dwarven 
-		NOT = { has_unlocked_government_reform = { government_reform = F23_uthojdihr_backing } }
+		#NOT = { has_unlocked_government_reform = { government_reform = F23_uthojdihr_backing } }
 	}
 
 	trigger = {
-		hidden_trigger = { NOT = { has_unlocked_government_reform = { government_reform = F23_uthojdihr_backing } } }
+		#hidden_trigger = { NOT = { has_unlocked_government_reform = { government_reform = F23_uthojdihr_backing } } }
 	}
 	
 	modifiers = {

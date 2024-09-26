@@ -4679,7 +4679,6 @@ Y15_5 = {
 				owner = {
 					OR = {
 						has_idea_group = maritime_ideas
-						has_idea_group = naval_ideas
 						has_idea_group = expansion_ideas
 					}
 					capital_scope = { continent = europe }
@@ -4699,7 +4698,6 @@ Y15_5 = {
 					any_known_country = {
 						OR = {
 							has_idea_group = maritime_ideas
-							has_idea_group = naval_ideas
 							has_idea_group = expansion_ideas
 						}
 						capital_scope = { continent = europe }
@@ -4708,7 +4706,6 @@ Y15_5 = {
 				any_known_country = {
 					OR = {
 						has_idea_group = maritime_ideas
-						has_idea_group = naval_ideas
 						has_idea_group = expansion_ideas
 					}
 					capital_scope = { continent = europe }

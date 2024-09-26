@@ -76,6 +76,10 @@
  unlock_z1z_science_tank_division_tt:0 "Unlock Science Tank Division"
  unlock_z1z_dagrite_tank_division_tt:0 "Unlock Dagrite Tank Division"
  unlock_z1z_ramsteel_tank_division_tt:0 "Unlock Ramsteel Tank Division"
+
+
+ #country events
+
  flavor_goblin_trading_company.1:0 "Choosing a Capital"
  flavor_goblin_trading_company.1.t:0 "Choosing a Capital"
  flavor_goblin_trading_company.1.d:0 "As the goblins look out at the new empire its borders feel endless from where we began. What started off as a small southern kingdom now controls at least all of eastern escann from the mountains to the western walls of castonath and down to the mysterious deepwoods. A goblins surveyor comes by to offer a new location for our capital. There are many locations that are now open to us for a permenant residence. Each location will bring its own benifits to our empire. Marrhold can use their deep hold to produce our tanks even cheaper, Steelhyl increasing our morale as its been built on the capital of our enslavers, upper castonath will show us how to increase our production, lower castonath can be used for their endless houses to fill our populations and south castonath will show us how to properly develop our nation."
@@ -109,6 +113,7 @@
  flavor_goblin_trading_company.2.v:0 "The Grobilazk Cult"
  flavor_goblin_trading_company.2.w:0 "The Scribble Cult"
  flavor_goblin_trading_company.2.x:0 "The Muta Kroozpauz Cult"
+ 
  flavor_goblin_trading_company.3:0 "Goblinsblade Forged!"
  flavor_goblin_trading_company.3.t:0 "Goblinsblade Forged!"
  flavor_goblin_trading_company.3.d:0 "The fires of the forges are lit. The day has come to make the weapon that will define our nation. The best metalsmiths were picked from across the country and the highest quality iron brought to the fires. The naming was a long and difficult process but decided on a simple name of goblinsblade as this is the pinnical of goblin ingenuity so we can go for a nice simple name here. Finally the blade is complete and soon our greatest project will be shown to the greater world."
@@ -148,6 +153,7 @@
  flavor_goblin_trading_company.11.d:0 "There has been some devastating news. We have heard about normal steel but we didnt really know of the production methods. We were so focused on what that goblin did at the formation of our new country that we didnt even take the time to ask how to make the metals around us. Now it has been brought to our attention that our 'Goblinsteel' is just normal steel. We have become the laughingstock of the greater community and now we must suffer the consequences. But also a particularly smart goblin has brought to our attention that this doesnt have to be the end of it. We know of mithril in the mountains and the feywood in the deepwoods. What if we were to comine those? maybe nothing but it will be new and our own thing. Who knows maybe this will be a new material better than them all even if it is much too expensive to properly produce"
  flavor_goblin_trading_company.11.a:0 "It is time to go into the mountains"
  flavor_goblin_trading_company.11.b:0 "It is time to go into the deepwoods"
+ 
  flavor_goblin_trading_company.12:0 "The Fey Revolt!"
  flavor_goblin_trading_company.12.t:0 "The Fey Revolt!"
  flavor_goblin_trading_company.12.d:0 "Long have we been ignoring our deals with the fey and it appears that enough is enough. from every corner of the deepwoods there appears to be animals controlled by the fey hunting down goblins and destroying our tanks! They must be dealt with to continue production"
@@ -172,6 +178,9 @@
  flavor_goblin_trading_company.17.t:0 "Sudden Fey Ambush"
  flavor_goblin_trading_company.17.d:0 "The fey have decided to suddenly attack us through the deepwoods. This small incursion will be dealt with swiftly and efficiently"
  flavor_goblin_trading_company.17.a:0 "Just a small distraction"
+
+
+ #missions
  z1z_getting_a_supply_started_title:0 "Getting a Supply Started"
  z1z_getting_a_supply_started_desc:0 "Alright, we have learned the secrets of making our goblinsteel now we just have to conquer the first hurdle, getting our hands on iron. Once we do then we can try and replicate it for mass production"
  z1z_showing_dominance_over_orcs_title:0 "Showing Dominance Over Orcs"
@@ -450,6 +459,12 @@
  z1z_reforging_goblinsblade_1_desc:0 "It is time to reforge goblinsblade. We know how to make goblinsteel and depending on how it is that we decided to guide our empire we can produce it and we can now show the world what we can do. Goblinsteel is made with the magics of the fey in the feywood as well as them helping in the process of smelting the mithril found in the mountains. It is a very expensive and impractical refining process not really drawing out that much extra strength for the work done to create it but it is undoubtably ours and as such we should recreate the blade that disgraced us all those years ago anew and more powerful than ever."
  z1z_wars_won:0 "Wars Won"
  z1z_tanks_overwatching_province:0 "Tanks Overwatching Province"
+
+ z1z_wars_won:0 "Wars Won"
+ z1z_tanks_overwatching_province:0 "Tanks Overwatching Province"
+
+
+
  z1z_all_terrain_tanks:0 "All Terrain Tanks"
  z1z_driller_tanks:0 "Driller Tanks"
  z1z_mountain_tanks:0 "Mountain tanks"
@@ -467,6 +482,9 @@
  goblin_trading_company_ADJ:0 "Goblin Trading Company"
  goblin_trading_company_nation_title:0 "Form the Goblin Trading Company"
  goblin_trading_company_nation_desc:0 "The goblin trading company is an amalgamation of goblins not doing their research and just doing things. First it is not a trading company, not in the slightest. They decided upon the name when they realized that places with the name trading company tended to make money so therefore we should name it ourselves. Second is the invention of steel. Goblins have spent their lives being slaves and fodder that they havent really had the time to integrate everything from their surroundings all at once and that includes steel production. So when they create steel themselves they think it is a new resource. Surely this will not have any consequences."
+ 
+
+ #rebel
  archfey_servants_rebel:0 "Archfey Servants"
  archfey_servants_rebel_name:0 "Archfey Servants"
  archfey_servants_rebel_army:0 "Archfey Servants"
@@ -474,6 +492,7 @@
  archfey_servants_demand_desc:0 "Leave this forest"
  archfey_servants_rebel_title:0 "Archfey Servants"
  archfey_servants_rebel_desc:0 "Serventa of the archfey. They are dedicated and powerful but their defeat may finally bring an end to all this"
+ 
  fey_animals_rebel:0 "Fey Animals"
  fey_animals_rebel_name:0 "Fey Animals"
  fey_animals_rebel_army:0 "Fey Animals"
