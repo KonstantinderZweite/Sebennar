@@ -41,7 +41,7 @@ elven_administration = {
 	#1 + 0.75 + 1 + 0.5 + 1 = 4.75
 	
 	#Negatives
-	global_colonial_growth = -40		#-1 B / slow reproduction, not really built for colonizing really (must be boosted via other means)
+	global_colonial_growth = -25		#-1 B / slow reproduction, not really built for colonizing really (must be boosted via other means)
 	
 	technology_cost = 0.05				#-1 S / traditional people and often slow to new ideas as the old guard lives for so long
 	embracement_cost = 0.33				#-3 C / VERY traditional people
