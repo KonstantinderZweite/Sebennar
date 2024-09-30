@@ -477,11 +477,9 @@ country_event = {
 	
 	option = {
 		name = flavor_zamhar.11.a
-		immediate = {
-			add_country_modifier = {
-				name = z2z_mages_working_with_artificers
-				duration = 3650
-			}
+		add_country_modifier = {
+			name = z2z_mages_working_with_artificers
+			duration = 3650
 		}
 		add_country_modifier = {
 			name = z2z_artificers_enhancing_mage_output

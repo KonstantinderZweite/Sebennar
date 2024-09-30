@@ -5,7 +5,6 @@ on_battle_won_country = {
 				attacker_leader = Z2Z
 				casus_belli = z2z_learning_raids
 			}
-			land_units_lost = 10
 			tag = Z2Z
 		}
 		change_variable = {
