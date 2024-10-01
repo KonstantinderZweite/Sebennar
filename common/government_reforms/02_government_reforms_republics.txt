@@ -2188,6 +2188,7 @@ adventurer_republic_reform = {	#adventurer council
 technocracy_republic_reform = {
 	icon = "paper_with_seal"
 	allow_normal_conversion = yes	#changed this from no
+	lock_level_when_selected = yes
 	potential = {
 		NOT = { has_reform = crown_colony_government }
 		NOT = { has_reform = private_enterprise_colony_government }

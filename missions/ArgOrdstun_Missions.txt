@@ -2786,7 +2786,7 @@ H76_4_second = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = dwarovar_ensure_worker_rights_tooltip
-				has_country_flag = hoardcurse_happened
+				#has_country_flag = hoardcurse_happened
 			}
 		}
 

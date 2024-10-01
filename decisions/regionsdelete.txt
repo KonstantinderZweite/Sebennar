@@ -1,25 +1,25 @@
 
-country_decisions = {
-regions_delete = {
-    potential = {
-    NOT = { has_global_flag = mp_regions_deleted}
-    ai = no
-    NOT = {
-        is_year = 1445
-        }
+# country_decisions = {
+# regions_delete = {
+    # potential = {
+    # NOT = { has_global_flag = mp_regions_deleted}
+    # ai = no
+    # NOT = {
+        # is_year = 1445
+        # }
 
-        }
-    allow={
-         ai = no
+        # }
+    # allow={
+         # ai = no
 
-    }
+    # }
 
-    effect = {
+    # effect = {
                 
-				forbidden_lands_superregion = { destroy_province_permanently = yes }
-				limit = { province_id = 5481
-				}
-        set_global_flag = mp_regions_deleted
-    }
-}
-}
+				# forbidden_lands_superregion = { destroy_province_permanently = yes }
+				# limit = { province_id = 5481
+				# }
+        # set_global_flag = mp_regions_deleted
+    # }
+# }
+# }

@@ -9447,46 +9447,39 @@ A75_ideas = {
 #Vrorenmarch
 Z45_ideas = {
 	start = {
-		colonists = 1
-		defensiveness = 0.15
+		build_cost = -0.15
+		shock_damage_received = -0.1
 	}
-
 	bonus = {
-		reinforce_speed = 0.15
+		liberty_desire_from_subject_development = -0.25
 	}
-
 	trigger = {
-		OR = {
-			tag = Z45
-		}
+		tag = Z45
 	}
 
 	free = yes
 
-	Z45_tragedy_at_bal_vroren = {
-		hostile_attrition = 1
+	Z45_the_diet_of_mammoth_hall = {
+		vassal_forcelimit_bonus = 1.5
+		vassal_naval_forcelimit_bonus = 0.5
 	}
-	Z45_learning_from_the_giantsbane_phalanx = {
+	Z45_the_vrorenwall = {
+		defensiveness = 0.20
+	}
+	Z45_the_gate_of_cannor = {
+		num_accepted_cultures = 2
+	}
+	Z45_wudhal_privileges = {
+		development_cost = -0.1
+	}
+	Z45_union_of_flame_and_throne = {
+		tolerance_heathen = 2
+	}
+	Z45_path_to_chivalry = {
+		diplomatic_reputation = 1.5
+	}
+	Z45_the_northern_shield = {
 		discipline = 0.05
-	}
-	Z45_protect_the_bal_vroren_market = {
-		global_own_trade_power = 0.15
-	}
-	Z45_the_vrorenmarcher_helmsmen = {
-
-		galley_power = 0.15
-		galley_cost = -0.1
-	}
-	Z45_rule_with_a_frozen_fist = {
-		yearly_absolutism = 1
-	}
-	Z45_the_royal_vrorenfleet = {
-		naval_forcelimit_modifier = 0.2
-
-	}
-	Z45_bulwark_against_northern_barbarians = {
-		manpower_recovery_speed = 0.1
-		garrison_size = 0.1
 	}
 }
 
@@ -26432,5 +26425,76 @@ Z8Z_ideas = {
 	}
 	Z8Z_The_Best_Troops_In_Bulwar = {
 		land_morale = 0.175
+	}
+}
+L57_ideas = { #Boyebareti
+	start = {
+		shock_damage_received = -0.10 #heavily armored in iron
+		global_regiment_cost = -0.10
+	}
+	bonus = {
+		stability_cost_modifier = -0.15 #the land is secure and endures
+	}
+	trigger = {
+		tag = L57
+	}
+	free = yes		#will be added at load.
+
+	L57_resilience_of_hills = { #pushed back Raheni adventurer conquests sent by Sarkashabid through indomitable spirit
+		recover_army_morale_speed = 0.10
+	}
+	L57_omnidirectional_fortifications = { #after centuries of skirmishes with harpies, good at fighting aginst foes on land, sea, and sky
+		defensiveness = 0.15
+	}
+	L57_mercantile_diplomacy = { #diplomacy through merchant contacts
+		improve_relation_modifier = 0.2
+	}
+	L57_iron_hulls = { #Make the ships not sink
+		ship_durability = 0.1
+	}
+	L57_boyebareti_philosophers = { #cant trust foreigners, time to do native philosophical traditions
+		same_culture_advisor_cost = -0.15
+	}
+	L57_league_free_kings = { #technically first among equals in a league of kings, used to juggling diplomatic contacts
+		diplomatic_upkeep = 1
+	}
+	L57_gleti_sedar = { #kings of the iron mountains and their forges for blades, shackles, and cannons
+		production_efficiency = 0.10
+	}
+}
+#Hisost Yamok
+S23_ideas = {
+	start = {
+		global_own_trade_power = 0.1 #origins as trade posts
+		cavalry_power = 0.15 #rhino riders
+	}
+	bonus = {
+		diplomats = 1 #plays bigger powers off eachother to survive
+	}
+	trigger = {
+		tag = S23 #Hisost Yamok
+	}
+	free = yes
+	
+	S23_born_from_little = { #intro of how the settlements on the left bank of the keygas were founded, their development, and hisost yamok�s founding as a kingdom in the 1300s. 
+		build_cost = -0.1
+	}
+	S23_seble_the_indomitable_queen = { #warrior queen, legendary
+		morale_damage = 0.1
+	}
+	S23_the_2_gods = { # Kvanga worship influences hisost yamok's faith. Primarily worships Amilak, also worships Kvanga too.
+		tolerance_own = 2
+	}
+	S23_awirenya = { #origin of rhino taming and riding, rhinos are sacred here, poachers executed brutally. To be a rhino rider is an extremely prestigious position, only lesser kings and their family can become one. Tactics are improved over time, such that rhino riding is brought to its full effectiveness.
+		cavalry_shock = 0.25
+	}
+	S23_the_rabwag = { #Beginning with Seble, gnolls would make up more and more of the army, eventually becoming their own warrior class in hisost yamok, as kings seek to not rely as heavily on the noble dominated rhino riders for support. Primarily infantry based, the rabwag end up with a lot of influence, essentially a second army of the kingdom controlled by gnollish generals personally loyal to the king.
+		movement_speed = 0.15
+	}
+	S23_sarkamipi_struggle = { #centuries long struggle against haraagtseda, characterized by lots of grassforts
+		fort_maintenance_modifier = -0.15
+	}
+	S23_a_gnollish_mengi_king = { #sometime in the late 1500s one of the kings tries to reform the army so its not as dominated by gnolls, gets couped and killed as a result. Hisost Yamok becomes ruled by a heavily assimilated gnollish dynasty.
+		num_accepted_cultures = 2
 	}
 }

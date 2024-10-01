@@ -40,12 +40,7 @@ alliance = {
 	end_date = 1500.1.1
 }
 #Sarnavan - Tilathi
-vassal = {
-	first = R10
-	second = R12
-	start_date = 1444.1.1
-	end_date = 1500.1.1
-}
+
 #Sarnavan - Kamapar
 vassal = {
 	first = R10
