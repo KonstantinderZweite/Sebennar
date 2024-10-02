@@ -907,10 +907,6 @@ goblin_trading_company_center_mithril_1 = {
 		
 		effect = {
 			2868 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -950,10 +946,6 @@ goblin_trading_company_center_mithril_1 = {
 				add_permanent_claim = ROOT
 			}
 			2873 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -988,10 +980,6 @@ goblin_trading_company_center_mithril_1 = {
 		
 		effect = {
 			4236 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -2811,10 +2799,6 @@ goblin_trading_company_center_mithril_2 = {
 		
 		effect = {
 			2868 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -2854,10 +2838,6 @@ goblin_trading_company_center_mithril_2 = {
 				add_permanent_claim = ROOT
 			}
 			2873 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -2892,10 +2872,6 @@ goblin_trading_company_center_mithril_2 = {
 		
 		effect = {
 			4236 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}

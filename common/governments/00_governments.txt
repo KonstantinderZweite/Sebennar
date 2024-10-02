@@ -219,6 +219,8 @@ monarchy = {
 				ikatara_reform
 				anzatara_reform
 				heroic_realm_reform
+				council_of_the_technocrats
+				council_of_the_technocrats_enhanced
 			}
 		}
 		hereditary_vs_nobility = { #Tier 2
@@ -339,7 +341,8 @@ monarchy = {
 				chien_ancestral_council_reform
 				orldhum_highlords_retinue
 				gods_attoners
-
+				advisors_of_a_particular_skill
+				advisors_of_a_particular_skill_enhanced
 
 			}
 		}
