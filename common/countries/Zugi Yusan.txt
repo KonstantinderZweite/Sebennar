@@ -3,7 +3,7 @@
 
 graphical_culture = nomadgfx
 
-color = { 92 99 86 }
+color = { 0  102  255 }
 
 historical_idea_groups = {
 	
