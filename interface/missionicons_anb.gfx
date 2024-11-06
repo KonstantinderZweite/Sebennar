@@ -310,6 +310,10 @@ spriteTypes = {
 		name = "mission_star_comet"
 		texturefile = "gfx//interface//missions//mission_star_comet.dds"
 	}
+	spriteType = {
+		name = "mission_dragon"
+		texturefile = "gfx//interface//missions//mission_dragon.dds"
+	}
 	
 	spriteType = {
 		name = "mission_swear_fealty_knight"

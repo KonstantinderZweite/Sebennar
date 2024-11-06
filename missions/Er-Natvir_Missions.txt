@@ -132,11 +132,11 @@ ernatvir_1 = {
 		
 		trigger = {
 			any_owned_province = {
-				has_building = university
 				base_production = 25
 				OR = { 
 					trade_goods = damestear
 					trade_goods = coal 
+					trade_goods = mithril
 				}
 			}
 		}
@@ -280,6 +280,11 @@ ernatvir_2 = {
 				name = ernatvir_revitalized_economy
 				duration = 9125
 			}
+			2931 = {
+		set_great_project_tier_1 ={
+		type = er_natvir_railyard
+		}
+       }
 		}
 	}
 	ernatvir_the_train_hub = {

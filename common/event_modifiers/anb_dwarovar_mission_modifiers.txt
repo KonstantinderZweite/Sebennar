@@ -372,7 +372,7 @@ ernatvir_rebuilders = {
 }
 ernatvir_resettlement_enthusiasm = {
 	global_colonial_growth = 25
-	land_morale = 0.05
+	land_morale = 0.10
 }
 ernatvir_transportation_boom = {
 	global_colonial_growth = 30
@@ -1185,9 +1185,9 @@ mithradhum_tactics = {
 	idea_cost = -0.1
 }
 mithradhum_mithril_armory = {
-	shock_damage_received = -0.075
-	fire_damage_received = -0.075
-	reserves_organisation = 0.075
+	shock_damage_received = -0.05
+	fire_damage_received = -0.05
+	reserves_organisation = 0.05
 }
 mithradhum_grandiose = {
 	diplomatic_reputation = 2

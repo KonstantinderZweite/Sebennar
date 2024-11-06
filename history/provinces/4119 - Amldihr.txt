@@ -1,6 +1,6 @@
-owner = H72
-controller = H72
-add_core = H72
+owner = I06
+controller = I06
+add_core = I06
 culture = highhold_orc
 religion = old_dookan
 trade_goods = paper

@@ -8413,6 +8413,35 @@ havoral_clanship_authority_reform = {
 		manpower_recovery_speed = 0.15
 		global_unrest = -1
 	}
+	effect = {
+		custom_tooltip = producing_wool_woollord
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						trade_goods = wool
+					}
+					add_province_modifier = { 
+						name = wool_lord_wool
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = wool_lord_wool
+				}
+				remove_province_modifier = wool_lord_wool
+			}
+		}
+	}
+	
+	
 }
 
 tluukt_litter_reform = {

@@ -1,0 +1,75 @@
+country_decisions = {
+	artifacts_wearinga = {
+		major = yes
+		potential = {
+	    has_country_flag = A1Z_artifacts
+		NOT = { has_country_flag = aklutazjo_artifact_open_menu }		
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		
+			}
+		effect = {
+		set_country_flag = aklutazjo_artifact_open_menu
+		}
+	}
+	
+	Specter_wearing = {
+		major = yes
+		potential = {
+	    has_country_flag = aklutazjo_artifact_open_menu
+		NOT = { has_country_modifier = Z87_specter }	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		
+			}
+		effect = {
+		add_country_modifier = {
+		name = Z87_specter
+		duration = -1
+		}
+		}
+	}
+	meldedarmour_wearing = {
+		major = yes
+		potential = {
+	    has_country_flag = aklutazjo_artifact_open_menu
+		NOT = { has_country_flag = Z87_meldedarmour_set }	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			
+			}
+		effect = {
+		A1Z = { add_country_modifier = { name = Z87_meldedarmour duration = -1 } }
+		set_country_flag = Z87_meldedarmour_set
+		}
+	}
+	
+	close_artifacta = {
+		major = yes
+		potential = {
+	    has_country_flag = aklutazjo_artifact_open_menu
+				
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+		
+			}
+		effect = {
+		set_country_flag = aklutazjo_close_artifact_menu
+		clr_country_flag = aklutazjo_artifact_open_menu
+		}
+	}
+}
+
+

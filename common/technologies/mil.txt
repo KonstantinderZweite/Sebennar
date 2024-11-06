@@ -1368,6 +1368,7 @@ technology = {
 	enable = west_sarhaly_19_iqhekabi_gunners
 	enable = forest_goblin_19_maketa_companies
 	enable = forest_goblin_19_riftrippers
+	enable = forest_goblin_19_infused_snipers
 	enable = salahadesi_19_bronze_dragon_regiments
 	enable = salahadesi_19_igrax_erega
 	enable = lizardfolk_19_one_banner_regiments
@@ -1393,6 +1394,7 @@ technology = {
 	enable = northern_troll_19_chainshot_cannoneers
 	enable = hill_troll_19_inf
 	enable = deep_goblin_19_magnesium_grenades
+	
 }
 
 technology = {

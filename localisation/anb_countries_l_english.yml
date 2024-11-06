@@ -2019,7 +2019,7 @@
  V09_ADJ:0 "Shevhedili"
  V10:0 "Motelisamok"
  V10_ADJ:0 "Motelisamok"
- V11:0 "Kingdom of Emberscar"
+ V11:0 "Emberscar"
  V11_ADJ:0 "Emberscar"
  V12:0 "Kuenan Nirokyu"
  V12_ADJ:0 "Kuenan Nirokyu"
@@ -2425,4 +2425,7 @@
 
  NPC:0 "NPC"
  NPC_ADJ:0 "NPC"
+
+ A1Z:0 "Golden Stems"
+ A1Z_ADJ:0 "Golden Stems"
 

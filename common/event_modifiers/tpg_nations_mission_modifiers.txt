@@ -592,6 +592,48 @@ morale_damage_received = -0.10
 regiment_manpower_usage = -0.1
 
 }
+
+Z87_hue = {
+global_spy_defence = 0.15
+
+
+}
+
+Z87_absolutism = {
+max_absolutism = 10
+yearly_absolutism = 0.1
+}
+
+Z87_fertilized_ground = {
+trade_goods_size = 0.75
+}
+
+Z87_absolute_controla ={
+max_absolutism_effect = 0.25
+max_absolutism = 10
+}
+Z87_specter = {
+country_admin_power = 1
+country_diplomatic_power = 1
+monarch_lifespan = -0.1
+}
+Z87_meldedarmour = {
+land_morale = 0.1
+fire_damage_received = -0.025
+shock_damage_received = -0.025
+}
+Z87_trophy_room = {
+local_manpower_modifier = 0.25
+local_manpower = 10
+local_tax_modifier = 1.0
+local_production_efficiency = 0.75
+trade_goods_size = 4
+}
+Z87_world_unifier = {
+warscore_cost_vs_other_religion = -0.50 
+ae_impact = 2
+stability_cost_to_declare_war = -5
+}
 #Emberscar V11
 V11_conscription = {
 global_unrest = 2

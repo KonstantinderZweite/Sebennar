@@ -5875,6 +5875,25 @@ military_principle_reform = {
 		winning_wars_gives_rt = yes
 	}
 }
+capitulation_principled_reform = {
+	icon = "strength_of_the_khalsa"
+	allow_normal_conversion = yes
+	potential = {
+		has_country_flag = unlock_capitulation_reform_republic
+	}
+	trigger = {
+		tag = Z87 #Anbennar
+	}
+	modifiers = {
+		possible_mil_policy = 1
+		church_influence_modifier = -0.30
+		nobles_influence_modifier = -0.30
+	}
+	custom_attributes = {
+		enables_estate_church = yes
+		enables_estate_nobles = yes 
+	}
+}
 
 revolutionary_principle_reform = {
 	icon = "revolutionary_republic"

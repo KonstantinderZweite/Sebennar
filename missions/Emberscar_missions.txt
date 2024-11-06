@@ -401,7 +401,6 @@ trigger = {
 nomsyulhan_region = {
 type = all
 country_or_non_sovereign_subject_holds = ROOT
-
 }
 }
 effect = {

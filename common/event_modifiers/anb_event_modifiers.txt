@@ -1463,6 +1463,10 @@ building_ruin_cliff_passage = {
 wine_lord_wine = {
 	local_production_efficiency = 0.75
 }
+wool_lord_wool = {
+	local_production_efficiency = 0.50
+
+}
 
 lauren_sil_place_modifier_1 = {
 	land_morale = 0.05

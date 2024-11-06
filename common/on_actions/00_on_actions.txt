@@ -13473,6 +13473,7 @@ on_trade_good_changed = {
 				has_province_modifier = artifice_growthbeans_bonus
 				has_province_modifier = artifice_pearl_cultivator_bonus
 				has_province_modifier = wine_lord_wine
+				has_province_modifier = wool_lord_wool
 				has_province_modifier = G58_sugar_province_goods
 				has_province_modifier = eordan_expedition_site
 				has_province_modifier = damestear_rich_deposit
@@ -13494,6 +13495,7 @@ on_trade_good_changed = {
 		remove_province_modifier = artifice_growthbeans_bonus
 		remove_province_modifier = artifice_pearl_cultivator_bonus
 		remove_province_modifier = wine_lord_wine
+		remove_province_modifier = wool_lord_wool
 		remove_province_modifier = G58_sugar_province_goods
 		remove_province_modifier = eordan_expedition_site
 		remove_province_modifier = damestear_rich_deposit
@@ -13542,6 +13544,20 @@ on_trade_good_changed = {
 			}
 			add_province_modifier = {
 				name = wine_lord_wine
+				duration = -1
+				hidden = yes
+			}
+		}
+		if = {
+			limit = {
+				trade_goods = wool
+				OR = {
+					FROM = { has_reform = havoral_clanship_authority_reform }
+					
+				}
+			}
+			add_province_modifier = {
+				name = wool_lord_wool
 				duration = -1
 				hidden = yes
 			}

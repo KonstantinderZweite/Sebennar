@@ -5887,6 +5887,23 @@ startup_1444_effects = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				OR = {
+					havoral_clanship_authority_reform
+				}
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = wool
+				}
+				add_province_modifier = {
+					name = wool_lord_wool
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
 
 		# Add sugar bonus to Keyolion (From Gov Reform)
 		if = {
@@ -6596,6 +6613,27 @@ on_province_owner_change_effect = {
 				}
 				add_province_modifier = {
 					name = wine_lord_wine
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_province_modifier = wool_lord_wool }
+			OR = {
+				owner = { has_reform = havoral_clanship_authority_reform}
+				
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					trade_goods = wool
+				}
+				add_province_modifier = {
+					name = wool_lord_wool
 					duration = -1
 					hidden = yes
 				}

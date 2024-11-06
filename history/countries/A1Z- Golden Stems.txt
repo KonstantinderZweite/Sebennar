@@ -1,0 +1,24 @@
+
+setup_vision = yes
+government = republic
+add_government_reform = technocracy_republic_reform
+government_rank = 1
+primary_culture = forest_goblin
+religion = pactseeker
+technology_group = tech_forest_goblin
+capital = 6241
+#at least the Escann goblins have something approaching content now
+1550.5.9 = {
+monarch = {
+		name = "Feylen"
+		dynasty = "dragob"
+		birth_date = 1521.9.12
+		adm = 6
+		dip = 6
+		mil = 6
+		female = yes
+	}
+	
+	add_ruler_personality = inspiring_leader
+	add_ruler_personality = cruel_personality
+}

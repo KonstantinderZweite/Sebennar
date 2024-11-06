@@ -510,10 +510,10 @@ bennon_3 = {
 		}
 		effect = {
 			263 = { #Oldpassage
-				add_local_autonomy = 25
+				add_local_autonomy = 5
 			}
 			270 = { #Bennonhill
-				add_local_autonomy = 25
+				add_local_autonomy = 5
 			}
 			add_stability = 1
 		}
@@ -1812,7 +1812,39 @@ havoral_3 = {
 			}
 		}
 	}
+	B66_new_new_stronghold = { 
+		icon = mission_magisterium_fold_eight
+		position = 12
+		required_missions = { 
+			B66_havoric_river_parties
+			B66_new_mountainfolk_stronghold
+			B66_look_upon_the_riverlands
+			B66_the_godshield_secured
+		 }
+		trigger = {
+			912 = { 
+				owned_by = ROOT
+				development = 60
+				
+				has_production_building_trigger = yes
+				has_tax_building_trigger = yes
+				has_trade_building_trigger = yes
+				has_fort_building_trigger = yes
+			}
+		}
+		effect = {
+			912 = { 
+				add_province_modifier = {
+					name = havoral_holdfolk_stronghold
+					duration = -1
+				}
+				change_trade_goods = wool
+			}
+		}
+	}
 }
+
+
 
 havoral_4 = {
 	slot = 4

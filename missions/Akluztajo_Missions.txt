@@ -173,6 +173,66 @@ duration = 10950
 country_event = { id = magic_study.23}
 }
 }
+Z87_spy = {
+icon = mission_great_wall
+position = 11
+required_missions = {
+Z87_dragons_path
+} 
+trigger = {
+treasury = 5000
+}
+effect = {
+add_country_modifier = {
+name = Z87_hue
+duration = -1
+}
+add_treasury = -5000
+}
+}
+Z87_fertilization_magic = {
+icon = mission_magisterium_fold_eight
+position = 12
+required_missions = {
+Z87_spy
+} 
+trigger = {
+domandrod_region = {
+					type = all
+					owner = {
+						primary_culture = forest_goblin
+						NOT = { tag = ROOT }
+					}	
+				}
+}
+effect = {
+
+domandrod_region = {
+					add_province_modifier = {
+					name = Z87_fertilized_ground
+					duration = -1
+	}
+					
+				}
+}
+}
+Z87_armored_snipers = {
+icon = mission_the_dame_tears
+position = 13
+required_missions = {
+Z87_fertilization_magic
+} 
+trigger = {
+is_hegemon = yes 
+army_size = 1000 
+mil_tech = 19
+}
+effect = {
+custom_tooltip = Z87_goblin_new_race_tt
+
+
+}
+}
 }
 Akluztajo_3 = {
 	slot = 3
@@ -376,6 +436,97 @@ add_treasury = -5000
 }
 
 }
+Z87_den_forest = {
+icon = mission_dragon
+position = 11
+required_missions = {
+Z87_dragons_path
+}
+trigger ={ 
+domandrod_region = {
+type = all
+country_or_non_sovereign_subject_holds = ROOT
+}
+
+}
+effect = {
+domandrod_region = {
+					every_owned_province = {
+						remove_core = Z87
+						add_core = A1Z
+						cede_province = A1Z
+						vassalize = A1Z
+						
+					}
+					
+				}
+}
+
+}
+Z87_artifact_repurpose = {
+icon = mission_smith
+position = 12
+required_missions = {
+Z87_den_forest
+}
+trigger ={ 
+A1Z = {
+development = 150
+}
+
+}
+effect = {
+set_country_flag = Z87_artifacts
+custom_tooltip = Z87_artifact_unlock_tt
+}
+
+}
+Z87_dragonslayer_room = {
+icon = mission_magisterium_fold_seven
+position = 13
+required_missions = {
+Z87_artifact_repurpose
+}
+trigger ={ 
+4100 = {
+development = 100
+}
+adm_tech = 20
+}
+effect = {
+4100 = {
+add_permanent_province_modifier = {
+name = Z87_trophy_room
+duration = -1
+}
+}
+add_treasury = -3000
+}
+
+}
+
+Z87_goblin_supremacy = {
+icon = mission_magy
+position = 14
+required_missions = {
+Z87_dragonslayer_room
+Z87_armored_snipers
+Z87_absolute_control
+}
+trigger ={ 
+army_size = 1500
+dip_tech = 25
+}
+
+effect = {
+add_country_modifier = {
+name= Z87_world_unifier
+duration = -1
+}
+
+}
+
+}
 }
 Akluztajo_4 = {
 	slot = 4
@@ -464,6 +615,59 @@ Z87_lost_special_tools= {
 	}
 	
 }
+Z87_armoreda_goblins = {
+icon = mission_crusade_for_varna
+position = 11
+required_missions = {
+Z87_dragons_path
+} 
+trigger = {
+{ has_country_modifier = Z87_hue }
+adm_tech = 16
+}
+effect = {
+add_country_modifier = {
+name = Z87_absolutism
+duration = -1
+}
+}
+}
+Z87_capitulated_populace = {
+icon = mission_unite_west_india
+position = 12
+required_missions = {
+Z87_armoreda_goblins
+} 
+trigger = {
+absolutism = 100
+reform_level = 10
+}
+effect = {
+custom_tooltip = to_another_foresta_tooltip
+set_country_flag = unlock_capitulation_reform_republic
+
+}
+}
+Z87_absolute_control = {
+icon = mission_rajput_trade_guilds
+position = 13
+required_missions = {
+Z87_capitulated_populace
+} 
+trigger = {
+absolutism = 100
+NOT = { unrest = -2 }
+}
+effect = {
+add_country_modifier = {
+name = Z87_absolute_controla 
+duration = -1
+}
+
+}
+}
+
+
 }
 
 Akluztajo_5 = {

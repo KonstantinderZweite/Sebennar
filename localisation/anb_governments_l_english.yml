@@ -364,8 +364,10 @@
 
  
  producing_wine_winelord:0 "Production of §YWine§!: §G+75.0%§!"
+ producing_wool_woollord:0 "Production of §YWool§!: §G+50.0%§!"
  wine_lord_wine:0 "From Government Reforms"
- 
+ wool_lord_wool:0 "From Government Reforms"
+
  producing_livestock_frontier:0 "Production of §YLivestock§!: §G+50.0%§!"
  livestock_boost_frontier:0 "From Government Reforms"
  frontier_republic_steppe_expansion_tt:0 "Reduce the Development Cost Penalty caused by Terrain type of every owned §YSteppe§! provinces by §G50.0%§!."
