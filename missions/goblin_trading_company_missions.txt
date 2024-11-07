@@ -221,6 +221,11 @@ goblin_trading_company_center = {
 				region = south_castanor_region
 				value = 30
 			}
+			owns_core_province = 4097
+			owns_core_province = 860
+			owns_core_province = 833
+			owns_core_province = 832
+			owns_core_province = 831
 		}
 		
 		effect = {
@@ -738,7 +743,7 @@ goblin_trading_company_left = {
 			}
 		}
 		effect = {
-			add_years_of_income = 3
+			add_years_of_income = 1.5
 		}
 	}
 	
@@ -1285,7 +1290,7 @@ goblin_trading_company_left_mithril_1 = {
 		}
 		
 		effect = {
-			add_years_of_income = 2
+			add_years_of_income = 1
 		}
 	}
 	
