@@ -24,7 +24,10 @@ country_decisions = {
 				value = 15
 				region = south_castanor_region
 			}
-			NOT = { exists = Z1Z }
+			NOT = { 
+				exists = Z1Z 
+				has_reform = technocracy_republic_reform
+			}
 		}
 		effect = {
 			change_tag = Z1Z

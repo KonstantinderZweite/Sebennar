@@ -451,7 +451,7 @@ z2z_leftmost = {
 		
 		trigger = {
 			4350 = {
-				has_province_modifier = dig_6
+				has_dwarven_hold_6 = yes
 			}
 		}
 		
@@ -1204,7 +1204,7 @@ z2z_rightmost = {
 		
 		trigger = {
 			4350 = {
-				has_province_modifier = dig_2
+				has_dwarven_hold_2 = yes
 			}
 		}
 		
