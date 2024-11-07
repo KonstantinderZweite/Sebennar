@@ -8404,7 +8404,7 @@ skurkokli_bloodtooth_reform = {
 havoral_clanship_authority_reform = {
 	icon = "self_governing_colony_government"
 	allow_normal_conversion = yes
-	lock_level_when_selected = yes
+	lock_level_when_selected = no
 	potential = {
 		has_reform = havoral_clanship_authority_reform
 	}
