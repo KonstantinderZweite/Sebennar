@@ -413,5 +413,8 @@ artifice_has_unique_invention = {
 		#Snotfinger
 		tag = H89
 		was_tag = H89
+		#Karakhanbar
+		tag = Z54
+		was_tag = Z54
 	}
 }

@@ -476,12 +476,12 @@
  z1z_systems_tank_division:0 "System Tanks"
  z1z_ramsteel_tank_division:0 "Ramsteel Tanks"
  z1z_science_tank_division:0 "Science Tanks"
- Z1Z:0 "Goblin Trading Company"
- Z1Z_ADJ:0 "Goblin Trading Company"
- goblin_trading_company:0 "Goblin Trading Company"
- goblin_trading_company_ADJ:0 "Goblin Trading Company"
- goblin_trading_company_nation_title:0 "Form the Goblin Trading Company"
- goblin_trading_company_nation_desc:0 "The goblin trading company is an amalgamation of goblins not doing their research and just doing things. First it is not a trading company, not in the slightest. They decided upon the name when they realized that places with the name trading company tended to make money so therefore we should name it ourselves. Second is the invention of steel. Goblins have spent their lives being slaves and fodder that they havent really had the time to integrate everything from their surroundings all at once and that includes steel production. So when they create steel themselves they think it is a new resource. Surely this will not have any consequences."
+ Z1Z:0 "Dobrelokro"
+ Z1Z_ADJ:0 "Dobrelokro"
+ goblin_trading_company:0 "Dobrelokro"
+ goblin_trading_company_ADJ:0 "Dobrelokro"
+ goblin_trading_company_nation_title:0 "Form Dobrelokro"
+ goblin_trading_company_nation_desc:0 "Dobrelokro is an amalgamation of goblins not doing their research and just doing things. First it is not a trading company, not in the slightest. They decided upon the name when they realized that places with the name trading company tended to make money so therefore we should name it ourselves. Second is the invention of steel. Goblins have spent their lives being slaves and fodder that they havent really had the time to integrate everything from their surroundings all at once and that includes steel production. So when they create steel themselves they think it is a new resource. Surely this will not have any consequences."
  
 
  #rebel

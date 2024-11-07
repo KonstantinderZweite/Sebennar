@@ -6,6 +6,11 @@ on_battle_won_country = {
 				casus_belli = z2z_learning_raids
 			}
 			tag = Z2Z
+			enemy_unit = {
+				unit_owner = {
+					NOT = { tag = NAT }
+				}
+			}
 		}
 		change_variable = {
 			which = z2z_battles_won

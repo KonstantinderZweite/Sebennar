@@ -52,13 +52,13 @@ country_decisions = {
 			NOT = {
 				check_variable = {
 					which = z2z_battles_won
-					value = 60
+					value = 120
 				}
 			}
 			NOT = {
 				check_variable = {
 					which = z2z_sieges_won
-					value = 20
+					value = 40
 				}
 			}
 		}

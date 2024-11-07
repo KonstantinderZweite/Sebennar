@@ -18,6 +18,12 @@ country_event = {
 	
 	option = {		# Orcish Kingdom
 		name = "orcform.1.a"
+		trigger = {
+			NOT = {
+				tag = Z54 #Karakhanbar goes Republic
+				has_country_flag = broken_jaw_grombari_council_unlocked #Broken Jaw goes Republic
+			}
+		}
 		ai_chance = { 
 			factor = 60
 			modifier = {
@@ -75,6 +81,12 @@ country_event = {
 	}
 	option = {		# Orcish Theocracy
 		name = "orcform.1.c"
+		trigger = {
+			NOT = {
+				tag = Z54 #Karakhanbar goes Republic
+				has_country_flag = broken_jaw_grombari_council_unlocked #Broken Jaw goes Republic
+			}
+		}
 		ai_chance = { 
 			factor = 10 
 			modifier = {

@@ -2049,6 +2049,25 @@ on_siege_won_country = {
 	}
 	
 	centaur_siege_won = yes
+	
+	#Karakhanbar Disaster
+	if = {
+		limit = {
+			has_country_flag = karakhanbar_losing_capital
+			FROM = {
+				is_capital_of = ROOT
+			}
+		}
+		clr_country_flag = karakhanbar_losing_capital
+	}
+	#Accretive Path
+	if = {
+		limit = {
+			FROM = { is_capital = yes }
+			ROOT = { culture = beikling }
+		}
+		ROOT = { accretive_path_beikling_chi_stacking_effect = { amount = 30 } }
+	}
 }
 
 # country
@@ -2231,6 +2250,14 @@ on_siege_lost_province =  {
 			FROM = { NOT = { culture_group = kobold } }
 		}
 		province_event = { id = theatre_of_attrition.6 } 
+	}
+	
+	if = { #Karakhanbar Disaster
+		limit = { 
+			has_province_modifier = karakhanbar_feyinfused_grove
+			has_province_modifier = scorched_earth 
+		}
+		remove_province_modifier = karakhanbar_feyinfused_grove
 	}
 }
 
@@ -15319,6 +15346,19 @@ on_adm_exploited = {
 	if = { limit = { owner = { tag = F27 } culture = gelkar } change_variable = { which = f27_gelkar_development value = -1 } }
 	if = { limit = { owner = { tag = F27 } culture = maqeti } change_variable = { which = f27_maqeti_development value = -1 } }
 	if = { limit = { owner = { tag = F27 } culture = sandfang_gnoll } change_variable = { which = f27_sandfang_development value = -1 } }
+	
+	#Karakhanbar
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = karakhanbar_not_losing_development_chance
+			}
+		}
+		random = {
+			chance = 50
+			add_base_tax = 1
+		}
+	}
 }
 
 on_dip_exploited = {
@@ -15342,6 +15382,19 @@ on_dip_exploited = {
 	if = { limit = { owner = { tag = F27 } culture = gelkar } change_variable = { which = f27_gelkar_development value = -1 } }
 	if = { limit = { owner = { tag = F27 } culture = maqeti } change_variable = { which = f27_maqeti_development value = -1 } }
 	if = { limit = { owner = { tag = F27 } culture = sandfang_gnoll } change_variable = { which = f27_sandfang_development value = -1 } }
+	
+	#Karakhanbar
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = karakhanbar_not_losing_development_chance
+			}
+		}
+		random = {
+			chance = 50
+			add_base_production = 1
+		}
+	}
 }
 
 on_mil_exploited = {
@@ -15365,6 +15418,19 @@ on_mil_exploited = {
 	if = { limit = { owner = { tag = F27 } culture = gelkar } change_variable = { which = f27_gelkar_development value = -1 } }
 	if = { limit = { owner = { tag = F27 } culture = maqeti } change_variable = { which = f27_maqeti_development value = -1 } }
 	if = { limit = { owner = { tag = F27 } culture = sandfang_gnoll } change_variable = { which = f27_sandfang_development value = -1 } }
+	
+	#Karakhanbar
+	if = {
+		limit = {
+			owner = {
+				has_country_flag = karakhanbar_not_losing_development_chance
+			}
+		}
+		random = {
+			chance = 50
+			add_base_manpower = 1
+		}
+	}
 }
 
 on_raze = {
@@ -15635,7 +15701,32 @@ on_naval_barrage = { #ROOT - barraging country, FROM - barraged province
 }
 
 on_scorch_earth = { #ROOT - scorching country, FROM - scorched province
-
+	FROM = {
+		on_scorch_earth_effect = yes
+	}
+	if = {
+		limit = {
+			ROOT = { 
+				has_country_flag = karakhanbar_powerful_scorch_earth
+				has_wartaxes = yes
+			}
+		}
+		FROM = {
+			every_neighbor_province = {
+				limit = {
+					controlled_by = ROOT
+					NOT = { has_province_modifier = scorched_earth }
+				}
+				add_devastation = 10
+				add_province_modifier = {
+					name = scorched_earth
+					duration = 1825
+				}
+				on_scorch_earth_effect = yes
+			}
+		}
+	}
+	ROOT = { accretive_path_beikling_chi_stacking_effect = { amount = 10 } }
 }
 
 on_war_ended = { #ROOT - Winer FROM - Loser

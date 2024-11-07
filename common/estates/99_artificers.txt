@@ -246,7 +246,15 @@ estate_artificers = {
 			}
 		}
 	}
-
+	
+	custom_name = {
+		desc = estate_karakhanbar_artificers
+		trigger = {
+			tag = Z54
+			has_country_flag = karakhanbar_orcish_artificers
+		}
+	}
+	
 	color = { 191 78 10 }
 
 	privileges = {
@@ -560,6 +568,8 @@ estate_artificers = {
 		artifice_invention_the_carousel #Plumstead 10
 		artifice_endura_reigns #Plumstead 10
 		artifice_everlasting_fertilizer #Plumstead 10
+		artifice_invention_karakhanbar_high_heat_smelters #Karakhanbar 10
+		artifice_invention_karakhanbar_black_hearth_torches #Karakhanbar 30
 	}
 	
 	agendas = {
