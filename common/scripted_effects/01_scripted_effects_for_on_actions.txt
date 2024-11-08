@@ -5891,6 +5891,7 @@ startup_1444_effects = {
 			limit = {
 				OR = {
 					has_reform = havoral_clanship_authority_reform
+          
 				}
 			}
 			every_owned_province = {
