@@ -304,6 +304,7 @@ country_event = {
 	
 	option = {
 		name = flavor_goblinclan.12.a
+		set_country_flag = z8z_advisors
 		add_government_reform = advisors_of_a_particular_skill
 		add_country_modifier = {
 			name = "goblinclan_ruined_trade"

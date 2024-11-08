@@ -76,6 +76,7 @@ country_decisions = {
 		effect = {
 			set_capital = 536
 			change_government = monarchy
+			set_country_flag = z8z_council
 			add_government_reform = council_of_the_technocrats
 			change_tag = Z8Z
 			remove_non_electors_emperors_from_empire_effect = yes
