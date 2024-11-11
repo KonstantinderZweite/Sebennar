@@ -1,14 +1,14 @@
-on_battle_won_country = {
+on_battle_won_unit_effect = {
 	if = {
 		limit = {
-			is_in_war = {
-				attacker_leader = Z2Z
+			unit_owner = {
+				tag = Z2Z
 				casus_belli = z2z_learning_raids
 			}
-			tag = Z2Z
 			enemy_unit = {
 				unit_owner = {
 					NOT = { tag = NAT }
+					NOT = { tag = REB }
 				}
 			}
 		}
