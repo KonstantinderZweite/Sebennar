@@ -13589,6 +13589,20 @@ on_trade_good_changed = {
 				hidden = yes
 			}
 		}
+		if = {
+			limit = {
+				trade_goods = iron
+				OR = {
+					FROM = { has_reform = natvir_authority_reform }
+					
+				}
+			}
+			add_province_modifier = {
+				name = iron_lord_iron
+				duration = -1
+				hidden = yes
+			}
+		}
 
 		#Keyolion add sugar goods bonus (From Gov Reform)
 		if = {

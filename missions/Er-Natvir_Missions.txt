@@ -148,6 +148,137 @@ ernatvir_1 = {
 			}
 		}
 	}
+	ernatvir_standardized_transportation = {
+		icon = mission_green_village
+		position = 4
+		required_missions = {
+			ernatvir_advanced_vehicles
+		}
+		
+		
+		trigger = {
+			treasury = 3000
+			adm_power = 100
+			dip_power = 100
+			mil_power = 100
+		}
+		
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -100
+			add_mil_power = -100
+			add_treasury = -3000
+			add_country_modifier = {
+			name = ernatvir_standard_transportation
+			duration = -1
+			}
+		}
+	}
+	ernatvir_standardized_tools = {
+		icon = mission_industrialize_bengal
+		position = 5
+		required_missions = {
+			ernatvir_standardized_transportation
+		}
+		
+		
+		trigger = {
+			innovativeness = 30
+		}
+		
+		hidden_effect = {
+			add_country_modifier = {
+			name = ernatvir_standard_tools
+			duration = -1
+			}
+		}
+		effect = {
+			custom_tooltip = er_natvir_mission_tt
+			}
+	}
+	ernatvir_steam_buildings = {
+		icon = mission_machine_of_war
+		position = 6
+		required_missions = {
+			ernatvir_standardized_tools
+		}
+		
+		
+		trigger = {
+			2931 = {has_great_project = {
+					type = er_natvir_railyard
+					tier = 2
+				}
+}
+		}
+		
+		effect = {
+			add_country_modifier = {
+			name = er_natvir_steam_builders
+			duration = -1
+			}
+		}
+	}
+	ernatvir_bombings = {
+		icon = mission_magical_forest
+		position = 7
+		required_missions = {
+			ernatvir_steam_buildings
+			
+		}
+		
+		
+		trigger = {
+		government_reform_progress = 200
+		is_year = 1550 
+		}
+		
+		effect = {
+			4119 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 4
+			}
+			add_devastation = 25
+		}
+		4149 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 4
+			}
+			add_devastation = 25
+		}
+		4122 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 4
+			}
+			add_devastation = 25
+		}
+		2931 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 4
+			}
+			add_devastation = 25
+		}
+		4147 = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 4
+			}
+			add_devastation = 25
+		}
+		add_country_modifier = {
+		name = natvir_reactionaries
+		duration = 1825
+		}
+		change_government_reform_progress = -200
+		country_event = {
+			id = flavor_ernatvir.501
+		}
+		}
+	}
 }
 
 ernatvir_2 = {
@@ -360,6 +491,97 @@ ernatvir_2 = {
 			}
 		}
 	}
+	ernatvir_iron_centers = {
+		icon = mission_treasure_room
+		position = 5
+		required_missions = {
+			ernatvir_the_train_hub
+		}
+		
+		
+		
+		trigger = {
+			trading_bonus = {
+					trade_goods = iron
+					value = yes
+				}
+		}
+		
+		effect = {
+			add_government_reform = natvir_authority_reform
+		}
+	}
+	ernatvir_iron_leadership = {
+		icon = mission_zambezi_gold
+		position = 6
+		required_missions = {
+			ernatvir_iron_centers
+		}
+		
+		
+		
+		trigger = {
+			monthly_income = 200
+			num_of_owned_provinces_with = {
+				value = 15
+				trade_goods = iron
+				
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+			name = ernatvir_inflation
+			duration = 3650
+			}
+		}
+	}
+	ernatvir_advanced_hubs = {
+		icon = mission_approach_throne
+		position = 6
+		required_missions = {
+			ernatvir_iron_leadership
+		}
+		
+		
+		
+		trigger = {
+			NOT = { has_country_modifier = ernatvir_inflation }
+		}
+		
+		effect = {
+			add_country_modifier = {
+			name = ernatvir_development
+			duration = -1 
+			}
+		}
+	}
+	ernatvir_steam_powered_weapons = {
+		icon = mission_smith
+		position = 7
+		required_missions = {
+			ernatvir_advanced_hubs
+			ernatvir_bombings
+			ernatvir_goblin_unions
+		}
+		
+		
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 75
+				has_province_modifier = advanced_rail
+			}
+			army_size = 300
+		}
+		
+		effect = {
+			add_country_modifier = {
+			name = ernatvir_steam_weapons
+			duration = -1
+			}
+		}
+	}
 }
 ernatvir_3 = {
 	slot = 3
@@ -504,6 +726,58 @@ ernatvir_3 = {
 				name = ernatvir_dwarovrod_reclaimers
 				duration = 18250
 			}
+		}
+	}
+	ernatvir_goblin_labor = {
+		icon = mission_necromancy
+		position = 6
+		required_missions = {
+			ernatvir_iron_centers
+		}
+		
+		
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				has_goblin_minority_trigger = yes
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+					limit = { has_goblin_minority_trigger = yes }
+					add_permanent_province_modifier = {
+					name = ernatvir_goblin_laborforce
+					duration = -1
+					}
+				}
+		}
+	}
+	ernatvir_goblin_unions = {
+		icon = mission_missive
+		position = 7
+		required_missions = {
+			ernatvir_goblin_labor
+		}
+		
+		
+		
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 30
+				has_goblin_minority_trigger = yes
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+					limit = { has_goblin_minority_trigger = yes }
+					add_permanent_province_modifier = {
+					name = ernatvir_goblin_unionforce
+					duration = -1
+					}
+				}
 		}
 	}
 }

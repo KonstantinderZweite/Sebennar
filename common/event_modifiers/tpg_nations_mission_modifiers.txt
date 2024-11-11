@@ -1071,3 +1071,45 @@ z1z_tanks_overwatching_province = {
 z1z_mages_working_with_fey = {
 	amount_of_hussars = 4
 }
+
+#ErNatvir
+ernatvir_standard_transportation = {
+global_tax_modifier = 0.05
+production_efficiency = 0.05
+trade_efficiency = 0.05
+}
+
+ernatvir_standard_tools = {
+#dig speed = 0.10
+}
+
+er_natvir_steam_builders = {
+great_project_upgrade_cost = -0.15
+great_project_upgrade_time = -0.15
+}
+natvir_reactionaries = {
+global_unrest = 10
+}
+ernatvir_inflation = {
+inflation_reduction = -0.20
+}
+
+ernatvir_development = {
+development_cost = -0.10
+movement_speed = 0.1
+}
+ernatvir_goblin_laborforce = {
+trade_goods_size = 0.10
+local_unrest = 2
+}
+
+ernatvir_goblin_unionforce = {
+tax_income = 6
+local_state_maintenance_modifier = 0.025
+}
+
+ernatvir_steam_weapons = {
+fire_damage = 0.1
+global_manpower_modifier = 0.1
+global_regiment_cost = -0.05
+}

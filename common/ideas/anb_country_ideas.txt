@@ -6289,7 +6289,7 @@ I04_ideas = {
 		global_supply_limit_modifier = 0.33
 	}
 	I06_07_ernatvir_toll_office = {
-		trade_efficiency = 0.2
+		trade_efficiency = 0.15
 	}
 }
 

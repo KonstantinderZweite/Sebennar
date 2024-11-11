@@ -1467,6 +1467,10 @@ wool_lord_wool = {
 	local_production_efficiency = 0.50
 
 }
+iron_lord_iron = {
+	trade_goods_size_modifier = 0.20
+	production_efficiency = 0.2
+}
 
 lauren_sil_place_modifier_1 = {
 	land_morale = 0.05
