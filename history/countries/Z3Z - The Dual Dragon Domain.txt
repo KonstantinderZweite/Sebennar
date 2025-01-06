@@ -1,0 +1,22 @@
+
+setup_vision = yes
+government = theocracy
+government_rank = 1
+primary_culture = goldscale_kobold
+religion = eztarthul_hunt
+technology_group = tech_dual_dragon
+capital = 4976
+
+1000.1.1 = { set_estate_privilege = estate_artificers_organization_state }
+1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+1397.6.11 = {
+	monarch = {
+		name = "Mizcah"
+		dynasty = "Zyen"
+		birth_date = 1410.1.1
+		adm = 4
+		dip = 3
+		mil = 6
+	}
+}

@@ -359,12 +359,14 @@ estate_nobles_levies = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_liberty } #Anbennar
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_control } #Anbennar
+		NOT = { has_estate_privilege = estate_mages_levies }
 		NOT = { tag = I08 } #Anbennar
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_liberty } #Anbennar
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_control } #Anbennar
+		NOT = { has_estate_privilege = estate_mages_levies }
 		if = {
 			limit = {
 				has_estate = estate_maratha
@@ -1408,12 +1410,14 @@ estate_nobles_command_of_the_military = {
 		NOT = { has_country_flag = no_noble_military } # Anbennar
 		NOT = { has_estate_privilege = estate_nobles_isagumze_kulugi_abe_generals }
 		NOT = { has_country_flag = active_sword }
+		NOT = { has_estate_privilege = estate_nobles_z3z_mengi_leadership }
 	}
 	can_select = {
 		NOT = {
 			has_country_flag = vf_lownobles_flg
 		}
 		NOT = { has_estate_privilege = estate_nobles_isagumze_kulugi_abe_generals }
+		NOT = { has_estate_privilege = estate_nobles_z3z_mengi_leadership }
 	}
 	on_granted = {
 		custom_tooltip = estate_nobles_command_of_the_military_tt

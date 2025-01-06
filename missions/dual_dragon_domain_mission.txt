@@ -1,0 +1,1724 @@
+dual_dragon_center = {
+	slot = 3
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z3Z
+	}
+	
+	Z3Z_removing_the_harpies = {
+		icon = mission_harpy_diplomats
+		position = 1
+		trigger = {
+			bedaphire_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			irkan_eparta_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						culture = naleni_harpy
+					}
+					change_culture = goldscale_kobold
+					change_religion = eztarthul_hunt
+					remove_harpy_minority_size_effect = yes
+					remove_harpy_minority_size_effect = yes
+					remove_harpy_minority_size_effect = yes
+					remove_harpy_minority_size_effect = yes
+				}
+			}
+			every_owned_province = {
+				if = {
+					limit = {
+						has_harpy_minority_trigger = yes
+					}
+					change_religion = eztarthul_hunt
+					remove_harpy_minority_size_effect = yes
+					remove_harpy_minority_size_effect = yes
+					remove_harpy_minority_size_effect = yes
+					remove_harpy_minority_size_effect = yes
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = flavor_dual_dragon_domain.4
+					days = 1
+				}
+			}
+		}
+	}
+	Z3Z_searching_for_the_dragons = {
+		icon = mission_iberian_conquistador
+		position = 3
+		
+		required_missions = {
+			Z3Z_a_new_home
+			Z3Z_fortifying_our_positions
+		}
+		trigger = {
+			army_size_percentage = 1
+			is_monarch_leader = yes
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_acquiring_information
+				duration = 3650
+			}
+		}
+	}
+	Z3Z_finding_the_site = {
+		icon = mission_conquer_malwa_guj
+		position = 6
+		required_missions = {
+			Z3Z_hints_of_dragons_along_the_coast
+			Z3Z_hints_of_dragons_to_the_west
+			Z3Z_the_gnolls_own_the_graveyard
+			Z3Z_the_trolls_own_the_graveyard
+		}
+		trigger = {
+			owns_core_province = 6118
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_hope_for_the_future
+				duration = -1
+			}
+		}
+	}
+	Z3Z_accepting_the_people = {
+		icon = mission_diplomatic_relation
+		position = 7
+		required_missions = {
+			Z3Z_finding_the_site
+		}
+		trigger = {
+			accepted_culture = ofehibi
+			accepted_culture = sitewosi
+			accepted_culture = metobesebi
+			accepted_culture = yeteferen
+			accepted_culture = talilibeti
+		}
+		
+		effect = {
+			5510 = {
+				add_province_modifier = {
+					name = z3z_a_united_homefront
+					duration = -1
+				}
+			}
+		}
+	}
+	Z3Z_removing_the_invaders = {
+		icon = mission_iroquois_warriors
+		position = 8
+		required_missions = {
+			Z3Z_accepting_the_people
+		}
+		trigger = {
+			pegosi_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			berihrica_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			dakmender_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			biribitid_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			beri_gnidi_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						NOT = {
+							has_owner_accepted_culture = yes
+						}
+					}
+					change_culture = goldscale_kobold
+					change_religion = eztarthul_hunt
+				}
+			}
+		}
+	}
+	Z3Z_digging_into_the_dragons_graveyard = {
+		icon = mission_mechanical_mining
+		position = 9
+		required_missions = {
+			Z3Z_accepting_local_traditions
+			Z3Z_integrating_the_nobles
+			Z3Z_removing_the_invaders
+			Z3Z_granting_trade_initiatives
+			Z3Z_further_mage_support
+		}
+		trigger = {
+			6118 = {
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+				fort_level = 2
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+				has_building = mage_tower
+			}
+		}
+		
+		effect = {
+			6118 = {
+				add_province_modifier = {
+					name = z3z_unearthing_dragon_pieces
+					duration = -1
+				}
+			}
+		}
+	}
+	Z3Z_an_attempted_resurrection = {
+		icon = mission_pray_light
+		position = 10
+		required_missions = {
+			Z3Z_digging_into_the_dragons_graveyard
+		}
+		trigger = {
+			6118 = {
+				development = 30
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_a_failed_experiment
+				duration = -1
+			}
+			remove_country_modifier = z3z_hope_for_the_future
+			leta_muhaqaar_area = {
+				discover_country = Z3Z
+			}
+		}
+	}
+	Z3Z_a_new_plan = {
+		icon = mission_muslim_administrators
+		position = 11
+		required_missions = {
+			Z3Z_an_attempted_resurrection
+		}
+		trigger = {
+			5483 = {
+				owner = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 30
+					}
+				}
+			}
+			has_spy_network_in = {
+				who = S70
+				value = 30
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_finding_new_answers
+				duration = 3650
+			}
+		}
+	}
+	Z3Z_preparing_the_ritual = {
+		icon = mission_mnd_maj_prepare_eastern_campaigns
+		position = 17
+		required_missions = {
+			Z3Z_expanding_the_world_tree
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				has_building = mage_tower
+				region = yezel_mora_region
+				value = 5
+			}
+			estate_influence = {
+				estate = estate_mages
+				influence = 50
+			}
+			estate_loyalty = {
+				estate = estate_mages
+				loyalty = 70
+			}
+		}
+		
+		effect = {
+			change_estate_land_share = {
+				estate = estate_mages
+				share = 10
+			}
+		}
+	}
+	Z3Z_full_control_over_the_swamp = {
+		icon = mission_control_the_desh
+		position = 18
+		required_missions = {
+			Z3Z_preparing_the_ritual
+		}
+		trigger = {
+			yezel_mora_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				NOT = { culture = swamp_troll }
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_lands_safe_from_trolls
+				duration = -1
+			}
+		}
+	}
+	Z3Z_the_dragon_reborn = {
+		icon = per_reborn_in_fire
+		position = 19
+		required_missions = {
+			Z3Z_the_world_tree_resplendant
+			Z3Z_the_last_fight_of_the_trolls
+			Z3Z_full_control_over_the_swamp
+			Z3Z_defences_to_protect_the_swamp
+			Z3Z_an_army_to_protect_the_swamp
+		}
+		trigger = {
+			adm_power = 400
+			dip_power = 400
+			mil_power = 400
+			treasury = 2000
+		}
+		
+		effect = {
+			enable_mythical_cavalry = { mount = dual_dragon }
+			add_country_modifier = {
+				name = z3z_ineffectual_dragon
+				duration = -1
+			}
+			remove_country_modifier = z3z_a_failed_experiment
+			add_country_modifier = {
+				name = z3z_max_one_dragon
+				duration = -1
+			}
+			country_event = {
+				id = flavor_dual_dragon_domain.5
+			}
+		}
+	}
+	Z3Z_minimal_parts_collected = {
+		icon = mission_the_dame_tears
+		position = 23
+		required_missions = {
+			Z3Z_mengi_leadership_integrated
+			Z3Z_undead_facilities_expanded
+			Z3Z_proper_control_over_all_trade_routes
+			Z3Z_a_treasury_for_the_dragon
+		}
+		trigger = {
+			calc_true_if = {
+				owns_core_province = 6118
+				owns_core_province = 6660
+				owns_core_province = 5442
+				owns_core_province = 5689
+				owns_core_province = 5662
+				owns_core_province = 5529
+				owns_core_province = 5505
+				owns_core_province = 5650
+				owns_core_province = 5483
+				owns_core_province = 5908
+				owns_core_province = 3030
+				owns_core_province = 5470
+				amount = 6
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_hags_removed
+				duration = -1
+			}
+			remove_country_modifier = z3z_ineffectual_dragon
+		}
+	}
+	Z3Z_medium_parts_collected = {
+		icon = mission_frozen_star
+		position = 25
+		required_missions = {
+			Z3Z_a_nation_to_be_feared
+			Z3Z_training_the_undead
+		}
+		trigger = {
+			calc_true_if = {
+				owns_core_province = 6118
+				owns_core_province = 6660
+				owns_core_province = 5442
+				owns_core_province = 5689
+				owns_core_province = 5662
+				owns_core_province = 5529
+				owns_core_province = 5505
+				owns_core_province = 5650
+				owns_core_province = 5483
+				owns_core_province = 5908
+				owns_core_province = 3030
+				owns_core_province = 5470
+				amount = 8
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_trolls_removed
+				duration = -1
+			}
+			remove_country_modifier = z3z_hags_removed
+		}
+	}
+	Z3Z_a_dragon_fully_built = {
+		icon = mission_holy_star
+		position = 27
+		required_missions = {
+			Z3Z_mages_control_increased
+			Z3Z_infusing_draconic_blood_into_soldiers
+		}
+		trigger = {
+			calc_true_if = {
+				owns_core_province = 6118
+				owns_core_province = 6660
+				owns_core_province = 5442
+				owns_core_province = 5689
+				owns_core_province = 5662
+				owns_core_province = 5529
+				owns_core_province = 5505
+				owns_core_province = 5650
+				owns_core_province = 5483
+				owns_core_province = 5908
+				owns_core_province = 3030
+				owns_core_province = 5470
+				amount = 10
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_dragon_enhanced
+				duration = -1
+			}
+			remove_country_modifier = z3z_trolls_removed
+		}
+	}
+	Z3Z_a_dragon_perfected = {
+		icon = mission_star_ascendency
+		position = 28
+		required_missions = {
+			Z3Z_a_dragon_fully_built
+		}
+		trigger = {
+			calc_true_if = {
+				owns_core_province = 6118
+				owns_core_province = 6660
+				owns_core_province = 5442
+				owns_core_province = 5689
+				owns_core_province = 5662
+				owns_core_province = 5529
+				owns_core_province = 5505
+				owns_core_province = 5650
+				owns_core_province = 5483
+				owns_core_province = 5908
+				owns_core_province = 3030
+				owns_core_province = 5470
+				amount = 12
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_dragon_resplendant
+				duration = -1
+			}
+			remove_country_modifier = z3z_dragon_enhanced
+		}
+	}
+	Z3Z_learning_about_genies = {
+		icon = mission_science
+		position = 30
+		trigger = {
+			has_ruler_flag = enchantment_2
+			has_ruler_flag = conjuration_2
+			has_ruler_flag = divination_2
+			has_ruler_flag = evocation_2
+			has_ruler_flag = abjuration_2
+			has_ruler_flag = illusion_2
+			has_ruler_flag = transmutation_2
+		}
+		
+		effect = {
+			custom_tooltip = z3z_adept_at_study_effect_tt
+			hidden_effect = { update_magic_study_experience_modifier = { value = 10 } } 
+		}
+	}
+	Z3Z_finding_the_first_genie = {
+		icon = mission_desert_pilgrim
+		position = 31
+		required_missions = {
+			Z3Z_learning_about_genies
+		}
+		trigger = {
+			num_of_hussars = 1
+			is_monarch_leader = yes
+		}
+		
+		effect = {
+			set_country_flag = z3z_genie_search
+		}
+	}
+	Z3Z_efreet_found = {
+		icon = mission_swiss_mercenaries_flipped
+		position = 32
+		required_missions = {
+			Z3Z_finding_the_first_genie
+		}
+		trigger = {
+			5539 = {
+				num_of_units_in_province = {
+					amount = 200
+					who = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_efreet_impressed
+				duration = -1
+			}
+			5539 = {
+				spawn_rebels = {
+					type = z3z_efreet_army
+					size = 3
+					win = yes
+				}
+				spawn_rebels = {
+					type = z3z_efreet_army
+					size = 3
+				}
+				spawn_rebels = {
+					type = z3z_efreet_army
+					size = 3
+				}
+				spawn_rebels = {
+					type = z3z_efreet_army
+					size = 3
+				}
+				spawn_rebels = {
+					type = z3z_efreet_army
+					size = 3
+				}
+				spawn_rebels = {
+					type = z3z_efreet_army
+					size = 3
+				}
+				spawn_rebels = {
+					type = z3z_efreet_army
+					size = 3
+				}
+				spawn_rebels = {
+					type = z3z_efreet_army
+					size = 3
+				}
+				spawn_rebels = {
+					type = z3z_efreet_army
+					size = 3
+				}
+				spawn_rebels = {
+					type = z3z_efreet_army
+					size = 3
+				}
+			}
+		}
+	}
+	Z3Z_djinn_found = {
+		icon = mission_vrorenmarch_kingdom
+		position = 33
+		required_missions = {
+			Z3Z_efreet_found
+			Z3Z_marid_found
+			Z3Z_shaytan_found
+			Z3Z_silat_found
+			Z3Z_orisha_found
+		}
+		trigger = {
+			adm = 6
+			dip = 6
+			mil = 6
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_djinn_tricked
+				duration = -1
+			}
+		}
+	}
+}
+dual_dragon_leftmost = {
+	slot = 1
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z3Z
+	}
+	Z3Z_new_things_to_research = {
+		icon = mission_magisterium_fold_one
+		position = 1
+		trigger = {
+			has_ruler_modifier = ruler_studying_magic
+		}
+		
+		effect = {
+			custom_tooltip = z3z_adept_at_study_effect_tt
+			hidden_effect = { update_magic_study_experience_modifier = { value = 10 } } 
+		}
+	}
+	Z3Z_hints_of_dragons_along_the_coast = {
+		icon = mission_seize_the_bengal_coast
+		position = 5
+		required_missions = {
+			Z3Z_spying_for_information
+		}
+		trigger = {
+			OR = {
+				yetmesira_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+				dakmender_area = {
+					type = all
+					owned_by = ROOT
+					is_core = ROOT
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_finding_kobolds_along_the_coast
+				duration = -1
+			}
+		}
+	}
+	Z3Z_accepting_local_traditions = {
+		icon = trade_with_the_natives
+		position = 8
+		required_missions = {
+			Z3Z_accepting_the_people
+		}
+		trigger = {
+			any_owned_province = {
+				has_integrated_human_pop_trigger = yes
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = z3z_seperation
+				}
+				country_event = {
+					id = flavor_dual_dragon_domain.12
+				}
+			}
+			else = {
+				country_event = {
+					id = flavor_dual_dragon_domain.13
+				}
+			}
+		}
+	}
+	Z3Z_understanding_the_magics_of_the_swamp = {
+		icon = mission_magical_forest
+		position = 13
+		required_missions = {
+			Z3Z_exploring_the_swamp
+		}
+		trigger = {
+			sketaimypo_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+				has_building = mage_tower
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_a_greater_understanding_of_necromancy
+				duration = -1
+			}
+		}
+	}
+	Z3Z_the_first_hag = {
+		icon = mission_nah_the_enemy_way
+		position = 14
+		required_missions = {
+			Z3Z_learning_about_the_swamp
+			Z3Z_understanding_the_magics_of_the_swamp
+		}
+		trigger = {
+			svitvi_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_dual_dragon_domain.14
+			}
+		}
+	}
+	Z3Z_the_second_hag = {
+		icon = mission_heated_battle
+		position = 15
+		required_missions = {
+			Z3Z_the_first_hag
+		}
+		trigger = {
+			aakeiritki_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_dual_dragon_domain.15
+			}
+		}
+	}
+	Z3Z_the_third_hag = {
+		icon = mission_battle_of_varna
+		position = 16
+		required_missions = {
+			Z3Z_the_second_hag
+		}
+		trigger = {
+			krumkrmura_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_dual_dragon_domain.16
+			}
+		}
+	}
+	Z3Z_the_world_tree_resplendant = {
+		icon = mission_tree_fishing
+		position = 18
+		required_missions = {
+			Z3Z_preparing_the_ritual
+		}
+		trigger = {
+			6690 = {
+				has_great_project = {
+					type = shadowroot_matriarch_purified
+					tier = 3
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_auxilleries_enhanced
+				duration = -1
+			}
+		}
+	}
+	Z3Z_a_legion_without_end = {
+		icon = mission_assemble_an_army
+		position = 21
+		required_missions = {
+			Z3Z_an_army_worthy_of_the_dragons
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 100
+				has_building = training_fields
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_replenishment_expanded
+				duration = -1
+			}
+		}
+	}
+	Z3Z_mengi_leadership_integrated = {
+		icon = ven_standing_army_mission_2
+		position = 22
+		required_missions = {
+			Z3Z_a_legion_without_end
+		}
+		trigger = {
+			has_estate_privilege = estate_nobles_command_of_the_military
+		}
+		
+		effect = {
+			remove_estate_privilege = estate_nobles_command_of_the_military
+			set_estate_privilege = estate_nobles_z3z_mengi_leadership
+		}
+	}
+	Z3Z_shaytan_found = {
+		icon = mission_the_golden_city
+		position = 32
+		required_missions = {
+			Z3Z_finding_the_first_genie
+		}
+		trigger = {
+			5567 = {
+				has_building = fort_magic
+				fort_level = 5
+				has_building = mage_tower
+				development = 30
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_beautiful_city
+				duration = -1
+			}
+		}
+	}
+}
+dual_dragon_left = {
+	slot = 2
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z3Z
+	}
+	
+	Z3Z_a_new_home = {
+		icon = mission_early_game_buildings
+		position = 2
+		required_missions = {
+			Z3Z_removing_the_harpies
+			Z3Z_new_things_to_research
+		}
+		trigger = {
+			5510 = {
+				development = 40
+			}
+			has_institution = renaissance
+		}
+		
+		effect = {
+			5510 = {
+				change_culture = goldscale_kobold
+			}
+		}
+	}
+	Z3Z_spying_for_information = {
+		icon = mission_dark_book
+		position = 4
+		required_missions = {
+			Z3Z_searching_for_the_dragons
+		}
+		trigger = {
+			calc_true_if = {
+				all_known_country = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 30
+					}
+				}
+				amount = 4
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_fortifications_understood
+				duration = 3650
+			}	
+		}
+	}
+	Z3Z_hints_of_dragons_to_the_west = {
+		icon = mission_conquer_mewar
+		position = 5
+		required_missions = {
+			Z3Z_spying_for_information
+		}
+		trigger = {
+			merekawi_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_found_kobolds_to_the_west
+				duration = -1
+			}
+		}
+	}
+	Z3Z_integrating_the_nobles = {
+		icon = mission_noble_council
+		position = 8
+		required_missions = {
+			Z3Z_accepting_the_people
+		}
+		trigger = {
+			has_estate_privilege = estate_nobles_officer_corp
+			NOT = { crown_land_share = 21 }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_mengi_training
+				duration = -1
+			}
+		}
+	}
+	Z3Z_exploring_the_swamp = {
+		icon = mission_explore_the_world
+		position = 12
+		required_missions = {
+			Z3Z_a_new_plan
+		}
+		trigger = {
+			has_spy_network_in = {
+				who = S70
+				value = 80
+			}
+			manpower = 150
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_fortifications_understood
+				duration = 3650
+			}
+		}
+	}
+	Z3Z_learning_about_the_swamp = {
+		icon = mission_scholar_officials
+		position = 13
+		required_missions = {
+			Z3Z_exploring_the_swamp
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 30
+				area = sketaimypo_area
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_the_hags_have_been_weakened
+				duration = 3650
+			}
+		}
+	}
+	Z3Z_expanding_the_world_tree = {
+		icon = mission_che_botanical_exports
+		position = 16
+		required_missions = {
+			Z3Z_the_second_hag
+		}
+		trigger = {
+			6690 = {
+				development = 30
+				has_building = mage_tower
+			}
+		}
+		
+		effect = {
+			6690 = {
+				add_province_modifier = {
+					name = z3z_world_tree_restored
+					duration = -1
+				}
+			}
+		}
+	}
+	Z3Z_the_last_fight_of_the_trolls = {
+		icon = the_hundred_years_war
+		position = 18
+		required_missions = {
+			Z3Z_preparing_the_ritual
+		}
+		trigger = {
+			yezel_mora_region = {
+				type = all
+				NOT = { infantry_in_province = 1 }
+			}
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_dual_dragon_domain.17
+			}
+		}
+	}
+	Z3Z_an_army_worthy_of_the_dragons = {
+		icon = mission_modern_knight_army
+		position = 20
+		required_missions = {
+			Z3Z_the_dragon_reborn
+		}
+		trigger = {
+			num_of_infantry = 500
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_conquerers_of_the_mengi
+				duration = -1
+			}
+		}
+	}
+	Z3Z_experimenting_on_the_army = {
+		icon = mission_artificier_experience
+		position = 21
+		required_missions = {
+			Z3Z_an_army_worthy_of_the_dragons
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				has_building = mage_tower
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+				culture = goldscale_kobold
+				base_manpower = 15
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_undead_can_be_trained
+				duration = -1
+			}
+		}
+	}
+	Z3Z_undead_facilities_expanded = {
+		icon = mission_necromancy
+		position = 22
+		required_missions = {
+			Z3Z_experimenting_on_the_army
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 30
+				has_building = mage_tower
+				has_building = training_fields
+				culture = goldscale_kobold
+				base_manpower = 15
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_retaining_memories_of_past_lives
+				duration = -1
+			}
+		}
+	}
+	Z3Z_training_the_undead = {
+		icon = establish_a_standing_army
+		position = 24
+		required_missions = {
+			Z3Z_minimal_parts_collected
+		}
+		trigger = {
+			army_professionalism = 0.8
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_professional_undead_soldiers
+				duration = -1
+			}
+		}
+	}
+	Z3Z_infusing_draconic_blood_into_soldiers = {
+		icon = mission_potion
+		position = 26
+		required_missions = {
+			Z3Z_medium_parts_collected
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = mage_tower
+				OR = {
+					has_building = training_fields
+				}
+				culture = goldscale_kobold
+				base_manpower = 25
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_unstoppable_undead_legions
+				duration = -1
+			}
+		}
+	}
+	Z3Z_marid_found = {
+		icon = mission_zambezi_gold
+		position = 32
+		required_missions = {
+			Z3Z_finding_the_first_genie
+		}
+		trigger = {
+			treasury = 30000
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_marid_bribed
+				duration = -1
+			}
+			add_treasury = -30000
+		}
+	}
+}
+dual_dragon_right = {
+	slot = 4
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z3Z
+	}
+	Z3Z_fortifying_our_positions = {
+		icon = mission_mountain_castle
+		position = 2
+		required_missions = {
+			Z3Z_building_an_army
+			Z3Z_removing_the_harpies
+		}
+		trigger = {
+			5539 = {
+				fort_level = 2
+			}
+			5439 = {
+				fort_level = 2
+			}
+		}
+		
+		effect = {
+			5539 = {
+				add_province_modifier = {
+					name = z3z_eastern_fortifications
+					duration = -1
+				}
+			}
+			5439 = {
+				add_province_modifier = {
+					name = z3z_eastern_fortifications
+					duration = -1
+				}
+			}
+		}
+	}
+	Z3Z_conquering_for_information = {
+		icon = mission_conquer_romania
+		position = 4
+		required_missions = {
+			Z3Z_searching_for_the_dragons
+		}
+		trigger = {
+			is_at_war = yes
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_expanding_control
+				duration = 3650
+			}
+		}
+	}
+	Z3Z_the_gnolls_own_the_graveyard = {
+		icon = mission_conquer_timbuktu
+		position = 5
+		required_missions = {
+			Z3Z_conquering_for_information
+		}
+		trigger = {
+			yaikehaad_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_finding_kobolds_in_gnoll_territory
+				duration = -1
+			}
+		}
+	}
+	Z3Z_granting_trade_initiatives = {
+		icon = mam_harness_spice_trade
+		position = 8
+		required_missions = {
+			Z3Z_accepting_the_people
+		}
+		trigger = {
+			has_estate_privilege = estate_burghers_monopoly_of_textiles
+			has_estate_privilege = estate_burghers_monopoly_of_dyes
+		}
+		
+		effect = {
+			add_estate_loyalty_modifier = {
+				estate = estate_burghers
+				loyalty = 20
+				duration = 7300
+			}
+		}
+	}
+	Z3Z_building_up_the_towers = {
+		icon = mission_magic_tower
+		position = 12
+		required_missions = {
+			Z3Z_a_new_plan
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = mage_tower
+				NOT = { region = yezel_mora_region }
+			}
+		}
+		
+		effect = {
+			random_owned_province = {
+				limit = {
+					has_building = mage_tower
+					NOT = { region = yezel_mora_region }
+				}
+				add_province_modifier = {
+					name = z3z_mage_control
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_building = mage_tower
+					NOT = { region = yezel_mora_region }
+				}
+				add_province_modifier = {
+					name = z3z_mage_control
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_building = mage_tower
+					NOT = { region = yezel_mora_region }
+				}
+				add_province_modifier = {
+					name = z3z_mage_control
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_building = mage_tower
+					NOT = { region = yezel_mora_region }
+				}
+				add_province_modifier = {
+					name = z3z_mage_control
+					duration = -1
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_building = mage_tower
+					NOT = { region = yezel_mora_region }
+				}
+				add_province_modifier = {
+					name = z3z_mage_control
+					duration = -1
+				}
+			}
+		}
+	}
+	Z3Z_mages_lands_expanded = {
+		icon = mission_mage_general
+		position = 13
+		required_missions = {
+			Z3Z_building_up_the_towers
+		}
+		trigger = {
+			has_estate_privilege = estate_nobles_levies
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = mage_tower
+				NOT = { region = yezel_mora_region }
+				development = 25
+			}
+		}
+		
+		effect = {
+			remove_estate_privilege = estate_nobles_levies
+			set_estate_privilege = estate_mages_levies
+		}
+	}
+	Z3Z_relinquishing_control_to_mages = {
+		icon = mission_delighted_mage
+		position = 14
+		required_missions = {
+			Z3Z_mages_lands_expanded
+		}
+		trigger = {
+			estate_influence = {
+				estate = estate_mages
+				influence = 40
+			}
+			estate_loyalty = {
+				estate = estate_mages
+				loyalty = 50
+			}
+			has_estate_privilege = estate_mages_levies
+		}
+		
+		effect = {
+			define_advisor = {
+				type = court_mage
+				skill = 3
+				culture = goldscale_kobold
+				religion = eztarthul_hunt
+				cost_multiplier = 0.5
+				age = 22
+			}
+		}
+	}
+	Z3Z_the_dragon_army = {
+		icon = gory_to_the_black_army
+		position = 15
+		required_missions = {
+			Z3Z_relinquishing_control_to_mages
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_building = mage_tower
+				NOT = { region = yezel_mora_region }
+				development = 25
+				infantry_in_province = 20
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z3z_dragon_army
+				free_merc = yes
+			}
+		}
+	}
+	Z3Z_defences_to_protect_the_swamp = {
+		icon = mission_sinister_castle
+		position = 18
+		required_missions = {
+			Z3Z_preparing_the_ritual
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				fort_level = 2
+				region = yezel_mora_region
+			}
+		}
+		
+		effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						region = yezel_mora_region
+						fort_level = 2
+					}
+					add_province_modifier = {
+						name = swamp_defences
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+	Z3Z_a_nation_worthy_of_the_dragons = {
+		icon = mission_riches_of_golconda
+		position = 20
+		required_missions = {
+			Z3Z_the_dragon_reborn
+		}
+		trigger = {
+			monthly_income = 300
+		}
+		
+		effect = {
+			6118 = {
+				add_province_modifier = {
+					name = z3z_a_shrine_to_the_dragon
+					duration = -1
+				}
+			}
+		}
+	}
+	Z3Z_mengi_properly_integrated = {
+		icon = mission_interfaith_relations
+		position = 21
+		required_missions = {
+			Z3Z_a_nation_worthy_of_the_dragons
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 20
+				NOT = { culture = goldscale_kobold }
+				development = 30
+			}
+		}
+		
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = z3z_seperation
+				}
+				country_event = {
+					id = flavor_dual_dragon_domain.18
+				}
+			}
+			else = {
+				country_event = {
+					id = flavor_dual_dragon_domain.19
+				}
+			}
+		}
+	}
+	Z3Z_proper_control_over_all_trade_routes = {
+		icon = mission_trade_with_cathay
+		position = 22
+		required_missions = {
+			Z3Z_mengi_properly_integrated
+		}
+		trigger = {
+			5505 = {
+				has_most_province_trade_power = ROOT
+			}
+			5529 = {
+				has_most_province_trade_power = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_mengi_trade_controlled
+				duration = -1
+			}
+		}
+	}
+	Z3Z_a_nation_to_be_feared = {
+		icon = mission_mounted_battle
+		position = 24
+		required_missions = {
+			Z3Z_minimal_parts_collected
+		}
+		trigger = {
+			is_great_power = yes
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_increased_absolutism
+				duration = -1
+			}
+		}
+	}
+	Z3Z_mages_control_increased = {
+		icon = mission_magy
+		position = 26
+		required_missions = {
+			Z3Z_medium_parts_collected
+		}
+		trigger = {
+			estate_influence = {
+				estate = estate_mages
+				influence = 80
+			}
+			estate_loyalty = {
+				estate = estate_mages
+				loyalty = 100
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_mages_working_overtime
+				duration = -1
+			}
+		}
+	}
+	Z3Z_silat_found = {
+		icon = mission_native_build_army_mission
+		position = 32
+		required_missions = {
+			Z3Z_finding_the_first_genie
+		}
+		provinces_to_highlight  = {
+			region = yezel_mora_region
+			NOT = { development = 10 }
+		}
+		trigger = {
+			yezel_mora_region = {
+				type = all
+				development = 10
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_silat_suprised
+				duration = -1
+			}
+		}
+	}
+}
+dual_dragon_rightmost = {
+	slot = 5
+	generic = no
+	ai = yes
+	
+	potential = {
+		tag = Z3Z
+	}
+	Z3Z_building_an_army = {
+		icon = army_reforms
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_supporting_a_larger_army
+				duration = -1
+			}
+		}
+	}
+	Z3Z_the_trolls_own_the_graveyard = {
+		icon = mission_the_battle_for_raichur
+		position = 5
+		required_missions = {
+			Z3Z_conquering_for_information
+		}
+		trigger = {
+			simegesfan_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_found_kobolds_in_troll_territory
+				duration = -1
+			}
+		}
+	}
+	Z3Z_further_mage_support = {
+		icon = mission_magical_forest
+		position = 8
+		required_missions = {
+			Z3Z_accepting_the_people
+		}
+		trigger = {
+			num_of_estate_privileges = {
+				estate = estate_mages
+				value = 4
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_mages_helping_territory
+				duration = 3650
+			}
+		}
+	}
+	Z3Z_the_first_mengi_corps = {
+		icon = mission_mansure_army
+		position = 15
+		required_missions = {
+			Z3Z_relinquishing_control_to_mages
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				base_manpower = 10
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+				NOT = { culture = goldscale_kobold }
+			}
+		}
+		
+		effect = {
+			unlock_merc_company = {
+				merc_company = z3z_mengi_support
+				free_merc = yes
+			}
+		}
+	}
+	Z3Z_an_army_to_protect_the_swamp = {
+		icon = mission_ottoman_early_army
+		position = 18
+		required_missions = {
+			Z3Z_preparing_the_ritual
+		}
+		trigger = {
+			army_size_percentage = 1
+			is_monarch_leader = yes
+		}
+		
+		effect = {
+			country_event = {
+				id = flavor_dual_dragon_domain.20
+			}
+		}
+	}
+	Z3Z_production_of_mengi_goods_expanded = {
+		icon = mission_dominate_home_trade_node
+		position = 21
+		required_missions = {
+			Z3Z_a_nation_worthy_of_the_dragons
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 50
+				NOT = { culture = goldscale_kobold }
+				base_production = 10
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_expanding_borders
+				duration = -1
+			}
+		}
+	}
+	Z3Z_a_treasury_for_the_dragon = {
+		icon = mission_horde_trade
+		position = 22
+		required_missions = {
+			Z3Z_production_of_mengi_goods_expanded
+		}
+		trigger = {
+			treasury = 10000
+		}
+		
+		effect = {
+			add_treasury = -10000
+			add_country_modifier = {
+				name = z3z_armor_for_the_dragon
+				duration = -1
+			}
+		}
+	}
+	Z3Z_orisha_found = {
+		icon = mission_diplomacy_missive
+		position = 32
+		required_missions = {
+			Z3Z_finding_the_first_genie
+		}
+		trigger = {
+			7007 = {
+				num_of_units_in_province = {
+					who = ROOT
+					amount = 1
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = z3z_orisha_greeted
+				duration = -1
+			}
+		}
+	}
+}

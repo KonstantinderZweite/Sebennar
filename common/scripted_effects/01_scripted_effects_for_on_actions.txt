@@ -1324,7 +1324,7 @@ anb_scripted_effects_for_ruler_death  = {
 	
 	#Undead Army
 	if = {
-		limit = { has_country_modifier = undead_military }
+		limit = { has_country_modifier = undead_military NOT = { tag = Z3Z } }
 		country_event = { id = magic_misc_events.4 days = 60 } 
 	}
 
@@ -5905,6 +5905,25 @@ startup_1444_effects = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				OR = {
+					has_reform = natvir_authority_reform
+          
+				}
+			}
+			every_owned_province = {
+				limit = {
+					trade_goods = iron
+				}
+				add_province_modifier = {
+					name = iron_lord_iron
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+
 
 		# Add sugar bonus to Keyolion (From Gov Reform)
 		if = {
@@ -6635,6 +6654,27 @@ on_province_owner_change_effect = {
 				}
 				add_province_modifier = {
 					name = wool_lord_wool
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_province_modifier = iron_lord_iron }
+			OR = {
+				owner = { has_reform = natvir_authority_reform}
+				
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					trade_goods = iron
+				}
+				add_province_modifier = {
+					name = iron_lord_iron
 					duration = -1
 					hidden = yes
 				}

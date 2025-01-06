@@ -365,8 +365,11 @@
  
  producing_wine_winelord:0 "Production of §YWine§!: §G+75.0%§!"
  producing_wool_woollord:0 "Production of §YWool§!: §G+50.0%§!"
+ producing_iron_ironlord:0 "production of §YIron§!:  §G+20.0%§!"
+
  wine_lord_wine:0 "From Government Reforms"
  wool_lord_wool:0 "From Government Reforms"
+ iron_lord_iron:0 "From Government Reforms"
 
  producing_livestock_frontier:0 "Production of §YLivestock§!: §G+50.0%§!"
  livestock_boost_frontier:0 "From Government Reforms"
@@ -462,7 +465,8 @@
  
  havoral_clanship_authority_reform:0 "Clanship Authority"
  havoral_clanship_authority_reform_desc:0 "The Mountainfolk clans of the Havoral Mountains have gained a level of political power not before seen since the days of the Havoric Kingdom of old. This newfound power is being exercised by these clans."
-
+ natvir_authority_reform:0 "Er-Natvir Iron Authority"
+ natvir_authority_reform_desc:0 "We have developed a new way of life. The iron way of life. Iron is love iron is life"
  
  birsartanses_central_administration_1:0 "Modernized Administration"
  birsartanses_central_administration_1_desc:0 "The administration is modernizing and increasingly acts on meritocratic principles. A growing bureaucracy supports the state."

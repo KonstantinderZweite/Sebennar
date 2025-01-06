@@ -1,0 +1,255 @@
+z3z_separated_1_goldscale = {
+    potential = {
+        has_owner_culture = yes
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_2_goldscale }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_goldscale }
+    }
+	trigger = {
+        has_owner_culture = yes
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_2_goldscale }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_goldscale }
+    }
+    local_production_efficiency = -2.5
+    local_manpower_modifier = 0.5
+}
+z3z_separated_1_accepted = {
+    potential = {
+        has_owner_accepted_culture = yes
+		NOT = { has_owner_culture = yes }
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_2_accepted }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_accepted }
+    }
+	trigger = {
+        has_owner_accepted_culture = yes
+		NOT = { has_owner_culture = yes }
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_2_accepted }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_accepted }
+    }
+    local_production_efficiency = 0.5
+    local_manpower_modifier = -2.5
+}
+
+
+z3z_separated_2_goldscale = {
+    potential = {
+        has_owner_culture = yes
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_goldscale }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_goldscale }
+    }
+	trigger = {
+        has_owner_culture = yes
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_goldscale }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_goldscale }
+    }
+    local_production_efficiency = -2.5
+    local_manpower_modifier = 1
+}
+z3z_separated_2_accepted = {
+    potential = {
+        has_owner_accepted_culture = yes
+		NOT = { has_owner_culture = yes }
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_accepted }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_accepted }
+    }
+	trigger = {
+        has_owner_accepted_culture = yes
+		NOT = { has_owner_culture = yes }
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_accepted }
+		NOT = { has_active_triggered_province_modifier = z3z_separated_3_accepted }
+    }
+    local_production_efficiency = 1
+    local_manpower_modifier = -2.5
+}
+
+z3z_separated_3_goldscale = {
+    potential = {
+        has_owner_culture = yes
+		owner = { tag = Z3Z }
+    }
+	trigger = {
+        has_owner_culture = yes
+		owner = { tag = Z3Z }
+    }
+    local_production_efficiency = -2.5
+    local_manpower_modifier = 1.5
+}
+z3z_separated_3_accepted = {
+    potential = {
+        has_owner_accepted_culture = yes
+		NOT = { has_owner_culture = yes }
+		owner = { tag = Z3Z }
+    }
+	trigger = {
+        has_owner_accepted_culture = yes
+		NOT = { has_owner_culture = yes }
+		owner = { tag = Z3Z }
+    }
+    local_production_efficiency = 1.5
+    local_manpower_modifier = -2.5
+}
+
+
+z3z_separated_neither = {
+    potential = {
+        NOT = { has_owner_accepted_culture = yes }
+		NOT = { has_owner_culture = yes }
+		owner = { tag = Z3Z }
+    }
+	trigger = {
+        NOT = { has_owner_accepted_culture = yes }
+		NOT = { has_owner_culture = yes }
+		owner = { tag = Z3Z }
+    }
+    local_production_efficiency = -2.5
+    local_manpower_modifier = -2.5
+}
+
+z3z_combined_1_combined = {
+    potential = {
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_kobold_minority_trigger = yes
+			}
+			AND = {
+				has_owner_culture = yes
+				OR = {
+					has_any_coexisting_minority_trigger = yes
+					has_any_integrated_minority_trigger = yes
+				}
+			}
+		}
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_combined_2_combined }
+		NOT = { has_active_triggered_province_modifier = z3z_combined_3_combined }
+    }
+	trigger = {
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_kobold_minority_trigger = yes
+			}
+			AND = {
+				has_owner_culture = yes
+				OR = {
+					has_any_coexisting_minority_trigger = yes
+					has_any_integrated_minority_trigger = yes
+				}
+			}
+		}
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_combined_2_combined }
+		NOT = { has_active_triggered_province_modifier = z3z_combined_3_combined }
+    }
+    local_production_efficiency = 0.375
+    local_manpower_modifier = 0.375
+}
+z3z_combined_2_combined = {
+    potential = {
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_kobold_minority_trigger = yes
+			}
+			AND = {
+				has_owner_culture = yes
+				OR = {
+					has_any_coexisting_minority_trigger = yes
+					has_any_integrated_minority_trigger = yes
+				}
+			}
+		}
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_combined_3_combined }
+    }
+	trigger = {
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_kobold_minority_trigger = yes
+			}
+			AND = {
+				has_owner_culture = yes
+				OR = {
+					has_any_coexisting_minority_trigger = yes
+					has_any_integrated_minority_trigger = yes
+				}
+			}
+		}
+		owner = { tag = Z3Z }
+		NOT = { has_active_triggered_province_modifier = z3z_combined_3_combined }
+    }
+    local_production_efficiency = 0.75
+    local_manpower_modifier = 0.75
+}
+z3z_combined_3_combined = {
+    potential = {
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_kobold_minority_trigger = yes
+			}
+			AND = {
+				has_owner_culture = yes
+				OR = {
+					has_any_coexisting_minority_trigger = yes
+					has_any_integrated_minority_trigger = yes
+				}
+			}
+		}
+		owner = { tag = Z3Z }
+    }
+	trigger = {
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_kobold_minority_trigger = yes
+			}
+			AND = {
+				has_owner_culture = yes
+				OR = {
+					has_any_coexisting_minority_trigger = yes
+					has_any_integrated_minority_trigger = yes
+				}
+			}
+		}
+		owner = { tag = Z3Z }
+    }
+    local_production_efficiency = 1.125
+    local_manpower_modifier = 1.125
+}
+
+z3z_combined_neither = {
+    potential = {
+        AND = {
+			NOT = { has_owner_accepted_culture = yes }
+			NOT = { has_kobold_minority_trigger = yes }
+		}
+		AND = {
+			NOT = { has_owner_culture = yes }
+			NOT = { has_human_minority_trigger = yes }
+		}
+		owner = { tag = Z3Z }
+    }
+	trigger = {
+        AND = {
+			NOT = { has_owner_accepted_culture = yes }
+			NOT = { has_kobold_minority_trigger = yes }
+		}
+		AND = {
+			NOT = { has_owner_culture = yes }
+			NOT = { has_human_minority_trigger = yes }
+		}
+		owner = { tag = Z3Z }
+    }
+    local_production_efficiency = -2.5
+    local_manpower_modifier = -2.5
+}

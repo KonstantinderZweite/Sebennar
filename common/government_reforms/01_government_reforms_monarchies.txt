@@ -8401,6 +8401,47 @@ skurkokli_bloodtooth_reform = {
 	}
 }
 
+natvir_authority_reform = {
+	icon = "self_governing_colony_government"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		has_reform = natvir_authority_reform
+	}
+	modifiers = {
+		manpower_recovery_speed = 0.10
+	}
+	effect = {
+		custom_tooltip = producing_iron_ironlord
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						trade_goods = iron
+					}
+					add_province_modifier = { 
+						name = iron_lord_iron
+						duration = -1
+						hidden = yes
+					}
+				}
+			}
+		}
+	}
+	removed_effect = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = iron_lord_iron
+				}
+				remove_province_modifier = iron_lord_iron
+			}
+		}
+	}
+	
+	
+}
+
 havoral_clanship_authority_reform = {
 	icon = "self_governing_colony_government"
 	allow_normal_conversion = yes

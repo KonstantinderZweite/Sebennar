@@ -81,4 +81,11 @@
  sareyand_the_blazing_temple:0 "The Blazing Temple"
  sareyand_ash_and_iron:0 "Ash and Iron"
  sareyand_recently_commissioned_scene_of_war:0 "Recently Commissioned Scene of War"
- 
+ #Seb Changes 
+ sareyand_rogue_legion:0 "Rogue Legions"
+ sareyand_marine_samurai_modifier:0 "Engineered Strength"
+ sareyand_engineered_strength_title:0 "Engineered Strength"
+ sareyand_engineered_strength_desc:0 "Through methods of excessive labor we have developed a new armoured layout for our legions. The cost is astronomical but the benefits are clear to all."
+ sareyand_marine_samurai_modifier2:0 "Bloodied Men"
+ sareyand_blooded_legions_title:0 "Bloody Legions"
+ sareyand_blooded_legions_desc:0 "War war never changes.As our men die new ones take up the fold but the newly blooded legions need more training. Perhaps a new more brutal form of training will result in better legions. Perhaps losses will be intense to say the least with a more brutal method but the long term results will be for the best."

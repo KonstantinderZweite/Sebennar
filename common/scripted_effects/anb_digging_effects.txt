@@ -1731,6 +1731,10 @@ setup_digging_deeper_capital = {
 			multiply_variable = { speed = 0.9 }
 		}
 		if = {
+			limit = { owner = { has_country_modifier = ernatvir_standard_tools } }
+			multiply_variable = { speed = 0.9 }
+		}
+		if = {
 			limit = { owner = { has_estate_privilege = artifice_invention_snotfinger_stimulant } }
 			multiply_variable = { speed = 0.9 }
 		}
