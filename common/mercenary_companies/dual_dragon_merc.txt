@@ -1,0 +1,27 @@
+z3z_dragon_army = {
+	regiments_per_development = 0.07
+	cavalry_weight = 0
+    artillery_weight = 0.3
+	home_province = 6652 
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z3z_dragon_army }
+	}
+	modifier = {
+		reinforce_speed = 5
+		mercenary_manpower = 5
+	}
+}
+z3z_mengi_support = {
+	regiments_per_development = 0.03
+	cavalry_weight = 0.2
+    artillery_weight = 0.2
+	home_province = 6652 
+	trigger = {
+		has_unlocked_merc_company = { merc_company = z3z_mengi_support }
+	}
+	modifier = {
+		discipline = 0.1
+		shock_damage = 0.2
+		fire_damage = 0.2
+	}
+}

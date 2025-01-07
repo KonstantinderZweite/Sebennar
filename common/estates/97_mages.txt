@@ -449,6 +449,16 @@ estate_mages = {
 		estate_mages_golem_legs_ram
 		estate_mages_golem_legs_stationary
 		estate_mages_golem_legs_tripedal
+		
+		#dual dragon domain
+		estate_mages_levies
+		estate_mages_z3z_combined_1
+		estate_mages_z3z_combined_2
+		estate_mages_z3z_combined_3
+		estate_mages_z3z_seperated_1
+		estate_mages_z3z_seperated_2
+		estate_mages_z3z_seperated_3
+		estate_nobles_z3z_mengi_leadership
 	}
 
 	agendas = {

@@ -813,6 +813,16 @@ country_event = {
 				duration = -1
 				hidden = yes
 			}
+			if = {
+				limit = {
+					tag = Z3Z
+				}
+				remove_country_modifier = kobold_military
+				add_country_modifier = {
+					name = undead_military
+					duration = -1
+				}
+			}
 		}
 		#orcish
 		if = {

@@ -1,0 +1,168 @@
+eztarthul_hunt_heart = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_heart_found }
+	}
+
+	modifier = {
+		land_morale = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_left_eye = {
+	is_blessing = yes
+	
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_left_eye_found }
+	}
+	
+	modifier = {
+		fire_damage = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_right_eye = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_right_eye_found }
+	}
+	
+	modifier = {
+		fire_damage = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_tail_tip = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_tail_tip_found }
+	}
+
+	modifier = {
+		shock_damage_received = -0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_tail_center = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_tail_center_found }
+	}
+
+	modifier = {
+		fire_damage_received = -0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_front_right_leg = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_front_right_leg_found }
+	}
+
+	modifier = {
+		movement_speed = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_teeth = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_teeth_found }
+	}
+
+	modifier = {
+		shock_damage = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_tongue = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_tongue_found }
+	}
+
+	modifier = {
+		shock_damage = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_claws = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_claws_found }
+	}
+
+	modifier = {
+		shock_damage = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_left_wing = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_left_wing_found }
+	}
+
+	modifier = {
+		movement_speed = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_back_right_leg = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_back_right_leg_found }
+	}
+
+	modifier = {
+		movement_speed = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+eztarthul_hunt_front_left_leg = {
+	is_blessing = yes
+
+	potential = {
+		NOT = { has_country_flag = eztarthul_hunt_front_left_leg_found }
+	}
+
+	modifier = {
+		movement_speed = 0.05
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}

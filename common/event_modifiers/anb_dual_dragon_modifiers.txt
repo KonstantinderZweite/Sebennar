@@ -1,0 +1,183 @@
+z3z_acquiring_information = {
+	spy_offence = 0.2
+}
+z3z_hope_for_the_future = {
+	land_morale = 0.1
+}
+z3z_unearthing_dragon_pieces = {
+	local_development_cost = -0.2
+}
+z3z_a_failed_experiment = {
+	global_unrest = 2
+}
+z3z_finding_new_answers = {
+	province_warscore_cost = -0.2
+}
+z3z_lands_safe_from_trolls = {
+	production_efficiency = 0.1
+}
+z3z_ineffectual_dragon = {
+	is_hussars_modifier = yes
+	reinforce_speed = -0.8
+}
+z3z_hags_removed = {
+	is_hussars_modifier = yes
+	reinforce_speed = -0.4
+}
+z3z_trolls_removed = {
+	is_hussars_modifier = yes
+	reinforce_speed = 0
+}
+z3z_dragon_enhanced = {
+	is_hussars_modifier = yes
+	reinforce_speed = 0.5
+}
+z3z_dragon_resplendant = {
+	is_hussars_modifier = yes
+	reinforce_speed = 1.5
+}
+z3z_finding_kobolds_along_the_coast = {
+	land_forcelimit = 5
+}
+z3z_a_greater_understanding_of_necromancy = {
+	manpower_recovery_speed = 0.2
+}
+z3z_auxilleries_enhanced = {
+	cavalry_power = 0.1
+}
+z3z_replenishment_expanded = {
+	manpower_recovery_speed = 0.2
+}
+z3z_fortifications_understood = {
+	siege_ability = 0.2
+}
+z3z_found_kobolds_to_the_west = {
+	land_forcelimit = 5
+}
+z3z_mengi_training = {
+	leader_land_shock = 1
+}
+z3z_the_hags_have_been_weakened = {
+	province_warscore_cost = -0.2
+}
+z3z_world_tree_restored = {
+	local_development_cost = -0.2
+}
+z3z_conquerers_of_the_mengi = {
+	governing_capacity_modifier = 0.2
+}
+z3z_undead_can_be_trained = {
+	drill_gain_modifier = 0.25
+}
+z3z_retaining_memories_of_past_lives = {
+	discipline = 0.025
+}
+z3z_professional_undead_soldiers = {
+	discipline = 0.075
+}
+z3z_unstoppable_undead_legions = {
+	land_morale = 0.2
+}
+z3z_eastern_fortifications = {
+	local_defensiveness = 0.2
+}
+z3z_expanding_control = {
+	province_warscore_cost = -0.2
+}
+z3z_finding_kobolds_in_gnoll_territory = {
+	land_forcelimit = 5
+}
+z3z_mage_control = {
+	local_development_cost = -0.2
+}
+swamp_defences = {
+	local_defensiveness = 0.2
+}
+z3z_a_shrine_to_the_dragon = { 
+	land_morale = 0.1
+}
+z3z_mengi_trade_controlled = {
+	trade_efficiency = 0.1
+}
+z3z_increased_absolutism = {
+	max_absolutism = 10
+}
+z3z_mages_working_overtime = {
+	manpower_recovery_speed = 0.2
+}
+z3z_supporting_a_larger_army = {
+	land_forcelimit = 10
+}
+z3z_found_kobolds_in_troll_territory = {
+	land_forcelimit = 5
+}
+z3z_mages_helping_territory = {
+	shock_damage = 0.2
+}
+z3z_expanding_borders = {
+	governing_capacity_modifier = 0.2
+}
+z3z_armor_for_the_dragon = {
+	is_hussars_modifier = yes
+	shock_damage_received = -0.3
+	fire_damage_received = -0.3
+}
+z3z_mizcah_necromancy = {
+	land_forcelimit_modifier = -2
+	global_manpower_modifier = -2
+	fire_damage = 0.1
+	shock_damage = 0.1
+	movement_speed = 0.1
+	manpower_recovery_speed = 0.75
+}
+z3z_a_united_homefront = {
+	local_manpower_modifier = 2
+}
+z3z_flame_focused = {
+	fire_damage = 0.2
+}
+z3z_claw_focused = {
+	shock_damage = 0.2
+}
+#seb i know this looks powerful but hussar will be maxxed at 1
+z3z_efreet_impressed = {
+	is_hussars_modifier = yes
+	discipline = 0.15
+	land_morale = 0.3
+}
+z3z_djinn_tricked = {
+	is_hussars_modifier = yes
+	cavalry_power = 0.3
+	cavalry_fire = 2
+	cavalry_shock = 2
+}
+z3z_beautiful_city = {
+	is_hussars_modifier = yes
+	fire_damage_received = -1
+	shock_damage_received = -1
+}
+z3z_marid_bribed = {
+	is_hussars_modifier = yes
+	cavalry_flanking = 2
+	morale_damage = 0.5
+}
+z3z_silat_suprised = {
+	is_hussars_modifier = yes
+	drill_gain_modifier = 5
+	drill_decay_modifier = -1
+}
+z3z_orisha_greeted = {
+	is_hussars_modifier = yes
+	reinforce_cost_modifier = -1
+	military_tactics = 0.5
+}
+z3z_destroy_nation = {
+	land_morale = -10
+	production_efficiency = -5
+	interest = 5
+	trade_efficiency = -5
+	discipline = -10
+	global_manpower = -9000
+	global_regiment_cost = 30
+	land_forcelimit = -400
+}

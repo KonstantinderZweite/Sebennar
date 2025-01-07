@@ -511,6 +511,16 @@ reset_racial_military_via_administration = {
 		else = {
 			change_unit_type = tech_kobold
 		}
+		else_if = {
+			limit = {
+				tag = Z3Z
+			}
+			remove_country_modifier = kobold_military
+			add_country_modifier = {
+				name = undead_military
+				duration = -1
+			}
+		}
 	}
 	else_if = {
 		limit = {

@@ -143,6 +143,7 @@ has_unmatching_military_to_unit = {
 		AND = {
 			has_country_modifier = undead_military
 			NOT = { unit_type = tech_undead }
+			NOT = { unit_type = tech_dual_dragon_domain }
 		}
 		AND = {
 			has_country_modifier = elven_military
@@ -214,6 +215,7 @@ has_unmatching_military_to_unit = {
 			NOT = { unit_type = tech_kobold }
 			NOT = { unit_type = tech_east_kobold }
 			NOT = { unit_type = tech_darkscale_kobold }
+			NOT = { unit_type = tech_dual_dragon_domain }
 		}
 		AND = {
 			has_country_modifier = orcish_military

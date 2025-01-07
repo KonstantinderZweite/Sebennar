@@ -1217,5 +1217,5 @@ H99 = "countries/Feyslicer.txt" # Putting this at the end so it doesn't take reb
 Z1Z = "countries/Goblin Trading Company.txt"
 Z2Z = "countries/Zamhar.txt"
 Z8Z = "countries/Goblin Clan.txt"
+Z3Z = "countries/The_Dual_Dragon_Domain.txt"
 NPC = "countries/NPC.txt"
-A1Z = "countries/Golden Stems.txt"

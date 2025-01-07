@@ -1,0 +1,22 @@
+on_monthly_pulse = {
+	if = {
+		limit = {
+			tag = Z3Z
+			mission_completed = Z3Z_the_dragon_reborn
+			num_of_hussars = 2
+		}
+		country_event = {
+			id = flavor_dual_dragon_domain.6
+		}
+	}
+	if = {
+		limit = {
+			tag = Z3Z
+			has_country_modifier = z3z_destroy_nation
+			num_of_hussars = 1
+		}
+		country_event = {
+			id = flavor_dual_dragon_domain.7
+		}
+	}
+}
