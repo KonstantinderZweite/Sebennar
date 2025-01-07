@@ -2130,7 +2130,7 @@ elven = {
 	}
 	sun_elf = {
 		primary = F38 #Phoenix Empire
-		
+		province = { local_has_samurai = yes }
 		male_names = {
 			Adrahel Alarian Aldarian Aldarion Alvarion Andrellion Arantir Ardor Ardorian Arfil Artorian Darandil Daraztarion Denarion Dorendor Eborian Elanil Eledas Eletar Eletor Elrian 
 			Elriandor Eranil Erelas Erendil Erlanil Evindal Filinar Finorian Ivran Ivrandil Ivrandir Jaerel Jahelor Jaher Kalazandal Kalazandur Kalinael Kalindal Kalindil Kalindor Kalrodir 

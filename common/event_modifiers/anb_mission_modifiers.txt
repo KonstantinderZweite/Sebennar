@@ -5335,7 +5335,9 @@ sareyand_protector_of_the_light = {
 	diplomatic_upkeep = 2
 }
 sareyand_the_gate_of_the_east = {
-	caravan_power = 0.5
+	trade_steering = 0.1
+	global_trade_power = 0.1
+	trade_goods_size = 0.75
 }
 sareyand_the_riches_of_the_east = {
 	trade_efficiency = 0.2
@@ -5346,6 +5348,8 @@ sareyand_the_true_lord_of_bulwar = {
 sareyand_the_great_ash_legion = {
 	shock_damage_received = -0.1
 	army_tradition = 1
+	amount_of_samurai = 10
+    has_samurai = yes
 }
 sareyand_the_shining_monastery = {
 	trade_goods_size = 1
