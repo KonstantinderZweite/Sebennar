@@ -394,6 +394,7 @@ incident_hillgnoll_honderaak = {
 		modifier = {
 			factor = 10
 			OR = {
+
 				has_idea_group = expansion_ideas
 				personality = ai_colonialist
 			}
@@ -896,7 +897,6 @@ incident_the_magisteriums_censorship = {
 			OR = {
 				has_idea_group = innovativeness_ideas
 				has_idea_group = humanist_ideas
-				
 			}
 		}
 	}

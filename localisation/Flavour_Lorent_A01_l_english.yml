@@ -162,7 +162,7 @@
  flavor_lorent.12.a:0 "The Rose strangles the Dove."
 
  flavor_lorent.13.t:0 "Storming of the Lorentish capital!"
- flavor_lorent.13.d:0 "Our march west was a rolling thunderstorm of sword and flintlock as we crossed the Dameshead and liberated Wesdam from the oppressive Lorentish hosts. We shattered army after army until we came into sight of noble Lorentaine standing before the bloodwine rivers and surrounded by the beautiful hedgerows of the kingdom.\n\nThe siege of the city was long and hard lasting months as we starved out the defenders. Spring turned into Fall until Winter arrived and all the roses among the hedgerows died, as did the hope of the defenders. [Lorent.GetTitle] [Lorent.Monarch.GetName] exited with a small host of ceremonial royal knights, emaciated and on the verge of death, offering surrender.\n\nLorentaine’s high red walls stood tall before the Sorcerer-King Nichmer, withstood countless Gawedi power struggles, and attempted to defy the Dove Throne. Today, it lay in ruins circled by a swarm of doves."
+ flavor_lorent.13.d:0 "Our march west was a rolling thunderstorm of sword and flintlock as we crossed the Dameshead and liberated Wesdam from the oppressive Lorentish hosts. We shattered army after army until we came into sight of noble Lorentainé standing before the bloodwine rivers and surrounded by the beautiful hedgerows of the kingdom.\n\nThe siege of the city was long and hard lasting months as we starved out the defenders. Spring turned into Fall until Winter arrived and all the roses among the hedgerows died, as did the hope of the defenders. [Lorent.GetTitle] [Lorent.Monarch.GetName] exited with a small host of ceremonial royal knights, emaciated and on the verge of death, offering surrender.\n\nLorentaine’s high red walls stood tall before the Sorcerer-King Nichmer, withstood countless Gawedi power struggles, and attempted to defy the Dove Throne. Today, it lay in ruins circled by a swarm of doves."
  flavor_lorent.13.a:0 "The Dove plucks the Rose."
 
  flavor_lorent.14.t:0 "The Lorentish-Imperial Peace"
@@ -187,6 +187,7 @@
  flavor_lorent.16.b:0 "Damn this wine-diplomacy! I will take what is mine."
  flavor_lorent.16.c:0 "The current situation works fine for us."
  flavor_lorent.16.e:0 "What does Ionnidar think?"
+ flavor_lorent.16.f:0 "We will take what's rightfully ours."
 
  flavor_lorent.17.t:0 "Blood of Lorenan"
  flavor_lorent.17.d:0 "Lencenor is a land filled with conflict, family ties, and conflicts within the families. As it happens, Ruben Siloriel has finally inherited the throne of Kyliande, the ancient duchy held by another house of the blood of Lorenan the Great, the síl Kyliande, direct descendants of the Caylentis kings of Enteben. Now the question is, should he take this opportunity to claim the land directly, surely causing a stir amongst the Lencori nobility and breaking our ancient traditions? Or should he try to be seen as a diplomatic king, and simply allow their autonomy and let the bonds grow stronger? Good things come to those who wait..."
@@ -194,6 +195,7 @@
  flavor_lorent.17.b:0 "Damn this wine-diplomacy! I will take what is mine."
  flavor_lorent.17.c:0 "The current situation works fine for us." 
  flavor_lorent.17.e:0 "What does Kyliande think?"
+ flavor_lorent.17.f:0 "We will take what's rightfully ours."
 
  flavor_lorent.18.t:0 "Blood of Lorenan" 
  flavor_lorent.18.d:0 "After the death of our beloved lady, our new duke is the king of Lorent, firstborn son of the late duchess. As both liege and lord, the king may integrate us further into the crown or, Castellos forbid, directly annex [Root.GetName] into the crownlands of the Ruby Crown.. With some clever manuevers, however, the first chance for independence has shown itself..."

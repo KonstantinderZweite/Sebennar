@@ -9,7 +9,7 @@ colonial_parent = A11
 random_nation_chance = 0
 
 historical_idea_groups = {
-	
+	expansion_ideas
 	
 	quantity_ideas
 	diplomatic_ideas	

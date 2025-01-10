@@ -8,7 +8,7 @@ color = { 151 79 168 }
 
 
 historical_idea_groups = {
-	
+	expansion_ideas
 	
 	quantity_ideas
 	diplomatic_ideas	

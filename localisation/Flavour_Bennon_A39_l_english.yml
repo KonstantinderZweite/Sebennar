@@ -19,7 +19,7 @@
     B66_question_of_kingdom_desc:0 "Havoral was always a Kingdom. Since its collapse, however, Esmaria had seen radical changes. Most important to our new throne are the powers that be. Our title of King is incompatible with the Empire of Anbennar, yet our desired influence requires higher respects than a mere duchy. We must rise above the memory of Esmaria and claim the title of Grand Duchy."
 
     B66_influencing_the_cities_title:0 "Influencing the Cities"
-    B66_influencing_the_cities_desc:0 "Our restoration and subsequent cultural growth has done wonders to our prestige, yet the cities of Esmaria, Telgeir and Esmaraine, hold defiant to change. Only steady hands and confidence in our cultural revival will prove to sway them."
+    B66_influencing_the_cities_desc:0 "Our restoration and subsequent cultural growth has done wonders to our prestige, yet the cities of Esmaria, Telgeir and Esmarainé, hold defiant to change. Only steady hands and confidence in our cultural revival will prove to sway them."
 
     B66_where_the_rivers_come_title:0 "Where the Rivers Come"
     B66_where_the_rivers_come_desc:0 "Much of our western lands have shifted to accept our shared ancestral culture. But should we stop here? The rest of Esmaria is still out of our grasp, outside of our protection. We must act so that all Esmari may rest easy within the Riverlands."
@@ -56,7 +56,7 @@
     B66_court_the_clans_desc:0 "Much of dejure Havoral is slowly but surely adopting Havoric customs, and as such the clans of Havoral are reaching new highs of influence. Our old Esmari nobility are lagging behind in this adoption process, and elevating clan leaders to these roles may prove to help speed this up."
 
     B66_riverland_prosperity_title:0 "Riverland Prosperity"
-    B66_riverland_prosperity_desc:0 "Esmaria's gems are now Havoral's, yet they feel lacking. Once backed by the prestige of the old Grand Duchy, Telgeir and Esmaraine fail to stand out above the other wonders of Anbennar without it. Large renovations are in order if we wish to keep these cities relevant and, most importantly, our prestige high."
+    B66_riverland_prosperity_desc:0 "Esmaria's gems are now Havoral's, yet they feel lacking. Once backed by the prestige of the old Grand Duchy, Telgeir and Esmarainé fail to stand out above the other wonders of Anbennar without it. Large renovations are in order if we wish to keep these cities relevant and, most importantly, our prestige high."
 
     B66_havoric_river_parties_title:0 "Havoric River Parties"
     B66_havoric_river_parties_desc:0 "The most fascinating of Esmari traditions is the River party. Reckless abandonment on the move are these party barges, and its an aspect of Esmari culture that just wont go away! Even the Havorics are joining them! We can't get rid of it, but we can try to influence these events by encourging our people to take part in this tradition."
@@ -94,8 +94,7 @@
 
     B66_new_mountainfolk_stronghold_title:0 "New Mountainfolk Stronghold"
     B66_new_mountainfolk_stronghold_desc:0 "Karn's Hold, the site of an ancient clan is now resettled. News tales will be born to replace the ones we lost speaking of a, although different, once again Havoric Dostanor."
-    B66_new_new_stronghold_title:0 "New Holdfolk Stronghold"
-    B66_new_new_stronghold_desc:0 "Our hold used to produce vast amounts of iron however shockingly this has changed. The iron supply was minimal but we did find a new material that makes our wool production faster. A type of magical rock that seems to make the process of wool making twice as fast. Perhaps with this we can get more people to join our hold folk hold? Who knows but from now on iron is no longer the king in this hold. Long live the wool gods."
+
     #Fourth Column
     A39_goat_lords_of_bennonhill_title:0 "Goatlords of Bennonhill"
     A39_goat_lords_of_bennonhill_desc:0 "The Havoric Goat, a symbol of our culture. The Divide's peaks are not well suited for farming, and as such husbandry is the main source of food and clothing for these regions. Many wealthy farmers own large farms of goats, wealthiest of these farmers called 'Goatlords'. We should help them expand these operations for greater profits to the crown."
@@ -208,7 +207,6 @@
     havoral_steel_yourselves:0 "Steel Yourselves"
     havoral_mountainfolk_consolidation:0 "Mountainfolk Consolidation"
     havoral_mountainfolk_stronghold:0 "Mountainfolk Stronghold"
-    havoral_holdfolk_stronghold:0 "Holdfolk Stronghold"
     havoral_havoric_vanguard_core:0 "Havoric Vanguard Core"
     havoral_corinite_vanguard:0 "Corinite Vanguard"
     havoral_memorial_to_sir_frederic:0 "Memorial To Sir Frederic síl Bennon"

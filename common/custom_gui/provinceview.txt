@@ -104,6 +104,7 @@ custom_button = {
 			has_province_modifier = ruined_hold
 			has_province_modifier = partially_ruined_hold
 			has_province_modifier = damaged_hold
+			owner = { dwarovar_orc_culture_primary = yes } 
 		}
 		owner = {
 			tag = FROM
@@ -141,17 +142,24 @@ custom_button = {
 		NOT = { has_construction = army } #For clarity
 		NOT = { has_construction = navy } #For clarity
 		if = {
+			limit = { is_capital = yes }
+			custom_trigger_tooltip = {
+				tooltip = building_diggy_tooltip
+				NOT = {
+					owner = {
+						has_country_flag = building_diggy
+					}
+				}
+			}
+		}
+		if = {
 			limit = { has_province_modifier = incomplete_hold }
 			NOT = { has_province_modifier = incomplete_hold }
 		}
-		if = {
-			limit = { has_province_flag = cannot_dig } # Generalized inability to dig.
-			if = {
-				limit = { owner = { tag = F23 } }
-				custom_trigger_tooltip = {
-					tooltip = F23_cannot_dig_why
-					always = no
-				}
+		if = { limit = { has_province_modifier = F23_flooded_depths }
+			custom_trigger_tooltip = {
+				tooltip = F23_cannot_dig_why
+				always = no
 			}
 		}
 		hidden_trigger = { NOT = { has_province_modifier = incomplete_hold_0 } }

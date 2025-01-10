@@ -563,7 +563,7 @@ country_event = {
 	trigger = {
 		has_personal_deity = ibberal
 		OR = {
-			ruler_has_personality = indulgent_personality
+			ruler_has_personality = drunkard_personality
 			ruler_has_personality = loose_lips_personality
 		}
 		has_regency = no
@@ -572,9 +572,9 @@ country_event = {
 		NOT = { has_ruler_modifier = favoured_IC_ibberal_t_b }
 		NOT = { has_ruler_flag = IC_emulant_rejected_ibberal }
 		OR = {
-			NOT = { ruler_has_personality = intricate_webweaver_personality }
+			NOT = { ruler_has_personality = intricate_web_weaver_personality }
 			NOT = { ruler_has_personality = secretive_personality }
-			NOT = { ruler_has_personality = entrepeneur_personality }
+			NOT = { ruler_has_personality = entrepreneur_personality }
 			NOT = { ruler_has_personality = pious_personality }
 			NOT = { ruler_has_personality = zealot_personality }
 		}
@@ -707,7 +707,7 @@ country_event = {
 		has_personal_deity = ildran
 		OR = {
 			ruler_has_personality = obsessive_perfectionist_personality
-			ruler_has_personality = naive_enthusiast_personality
+			ruler_has_personality = naive_personality
 		}
 		has_regency = no
 		NOT = { has_ruler_modifier = IC_devilish_indulgence }

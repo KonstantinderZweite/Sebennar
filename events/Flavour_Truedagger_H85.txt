@@ -209,14 +209,14 @@ country_event = {
 					is_city = yes
 					NOT = {
 						OR = {
-							culture = black_orc
+							culture = highhold_orc
 							religion = old_dookan
 						}
 					}
 				}
 			}
 			4145 = {
-				change_culture = black_orc
+				change_culture = highhold_orc
 				change_religion = old_dookan
 				set_province_flag = flag_truedagger_orc_done
 			}
@@ -231,14 +231,14 @@ country_event = {
 					is_city = yes
 					NOT = {
 						OR = {
-							culture = black_orc
+							culture = highhold_orc
 							religion = old_dookan
 						}
 					}
 				}
 			}
 			4164 = {
-				change_culture = black_orc
+				change_culture = highhold_orc
 				change_religion = old_dookan
 				set_province_flag = flag_truedagger_orc_done
 			}
@@ -253,14 +253,14 @@ country_event = {
 					is_city = yes
 					NOT = {
 						OR = {
-							culture = black_orc
+							culture = highhold_orc
 							religion = old_dookan
 						}
 					}
 				}
 			}
 			4166 = {
-				change_culture = black_orc
+				change_culture = highhold_orc
 				change_religion = old_dookan
 				set_province_flag = flag_truedagger_orc_done
 			}
@@ -1196,12 +1196,12 @@ country_event = {
 	}
 	
 	immediate = {
-		custom_tooltip = truedagger_irrigation_free_tt
 		hidden_effect = { country_event = { id = diggy.44 days = 1825 random = 365 } }
 		hidden_effect = { set_global_flag = irrigation_north }
 		hidden_effect = { set_country_flag = repairing_irrigation }
 	}
 	option = { 
 		name = flavor_truedagger.30.a
+		custom_tooltip = truedagger_irrigation_free_tt
 	}
 }

@@ -512,7 +512,7 @@ culture_is_wuhyun = {
 		tooltip = culture_is_wuhyun_tt
 		OR = {
 			culture_group = wuhyun
-			culture = honourbound_harimari
+			culture = worthy_harimari
 			culture = reishao_harpy
 			culture = dragonfire_kobold
 			culture = march_goblin
@@ -550,6 +550,21 @@ command_not_yet_wuhyunized = {
 	OR = {
 		culture_is_wuhyun = no
 		NOT = { religion = godlost }
+	}
+}
+
+is_a_command = {
+	custom_trigger_tooltip = {
+		tooltip = is_command_tt
+		OR = {
+			tag = R62 #The Command
+			tag = R67 #Tiger Command
+			tag = R68 #Elephant Command
+			tag = R69 #Dragon Command
+			tag = R94 #Boar Command
+			tag = R95 #Lion Command
+			tag = R96 #Wolf Command
+		}
 	}
 }
 

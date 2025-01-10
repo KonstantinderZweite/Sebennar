@@ -367,6 +367,11 @@ country_event = {
 			REB = { set_variable = { runeLevel = 1 } }
 			release_with_religion_and_culture = { tag = H94 religion = runefather_worship culture = obsidian_dwarf }
 			H94 = {
+				hidden_effect = {
+					set_variable = { which = RunefathersMightAllegianceVar value = 0 }
+					set_variable = { which = RunefathersMercyAllegianceVar value = 0 }
+					set_variable = { which = RunefathersMajestyAllegianceVar value = 0 }
+				}
 				declare_war_with_cb = {
 					who = ROOT
 					casus_belli = cb_sardonyx_invasion
@@ -509,7 +514,10 @@ country_event = {
 		custom_tooltip = sardonyx_invasion_play_tooltip
 		ROOT = { switch_tag = H94 }
 		hidden_effect = {
-			
+			if = {
+				limit = { has_country_flag = hoardcurse_happened }
+				H94 = { set_country_flag = hoardcurse_happened }
+			}
 			H94 = { remove_country_modifier = restructuring_administration } # in case they spawned from a non-dwarven nation
 		}
 	}

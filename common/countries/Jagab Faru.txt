@@ -2,7 +2,7 @@
 
 graphical_culture = africangfx
 
-color = { 204  204 0 }
+color = { 250  214 115 }
 
 
 
@@ -153,48 +153,35 @@ monarch_names = {
 }
 
 leader_names = {
-	" "
-	#Country Specific
-
-	
-	#Province Neighbours
-
-	
-	#Country Neighbours
-
-	
-	#Geographic Neighbours
-
-	
-	#Noble Families
-
-	
 	#Titles
-	Sylla Iphito Garanke Misimuso Gesedala Bagenna Alke Areto Molpadia 
+	Sylla Iphito Garanke Misimuso Gesedala Bagenna Alke Areto Molpadia Jallow
 	
 }
 
 ship_names = {
-	#Generic Kheteratan
-	Adamant Advantage Adventure Advice Answer Ardent Armada Arrogant Assistance Association Assurance Atlas Audacious 
-	Bear "Black Galley" "Black Pinnace" "Black Blood" Captain Centurion Coronation Courage Crocodile Crown
-	Daisy Defence Defiance Devastation Diamond Director Dolphin Dragon Drake Dreadnaught Duke Duchess Eagle Excellent Exchange Expedition Experiment
-	Falcon Fame Favourite Fellowship Fleetwood Flight Flirt Formidable Forrester Fortitude Fortune Gillyflower Globe "Golden Horse" "Golden Lion" "Golden Phoenix" Goliath Goodgrace Governor
-	"Grand Mistress" "Great Bark" "Great Charity" "Great Galley" "Great Gift"  "Great Pinnace" "Great Zebra" "Green Dragon" Greyhound Griffin Guide "Half Moon" Hare Harpy Hawke Hazardous Heart
-	Hero Hope "Hope Bark" "Hopeful Adventure" Humble Hunter Illustrious Impregnable Increase Indefatigable Inflexible Intrepid Invincible "Less Bark" "Less Pinnace" "Less Zebra"
-	Lively Lizard Lion Magnanime Magnificent Majestic Makeshift Medusa Minotaur Moderate Monarch Moon Moor "New Bark" Ocean 
-	Pansy Panther Parrot Porcupine Powerful
-	Redoubtable Reformation Regent Renown Repulse Research Reserve Resistance Resolution Restoration Revenge 
-	Salamander Sandwich Sapphire Satisfaction Seahorse Search Sheerness Speaker Speedwell Sphinx Splendid Sprite Stag Standard Stately Success Sunlight Sunbeam Superb Swan Sweepstake Swift Swiftsure
-	Terrible Terror Thunderer Tiger Tremendous Trident Trinity Triumph Trusty
-	Unicorn Union Unity Valiant Vanguard Venerable Vestal Veteran Victor Vindictive Virtue Violet
-	Warrior Warspite Zealous
+	Odogala Kushigb�gbe Sinwinomi Gbogboul� Mugede K�noshupa Monamona Adumaadan Aganjusola Agbonrin 
+	Ajal�run Aladej�na Ariyanjiy�n Aromodomo Ashanw�we Atamat�se Aroor�da Edaatijo Aye�rukan 
+	Baorijeru Yammaneman Iskaruhu Ganiimabiyi Igbinedion Babajide �j�m�oru Titun�dz� 
+	Ibinu�lu Oloshumar� Ul�sinwin Ig�nnagbe T�nsheej� Y�rap� "M��-ny�n" 
+	K�ruk�rukp� Sojiwed� S�nooru Kpaikpa�ru Madaarik�n Og�nni�r� Ikoroba Eshubi�yi 
+	Legbel�gbe L�kel�ke Ol�ransh� Awosanm� Tenb�lekun Y�ok�naa Ujaam�se 
+	Wur�ol� A�olay� �sunt�kun Sunk�nmi Ngombi Tiyamiyu M�sojo 
+	Komuhingo Ouyarandu Kukaomutike Kwaondendu Yambekawa Onyohasi Onjamba Tangalala Tandela 
+	Yawulala Wendambdy Maiiayala Eyovomwe Ocitovongo Senguluka Ndunduminya Ociviovio 
+	Tululuka Lisokela Ekungukungu Ondindimo Olundindi Yombolola Yuasipata 
+	Onjelia Liolola Ewuvina Handekasi Ocisetahai Okapamba Okaminyu Setahanu Setukula 
+	Marolel Tvarandy Vylalyna Nyzadai Tsenamafy Mpiozona Nympiambina Takalonny Sahyafa Eomponina 
 	
-	Akal Flame Fire Blaze Burn "Burning Soul" Elephant
-
-	Cow Ox Bird Hawk Sovereign King Palace Oasis
-
-	Tiger Dog Crocodile
+	#Cultural Places
+	#Jiromji
+	Zokek Durpupa Banji Gbujeru "Wiw-Reku" Khawit Didesira Torapel� Tuka�gba Ko�koepa Saiwagb�ra 
+	Rorunil� Ninakaire Raddack N�nku�ro Y�nerun Tigeninu Gwereninu D�goninu G�daninu Eyintiaf� 
+	#Vanekambu
+	Sungwelu Eydomi Tzongoya Uyeveyo Yongololdy Tungayala Anyahu Sosaosi Osungzi Nimgulciy Esunjulu 
+	Kunihisava Kilombowi Nenataviya Tungukciy Evalovala Tiakumuna Lzonlonjo Nimgandaka Tukulukdu Lupwisu 
+	Lisungwu Osapzu Omiapiulu Kapeyu Pepesindu Nyenyawa 
+	#Broader Fangaula
+	Nkolonnin Kogingab 
 }
 
 army_names = {

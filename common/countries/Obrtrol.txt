@@ -8,7 +8,7 @@ color = { 153  217  234 }
 
 
 historical_idea_groups = {
-	
+	expansion_ideas
 	
 	quantity_ideas
 	diplomatic_ideas	
@@ -147,25 +147,13 @@ leader_names = {
 }
 
 ship_names = {
-	#Generic Cannorian
-	Adamant Advantage Adventure Advice Answer Ardent Armada Arrogant Assistance Association Assurance Atlas Audacious 
-	Bear Beaver "Black Galley" "Black Pinnace" "Black Prince" "Black Blood" Captain Centurion Coronation Courage Crocodile Crown
-	Daisy Defence Defiance Devastation Diamond Director Dolphin Dragon Drake Dreadnaught Duke Duchess Eagle Elephant Excellent Exchange Expedition Experiment
-	Falcon Fame Favourite Fellowship Fleetwood Flight Flirt Formidable Forrester Fortitude Fortune Gillyflower Globe "Golden Horse" "Golden Lion" "Golden Phoenix" Goliath Goodgrace Governor
-	"Grand Mistress" "Great Bark" "Great Charity" "Great Galley" "Great Gift"  "Great Pinnace" "Great Zebra" "Green Dragon" Greyhound Griffin Guide "Half Moon" Hare Harpy Hawke Hazardous Heart
-	Hero Hope "Hope Bark" "Hopeful Adventure" Humble Hunter Illustrious Impregnable Increase Indefatigable Inflexible Intrepid Invincible "Less Bark" "Less Pinnace" "Less Zebra"
-	Lively Lizard Lion Magnanime Magnificent Majestic Makeshift Medusa Minotaur Moderate Monarch Moon Moor "New Bark" Ocean 
-	Pansy Panther Parrot Porcupine Powerful President Prince "Prince Consort" "Prince Royal"
-	Redoubtable Reformation Regent Renown Repulse Research Reserve Resistance Resolution Restoration Revenge 
-	Salamander Sandwich Sapphire Satisfaction Seahorse Search Sheerness Speaker Speedwell Sphinx Splendid Sprite Stag Standard Stately Success Sunlight Sunbeam Superb Swan Sweepstake Swift Swiftsure
-	Terrible Terror Thunderer Tiger Tremendous Trident Trinity Triumph Trusty
-	Unicorn Union Unity Valiant Vanguard Venerable Vestal Veteran Victor Vindictive Virtue Violet
-	Warrior Warspite "Young Prince" Zealous
+	# Gerudian Troll
+	"Arim�r" "Augrim�r" "Oigok" "Elk�ri" "Fara" "Hj�rt" "Ikhlod" "Kvald" "Mighim"
+	"Seimli" "Shvartr" "Sk�p" "St�rgtar" "St�n" "S�klish" "Vargal" "Zein" "Shvartr Voe�a" "Mighim S�klish"
+	"N�kh" "N�kh Sk�p" "Shvartr Sk�p" "Shvartr Stis�l" "Shvartr St�rgtar" "Shvartr Mighim" "Shvartr Ikhlod" "Shvartr Hj�rt" "Shvartr F�ll" "Shvartr Atvatn"
+	"N�kh Kvald" "N�kh Augrim�r" "N�kh Elk�ngri" "N�kh Felki" "N�kh Hj�rt" "N�kh Ikhlod" "N�kh Krelvr" "N�kh Ragh�t" "N�kh Sanktar" "N�kh Seimli"
+	"Kvald Krelvr" "Kvald Hj�rt" "Kvald Ikhlod" "Kvald Seimli" "Kvald St�rgtar" "Kvald Mighim" "Kvald Atvatn" "Kvald Oigok" "Kvald Felki" "Kvald Vargal"
 
-	Survey Surveillance Cow Ox Bird Hawk Sovereign Emperor Count Lord Baron
-
-	Knight Paladin Dragonslayer Cleric Rogue Fighter Ranger Sorcerer Wizard Warlock Monk Druid
-	Strength Dexterity Constitution Intelligence Wisdom Charisma
 
 }
 

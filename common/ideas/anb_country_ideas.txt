@@ -6928,46 +6928,42 @@ I18_ideas = {
 }
 
 #Gronstunad - Jade Dwarf
- I22_ideas = {
+I22_ideas = {
 	start = {
 		global_autonomy = -0.05
-		prestige = 1
+		infantry_power = 0.15
 	}
-
 	bonus = {
-		global_trade_power = 0.2
+		global_trade_power = 0.1
 	}
 
 	trigger = {
-		OR = {
-			tag = I22
-		}
+		tag = I22
 	}
-	free = yes		#will be added at load.
+	free = yes
 
 	I22_eastern_capital_of_the_empire = {
-		governing_capacity_modifier = 0.1
+		development_cost = -0.1
 	}
 	I22_pride_of_the_jade_mines = {
+		stability_cost_modifier = -0.15
+		prestige = 1
+	}
+	I22_life_of_vibrance = {
 		diplomatic_reputation = 1
-		trade_range_modifier = 0.5
+		nobles_loyalty_modifier = 0.05
 	}
-	I22_economic_center = {
-		merchants = 1
-		trade_efficiency = 0.2
-	}
-	I22_jade_rush = {
-		production_efficiency = 0.1
-	}
-	I22_the_hobgoblin_legacy = {
+	I22_vanguard_of_many_halls = {
 		discipline = 0.05
 	}
-	I22_the_jade_road = {
-		trade_steering = 0.5
-		caravan_power = 0.25
+	I22_custodians_of_jade_mines = {
+		trade_efficiency = 0.15
 	}
-	I22_a_more_jade_dwarovar = {
-		development_cost = -0.1
+	I22_beyond_the_dwarovar = {
+		governing_capacity_modifier = 0.1
+	}
+	I22_jade_empire = {
+		ae_impact = -0.15
 	}
 }
 

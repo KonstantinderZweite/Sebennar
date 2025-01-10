@@ -56,6 +56,15 @@ mythical_cavalry_zamukaras = {
 	shock_damage_received = -0.3
 	reinforce_speed = -0.25
 }
+
+mythical_cavalry_demoncollar_hyena = {
+	is_hussars_modifier = yes
+	cavalry_shock = 0.5
+	morale_damage = 0.1
+	morale_damage_received = -0.1
+	reinforce_speed = -0.25
+	reinforce_cost_modifier = 0.25
+}
 mythical_cavalry_goblinsteel_tank = {
 	is_hussars_modifier = yes
 	fire_damage_received = -0.1
@@ -70,6 +79,7 @@ mythical_cavalry_dual_dragon = {
 	shock_damage = 1.5
 	cavalry_flanking = 1
 }
+
 
 
 

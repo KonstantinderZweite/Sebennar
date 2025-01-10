@@ -9,7 +9,7 @@ color = { 247 179  215 }
 
 
 historical_idea_groups = {
-	
+	expansion_ideas
 	
 	maritime_ideas
 	economic_ideas

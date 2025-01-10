@@ -12,7 +12,7 @@ historical_idea_groups = {
 	maritime_ideas
 	quantity_ideas
 	religious_ideas
-	
+	expansion_ideas
 	quality_ideas	
 	innovativeness_ideas
 	offensive_ideas

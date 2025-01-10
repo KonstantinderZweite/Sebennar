@@ -9,7 +9,7 @@ color = { 150  125  80 }
 
 historical_idea_groups = {
 	offensive_ideas
-	
+	expansion_ideas
 	
 	quantity_ideas
 	quality_ideas	

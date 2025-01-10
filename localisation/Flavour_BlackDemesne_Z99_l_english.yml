@@ -139,6 +139,7 @@
  jorgurem_the_fallen_desc:0 "This open the menu that allow you to make use of your undead dragon, to either kill enemy units in a battle, or burst open a fort.\n\n§ROur ruler must be leading an army in battle or in a siege.§!"
  walk_the_stellar_path_title:0 "£icon_black_demesne£§bForm the Black Demesne§!"
  walk_the_stellar_path_desc:0 "The primacy of magic must come. We must proclaim the Black Demesne and unite the world under our banners!"
+ can_form_bd_tooltip:0 "Has consolidated Escann and decided to devote the nation to magic"
  the_well_of_majesty_title:0 "£icon_black_demesne£The Well of Majesty"
  the_well_of_majesty_desc:0 "What shall we do with this new found power?"
   
@@ -351,6 +352,7 @@
  
  #Events
  acolyte_estate.1.t:0 "    Acolytes Estate Magic\n£estate_magic_acolytes_bg£\n\n\n\n[Root.GetSpellStrengthIndicatorAcolytes]                                   "
+ acolyte_estate.1.d:0 "                            [Root.GetSpellStrengthAcolytes]\n\n£desc_estate£"
  
  black_demesne.1.t:0 "Dark Ascension"
  black_demesne.1.d:0 "At the end of a grand hall stands the Ascending Dragon, the rising Acolyte who is about to take the throne. Light coming in through stained glass windows casts multi-colored reflections across the stone floor below. The assembled crowd of dignitaries, who include a number of mundane mortals, look at one another nervously as a dozen junior mages posted around the hall begin to chant invocations. The Acolyte smiles. Fear, of course, is the objective.\n\nAll at once, the dozen mages make a simultaneous motion with their hands and the room is plunged into total darkness. It is as though the sun has stopped shining and the essence of night itself were brought into the room. The low, menacing voice of the Ascending Dragon begins its own chant, and a hundred little balls of flame begin to dance through the air, casting flickering orange-red illumination across the shocked faces of the assembled witnesses.\n\nSlowly, they converge into the form of letters, a script only the initiated can understand: 'Behold the one who commands the world'. Cries of acclamation and praise ring out from the gathered magicians, and the mundanes sink farther in their chairs, as if hoping to avoid notice. The Dragon is Risen, and a [Root.Monarch.GetTitle] is born."

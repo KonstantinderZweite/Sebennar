@@ -10,6 +10,7 @@ capital = 221
 
 historical_rival = A01 #Lorent
 historical_rival = A30 #Wex
+historical_rival = A23 #Vertesk
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_state }	#Cobalt Circle
 
@@ -22,10 +23,17 @@ historical_rival = A30 #Wex
 		dip = 3
 		mil = 3
 	}
-	add_ruler_personality = drunkard_personality
+	add_ruler_personality = reformist_personality
+	set_ai_personality = {
+		personality = ai_diplomat
+		locked = yes
+	}
 }
 
 # Stop immediately killing the Gnomes
 1444.11.1 = {
 	add_truce_with = A06
 }
+
+set_country_flag = owns_cannorian_holy_site
+set_country_flag = can_use_cannorian_holy_site

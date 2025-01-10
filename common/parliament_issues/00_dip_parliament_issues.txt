@@ -44,7 +44,6 @@ charter_colonies = {
 
 	allow = {
 		OR = {
-			
 			full_idea_group = expansion_ideas
 		}
 		NOT = { tag = J33 } #Anbennar
@@ -573,7 +572,7 @@ issue_letters_of_marque = {
 		modifier = {
 			factor = 1.5
 			OR = {
-				
+				has_idea_group = naval_ideas
 				has_idea_group = quality_ideas
 			}
 		}

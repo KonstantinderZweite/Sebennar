@@ -8,7 +8,7 @@ color = { 60  40  80 }
 revolutionary_colors = { 13  8  13 }
 
 historical_idea_groups = {
-	
+	expansion_ideas
 	
 	quantity_ideas
 	diplomatic_ideas	

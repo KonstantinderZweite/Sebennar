@@ -2,7 +2,8 @@
 setup_vision = yes
 government = monarchy
 add_government_reform = wine_lord_reform
-primary_culture = high_lorentish
+primary_culture = lencori_half_elf
+add_accepted_culture = high_lorentish
 add_accepted_culture = low_lorentish
 religion = regent_court
 technology_group = tech_cannorian
@@ -46,6 +47,7 @@ historical_friend = A20 #Rubyhold
 		country_of_origin = B68
 		name = "Laurenne"
 		dynasty = "s�l Kyliande"
+		culture = high_lorentish
 		birth_date = 1413.1.25
 		death_date = 1492.6.8
 		female = yes
@@ -55,3 +57,13 @@ historical_friend = A20 #Rubyhold
 	}
 	add_queen_personality = fertile_personality
 }
+
+1444.1.1 = {
+	add_country_modifier = {
+		name = half_elven_tolerance
+		duration = -1
+	}
+}
+
+set_country_flag = owns_cannorian_holy_site
+set_country_flag = can_use_cannorian_holy_site

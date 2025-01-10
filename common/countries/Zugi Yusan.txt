@@ -3,14 +3,14 @@
 
 graphical_culture = nomadgfx
 
-color = { 0  102  255 }
+color = { 92 99 86 }
 
 historical_idea_groups = {
 	
 	maritime_ideas
 	economic_ideas
 	offensive_ideas
-	
+	expansion_ideas
 	quality_ideas	
 	administrative_ideas	
 	influence_ideas

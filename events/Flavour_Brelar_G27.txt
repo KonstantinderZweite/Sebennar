@@ -1184,6 +1184,14 @@ country_event = {
 				}
 			}
 		}
+		U26 = {
+			every_owned_province = {
+				limit = {
+					region = dolindha_region
+				}
+				cede_province = G27
+			}
+		}
 		custom_tooltip = g27_yrw_revolt_tt
 		hidden_effect = {
 			random_list = {
@@ -1871,9 +1879,7 @@ country_event = {
 
 	trigger = {
 		tag = G27
-		num_artifice_inventions_discovered = {
-			VAL = 4
-		}
+		has_estate = estate_artificers
 		NOT = {
 			has_country_flag = g27_unlocked_watermills
 		}
@@ -1881,6 +1887,24 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1825
+		modifier = {
+			factor = 0.8
+			num_artifice_inventions_discovered = {
+				VAL = 1
+			}
+		}
+		modifier = {
+			factor = 0.8
+			num_artifice_inventions_discovered = {
+				VAL = 2
+			}
+		}
+		modifier = {
+			factor = 0.8
+			num_artifice_inventions_discovered = {
+				VAL = 3
+			}
+		}
 	}
 
 	option = {
@@ -1904,7 +1928,7 @@ country_event = {
 	trigger = {
 		tag = G27
 		num_artifice_inventions_discovered = {
-			VAL = 6
+			VAL = 3
 		}
 		NOT = {
 			has_country_flag = g27_unlocked_riverways
@@ -1913,6 +1937,24 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1825
+		modifier = {
+			factor = 0.8
+			num_artifice_inventions_discovered = {
+				VAL = 4
+			}
+		}
+		modifier = {
+			factor = 0.8
+			num_artifice_inventions_discovered = {
+				VAL = 5
+			}
+		}
+		modifier = {
+			factor = 0.8
+			num_artifice_inventions_discovered = {
+				VAL = 6
+			}
+		}
 	}
 
 	option = {
@@ -1935,6 +1977,17 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
 
+	trigger = {
+		tag = G27
+		OR = {
+			has_country_flag = g27_is_building_watermill
+			has_country_flag = g27_building_brelynn
+			has_country_flag = g27_building_dalaire
+			has_country_flag = g27_building_north_ynn
+			has_country_flag = g27_building_rzenta
+		}
+	}
+
 	option = {
 		name = flavour_brelar.128.a
 		ai_chance = {
@@ -1944,6 +1997,23 @@ country_event = {
 			id = flavour_brelar.129
 			days = 100
 			random = 100
+		}
+
+		if = {
+			limit = {
+				mission_completed = g27_forest_mountain
+			}
+			country_event = {
+				id = flavour_brelar.129
+				days = 200
+				random = 200
+			}
+	
+			country_event = {
+				id = flavour_brelar.129
+				days = 365
+				random = 365
+			}
 		}
 	}
 }
@@ -2745,7 +2815,7 @@ country_event = {
 		}
 		2488 = {
 			set_province_flag = g27_province_is_building_or_has_watermill
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = g27_watermill_progress_1
 				duration = -1
 			}
@@ -2768,7 +2838,7 @@ country_event = {
 		}
 		1165 = {
 			set_province_flag = g27_province_is_building_or_has_watermill
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = g27_watermill_progress_1
 				duration = -1
 			}
@@ -2791,7 +2861,7 @@ country_event = {
 		}
 		1186 = {
 			set_province_flag = g27_province_is_building_or_has_watermill
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = g27_watermill_progress_1
 				duration = -1
 			}
@@ -2814,7 +2884,7 @@ country_event = {
 		}
 		1191 = {
 			set_province_flag = g27_province_is_building_or_has_watermill
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = g27_watermill_progress_1
 				duration = -1
 			}
@@ -2837,7 +2907,7 @@ country_event = {
 		}
 		1183 = {
 			set_province_flag = g27_province_is_building_or_has_watermill
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = g27_watermill_progress_1
 				duration = -1
 			}
@@ -2860,7 +2930,7 @@ country_event = {
 		}
 		1211 = {
 			set_province_flag = g27_province_is_building_or_has_watermill
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = g27_watermill_progress_1
 				duration = -1
 			}
@@ -2916,7 +2986,7 @@ province_event = {
 			factor = 1
 		}
 		remove_province_modifier = g27_watermill_progress_1
-		add_province_modifier = {
+		add_permanent_province_modifier = {
 			name = g27_watermill_progress_2
 			duration = -1
 		}
@@ -2947,7 +3017,7 @@ province_event = {
 			factor = 1
 		}
 		remove_province_modifier = g27_watermill_progress_2
-		add_province_modifier = {
+		add_permanent_province_modifier = {
 			name = g27_watermill_progress_3
 			duration = -1
 		}
@@ -2982,7 +3052,7 @@ province_event = {
 			factor = 1
 		}
 		remove_province_modifier = g27_watermill_progress_3
-		add_province_modifier = {
+		add_permanent_province_modifier = {
 			name = g27_clockwork_watermill
 			duration = -1
 		}
@@ -4724,7 +4794,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 0.2
+				factor = 2
 				government = republic
 			}
 		}
@@ -4939,6 +5009,9 @@ country_event = {
 		add_government_reform = ynnic_feudalism
 		set_ruler = g27_exiled_mayor
 		hidden_effect = {
+			set_dynasty = "yen Argan"
+		}
+		hidden_effect = {
 			set_country_flag = g27_imperial_flag
 		}
 		swap_non_generic_missions = yes
@@ -5063,6 +5136,9 @@ country_event = {
 				}
 			}
 			set_ruler = g27_exiled_mayor
+			hidden_effect = {
+				set_dynasty = "yen Argan"
+			}
 		}
 		hidden_effect = {
 			set_country_flag = g27_imperial_flag
@@ -5106,6 +5182,12 @@ country_event = {
 		}
 		every_subject_country = {
 			add_liberty_desire = -25
+		}
+		if = {
+			limit = {
+				government = monarchy
+			}
+			change_government = republic
 		}
 		add_stability = 3
 		add_government_reform = brelar_ynnic_dynastic_republic
@@ -5213,6 +5295,9 @@ country_event = {
 				}
 			}
 			set_ruler = g27_exiled_mayor
+			hidden_effect = {
+				set_dynasty = "yen Argan"
+			}
 		}
 		hidden_effect = {
 			set_country_flag = g27_imperial_flag

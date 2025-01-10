@@ -9,7 +9,7 @@ color = { 153  239  222 }
 
 historical_idea_groups = {
 	
-	
+	expansion_ideas
 	maritime_ideas
 	economic_ideas
 	offensive_ideas
@@ -136,25 +136,21 @@ leader_names = {
 }
 
 ship_names = {
-	#Generic Cannorian
-	Adamant Advantage Adventure Advice Answer Ardent Armada Arrogant Assistance Association Assurance Atlas Audacious 
-	Bear Beaver "Black Galley" "Black Pinnace" "Black Prince" "Black Blood" Captain Centurion Coronation Courage Crocodile Crown
-	Daisy Defence Defiance Devastation Diamond Director Dolphin Dragon Drake Dreadnaught Duke Duchess Eagle Elephant Excellent Exchange Expedition Experiment
-	Falcon Fame Favourite Fellowship Fleetwood Flight Flirt Formidable Forrester Fortitude Fortune Gillyflower Globe "Golden Horse" "Golden Lion" "Golden Phoenix" Goliath Goodgrace Governor
-	"Grand Mistress" "Great Bark" "Great Charity" "Great Galley" "Great Gift"  "Great Pinnace" "Great Zebra" "Green Dragon" Greyhound Griffin Guide "Half Moon" Hare Harpy Hawke Hazardous Heart
-	Hero Hope "Hope Bark" "Hopeful Adventure" Humble Hunter Illustrious Impregnable Increase Indefatigable Inflexible Intrepid Invincible "Less Bark" "Less Pinnace" "Less Zebra"
-	Lively Lizard Lion Magnanime Magnificent Majestic Makeshift Medusa Minotaur Moderate Monarch Moon Moor "New Bark" Ocean 
-	Pansy Panther Parrot Porcupine Powerful President Prince "Prince Consort" "Prince Royal"
-	Redoubtable Reformation Regent Renown Repulse Research Reserve Resistance Resolution Restoration Revenge 
-	Salamander Sandwich Sapphire Satisfaction Seahorse Search Sheerness Speaker Speedwell Sphinx Splendid Sprite Stag Standard Stately Success Sunlight Sunbeam Superb Swan Sweepstake Swift Swiftsure
-	Terrible Terror Thunderer Tiger Tremendous Trident Trinity Triumph Trusty
-	Unicorn Union Unity Valiant Vanguard Venerable Vestal Veteran Victor Vindictive Virtue Violet
-	Warrior Warspite "Young Prince" Zealous
+	# Elven Forebear
+	"Seins�r" Anaid Anaigh Andeir "Arth�ir" "�tha" Bhail Catoir "C�the" "Cl�mhrad"
+	"M�th" "Fi�r" Telufal "C�thad" Deora "D�mair" "Doch�a" Duchael Eaione Fadaelithe
+	# Elven Lencori
+	"Lunat�in" "Est�dha" "Nadost�iar" "�rth�l" Silsuinairge Anben Elf Anbennar Lun Aelentir
+	# Generic Elven
+	Lunelf Lunseinarn Coghseinarn Serencionn "Dr�iha" "Jerr�s" "�r�is" Catarn Niell Bochar
+	Munas Istralania Urion Garion Ioriel Eborian Narawen Calasandur "Wa�dh" "Aga�rmarin"
+	Amanta Andeir Arceatha Arur Athraithe "Bla�dd" Bochoch "Brad�n"
+	Caen "Carc�n" "C�lodir" Cidithir "Cinni�" Contach "Draoidar�n" "D�sadharin" Elvacin "Frig�a"
+	Maradhan "Mar�n" "M�rgi" Meweri "Ne�omair" Rianvisa "S�mch�l�rn" "Seins�r" Socill Tenachern
+	# Venail
+	"Ven�il" Edilliande "Cet�nleir" "Fadh�il" Aelentir "Camnaril" "Aesrialt" "Aelanaigh" "Andeirm�r" "Asl�n"
+	Nadost "Seal�ir" Siubarn Taro "T�lar" Unaig "S�rhaet" "�rhetana" Rialt Oscurian
 
-	Survey Surveillance Cow Ox Bird Hawk Sovereign Emperor Count Lord Baron
-
-	Knight Paladin Dragonslayer Cleric Rogue Fighter Ranger Sorcerer Wizard Warlock Monk Druid
-	Strength Dexterity Constitution Intelligence Wisdom Charisma
 }
 
 army_names = {

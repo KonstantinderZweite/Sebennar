@@ -280,8 +280,6 @@
   
   orldhum_tooltip_turrets:0 "§GEvery Province in §YOrldhûm§! state that has a fort will receive the province modifier §YPlatinum Turrets§!§!"
   
-  orldhum_tooltip_magical_feast:0 "We are hosting a Magical Feast"
-  
   orldhum_tooltip_discover_escann:0 "We will discover §YEscann§!"
   
   orldhum_tooltip_escann_discovers_you:0 "All nonmonstrous countries in §YEscann§! will discover §YHaraz Orldhûm§!"
@@ -415,7 +413,7 @@
   flavour_orldhum.9.option1:0 "We yield to no Noble, Zaru ubr Bloth."
   
   flavour_orldhum.10.title:0 "Cold as Ice"
-  flavour_orldhum.10.desc:0 "We have awaited a response from our Noble envoy to Krakdhumvror for over a month now. The disappearance of our envoy and the cold reception from the Quartz Dwarves rankle our Nobility, we must act!"
+  flavour_orldhum.10.desc:0 "We have awaited a response from our Noble envoy to Krakdhûmvror for over a month now. The disappearance of our envoy and the cold reception from the Quartz Dwarves rankle our Nobility, we must act!"
   flavour_orldhum.10.option1:0 "The criminals overstep!"
   flavour_orldhum.10.option2:0 "Perhaps we should wait, they may have gotten lost..."
   

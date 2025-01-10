@@ -8,7 +8,7 @@ color = { 131  52  54 }
 
 
 historical_idea_groups = {
-	
+	expansion_ideas
 	
 	quantity_ideas
 	diplomatic_ideas	
@@ -399,23 +399,34 @@ leader_names = {
 
 ship_names = {
 	# Generic Cannorian
-	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Edronias Falah Nerat Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
+	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
+	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Corinite
-	"Corin�s Circle" Ascendance "Corin�s Sword" Firebrand "Martyr of Escann" Couter Marcher "Agrados� Redemption" Frederic Longsword Rottenstep Resurrection Avatar Castonath Righteous Bravery
-	# High Kingdom
-	"High King" Lorenan "Lorenan the Great" Warlord "Lord of the West" "High Queen" Elemia
-	Laurenne "Princess Laurenne" "Peace of the Realm" Ruben "Prince Ruben" Caylen "Prince Caylen"  Rewan "Prince Rewan"
-	Rosefield "Red Reach" "Lorenan�s Rose" "Great Rose" "Lorenan�s Banner" Coronation Crown "Crown of Lencenor"
-	"Lady Carana" "King Fizwick" "King Caramas" "King Garuos" "King Roen" "King Tippin" Companion Linnati
-	# Lencori Elven
-	"Lunat�in" "Est�dha" "Nadost�iar" "�rth�l" Silsuinairge Anben Elf "Fl�r" Silsuin Aelentir "Fl�r" Toar "R�s" Puille F�n "F�onca"
+	"Corin�s Circle" Ascendance "Corin�s Sword" Firebrand "Martyr of Escann" Couter Marcher "Agrados� Redemption" Frederic Longsword
+	Rottenstep Resurrection Avatar Castonath Righteous Bravery "Dookanson�s End" "Goddess of War" Helm Bevor
+	# Generic Marcher
+	Freetower Widor Tederfremh Rohibon Tilwick "Aldain�" Turnmarket Nortmerewic Cannwic Acenvor
+	"Victor�s Path" Bradnath "Ionntr�s" Theminath Mereham Bladeskeep Vernham Woodmarket Oldhaven Marrhold
+	"Marcher Lord" "Breaker of the Greentide" "Victory at Rottenstep" "Victory at Castonath" "Heir of Escann" Victory Summon Onslaught "Prince Jon" Ricard
+	# Modified High Kingdom
+	"High King" Lorenan "Lorenan the Great" Warlord "Lord of the West" "High Queen" Elemia Laurenne "Princess Laurenne" "Peace of the Realm" 
+	Ruben "Prince Ruben" Caylen "Prince Caylen"  Rewan "Prince Rewan" "Lorenan�s Rose" Coronation Crown "Crown of Escann"
 	# Rosande
 	Humacvrod "Ionntr�s" Escerfork Burnoll Themin Blademarch Bladeskeep Widnath Medirleigh Banesfork Clovenwood Vernham Oudeben "King of R�sande" "Queen of R�sande" "Crown of R�sande"
 	Maugunia
-	Petal Thorn Flower Rose Rosebush "Rose Petal" "Rose Thorn" "Rose Leaf" "Rose Vine" "R�sanda Rose" "Sweet Rose" "M�lis R�s" "Ashen Rose" "Dark Rose" "Tch� R�s" "Crimson Rose" "Black Flower" "Teder Fl�r" "White Flower" "Gal Fl�r" "Sweet Flower" "M�lis Fl�r" Lily "Sword Lily" "Crimson Poppy" "Bleeding Spearwort" "Scarlet Sage" Snapdragon "Dark Amaranth" Iris Orchid
-	Blood Heart Ceirese Lifeblood Vaitsilsuin Dostanesck R�sanda "Blood of R�sande" Bloodline Sanguinary "Red-Blooded" "Heart of R�sande" "Bleeding Heart" "Blood of Escann" "Red Heart" "Jer Ceirese" 
-	"Sweet Lady" Lady Esta "M�lis Esta" "Fair Maiden" Maiden Damsel "Black Prince" "Dark Hero" "Tch� Anur" "R�sander Hero"
+	Petal Thorn Flower Rose
+	Rosebush "Rose Petal" "Rose Thorn" "Rose Leaf" "Rose Vine"
+	"R�sanda Rose" "Sweet Rose" "M�lis R�s" "Ashen Rose" "Dark Rose" "Tch� R�s" "Crimson Rose"
+	"Black  Flower" "Teder Fl�r" "White Flower" "Gal Fl�r" "Sweet Flower" "M�lis Fl�r"
+	Lily "Sword Lily" "Crimson Poppy" "Bleeding Spearwort" "Scarlet Sage" Snapdragon "Dark Amaranth Iris Orchid
+	Blood Heart Ceirese Lifeblood Vaitsilsuin
+	Dostanesck
+	R�sanda "Blood of R�sande" Bloodline Sanguinary "Red-Blooded"
+	"Heart of R�sande" "Bleeding Heart" "Blood of Escann" "Red Heart" "Jer Ceirese" 
+	"Sweet Lady" Lady Esta "M�lis Esta" "Fair Maiden" Maiden Damsel
+	"Black Prince" "Dark Hero" "Tch� Anur" "R�sander Hero" "
 	Superior Better Greater Supreme Haughty Arrogance Scornful Contempt Vainglorious Disdain Deride Peerless Unequalled Unmatched Condescendance
+
 
 }
 

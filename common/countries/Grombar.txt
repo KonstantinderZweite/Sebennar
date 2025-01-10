@@ -9,10 +9,10 @@ color = { 101  125  134 }
 
 historical_idea_groups = {
 	defensive_ideas
-	
+	expansion_ideas
 	
 	aristocracy_ideas
-		
+	naval_ideas	
 	quality_ideas
 	economic_ideas	
 	maritime_ideas

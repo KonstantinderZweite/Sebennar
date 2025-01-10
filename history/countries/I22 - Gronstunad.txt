@@ -10,3 +10,17 @@ capital = 4311
 fixed_capital = 4311
 
 1000.1.1 = { set_estate_privilege = estate_mages_organization_guilds }
+
+1395.8.27 = {
+	monarch = {
+		name = "Dromakian"
+		dynasty = "Dreamer"
+		birth_date = 1282.2.7
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+	set_ruler_flag = long_lived_ruler
+	add_ruler_personality = bold_fighter_personality
+	
+}

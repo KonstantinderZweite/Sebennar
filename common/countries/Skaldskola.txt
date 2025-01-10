@@ -11,11 +11,11 @@ historical_idea_groups = {
 	defensive_ideas
 	religious_ideas
 	diplomatic_ideas
-	
+	naval_ideas
 	maritime_ideas
 	administrative_ideas
 	
-	
+	expansion_ideas
 }
 
 historical_units = {

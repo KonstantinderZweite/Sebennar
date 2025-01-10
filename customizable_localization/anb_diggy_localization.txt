@@ -768,6 +768,13 @@ defined_text = {
 	}
 	
 	text = {
+		localisation_key = dwarovkron_ruby_destroyed_loc
+		trigger = {
+			has_global_flag = dwarovkron_ruby_destroyed
+		}
+	}
+
+	text = {
 		localisation_key = dwarovkron_unknown_ruby
 		trigger = {
 			always = yes
@@ -1027,4 +1034,30 @@ defined_text = {
 			check_variable = { nbFloor = 1 }
 		}
 	}
+}
+
+defined_text = {
+    name = GetDwarfKnowledge
+	
+	text = {
+        localisation_key = "[Root.ancientDwarvenKnowledge.GetValue]"
+        trigger = {
+            check_variable = {
+                which = ancientDwarvenKnowledge
+                value = 1
+            }
+        }
+    }
+
+    text = {
+        localisation_key = ZERO
+        trigger = {
+            NOT = {
+                check_variable = {
+                    which = ancientDwarvenKnowledge
+                    value = 1
+                }
+            }
+        }
+    }
 }

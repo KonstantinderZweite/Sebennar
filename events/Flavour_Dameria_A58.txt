@@ -162,12 +162,12 @@ country_event = {
 	option = {
 		name = dameria.2.a
 		ai_chance = { factor = 100 }
-		create_subject = {
-			subject_type = vassal
-			subject = FROM
+			create_subject = {
+				subject_type = vassal
+				subject = FROM
+			}
 		}
 	}
-}
 
 #They refuse vassalization offer
 country_event = {
@@ -186,13 +186,13 @@ country_event = {
 	option = {
 		name = dameria.3.a
 		ai_chance = { factor = 100 }
-		add_casus_belli = {
+			add_casus_belli = {
 			target = FROM
-			type = cb_vassalize_mission
-			months = 600
+				type = cb_vassalize_mission
+				months = 600
+			}
 		}
 	}
-}
 
 #Event for the religious war
 country_event = {

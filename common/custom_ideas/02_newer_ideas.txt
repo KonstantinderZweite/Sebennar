@@ -435,7 +435,7 @@ newer_idea_mil_modifiers = {
 newer_idea_dip_modifiers = {
 	category = DIP	
 	custom_warscore_cost_vs_other_religion = {
-		warscore_cost_vs_other_religion = -0.075
+		warscore_cost_vs_other_religion = -0.125
 		max_level = 2
 		level_cost_1 = 5
 		level_cost_2 = 15
@@ -584,15 +584,15 @@ newer_idea_dip_modifiers = {
 		level_cost_4 = 18
 
 		chance = {
-			factor = 0.25
-			modifier = {
-				factor = 2
-				religion = totemism
-			}
-			modifier = {
-				factor = 0
-				NOT = { religion = totemism }
-			}
+			#factor = 0.25
+			#modifier = {
+			#	factor = 2
+			#	religion = totemism
+			#}
+			#modifier = {
+			#	factor = 0
+			#	NOT = { religion = totemism }
+			#}
 		}
 	}
 	custom_envoy_travel_time = {

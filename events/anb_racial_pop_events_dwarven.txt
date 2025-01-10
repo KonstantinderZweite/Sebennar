@@ -31,6 +31,10 @@ country_event = {
 			factor = 10
 			has_country_modifier = racial_focus_dwarven
 		}
+		modifier = {
+			factor = 1.5
+			has_government_attribute = more_migration_and_tolerance
+		}
 	}
 	
 	option = {
@@ -1510,7 +1514,10 @@ country_event = {
 			can_focus_race = { RACE = dwarven }
 		}
 		custom_tooltip = pop_menu_focus_desc_tt
-		add_dip_power = -50
+		if = {
+			limit = { NOT = { has_country_flag = focusing_is_free_flag } }
+			add_dip_power = -50
+		}
 		generic_start_focus = { race = dwarven }
 		
 		hidden_effect = {

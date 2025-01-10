@@ -157,23 +157,6 @@ province_event = {
 		remove_province_modifier = ernatvir_constructing_hub
 	}
 }
-country_event = {
-	id = flavor_ernatvir.501
-	title = flavor_ernatvir.1.t
-	desc = flavor_ernatvir.1.d
-	picture = Dragonnel-1
-	is_triggered_only = yes
-	trigger = {
-	tag = I06
-	}
-	option = {
-		name = "flavor_ernatvir.501.b"
-		4122 = { change_trade_goods = iron }
-		4119 = { change_trade_goods = iron }
-		4149 = { change_trade_goods = iron }
-		4147 = { change_trade_goods = iron }
-		2931 = { change_trade_goods = iron }
-	}
-}
+
 
 

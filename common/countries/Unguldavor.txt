@@ -9,7 +9,7 @@ color = { 20  160  60 }
 
 historical_idea_groups = {
 	religious_ideas
-	
+	expansion_ideas
 	
 	quantity_ideas
 	quality_ideas	
