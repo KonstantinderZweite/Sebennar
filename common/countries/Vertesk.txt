@@ -127,7 +127,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassï¿½na" = -10
+	"Cassína" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10
@@ -180,11 +180,11 @@ leader_names = {
 	"of Vertesk" "of Dragondock" "of Black Tower" "of the Floodmarches" "of Highharbour"
 	
 	#Province Neighbours
-	"of Tenbury" "of Greenley" "of Fluddhill" "of Alenath" "of Aramar" "of Crothï¿½n" "of Crownsway" "of Wrothcross" "of Crodam" "of Ginnfield" "of Elwick" "of Talonmount" "of Gaweton" "of Drakesford"
+	"of Tenbury" "of Greenley" "of Fluddhill" "of Alenath" "of Aramar" "of Crothán" "of Crownsway" "of Wrothcross" "of Crodam" "of Ginnfield" "of Elwick" "of Talonmount" "of Gaweton" "of Drakesford"
 	"of Westmoors" "of Moorton"
 	
 	#Country Neighbours
-	"of Wex" "of Derwing" "of Arbaran" "of Gawed" "of Anbenncï¿½st" "of Damescrown" "of Uelaire" "of Beepeck" "of Exwes" "of Ryalanar" "of Lorent" "of Deranne"
+	"of Wex" "of Derwing" "of Arbaran" "of Gawed" "of Anbenncóst" "of Damescrown" "of Uelaire" "of Beepeck" "of Exwes" "of Ryalanar" "of Lorent" "of Deranne"
 	
 	#Geographic Neighbours
 	"of Esmaria" "of the Borders" "of the Dameshead" "of Damesneck" "of Lencenor" 
@@ -192,7 +192,7 @@ leader_names = {
 	#Noble Families
 	"of Vanbury" Gerwick Baldfather Greenley Tenbury 
 	Cottersea Cockerwall Beron Brontay Leapdon
-	Silcalas Silurion Silgarion Konwell "sï¿½l Themarenn" "sï¿½l Bennon"
+	Silcalas Silurion Silgarion Konwell "síl Themarenn" "síl Bennon"
 	
 	
 	#Generic Alenic names
@@ -204,14 +204,14 @@ ship_names = {
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Vertesker Cult
-	"Gold Coin" "Golden Lady" Fortune Trader Commerce "Araï¿½s Fortune" "Golden Luck" Regent Rule Order
-	"Castellosï¿½ Mace" Authority Power Secret Shadow Trickster Shadowdancer Spymaster "Nathalyneï¿½s Dagger" "Moonï¿½s Shadow"
+	"Gold Coin" "Golden Lady" Fortune Trader Commerce "Ara’s Fortune" "Golden Luck" Regent Rule Order
+	"Castellos’ Mace" Authority Power Secret Shadow Trickster Shadowdancer Spymaster "Nathalyne’s Dagger" "Moon’s Shadow"
 	# Generic Republic
 	"Lord Mayor" "Lady Mayores" Mayor Mayores Caepas "Prince-Mayor" "Princess-Mayores" Elector Republican Governor
 	# Vertesk
 	Arnos Tordan Vertesker Vertesk Highharbour Floodmarshes Tenbury Greenley Dominion "Trade of Vertesk"
-	"Black Tower" Tower Citadel "Bal Vertesk" "High River" "Black Citadel" "High Tower" "Towerï¿½s Shadow" "Eye of the Tower" "Watchful Tower"
-	"Towerï¿½s Spy" "Ominous Tower" "Dragonï¿½s Maw" "Towerï¿½s Light" "Towerï¿½s Watchful Eyes" Panopticon "Watchful Light" "No Secret Under the Tower Eyes" "Black Spire" "Black Iron"
+	"Black Tower" Tower Citadel "Bal Vertesk" "High River" "Black Citadel" "High Tower" "Tower’s Shadow" "Eye of the Tower" "Watchful Tower"
+	"Tower’s Spy" "Ominous Tower" "Dragon’s Maw" "Tower’s Light" "Tower’s Watchful Eyes" Panopticon "Watchful Light" "No Secret Under the Tower Eyes" "Black Spire" "Black Iron"
 	"Soaring Tower" Obelisk "Dark Tower" "Black Ship" "Black Galley" "Great Shadow" "Casted Shadow" "Stalking Shadow" "Soaring Shadow" "Shadow over the Sea"
 	Surveillance "Three Empires" "Iron Chain" Slaver "Green Trade" "Price of Gold" "Invisible Hand" Watchful Spy Observant
 	Alen Alenic Opportunity Arsenal Marine Boarder Scrutiny "Slave Trader" "Sea Dog" Vigilant

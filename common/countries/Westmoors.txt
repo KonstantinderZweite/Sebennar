@@ -120,7 +120,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassï¿½na" = -10
+	"Cassína" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10
@@ -181,13 +181,13 @@ ship_names = {
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Moormen Cult
-	"Wild Hunt" "Hunterï¿½s Bow" "Raging Host" "Falahï¿½s Assembly" Huntsman "Houndsï¿½ Bark" Predator "Great Ride" "Monsterï¿½s End" "Bow of Falah"
-	Judge "Neratï¿½s Judgement" Oathkeeper "Black Hound" Omen Executor Punishment Sworn "End of Renouncers" "Betrayerï¿½s Death"
+	"Wild Hunt" "Hunter’s Bow" "Raging Host" "Falah’s Assembly" Huntsman "Hounds’ Bark" Predator "Great Ride" "Monster’s End" "Bow of Falah"
+	Judge "Nerat’s Judgement" Oathkeeper "Black Hound" Omen Executor Punishment Sworn "End of Renouncers" "Betrayer’s Death"
 	# Westmoor
-	Devan "Lord Devan" "Lord of the Westmoor" Moorman Leapdon Cottersea "Brontay Point" Wispmire Moorhills "Foulerï¿½s Fen"
+	Devan "Lord Devan" "Lord of the Westmoor" Moorman Leapdon Cottersea "Brontay Point" Wispmire Moorhills "Fouler’s Fen"
 	Cockerwall Beron Edgemoor Moorton Elder Clan "Clan Elder" Venerable Esteemed Honoured
-	Hound "Great Hound" Pack "Hunting Pack" "Hound of the Moors" Dog "Sea Dog" "Sea Hound" "Houndï¿½s Tooth" "Greyhound"
-	"Brown Hound" "Hunter of Harpy" Spaniel "Moor Spaniel" "Sea Hunter" "Barking Hound" "Pack of Hounds" "Pack of the Moors" "Westmoorï¿½s Hound" "Elderï¿½s Hound"
+	Hound "Great Hound" Pack "Hunting Pack" "Hound of the Moors" Dog "Sea Dog" "Sea Hound" "Hound’s Tooth" "Greyhound"
+	"Brown Hound" "Hunter of Harpy" Spaniel "Moor Spaniel" "Sea Hunter" "Barking Hound" "Pack of Hounds" "Pack of the Moors" "Westmoor’s Hound" "Elder’s Hound"
 	Independent "Blood Feud" Isolation Moor Moorlord Sovregnity Bold "Hot-headed" Intrepid Daring
 
 }

@@ -180,7 +180,7 @@ monarch_names = {
 	"Marilda" = -10
 	"Nara" = -10
 	"Revhild" = -10
-	"Riennï¿½n" = -10
+	"Riennón" = -10
 	"Sebillr" = -10
 	"Sesill" = -10
 	"Sofia" = -10
@@ -217,13 +217,13 @@ ship_names = {
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Reachman Cult
-	"Treasure of the Sea" "Tale of Fortune" "Lady Luck" "Pearl of the North" "Araï¿½s Coin" Trader "Gold Coin" "Dirge of Munas" "Song to the Moon" "Northern Sails"
-	"Sea Shanty" "Ice Wind" "Munasï¿½ Hymn" "Falahite Saga" "Falah and the Kraken-Hunter" "Old Winter Hunt" "Hunterï¿½s Bow" "Emerald Huntress" "Great Hunt" Archer
+	"Treasure of the Sea" "Tale of Fortune" "Lady Luck" "Pearl of the North" "Ara’s Coin" Trader "Gold Coin" "Dirge of Munas" "Song to the Moon" "Northern Sails"
+	"Sea Shanty" "Ice Wind" "Munas’ Hymn" "Falahite Saga" "Falah and the Kraken-Hunter" "Old Winter Hunt" "Hunter’s Bow" "Emerald Huntress" "Great Hunt" Archer
 	# Generic White Reachman
 	Esald Eskerborg Cedevick Rivsby Estshore Chillpoint "Bal Vroren" Mammoth Wudhal Vertwik
 	Gerudian Star Reachman Alcar "Snow Aegis" "Iron Lord" Magnar Dawn Ivan Cobalt-Sworn
 	"Northern Wind" Fisher "Frozen Arrow" Kraken Pillar "Kraken Slayer" Azure "Flame and Throne" Blizzard Skaldic
-	"Northern Shield" Vrorensail "Giantï¿½s End" "Salmon Speaker" Skald Frostguard Sailor Herring Cod Eel Song Flounder Goby "White Dragon" "Northern Sails"
+	"Northern Shield" Vrorensail "Giant’s End" "Salmon Speaker" Skald Frostguard Sailor Herring Cod Eel Song Flounder Goby "White Dragon" "Northern Sails"
 
 }
 

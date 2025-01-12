@@ -102,7 +102,7 @@ monarch_names = {
 	"Ottolin" = 10
 	"Ottomac" = 10
 	"Ottrac" = 10
-	"Otï¿½" = 10
+	"Otó" = 10
 	
 	
 	"Abigail" = -10
@@ -120,7 +120,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassï¿½na" = -10
+	"Cassína" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10
@@ -154,19 +154,19 @@ monarch_names = {
 
 leader_names = {
 	#Country Specific
-	"of Bisan" "of Bladewall" "of Hiltsford" "of Corseton" "of Aelthï¿½l"
+	"of Bisan" "of Bladewall" "of Hiltsford" "of Corseton" "of Aelthíl"
 	
 	#Province Neighbours
 	"of Ottocam" "of Vinerick" "of Countsbridge" "of Gnollsgate" "of Rhinmond" "of Whistlepoint" "of Walterton" "of Cestaire" "of Elensbridge" "of Clawmarches" "of Heartspier"
 	
 	#Country Neighbours
-	"of Busilar" "of Magdalaire" "of Galï¿½inn" "of Indlebury" "of Wex" "of Sugamber" "of Cestirande" "of Tellum" "of Verne"
+	"of Busilar" "of Magdalaire" "of Galéinn" "of Indlebury" "of Wex" "of Sugamber" "of Cestirande" "of Tellum" "of Verne"
 	
 	#Geographic Neighbours
 	"of the Diven" "of the Borders" "of the Bardswood"
 	
 	#Noble Families
-	"sï¿½l Aelthï¿½l" "sï¿½na Corse"
+	"síl Aelthíl" "sína Corse"
 	
 	
 	#Generic Alenic names
@@ -178,12 +178,12 @@ ship_names = {
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Wexonard Temple
-	Oath Martial Warrior "Adeanï¿½s Spear" "Steel Spear" Valor Honourbound Judge Law "High Judge"
-	Justice Executioner "God of Death" "Great Hunt" Archer "Hunterï¿½s Bow" "Emerald Huntress" "First Hunt" Solstice Ranger
+	Oath Martial Warrior "Adean’s Spear" "Steel Spear" Valor Honourbound Judge Law "High Judge"
+	Justice Executioner "God of Death" "Great Hunt" Archer "Hunter’s Bow" "Emerald Huntress" "First Hunt" Solstice Ranger
 	# Generic Monarchy
 	Count Countess Thigearh Duke Duchess Sadran Marquis Prince Princess Elector
 	# Crusader Elven
-	"Lunatï¿½in" "Estï¿½dha" "Nadostï¿½iar" "ï¿½rthï¿½l" Silsuinairge Anben Elf Laoch Athraithe Nadost
+	"Lunatéin" "Estádha" "Nadostóiar" "Árthíl" Silsuinairge Anben Elf Laoch Athraithe Nadost
 	# Generic Wexonard
 	Rhimond Bisan Indlebury Magdalaire Escandar Corseton Ottocam Vinerick Wexkeep Wexonard
 	Shield Sword Greatsword Lionsword Axe Polearm "War Scythe" Mace "Morning Star" "War Hammer"

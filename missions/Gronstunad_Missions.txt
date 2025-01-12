@@ -1646,7 +1646,6 @@ gronstunad_3 = {
 			OR = {
 				hold_condition = { Damaged = yes }
 				NOT = { has_fort_building_trigger = yes }
-				NOT = { has_manpower_building_trigger = yes }
 				NOT = { is_core = ROOT }
 				NOT = { owned_by = ROOT }
 			}
@@ -1656,14 +1655,12 @@ gronstunad_3 = {
 			4311 = { #Gronstunad
 				hold_condition = { Repaired = yes }
 				has_fort_building_trigger = yes
-				has_manpower_building_trigger = yes
 				is_core = ROOT
 				owned_by = ROOT
 			}
 			4313 = { #Vurdriz Andriz
 				hold_condition = { Repaired = yes }
 				has_fort_building_trigger = yes
-				has_manpower_building_trigger = yes
 				is_core = ROOT
 				owned_by = ROOT
 			}

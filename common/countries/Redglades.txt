@@ -143,27 +143,27 @@ ship_names = {
 	Artanos "The First Spear" "Spear of Adean" Spearsworn Knight Honour Adamant Steadfast Dauntless Longlance
 	Brave Courage Loyalty Oath Chivalrous Endurance Dutiful Nobility "Herald of the West" Duty
 	# Lencori Minaran
-	"Minaraï¿½s Apple" Lotus Blossom "Wave Lily" "Irenic Dream" Joyous Celebrant Jubilation Exultation "Passion's Promise"
-	Pleasure Desire "Beauty of Lencenor" "Great Flower" "Gobelet of Abundance" "Sweet Temptation" Merrymaker "Minaraï¿½s Whip" "Whipping Lady" Merry
+	"Minara’s Apple" Lotus Blossom "Wave Lily" "Irenic Dream" Joyous Celebrant Jubilation Exultation "Passion's Promise"
+	Pleasure Desire "Beauty of Lencenor" "Great Flower" "Gobelet of Abundance" "Sweet Temptation" Merrymaker "Minara’s Whip" "Whipping Lady" Merry
 	# Elven Lencori
-	"Lunatï¿½in" "Estï¿½dha" "Nadostï¿½iar" "ï¿½rthï¿½l" Silsuinairge Anben Elf Anbennar Lun Aelentir
+	"Lunatéin" "Estádha" "Nadostóiar" "Árthíl" Silsuinairge Anben Elf Anbennar Lun Aelentir
 	# Generic Elven
-	Lunelf Lunseinarn Coghseinarn Serencionn "Drï¿½iha" "Jerrï¿½s" "ï¿½rï¿½is" Catarn Niell Bochar
-	Munas Istralania Urion Garion Ioriel Eborian Narawen Calasandur "Waï¿½dh" "Agaï¿½rmarin"
-	Amanta Andeir Arceatha Arur Athraithe "Blaï¿½dd" Bochoch "Bradï¿½n"
-	Caen "Carcï¿½n" "Cï¿½lodir" Cidithir "Cinniï¿½" Contach "Draoidarï¿½n" "Dï¿½sadharin" Elvacin "Frigï¿½a"
-	Maradhan "Marï¿½n" "Mï¿½rgi" Meweri "Neï¿½omair" Rianvisa "Sï¿½mchï¿½lï¿½rn" "Seinsï¿½r" Socill Tenachern
+	Lunelf Lunseinarn Coghseinarn Serencionn "Dráiha" "Jerrós" "Órúis" Catarn Niell Bochar
+	Munas Istralania Urion Garion Ioriel Eborian Narawen Calasandur "Waídh" "Agaírmarin"
+	Amanta Andeir Arceatha Arur Athraithe "Blaídd" Bochoch "Bradán"
+	Caen "Carcán" "Célodir" Cidithir "Cinniú" Contach "Draoidarín" "Dùsadharin" Elvacin "Frigéa"
+	Maradhan "Marín" "Mérgi" Meweri "Neíomair" Rianvisa "Sámchílárn" "Seinsár" Socill Tenachern
 	# Redglade
-	Winterglade Gahmlen Springlade "Preï¿½rlen" Summerglade Samhadhlen Autumnglade "Fï¿½mharlen" Gladegate Ioriellen
-	Ioriel "Jer Rï¿½s" "Gal Rï¿½s" "Mï¿½lis Rï¿½s" "Esta Ioriel" "Mï¿½lis Ioriel" "Four Seasons" "ï¿½rhetana" Oscurian "Sï¿½dhe"
+	Winterglade Gahmlen Springlade "Preárlen" Summerglade Samhadhlen Autumnglade "Fámharlen" Gladegate Ioriellen
+	Ioriel "Jer Rós" "Gal Rós" "Mélis Rós" "Esta Ioriel" "Mélis Ioriel" "Four Seasons" "Árhetana" Oscurian "Sídhe"
 	Fey Unicorn Satyr Pixy Sylph Treant "Fairy Dragon" Dryad Nymph Lifeblood 
-	Gahm Winter Odrach "Winterï¿½s Wrath" "Winter Solstice" "Gahmflï¿½r" "Gahm Drochnis" "Still Winter" "Sails of Winter" "Embrace of Winter"
-	Spring "Preï¿½r" Idrissa "Blood of Spring" "Spring Equinox" "Preï¿½rflï¿½r" "Icrï¿½preï¿½r" "Blooming Spring" "Sails of Spring" "Spring Touch"
-	Samhadh Summer Sonnider "Sun of Summer" "Summer Solstice" "Samhadhflï¿½r" "Samhadh Sonna" "Ardent Summer" "Sails of Summer" "Summer Threat"
-	"Fï¿½mhar" Autumn Cimagen "Fallen Knowledge" "Autumn Equinox" "Fï¿½mharflï¿½r" "Fï¿½mhargenn" "Leaves of Autumn" "Sails of Autumn" "Secret of Autumn"
-	"Jer Lun" "Blood Moon" "Crï¿½lun" "Silsuin Rï¿½s" Rï¿½s "Rï¿½s Lun" "Moon and Rose" "Airgein Ceirese" Carnation "Bleeding Amaranth"
+	Gahm Winter Odrach "Winter’s Wrath" "Winter Solstice" "Gahmflár" "Gahm Drochnis" "Still Winter" "Sails of Winter" "Embrace of Winter"
+	Spring "Preár" Idrissa "Blood of Spring" "Spring Equinox" "Preárflár" "Icrópreár" "Blooming Spring" "Sails of Spring" "Spring Touch"
+	Samhadh Summer Sonnider "Sun of Summer" "Summer Solstice" "Samhadhflár" "Samhadh Sonna" "Ardent Summer" "Sails of Summer" "Summer Threat"
+	"Fámhar" Autumn Cimagen "Fallen Knowledge" "Autumn Equinox" "Fámharflár" "Fámhargenn" "Leaves of Autumn" "Sails of Autumn" "Secret of Autumn"
+	"Jer Lun" "Blood Moon" "Crólun" "Silsuin Rós" Rós "Rós Lun" "Moon and Rose" "Airgein Ceirese" Carnation "Bleeding Amaranth"
 	Blood Heart Ceirese Vaitsilsuin "Blood of Ioriel" "Blood of Aelentir" Endral Bloodline "Heart of Ioriel" "Heart of the Forest"
-	Majestic "Beautiful Lady" "Beauty of the Redglade" "Princess Ioriel" Redglader Lorentish "Forbidden Fruit" "Drominar Ceirese" "Grï¿½dair Gaen" "Mï¿½lis Ceirese"
+	Majestic "Beautiful Lady" "Beauty of the Redglade" "Princess Ioriel" Redglader Lorentish "Forbidden Fruit" "Drominar Ceirese" "Grádair Gaen" "Mélis Ceirese"
 
 }
 

@@ -1826,10 +1826,6 @@ krakdhumvror_4 = {
 		
 		trigger = {
 			crown_land_share = 5
-			custom_trigger_tooltip = {
-				tooltip = krak_redistribute_land_tooltip
-				NOT = { has_ruler_flag = krak_ruler_weaken }
-			}
 			estate_loyalty = {
 				estate = estate_church
 				loyalty = 30

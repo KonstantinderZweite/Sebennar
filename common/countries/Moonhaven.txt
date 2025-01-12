@@ -139,18 +139,18 @@ ship_names = {
 	# Generic Cannorian 
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Elven Anbennar 
-	"Lunatï¿½in" "Estï¿½dha" "Nadostï¿½iar" "ï¿½rthï¿½l" Silsuinairge Anben Elf Anbennar Lun Aelentir
+	"Lunatéin" "Estádha" "Nadostóiar" "Árthíl" Silsuinairge Anben Elf Anbennar Lun Aelentir
 	# Highest Moon
-	Mage Eightborn "Highest Moon" "High Luminary" "Crescent Moon" Meteor Damestar Celestial Star Moonblessed Moonsinger "Lungrï¿½ilt" Traveller "Moonlit Singer" "Moon Sails" Elven Silver "Munasï¿½ Rapier" "Moonï¿½s Song" Wanderer
+	Mage Eightborn "Highest Moon" "High Luminary" "Crescent Moon" Meteor Damestar Celestial Star Moonblessed Moonsinger "Lungráilt" Traveller "Moonlit Singer" "Moon Sails" Elven Silver "Munas’ Rapier" "Moon’s Song" Wanderer
 	# Damerian Republic
-	Munerinus Epuloces Lestinus Arodanes Aleces Moon Luminary Pustior Rogatior Owl Faverii "Arcum Casnati" Bow "Three Arrows" Dameshead Matilanum Cerulean League Procevian Institution Casnate Republic Damenath Aramar "Crothï¿½n" Damescrown Carmeris Redfort Havoric "Seven Founders"
+	Munerinus Epuloces Lestinus Arodanes Aleces Moon Luminary Pustior Rogatior Owl Faverii "Arcum Casnati" Bow "Three Arrows" Dameshead Matilanum Cerulean League Procevian Institution Casnate Republic Damenath Aramar "Crothán" Damescrown Carmeris Redfort Havoric "Seven Founders"
 	# Moonhaven
 	Prince Princess Elector "Prince of Moonhaven" "Princess of Moonhaven"
-	Moonhaven Moonhavener Varionail Riverglade Silverwood "Dancerï¿½s Retreat"
+	Moonhaven Moonhavener Varionail Riverglade Silverwood "Dancer’s Retreat"
 	Munas Varilor Bluetongue "King Marion" Finorian Varion Cymlan Oloris Erondar Loriandar
 	"Full Moon" "Waning Gibbous" "Waxing Gibbous" "First Quarter" "Third Quarter" "Waning Crescent" "Waxing Crescent" "New Moon" Eclipse
-	"Silver Light" "Moonhaven Silver" "Silver Moon" "Silver Blood" "Silver Shade" "Light Shade" "Silver Sails" "Silver Crescent" "Silver Eclipse" "Silver Quarter" "Airge Lun" "Airge Seren" "Silver Stars" "Star dancer" "Silver dancer" "Celestial Dancer" "Dancer of Haven" "Moon Dancer" Dancer Starlight "Silver Bow" Airge "Airge Bochar" Bochar "Aï¿½th" "Airge Aï¿½th" "Silver Arrow" "Bow of Moonhaven" "Elven Bow" "Elven Arrow"
-	"Great Bow" Arrowhead "Silver Ranger" "Moon Ranger" "Rangerï¿½s Arrow" "Celestial Arrow" Dï¿½rarn "Airge Dï¿½rarn" "Lun Dï¿½rarn" Diran "Airge Diran" "Lun Diran" "Moon Dance" "Celestial Dance" Silverblade Moonblade "Blaï¿½dd" "Lunblaï¿½dd" "Airgeblaï¿½dd" Blade Silverspear "Airgesheï¿½h" "Blade Dancer" "Blaï¿½dd Dï¿½rarn" Spear Moonspear
+	"Silver Light" "Moonhaven Silver" "Silver Moon" "Silver Blood" "Silver Shade" "Light Shade" "Silver Sails" "Silver Crescent" "Silver Eclipse" "Silver Quarter" "Airge Lun" "Airge Seren" "Silver Stars" "Star dancer" "Silver dancer" "Celestial Dancer" "Dancer of Haven" "Moon Dancer" Dancer Starlight "Silver Bow" Airge "Airge Bochar" Bochar "Aíth" "Airge Aíth" "Silver Arrow" "Bow of Moonhaven" "Elven Bow" "Elven Arrow"
+	"Great Bow" Arrowhead "Silver Ranger" "Moon Ranger" "Ranger’s Arrow" "Celestial Arrow" Dírarn "Airge Dírarn" "Lun Dírarn" Diran "Airge Diran" "Lun Diran" "Moon Dance" "Celestial Dance" Silverblade Moonblade "Blaídd" "Lunblaídd" "Airgeblaídd" Blade Silverspear "Airgesheáh" "Blade Dancer" "Blaídd Dírarn" Spear Moonspear
 	Oak "Great Oak" Venerable "Silver Oak" "Moon Oak" Sage Wisdom Knowledge Clever Elder Merit Eorid Advice Splendid "Silver Blooded" Excellence Worth Seafarer Advantage Grace Elegance Refined Dignity Charm Beauty Magnificence Splendor Felicity Glorious Majestic Leaf Puille "Airge Puille" "Silver Leaf" "Moon Leaf" "Crescent Leaf" "Celestial Leaf" "Leaf Dancer" "Moonlit Oak" "Great Leaf"
 }
 

@@ -164,18 +164,18 @@ leader_names = {
 
 ship_names = {
 	# Wood Elf
-	"Hofï¿½nn" "Elynï¿½ile" "Drennethï¿½lle" Ciranmyna "Ciranghï¿½l" Ayethstir "Tarï¿½ile" Emmylscotha Ymyhain Yfelorr
-	Elyn "Cenï¿½g" Drennen Myna Ayeth Scotha Ahain "Ghï¿½l" Faelgarn Cyranvar
-	Statir "Siubï¿½lrn" "Yntynï¿½" Symh "Sï¿½lody" "Sï¿½wel" Salla "Sï¿½isth" "Vyr Sï¿½isth" Loen
-	"Gaethneï¿½n" Enya "Enya Ciran" Elf Dirgel Dael "Cï¿½ryn" "Cï¿½nar" "Ceannasaï¿½" Baechar
-	Elfllann "Ciranynir" "Ciran Cohtyd" "Arsyd Dael" Chylch "Dirgel Dethryn" Hanwrg "Ciran Loen" Conta "Sï¿½wel Scrï¿½n"
+	"Hofónn" "Elynáile" "Drennethílle" Ciranmyna "Ciranghúl" Ayethstir "Taráile" Emmylscotha Ymyhain Yfelorr
+	Elyn "Cenág" Drennen Myna Ayeth Scotha Ahain "Ghúl" Faelgarn Cyranvar
+	Statir "Siubálrn" "Yntynú" Symh "Sélody" "Sáwel" Salla "Sàisth" "Vyr Sàisth" Loen
+	"Gaethneán" Enya "Enya Ciran" Elf Dirgel Dael "Córyn" "Cínar" "Ceannasaí" Baechar
+	Elfllann "Ciranynir" "Ciran Cohtyd" "Arsyd Dael" Chylch "Dirgel Dethryn" Hanwrg "Ciran Loen" Conta "Sáwel Scrén"
 
 }
 
 army_names = {
-	"Ghï¿½la Army" "Army of $PROVINCE$"
+	"Ghúla Army" "Army of $PROVINCE$"
 }
 
 fleet_names = {
-	"Ghï¿½la Navy" "Tree Squadron" "Bark Squadron" "Bush Squadron" "Grass Squadron"
+	"Ghúla Navy" "Tree Squadron" "Bark Squadron" "Bush Squadron" "Grass Squadron"
 }

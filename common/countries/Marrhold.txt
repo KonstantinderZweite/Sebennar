@@ -231,7 +231,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassï¿½na" = -10
+	"Cassína" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10
@@ -320,8 +320,8 @@ monarch_names = {
 	"Marilna" = -10
 	"Matilda" = -10
 	"Nara" = -10
-	"Reï¿½nne" = -10
-	"Riennï¿½n" = -10
+	"Reínne" = -10
+	"Riennón" = -10
 	"Sofina" = -10
 	"Valenca" = -10
 	"Varina" = -10
@@ -355,17 +355,17 @@ ship_names = {
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Marrhold Temple
-	"King of Gods" "Sapphire Scepter" "Silver Dragon" Order Monarch Sovereign "Great Hunt" Archer "Hunterï¿½s Bow" "Emerald Huntress"
-	Tracker Wild Trapper "Corinï¿½s Circle" Ascendance "Corinï¿½s Sword" Firebrand Resurrection Avatar "Agradosï¿½ Redemption"
+	"King of Gods" "Sapphire Scepter" "Silver Dragon" Order Monarch Sovereign "Great Hunt" Archer "Hunter’s Bow" "Emerald Huntress"
+	Tracker Wild Trapper "Corin’s Circle" Ascendance "Corin’s Sword" Firebrand Resurrection Avatar "Agrados’ Redemption"
 	# Marrhold
 	Marr Gryff Ulric "Griffon king" Edric "Blackmane" "Goodfather" Hoger Edmund Goldenheart
 	Agatha Hunter Ironbeak Avenger Caylen "Gryff the Old" "Gryff the Young" Marrodic Elec Wicing
 	"Sir Ralph Peckham" Marrhold Marrvale Marrhyl Willowmore Griffonsgate Doesker Dryadsdale Spritescage Pixiebury
-	Nymphlea Hornwood "Loverï¿½s Quarrel" "King of Marrhold" "Queen of Marrhold" " numdihr" "Griffon Prince" "Griffon Princess" Griffonsquarrel Marshal 
-	Griffon "Griffon Rider" Swiftclaw Ironclaw "Royal Griffon" Soevol "Griffon Knight" "Griffonï¿½s Claw" "Griffonï¿½s Mane" Claw
-	"Great Griffon" "Swift Griffon" "Black Griffon" Beck "Griffon Lord" "White Griffon" Talon "Griffonï¿½s Wings" "Sails of the Griffon" "Sea Griffon"
+	Nymphlea Hornwood "Lover’s Quarrel" "King of Marrhold" "Queen of Marrhold" " numdihr" "Griffon Prince" "Griffon Princess" Griffonsquarrel Marshal 
+	Griffon "Griffon Rider" Swiftclaw Ironclaw "Royal Griffon" Soevol "Griffon Knight" "Griffon’s Claw" "Griffon’s Mane" Claw
+	"Great Griffon" "Swift Griffon" "Black Griffon" Beck "Griffon Lord" "White Griffon" Talon "Griffon’s Wings" "Sails of the Griffon" "Sea Griffon"
 	"Golden Griffon" "Griffon Heart" "Griffon-Hearted" "Griffon-Eyed" "Flight of the Griffon" "Soaring Griffon" Feather Greatclaw Greatbeck "White Feather"
-	Griffin "Lions and Eagles" "Flying Griffon" "Great Feather" "Griffonï¿½s Tail" "White Claw" "Great Mane" "Roaring Griffon" "Griffonï¿½s Call" "Noble Griffon"
+	Griffin "Lions and Eagles" "Flying Griffon" "Great Feather" "Griffon’s Tail" "White Claw" "Great Mane" "Roaring Griffon" "Griffon’s Call" "Noble Griffon"
 	Valor Strength Bold Audacious Temeraire Spite Pluck Mettle Powerful Vigorous
 	Resistance Independence Insular Rigid Victory "In Defiance" Hardy Firm Durable Advantage
 

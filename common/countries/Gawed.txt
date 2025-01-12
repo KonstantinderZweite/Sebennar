@@ -150,7 +150,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassï¿½na" = -10
+	"Cassína" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10
@@ -194,7 +194,7 @@ leader_names = {
 	Norleigh "of Morban" Jonsway Mossford Oudesker Wolfden Aldtempel Gardfort Drakesford Somberwold Westfield Baldfather Alenfield "of the Greatmarch"
 	
 	"of Northburn" "of Elderhollow" "of Bluesfield" Redgrave Morton Winters Brooks Robinson Alenson Woods Oldfort Newfort Eaglefort Horsefort Gilmore Swyft Mottram Rackham Thaxton Barton Bateman
-	Curran Doe Elk Avery "of Ashby" "of Vineroot Hollow" Smith Hammerford Croxford Shoebridge Slowbridge Guardbridge Butler Broadhurst Mason "sï¿½l Wex" "of Vinerick" Moss Moore Reed Wicknman Potts Toadswell Wood Townsend
+	Curran Doe Elk Avery "of Ashby" "of Vineroot Hollow" Smith Hammerford Croxford Shoebridge Slowbridge Guardbridge Butler Broadhurst Mason "síl Wex" "of Vinerick" Moss Moore Reed Wicknman Potts Toadswell Wood Townsend
 }
 
 ship_names = {
@@ -202,25 +202,25 @@ ship_names = {
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Gawedi Temple
-	Thunderstorm "Storm Scepter" "Storm and Thunder" "Warrior King" Ruler "Lightning-Bearer" "Wild Hunt" "Hunterï¿½s Bow" "Raging Host" "Falahï¿½s Assembly"
-	Huntsman "Houndsï¿½ Bark" Predator Judge "Neratï¿½s Judgement" Oathkeeper "Black Hound" Omen Executor Punishment
+	Thunderstorm "Storm Scepter" "Storm and Thunder" "Warrior King" Ruler "Lightning-Bearer" "Wild Hunt" "Hunter’s Bow" "Raging Host" "Falah’s Assembly"
+	Huntsman "Hounds’ Bark" Predator Judge "Nerat’s Judgement" Oathkeeper "Black Hound" Omen Executor Punishment
 	# Generic Gawedi
 	Eaglecrest Wightsgate Gaweton Ginnfield Gerwick Greatmarches Alenath Vanbury Baldfather Alenvord
 	"Great Lord" Ramsgate Ram Brasslance Boar Bawne Bull Eagle Pike Oudescker
 	Bear Balgard Stag Dire Wolf "Iron Ring" "Iron Horn" Outrider Oath "Blood Oath"
-	Woodsman Hearth "Dragonï¿½s Bane" Howl Alen "First Born" Kin "Prize of Iron" "Sworn Duty" Rosecrusher
+	Woodsman Hearth "Dragon’s Bane" Howl Alen "First Born" Kin "Prize of Iron" "Sworn Duty" Rosecrusher
 	Thunderhead Seastrider "Oath-Swearer" Dutiful Loyal Antler Hound Bond Pledge "Bond of Iron"
 	# Gawed
 	Godrac Invader Ulric Godryc Carlan Godwin Alenn Ricard Stovac Vyncent
 	Humbert Colyn Toman Welyam Jon Edmund Gawedi "King of Gawed" "Gawedi King" Elwick
 	Westmoor Greatwood Somberwolt Humbercroft Tenbury Vertesk Moorton Norleigh Elkmarch Pearview
 	"Looming Eagle" "Northern Eagle" "Great Eagle" "Eagle-Eyed" "Eagle of Gawed" "Swift Eagle" "Sea Eagle" Talon Beck Feather
-	"Eagleï¿½s Wings" "Eagleï¿½s Talons" "Bird of Prey" "Hunting Eagle" "Blue Eagle" "Flight of the Eagle" Raptor "Eagleï¿½s Crown" "Attacking Eagle" "Eagleï¿½s Assault"
+	"Eagle’s Wings" "Eagle’s Talons" "Bird of Prey" "Hunting Eagle" "Blue Eagle" "Flight of the Eagle" Raptor "Eagle’s Crown" "Attacking Eagle" "Eagle’s Assault"
 	Falcon Kestrel Hawk Buzzard Harrier Kite Owl Vulture "Iron Eagle" "Sworned Eagle"
 	"Iron Crown" "Gawedi Blue" Wolfsbane Alenic "Great Alen" "Eagle of the Alen" "Crowned Eagle" "Bond of the Alen" "Blood and Iron" "Iron Oath"
 	"Blood Bond" Host "Great Host" "Host of the Eagle" "Alenic Host" Iron "Iron Rule" "Iron Fist" "Blue Iron" "Ironwood"
-	Loyalty "Screaming Eagle" "Lord of the Alen" Magnate Wavebreaker Seagull "Crown of the Alen" "Godracï¿½s Crown" "Godracï¿½s Eagle" "Trial of Iron"
-	Martial Stoic Prowess Marshal Hardy Strong Robust Stalwart Indomitable "Dragonï¿½s Bane"
+	Loyalty "Screaming Eagle" "Lord of the Alen" Magnate Wavebreaker Seagull "Crown of the Alen" "Godrac’s Crown" "Godrac’s Eagle" "Trial of Iron"
+	Martial Stoic Prowess Marshal Hardy Strong Robust Stalwart Indomitable "Dragon’s Bane"
 
 }
 

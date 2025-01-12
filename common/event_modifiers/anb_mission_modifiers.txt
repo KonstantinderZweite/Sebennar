@@ -30084,7 +30084,7 @@ A77_enlistment_of_adventurers = {
 }
 
 true_knight_of_aldresia = {
-	morale_damage = 0.10
+	morale_damage = 0.075
 }
 
 A77_wave_of_desctruction = {
@@ -30134,7 +30134,7 @@ A77_indomitable_fortress = {
 }
 
 A77_usurped_magisterium = {
-	infantry_power = 0.15
+	infantry_power = 0.1
 }
 
 A77_for_the_emperor = {
@@ -30170,7 +30170,7 @@ upgraded_valiant_keep = {
 }
 
 A77_traditionalist_knights = {
-	land_morale = 0.10
+	land_morale = 0.075
 }
 
 A77_pragmatic_knights = {
@@ -32578,7 +32578,7 @@ Z38_enhanced_fungi_farms = {
 }
 
 Z38_fungal_dye_supplies = {
-	trade_goods_size_modifier = 0.25
+	trade_goods_size_modifier = 0.15
 }
 
 Z38_arsenal_of_artificery = {
@@ -32615,7 +32615,7 @@ Z38_glidewing_membranes_dummy = {
 
 Z38_claws_of_power_regiment_mod = {
 	is_rajput_modifier = yes
-	morale_damage_received = -0.1
+	morale_damage_received = -0.075
 }
 
 Z38_detachable_extra_limbs_dummy = {
@@ -32625,7 +32625,7 @@ Z38_detachable_extra_limbs_dummy = {
 
 Z38_ogre_sized_kobolds_regiment_mod = {
 	is_rajput_modifier = yes
-	shock_damage_received = -0.1
+	shock_damage_received = -0.075
 }
 
 Z38_malliaths_chosen_disciples_dummy = {
@@ -32690,8 +32690,8 @@ Z38_the_holiest_flesh_dummy = {
 
 Z38_the_holiest_flesh_regiment_mod = {
 	is_rajput_modifier = yes
-	fire_damage = 0.2
-	fire_damage_received = -0.2
+	fire_damage = 0.1
+	fire_damage_received = -0.1
 }
 
 Z38_dragons_mean_change = {

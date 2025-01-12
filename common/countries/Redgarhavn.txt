@@ -165,7 +165,7 @@ leader_names = {
 	
 	
 	#Country Neighbours
-	"af Bjarnrï¿½k" "af Revrhavn" "af Sidaett"
+	"af Bjarnrík" "af Revrhavn" "af Sidaett"
 	
 	#Geographic Neighbours
 	"af Gerudia" "ava Giant's Grave" "afa Serpentshead" "of the Alen" "ava Titan's Walk" "af Fjordsbay"

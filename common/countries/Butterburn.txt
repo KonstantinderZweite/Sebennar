@@ -155,8 +155,8 @@ ship_names = {
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Small Temple
-	Hearth Mother "Queen Esmaryal" "Good Health" Sunlight "Esmaryalï¿½s Light" Harvest "Crescent Moon" Celestial Solstice
-	Harvester "Dameï¿½s Light" Charity Goodwill Goodfingers "Jovial Halfling" Mercy Compassion Generosity 
+	Hearth Mother "Queen Esmaryal" "Good Health" Sunlight "Esmaryal’s Light" Harvest "Crescent Moon" Celestial Solstice
+	Harvester "Dame’s Light" Charity Goodwill Goodfingers "Jovial Halfling" Mercy Compassion Generosity 
 	# Generic Halfling
 	Beepeck Viswall Newcobble Appleton Butterburn Turnwell Cowskeep Greymill Elkwood Coppertown
 	Thomsbridge Bigwheat Roysfort Tipney Orston Barrowshire Aelcandar Pearview Westmere Norley

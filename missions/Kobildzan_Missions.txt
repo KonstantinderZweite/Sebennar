@@ -664,7 +664,7 @@ kob_4_a = {
 			NOT = { A13 = { navy_size = ROOT } }
 			NOT = { Z22 = { navy_size = ROOT } }
 			NOT = { A06 = { navy_size = ROOT } }
-			has_idea = colonial_ventures
+			has_idea = quest_for_the_new_world
 		}
 
 		effect = {

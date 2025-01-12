@@ -131,7 +131,7 @@ monarch_names = {
 	"Bella" = -10
 	"Bridget" = -10
 	"Caroline" = -10
-	"Cassï¿½na" = -10
+	"Cassína" = -10
 	"Castana" = -10
 	"Cecilia" = -10
 	"Clarya" = -10
@@ -177,7 +177,7 @@ leader_names = {
 	"of the Approach" "of Geycombe" "of Long Crags" "of Elkwood" "of Twofork" "of Lonevalley" "of Fluddhill" "of Gaweton" "of Viswall" "of Norley" "of Old Course" "of Newacre" "of Manyburrows" 
 	
 	#Country Neighbours
-	"of Gawed" "of Vertesk" "of Beepeck" "of Elkmarch" "of Anbenncï¿½st" "of Damescrown" "of Uelaire" "of Reveria" "of Pearview"
+	"of Gawed" "of Vertesk" "of Beepeck" "of Elkmarch" "of Anbenncóst" "of Damescrown" "of Uelaire" "of Reveria" "of Pearview"
 	
 	#Geographic Neighbours
 	"of the Small Country" "of the Damescrown" "of the Dameshead" "of Gawed" "of the Approach" "of Lencenor"
@@ -195,13 +195,13 @@ ship_names = {
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Gawedi Temple
-	Thunderstorm "Storm Scepter" "Storm and Thunder" "Warrior King" Ruler "Lightning-Bearer" "Wild Hunt" "Hunterï¿½s Bow" "Raging Host" "Falahï¿½s Assembly"
-	Huntsman "Houndsï¿½ Bark" Predator Judge "Neratï¿½s Judgement" Oathkeeper "Black Hound" Omen Executor Punishment
+	Thunderstorm "Storm Scepter" "Storm and Thunder" "Warrior King" Ruler "Lightning-Bearer" "Wild Hunt" "Hunter’s Bow" "Raging Host" "Falah’s Assembly"
+	Huntsman "Hounds’ Bark" Predator Judge "Nerat’s Judgement" Oathkeeper "Black Hound" Omen Executor Punishment
 	# Generic Gawedi
 	Eaglecrest Wightsgate Gaweton Ginnfield Gerwick Greatmarches Alenath Vanbury Baldfather Alenvord
 	"Great Lord" Ramsgate Ram Brasslance Boar Bawne Bull Eagle Pike Oudescker
 	Bear Balgard Stag Dire Wolf "Iron Ring" "Iron Horn" Outrider Oath "Blood Oath"
-	Woodsman Hearth "Dragonï¿½s Bane" Howl Alen "First Born" Kin "Prize of Iron" "Sworn Duty" Rosecrusher
+	Woodsman Hearth "Dragon’s Bane" Howl Alen "First Born" Kin "Prize of Iron" "Sworn Duty" Rosecrusher
 	Thunderhead Seastrider "Oath-Swearer" Dutiful Loyal Antler Hound Bond Pledge "Bond of Iron"
 
 }

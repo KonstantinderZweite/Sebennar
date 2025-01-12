@@ -43,13 +43,13 @@ monarch_names = {
 	#Roilsardi Name List
 	"Adran" = 10
 	"Adrien" = 10
-	"Adï¿½mar" = 10
+	"Adémar" = 10
 	"Alain" = 10
-	"Aldrï¿½" = 10
+	"Aldré" = 10
 	"Alfonse" = 10
 	"Alois" = 10
 	"Alvier" = 10
-	"Andrï¿½" = 10
+	"André" = 10
 	"Ardand" = 10
 	"Ardor" = 10
 	"Aril" = 10
@@ -66,8 +66,8 @@ monarch_names = {
 	"Brayan" = 10
 	"Calas" = 10
 	"Carlean" = 10
-	"Castï¿½n" = 10
-	"Castï¿½n" = 10
+	"Castén" = 10
+	"Castín" = 10
 	"Cecile" = 10
 	"Darran" = 10
 	"Denare" = 10
@@ -78,7 +78,7 @@ monarch_names = {
 	"Erenn" = 10
 	"Erlan" = 10
 	"Evin" = 10
-	"Fredï¿½ric" = 10
+	"Fredéric" = 10
 	"Galin" = 10
 	"Gelmon" = 10
 	"Guillame" = 10
@@ -89,19 +89,19 @@ monarch_names = {
 	"Lucian" = 10
 	"Marion" = 10
 	"Maurice" = 10
-	"Odï¿½" = 10
+	"Odó" = 10
 	"Olor" = 10
-	"Reï¿½n" = 10
+	"Reán" = 10
 	"Ricain" = 10
-	"Riï¿½n" = 10
+	"Rión" = 10
 	"Robin" = 10
 	"Rogier" = 10
 	"Sandur" = 10
-	"Tadgï¿½n" = 10
+	"Tadgán" = 10
 	"Taelar" = 10
 	"Thal" = 10
 	"Thiren" = 10
-	"Tomï¿½is" = 10
+	"Tomáis" = 10
 	"Trian" = 10
 	"Trystane" = 10
 	"Trystane" = 10
@@ -124,12 +124,12 @@ monarch_names = {
 	"Ruben" = 10
 	"Silas" = 10
 	"Stefan" = 10
-	"Tomï¿½is" = 10
+	"Tomáis" = 10
 	
 	
 	
 	"Adranne" = -10
-	"Adï¿½le" = -10
+	"Adéle" = -10
 	"Alara" = -10
 	"Aldressa" = -10
 	"Aline" = -10
@@ -140,8 +140,8 @@ monarch_names = {
 	"Athara" = -10
 	"Belle" = -10
 	"Calassa" = -10
-	"Castï¿½nne" = -10
-	"Castï¿½ne" = -10
+	"Casténne" = -10
+	"Castíne" = -10
 	"Cela" = -10
 	"Celadora" = -10
 	"Claire" = -10
@@ -149,31 +149,31 @@ monarch_names = {
 	"Corale" = -10
 	"Coraline" = -10
 	"Coraline" = -10
-	"Cï¿½cille" = -10
-	"Eilï¿½s" = -10
-	"Eilï¿½sibet" = -10
-	"Elï¿½anore" = -10
+	"Cécille" = -10
+	"Eilís" = -10
+	"Eilísibet" = -10
+	"Eléanore" = -10
 	"Emile" = -10
 	"Erela" = -10
 	"Galinde" = -10
-	"Gisï¿½le" = -10
+	"Giséle" = -10
 	"Guillamina" = -10
 	"Isobel" = -10
 	"Isobelle" = -10
 	"Kylia" = -10
 	"Laurenne" = -10
-	"Laurentï¿½ne" = -10
+	"Laurentíne" = -10
 	"Lisolette" = -10
-	"Madalï¿½in" = -10
+	"Madaléin" = -10
 	"Margery" = -10
 	"Marianne" = -10
 	"Marien" = -10
 	"Marinne" = -10
-	"Mariï¿½" = -10
+	"Marié" = -10
 	"Mina" = -10
 	"Nara" = -10
-	"Reï¿½nna" = -10
-	"Reï¿½nnon" = -10
+	"Reánna" = -10
+	"Reánnon" = -10
 	"Sofie" = -10
 	"Sybille" = -10
 	"Thalia" = -10
@@ -189,9 +189,9 @@ monarch_names = {
 }
 
 leader_names = {
-	"sï¿½l Lorenith" "sï¿½l Redfort" "sï¿½l Rewanfork" "sï¿½l Roilsard" "sï¿½l na Loop" "sï¿½l Vivin" "sï¿½l Saloren" 
+	"síl Lorenith" "síl Redfort" "síl Rewanfork" "síl Roilsard" "síl na Loop" "síl Vivin" "síl Saloren" 
 	"of the Rose Knights" ", Knight-Commander"
-	"sï¿½l Wesmar" 
+	"síl Wesmar" 
 
 	"'the Red'" "'the Red Rose'" "'the White Rose'" "'the Black Rose'" "'the Ashen Rose'" "'the Thorned Rose'" "'Manythorns'"
 	"'Redriver'"
@@ -204,14 +204,14 @@ ship_names = {
 	# Lencori Adeanic 
 	Artanos "The First Spear" "Spear of Adean" Spearsworn Knight Honour Adamant Steadfast Dauntless Longlance Brave Courage Loyalty Oath Chivalrous Endurance Dutiful Nobility "Herald of the West"
 	# Lencori Minaran 
-	"Minaraï¿½s Apple" Lotus Blossom "Wave Lily" "Irenic Dream" Joyous Celebrant Jubilation Exultation "Passion's Promise" Pleasure Desire "Beauty of Lencenor" "Great Flower" "Gobelet of Abundance" "Sweet Temptation" Merrymaker "Minaraï¿½s Whip"
+	"Minara’s Apple" Lotus Blossom "Wave Lily" "Irenic Dream" Joyous Celebrant Jubilation Exultation "Passion's Promise" Pleasure Desire "Beauty of Lencenor" "Great Flower" "Gobelet of Abundance" "Sweet Temptation" Merrymaker "Minara’s Whip"
 	# Lencori Elven
-	"Lunatï¿½in" "Estï¿½dha" "Nadostï¿½iar" "ï¿½rthï¿½l" Silsuinairge Anben Elf "Flï¿½r" Silsuin Aelentir "Flï¿½r" Toar "Rï¿½s" Puille Fï¿½n "Fï¿½onca"
+	"Lunatéin" "Estádha" "Nadostóiar" "Árthíl" Silsuinairge Anben Elf "Flár" Silsuin Aelentir "Flár" Toar "Rós" Puille Fín "Fíonca"
 	# Roilsardi
 	Roilsardi Silas "Bastard-Maker" Duke Duchess Arelaus Alise Amelie Marcel Armalinde Artur
 	Roilsard Toarnaire "Loopuis" Vivinmar Saloren
 	Leaf Flower
-	Thorn Thistle Bramble "Drï¿½o" Prickle Spike Briar Nettle Needle Cactus
+	Thorn Thistle Bramble "Drío" Prickle Spike Briar Nettle Needle Cactus
 	Raspberry "Sweet Raspberry" Blackberry Wineberry
 	Rosethorn "Red Thorn" "Jer Toar" "Pink Thorn" "Deir Toar" "Bloody Thorn" "Thorn of the Bay" "Crown of Thorn" "Bloody Needle" "Great Needle" "Sea Thistle" "Bleeding Thistle"
 	Blood Heart Ceirese Lifeblood Vaitsilsuin

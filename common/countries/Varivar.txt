@@ -139,15 +139,15 @@ ship_names = {
 	# Generic Cannorian 
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Elven Anbennar 
-	"Lunatï¿½in" "Estï¿½dha" "Nadostï¿½iar" "ï¿½rthï¿½l" Silsuinairge Anben Elf Anbennar Lun Aelentir
+	"Lunatéin" "Estádha" "Nadostóiar" "Árthíl" Silsuinairge Anben Elf Anbennar Lun Aelentir
 	# Generic Monarchy 
 	Count Countess Thigearh Duke Duchess Sadran Marquis Prince Princess Elector
 	# Highest Moon
-	Mage Eightborn "Highest Moon" "High Luminary" "Crescent Moon" Meteor Damestar Celestial Star Moonblessed Moonsinger "Lungrï¿½ilt" Traveller "Moonlit Singer" "Moon Sails" Elven Silver "Munasï¿½ Rapier" "Moonï¿½s Song" Wanderer
+	Mage Eightborn "Highest Moon" "High Luminary" "Crescent Moon" Meteor Damestar Celestial Star Moonblessed Moonsinger "Lungráilt" Traveller "Moonlit Singer" "Moon Sails" Elven Silver "Munas’ Rapier" "Moon’s Song" Wanderer
 	# Damerian Republic
-	Munerinus Epuloces Lestinus Arodanes Aleces Moon Luminary Pustior Rogatior Owl Faverii "Arcum Casnati" Bow "Three Arrows" Dameshead Matilanum Cerulean League Procevian Institution Casnate Republic Damenath Aramar "Crothï¿½n" Damescrown Carmeris Redfort Havoric "Seven Founders"
+	Munerinus Epuloces Lestinus Arodanes Aleces Moon Luminary Pustior Rogatior Owl Faverii "Arcum Casnati" Bow "Three Arrows" Dameshead Matilanum Cerulean League Procevian Institution Casnate Republic Damenath Aramar "Crothán" Damescrown Carmeris Redfort Havoric "Seven Founders"
 	# Generic Damerian
-	Elensbridge Bellacaire Blueheart Byshade Eastbright Cannleigh Cestaire Lancecastle "Aranthï¿½l" Plumwall Silvelar Acromton Istalore Moonhaven "Anbenncï¿½st" Auraire Wesdam Exwes Gabelaire Stoneview Throatport Ambitious Elven Damerian Damesear Merit Knowledge Eorid Advice Splendid Damesheader "Silver Blooded" Distinction Excellence Value Wisdom Glorious "Glorious Blue" Sage Worth Elder Seafarer Advantage Grace Superior
+	Elensbridge Bellacaire Blueheart Byshade Eastbright Cannleigh Cestaire Lancecastle "Aranthíl" Plumwall Silvelar Acromton Istalore Moonhaven "Anbenncóst" Auraire Wesdam Exwes Gabelaire Stoneview Throatport Ambitious Elven Damerian Damesear Merit Knowledge Eorid Advice Splendid Damesheader "Silver Blooded" Distinction Excellence Value Wisdom Glorious "Glorious Blue" Sage Worth Elder Seafarer Advantage Grace Superior
 
 }
 

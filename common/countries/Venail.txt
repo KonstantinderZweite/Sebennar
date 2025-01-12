@@ -137,26 +137,26 @@ leader_names = {
 
 ship_names = {
 	# Elven Forebear
-	"Seinsï¿½r" Anaid Anaigh Andeir "Arthï¿½ir" "ï¿½tha" Bhail Catoir "Cï¿½the" "Clï¿½mhrad"
-	"Mï¿½th" "Fiï¿½r" Telufal "Cï¿½thad" Deora "Dï¿½mair" "Dochï¿½a" Duchael Eaione Fadaelithe
+	"Seinsár" Anaid Anaigh Andeir "Artháir" "Átha" Bhail Catoir "Cíthe" "Clómhrad"
+	"Máth" "Fiér" Telufal "Cóthad" Deora "Dìmair" "Dochéa" Duchael Eaione Fadaelithe
 	# Elven Lencori
-	"Lunatï¿½in" "Estï¿½dha" "Nadostï¿½iar" "ï¿½rthï¿½l" Silsuinairge Anben Elf Anbennar Lun Aelentir
+	"Lunatéin" "Estádha" "Nadostóiar" "Árthíl" Silsuinairge Anben Elf Anbennar Lun Aelentir
 	# Generic Elven
-	Lunelf Lunseinarn Coghseinarn Serencionn "Drï¿½iha" "Jerrï¿½s" "ï¿½rï¿½is" Catarn Niell Bochar
-	Munas Istralania Urion Garion Ioriel Eborian Narawen Calasandur "Waï¿½dh" "Agaï¿½rmarin"
-	Amanta Andeir Arceatha Arur Athraithe "Blaï¿½dd" Bochoch "Bradï¿½n"
-	Caen "Carcï¿½n" "Cï¿½lodir" Cidithir "Cinniï¿½" Contach "Draoidarï¿½n" "Dï¿½sadharin" Elvacin "Frigï¿½a"
-	Maradhan "Marï¿½n" "Mï¿½rgi" Meweri "Neï¿½omair" Rianvisa "Sï¿½mchï¿½lï¿½rn" "Seinsï¿½r" Socill Tenachern
+	Lunelf Lunseinarn Coghseinarn Serencionn "Dráiha" "Jerrós" "Órúis" Catarn Niell Bochar
+	Munas Istralania Urion Garion Ioriel Eborian Narawen Calasandur "Waídh" "Agaírmarin"
+	Amanta Andeir Arceatha Arur Athraithe "Blaídd" Bochoch "Bradán"
+	Caen "Carcán" "Célodir" Cidithir "Cinniú" Contach "Draoidarín" "Dùsadharin" Elvacin "Frigéa"
+	Maradhan "Marín" "Mérgi" Meweri "Neíomair" Rianvisa "Sámchílárn" "Seinsár" Socill Tenachern
 	# Venail
-	"Venï¿½il" Edilliande "Cetï¿½nleir" "Fadhï¿½il" Aelentir "Camnaril" "Aesrialt" "Aelanaigh" "Andeirmï¿½r" "Aslï¿½n"
-	Nadost "Sealï¿½ir" Siubarn Taro "Tï¿½lar" Unaig "Sï¿½rhaet" "ï¿½rhetana" Rialt Oscurian
+	"Venáil" Edilliande "Cetánleir" "Fadháil" Aelentir "Camnaril" "Aesrialt" "Aelanaigh" "Andeirmár" "Aslín"
+	Nadost "Sealàir" Siubarn Taro "Tólar" Unaig "Sárhaet" "Árhetana" Rialt Oscurian
 
 }
 
 army_names = {
-	"Venï¿½ili Army" "Elven Army" "Army of the Forest" "Army of the Isle" "Army of $PROVINCE$"
+	"Venáili Army" "Elven Army" "Army of the Forest" "Army of the Isle" "Army of $PROVINCE$"
 }
 
 fleet_names = {
-	"Venï¿½ili Navy" "Elven Navy" "Westcoast Squadron" "Winebay Squadron" "Elven Squadron" "Moon Squadron" "Remnant Squadron" "Wanderer Squadron" "Seeker Squadron"
+	"Venáili Navy" "Elven Navy" "Westcoast Squadron" "Winebay Squadron" "Elven Squadron" "Moon Squadron" "Remnant Squadron" "Wanderer Squadron" "Seeker Squadron"
 }

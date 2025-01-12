@@ -368,8 +368,8 @@ monarch_names = {
 	"Marilna" = -10
 	"Matilda" = -10
 	"Nara" = -10
-	"Reï¿½nne" = -10
-	"Riennï¿½n" = -10
+	"Reínne" = -10
+	"Riennón" = -10
 	"Sofina" = -10
 	"Valenca" = -10
 	"Varina" = -10
@@ -391,10 +391,10 @@ ship_names = {
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Dalcabba
-	"Elikhet and the Court" "Adeanï¿½s Rule" "Castellosï¿½ Heir" Faithful Syncretic Sect "Divine Being" Pilgrimage "Protector of Escann" "Righteous Act" Regent Devotion Dalcabba
+	"Elikhet and the Court" "Adean’s Rule" "Castellos’ Heir" Faithful Syncretic Sect "Divine Being" Pilgrimage "Protector of Escann" "Righteous Act" Regent Devotion Dalcabba
 	# Generic Marcher
-	Freetower Widor Tederfremh Rohibon Tilwick "Aldainï¿½" Turnmarket Nortmerewic Cannwic Acenvor
-	"Victorï¿½s Path" Bradnath "Ionntrï¿½s" Theminath Mereham Bladeskeep Vernham Woodmarket Oldhaven Marrhold
+	Freetower Widor Tederfremh Rohibon Tilwick "Aldainé" Turnmarket Nortmerewic Cannwic Acenvor
+	"Victor’s Path" Bradnath "Ionntrás" Theminath Mereham Bladeskeep Vernham Woodmarket Oldhaven Marrhold
 	"Marcher Lord" "Breaker of the Greentide" "Victory at Rottenstep" "Victory at Castonath" "Heir of Escann" Victory Summon Onslaught "Prince Jon" Ricard
 	# Kheteratan
 	Akal Flame Fire Blaze Burn Elephant Ox Hawk Sovereign King Palace Oasis Elikhet Conqueror Preserver

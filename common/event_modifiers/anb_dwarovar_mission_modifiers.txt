@@ -7537,6 +7537,8 @@ spiderwretch_local_fortifications = {
 
 gronstunad_new_ambassadors = {
 	diplomats = 1
+	global_unrest = -5
+	global_autonomy = -0.05
 }
 gronstunad_retake_shamakhad = {
 	ae_impact = -0.1

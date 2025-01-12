@@ -247,7 +247,7 @@ monarch_names = {
 	"Walter" = 10
 	"Welyam" = 10
 	"Wystan" = 10
-	"Adï¿½nn" = 10
+	"Adénn" = 10
 	"Arnulf" = 10
 	"Clotaire" = 10
 	"Henric" = 10
@@ -430,8 +430,8 @@ monarch_names = {
 	"Marilna" = -10
 	"Matilda" = -10
 	"Nara" = -10
-	"Reï¿½nne" = -10
-	"Riennï¿½n" = -10
+	"Reínne" = -10
+	"Riennón" = -10
 	"Sofina" = -10
 	"Valenca" = -10
 	"Varina" = -10
@@ -506,7 +506,7 @@ monarch_names = {
 	"Marilda" = -10
 	"Nara" = -10
 	"Revhild" = -10
-	"Riennï¿½n" = -10
+	"Riennón" = -10
 	"Sebillr" = -10
 	"Sesill" = -10
 	"Sofia" = -10
@@ -520,16 +520,16 @@ monarch_names = {
 leader_names = {
 	#Inner Castanor Provinces
 	"of Burnoll" "of Silverdocks" "of Southgate" "of Caylensfort" "of Venacvord" "of Escerton" "of Alloysford" "of Khugsroad" "of Elderlan " "of Annistoft" "of Hagstow" "of Swapstoke" "of Nathwoud" "of Foarhal" "of Sapphirewatch"
-	"of Cadell's Rest" "of Coalwoud" "of Charwic" "of Pinevord" "of Narronath" "of Wardenhall" "of Canreced" "of Eswall" "of Acenort" "of Stenced" "of Kondunn" "of Nï¿½rced" "of Varced" "of Mintï¿½rley"
+	"of Cadell's Rest" "of Coalwoud" "of Charwic" "of Pinevord" "of Narronath" "of Wardenhall" "of Canreced" "of Eswall" "of Acenort" "of Stenced" "of Kondunn" "of Núrced" "of Varced" "of Mintírley"
 	
 	#South Castanor Provinces
 	"of Dragon's End" "of Griffonsgate" "of Dostan's Way" "of Beastgrave" "of Clovenwood" "of Aldcamp" "of Woodmarck" "of Guidesway" "of Feyvord" "of Feyvord" "of Banesfork" "of Steward's Hold" "of Bladeskeep" "of Dragonfell" "of Arrowfield"
-	"of Theminced" "of Camircï¿½st" "of Ionntrï¿½s" "of Wystanway" "of Humac's Rest" "of Willowmore" "of Nymphlea" "of Lover's Quarrel" "of Hornwood" "of Boggartstead" "of Spritescage" "of Pixiebury" "of Dryadsdale" "of Flaygarden" "of Diremill"
-	"of Medirleigh" "of Hendon" "of Oudeben" "of Devaced" "of Moreced" "of Turnmarket" "of Esckerpost" "of Guidesway" "of Aesawic" "of Nortmerewood" "of Oudmerewood" "of Woudbet" "of Acenthï¿½n" "of Uanced"
+	"of Theminced" "of Camircóst" "of Ionntrás" "of Wystanway" "of Humac's Rest" "of Willowmore" "of Nymphlea" "of Lover's Quarrel" "of Hornwood" "of Boggartstead" "of Spritescage" "of Pixiebury" "of Dryadsdale" "of Flaygarden" "of Diremill"
+	"of Medirleigh" "of Hendon" "of Oudeben" "of Devaced" "of Moreced" "of Turnmarket" "of Esckerpost" "of Guidesway" "of Aesawic" "of Nortmerewood" "of Oudmerewood" "of Woudbet" "of Acenthán" "of Uanced"
 	
 	#West Castanor Provinces
 	"of Venomfen" "of Athfork" "of Balgarton" "of Halansar" "of Leighalen" "of Widor" "of Tiltwick" "of Listfields" "of Horseman's Advance" "of Gallopsway" "of Cantercurse" "of Taranton" "of Cannwood" "of Cannwic" "of Forksgrove"
-	"of Uelced" "of Tencfor" "of Carlanhal" "of Craghyl" "of Badeben" "of Falseharbour" "of Acengard" "of Feldham" "of Aldainï¿½" "of Acenaire" "fran Ebonham" "of Acenvror"
+	"of Uelced" "of Tencfor" "of Carlanhal" "of Craghyl" "of Badeben" "of Falseharbour" "of Acengard" "of Feldham" "of Aldainé" "of Acenaire" "fran Ebonham" "of Acenvror"
 	
 	#Country Specific
 	Ebonfrost
@@ -539,7 +539,7 @@ leader_names = {
 	
 	
 	#Country Neighbours
-	"fran Bjarnï¿½k" "fran Revrhavn" "fran Sidaett"
+	"fran Bjarník" "fran Revrhavn" "fran Sidaett"
 	
 	#Geographic Neighbours
 	"fran Gerudia" "fran Giant's Grave" "fran Serpentshead" "fran Alen" "fran Titan's Walk" "fran Fjordsbay"
@@ -558,21 +558,21 @@ ship_names = {
 	Castellos "The Dame" Halanna Yshtralania Agrados Adean Esmaryal Ryala Falah Nerat
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Balgaric
-	Balgarsmith Dwarf "Balgarï¿½s Wonder" Crafter Builder "Dï¿½rum-Odir" Anvil Blacksmith Dragonforge "Balgarï¿½s Hammer"
+	Balgarsmith Dwarf "Balgar’s Wonder" Crafter Builder "Dôrum-Odir" Anvil Blacksmith Dragonforge "Balgar’s Hammer"
 	Balgaric "Unending Wonder" Hammer Seneschal Wonder "White Anvil" Craftsman Master Engineer Chisel
 	# Castellosi
-	Regent Rule "King of Gods" "Sapphire Scepter" "Silver Dragon" "White Citadel" Justice Order Monarch "Castellosï¿½ Mace"
+	Regent Rule "King of Gods" "Sapphire Scepter" "Silver Dragon" "White Citadel" Justice Order Monarch "Castellos’ Mace"
 	Authority Power Governor Diplomat Clarion "King of the Court" Regal Royal Sovereign Ruler
 	# Castanorian Dwarven
-	Bandal "Krakdhï¿½m" Dwar "Zobar Drokni" "Castan Dhï¿½mankon" Baenni Azcanne Amekh Ubrdwar Verkal
+	Bandal "Krakdhûm" Dwar "Zobar Drokni" "Castan Dhûmankon" Baenni Azcanne Amekh Ubrdwar Verkal
 	# Castanorian
-	Castan Dostan Dragon Humac Castanite Exodus Exile Slave Friendship Wayguide Trial Proclamation Revelation Chosen Leader "Divine Champion" Duty Lawful Civilization Elder "Blood of Castanor" Warrior Progenitor Rearguard Vanguard "Xhazobineï¿½s End" Citadel Dragon Nath
+	Castan Dostan Dragon Humac Castanite Exodus Exile Slave Friendship Wayguide Trial Proclamation Revelation Chosen Leader "Divine Champion" Duty Lawful Civilization Elder "Blood of Castanor" Warrior Progenitor Rearguard Vanguard "Xhazobine’s End" Citadel Dragon Nath
 	# Castanor
 	"Bal Ouord" "Bal Vroren" "Bal Mire" "Bal Hyl" "Bal Vertesk" "Bal Dostan" "North Citadel" "South Citadel" Dragonforge "White Wall"
 	Beastbane "Dwarf-Friend" Realmbuilder "The Great" Giantsbane Preserver Peacemaker Quareller Righteous Unwavering
 	Venerable Defiant Dragonfriend Rebuilder Humble Silent Steward Vengeful Frostbane Ebonfrost
 	Castanorian Legion Dragonflame Sword Shield "Castanorian Dragon" Humanity Victory Silver "Silver Scale"
-	"Castanï¿½s Will" Humankind "Crown of Humanity" "Keys of Nath" "Ruby Key" "Sapphire Key" Humanity Escann "Monstersï¿½ Bane" "Defender of Humanity"
+	"Castan’s Will" Humankind "Crown of Humanity" "Keys of Nath" "Ruby Key" "Sapphire Key" Humanity Escann "Monsters’ Bane" "Defender of Humanity"
 
 }
 

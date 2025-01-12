@@ -2,7 +2,7 @@
 owner = I22
 controller = I22
 add_core = I22
-culture = malachite_dwarf
+culture = jade_dwarf
 religion = ancestor_worship
 trade_goods = fungi
 hre = no

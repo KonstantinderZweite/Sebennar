@@ -162,27 +162,27 @@ ship_names = {
 	Ara Minara "Munas Moonsinger" Nathalyne Begga Corin Balgar Uelos Draxos Aesanna
 	# Black Doctrine
 	Doctrine "Black Doctrine" Enlightenment Ascendant "Ascendant Path" Potentiate "Universal Mind" "Prime Discordance" Chaos Creed
-	"Godsï¿½ Ender" Powerful "Black Creed" "True God" Adelar "Sorcerer-King" Dispassionate Fundamental Godhood Equality
+	"Gods’ Ender" Powerful "Black Creed" "True God" Adelar "Sorcerer-King" Dispassionate Fundamental Godhood Equality
 	# Black Desmene
 	"Ascending Dragon" Acolyte Supremacy Demesner Apostles "Ascendant Dragon" "Skull Throne" "Dark Decree" "Black Host" Authority
 	# Modified Magisterium
-	Magic Force Spell Ritual "Arcane Might" Glyph Curse "Melï¿½th" Ethereal Incantation Hex "True Power" "Magic Circle"
+	Magic Force Spell Ritual "Arcane Might" Glyph Curse "Meléth" Ethereal Incantation Hex "True Power" "Magic Circle"
 	Mage Spellcaster Magehand "Blue Blooded" Wizard Sorceress Sorcerer
 	Gift Affinity Mastery Willpower
-	"Magesï¿½ Peace" "Grand Summit" "Spell-Pact" Magewrath "Unity of Will"
+	"Mages’ Peace" "Grand Summit" "Spell-Pact" Magewrath "Unity of Will"
 	Abjurer Banisher Abater
 	Abjuration "First Fold" Ward Dispel Disjunction "Arcane Barrier" Atonement Mageshield "Ward of the Sea"
 	Diviner Seer "Fortune Teller" Scryer Loreseeker "Interpreter of Dream" Augur
 	Divination "Second Fold" Foresight "Forgotten Secret" Clairvoyance Seersight
 	Illusionist Invisible
-	Illusion "Third Fold" Glamour Simulacrum "Phantom Memory" Phantasm "False Reality" "Tricksterï¿½s Pattern" Mirage "Imaginary Attacker" "Colour of Magic" "Invisible Reason"
+	Illusion "Third Fold" Glamour Simulacrum "Phantom Memory" Phantasm "False Reality" "Trickster’s Pattern" Mirage "Imaginary Attacker" "Colour of Magic" "Invisible Reason"
 	Conjurer Summoner Invoker Familiar "Unseen Servant"
 	Conjuration "Fourth Fold" Elemental Summon Invocation "Summon of Fire"
 	Enchanter Enchantress "Mind Bender" Spellbound
 	Enchantment "Fifth Fold" Suggestion Feeblemind Command Charm Influence "Command of Peace"
 	Evoker Firehand "Storm Caller" Seashaker
-	Evocation "Sixth Fold" Fireball "Lightning Bolt" "Magesï¿½ Light" "Magic Wind" "Incantation of Fire" "Investiture of Thunder"
-	Transmuter Shapeshifter Polymorph "Transmuterï¿½s Gold" Amorphic 
+	Evocation "Sixth Fold" Fireball "Lightning Bolt" "Mages’ Light" "Magic Wind" "Incantation of Fire" "Investiture of Thunder"
+	Transmuter Shapeshifter Polymorph "Transmuter’s Gold" Amorphic 
 	Transmutation "Seventh Fold" Alteration "Curse of Stone" "Curse of Gold" "Shape of Change"
 	Necromancer "Death Hand" "Bane of Life" "False Life"
 	Necromancy "Eighth Fold" "Dark Art" "Curse of Undeath" Forbidden Soulshatter "Forbidden Knowledge"

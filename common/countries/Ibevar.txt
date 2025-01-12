@@ -137,17 +137,17 @@ leader_names = {
 
 ship_names = {
 	# Elven Forebear
-	"Seinsï¿½r" Anaid Anaigh Andeir "Arthï¿½ir" "ï¿½tha" Bhail Catoir "Cï¿½the" "Clï¿½mhrad"
-	"Mï¿½th" "Fiï¿½r" Telufal "Cï¿½thad" Deora "Dï¿½mair" "Dochï¿½a" Duchael Eaione Fadaelithe
+	"Seinsár" Anaid Anaigh Andeir "Artháir" "Átha" Bhail Catoir "Cíthe" "Clómhrad"
+	"Máth" "Fiér" Telufal "Cóthad" Deora "Dìmair" "Dochéa" Duchael Eaione Fadaelithe
 	# Munasi
-	"Lunatï¿½in" "Estï¿½dha" "Nadostï¿½iar" "ï¿½rthï¿½l" "Lungrï¿½ilt" Munasi Airge "ï¿½rtha" Cantur "Fï¿½hl"
-	Seinarn Lunseinarn "Sealï¿½ir" Ael "Aslï¿½n" Athraithe Rial Camcal Catarn Efl
+	"Lunatéin" "Estádha" "Nadostóiar" "Árthíl" "Lungráilt" Munasi Airge "Ártha" Cantur "Fíhl"
+	Seinarn Lunseinarn "Sealàir" Ael "Aslín" Athraithe Rial Camcal Catarn Efl
 	# Generic Elven
-	Lunelf Lunseinarn Coghseinarn Serencionn "Drï¿½iha" "Jerrï¿½s" "ï¿½rï¿½is" Catarn Niell Bochar
-	Munas Istralania Urion Garion Ioriel Eborian Narawen Calasandur "Waï¿½dh" "Agaï¿½rmarin"
-	Amanta Andeir Arceatha Arur Athraithe "Blaï¿½dd" Bochoch "Bradï¿½n"
-	Caen "Carcï¿½n" "Cï¿½lodir" Cidithir "Cinniï¿½" Contach "Draoidarï¿½n" "Dï¿½sadharin" Elvacin "Frigï¿½a"
-	Maradhan "Marï¿½n" "Mï¿½rgi" Meweri "Neï¿½omair" Rianvisa "Sï¿½mchï¿½lï¿½rn" "Seinsï¿½r" Socill Tenachern
+	Lunelf Lunseinarn Coghseinarn Serencionn "Dráiha" "Jerrós" "Órúis" Catarn Niell Bochar
+	Munas Istralania Urion Garion Ioriel Eborian Narawen Calasandur "Waídh" "Agaírmarin"
+	Amanta Andeir Arceatha Arur Athraithe "Blaídd" Bochoch "Bradán"
+	Caen "Carcán" "Célodir" Cidithir "Cinniú" Contach "Draoidarín" "Dùsadharin" Elvacin "Frigéa"
+	Maradhan "Marín" "Mérgi" Meweri "Neíomair" Rianvisa "Sámchílárn" "Seinsár" Socill Tenachern
 
 }
 
