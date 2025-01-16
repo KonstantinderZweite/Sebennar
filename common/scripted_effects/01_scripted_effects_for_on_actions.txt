@@ -8061,7 +8061,7 @@ startup_1444_effects = {
 		}
 
 		# Applying Flooded Depths to Ovdal Tûngr.
-		526 = { add_province_modifier = { name = F23_flooded_depths duration = -1 } }
+		
 	}
 }
 

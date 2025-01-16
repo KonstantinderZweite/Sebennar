@@ -15,7 +15,7 @@ floodborn_council_mechanic = {
 			max = 100
 			min = 0
 			reset_on_new_ruler = no
-			base_monthly_growth = 1
+			base_monthly_growth = 0.5
 			is_good = yes
 			
 			scaled_modifier = {

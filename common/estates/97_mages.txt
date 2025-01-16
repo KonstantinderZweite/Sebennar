@@ -19,7 +19,7 @@ estate_mages = {
 		OR = {
 			is_monstrous_horde = no
 			tag = A26
-			
+			tag = F71
 			}
 		NOT = { has_estate = estate_acolytes }
 		NOT = { AND = { religion = bulwari_sun_cult has_country_flag = nsc_human_country_magic_prohibition } }

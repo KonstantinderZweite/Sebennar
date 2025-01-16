@@ -30261,7 +30261,7 @@ A77_steadfast_traditions = {
 
 A77_reformed_promotion_system = {
 	picture = "prestige_from_land_battles"
-	land_morale = 0.1
+	land_morale = 0.075
 }
 
 A77_turn_the_cheek = {
@@ -33352,4 +33352,8 @@ a95_a92_co = {
 }
 a95_a60_co = {
 	dip_advisor_cost = -0.15
+}
+#a77 tpg
+reign_in_orda_knight = {
+yearly_army_professionalism = 0.003
 }

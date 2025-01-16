@@ -247,3 +247,6 @@
  destroy_temples_desc:0 "Destroys all temples"
  #krak
  I02_warning_tt:0 "This one triggers kraks custom disaster."
+
+#a77 
+reign_in_orda_knight:0 "Pacified Errants"

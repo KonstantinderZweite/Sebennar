@@ -750,7 +750,7 @@ kheterata_colonial_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
-			gnollakaz_area = {
+			gnolltauz_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -775,7 +775,7 @@ kheterata_colonial_missions = {
 		provinces_to_highlight = {
 			OR = {
 				area = golkora_stretch_area
-				area = gnollakaz_area
+				area = gnolltauz_area
 				area = gnolltauz_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -786,7 +786,7 @@ kheterata_colonial_missions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			gnollakaz_area = {
+			gnolltauz_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -818,7 +818,7 @@ kheterata_colonial_missions = {
 		provinces_to_highlight = {
 			OR = {
 				area = golkora_stretch_area
-				area = gnollakaz_area
+				area = gnolltauz_area
 				area = gnolltauz_area
 				area = zeewix_area
 				area = saymas_area
@@ -832,7 +832,7 @@ kheterata_colonial_missions = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			gnollakaz_area = {
+			gnolltauz_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
