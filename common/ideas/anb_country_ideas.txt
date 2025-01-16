@@ -26276,6 +26276,7 @@ G20_ideas = {
         infantry_power = 0.1
     }
 }
+#tpg
 Z1Z_ideas = {
 	start = {
 		cavalry_fire = 0.5
@@ -26351,6 +26352,7 @@ B79_ideas = {
 		war_exhaustion = -0.02
 	}
 }
+#tpg
 Z2Z_ideas = {
 	start = {
 		infantry_cost = -0.10
@@ -26803,6 +26805,7 @@ L23_ideas = {
 		global_unrest = -1
 	}
 }
+#tpg
 Z3Z_ideas = {
 	start = {
 		num_accepted_cultures = 3
@@ -26837,6 +26840,8 @@ Z3Z_ideas = {
 	Z3Z_towers_of_research = {
 		embracement_cost = -0.1
 		global_institution_spread = 0.1
+	}
+}
 
 #Saloren
 A87_ideas = {
