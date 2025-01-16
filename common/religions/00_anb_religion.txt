@@ -3654,6 +3654,47 @@ dragon_cult = {
 		heretic = { DENIER }
 	}
 
+	eztarthul_hunt = {
+		color = { 0  128  128 }
+		icon = 65
+		allowed_conversion = {
+		}
+		country = {
+			unjustified_demands = -0.2
+			movement_speed = 0.1
+		}
+		country_as_secondary = {
+			movement_speed = 0.1
+		}
+		on_convert = {
+			change_religion = eztarthul_hunt
+
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}
+		}
+		
+		holy_sites = { 6118 6660 5442 5689 5662 5529 5505 5650 5483 5921 6060 5470 }
+		
+		blessings = {
+			eztarthul_hunt_heart
+			eztarthul_hunt_left_eye
+			eztarthul_hunt_right_eye
+			eztarthul_hunt_tail_tip
+			eztarthul_hunt_tail_center
+			eztarthul_hunt_front_right_leg
+			eztarthul_hunt_teeth
+			eztarthul_hunt_tongue
+			eztarthul_hunt_claws
+			eztarthul_hunt_left_wing
+			eztarthul_hunt_back_right_leg
+			eztarthul_hunt_front_left_leg
+		}
+		
+		heretic = { DENIER }
+	}
+
 	harmonized_modifier = harmonized_dragon_cult
 
 	crusade_name = HOLY_WAR

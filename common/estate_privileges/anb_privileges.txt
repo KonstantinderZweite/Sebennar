@@ -5035,6 +5035,296 @@ estate_mages_sun_elf_evocation = {
 	}
 }
 
+#tpg
+estate_mages_z3z_combined_1 = {
+	icon = privilege_seek_support_of_clergy
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0.05
+	is_valid = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	can_select = {
+		always = no
+	}
+	on_granted_province = {
+		add_province_triggered_modifier = z3z_combined_neither
+		add_province_triggered_modifier = z3z_combined_1_combined
+	}
+	on_revoked = {
+	
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_mages_z3z_combined_2 = {
+	icon = privilege_seek_support_of_clergy
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0.05
+	is_valid = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	can_select = {
+		always = no
+	}
+	on_granted_province = {
+		add_province_triggered_modifier = z3z_combined_neither
+		add_province_triggered_modifier = z3z_combined_2_combined
+	}
+	on_revoked = {
+	
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_mages_z3z_combined_3 = {
+	icon = privilege_seek_support_of_clergy
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0.05
+	is_valid = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	can_select = {
+		always = no
+	}
+	on_granted_province = {
+		add_province_triggered_modifier = z3z_combined_neither
+		add_province_triggered_modifier = z3z_combined_3_combined
+	}
+	on_revoked = {
+	
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_mages_z3z_seperated_1 = {
+	icon = privilege_seek_support_of_clergy
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0.05
+	is_valid = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	can_select = {
+		always = no
+	}
+	on_granted_province = {
+		add_province_triggered_modifier = z3z_separated_1_goldscale
+		add_province_triggered_modifier = z3z_separated_1_accepted
+		add_province_triggered_modifier = z3z_separated_neither
+	}
+	on_revoked = {
+		remove_province_triggered_modifier = z3z_separated_1_goldscale
+		remove_province_triggered_modifier = z3z_separated_1_accepted
+		remove_province_triggered_modifier = z3z_separated_neither
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+
+estate_mages_z3z_seperated_2 = {
+	icon = privilege_seek_support_of_clergy
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0.05
+	is_valid = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	can_select = {
+		always = no
+	}
+	on_granted_province = {
+		add_province_triggered_modifier = z3z_separated_2_goldscale
+		add_province_triggered_modifier = z3z_separated_2_accepted
+		add_province_triggered_modifier = z3z_separated_neither
+	}
+	on_revoked = {
+		remove_province_triggered_modifier = z3z_separated_2_goldscale
+		remove_province_triggered_modifier = z3z_separated_2_accepted
+		remove_province_triggered_modifier = z3z_separated_neither
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+estate_mages_z3z_seperated_3 = {
+	icon = privilege_seek_support_of_clergy
+	max_absolutism = 0
+	loyalty = 0.1
+	influence = 0.05
+	is_valid = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	can_select = {
+		always = no
+	}
+	on_granted_province = {
+		add_province_triggered_modifier = z3z_separated_3_goldscale
+		add_province_triggered_modifier = z3z_separated_3_accepted
+		add_province_triggered_modifier = z3z_separated_neither
+	}
+	on_revoked = {
+		remove_province_triggered_modifier = z3z_separated_3_goldscale
+		remove_province_triggered_modifier = z3z_separated_3_accepted
+		remove_province_triggered_modifier = z3z_separated_neither
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+	}
+}
+#tpg
+estate_mages_levies = {
+	icon = privilege_demand_more_troops
+	influence = 0.1
+	loyalty = 0.1
+	is_valid = {
+		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
+		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_liberty } #Anbennar
+		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_control } #Anbennar
+		NOT = { tag = I08 } #Anbennar
+		NOT = { has_estate_privilege = estate_nobles_themarenn_sailors } #Anbennar
+		NOT = { has_estate_privilege = estate_nobles_levies }
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
+		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_liberty } #Anbennar
+		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_control } #Anbennar
+		NOT = { has_estate_privilege = estate_nobles_themarenn_sailors } #Anbennar
+		NOT = { has_estate_privilege = estate_nobles_levies } #tpg
+	}
+	can_revoke = { #Anbennar
+	
+	}
+	modifier_by_land_ownership = {
+		global_manpower_modifier = 0.8
+	}
+	penalties = {
+	}
+	mechanics = {
+		exempt_from_seize_land
+	}
+	conditional_modifier = {
+	
+	}
+	conditional_modifier = {
+	
+	}
+	#conditional_modifier = {
+	#	trigger = { has_government_mechanic = ottoman_decadence_mechanic }
+	#	modifier = { monthly_ottoman_decadence = 0.02 }
+	#}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.5
+			any_rival_country = {
+				army_strength = {
+					who = root
+					value = 1.5
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			has_idea_group = quantity_ideas
+		}
+		modifier = {
+			factor = 0.5
+			max_manpower = 200
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				estate_territory = {
+					estate = estate_nobles
+					territory = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { current_income_balance = 5 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { current_income_balance = 0 }
+		}
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+	}
+}
+
 estate_mages_sun_elf_abjuration = {
 	icon = privilege_seek_support_of_clergy
 	max_absolutism = 0
