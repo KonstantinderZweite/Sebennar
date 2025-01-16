@@ -547,7 +547,7 @@ U07_column_3 = {
 				area = krahilyn_area
 				area = saymas_area
 				area = gnolltauz_area
-				area = gnollakaz_area
+				
 			}
 		}
 		trigger = {
@@ -567,10 +567,7 @@ U07_column_3 = {
 				type = all
 				owned_by = ROOT
 			}
-			gnollakaz_area = {
-				type = all
-				owned_by = ROOT
-			}
+			
 		}
 		effect = {
 			add_country_modifier = {

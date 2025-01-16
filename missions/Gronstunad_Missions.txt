@@ -1700,7 +1700,7 @@ gronstunad_3 = {
 					OR = {
 						AND = {
 							province_id = 4300
-							has_building = ramparts
+							
 						}
 						AND = {
 							province_id = 4302
@@ -1716,7 +1716,7 @@ gronstunad_3 = {
 
 		trigger = {
 			4300 = { #Dwarovrod 65
-				has_building = ramparts
+	
 				has_fort_building_trigger = yes
 				is_city = yes
 				owned_by = ROOT

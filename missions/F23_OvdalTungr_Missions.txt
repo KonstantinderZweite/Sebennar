@@ -773,22 +773,22 @@ Centralization = {
 		position = 4
 		provinces_to_highlight = {
 			OR = {
-				area = west_overmarch_area
-				area = east_overmarch_area
-				area = south_overmarch_area
+				area = lencmarck_area
+				area = oudmarck_area
+				area = tencmarck_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			west_overmarch_area = {
+			lencmarck_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			east_overmarch_area = {
+			oudmarck_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			south_overmarch_area = {
+			tencmarck_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

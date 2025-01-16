@@ -439,7 +439,9 @@ brambleskinner_3_1 = {
 					OR = {
 						province_id = 3009
 						province_id = 3010
-						area = lebkadu_area
+						province_id = 3071
+						province_id = 3003
+						province_id = 3004
 					}
 					NOT = {
 						owned_by = ROOT
@@ -468,11 +470,7 @@ brambleskinner_3_1 = {
 				tooltip = brambleskinner_core_oubbligschild_provs_deepwoods_tt
 				owns_core_province = 3009
 				owns_core_province = 3010
-				lebkadu_area = {
-					type = all
-					owned_by = ROOT
-					is_core = ROOT
-				}
+				
 			}
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
