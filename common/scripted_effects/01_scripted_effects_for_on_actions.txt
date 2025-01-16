@@ -1849,7 +1849,7 @@ anb_scripted_effects_for_ruler_death  = {
 	
 	#Undead Army
 	if = {
-		limit = { has_country_modifier = undead_military NOT = { tag = Z3ZS } }
+		limit = { has_country_modifier = undead_military }
 		country_event = { id = magic_misc_events.4 days = 60 } 
 	}
 

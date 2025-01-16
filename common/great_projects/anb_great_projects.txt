@@ -1909,7 +1909,7 @@ deepwoods_fey_portal = {
 		province_modifiers = {
 			province_trade_power_value = 10
 			local_friendly_movement_speed = 0.5
-			local_hostile_movement_speed = 0.5
+			local_hostile_movement_speed = 0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1940,7 +1940,7 @@ deepwoods_fey_portal = {
 		province_modifiers = {
 			province_trade_power_value = 25
 			local_friendly_movement_speed = 1
-			local_hostile_movement_speed = 1
+			local_hostile_movement_speed = 0.5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1971,7 +1971,7 @@ deepwoods_fey_portal = {
 		province_modifiers = {
 			province_trade_power_value = 50
 			local_friendly_movement_speed = 2
-			local_hostile_movement_speed = 2
+			local_hostile_movement_speed = 1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier

@@ -26276,7 +26276,6 @@ G20_ideas = {
         infantry_power = 0.1
     }
 }
-#tpg
 Z1Z_ideas = {
 	start = {
 		cavalry_fire = 0.5
@@ -26352,7 +26351,6 @@ B79_ideas = {
 		war_exhaustion = -0.02
 	}
 }
-#tpg
 Z2Z_ideas = {
 	start = {
 		infantry_cost = -0.10
@@ -26803,43 +26801,6 @@ L23_ideas = {
 	L23_land_of_authority = { #fangaula's nickname
 		max_absolutism = 10
 		global_unrest = -1
-	}
-}
-#tpg
-Z3Z_ideas = {
-	start = {
-		num_accepted_cultures = 3
-		promote_culture_cost = -0.5
-	}
-	bonus = {
-		development_cost = -0.15
-	}
-	trigger = {
-		tag = Z3Z
-	}
-	free = yes
-	Z3Z_knowledge_that_must_be_found = {
-		core_creation = -0.1
-	}
-	Z3Z_reusing_old_bodies = {
-		manpower_recovery_speed = 0.2
-	}
-	Z3Z_even_in_death_we_serve = {
-		land_morale = 0.15
-	}
-	Z3Z_a_dragons_all_we_need = {
-		cavalry_power = 0.3
-		cav_to_inf_ratio = -0.45
-	}
-	Z3Z_supporting_fire = {
-		artillery_power = 0.1
-	}
-	Z3Z_heirs_of_the_mengi = {
-		build_cost = -0.15
-	}
-	Z3Z_towers_of_research = {
-		embracement_cost = -0.1
-		global_institution_spread = 0.1
 	}
 }
 
