@@ -383,12 +383,14 @@ estate_nobles_levies = {
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_control } #Anbennar
 		NOT = { tag = I08 } #Anbennar
 		NOT = { has_estate_privilege = estate_nobles_themarenn_sailors } #Anbennar
+		NOT = { has_estate_privilege = estate_mages_levies } #tpg
 	}
 	can_select = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_liberty } #Anbennar
 		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_control } #Anbennar
 		NOT = { has_estate_privilege = estate_nobles_themarenn_sailors } #Anbennar
+		NOT = { has_estate_privilege = estate_mages_levies } #tpg
 		if = {
 			limit = {
 				has_estate = estate_maratha
@@ -1506,6 +1508,40 @@ estate_nobles_command_of_the_military = {
 	}
 	benefits = {
 		army_tradition = 1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+estate_nobles_z3z_mengi_leadership = { #tpg
+	icon = privilege_promote_purbias
+	land_share = 10
+	influence = 0.3
+	is_valid = {
+		NOT = { has_country_flag = no_noble_military } # Anbennar
+		NOT = { has_estate_privilege = estate_nobles_isagumze_kulugi_abe_generals }
+		NOT = { has_country_flag = active_sword }
+		NOT = { has_estate_privilege = estate_nobles_command_of_the_military }
+	}
+	can_select = {
+		always = no
+	}
+	on_granted = {
+		custom_tooltip = estate_nobles_command_of_the_military_tt
+	}
+	on_revoked = {
+		custom_tooltip = estate_nobles_command_of_the_military_tt
+	}
+	penalties = {
+		leader_cost = 0.2
+	}
+	benefits = {
+		army_tradition = 1
+		leader_land_fire = 1
+		leader_land_manuever = 1
+		leader_land_shock = 1
+		leader_siege = 1
 	}
 	ai_will_do = {
 		factor = 0
