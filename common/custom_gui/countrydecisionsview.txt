@@ -1908,6 +1908,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_portable_turrets
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_portable_turrets
 		}
@@ -1916,6 +1918,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_portable_turrets
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -1973,6 +1977,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_sparkdrive_rifles
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_sparkdrive_rifles
 		}
@@ -1981,6 +1987,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_sparkdrive_rifles
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2038,6 +2046,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_vorpal_bullets
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_vorpal_bullets
 		}
@@ -2046,6 +2056,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_vorpal_bullets
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2103,6 +2115,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_magic_missile_deployer
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_magic_missile_deployer
 		}
@@ -2111,6 +2125,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_magic_missile_deployer
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2168,6 +2184,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_commercial_sky_galleons
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_commercial_sky_galleons
 		}
@@ -2176,6 +2194,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_commercial_sky_galleons
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2233,6 +2253,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_artificer_exo_arms
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_artificer_exo_arms
 		}
@@ -2241,6 +2263,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_artificer_exo_arms
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2356,6 +2380,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_wandlocks
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_wandlocks
 		}
@@ -2364,6 +2390,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_wandlocks
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2421,6 +2449,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_balloonboost_packs
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_balloonboost_packs
 		}
@@ -2429,6 +2459,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_balloonboost_packs
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2486,6 +2518,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_prototype_tanks
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_prototype_tanks
 		}
@@ -2494,6 +2528,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_prototype_tanks
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2550,6 +2586,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_war_golems
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_war_golems
 		}
@@ -2558,6 +2596,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_war_golems
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2615,6 +2655,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_arcane_blaster
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_arcane_blaster
 		}
@@ -2623,6 +2665,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_arcane_blaster
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2781,6 +2825,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_black_damestear_bullets
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_black_damestear_bullets
 		}
@@ -2789,6 +2835,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_black_damestear_bullets
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2846,6 +2894,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_artillery_autoloader
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_artillery_autoloader
 		}
@@ -2854,6 +2904,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_artillery_autoloader
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2911,6 +2963,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_bioartificed_ascension
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_bioartificed_ascension
 		}
@@ -2919,6 +2973,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_bioartificed_ascension
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -2976,6 +3032,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_personal_mageshields
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_personal_mageshields
 		}
@@ -2984,6 +3042,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_personal_mageshields
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -3041,6 +3101,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_military_sky_galleons
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_military_sky_galleons
 		}
@@ -3049,6 +3111,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_military_sky_galleons
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -3106,6 +3170,8 @@ custom_button = {
 		trigger = {
 			NOT = {
 				has_estate_privilege = artifice_invention_damestear_reactor_megacannon
+				#tpg
+				tag = I14
 			}
 			has_country_flag = unlocked_artifice_invention_damestear_reactor_megacannon
 		}
@@ -3114,6 +3180,8 @@ custom_button = {
 		number = 3
 		trigger = {
 			has_estate_privilege = artifice_invention_damestear_reactor_megacannon
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -5877,6 +5945,8 @@ custom_button = {
 					has_estate_privilege = artifice_invention_controlled_rage_serum
 					has_estate_privilege = artifice_invention_giantshape_warframe
 				}
+				#tpg
+				tag = I14
 			}
 			OR = {
 				has_country_flag = unlocked_artifice_invention_gyrocopters
@@ -5907,6 +5977,8 @@ custom_button = {
 				has_estate_privilege = artifice_invention_controlled_rage_serum
 				has_estate_privilege = artifice_invention_giantshape_warframe
 			}
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {
@@ -6188,6 +6260,8 @@ custom_button = {
 					has_estate_privilege = artifice_invention_chase_em_rockets
 					has_estate_privilege = artifice_invention_dragonscale_plating
 				}
+				#tpg
+				tag = I14
 			}
 			OR = {
 				has_country_flag = unlocked_artifice_invention_platinum_warsuit
@@ -6204,6 +6278,8 @@ custom_button = {
 				has_estate_privilege = artifice_invention_chase_em_rockets
 				has_estate_privilege = artifice_invention_dragonscale_plating
 			}
+			#tpg
+			NOT = { tag = I14 }
 		}
 	}
 	trigger = {

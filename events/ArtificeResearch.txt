@@ -108,6 +108,10 @@ country_event = {
 	option = {
 		name = artifice_research.2.b
 		custom_tooltip = artifice_research_tt
+		#tpg
+		trigger = {
+			NOT = { tag = I14 }
+		}
 		hidden_effect = {
 			set_country_flag = artifice_researching_military
 			capital_scope = {
