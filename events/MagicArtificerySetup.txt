@@ -149,6 +149,7 @@ country_event = {
 					tag = I98 #Allclan
 					has_country_flag = nsc_sun_elf_artificery #Sun Elf only artificery
 					tag = Y20
+					tag = I14 #tpg
 				}
 			}
 		}
