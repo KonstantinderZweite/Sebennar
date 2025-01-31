@@ -5229,19 +5229,12 @@ estate_mages_levies = {
 	influence = 0.1
 	loyalty = 0.1
 	is_valid = {
-		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
-		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_liberty } #Anbennar
-		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_control } #Anbennar
-		NOT = { tag = I08 } #Anbennar
-		NOT = { has_estate_privilege = estate_nobles_themarenn_sailors } #Anbennar
+		tag = Z3Z
 		NOT = { has_estate_privilege = estate_nobles_levies }
 	}
 	can_select = {
-		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
-		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_liberty } #Anbennar
-		NOT = { has_estate_privilege = estate_nobles_orldhum_platinum_control } #Anbennar
-		NOT = { has_estate_privilege = estate_nobles_themarenn_sailors } #Anbennar
-		NOT = { has_estate_privilege = estate_nobles_levies } #tpg
+		tag = Z3Z
+		NOT = { has_estate_privilege = estate_nobles_levies }
 	}
 	can_revoke = { #Anbennar
 	
@@ -5322,6 +5315,1158 @@ estate_mages_levies = {
 			factor = 0.5
 			is_absolutism_active = yes
 		}
+	}
+}
+
+
+#tpg
+
+estate_mages_organization_golem_crafters = {
+	icon = privilege_promote_maratha_nobility
+	loyalty = 0.1
+	influence = 0.1
+	land_share = 10
+	is_valid = {
+		tag = I14
+	}
+	can_select = {
+		always = no
+	}
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		clear_mages_organization_effect = yes
+		
+	}
+	penalties = {
+	}
+	benefits = {
+		global_tax_modifier = -0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 10
+			current_age = age_of_absolutism
+		}
+		modifier = {
+			factor = 0
+			has_estate_privilege = estate_mages_organization_magisterium
+		}
+	}
+}
+#left arms
+
+estate_mages_golem_left_arm_fist = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_right_arm_fist }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_left_arm_fist
+			duration = -1
+		}
+		clear_golem_left_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_left_arm_fist
+	}
+	on_invalid = {
+		remove_country_modifier = golem_left_arm_fist
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_left_arm_shield = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_right_arm_shield }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_left_arm_shield
+			duration = -1
+		}
+		clear_golem_left_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_left_arm_shield
+	}
+	on_invalid = {
+		remove_country_modifier = golem_left_arm_shield
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_left_arm_spear = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_1
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_right_arm_spear }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_left_arm_spear
+			duration = -1
+		}
+		clear_golem_left_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_left_arm_spear
+	}
+	on_invalid = {
+		remove_country_modifier = golem_left_arm_spear
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_left_arm_poleaxe = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_2
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_right_arm_poleaxe }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_left_arm_poleaxe
+			duration = -1
+		}
+		clear_golem_left_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_left_arm_poleaxe
+	}
+	on_invalid = {
+		remove_country_modifier = golem_left_arm_poleaxe
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_left_arm_crossbow = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_1
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_right_arm_crossbow }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_left_arm_crossbow
+			duration = -1
+		}
+		clear_golem_left_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_left_arm_crossbow
+	}
+	on_invalid = {
+		remove_country_modifier = golem_left_arm_crossbow
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_left_arm_musket = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_2
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_right_arm_musket }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_left_arm_musket
+			duration = -1
+		}
+		clear_golem_left_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_left_arm_musket
+	}
+	on_invalid = {
+		remove_country_modifier = golem_left_arm_musket
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_left_arm_cannon = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_hidden_cannon
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_right_arm_cannon }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_left_arm_cannon
+			duration = -1
+		}
+		clear_golem_left_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_left_arm_cannon
+	}
+	on_invalid = {
+		remove_country_modifier = golem_left_arm_cannon
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+
+
+#right arms
+
+estate_mages_golem_right_arm_fist = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_left_arm_fist }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_right_arm_fist
+			duration = -1
+		}
+		clear_golem_right_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_right_arm_fist
+	}
+	on_invalid = {
+		remove_country_modifier = golem_right_arm_fist
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_right_arm_shield = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_left_arm_shield }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_right_arm_shield
+			duration = -1
+		}
+		clear_golem_right_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_right_arm_shield
+	}
+	on_invalid = {
+		remove_country_modifier = golem_right_arm_shield
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_right_arm_spear = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_1
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_left_arm_spear }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_right_arm_spear
+			duration = -1
+		}
+		clear_golem_right_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_right_arm_spear
+	}
+	on_invalid = {
+		remove_country_modifier = golem_right_arm_spear
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_right_arm_poleaxe = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_2
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_left_arm_poleaxe }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_right_arm_poleaxe
+			duration = -1
+		}
+		clear_golem_right_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_right_arm_poleaxe
+	}
+	on_invalid = {
+		remove_country_modifier = golem_right_arm_poleaxe
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_right_arm_crossbow = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_1
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_left_arm_crossbow }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_right_arm_crossbow
+			duration = -1
+		}
+		clear_golem_right_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_right_arm_crossbow
+	}
+	on_invalid = {
+		remove_country_modifier = golem_right_arm_crossbow
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_right_arm_musket = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_2
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_left_arm_musket }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_right_arm_musket
+			duration = -1
+		}
+		clear_golem_right_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_right_arm_musket
+	}
+	on_invalid = {
+		remove_country_modifier = golem_right_arm_musket
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_right_arm_cannon = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_hidden_cannon
+	}
+	can_select = {
+		NOT { has_country_modifier = golem_left_arm_cannon }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_right_arm_cannon
+			duration = -1
+		}
+		clear_golem_right_arm = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_right_arm_cannon
+	}
+	on_invalid = {
+		remove_country_modifier = golem_right_arm_cannon
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+
+#heads
+
+estate_mages_golem_head_basic = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems
+	}
+	can_select = {
+		
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_head_basic
+			duration = -1
+		}
+		clear_golem_head_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_head_basic
+	}
+	on_invalid = {
+		remove_country_modifier = golem_head_basic
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_head_quick_reaction = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_2
+	}
+	can_select = {
+		
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_head_quick_reaction
+			duration = -1
+		}
+		clear_golem_head_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_head_quick_reaction
+	}
+	on_invalid = {
+		remove_country_modifier = golem_head_quick_reaction
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_head_laser_eye = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_2
+	}
+	can_select = {
+		
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_head_laser_eye
+			duration = -1
+		}
+		clear_golem_head_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_head_laser_eye
+	}
+	on_invalid = {
+		remove_country_modifier = golem_head_laser_eye
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_head_fearless_mind = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_1
+	}
+	can_select = {
+		
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_head_fearless_mind
+			duration = -1
+		}
+		clear_golem_head_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_head_fearless_mind
+	}
+	on_invalid = {
+		remove_country_modifier = golem_head_fearless_mind
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_head_nonthinking_mind = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_hidden_nonthinking
+	}
+	can_select = {
+		
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_head_nonthinking
+			duration = -1
+		}
+		clear_golem_head_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_head_nonthinking
+	}
+	on_invalid = {
+		remove_country_modifier = golem_head_nonthinking
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+
+#legs
+
+estate_mages_golem_legs_basic = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems
+	}
+	can_select = {
+		
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_legs_basic
+			duration = -1
+		}
+		clear_golem_leg_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_legs_basic
+	}
+	on_invalid = {
+		remove_country_modifier = golem_legs_basic
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_legs_dwarven = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_1
+	}
+	can_select = {
+		
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_legs_dwarven
+			duration = -1
+		}
+		clear_golem_leg_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_legs_dwarven
+	}
+	on_invalid = {
+		remove_country_modifier = golem_legs_dwarven
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_legs_ram = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_hidden_ram
+	}
+	can_select = {
+		
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_legs_ram
+			duration = -1
+		}
+		clear_golem_leg_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_legs_ram
+	}
+	on_invalid = {
+		remove_country_modifier = golem_legs_ram
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_legs_tripedal = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_2
+	}
+	can_select = {
+		
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_legs_tripedal
+			duration = -1
+		}
+		clear_golem_leg_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_legs_tripedal
+	}
+	on_invalid = {
+		remove_country_modifier = golem_legs_tripedal
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_legs_stationary = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems
+	}
+	can_select = {
+		
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_legs_stationary
+			duration = -1
+		}
+		clear_golem_leg_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_legs_stationary
+	}
+	on_invalid = {
+		remove_country_modifier = golem_legs_stationary
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+	
+	
+}
+
+#core
+
+estate_mages_golem_core_basic = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems
+	}
+	can_select = {
+		NOT = { num_of_rajput = 1 }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_core_basic
+			duration = -1
+		}
+		add_country_modifier = {
+			name = golem_core_basic_p2
+			duration = -1
+		}
+		clear_golem_core_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_core_basic
+		remove_country_modifier = golem_core_basic_p2
+	}
+	on_invalid = {
+		remove_country_modifier = golem_core_basic
+		remove_country_modifier = golem_core_basic_p2
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_core_dirt = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_2
+	}
+	can_select = {
+		NOT = { num_of_rajput = 1 }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_core_dirt
+			duration = -1
+		}
+		add_country_modifier = {
+			name = golem_core_dirt_p2
+			duration = -1
+		}
+		clear_golem_core_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_core_dirt
+		remove_country_modifier = golem_core_dirt_p2
+	}
+	on_invalid = {
+		remove_country_modifier = golem_core_dirt
+		remove_country_modifier = golem_core_dirt_p2
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_core_mud= {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_1
+	}
+	can_select = {
+		NOT = { num_of_rajput = 1 }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_core_mud
+			duration = -1
+		}
+		add_country_modifier = {
+			name = golem_core_mud_p2
+			duration = -1
+		}
+		clear_golem_core_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_core_mud
+		remove_country_modifier = golem_core_mud_p2
+	}
+	on_invalid = {
+		remove_country_modifier = golem_core_mud
+		remove_country_modifier = golem_core_mud_p2
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_core_iron = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_1
+	}
+	can_select = {
+		NOT = { num_of_rajput = 1 }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_core_iron
+			duration = -1
+		}
+		add_country_modifier = {
+			name = golem_core_iron_p2
+			duration = -1
+		}
+		clear_golem_core_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_core_iron
+		remove_country_modifier = golem_core_iron_p2
+	}
+	on_invalid = {
+		remove_country_modifier = golem_core_iron
+		remove_country_modifier = golem_core_iron_p2
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_core_steel = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_2
+	}
+	can_select = {
+		NOT = { num_of_rajput = 1 }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_core_steel
+			duration = -1
+		}
+		add_country_modifier = {
+			name = golem_core_steel_p2
+			duration = -1
+		}
+		clear_golem_core_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_core_steel
+		remove_country_modifier = golem_core_steel_p2
+	}
+	on_invalid = {
+		remove_country_modifier = golem_core_steel
+		remove_country_modifier = golem_core_steel_p2
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_core_water = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_hidden_water
+	}
+	can_select = {
+		NOT = { num_of_rajput = 1 }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_core_water
+			duration = -1
+		}
+		add_country_modifier = {
+			name = golem_core_water_p2
+			duration = -1
+		}
+		clear_golem_core_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_core_water
+		remove_country_modifier = golem_core_water_p2
+	}
+	on_invalid = {
+		remove_country_modifier = golem_core_water
+		remove_country_modifier = golem_core_water_p2
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
+	}
+}
+estate_mages_golem_core_mithril = {
+	icon = Artf_MaMi3
+	max_absolutism = 0
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = unlocked_golems_hidden_mithril
+	}
+	can_select = {
+		NOT = { num_of_rajput = 1 }
+	}	
+	can_revoke = {
+		always = no
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = golem_core_mithril
+			duration = -1
+		}
+		add_country_modifier = {
+			name = golem_core_mithril_p2
+			duration = -1
+		}
+		clear_golem_core_effects = yes
+	}
+	on_revoked = {
+		remove_country_modifier = golem_core_mithril
+		remove_country_modifier = golem_core_mithril_p2
+	}
+	on_invalid = {
+		remove_country_modifier = golem_core_mithril
+		remove_country_modifier = golem_core_mithril_p2
+	}
+	penalties = {
+		#foo
+	}
+	benefits = {
+		#foo
 	}
 }
 

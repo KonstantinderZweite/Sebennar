@@ -39,6 +39,7 @@ has_mages_special_organization_privilege = {
 		has_estate_privilege = estate_mages_organization_proffesional_mihipha
 		has_estate_privilege = estate_mages_organization_orda_aldresia
 		has_estate_privilege = estate_mages_organization_rule_of_warlocks
+		#tpg
 		has_estate_privilege = estate_mages_organization_golem_crafters
 	}
 }
@@ -4251,5 +4252,63 @@ rakkaz_warlock_pact_limit = {
 				}
 			}
 		}
+	}
+}
+
+#tpg
+clear_golem_left_arm = {
+	#fill with all left arm effects
+	hidden_effect = {
+		remove_estate_privilege = estate_mages_golem_left_arm_fist
+		remove_estate_privilege = estate_mages_golem_left_arm_shield
+		remove_estate_privilege = estate_mages_golem_left_arm_spear
+		remove_estate_privilege = estate_mages_golem_left_arm_poleaxe
+		remove_estate_privilege = estate_mages_golem_left_arm_crossbow
+		remove_estate_privilege = estate_mages_golem_left_arm_musket
+		remove_estate_privilege = estate_mages_golem_left_arm_cannon
+	}
+}
+clear_golem_right_arm = {
+	#fill with all right arm effects
+	hidden_effect = {
+		remove_estate_privilege = estate_mages_golem_right_arm_fist
+		remove_estate_privilege = estate_mages_golem_right_arm_shield
+		remove_estate_privilege = estate_mages_golem_right_arm_spear
+		remove_estate_privilege = estate_mages_golem_right_arm_poleaxe
+		remove_estate_privilege = estate_mages_golem_right_arm_crossbow
+		remove_estate_privilege = estate_mages_golem_right_arm_musket
+		remove_estate_privilege = estate_mages_golem_right_arm_cannon
+	}
+}
+clear_golem_head_effects = {
+	#fill with all golem head effects
+	hidden_effect = {
+		remove_estate_privilege = estate_mages_golem_head_basic
+		remove_estate_privilege = estate_mages_golem_head_fearless_mind
+		remove_estate_privilege = estate_mages_golem_head_laser_eye
+		remove_estate_privilege = estate_mages_golem_head_nonthinking_mind
+		remove_estate_privilege = estate_mages_golem_head_quick_reaction
+	}
+}
+clear_golem_leg_effects = {
+	#fill with all golem legs effects
+	hidden_effect = {
+		remove_estate_privilege = estate_mages_golem_legs_basic
+		remove_estate_privilege = estate_mages_golem_legs_dwarven
+		remove_estate_privilege = estate_mages_golem_legs_ram
+		remove_estate_privilege = estate_mages_golem_legs_stationary
+		remove_estate_privilege = estate_mages_golem_legs_tripedal
+	}
+}	
+clear_golem_core_effects = {
+	#fill with all golem core effects
+	hidden_effect = {
+		remove_estate_privilege = estate_mages_golem_core_basic
+		remove_estate_privilege = estate_mages_golem_core_dirt
+		remove_estate_privilege = estate_mages_golem_core_iron
+		remove_estate_privilege = estate_mages_golem_core_mithril
+		remove_estate_privilege = estate_mages_golem_core_mud
+		remove_estate_privilege = estate_mages_golem_core_steel
+		remove_estate_privilege = estate_mages_golem_core_water
 	}
 }

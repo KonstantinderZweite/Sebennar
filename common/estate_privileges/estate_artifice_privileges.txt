@@ -2499,10 +2499,14 @@ artifice_invention_portable_turrets = {
 			ai = yes
 			has_estate_privilege = artifice_invention_portable_turrets
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_10 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -2564,10 +2568,14 @@ artifice_invention_sparkdrive_rifles = {
 			ai = yes
 			has_estate_privilege = artifice_invention_sparkdrive_rifles
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_10 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -2694,10 +2702,14 @@ artifice_invention_artificer_exo_arms = {
 			ai = yes
 			has_estate_privilege = artifice_invention_artificer_exo_arms
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_10 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -2949,10 +2961,14 @@ artifice_invention_vorpal_bullets = {
 			ai = yes
 			has_estate_privilege = artifice_invention_vorpal_bullets
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_10 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -3010,10 +3026,14 @@ artifice_invention_war_golems = {
 			ai = yes
 			has_estate_privilege = artifice_invention_war_golems
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_20 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -3078,10 +3098,14 @@ artifice_invention_black_damestear_bullets = {
 			ai = yes
 			has_estate_privilege = artifice_invention_black_damestear_bullets
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_30 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -3502,10 +3526,14 @@ artifice_invention_wandlocks = {
 			ai = yes
 			has_estate_privilege = artifice_invention_wandlocks
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_20 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -3570,10 +3598,14 @@ artifice_invention_artillery_autoloader = {
 			ai = yes
 			has_estate_privilege = artifice_invention_artillery_autoloader
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_30 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -3752,10 +3784,14 @@ artifice_invention_commercial_sky_galleons = {
 			ai = yes
 			has_estate_privilege = artifice_invention_commercial_sky_galleons
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_10 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -3813,10 +3849,14 @@ artifice_invention_bioartificed_ascension = {
 			ai = yes
 			has_estate_privilege = artifice_invention_bioartificed_ascension
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_30 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -3880,10 +3920,14 @@ artifice_invention_prototype_tanks = {
 			ai = yes
 			has_estate_privilege = artifice_invention_prototype_tanks
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_20 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -3940,10 +3984,14 @@ artifice_invention_personal_mageshields = {
 			ai = yes
 			has_estate_privilege = artifice_invention_personal_mageshields
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_30 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -4008,10 +4056,14 @@ artifice_invention_military_sky_galleons = {
 			ai = yes
 			has_estate_privilege = artifice_invention_military_sky_galleons
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_30 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -4132,10 +4184,14 @@ artifice_invention_magic_missile_deployer = {
 			ai = yes
 			has_estate_privilege = artifice_invention_magic_missile_deployer
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_10 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -4254,10 +4310,14 @@ artifice_invention_arcane_blaster = {
 			ai = yes
 			has_estate_privilege = artifice_invention_arcane_blaster
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_20 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -4382,10 +4442,14 @@ artifice_invention_balloonboost_packs = {
 			ai = yes
 			has_estate_privilege = artifice_invention_balloonboost_packs
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_20 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -6030,6 +6094,8 @@ artifice_invention_platinum_warsuit = {
 			ai = yes
 			has_estate_privilege = artifice_invention_platinum_warsuit
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
@@ -6039,6 +6105,8 @@ artifice_invention_platinum_warsuit = {
 		}
 		else = { artifice_has_points_30 = yes }
 		has_country_modifier = dwarven_military
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -6170,11 +6238,15 @@ artifice_invention_gyrocopters = {
 			ai = yes
 			has_estate_privilege = artifice_invention_gyrocopters
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_20 = yes
 		has_country_modifier = dwarven_military
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
@@ -12757,10 +12829,14 @@ artifice_invention_damestear_reactor_megacannon = {
 			ai = yes
 			has_estate_privilege = artifice_invention_damestear_reactor_megacannon
 		}
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_select = {
         ai = yes
 		artifice_has_points_30 = yes
+		#tpg
+		NOT = { tag = I14 }
 	}
 	can_revoke = {
 		hidden_trigger = {
